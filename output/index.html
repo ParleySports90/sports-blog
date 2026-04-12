@@ -67,6 +67,25 @@
         header h1 span { color: var(--accent); }
         header p { color: var(--text-secondary); font-size: 0.85rem; margin-top: 4px; position: relative; }
         .update-time { color: var(--accent); font-size: 0.72rem; margin-top: 6px; position: relative; letter-spacing: 0.5px; }
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 8px;
+            padding: 5px 16px;
+            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 20px;
+            font-family: var(--font-display);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            transition: all 0.25s ease;
+            position: relative;
+        }
+        .social-link:hover { transform: scale(1.05); box-shadow: 0 0 16px rgba(131, 58, 180, 0.4); }
+        .social-link svg { width: 16px; height: 16px; fill: #fff; }
 
         /* Main Nav */
         .main-nav {
@@ -929,7 +948,11 @@
 <header>
     <h1>&#127942; <span>Parley</span> Sports</h1>
     <p>Noticias, pronosticos y analisis de apuestas deportivas</p>
-    <div class="update-time">Ultima actualizacion: 12/04/2026 17:23</div>
+    <div class="update-time">Ultima actualizacion: 12/04/2026 17:31</div>
+    <a class="social-link" href="https://www.instagram.com/parleysports90?igsh=MXY5b3V2NTJpaWRtNQ==" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        @parleysports90
+    </a>
 </header>
 
 <nav class="main-nav">
@@ -1764,7 +1787,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">83'</span>
+                        <span class="mr-detail">90'+2'</span>
                         
                         <span class="mr-time">12/04 3:30 PM</span>
                     </div>
@@ -2029,7 +2052,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">45'+6'</span>
+                        <span class="mr-detail">HT</span>
                         
                         <span class="mr-time">12/04 4:30 PM</span>
                     </div>
@@ -2212,7 +2235,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">21'</span>
+                        <span class="mr-detail">29'</span>
                         
                         <span class="mr-time">12/04 5:00 PM</span>
                     </div>
@@ -3208,7 +3231,7 @@
             </div>
         </div>
         
-        <div class="league-block openopenopenopenopen" data-sport="baseball">
+        <div class="league-block openopenopenopen" data-sport="baseball">
             <div class="league-toggle" onclick="toggleLeague(this)">
                 <div class="league-toggle-left">
                     <span class="league-icon">⚾</span>
@@ -3219,7 +3242,7 @@
                     
                     
                     
-                    <span class="match-count has-live">&#128308; 5 EN VIVO</span>
+                    <span class="match-count has-live">&#128308; 4 EN VIVO</span>
                     
                     <span class="match-count">15 partidos</span>
                     <span class="arrow">&#9660;</span>
@@ -3461,7 +3484,7 @@
                             <div class="mr-score">
                                 <span class="mr-score-num">0</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">2</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -3473,7 +3496,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">End 1st</span>
+                        <span class="mr-detail">Mid 2nd</span>
                         
                         <span class="mr-time">12/04 2:10 PM</span>
                     </div>
@@ -3540,9 +3563,9 @@
                         <span class="mr-time">12/04 2:15 PM</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">EN VIVO</span>
+                        <span class="mr-status mr-final">Final</span>
                         
 
                         <div class="mr-teams">
@@ -3554,7 +3577,7 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">6</span>
+                                <span class="mr-score-num">7</span>
                                 <span class="mr-score-sep">-</span>
                                 <span class="mr-score-num">6</span>
                             </div>
@@ -3567,8 +3590,6 @@
                             </div>
                         </div>
 
-                        
-                        <span class="mr-detail">Bot 9th</span>
                         
                         <span class="mr-time">12/04 2:20 PM</span>
                     </div>
@@ -3634,7 +3655,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">Top 4th</span>
+                        <span class="mr-detail">End 4th</span>
                         
                         <span class="mr-time">12/04 4:10 PM</span>
                     </div>
@@ -3667,7 +3688,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">Top 4th</span>
+                        <span class="mr-detail">Bot 4th</span>
                         
                         <span class="mr-time">12/04 4:10 PM</span>
                     </div>
@@ -3741,7 +3762,7 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">1</span>
+                                <span class="mr-score-num">2</span>
                                 <span class="mr-score-sep">-</span>
                                 <span class="mr-score-num">0</span>
                             </div>
@@ -3755,7 +3776,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">9:01 - 3rd</span>
+                        <span class="mr-detail">4:10 - 3rd</span>
                         
                         <span class="mr-time">12/04 3:00 PM</span>
                     </div>
@@ -4161,7 +4182,7 @@
                         
                         <li class="factor-injury">IND: sin lesiones importantes | DET: sin lesiones importantes</li>
                         
-                        <li class="factor-odds">Linea: 14.5 | O/U: 230.5 | ML: /</li>
+                        <li class="factor-odds">Linea: 14.5 | O/U: 229.5 | ML: /</li>
                         
                     </ul>
 
@@ -4171,7 +4192,7 @@
                         <span class="pred-odds-item">Spread: <span>14.5</span></span>
                         
                         
-                        <span class="pred-odds-item">O/U: <span>230.5</span></span>
+                        <span class="pred-odds-item">O/U: <span>229.5</span></span>
                         
                         
                         
@@ -5656,13 +5677,13 @@
                             </td>
                             <td>L</td>
                             <td>1-0</td>
-                            <td>11.2</td>
-                            <td class="mlb-stat-highlight">1.54</td>
-                            <td>10</td>
+                            <td>12.2</td>
+                            <td class="mlb-stat-highlight">2.84</td>
+                            <td>12</td>
+                            <td>4</td>
                             <td>2</td>
-                            <td>2</td>
-                            <td>10</td>
-                            <td>1.03</td>
+                            <td>12</td>
+                            <td>1.11</td>
                             <td>-</td>
                             <td>-</td>
                         </tr>
@@ -5699,15 +5720,15 @@
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">ERA</div>
-                                <div class="mlb-mobile-stat-value">1.54</div>
+                                <div class="mlb-mobile-stat-value">2.84</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">WHIP</div>
-                                <div class="mlb-mobile-stat-value">1.03</div>
+                                <div class="mlb-mobile-stat-value">1.11</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">SO</div>
-                                <div class="mlb-mobile-stat-value">10</div>
+                                <div class="mlb-mobile-stat-value">12</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">Casa</div>
@@ -5754,7 +5775,7 @@
 
                 <div class="mlb-analysis">
                     <span class="mlb-pick-badge">PICK: KC</span>
-                    <p class="mlb-analysis-text">Cameron, N (1-0, 1.54 ERA) lidera el staff de Kansas City Royals con 10 ponches en 11.2 innings. WHIP de 1.03 vs 1.09 de Taylor, G favorece a KC. KC (7-8) vs CWS (5-10). PICK: KC.</p>
+                    <p class="mlb-analysis-text">Cameron, N (1-0, 2.84 ERA) lidera el staff de Kansas City Royals con 12 ponches en 12.2 innings. KC (7-8) vs CWS (5-10). PICK: KC.</p>
                 </div>
             </div>
             
@@ -6085,7 +6106,7 @@
                             
                             <div>
                                 <div class="mlb-team-name">PIT</div>
-                                <div class="mlb-team-record">9-5</div>
+                                <div class="mlb-team-record">9-6</div>
                             </div>
                         </div>
                         <span class="mlb-vs">@</span>
@@ -6095,7 +6116,7 @@
                             
                             <div>
                                 <div class="mlb-team-name">CHC</div>
-                                <div class="mlb-team-record">6-8</div>
+                                <div class="mlb-team-record">7-8</div>
                             </div>
                         </div>
                     </div>
@@ -6134,7 +6155,7 @@
                             <td>R</td>
                             <td>0-1</td>
                             <td>16.2</td>
-                            <td >4.86</td>
+                            <td class="mlb-stat-highlight">4.86</td>
                             <td>15</td>
                             <td>9</td>
                             <td>6</td>
@@ -6151,7 +6172,7 @@
                             <td>R</td>
                             <td>0-1</td>
                             <td>14.0</td>
-                            <td class="mlb-stat-highlight">3.86</td>
+                            <td >3.86</td>
                             <td>10</td>
                             <td>6</td>
                             <td>12</td>
@@ -6230,8 +6251,8 @@
                 </div>
 
                 <div class="mlb-analysis">
-                    <span class="mlb-pick-badge">PICK: PIT</span>
-                    <p class="mlb-analysis-text">Chandler, B (0-1, 3.86 ERA) lidera el staff de Pittsburgh Pirates con 14 ponches en 14.0 innings. CHC (6-8) vs PIT (9-5). PICK: PIT.</p>
+                    <span class="mlb-pick-badge">PICK: CHC</span>
+                    <p class="mlb-analysis-text">Taillon, J (0-1, 4.86 ERA) lidera el staff de Chicago Cubs con 17 ponches en 16.2 innings. WHIP de 1.26 vs 1.57 de Chandler, B favorece a CHC. CHC (7-8) vs PIT (9-6). PICK: CHC.</p>
                 </div>
             </div>
             
@@ -6469,9 +6490,9 @@
                             <td>R</td>
                             <td>0-0</td>
                             <td>8.1</td>
-                            <td >4.32</td>
+                            <td >5.40</td>
                             <td>7</td>
-                            <td>4</td>
+                            <td>5</td>
                             <td>7</td>
                             <td>11</td>
                             <td>1.68</td>
@@ -6525,7 +6546,7 @@
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">ERA</div>
-                                <div class="mlb-mobile-stat-value">4.32</div>
+                                <div class="mlb-mobile-stat-value">5.40</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">WHIP</div>
@@ -6627,13 +6648,13 @@
                             </td>
                             <td>R</td>
                             <td>0-0</td>
-                            <td>12.2</td>
-                            <td class="mlb-stat-highlight">3.55</td>
-                            <td>9</td>
+                            <td>13.2</td>
+                            <td class="mlb-stat-highlight">3.29</td>
+                            <td>10</td>
                             <td>5</td>
                             <td>2</td>
-                            <td>18</td>
-                            <td>0.87</td>
+                            <td>19</td>
+                            <td>0.88</td>
                             <td>-</td>
                             <td>-</td>
                         </tr>
@@ -6684,15 +6705,15 @@
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">ERA</div>
-                                <div class="mlb-mobile-stat-value">3.55</div>
+                                <div class="mlb-mobile-stat-value">3.29</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">WHIP</div>
-                                <div class="mlb-mobile-stat-value">0.87</div>
+                                <div class="mlb-mobile-stat-value">0.88</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">SO</div>
-                                <div class="mlb-mobile-stat-value">18</div>
+                                <div class="mlb-mobile-stat-value">19</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">Casa</div>
@@ -6708,7 +6729,7 @@
 
                 <div class="mlb-analysis">
                     <span class="mlb-pick-badge">PICK: TEX</span>
-                    <p class="mlb-analysis-text">deGrom, J (0-0, 3.55 ERA) lidera el staff de Texas Rangers con 18 ponches en 12.2 innings. WHIP de 0.87 vs 1.85 de Sasaki, R favorece a TEX. LAD (11-3) vs TEX (7-7). PICK: TEX.</p>
+                    <p class="mlb-analysis-text">deGrom, J (0-0, 3.29 ERA) lidera el staff de Texas Rangers con 19 ponches en 13.2 innings. WHIP de 0.88 vs 1.85 de Sasaki, R favorece a TEX. LAD (11-3) vs TEX (7-7). PICK: TEX.</p>
                 </div>
             </div>
             
@@ -6914,14 +6935,37 @@
                 </a>
             </article>
             
+            <article class="article-card" data-category="Futbol">
+                <a href="https://www.ole.com.ar/atletico-tucuman/barras-atletico-tucuman-invadieron-campo-juego-incidentes_0_chJGT3RQbV.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/12/G9s7Sp0GP_1200x630__1.jpg" alt="Video: barras de Atlético Tucumán se metieron en el campo de juego en pleno partido ante Tigre" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Ole</span>
+                            <span class="card-category">Futbol</span>
+                        </div>
+                        <h2 class="card-title">Video: barras de Atlético Tucumán se metieron en el campo de juego en pleno partido ante Tigre</h2>
+                        <p class="card-summary">El encuentro estuvo parado alrededor de 10 minutos por disturbios que ocurrieron en la popular del Decano. El Loco Díaz intentó calmarlos y tuvo que intervenir la policía.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 18:10</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
             <article class="article-card" data-category="General">
                 <a href="https://as.com/futbol/marcelino-salda-la-deuda-f202604-n/" target="_blank" rel="noopener">
                     
                     <span class="card-trending">&#128293; Tendencia</span>
                     
                     
-                    <img class="card-image" src="https://img.asmedia.epimg.net/resizer/v2/CLDBYJDQHVM4LNSJMBWE5WWDF4.jpg?auth=b1e923904fa42943606cad231e430df8210e21650b8e9bad3bac8cbfa8bf6ad9" alt="Marcelino salda la deuda" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    <div class="card-image-placeholder">&#9917;</div>
                     
                     <div class="card-body">
                         <div class="card-meta">
@@ -6968,7 +7012,7 @@
                     <span class="card-trending">&#128293; Tendencia</span>
                     
                     
-                    <img class="card-image" src="https://img.asmedia.epimg.net/resizer/v2/WSW27FVHGVDFRNAOIJAZBXOS3M.jpeg?auth=177252c213b467f648d9ed03ec793a21d7a54ddc84e51137d49ef92f66008b1f" alt="El Racing impone su ley" loading="lazy"
+                    <img class="card-image" src="https://img.asmedia.epimg.net/resizer/v2/AALHOANBOVDG7CTVJ6FU6OPXSQ.jpeg?auth=a928db720b1299c73a5d1963bacbf3f281257c9347f33383158ef8197838eec0" alt="El Racing impone su ley" loading="lazy"
                          onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
                     
                     <div class="card-body">
@@ -7160,7 +7204,7 @@
                     <span class="card-trending">&#128293; Tendencia</span>
                     
                     
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/12/cLu-9ba_L_1200x630__1.jpg" alt="Central sorprendió a Huracán y le gana 1-0 en el Ducó con su primera llegada" loading="lazy"
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/12/1B0T59FSN_1200x630__1.jpg" alt="Central sorprendió a Huracán en el comienzo y al Globo le cuesta generar peligro" loading="lazy"
                          onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
                     
                     <div class="card-body">
@@ -7168,8 +7212,8 @@
                             <span class="card-source">Ole</span>
                             <span class="card-category">Futbol</span>
                         </div>
-                        <h2 class="card-title">Central sorprendió a Huracán y le gana 1-0 en el Ducó con su primera llegada</h2>
-                        <p class="card-summary">El equipo de Almirón fue letal en la primera contra: asistencia de Enzo Giménez y definición de Enzo Copetti antes de los dos minutos.</p>
+                        <h2 class="card-title">Central sorprendió a Huracán en el comienzo y al Globo le cuesta generar peligro</h2>
+                        <p class="card-summary">El equipo de Almirón fue letal en la primera contra: asistencia de Enzo Giménez y definición de Enzo Copetti antes de los dos minutos. El local, escaso de juego.</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-date">12 Apr 2026 - 17:21</span>
@@ -7221,30 +7265,6 @@
                     </div>
                     <div class="card-footer">
                         <span class="card-date">12 Apr 2026 - 17:10</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="Futbol">
-                <a href="https://www.ole.com.ar/futbol-primera/tigre-diego-dabove_0_NezyyK3KQ5.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/12/iVCBTkeyg_1200x630__1.jpg" alt="Clima caliente en Tucumán: Atlético juega ante Tigre luego de que hinchas invadieran la cancha" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Ole</span>
-                            <span class="card-category">Futbol</span>
-                        </div>
-                        <h2 class="card-title">Clima caliente en Tucumán: Atlético juega ante Tigre luego de que hinchas invadieran la cancha</h2>
-                        <p class="card-summary">Fanáticos cruzaron el alambrado y amenazaron con saltar a la cancha. Tenso clima en la interna: el Loco Díaz tuvo que acercarse a hablar con la gente. Todo se normalizó. Seguilo en Olé.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 17:08</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>
@@ -7418,6 +7438,29 @@
             </article>
             
             <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/futbol/mexico/nota/_/id/16565695/pumas-vs-mazatlan-resumen-goles-jornada-14-liga-mx-clausura-2026" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Pumas cumple en casa con victoria sobre Mazatlán</h2>
+                        <p class="card-summary">El equipo de Efraín Juárez sigue en la pelea por los primeros puestos del Clausura 2026.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 17:22</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
                 <a href="https://espndeportes.espn.com/beisbol/mlb/juego/_/juegoId/401814920/rangers-dodgers" target="_blank" rel="noopener">
                     
                     <span class="card-trending">&#128293; Tendencia</span>
@@ -7479,29 +7522,6 @@
                         </div>
                         <h2 class="card-title">Los contrastes de Pumas en casa de un torneo a otro</h2>
                         <p class="card-summary">Los de Efraín Juárez solo tienen una derrota en ocho partidos disputados como local este torneo.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 16:30</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/futbol/mexico/nota/_/id/16565695/pumas-vs-mazatlan-resumen-goles-jornada-14-liga-mx-clausura-2026" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Pumas cumple en casa con victoria sobre Mazatlán</h2>
-                        <p class="card-summary">El equipo de Efraín Juárez sigue en la pelea por los primeros puestos del Clausura 2026.</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-date">12 Apr 2026 - 16:30</span>
@@ -8085,6 +8105,12 @@
 
 <footer>
     <p>&copy; 2026 Parley Sports - Resumen Deportivo | Resultados via ESPN | Noticias RSS</p>
+    <p style="margin-top: 8px;">
+        <a class="social-link" href="https://www.instagram.com/parleysports90?igsh=MXY5b3V2NTJpaWRtNQ==" target="_blank" rel="noopener" style="font-size: 0.72rem;">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            Siguenos en Instagram
+        </a>
+    </p>
 </footer>
 
 <script>

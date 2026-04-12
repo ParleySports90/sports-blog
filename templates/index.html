@@ -67,6 +67,25 @@
         header h1 span { color: var(--accent); }
         header p { color: var(--text-secondary); font-size: 0.85rem; margin-top: 4px; position: relative; }
         .update-time { color: var(--accent); font-size: 0.72rem; margin-top: 6px; position: relative; letter-spacing: 0.5px; }
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 8px;
+            padding: 5px 16px;
+            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 20px;
+            font-family: var(--font-display);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            transition: all 0.25s ease;
+            position: relative;
+        }
+        .social-link:hover { transform: scale(1.05); box-shadow: 0 0 16px rgba(131, 58, 180, 0.4); }
+        .social-link svg { width: 16px; height: 16px; fill: #fff; }
 
         /* Main Nav */
         .main-nav {
@@ -930,6 +949,10 @@
     <h1>&#127942; <span>Parley</span> Sports</h1>
     <p>{{ blog_description }}</p>
     <div class="update-time">Ultima actualizacion: {{ last_updated }}</div>
+    <a class="social-link" href="https://www.instagram.com/parleysports90?igsh=MXY5b3V2NTJpaWRtNQ==" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        @parleysports90
+    </a>
 </header>
 
 <nav class="main-nav">
@@ -1413,6 +1436,12 @@
 
 <footer>
     <p>&copy; {{ year }} {{ blog_title }} | Resultados via ESPN | Noticias RSS</p>
+    <p style="margin-top: 8px;">
+        <a class="social-link" href="https://www.instagram.com/parleysports90?igsh=MXY5b3V2NTJpaWRtNQ==" target="_blank" rel="noopener" style="font-size: 0.72rem;">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            Siguenos en Instagram
+        </a>
+    </p>
 </footer>
 
 <script>
