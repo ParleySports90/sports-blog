@@ -172,9 +172,9 @@
       "pick_label": "INT ML",
       "pick_team": "Internazionale",
       "confidence": 81,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 4
     },
     {
       "id": "2026-04-12_Ligue 1_Lyon_vs_Lorient",
@@ -194,12 +194,12 @@
     }
   ],
   "stats": {
-    "total": 0,
-    "wins": 0,
+    "total": 1,
+    "wins": 1,
     "losses": 0,
-    "pending": 12,
-    "win_pct": 0.0,
-    "current_streak": "W0",
+    "pending": 11,
+    "win_pct": 100.0,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 0,
@@ -214,7 +214,7 @@
         "l": 0
       },
       "futbol": {
-        "w": 0,
+        "w": 1,
         "l": 0
       }
     }

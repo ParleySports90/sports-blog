@@ -149,25 +149,56 @@ def fetch_league_scores(league_name, league_info):
             status_obj = event.get("status", {})
             status_type = status_obj.get("type", {})
             state = status_type.get("state", "pre")  # pre, in, post
-            status_detail = status_type.get("shortDetail", "")
+            short_detail = status_type.get("shortDetail", "")
+            display_clock = status_obj.get("displayClock", "")
+            period = status_obj.get("period", 0)
 
             if state == "pre":
-                display_status = status_detail
                 match_state = "scheduled"
+                display_status = short_detail
+                game_detail = ""
             elif state == "in":
-                display_status = status_detail
                 match_state = "live"
+                display_status = short_detail
+                # Detalle especifico por deporte
+                sport = league_info["sport"]
+                if sport == "baseball":
+                    # MLB: "Top 5th", "Bot 3rd", "Mid 7th"
+                    game_detail = short_detail
+                elif sport == "futbol":
+                    # Futbol: minuto del partido
+                    game_detail = short_detail
+                elif sport == "basketball":
+                    # NBA: "Q3 5:30"
+                    game_detail = short_detail
+                elif sport == "hockey":
+                    # NHL: "0:57 - 2nd"
+                    game_detail = short_detail
+                else:
+                    game_detail = short_detail
             else:
-                display_status = "Final"
                 match_state = "finished"
+                detail_lower = short_detail.lower()
+                if "extra" in detail_lower or "ot" in detail_lower or "so" in detail_lower:
+                    display_status = short_detail
+                else:
+                    display_status = "Final"
+                game_detail = ""
 
-            # Fecha del partido
+            # Fecha del partido (hora Venezuela UTC-4)
             date_str = event.get("date", "")
             match_date = ""
             if date_str:
                 try:
                     dt = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
-                    match_date = dt.strftime("%d/%m %H:%M")
+                    from datetime import timedelta
+                    dt_vzla = dt - timedelta(hours=4)
+                    match_date = dt_vzla.strftime("%d/%m %I:%M %p")
+                    # Limpiar leading zero
+                    if match_date.split()[-2].startswith("0"):
+                        parts = match_date.split()
+                        parts[-2] = parts[-2][1:]
+                        match_date = " ".join(parts)
                 except Exception:
                     match_date = date_str[:10]
 
@@ -181,6 +212,7 @@ def fetch_league_scores(league_name, league_info):
                 "status": display_status,
                 "state": match_state,
                 "date": match_date,
+                "game_detail": game_detail if state == "in" else "",
             })
 
         print(f"  [OK] {league_name}: {len(matches)} partidos")

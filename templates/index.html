@@ -205,6 +205,18 @@
         .mr-score-num { color: #fff; font-weight: bold; font-size: 0.9rem; min-width: 14px; text-align: center; }
         .mr-score-sep { color: #e94560; font-size: 0.75rem; }
 
+        .mr-detail {
+            background: #e94560;
+            color: #fff;
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 4px;
+            white-space: nowrap;
+            min-width: 65px;
+            text-align: center;
+            animation: pulse 1.5s infinite;
+        }
         .mr-time { color: #555; font-size: 0.68rem; min-width: 45px; text-align: right; }
 
         /* ======================== */
@@ -867,9 +879,9 @@
                     {% for match in league_data.matches %}
                     <div class="match-row {{ match.state }}">
                         {% if match.state == 'live' %}
-                        <span class="mr-status mr-live">&#128308; VIVO</span>
+                        <span class="mr-status mr-live">EN VIVO</span>
                         {% elif match.state == 'finished' %}
-                        <span class="mr-status mr-final">FIN</span>
+                        <span class="mr-status mr-final">{{ match.status }}</span>
                         {% else %}
                         <span class="mr-status mr-sched">PROG</span>
                         {% endif %}
@@ -896,6 +908,9 @@
                             </div>
                         </div>
 
+                        {% if match.game_detail %}
+                        <span class="mr-detail">{{ match.game_detail }}</span>
+                        {% endif %}
                         <span class="mr-time">{{ match.date }}</span>
                     </div>
                     {% endfor %}
