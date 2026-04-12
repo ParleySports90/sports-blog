@@ -60,9 +60,9 @@
       "pick_label": "STL 1.5",
       "pick_team": "St. Louis Cardinals",
       "confidence": 90,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 9
     },
     {
       "id": "2026-04-12_MLB_Dodgers_vs_Rangers",
@@ -156,9 +156,9 @@
       "pick_label": "VIL ML",
       "pick_team": "Villarreal",
       "confidence": 82,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-04-12_Serie A_Como_vs_Internazionale",
@@ -188,18 +188,18 @@
       "pick_label": "LYON ML",
       "pick_team": "Lyon",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 0
     }
   ],
   "stats": {
-    "total": 1,
-    "wins": 1,
-    "losses": 0,
-    "pending": 11,
-    "win_pct": 100.0,
-    "current_streak": "W1",
+    "total": 4,
+    "wins": 3,
+    "losses": 1,
+    "pending": 8,
+    "win_pct": 75.0,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 0,
@@ -207,14 +207,14 @@
       },
       "baseball": {
         "w": 0,
-        "l": 0
+        "l": 1
       },
       "hockey": {
         "w": 0,
         "l": 0
       },
       "futbol": {
-        "w": 1,
+        "w": 3,
         "l": 0
       }
     }
