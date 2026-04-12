@@ -167,14 +167,13 @@
             flex: 1;
             display: flex;
             align-items: center;
-            gap: 6px;
             min-width: 0;
         }
         .mr-team {
             display: flex;
             align-items: center;
             gap: 4px;
-            flex: 1;
+            width: calc(50% - 30px);
             min-width: 0;
         }
         .mr-team-home { justify-content: flex-end; text-align: right; }
@@ -198,7 +197,7 @@
             background: #1a1a2e;
             padding: 3px 8px;
             border-radius: 4px;
-            min-width: 50px;
+            width: 60px;
             justify-content: center;
             flex-shrink: 0;
         }
@@ -831,7 +830,7 @@
 <header>
     <h1>&#127942; <span>Parley</span> Sports</h1>
     <p>Noticias, pronosticos y analisis de apuestas deportivas</p>
-    <div class="update-time">Ultima actualizacion: 12/04/2026 16:45</div>
+    <div class="update-time">Ultima actualizacion: 12/04/2026 17:09</div>
 </header>
 
 <nav class="main-nav">
@@ -857,7 +856,7 @@
 
     <div class="scores-wrapper">
         
-        <div class="league-block open" data-sport="futbol">
+        <div class="league-block " data-sport="futbol">
             <div class="league-toggle" onclick="toggleLeague(this)">
                 <div class="league-toggle-left">
                     <span class="league-icon">⚽</span>
@@ -867,8 +866,6 @@
                 <div class="league-toggle-right">
                     
                     
-                    
-                    <span class="match-count has-live">&#128308; 1 EN VIVO</span>
                     
                     <span class="match-count">4 partidos</span>
                     <span class="arrow">&#9660;</span>
@@ -970,9 +967,9 @@
                         <span class="mr-time">12/04 12:30 PM</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">EN VIVO</span>
+                        <span class="mr-status mr-final">Final</span>
                         
 
                         <div class="mr-teams">
@@ -984,7 +981,7 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">1</span>
                                 <span class="mr-score-sep">-</span>
                                 <span class="mr-score-num">2</span>
                             </div>
@@ -997,8 +994,6 @@
                             </div>
                         </div>
 
-                        
-                        <span class="mr-detail">79'</span>
                         
                         <span class="mr-time">12/04 3:00 PM</span>
                     </div>
@@ -1414,7 +1409,7 @@
             </div>
         </div>
         
-        <div class="league-block open" data-sport="futbol">
+        <div class="league-block " data-sport="futbol">
             <div class="league-toggle" onclick="toggleLeague(this)">
                 <div class="league-toggle-left">
                     <span class="league-icon">⚽</span>
@@ -1424,8 +1419,6 @@
                 <div class="league-toggle-right">
                     
                     
-                    
-                    <span class="match-count has-live">&#128308; 1 EN VIVO</span>
                     
                     <span class="match-count">3 partidos</span>
                     <span class="arrow">&#9660;</span>
@@ -1496,9 +1489,9 @@
                         <span class="mr-time">12/04 11:15 AM</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">EN VIVO</span>
+                        <span class="mr-status mr-final">Final</span>
                         
 
                         <div class="mr-teams">
@@ -1523,8 +1516,6 @@
                             </div>
                         </div>
 
-                        
-                        <span class="mr-detail">90'+7'</span>
                         
                         <span class="mr-time">12/04 2:45 PM</span>
                     </div>
@@ -1674,7 +1665,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">45'</span>
+                        <span class="mr-detail">69'</span>
                         
                         <span class="mr-time">12/04 3:30 PM</span>
                     </div>
@@ -1939,7 +1930,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">13'</span>
+                        <span class="mr-detail">36'</span>
                         
                         <span class="mr-time">12/04 4:30 PM</span>
                     </div>
@@ -1972,7 +1963,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">10'</span>
+                        <span class="mr-detail">36'</span>
                         
                         <span class="mr-time">12/04 4:30 PM</span>
                     </div>
@@ -2063,9 +2054,9 @@
                         <span class="mr-time">12/04 10:00 AM</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">EN VIVO</span>
+                        <span class="mr-status mr-final">Final</span>
                         
 
                         <div class="mr-teams">
@@ -2079,7 +2070,7 @@
                             <div class="mr-score">
                                 <span class="mr-score-num">2</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">1</span>
+                                <span class="mr-score-num">2</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -2091,14 +2082,12 @@
                         </div>
 
                         
-                        <span class="mr-detail">77'</span>
-                        
                         <span class="mr-time">12/04 3:00 PM</span>
                     </div>
                     
-                    <div class="match-row scheduled">
+                    <div class="match-row live">
                         
-                        <span class="mr-status mr-sched">PROG</span>
+                        <span class="mr-status mr-live">EN VIVO</span>
                         
 
                         <div class="mr-teams">
@@ -2123,6 +2112,8 @@
                             </div>
                         </div>
 
+                        
+                        <span class="mr-detail">6'</span>
                         
                         <span class="mr-time">12/04 5:00 PM</span>
                     </div>
@@ -3118,7 +3109,7 @@
             </div>
         </div>
         
-        <div class="league-block openopenopenopenopenopenopenopen" data-sport="baseball">
+        <div class="league-block openopenopenopenopen" data-sport="baseball">
             <div class="league-toggle" onclick="toggleLeague(this)">
                 <div class="league-toggle-left">
                     <span class="league-icon">⚾</span>
@@ -3129,7 +3120,7 @@
                     
                     
                     
-                    <span class="match-count has-live">&#128308; 8 EN VIVO</span>
+                    <span class="match-count has-live">&#128308; 5 EN VIVO</span>
                     
                     <span class="match-count">15 partidos</span>
                     <span class="arrow">&#9660;</span>
@@ -3231,9 +3222,9 @@
                         <span class="mr-time">12/04 1:37 PM</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">EN VIVO</span>
+                        <span class="mr-status mr-final">Final</span>
                         
 
                         <div class="mr-teams">
@@ -3245,7 +3236,7 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">3</span>
+                                <span class="mr-score-num">6</span>
                                 <span class="mr-score-sep">-</span>
                                 <span class="mr-score-num">9</span>
                             </div>
@@ -3258,8 +3249,6 @@
                             </div>
                         </div>
 
-                        
-                        <span class="mr-detail">Bot 9th</span>
                         
                         <span class="mr-time">12/04 1:40 PM</span>
                     </div>
@@ -3390,9 +3379,9 @@
                         <span class="mr-time">12/04 2:10 PM</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">EN VIVO</span>
+                        <span class="mr-status mr-final">Final</span>
                         
 
                         <div class="mr-teams">
@@ -3418,14 +3407,12 @@
                         </div>
 
                         
-                        <span class="mr-detail">Bot 8th</span>
-                        
                         <span class="mr-time">12/04 2:10 PM</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">EN VIVO</span>
+                        <span class="mr-status mr-final">Final</span>
                         
 
                         <div class="mr-teams">
@@ -3439,7 +3426,7 @@
                             <div class="mr-score">
                                 <span class="mr-score-num">3</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">7</span>
+                                <span class="mr-score-num">9</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -3450,8 +3437,6 @@
                             </div>
                         </div>
 
-                        
-                        <span class="mr-detail">Top 9th</span>
                         
                         <span class="mr-time">12/04 2:15 PM</span>
                     </div>
@@ -3470,7 +3455,7 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">4</span>
+                                <span class="mr-score-num">6</span>
                                 <span class="mr-score-sep">-</span>
                                 <span class="mr-score-num">6</span>
                             </div>
@@ -3484,7 +3469,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">Bot 8th</span>
+                        <span class="mr-detail">Top 9th</span>
                         
                         <span class="mr-time">12/04 2:20 PM</span>
                     </div>
@@ -3517,7 +3502,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">Bot 2nd</span>
+                        <span class="mr-detail">Top 4th</span>
                         
                         <span class="mr-time">12/04 4:10 PM</span>
                     </div>
@@ -3536,7 +3521,7 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">1</span>
+                                <span class="mr-score-num">2</span>
                                 <span class="mr-score-sep">-</span>
                                 <span class="mr-score-num">0</span>
                             </div>
@@ -3550,7 +3535,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">Bot 2nd</span>
+                        <span class="mr-detail">Bot 3rd</span>
                         
                         <span class="mr-time">12/04 4:10 PM</span>
                     </div>
@@ -3571,7 +3556,7 @@
                             <div class="mr-score">
                                 <span class="mr-score-num">1</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">2</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -3583,7 +3568,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">Top 3rd</span>
+                        <span class="mr-detail">Bot 3rd</span>
                         
                         <span class="mr-time">12/04 4:10 PM</span>
                     </div>
@@ -3671,7 +3656,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">0:04 - 2nd</span>
+                        <span class="mr-detail">16:38 - 3rd</span>
                         
                         <span class="mr-time">12/04 3:00 PM</span>
                     </div>
@@ -3912,14 +3897,14 @@
                 <span class="tracking-title">&#128200; Tracking de Aciertos</span>
                 <div class="tracking-record">
                     <span class="tracking-record-main">
-                        <span class="wins">1W</span>
+                        <span class="wins">3W</span>
                         <span class="sep"> - </span>
-                        <span class="losses">0L</span>
+                        <span class="losses">1L</span>
                     </span>
-                    <span class="tracking-pct">100.0%</span>
+                    <span class="tracking-pct">75.0%</span>
                     
-                    <span class="tracking-streak streak-w">
-                        Racha: W1
+                    <span class="tracking-streak streak-l">
+                        Racha: L1
                     </span>
                 </div>
             </div>
@@ -3928,19 +3913,36 @@
             <div class="tracking-sports">
                 
                 
+                <span class="tracking-sport-chip">&#9918; MLB: <span class="chip-w">0W</span>-<span class="chip-l">1L</span></span>
                 
                 
-                <span class="tracking-sport-chip">&#9917; Futbol: <span class="chip-w">1W</span>-<span class="chip-l">0L</span></span>
+                
+                <span class="tracking-sport-chip">&#9917; Futbol: <span class="chip-w">3W</span>-<span class="chip-l">0L</span></span>
                 
             </div>
 
             
             <div class="tracking-recent">
-                <span class="tracking-recent-title">Ultimos 1 picks</span>
+                <span class="tracking-recent-title">Ultimos 4 picks</span>
+                
+                <div class="tracking-pick-dot lost">
+                    L
+                    <span class="dot-tooltip">STL 1.5 | 3-9</span>
+                </div>
+                
+                <div class="tracking-pick-dot won">
+                    W
+                    <span class="dot-tooltip">VIL ML | 1-2</span>
+                </div>
                 
                 <div class="tracking-pick-dot won">
                     W
                     <span class="dot-tooltip">INT ML | 3-4</span>
+                </div>
+                
+                <div class="tracking-pick-dot won">
+                    W
+                    <span class="dot-tooltip">LYON ML | 2-0</span>
                 </div>
                 
             </div>
@@ -3999,7 +4001,7 @@
                         
                         <li class="factor-injury">CLE: sin lesiones importantes | WSH: sin lesiones importantes</li>
                         
-                        <li class="factor-odds">Linea: -10.5 | O/U: 235.5 | ML: /</li>
+                        <li class="factor-odds">Linea: -10.5 | O/U: 234.5 | ML: /</li>
                         
                     </ul>
 
@@ -4009,7 +4011,7 @@
                         <span class="pred-odds-item">Spread: <span>-10.5</span></span>
                         
                         
-                        <span class="pred-odds-item">O/U: <span>235.5</span></span>
+                        <span class="pred-odds-item">O/U: <span>234.5</span></span>
                         
                         
                         
@@ -4060,7 +4062,7 @@
                         
                         <li class="factor-injury">IND: sin lesiones importantes | DET: sin lesiones importantes</li>
                         
-                        <li class="factor-odds">Linea: 14.5 | O/U: 230.5 | ML: /</li>
+                        <li class="factor-odds">Linea: 14.5 | O/U: 231.5 | ML: /</li>
                         
                     </ul>
 
@@ -4070,7 +4072,7 @@
                         <span class="pred-odds-item">Spread: <span>14.5</span></span>
                         
                         
-                        <span class="pred-odds-item">O/U: <span>230.5</span></span>
+                        <span class="pred-odds-item">O/U: <span>231.5</span></span>
                         
                         
                         
@@ -4871,7 +4873,7 @@
                             
                             <div>
                                 <div class="mlb-team-name">LAA</div>
-                                <div class="mlb-team-record">7-8</div>
+                                <div class="mlb-team-record">8-8</div>
                             </div>
                         </div>
                         <span class="mlb-vs">@</span>
@@ -4881,7 +4883,7 @@
                             
                             <div>
                                 <div class="mlb-team-name">CIN</div>
-                                <div class="mlb-team-record">9-6</div>
+                                <div class="mlb-team-record">9-7</div>
                             </div>
                         </div>
                     </div>
@@ -4918,7 +4920,7 @@
                                 <span class="mlb-pitcher-hand">(L)</span>
                             </td>
                             <td>L</td>
-                            <td>0-1</td>
+                            <td>0-2</td>
                             <td>20.0</td>
                             <td >5.85</td>
                             <td>26</td>
@@ -4935,7 +4937,7 @@
                                 <span class="mlb-pitcher-hand">(R)</span>
                             </td>
                             <td>R</td>
-                            <td>3-0</td>
+                            <td>4-0</td>
                             <td>27.0</td>
                             <td class="mlb-stat-highlight">0.33</td>
                             <td>9</td>
@@ -4958,7 +4960,7 @@
                         <div class="mlb-mobile-stats">
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">G-P</div>
-                                <div class="mlb-mobile-stat-value">0-1</div>
+                                <div class="mlb-mobile-stat-value">0-2</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">ERA</div>
@@ -4989,7 +4991,7 @@
                         <div class="mlb-mobile-stats">
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">G-P</div>
-                                <div class="mlb-mobile-stat-value">3-0</div>
+                                <div class="mlb-mobile-stat-value">4-0</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">ERA</div>
@@ -5017,7 +5019,7 @@
 
                 <div class="mlb-analysis">
                     <span class="mlb-pick-badge">PICK: LAA</span>
-                    <p class="mlb-analysis-text">Soriano, J (3-0, 0.33 ERA) lidera el staff de Los Angeles Angels con 31 ponches en 27.0 innings. WHIP de 0.67 vs 1.70 de Abbott, A favorece a LAA. CIN (9-6) vs LAA (7-8). PICK: LAA.</p>
+                    <p class="mlb-analysis-text">Soriano, J (4-0, 0.33 ERA) lidera el staff de Los Angeles Angels con 31 ponches en 27.0 innings. WHIP de 0.67 vs 1.70 de Abbott, A favorece a LAA. CIN (9-7) vs LAA (8-8). PICK: LAA.</p>
                 </div>
             </div>
             
@@ -5666,7 +5668,7 @@
                             
                             <div>
                                 <div class="mlb-team-name">WSH</div>
-                                <div class="mlb-team-record">6-8</div>
+                                <div class="mlb-team-record">7-8</div>
                             </div>
                         </div>
                         <span class="mlb-vs">@</span>
@@ -5676,7 +5678,7 @@
                             
                             <div>
                                 <div class="mlb-team-name">MIL</div>
-                                <div class="mlb-team-record">8-6</div>
+                                <div class="mlb-team-record">8-7</div>
                             </div>
                         </div>
                     </div>
@@ -5812,7 +5814,7 @@
 
                 <div class="mlb-analysis">
                     <span class="mlb-pick-badge">PICK: MIL</span>
-                    <p class="mlb-analysis-text">Woodruff, B (1-0, 4.32 ERA) lidera el staff de Milwaukee Brewers con 16 ponches en 16.2 innings. WHIP de 1.08 vs 1.40 de Littell, Z favorece a MIL. MIL (8-6) vs WSH (6-8). PICK: MIL.</p>
+                    <p class="mlb-analysis-text">Woodruff, B (1-0, 4.32 ERA) lidera el staff de Milwaukee Brewers con 16 ponches en 16.2 innings. WHIP de 1.08 vs 1.40 de Littell, Z favorece a MIL. MIL (8-7) vs WSH (7-8). PICK: MIL.</p>
                 </div>
             </div>
             
@@ -5825,7 +5827,7 @@
                             
                             <div>
                                 <div class="mlb-team-name">BOS</div>
-                                <div class="mlb-team-record">5-9</div>
+                                <div class="mlb-team-record">6-9</div>
                             </div>
                         </div>
                         <span class="mlb-vs">@</span>
@@ -5835,7 +5837,7 @@
                             
                             <div>
                                 <div class="mlb-team-name">STL</div>
-                                <div class="mlb-team-record">8-6</div>
+                                <div class="mlb-team-record">8-7</div>
                             </div>
                         </div>
                     </div>
@@ -5872,7 +5874,7 @@
                                 <span class="mlb-pitcher-hand">(R)</span>
                             </td>
                             <td>R</td>
-                            <td>1-0</td>
+                            <td>1-1</td>
                             <td>15.0</td>
                             <td class="mlb-stat-highlight">5.40</td>
                             <td>16</td>
@@ -5889,7 +5891,7 @@
                                 <span class="mlb-pitcher-hand">(R)</span>
                             </td>
                             <td>R</td>
-                            <td>0-1</td>
+                            <td>1-1</td>
                             <td>14.2</td>
                             <td >6.14</td>
                             <td>19</td>
@@ -5912,7 +5914,7 @@
                         <div class="mlb-mobile-stats">
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">G-P</div>
-                                <div class="mlb-mobile-stat-value">1-0</div>
+                                <div class="mlb-mobile-stat-value">1-1</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">ERA</div>
@@ -5943,7 +5945,7 @@
                         <div class="mlb-mobile-stats">
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">G-P</div>
-                                <div class="mlb-mobile-stat-value">0-1</div>
+                                <div class="mlb-mobile-stat-value">1-1</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">ERA</div>
@@ -5971,7 +5973,7 @@
 
                 <div class="mlb-analysis">
                     <span class="mlb-pick-badge">PICK: STL</span>
-                    <p class="mlb-analysis-text">Pallante, A (1-0, 5.40 ERA) lidera el staff de St. Louis Cardinals con 7 ponches en 15.0 innings. WHIP de 1.60 vs 1.91 de Bello, B favorece a STL. STL (8-6) vs BOS (5-9). PICK: STL.</p>
+                    <p class="mlb-analysis-text">Pallante, A (1-1, 5.40 ERA) lidera el staff de St. Louis Cardinals con 7 ponches en 15.0 innings. WHIP de 1.60 vs 1.91 de Bello, B favorece a STL. STL (8-7) vs BOS (6-9). PICK: STL.</p>
                 </div>
             </div>
             
@@ -6191,13 +6193,13 @@
                             </td>
                             <td>R</td>
                             <td>1-2</td>
-                            <td>15.0</td>
-                            <td >4.80</td>
+                            <td>16.0</td>
+                            <td >4.50</td>
                             <td>12</td>
                             <td>8</td>
                             <td>6</td>
-                            <td>22</td>
-                            <td>1.20</td>
+                            <td>24</td>
+                            <td>1.13</td>
                             <td>-</td>
                             <td>-</td>
                         </tr>
@@ -6234,15 +6236,15 @@
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">ERA</div>
-                                <div class="mlb-mobile-stat-value">4.80</div>
+                                <div class="mlb-mobile-stat-value">4.50</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">WHIP</div>
-                                <div class="mlb-mobile-stat-value">1.20</div>
+                                <div class="mlb-mobile-stat-value">1.13</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">SO</div>
-                                <div class="mlb-mobile-stat-value">22</div>
+                                <div class="mlb-mobile-stat-value">24</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">Casa</div>
@@ -6289,7 +6291,7 @@
 
                 <div class="mlb-analysis">
                     <span class="mlb-pick-badge">PICK: COL</span>
-                    <p class="mlb-analysis-text">Freeland, K (1-1, 2.30 ERA) lidera el staff de Colorado Rockies con 13 ponches en 15.2 innings. WHIP de 1.09 vs 1.20 de Pivetta, N favorece a COL. SD (9-6) vs COL (6-9). PICK: COL.</p>
+                    <p class="mlb-analysis-text">Freeland, K (1-1, 2.30 ERA) lidera el staff de Colorado Rockies con 13 ponches en 15.2 innings. WHIP de 1.09 vs 1.13 de Pivetta, N favorece a COL. SD (9-6) vs COL (6-9). PICK: COL.</p>
                 </div>
             </div>
             
@@ -6350,13 +6352,13 @@
                             </td>
                             <td>R</td>
                             <td>0-2</td>
-                            <td>18.2</td>
-                            <td class="mlb-stat-highlight">4.82</td>
+                            <td>19.2</td>
+                            <td class="mlb-stat-highlight">4.58</td>
                             <td>19</td>
                             <td>10</td>
                             <td>3</td>
-                            <td>20</td>
-                            <td>1.18</td>
+                            <td>21</td>
+                            <td>1.12</td>
                             <td>-</td>
                             <td>-</td>
                         </tr>
@@ -6393,15 +6395,15 @@
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">ERA</div>
-                                <div class="mlb-mobile-stat-value">4.82</div>
+                                <div class="mlb-mobile-stat-value">4.58</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">WHIP</div>
-                                <div class="mlb-mobile-stat-value">1.18</div>
+                                <div class="mlb-mobile-stat-value">1.12</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">SO</div>
-                                <div class="mlb-mobile-stat-value">20</div>
+                                <div class="mlb-mobile-stat-value">21</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">Casa</div>
@@ -6448,7 +6450,7 @@
 
                 <div class="mlb-analysis">
                     <span class="mlb-pick-badge">PICK: SEA</span>
-                    <p class="mlb-analysis-text">Gilbert, L (0-2, 4.82 ERA) lidera el staff de Seattle Mariners con 20 ponches en 18.2 innings. WHIP de 1.18 vs 1.68 de Bolton, C favorece a SEA. SEA (6-9) vs HOU (6-9). PICK: SEA.</p>
+                    <p class="mlb-analysis-text">Gilbert, L (0-2, 4.58 ERA) lidera el staff de Seattle Mariners con 21 ponches en 19.2 innings. WHIP de 1.12 vs 1.68 de Bolton, C favorece a SEA. SEA (6-9) vs HOU (6-9). PICK: SEA.</p>
                 </div>
             </div>
             
@@ -6509,13 +6511,13 @@
                             </td>
                             <td>R</td>
                             <td>0-1</td>
-                            <td>11.1</td>
-                            <td >6.35</td>
-                            <td>12</td>
-                            <td>8</td>
-                            <td>7</td>
-                            <td>13</td>
-                            <td>1.68</td>
+                            <td>12.0</td>
+                            <td >6.75</td>
+                            <td>14</td>
+                            <td>9</td>
+                            <td>9</td>
+                            <td>14</td>
+                            <td>1.92</td>
                             <td>-</td>
                             <td>-</td>
                         </tr>
@@ -6526,13 +6528,13 @@
                             </td>
                             <td>R</td>
                             <td>0-0</td>
-                            <td>11.2</td>
-                            <td class="mlb-stat-highlight">3.86</td>
-                            <td>8</td>
+                            <td>12.0</td>
+                            <td class="mlb-stat-highlight">3.75</td>
+                            <td>9</td>
                             <td>5</td>
-                            <td>1</td>
-                            <td>16</td>
-                            <td>0.77</td>
+                            <td>2</td>
+                            <td>17</td>
+                            <td>0.92</td>
                             <td>-</td>
                             <td>-</td>
                         </tr>
@@ -6552,15 +6554,15 @@
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">ERA</div>
-                                <div class="mlb-mobile-stat-value">6.35</div>
+                                <div class="mlb-mobile-stat-value">6.75</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">WHIP</div>
-                                <div class="mlb-mobile-stat-value">1.68</div>
+                                <div class="mlb-mobile-stat-value">1.92</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">SO</div>
-                                <div class="mlb-mobile-stat-value">13</div>
+                                <div class="mlb-mobile-stat-value">14</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">Casa</div>
@@ -6583,15 +6585,15 @@
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">ERA</div>
-                                <div class="mlb-mobile-stat-value">3.86</div>
+                                <div class="mlb-mobile-stat-value">3.75</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">WHIP</div>
-                                <div class="mlb-mobile-stat-value">0.77</div>
+                                <div class="mlb-mobile-stat-value">0.92</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">SO</div>
-                                <div class="mlb-mobile-stat-value">16</div>
+                                <div class="mlb-mobile-stat-value">17</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">Casa</div>
@@ -6607,7 +6609,7 @@
 
                 <div class="mlb-analysis">
                     <span class="mlb-pick-badge">PICK: TEX</span>
-                    <p class="mlb-analysis-text">deGrom, J (0-0, 3.86 ERA) lidera el staff de Texas Rangers con 16 ponches en 11.2 innings. WHIP de 0.77 vs 1.68 de Sasaki, R favorece a TEX. LAD (11-3) vs TEX (7-7). PICK: TEX.</p>
+                    <p class="mlb-analysis-text">deGrom, J (0-0, 3.75 ERA) lidera el staff de Texas Rangers con 17 ponches en 12.0 innings. WHIP de 0.92 vs 1.92 de Sasaki, R favorece a TEX. LAD (11-3) vs TEX (7-7). PICK: TEX.</p>
                 </div>
             </div>
             
@@ -6790,36 +6792,12 @@
         <div class="articles-grid" id="articlesGrid">
             
             <article class="article-card" data-category="General">
-                <a href="https://as.com/futbol/segunda/real-racing-club-ud-almeria-en-directo-laliga-hypermotion-hoy-en-vivo-f202604-d/" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://img.asmedia.epimg.net/resizer/v2/4MCGALR5URBV7ODTM2LUN47FRM.png?auth=0cbcc7a099b6ebd0e091be0f9b0ac4954f8c2d865613e568c41b2358d44a404c" alt="Real Racing Club - UD Almería, en directo: LaLiga Hypermotion, hoy en vivo" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">AS</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Real Racing Club - UD Almería, en directo: LaLiga Hypermotion, hoy en vivo</h2>
-                        <p class="card-summary">Sigue en directo el partido entre Racing y Almería correspondiente a la 35ª jornada de LaLiga Hypermotion que se juega hoy, domingo 12 de abril, a las 21:00 horas.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 20:40</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
                 <a href="https://as.com/futbol/primera/athletic-villarreal-en-directo-laliga-ea-sports-hoy-en-vivo-f202604-d/" target="_blank" rel="noopener">
                     
                     <span class="card-trending">&#128293; Tendencia</span>
                     
                     
-                    <img class="card-image" src="https://img.asmedia.epimg.net/resizer/v2/3LYKNVG6RVNGFO2PPWJ44LGWK4.jpg?auth=806956d0e16e70ea5321f2ec781e0f7bae1dd4aee575607fa96d3c867112bfb8" alt="Athletic - Villarreal, en directo: LaLiga EA Sports hoy, en vivo" loading="lazy"
+                    <img class="card-image" src="https://img.asmedia.epimg.net/resizer/v2/IQRKZKWLXJIRZJXXLNWXG2MSK4.jpg?auth=968f1117bbd9fa1b1f6e5c72070e92b9bca909a48f254140927ec39d8233d4b9" alt="Athletic - Villarreal, en directo: LaLiga EA Sports hoy, en vivo" loading="lazy"
                          onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
                     
                     <div class="card-body">
@@ -6831,7 +6809,127 @@
                         <p class="card-summary">Athletic - Villarreal, en directo: LaLiga EA Sports hoy, en vivo</p>
                     </div>
                     <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 20:39</span>
+                        <span class="card-date">12 Apr 2026 - 21:01</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://as.com/futbol/segunda/el-racing-impone-su-ley-f202604-n/" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://img.asmedia.epimg.net/resizer/v2/WSW27FVHGVDFRNAOIJAZBXOS3M.jpeg?auth=177252c213b467f648d9ed03ec793a21d7a54ddc84e51137d49ef92f66008b1f" alt="El Racing impone su ley" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">AS</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">El Racing impone su ley</h2>
+                        <p class="card-summary">Festival goleador del líder en un partido que acabó con las expulsiones de Lopy y Mario García. Debutó Simon Eriksson</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 21:00</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://as.com/futbol/internacional/zarpazo-del-inter-pese-a-nico-paz-f202604-n/" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://img.asmedia.epimg.net/resizer/v2/UAMX3OFYYBCIXPS5YU4E2LS3TU.jpg?auth=fd9c56ecf915cba9e56ad6d024ce165a72b87ab7153f0dcbfa18c4322f82fae8" alt="Zarpazo del Inter pese a Nico Paz" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">AS</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Zarpazo del Inter pese a Nico Paz</h2>
+                        <p class="card-summary">El Como-Inter no decepcionó y fue de los partidos más entretenidos y vivos de la temporada, terminado con una victoria importantísima para los ‘nerazzurri’.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 20:59</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://as.com/futbol/internacional/endrick-banquillo-y-revolucion-f202604-n/" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://vdmedia.as.com/mcv/diarioas/multimedia/20260412/1158576_203549_video_1200.mp4" alt="Endrick, banquillo y revolución" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">AS</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Endrick, banquillo y revolución</h2>
+                        <p class="card-summary">El brasileño fue suplente contra el Lorient, pero su entrada cambió por completo el partido. Fue determinante en los dos goles del Lyon.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 20:46</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="Futbol">
+                <a href="https://www.ole.com.ar/san-lorenzo/sanlorenzo-newells-gustavo-alvarez_0_8N7beYmqyn.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/12/R_2k-cb7o_1200x630__1.jpg" alt="El uno por uno del empate de San Lorenzo ante Newell's" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Ole</span>
+                            <span class="card-category">Futbol</span>
+                        </div>
+                        <h2 class="card-title">El uno por uno del empate de San Lorenzo ante Newell's</h2>
+                        <p class="card-summary">El Ciclón tuvo rendimientos muy bajos y lejos de lo esperado en el 0-0 ante la Lepra. Acá, los puntajes.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 17:39</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="Futbol">
+                <a href="https://www.ole.com.ar/estudiantes-rio-cuarto/estudiantes-rio-cuarto-aparto-jugadores_0_0KmZjedg3l.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/12/sO5kemtGF_1200x630__1.jpg" alt="Fuerte decisión en Estudiantes de Río Cuarto: separó del plantel a varios jugadores por tiempo indeterminado" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Ole</span>
+                            <span class="card-category">Futbol</span>
+                        </div>
+                        <h2 class="card-title">Fuerte decisión en Estudiantes de Río Cuarto: separó del plantel a varios jugadores por tiempo indeterminado</h2>
+                        <p class="card-summary">Luego de la derrota frente a Barracas Central, la dirigencia del León tomó la determinación "tras evaluar situaciones que no se alinean con la entrega, compromiso y los objetivos deportivos que nuestra institución persigue y exige".</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 17:36</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>
@@ -6915,7 +7013,7 @@
                     <span class="card-trending">&#128293; Tendencia</span>
                     
                     
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/12/JzYE4jFOQ_1200x630__1.jpg" alt="Huracán recibe a Central en el Ducó con la meta de mantenerse en zona de playoffs" loading="lazy"
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/12/cLu-9ba_L_1200x630__1.jpg" alt="Central sorprendió a Huracán y le gana 1-0 en el Ducó con su primera llegada" loading="lazy"
                          onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
                     
                     <div class="card-body">
@@ -6923,35 +7021,11 @@
                             <span class="card-source">Ole</span>
                             <span class="card-category">Futbol</span>
                         </div>
-                        <h2 class="card-title">Huracán recibe a Central en el Ducó con la meta de mantenerse en zona de playoffs</h2>
-                        <p class="card-summary">El Globo llega embalado tras la goleada ante Gimnasia y el equipo de Almirón, desgastado tras el debut en la Libertadores.</p>
+                        <h2 class="card-title">Central sorprendió a Huracán y le gana 1-0 en el Ducó con su primera llegada</h2>
+                        <p class="card-summary">El equipo de Almirón fue letal en la primera contra: asistencia de Enzo Giménez y definición de Enzo Copetti antes de los dos minutos.</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-date">12 Apr 2026 - 17:21</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://as.com/futbol/internacional/lyon-lorient-en-directo-ligue-1-hoy-en-vivo-f202604-n/" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://img.asmedia.epimg.net/resizer/v2/BIWA4BLPR5LXZHMHENEH2KSB6Q.jpg?auth=f99b495535358ae414f205a8784363b3cd8d7a41a5448e29756fee6882b158c1" alt="Lyon-Lorient, en directo: Ligue 1, hoy en vivo" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">AS</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Lyon-Lorient, en directo: Ligue 1, hoy en vivo</h2>
-                        <p class="card-summary">Lyon-Lorient, en directo: Ligue 1, hoy en vivo</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 20:18</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>
@@ -7011,7 +7085,7 @@
                     <span class="card-trending">&#128293; Tendencia</span>
                     
                     
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/03/25/qKHNeGiiK_1200x630__1.jpg" alt="Tigre busca cortar su mala racha contra Atlético Tucumán" loading="lazy"
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/12/iVCBTkeyg_1200x630__1.jpg" alt="Clima caliente en Tucumán: Atlético juega ante Tigre luego de que hinchas invadieran la cancha" loading="lazy"
                          onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
                     
                     <div class="card-body">
@@ -7019,8 +7093,8 @@
                             <span class="card-source">Ole</span>
                             <span class="card-category">Futbol</span>
                         </div>
-                        <h2 class="card-title">Tigre busca cortar su mala racha contra Atlético Tucumán</h2>
-                        <p class="card-summary">Entre todas competencias, el último partido que el ganó el Matador fue el 17/2. Busca reponerse tras empatar en el debut de Sudamericana. Seguilo en Olé.</p>
+                        <h2 class="card-title">Clima caliente en Tucumán: Atlético juega ante Tigre luego de que hinchas invadieran la cancha</h2>
+                        <p class="card-summary">Fanáticos cruzaron el alambrado y amenazaron con saltar a la cancha. Tenso clima en la interna: el Loco Díaz tuvo que acercarse a hablar con la gente. Todo se normalizó. Seguilo en Olé.</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-date">12 Apr 2026 - 17:08</span>
@@ -7077,54 +7151,6 @@
                 </a>
             </article>
             
-            <article class="article-card" data-category="Futbol">
-                <a href="https://www.ole.com.ar/futbol-internacional/italia/nico-paz-inter-lautaro-serie_0_QssOmEKZk0.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/12/alricwVxC_1200x630__1.jpg" alt="Nico Paz, jugadón y golazo contra el Inter sin Lautaro" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Ole</span>
-                            <span class="card-category">Futbol</span>
-                        </div>
-                        <h2 class="card-title">Nico Paz, jugadón y golazo contra el Inter sin Lautaro</h2>
-                        <p class="card-summary">El volante de la Selección Argentina y una noche de gloria contra el Nerazzurro: el zurdo está jugando un partidazo contra el equipo de Lautaro Martínez, ausente tras resentirse de una lesión en los últimos días.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 16:51</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="Futbol">
-                <a href="https://www.ole.com.ar/boca-juniors/tremendo-engano-alan-velasco-kevin-lomonaco-penal-boca_0_rqWRJP2whz.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/12/Y7Oa217v-_1200x630__1.jpg" alt="Le metió bidón: el tremendo engaño de Velasco a Lomónaco en el penal de Boca" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Ole</span>
-                            <span class="card-category">Futbol</span>
-                        </div>
-                        <h2 class="card-title">Le metió bidón: el tremendo engaño de Velasco a Lomónaco en el penal de Boca</h2>
-                        <p class="card-summary">El defensor de Independiente y el volante xeneize vivieron una situación muy curiosa en la previa al gol de Giménez para el 1-1. Pura picardía. Mirá el video...</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 16:35</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
             <article class="article-card" data-category="General">
                 <a href="https://as.com/baloncesto/acb/la-12-seguida-del-madrid-gestion-de-esfuerzos-y-victoria-solida-f202604-n/" target="_blank" rel="noopener">
                     
@@ -7144,30 +7170,6 @@
                     </div>
                     <div class="card-footer">
                         <span class="card-date">12 Apr 2026 - 19:34</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://as.com/futbol/internacional/como-inter-en-directo-serie-a-hoy-en-vivo-f202604-n/" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://img.asmedia.epimg.net/resizer/v2/WEDWKQIFCREO7NXWDLK2KYI7TM.JPG?auth=a32e5b11780d9303e257d70fceafc76739f244fcf3adf367b8d73609b1300263" alt="Como-Inter, en directo: Serie A, hoy en vivo" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">AS</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Como-Inter, en directo: Serie A, hoy en vivo</h2>
-                        <p class="card-summary">Como-Inter, en directo: Serie A, hoy en vivo</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 18:51</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>
@@ -7250,7 +7252,7 @@
                     <span class="card-trending">&#128293; Tendencia</span>
                     
                     
-                    <img class="card-image" src="https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/04/12/69dbfbf0ad599.jpeg" alt="¡Alfon hace el segundo!" loading="lazy"
+                    <img class="card-image" src="https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/04/12/69dc01f79bad5.jpeg" alt="¡Gol anulado a Pepe!" loading="lazy"
                          onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
                     
                     <div class="card-body">
@@ -7258,7 +7260,7 @@
                             <span class="card-source">Mundo Deportivo</span>
                             <span class="card-category">General</span>
                         </div>
-                        <h2 class="card-title">¡Alfon hace el segundo!</h2>
+                        <h2 class="card-title">¡Gol anulado a Pepe!</h2>
                         <p class="card-summary">Athletic Club - Villarreal | LaLiga EA Sports</p>
                     </div>
                     <div class="card-footer">
@@ -7317,6 +7319,29 @@
             </article>
             
             <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/beisbol/mlb/juego/_/juegoId/401814920/rangers-dodgers" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">¡Ohtani abre con jonrón por 2do juego al  hilo!</h2>
+                        <p class="card-summary">El bicampeón de Grandes Ligas busca la docena de triunfos en la temporada y el séptimo en Chávez Ravine</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 16:48</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
                 <a href="https://www.mundodeportivo.com/baloncesto/acb/20260412/1004169365/barca-logra-triunfo-reparador-surne-bilbao.html" target="_blank" rel="noopener">
                     
                     <span class="card-trending">&#128293; Tendencia</span>
@@ -7341,30 +7366,7 @@
             </article>
             
             <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/beisbol/mlb/juego/_/juegoId/401814920/rangers-dodgers" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">¡Ohtani abre con jonrón por 2do juego al  hilo!</h2>
-                        <p class="card-summary">El bicampeón de Grandes Ligas busca la docena de triunfos en la temporada y el séptimo en Chávez Ravine</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 16:31</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/futbol/mexico/nota/_/id/16565756/pumas-resultados-partidos-local-clausura-2026-efrain-juarez-liga-mx" target="_blank" rel="noopener">
+                <a href="https://espndeportes.espn.comnull" target="_blank" rel="noopener">
                     
                     <span class="card-trending">&#128293; Tendencia</span>
                     
