@@ -239,15 +239,16 @@
 
         .mr-teams {
             flex: 1;
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
             align-items: center;
+            gap: 8px;
             min-width: 0;
         }
         .mr-team {
             display: flex;
             align-items: center;
-            gap: 4px;
-            width: calc(50% - 30px);
+            gap: 5px;
             min-width: 0;
         }
         .mr-team-home { justify-content: flex-end; text-align: right; }
@@ -258,10 +259,14 @@
             object-fit: contain; flex-shrink: 0;
         }
         .mr-name {
-            color: #ccc;
+            color: var(--text-primary);
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 0.84rem;
+            letter-spacing: 0.3px;
         }
 
         .mr-score {
@@ -271,7 +276,7 @@
             background: var(--bg-surface);
             padding: 4px 10px;
             border-radius: 6px;
-            width: 60px;
+            min-width: 56px;
             justify-content: center;
             flex-shrink: 0;
         }

@@ -239,15 +239,16 @@
 
         .mr-teams {
             flex: 1;
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
             align-items: center;
+            gap: 8px;
             min-width: 0;
         }
         .mr-team {
             display: flex;
             align-items: center;
-            gap: 4px;
-            width: calc(50% - 30px);
+            gap: 5px;
             min-width: 0;
         }
         .mr-team-home { justify-content: flex-end; text-align: right; }
@@ -258,10 +259,14 @@
             object-fit: contain; flex-shrink: 0;
         }
         .mr-name {
-            color: #ccc;
+            color: var(--text-primary);
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 0.84rem;
+            letter-spacing: 0.3px;
         }
 
         .mr-score {
@@ -271,7 +276,7 @@
             background: var(--bg-surface);
             padding: 4px 10px;
             border-radius: 6px;
-            width: 60px;
+            min-width: 56px;
             justify-content: center;
             flex-shrink: 0;
         }
@@ -948,7 +953,7 @@
 <header>
     <h1>&#127942; <span>Parley</span> Sports</h1>
     <p>Noticias, pronosticos y analisis de apuestas deportivas</p>
-    <div class="update-time">Ultima actualizacion: 12/04/2026 18:07</div>
+    <div class="update-time">Ultima actualizacion: 12/04/2026 18:24</div>
     <a class="social-link" href="https://www.instagram.com/parleysports90/" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
         @parleysports90
@@ -2048,7 +2053,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">67'</span>
+                        <span class="mr-detail">84'</span>
                         
                         <span class="mr-time">12/04 4:30 PM</span>
                     </div>
@@ -2067,7 +2072,7 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">1</span>
+                                <span class="mr-score-num">3</span>
                                 <span class="mr-score-sep">-</span>
                                 <span class="mr-score-num">1</span>
                             </div>
@@ -2081,7 +2086,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">72'</span>
+                        <span class="mr-detail">90'+2'</span>
                         
                         <span class="mr-time">12/04 4:30 PM</span>
                     </div>
@@ -2219,7 +2224,7 @@
                             <div class="mr-score">
                                 <span class="mr-score-num">0</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">1</span>
+                                <span class="mr-score-num">2</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -2231,7 +2236,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">HT</span>
+                        <span class="mr-detail">62'</span>
                         
                         <span class="mr-time">12/04 5:00 PM</span>
                     </div>
@@ -2264,7 +2269,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">35'</span>
+                        <span class="mr-detail">HT</span>
                         
                         <span class="mr-time">12/04 5:30 PM</span>
                     </div>
@@ -2297,7 +2302,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">34'</span>
+                        <span class="mr-detail">HT</span>
                         
                         <span class="mr-time">12/04 5:30 PM</span>
                     </div>
@@ -2744,7 +2749,7 @@
             </div>
         </div>
         
-        <div class="league-block " data-sport="basketball">
+        <div class="league-block openopenopenopenopenopenopen" data-sport="basketball">
             <div class="league-toggle" onclick="toggleLeague(this)">
                 <div class="league-toggle-left">
                     <span class="league-icon">??</span>
@@ -2755,6 +2760,8 @@
                     
                     
                     
+                    <span class="match-count has-live">&#128308; 7 EN VIVO</span>
+                    
                     <span class="match-count">15 partidos</span>
                     <span class="arrow">&#9660;</span>
                 </div>
@@ -2762,9 +2769,9 @@
             <div class="league-matches">
                 
                     
-                    <div class="match-row scheduled">
+                    <div class="match-row live">
                         
-                        <span class="mr-status mr-sched">PROG</span>
+                        <span class="mr-status mr-live">EN VIVO</span>
                         
 
                         <div class="mr-teams">
@@ -2776,9 +2783,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">10</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">10</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -2790,12 +2797,14 @@
                         </div>
 
                         
+                        <span class="mr-detail">6:49 - 1st</span>
+                        
                         <span class="mr-time">12/04 6:00 PM</span>
                     </div>
                     
-                    <div class="match-row scheduled">
+                    <div class="match-row live">
                         
-                        <span class="mr-status mr-sched">PROG</span>
+                        <span class="mr-status mr-live">EN VIVO</span>
                         
 
                         <div class="mr-teams">
@@ -2807,9 +2816,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">23</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">11</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -2821,12 +2830,14 @@
                         </div>
 
                         
+                        <span class="mr-detail">5:22 - 1st</span>
+                        
                         <span class="mr-time">12/04 6:00 PM</span>
                     </div>
                     
-                    <div class="match-row scheduled">
+                    <div class="match-row live">
                         
-                        <span class="mr-status mr-sched">PROG</span>
+                        <span class="mr-status mr-live">EN VIVO</span>
                         
 
                         <div class="mr-teams">
@@ -2838,9 +2849,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">11</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">19</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -2852,12 +2863,14 @@
                         </div>
 
                         
+                        <span class="mr-detail">5:56 - 1st</span>
+                        
                         <span class="mr-time">12/04 6:00 PM</span>
                     </div>
                     
-                    <div class="match-row scheduled">
+                    <div class="match-row live">
                         
-                        <span class="mr-status mr-sched">PROG</span>
+                        <span class="mr-status mr-live">EN VIVO</span>
                         
 
                         <div class="mr-teams">
@@ -2869,9 +2882,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">16</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">9</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -2883,12 +2896,14 @@
                         </div>
 
                         
+                        <span class="mr-detail">5:46 - 1st</span>
+                        
                         <span class="mr-time">12/04 6:00 PM</span>
                     </div>
                     
-                    <div class="match-row scheduled">
+                    <div class="match-row live">
                         
-                        <span class="mr-status mr-sched">PROG</span>
+                        <span class="mr-status mr-live">EN VIVO</span>
                         
 
                         <div class="mr-teams">
@@ -2900,9 +2915,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">8</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">10</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -2914,12 +2929,14 @@
                         </div>
 
                         
+                        <span class="mr-detail">5:41 - 1st</span>
+                        
                         <span class="mr-time">12/04 6:00 PM</span>
                     </div>
                     
-                    <div class="match-row scheduled">
+                    <div class="match-row live">
                         
-                        <span class="mr-status mr-sched">PROG</span>
+                        <span class="mr-status mr-live">EN VIVO</span>
                         
 
                         <div class="mr-teams">
@@ -2931,9 +2948,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">14</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">9</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -2945,12 +2962,14 @@
                         </div>
 
                         
+                        <span class="mr-detail">5:37 - 1st</span>
+                        
                         <span class="mr-time">12/04 6:00 PM</span>
                     </div>
                     
-                    <div class="match-row scheduled">
+                    <div class="match-row live">
                         
-                        <span class="mr-status mr-sched">PROG</span>
+                        <span class="mr-status mr-live">EN VIVO</span>
                         
 
                         <div class="mr-teams">
@@ -2962,9 +2981,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">12</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">11</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -2975,6 +2994,8 @@
                             </div>
                         </div>
 
+                        
+                        <span class="mr-detail">6:42 - 1st</span>
                         
                         <span class="mr-time">12/04 6:00 PM</span>
                     </div>
@@ -3482,9 +3503,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">3</span>
+                                <span class="mr-score-num">5</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">2</span>
+                                <span class="mr-score-num">4</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -3496,7 +3517,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">End 3rd</span>
+                        <span class="mr-detail">Top 5th</span>
                         
                         <span class="mr-time">12/04 2:10 PM</span>
                     </div>
@@ -3608,7 +3629,7 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">6</span>
+                                <span class="mr-score-num">7</span>
                                 <span class="mr-score-sep">-</span>
                                 <span class="mr-score-num">2</span>
                             </div>
@@ -3622,7 +3643,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">End 6th</span>
+                        <span class="mr-detail">Bot 7th</span>
                         
                         <span class="mr-time">12/04 4:10 PM</span>
                     </div>
@@ -3655,7 +3676,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">End 6th</span>
+                        <span class="mr-detail">Top 8th</span>
                         
                         <span class="mr-time">12/04 4:10 PM</span>
                     </div>
@@ -3688,7 +3709,7 @@
                         </div>
 
                         
-                        <span class="mr-detail">Bot 6th</span>
+                        <span class="mr-detail">Bot 7th</span>
                         
                         <span class="mr-time">12/04 4:10 PM</span>
                     </div>
@@ -3728,7 +3749,7 @@
             </div>
         </div>
         
-        <div class="league-block " data-sport="hockey">
+        <div class="league-block openopen" data-sport="hockey">
             <div class="league-toggle" onclick="toggleLeague(this)">
                 <div class="league-toggle-left">
                     <span class="league-icon">??</span>
@@ -3738,6 +3759,8 @@
                 <div class="league-toggle-right">
                     
                     
+                    
+                    <span class="match-count has-live">&#128308; 2 EN VIVO</span>
                     
                     <span class="match-count">6 partidos</span>
                     <span class="arrow">&#9660;</span>
@@ -3777,9 +3800,9 @@
                         <span class="mr-time">12/04 3:00 PM</span>
                     </div>
                     
-                    <div class="match-row scheduled">
+                    <div class="match-row live">
                         
-                        <span class="mr-status mr-sched">PROG</span>
+                        <span class="mr-status mr-live">EN VIVO</span>
                         
 
                         <div class="mr-teams">
@@ -3805,12 +3828,14 @@
                         </div>
 
                         
+                        <span class="mr-detail">10:06 - 1st</span>
+                        
                         <span class="mr-time">12/04 6:00 PM</span>
                     </div>
                     
-                    <div class="match-row scheduled">
+                    <div class="match-row live">
                         
-                        <span class="mr-status mr-sched">PROG</span>
+                        <span class="mr-status mr-live">EN VIVO</span>
                         
 
                         <div class="mr-teams">
@@ -3822,7 +3847,7 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">1</span>
                                 <span class="mr-score-sep">-</span>
                                 <span class="mr-score-num">0</span>
                             </div>
@@ -3835,6 +3860,8 @@
                             </div>
                         </div>
 
+                        
+                        <span class="mr-detail">9:57 - 1st</span>
                         
                         <span class="mr-time">12/04 6:00 PM</span>
                     </div>
@@ -4082,128 +4109,6 @@
                     <div class="pred-card-header">
                         <div class="pred-teams">
                             
-                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/nba/500/cle.png" alt="" onerror="this.style.display='none'">
-                            
-                            <span class="pred-team-name">Cleveland Cavaliers</span>
-                            <span class="pred-vs">VS</span>
-                            
-                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/nba/500/wsh.png" alt="" onerror="this.style.display='none'">
-                            
-                            <span class="pred-team-name">Washington Wizards</span>
-                        </div>
-                        
-                        <span class="pred-time">&#128197; 12/04/2026 - 22:00</span>
-                        
-                    </div>
-
-                    <div class="pred-pick-row">
-                        <span class="pred-pick-label">CLE -10.5</span>
-                        <div class="pred-confidence">
-                            <div class="pred-conf-bar-bg">
-                                <div class="pred-conf-bar high"
-                                     style="width: 95%"></div>
-                            </div>
-                            <span class="pred-conf-text">95%</span>
-                        </div>
-                    </div>
-
-                    <ul class="pred-factors">
-                        
-                        <li class="factor-record">CLE 51-30 (0.630) vs WSH 17-64 (0.210)</li>
-                        
-                        <li class="factor-venue">CLE 26-14 en casa - WSH 6-34 de visita</li>
-                        
-                        <li class="factor-streak">CLE racha 51-30 - WSH racha 17-64</li>
-                        
-                        <li class="factor-injury">CLE: sin lesiones importantes | WSH: sin lesiones importantes</li>
-                        
-                        <li class="factor-odds">Linea: -10.5 | O/U: 234.5 | ML: /</li>
-                        
-                    </ul>
-
-                    
-                    <div class="pred-odds-row">
-                        
-                        <span class="pred-odds-item">Spread: <span>-10.5</span></span>
-                        
-                        
-                        <span class="pred-odds-item">O/U: <span>234.5</span></span>
-                        
-                        
-                        
-                        
-                        <span class="pred-odds-item">via Draft Kings</span>
-                        
-                    </div>
-                    
-                    
-                </div>
-                
-                <div class="pred-card">
-                    <div class="pred-card-header">
-                        <div class="pred-teams">
-                            
-                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/nba/500/ind.png" alt="" onerror="this.style.display='none'">
-                            
-                            <span class="pred-team-name">Indiana Pacers</span>
-                            <span class="pred-vs">VS</span>
-                            
-                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/nba/500/det.png" alt="" onerror="this.style.display='none'">
-                            
-                            <span class="pred-team-name">Detroit Pistons</span>
-                        </div>
-                        
-                        <span class="pred-time">&#128197; 12/04/2026 - 22:00</span>
-                        
-                    </div>
-
-                    <div class="pred-pick-row">
-                        <span class="pred-pick-label">DET 16.5</span>
-                        <div class="pred-confidence">
-                            <div class="pred-conf-bar-bg">
-                                <div class="pred-conf-bar high"
-                                     style="width: 95%"></div>
-                            </div>
-                            <span class="pred-conf-text">95%</span>
-                        </div>
-                    </div>
-
-                    <ul class="pred-factors">
-                        
-                        <li class="factor-record">IND 19-62 (0.235) vs DET 59-22 (0.728)</li>
-                        
-                        <li class="factor-venue">IND 11-29 en casa - DET 27-13 de visita</li>
-                        
-                        <li class="factor-streak">IND racha 19-62 - DET racha 59-22</li>
-                        
-                        <li class="factor-injury">IND: sin lesiones importantes | DET: sin lesiones importantes</li>
-                        
-                        <li class="factor-odds">Linea: 16.5 | O/U: 231.5 | ML: /</li>
-                        
-                    </ul>
-
-                    
-                    <div class="pred-odds-row">
-                        
-                        <span class="pred-odds-item">Spread: <span>16.5</span></span>
-                        
-                        
-                        <span class="pred-odds-item">O/U: <span>231.5</span></span>
-                        
-                        
-                        
-                        
-                        <span class="pred-odds-item">via Draft Kings</span>
-                        
-                    </div>
-                    
-                    
-                </div>
-                
-                <div class="pred-card">
-                    <div class="pred-card-header">
-                        <div class="pred-teams">
-                            
                             <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/nba/500/hou.png" alt="" onerror="this.style.display='none'">
                             
                             <span class="pred-team-name">Houston Rockets</span>
@@ -4250,6 +4155,128 @@
                         
                         
                         <span class="pred-odds-item">O/U: <span>228.5</span></span>
+                        
+                        
+                        
+                        
+                        <span class="pred-odds-item">via Draft Kings</span>
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="pred-card">
+                    <div class="pred-card-header">
+                        <div class="pred-teams">
+                            
+                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/nba/500/min.png" alt="" onerror="this.style.display='none'">
+                            
+                            <span class="pred-team-name">Minnesota Timberwolves</span>
+                            <span class="pred-vs">VS</span>
+                            
+                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/nba/500/no.png" alt="" onerror="this.style.display='none'">
+                            
+                            <span class="pred-team-name">New Orleans Pelicans</span>
+                        </div>
+                        
+                        <span class="pred-time">&#128197; 13/04/2026 - 00:30</span>
+                        
+                    </div>
+
+                    <div class="pred-pick-row">
+                        <span class="pred-pick-label">MIN -4.5</span>
+                        <div class="pred-confidence">
+                            <div class="pred-conf-bar-bg">
+                                <div class="pred-conf-bar high"
+                                     style="width: 95%"></div>
+                            </div>
+                            <span class="pred-conf-text">95%</span>
+                        </div>
+                    </div>
+
+                    <ul class="pred-factors">
+                        
+                        <li class="factor-record">MIN 48-33 (0.593) vs NO 26-55 (0.321)</li>
+                        
+                        <li class="factor-venue">MIN 25-15 en casa - NO 9-31 de visita</li>
+                        
+                        <li class="factor-streak">MIN racha 48-33 - NO racha 26-55</li>
+                        
+                        <li class="factor-injury">MIN: sin lesiones importantes | NO: sin lesiones importantes</li>
+                        
+                        <li class="factor-odds">Linea: -4.5 | O/U: 237.5 | ML: /</li>
+                        
+                    </ul>
+
+                    
+                    <div class="pred-odds-row">
+                        
+                        <span class="pred-odds-item">Spread: <span>-4.5</span></span>
+                        
+                        
+                        <span class="pred-odds-item">O/U: <span>237.5</span></span>
+                        
+                        
+                        
+                        
+                        <span class="pred-odds-item">via Draft Kings</span>
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="pred-card">
+                    <div class="pred-card-header">
+                        <div class="pred-teams">
+                            
+                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/nba/500/lal.png" alt="" onerror="this.style.display='none'">
+                            
+                            <span class="pred-team-name">Los Angeles Lakers</span>
+                            <span class="pred-vs">VS</span>
+                            
+                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/nba/500/utah.png" alt="" onerror="this.style.display='none'">
+                            
+                            <span class="pred-team-name">Utah Jazz</span>
+                        </div>
+                        
+                        <span class="pred-time">&#128197; 13/04/2026 - 00:30</span>
+                        
+                    </div>
+
+                    <div class="pred-pick-row">
+                        <span class="pred-pick-label">LAL -13.5</span>
+                        <div class="pred-confidence">
+                            <div class="pred-conf-bar-bg">
+                                <div class="pred-conf-bar high"
+                                     style="width: 95%"></div>
+                            </div>
+                            <span class="pred-conf-text">95%</span>
+                        </div>
+                    </div>
+
+                    <ul class="pred-factors">
+                        
+                        <li class="factor-record">LAL 52-29 (0.642) vs UTAH 22-59 (0.272)</li>
+                        
+                        <li class="factor-venue">LAL 27-13 en casa - UTAH 8-32 de visita</li>
+                        
+                        <li class="factor-streak">LAL racha 52-29 - UTAH racha 22-59</li>
+                        
+                        <li class="factor-injury">LAL: sin lesiones importantes | UTAH: sin lesiones importantes</li>
+                        
+                        <li class="factor-odds">Linea: -13.5 | O/U: 235.5 | ML: /</li>
+                        
+                    </ul>
+
+                    
+                    <div class="pred-odds-row">
+                        
+                        <span class="pred-odds-item">Spread: <span>-13.5</span></span>
+                        
+                        
+                        <span class="pred-odds-item">O/U: <span>235.5</span></span>
                         
                         
                         
@@ -4352,67 +4379,6 @@
                     <div class="pred-card-header">
                         <div class="pred-teams">
                             
-                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/nhl/500/nyi.png" alt="" onerror="this.style.display='none'">
-                            
-                            <span class="pred-team-name">New York Islanders</span>
-                            <span class="pred-vs">VS</span>
-                            
-                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/nhl/500/mtl.png" alt="" onerror="this.style.display='none'">
-                            
-                            <span class="pred-team-name">Montreal Canadiens</span>
-                        </div>
-                        
-                        <span class="pred-time">&#128197; 12/04/2026 - 22:00</span>
-                        
-                    </div>
-
-                    <div class="pred-pick-row">
-                        <span class="pred-pick-label">MTL -1.5</span>
-                        <div class="pred-confidence">
-                            <div class="pred-conf-bar-bg">
-                                <div class="pred-conf-bar medium"
-                                     style="width: 67%"></div>
-                            </div>
-                            <span class="pred-conf-text">67%</span>
-                        </div>
-                    </div>
-
-                    <ul class="pred-factors">
-                        
-                        <li class="factor-record">NYI 43-32 (0.573) vs MTL 47-23 (0.671)</li>
-                        
-                        <li class="factor-venue">NYI 22-15 en casa - MTL 23-8 de visita</li>
-                        
-                        <li class="factor-streak">NYI racha 43-32-5 - MTL racha 47-23-10</li>
-                        
-                        <li class="factor-injury">NYI: sin lesiones importantes | MTL: sin lesiones importantes</li>
-                        
-                        <li class="factor-odds">Linea: -1.5 | O/U: 6.5 | ML: /</li>
-                        
-                    </ul>
-
-                    
-                    <div class="pred-odds-row">
-                        
-                        <span class="pred-odds-item">Spread: <span>-1.5</span></span>
-                        
-                        
-                        <span class="pred-odds-item">O/U: <span>6.5</span></span>
-                        
-                        
-                        
-                        
-                        <span class="pred-odds-item">via Draft Kings</span>
-                        
-                    </div>
-                    
-                    
-                </div>
-                
-                <div class="pred-card">
-                    <div class="pred-card-header">
-                        <div class="pred-teams">
-                            
                             <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/nhl/500/cgy.png" alt="" onerror="this.style.display='none'">
                             
                             <span class="pred-team-name">Calgary Flames</span>
@@ -4456,6 +4422,67 @@
                     <div class="pred-odds-row">
                         
                         <span class="pred-odds-item">Spread: <span>1.5</span></span>
+                        
+                        
+                        <span class="pred-odds-item">O/U: <span>6.5</span></span>
+                        
+                        
+                        
+                        
+                        <span class="pred-odds-item">via Draft Kings</span>
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="pred-card">
+                    <div class="pred-card-header">
+                        <div class="pred-teams">
+                            
+                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/nhl/500/nj.png" alt="" onerror="this.style.display='none'">
+                            
+                            <span class="pred-team-name">New Jersey Devils</span>
+                            <span class="pred-vs">VS</span>
+                            
+                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/nhl/500/ott.png" alt="" onerror="this.style.display='none'">
+                            
+                            <span class="pred-team-name">Ottawa Senators</span>
+                        </div>
+                        
+                        <span class="pred-time">&#128197; 12/04/2026 - 23:00</span>
+                        
+                    </div>
+
+                    <div class="pred-pick-row">
+                        <span class="pred-pick-label">OTT -1.5</span>
+                        <div class="pred-confidence">
+                            <div class="pred-conf-bar-bg">
+                                <div class="pred-conf-bar medium"
+                                     style="width: 60%"></div>
+                            </div>
+                            <span class="pred-conf-text">60%</span>
+                        </div>
+                    </div>
+
+                    <ul class="pred-factors">
+                        
+                        <li class="factor-record">NJ 41-36 (0.532) vs OTT 43-27 (0.614)</li>
+                        
+                        <li class="factor-venue">NJ 20-17 en casa - OTT 21-15 de visita</li>
+                        
+                        <li class="factor-streak">NJ racha 41-36-3 - OTT racha 43-27-10</li>
+                        
+                        <li class="factor-injury">NJ: sin lesiones importantes | OTT: sin lesiones importantes</li>
+                        
+                        <li class="factor-odds">Linea: -1.5 | O/U: 6.5 | ML: /</li>
+                        
+                    </ul>
+
+                    
+                    <div class="pred-odds-row">
+                        
+                        <span class="pred-odds-item">Spread: <span>-1.5</span></span>
                         
                         
                         <span class="pred-odds-item">O/U: <span>6.5</span></span>
@@ -5673,13 +5700,13 @@
                             </td>
                             <td>L</td>
                             <td>1-0</td>
-                            <td>13.2</td>
-                            <td class="mlb-stat-highlight">2.63</td>
-                            <td>12</td>
-                            <td>4</td>
+                            <td>15.0</td>
+                            <td >3.60</td>
+                            <td>15</td>
+                            <td>6</td>
                             <td>2</td>
                             <td>13</td>
-                            <td>1.02</td>
+                            <td>1.13</td>
                             <td>-</td>
                             <td>-</td>
                         </tr>
@@ -5691,7 +5718,7 @@
                             <td>R</td>
                             <td>0-0</td>
                             <td>8.1</td>
-                            <td >1.08</td>
+                            <td class="mlb-stat-highlight">1.08</td>
                             <td>6</td>
                             <td>1</td>
                             <td>2</td>
@@ -5716,11 +5743,11 @@
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">ERA</div>
-                                <div class="mlb-mobile-stat-value">2.63</div>
+                                <div class="mlb-mobile-stat-value">3.60</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">WHIP</div>
-                                <div class="mlb-mobile-stat-value">1.02</div>
+                                <div class="mlb-mobile-stat-value">1.13</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">SO</div>
@@ -5770,8 +5797,8 @@
                 </div>
 
                 <div class="mlb-analysis">
-                    <span class="mlb-pick-badge">PICK: KC</span>
-                    <p class="mlb-analysis-text">Cameron, N (1-0, 2.63 ERA) lidera el staff de Kansas City Royals con 13 ponches en 13.2 innings. KC (7-8) vs CWS (5-10). PICK: KC.</p>
+                    <span class="mlb-pick-badge">PICK: CWS</span>
+                    <p class="mlb-analysis-text">Taylor, G (0-0, 1.08 ERA) lidera el staff de Chicago White Sox con 10 ponches en 8.1 innings. WHIP de 0.96 vs 1.13 de Cameron, N favorece a CWS. KC (7-8) vs CWS (5-10). PICK: CWS.</p>
                 </div>
             </div>
             
@@ -6468,13 +6495,13 @@
                             </td>
                             <td>R</td>
                             <td>0-2</td>
-                            <td>22.2</td>
-                            <td class="mlb-stat-highlight">4.37</td>
+                            <td>23.2</td>
+                            <td class="mlb-stat-highlight">4.18</td>
                             <td>22</td>
                             <td>11</td>
                             <td>4</td>
-                            <td>24</td>
-                            <td>1.15</td>
+                            <td>25</td>
+                            <td>1.10</td>
                             <td>-</td>
                             <td>-</td>
                         </tr>
@@ -6511,15 +6538,15 @@
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">ERA</div>
-                                <div class="mlb-mobile-stat-value">4.37</div>
+                                <div class="mlb-mobile-stat-value">4.18</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">WHIP</div>
-                                <div class="mlb-mobile-stat-value">1.15</div>
+                                <div class="mlb-mobile-stat-value">1.10</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">SO</div>
-                                <div class="mlb-mobile-stat-value">24</div>
+                                <div class="mlb-mobile-stat-value">25</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">Casa</div>
@@ -6566,7 +6593,7 @@
 
                 <div class="mlb-analysis">
                     <span class="mlb-pick-badge">PICK: SEA</span>
-                    <p class="mlb-analysis-text">Gilbert, L (0-2, 4.37 ERA) lidera el staff de Seattle Mariners con 24 ponches en 22.2 innings. WHIP de 1.15 vs 1.68 de Bolton, C favorece a SEA. SEA (6-9) vs HOU (6-9). PICK: SEA.</p>
+                    <p class="mlb-analysis-text">Gilbert, L (0-2, 4.18 ERA) lidera el staff de Seattle Mariners con 25 ponches en 23.2 innings. WHIP de 1.10 vs 1.68 de Bolton, C favorece a SEA. SEA (6-9) vs HOU (6-9). PICK: SEA.</p>
                 </div>
             </div>
             
@@ -6644,13 +6671,13 @@
                             </td>
                             <td>R</td>
                             <td>0-0</td>
-                            <td>15.0</td>
-                            <td class="mlb-stat-highlight">3.00</td>
+                            <td>15.2</td>
+                            <td class="mlb-stat-highlight">2.87</td>
                             <td>11</td>
                             <td>5</td>
                             <td>4</td>
-                            <td>21</td>
-                            <td>1.00</td>
+                            <td>22</td>
+                            <td>0.96</td>
                             <td>-</td>
                             <td>-</td>
                         </tr>
@@ -6701,15 +6728,15 @@
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">ERA</div>
-                                <div class="mlb-mobile-stat-value">3.00</div>
+                                <div class="mlb-mobile-stat-value">2.87</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">WHIP</div>
-                                <div class="mlb-mobile-stat-value">1.00</div>
+                                <div class="mlb-mobile-stat-value">0.96</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">SO</div>
-                                <div class="mlb-mobile-stat-value">21</div>
+                                <div class="mlb-mobile-stat-value">22</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">Casa</div>
@@ -6725,7 +6752,7 @@
 
                 <div class="mlb-analysis">
                     <span class="mlb-pick-badge">PICK: TEX</span>
-                    <p class="mlb-analysis-text">deGrom, J (0-0, 3.00 ERA) lidera el staff de Texas Rangers con 21 ponches en 15.0 innings. WHIP de 1.00 vs 1.85 de Sasaki, R favorece a TEX. LAD (11-3) vs TEX (7-7). PICK: TEX.</p>
+                    <p class="mlb-analysis-text">deGrom, J (0-0, 2.87 ERA) lidera el staff de Texas Rangers con 22 ponches en 15.2 innings. WHIP de 0.96 vs 1.85 de Sasaki, R favorece a TEX. LAD (11-3) vs TEX (7-7). PICK: TEX.</p>
                 </div>
             </div>
             
@@ -6906,6 +6933,78 @@
     </nav>
     <main class="container">
         <div class="articles-grid" id="articlesGrid">
+            
+            <article class="article-card" data-category="Futbol">
+                <a href="https://www.ole.com.ar/seleccion/argentina-clasifico-mundial-sub17-juega-qatar_0_t3uSOASh3w.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/12/CbyIgJI3A_1200x630__1.jpg" alt="Se renueva la ilusión: los datos del Mundial Sub 17 al que clasificó la Selección Argentina" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Ole</span>
+                            <span class="card-category">Futbol</span>
+                        </div>
+                        <h2 class="card-title">Se renueva la ilusión: los datos del Mundial Sub 17 al que clasificó la Selección Argentina</h2>
+                        <p class="card-summary">Con el empate ante Bolivia, la Albiceleste se aseguró su lugar en la Copa del Mundo en Qatar e irá en busca de su primera estrella.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 19:09</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="Futbol">
+                <a href="https://www.ole.com.ar/river-plate/river-racing-formacion-equipo-once-rotacion-cambios-coudet-clasico-carabobo-racing_0_iCYrufc50P.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/08/40Qt0OB2t_1200x630__1.jpg" alt="La formación de River vs. Racing, con un debut y tres cambios" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Ole</span>
+                            <span class="card-category">Futbol</span>
+                        </div>
+                        <h2 class="card-title">La formación de River vs. Racing, con un debut y tres cambios</h2>
+                        <p class="card-summary">El Chacho Coudet no rota tanto el equipo de cara a Carabobo y Boca.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 19:07</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="Futbol">
+                <a href="https://www.ole.com.ar/boca-juniors/boca-puso-primera-pensando-copa-superclasico_0_yuOECPJRMX.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/12/z2dkHJr78_1200x630__1.jpg" alt="Con Paredes, Boca puso primera para una semana de quiebre: Copa y superclásico" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Ole</span>
+                            <span class="card-category">Futbol</span>
+                        </div>
+                        <h2 class="card-title">Con Paredes, Boca puso primera para una semana de quiebre: Copa y superclásico</h2>
+                        <p class="card-summary">El plantel xeneize cambió rápido el chip y comenzó a preparar el partido del martes ante Barcelona y el de la fecha 15° ante River. Así fue la actividad del domingo...</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 19:01</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
             
             <article class="article-card" data-category="Futbol">
                 <a href="https://www.ole.com.ar/futbol-internacional/libertadores/rivales-equipos-argentinos-fecha-2-sudamericana-libertadores-llegan_0_dbU5Crt8hc.html" target="_blank" rel="noopener">
@@ -7170,30 +7269,6 @@
                 </a>
             </article>
             
-            <article class="article-card" data-category="Futbol">
-                <a href="https://www.ole.com.ar/autos/gano-canapino-titan-matias-impuso-final-turismo-pista-concordia_0_t1Fz9V8K0q.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/12/zK7c3PrUy_1200x630__1.jpg" alt="Ganó un Canapino, pero no el Titán: Matías se impuso en la final del Turismo Pista en Concordia" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Ole</span>
-                            <span class="card-category">Futbol</span>
-                        </div>
-                        <h2 class="card-title">Ganó un Canapino, pero no el Titán: Matías se impuso en la final del Turismo Pista en Concordia</h2>
-                        <p class="card-summary">En la Clase 3, el hermano menor de Agustín Canapino se quedó con la victoria y se prende en la pelea por el campeonato.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 18:05</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
             <article class="article-card" data-category="General">
                 <a href="https://as.com/futbol/segunda/el-racing-impone-su-ley-f202604-n/" target="_blank" rel="noopener">
                     
@@ -7218,30 +7293,6 @@
                 </a>
             </article>
             
-            <article class="article-card" data-category="Futbol">
-                <a href="https://www.ole.com.ar/san-lorenzo/san-lorenzo-gustavo-alvarez-newells-liga-profesional_0_YhMAbXiZbV.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/12/Zc9HMrHJx_1200x630__1.jpg" alt="La tajante frase de Álvarez tras el empate con Newell's: "no hay excusas"" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Ole</span>
-                            <span class="card-category">Futbol</span>
-                        </div>
-                        <h2 class="card-title">La tajante frase de Álvarez tras el empate con Newell's: "no hay excusas"</h2>
-                        <p class="card-summary">El DT del Ciclón hablo tras la igualdad en Rosario. "Siento que en los tres empates que tuvimos podíamos haber ganado", dijo el entrenador.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 17:59</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
             <article class="article-card" data-category="General">
                 <a href="https://as.com/futbol/internacional/endrick-banquillo-y-revolucion-f202604-n/" target="_blank" rel="noopener">
                     
@@ -7261,30 +7312,6 @@
                     </div>
                     <div class="card-footer">
                         <span class="card-date">12 Apr 2026 - 20:46</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="Futbol">
-                <a href="https://www.ole.com.ar/san-lorenzo/sanlorenzo-newells-gustavo-alvarez_0_8N7beYmqyn.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/12/R_2k-cb7o_1200x630__1.jpg" alt="El uno por uno del empate de San Lorenzo ante Newell's" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Ole</span>
-                            <span class="card-category">Futbol</span>
-                        </div>
-                        <h2 class="card-title">El uno por uno del empate de San Lorenzo ante Newell's</h2>
-                        <p class="card-summary">El Ciclón tuvo rendimientos muy bajos y lejos de lo esperado en el 0-0 ante la Lepra. Acá, los puntajes.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 17:39</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>
@@ -7404,6 +7431,190 @@
                     </div>
                     <div class="card-footer">
                         <span class="card-date">12 Apr 2026 - 20:24</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/futbol/alemania/nota/_/id/16564222/historico-marie-louise-eta-toma-el-mando-de-union-berlin-y-sera-la-primera-mujer-en-dirigir-en-la-bundesliga" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Marie-Louise Eta, 1ra. mujer en dirigir en la Bundesliga</h2>
+                        <p class="card-summary">La entrenadora de 34 años asumirá de forma interina tras la salida de Steffen Baumgart y tendrá cinco partidos para asegurar la permanencia del equipo en la máxima categoría alemana.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 18:19</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/futbol/nota/_/id/16560720/al-okhdood-vs-al-nassr-cristiano-ronaldo-marco-gol-se-acerca-a-los-1000" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Cristiano anotó  y se acerca a los 1000 goles</h2>
+                        <p class="card-summary">El portugués de 41 años volvió a ser titular y respondió con una nueva anotación.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 18:19</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/beisbol/nota/_/id/16565414/mlb-2026-phil-garner-tres-veces-all-star-ex-manager-fallece" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Fallece el tres veces All-Star y ex manager Phil Garner</h2>
+                        <p class="card-summary">Phil Garner, tres veces All-Star como jugador y manager de los Astros, falleció a los 76 años, víctima de cáncer de páncreas.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 18:19</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/beisbol/nota/_/id/16565119/mlb-2026-orioles-zach-eflin-enfoca-2027-tras-cirugia-tommy-john" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Orioles: Zach Eflin, tras la Tommy John: "Volveré mejor"</h2>
+                        <p class="card-summary">El veterano Zach Eflin se sometió a Tommy John, el miércoles pasado, para reconstruir su codo derecho y la temporada 2026 terminó para él.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 18:19</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/boxeo/nota/_/id/16564508/tyson-fury-anthony-joshua-deontay-wilder-estan-de-vuelta" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Boxeo: ¿Qué sigue para Fury, Joshua y Wilder?</h2>
+                        <p class="card-summary">Fury desafió a Joshua tras vencer a Makhmudov; el duelo entre los dos británicos luce más cerca que nunca, con Wilder también al acecho</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 18:19</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/boxeo/nota/_/id/16562000/adams-se-desploma-antes-de-pesaje-cancelada-pelea-vs-agyarko" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Se desploma antes del pesaje y cancelan su pelea</h2>
+                        <p class="card-summary">La pelea del superwelter Brandon Adams contra Caoimhin Agyarko fue cancelada después de que Adams se desplomara en su habitación de hotel antes del pesaje del viernes.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 18:19</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/futbol/mls/nota/_/id/16562307/neymar-mls-cincinnari-esperan-reunion-fichaje" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Papá de Neymar espera reunión con el Cincinnati</h2>
+                        <p class="card-summary">El papá de Neymar aguarda una reunión con ejecutivos del FC Cincinnati que busca fichar a la estrella brasileña tras el Mundial.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 18:19</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/basquetbol/nba/juego/_/juegoId/401811041/magic-celtics" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Pese a sus múltiples bajas, Celtics quieren cerrar fuerte ante Magic</h2>
+                        <p class="card-summary">Los Boston Celtics, que cuentan con varias bajas, buscan terminar la temporada regular con victoria cuando reciban al Orlando Magic.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 18:19</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>
@@ -7720,29 +7931,6 @@
             </article>
             
             <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.comnull" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Los contrastes de Pumas en casa de un torneo a otro</h2>
-                        <p class="card-summary">Los de Efraín Juárez solo tienen una derrota en ocho partidos disputados como local este torneo.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 16:30</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
                 <a href="https://www.marca.com/futbol/barcelona/2026/04/12/conjura-vestuario-barca.html" target="_blank" rel="noopener">
                     
                     <span class="card-trending">&#128293; Tendencia</span>
@@ -7785,167 +7973,6 @@
                     </div>
                     <div class="card-footer">
                         <span class="card-date">12 Apr 2026 - 18:10</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/beisbol/nota/_/id/16565414/mlb-2026-phil-garner-tres-veces-all-star-ex-manager-fallece" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Fallece el tres veces All-Star y ex manager Phil Garner</h2>
-                        <p class="card-summary">Phil Garner, tres veces All-Star como jugador y manager de los Astros, falleció a los 76 años, víctima de cáncer de páncreas.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 16:03</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/beisbol/nota/_/id/16565119/mlb-2026-orioles-zach-eflin-enfoca-2027-tras-cirugia-tommy-john" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Orioles: Zach Eflin, tras la Tommy John: "Volveré mejor"</h2>
-                        <p class="card-summary">El veterano Zach Eflin se sometió a Tommy John, el miércoles pasado, para reconstruir su codo derecho y la temporada 2026 terminó para él.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 16:03</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/boxeo/nota/_/id/16564508/tyson-fury-anthony-joshua-deontay-wilder-estan-de-vuelta" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Boxeo: ¿Qué sigue para Fury, Joshua y Wilder?</h2>
-                        <p class="card-summary">Fury desafió a Joshua tras vencer a Makhmudov; el duelo entre los dos británicos luce más cerca que nunca, con Wilder también al acecho</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 16:03</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/futbol/alemania/nota/_/id/16564222/historico-marie-louise-eta-toma-el-mando-de-union-berlin-y-sera-la-primera-mujer-en-dirigir-en-la-bundesliga" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Marie-Louise Eta, 1ra. mujer en dirigir en la Bundesliga</h2>
-                        <p class="card-summary">La entrenadora de 34 años asumirá de forma interina tras la salida de Steffen Baumgart y tendrá cinco partidos para asegurar la permanencia del equipo en la máxima categoría alemana.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 16:03</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/boxeo/nota/_/id/16562000/adams-se-desploma-antes-de-pesaje-cancelada-pelea-vs-agyarko" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Se desploma antes del pesaje y cancelan su pelea</h2>
-                        <p class="card-summary">La pelea del superwelter Brandon Adams contra Caoimhin Agyarko fue cancelada después de que Adams se desplomara en su habitación de hotel antes del pesaje del viernes.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 16:03</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/futbol/mls/nota/_/id/16562307/neymar-mls-cincinnari-esperan-reunion-fichaje" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Papá de Neymar espera reunión con el Cincinnati</h2>
-                        <p class="card-summary">El papá de Neymar aguarda una reunión con ejecutivos del FC Cincinnati que busca fichar a la estrella brasileña tras el Mundial.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 16:03</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/futbol/nota/_/id/16560720/al-okhdood-vs-al-nassr-cristiano-ronaldo-marco-gol-se-acerca-a-los-1000" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Cristiano anotó  y se acerca a los 1000 goles</h2>
-                        <p class="card-summary">El portugués de 41 años volvió a ser titular y respondió con una nueva anotación.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 16:03</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>
