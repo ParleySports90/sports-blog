@@ -470,10 +470,293 @@
             min-width: 100px;
         }
 
+        /* ======================== */
+        /* TRACKING WIDGET         */
+        /* ======================== */
+        .tracking-widget {
+            background: linear-gradient(135deg, #141428 0%, #1a1a2e 100%);
+            border: 1px solid #2a2a4e;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        .tracking-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .tracking-title {
+            font-size: 1rem;
+            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .tracking-record {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .tracking-record-main {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #fff;
+        }
+        .tracking-record-main .wins { color: #4caf50; }
+        .tracking-record-main .losses { color: #f44336; }
+        .tracking-record-main .sep { color: #555; }
+        .tracking-pct {
+            background: #1a3d1f;
+            color: #4caf50;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+        .tracking-streak {
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            font-weight: 700;
+        }
+        .tracking-streak.streak-w { background: #1a3d1f; color: #4caf50; }
+        .tracking-streak.streak-l { background: #3d1a1a; color: #f44336; }
+
+        .tracking-sports {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+        .tracking-sport-chip {
+            background: #1a1a2e;
+            border: 1px solid #2a2a3e;
+            padding: 4px 12px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            color: #aaa;
+        }
+        .tracking-sport-chip .chip-w { color: #4caf50; font-weight: 700; }
+        .tracking-sport-chip .chip-l { color: #f44336; font-weight: 700; }
+
+        .tracking-recent {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .tracking-recent-title {
+            color: #888;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            width: 100%;
+        }
+        .tracking-pick-dot {
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.72rem;
+            font-weight: 700;
+            cursor: default;
+            position: relative;
+        }
+        .tracking-pick-dot.won { background: #1a3d1f; color: #4caf50; border: 1px solid #2d5a32; }
+        .tracking-pick-dot.lost { background: #3d1a1a; color: #f44336; border: 1px solid #5a2d2d; }
+        .tracking-pick-dot .dot-tooltip {
+            display: none;
+            position: absolute;
+            bottom: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #222;
+            color: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.68rem;
+            white-space: nowrap;
+            z-index: 10;
+        }
+        .tracking-pick-dot:hover .dot-tooltip { display: block; }
+
         footer {
             text-align: center; padding: 25px; color: #444;
             font-size: 0.75rem; border-top: 1px solid #1a1a1a; margin-top: 30px;
         }
+
+        /* ======================== */
+        /* MLB GUIDE SECTION       */
+        /* ======================== */
+        .mlb-guide-wrapper {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        .mlb-guide-header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+            border: 1px solid #e94560;
+            border-radius: 10px;
+            padding: 18px 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .mlb-guide-title {
+            font-size: 1.3rem;
+            color: #fff;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        .mlb-guide-title span { color: #e94560; }
+        .mlb-guide-subtitle {
+            color: #8899aa;
+            font-size: 0.78rem;
+            margin-top: 4px;
+        }
+
+        .mlb-matchup-card {
+            background: #141414;
+            border: 1px solid #222;
+            border-radius: 10px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            transition: border-color 0.2s;
+        }
+        .mlb-matchup-card:hover { border-color: #e94560; }
+
+        .mlb-matchup-header {
+            background: #1a1a2e;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .mlb-matchup-teams {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .mlb-team-block {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .mlb-team-logo {
+            width: 28px; height: 28px;
+            object-fit: contain;
+        }
+        .mlb-team-name {
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        .mlb-team-record {
+            color: #888;
+            font-size: 0.72rem;
+        }
+        .mlb-vs {
+            color: #e94560;
+            font-weight: 800;
+            font-size: 0.8rem;
+        }
+        .mlb-matchup-meta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .mlb-game-time {
+            color: #64b5f6;
+            font-size: 0.75rem;
+            background: #0d2d50;
+            padding: 3px 10px;
+            border-radius: 4px;
+        }
+        .mlb-venue {
+            color: #666;
+            font-size: 0.7rem;
+        }
+
+        /* Pitcher stats table */
+        .mlb-pitchers-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.78rem;
+        }
+        .mlb-pitchers-table thead th {
+            background: #111;
+            color: #888;
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 8px 6px;
+            text-align: center;
+            border-bottom: 1px solid #222;
+        }
+        .mlb-pitchers-table thead th:first-child { text-align: left; padding-left: 16px; }
+        .mlb-pitchers-table tbody td {
+            padding: 10px 6px;
+            text-align: center;
+            color: #ccc;
+            border-bottom: 1px solid #1a1a1a;
+        }
+        .mlb-pitchers-table tbody td:first-child { text-align: left; padding-left: 16px; }
+        .mlb-pitcher-name {
+            color: #fff;
+            font-weight: 600;
+        }
+        .mlb-pitcher-hand {
+            color: #e94560;
+            font-size: 0.68rem;
+            font-weight: 700;
+        }
+        .mlb-pitcher-home-row td { background: #0e1420; }
+        .mlb-pitcher-away-row td { background: #140e0e; }
+
+        .mlb-stat-highlight {
+            color: #4caf50;
+            font-weight: 700;
+        }
+
+        /* Pick & Analysis */
+        .mlb-analysis {
+            padding: 14px 16px;
+            border-top: 1px solid #1e1e1e;
+        }
+        .mlb-pick-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #e94560, #c73050);
+            color: #fff;
+            padding: 4px 14px;
+            border-radius: 5px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .mlb-analysis-text {
+            color: #999;
+            font-size: 0.8rem;
+            line-height: 1.6;
+        }
+        .mlb-no-games {
+            text-align: center;
+            color: #555;
+            font-style: italic;
+            padding: 40px 0;
+            font-size: 0.9rem;
+        }
+
+        /* MLB Mobile cards */
+        .mlb-mobile-card { display: none; }
 
         /* Responsive */
         @media (max-width: 768px) {
@@ -485,6 +768,49 @@
             .pred-teams { flex-wrap: wrap; }
             .pred-pick-row { flex-direction: column; align-items: flex-start; }
             .pred-conf-bar-bg { max-width: 150px; }
+
+            /* MLB Guide responsive */
+            .mlb-pitchers-table { display: none; }
+            .mlb-mobile-card { display: block; }
+            .mlb-mobile-pitcher {
+                padding: 12px 16px;
+                border-bottom: 1px solid #1a1a1a;
+            }
+            .mlb-mobile-pitcher-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 8px;
+            }
+            .mlb-mobile-pitcher-name {
+                color: #fff;
+                font-weight: 600;
+                font-size: 0.85rem;
+            }
+            .mlb-mobile-stats {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 6px;
+            }
+            .mlb-mobile-stat {
+                background: #1a1a2e;
+                padding: 5px 8px;
+                border-radius: 5px;
+                text-align: center;
+            }
+            .mlb-mobile-stat-label {
+                color: #888;
+                font-size: 0.6rem;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            .mlb-mobile-stat-value {
+                color: #fff;
+                font-size: 0.82rem;
+                font-weight: 600;
+            }
+            .mlb-guide-title { font-size: 1rem; letter-spacing: 1px; }
+            .mlb-matchup-header { flex-direction: column; align-items: flex-start; }
         }
     </style>
 </head>
@@ -499,6 +825,7 @@
 <nav class="main-nav">
     <button class="nav-tab active" onclick="switchSection('scores', this)">&#127919; Resultados</button>
     <button class="nav-tab" onclick="switchSection('predictions', this)">&#127183; Pronosticos</button>
+    <button class="nav-tab" onclick="switchSection('mlbguide', this)">&#9918; Guia MLB</button>
     <button class="nav-tab" onclick="switchSection('news', this)">&#128240; Noticias</button>
 </nav>
 
@@ -595,6 +922,55 @@
     </div>
 
     <div class="predictions-wrapper">
+
+        {% if tracking and tracking.has_data %}
+        <div class="tracking-widget">
+            <div class="tracking-header">
+                <span class="tracking-title">&#128200; Tracking de Aciertos</span>
+                <div class="tracking-record">
+                    <span class="tracking-record-main">
+                        <span class="wins">{{ tracking.stats.wins }}W</span>
+                        <span class="sep"> - </span>
+                        <span class="losses">{{ tracking.stats.losses }}L</span>
+                    </span>
+                    <span class="tracking-pct">{{ tracking.stats.win_pct }}%</span>
+                    {% set streak = tracking.stats.current_streak %}
+                    <span class="tracking-streak {% if streak.startswith('W') %}streak-w{% else %}streak-l{% endif %}">
+                        Racha: {{ streak }}
+                    </span>
+                </div>
+            </div>
+
+            {% set by_sport = tracking.stats.by_sport %}
+            <div class="tracking-sports">
+                {% if by_sport.basketball.w + by_sport.basketball.l > 0 %}
+                <span class="tracking-sport-chip">&#127936; NBA: <span class="chip-w">{{ by_sport.basketball.w }}W</span>-<span class="chip-l">{{ by_sport.basketball.l }}L</span></span>
+                {% endif %}
+                {% if by_sport.baseball.w + by_sport.baseball.l > 0 %}
+                <span class="tracking-sport-chip">&#9918; MLB: <span class="chip-w">{{ by_sport.baseball.w }}W</span>-<span class="chip-l">{{ by_sport.baseball.l }}L</span></span>
+                {% endif %}
+                {% if by_sport.hockey.w + by_sport.hockey.l > 0 %}
+                <span class="tracking-sport-chip">&#127954; NHL: <span class="chip-w">{{ by_sport.hockey.w }}W</span>-<span class="chip-l">{{ by_sport.hockey.l }}L</span></span>
+                {% endif %}
+                {% if by_sport.futbol.w + by_sport.futbol.l > 0 %}
+                <span class="tracking-sport-chip">&#9917; Futbol: <span class="chip-w">{{ by_sport.futbol.w }}W</span>-<span class="chip-l">{{ by_sport.futbol.l }}L</span></span>
+                {% endif %}
+            </div>
+
+            {% if tracking.recent_picks %}
+            <div class="tracking-recent">
+                <span class="tracking-recent-title">Ultimos {{ tracking.recent_picks|length }} picks</span>
+                {% for rp in tracking.recent_picks %}
+                <div class="tracking-pick-dot {{ rp.status }}">
+                    {% if rp.status == 'won' %}W{% else %}L{% endif %}
+                    <span class="dot-tooltip">{{ rp.pick_label }} | {{ rp.home_score }}-{{ rp.away_score }}</span>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+
         {% for sport_key, sport_data in predictions.items() %}
         <div class="pred-sport-group" data-pred-sport="{{ sport_key }}">
             <div class="pred-sport-header">
@@ -695,6 +1071,186 @@
 
         {% if not predictions %}
         <p class="pred-empty" style="text-align:center; padding: 40px 0;">No hay pronosticos disponibles. Ejecuta <code>python main.py build</code> para generar.</p>
+        {% endif %}
+    </div>
+</div>
+
+<!-- =================== -->
+<!-- MLB GUIDE SECTION   -->
+<!-- =================== -->
+<div id="section-mlbguide" class="section">
+    <div class="mlb-guide-wrapper">
+
+        <div class="mlb-guide-header">
+            <div class="mlb-guide-title">&#9918; <span>GUIA MLB</span> — TEMPORADA {{ year }}</div>
+            <div class="mlb-guide-subtitle">Lanzadores Probables | Stats | Picks del Dia</div>
+        </div>
+
+        {% if mlb_guide %}
+            {% for m in mlb_guide %}
+            <div class="mlb-matchup-card">
+                <div class="mlb-matchup-header">
+                    <div class="mlb-matchup-teams">
+                        <div class="mlb-team-block">
+                            {% if m.away_logo %}
+                            <img class="mlb-team-logo" src="{{ m.away_logo }}" alt="" onerror="this.style.display='none'">
+                            {% endif %}
+                            <div>
+                                <div class="mlb-team-name">{{ m.away_abbr }}</div>
+                                <div class="mlb-team-record">{{ m.away_record }}</div>
+                            </div>
+                        </div>
+                        <span class="mlb-vs">@</span>
+                        <div class="mlb-team-block">
+                            {% if m.home_logo %}
+                            <img class="mlb-team-logo" src="{{ m.home_logo }}" alt="" onerror="this.style.display='none'">
+                            {% endif %}
+                            <div>
+                                <div class="mlb-team-name">{{ m.home_abbr }}</div>
+                                <div class="mlb-team-record">{{ m.home_record }}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mlb-matchup-meta">
+                        {% if m.game_time %}
+                        <span class="mlb-game-time">&#128337; {{ m.game_time }}</span>
+                        {% endif %}
+                        {% if m.venue %}
+                        <span class="mlb-venue">{{ m.venue }}</span>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- Desktop: tabla de stats -->
+                <table class="mlb-pitchers-table">
+                    <thead>
+                        <tr>
+                            <th>Lanzador</th>
+                            <th>M</th>
+                            <th>G-P</th>
+                            <th>IL</th>
+                            <th>ERA</th>
+                            <th>HP</th>
+                            <th>CL</th>
+                            <th>BB</th>
+                            <th>SO</th>
+                            <th>WHIP</th>
+                            <th>Casa</th>
+                            <th>Ruta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="mlb-pitcher-home-row">
+                            <td>
+                                <span class="mlb-pitcher-name">{{ m.home_pitcher.name }}</span>
+                                <span class="mlb-pitcher-hand">({{ m.home_pitcher.hand }})</span>
+                            </td>
+                            <td>{{ m.home_pitcher.hand }}</td>
+                            <td>{{ m.home_pitcher.record }}</td>
+                            <td>{{ m.home_pitcher.ip }}</td>
+                            <td {% if m.pick == m.home_abbr %}class="mlb-stat-highlight"{% endif %}>{{ m.home_pitcher.era }}</td>
+                            <td>{{ m.home_pitcher.hits }}</td>
+                            <td>{{ m.home_pitcher.er }}</td>
+                            <td>{{ m.home_pitcher.bb }}</td>
+                            <td>{{ m.home_pitcher.so }}</td>
+                            <td>{{ m.home_pitcher.whip }}</td>
+                            <td>{{ m.home_pitcher.home_era }}</td>
+                            <td>{{ m.home_pitcher.away_era }}</td>
+                        </tr>
+                        <tr class="mlb-pitcher-away-row">
+                            <td>
+                                <span class="mlb-pitcher-name">{{ m.away_pitcher.name }}</span>
+                                <span class="mlb-pitcher-hand">({{ m.away_pitcher.hand }})</span>
+                            </td>
+                            <td>{{ m.away_pitcher.hand }}</td>
+                            <td>{{ m.away_pitcher.record }}</td>
+                            <td>{{ m.away_pitcher.ip }}</td>
+                            <td {% if m.pick == m.away_abbr %}class="mlb-stat-highlight"{% endif %}>{{ m.away_pitcher.era }}</td>
+                            <td>{{ m.away_pitcher.hits }}</td>
+                            <td>{{ m.away_pitcher.er }}</td>
+                            <td>{{ m.away_pitcher.bb }}</td>
+                            <td>{{ m.away_pitcher.so }}</td>
+                            <td>{{ m.away_pitcher.whip }}</td>
+                            <td>{{ m.away_pitcher.home_era }}</td>
+                            <td>{{ m.away_pitcher.away_era }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Mobile: cards -->
+                <div class="mlb-mobile-card">
+                    <div class="mlb-mobile-pitcher">
+                        <div class="mlb-mobile-pitcher-header">
+                            <span class="mlb-mobile-pitcher-name">{{ m.home_pitcher.name }} ({{ m.home_pitcher.hand }}) — {{ m.home_abbr }}</span>
+                        </div>
+                        <div class="mlb-mobile-stats">
+                            <div class="mlb-mobile-stat">
+                                <div class="mlb-mobile-stat-label">G-P</div>
+                                <div class="mlb-mobile-stat-value">{{ m.home_pitcher.record }}</div>
+                            </div>
+                            <div class="mlb-mobile-stat">
+                                <div class="mlb-mobile-stat-label">ERA</div>
+                                <div class="mlb-mobile-stat-value">{{ m.home_pitcher.era }}</div>
+                            </div>
+                            <div class="mlb-mobile-stat">
+                                <div class="mlb-mobile-stat-label">WHIP</div>
+                                <div class="mlb-mobile-stat-value">{{ m.home_pitcher.whip }}</div>
+                            </div>
+                            <div class="mlb-mobile-stat">
+                                <div class="mlb-mobile-stat-label">SO</div>
+                                <div class="mlb-mobile-stat-value">{{ m.home_pitcher.so }}</div>
+                            </div>
+                            <div class="mlb-mobile-stat">
+                                <div class="mlb-mobile-stat-label">Casa</div>
+                                <div class="mlb-mobile-stat-value">{{ m.home_pitcher.home_era }}</div>
+                            </div>
+                            <div class="mlb-mobile-stat">
+                                <div class="mlb-mobile-stat-label">Ruta</div>
+                                <div class="mlb-mobile-stat-value">{{ m.home_pitcher.away_era }}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mlb-mobile-pitcher">
+                        <div class="mlb-mobile-pitcher-header">
+                            <span class="mlb-mobile-pitcher-name">{{ m.away_pitcher.name }} ({{ m.away_pitcher.hand }}) — {{ m.away_abbr }}</span>
+                        </div>
+                        <div class="mlb-mobile-stats">
+                            <div class="mlb-mobile-stat">
+                                <div class="mlb-mobile-stat-label">G-P</div>
+                                <div class="mlb-mobile-stat-value">{{ m.away_pitcher.record }}</div>
+                            </div>
+                            <div class="mlb-mobile-stat">
+                                <div class="mlb-mobile-stat-label">ERA</div>
+                                <div class="mlb-mobile-stat-value">{{ m.away_pitcher.era }}</div>
+                            </div>
+                            <div class="mlb-mobile-stat">
+                                <div class="mlb-mobile-stat-label">WHIP</div>
+                                <div class="mlb-mobile-stat-value">{{ m.away_pitcher.whip }}</div>
+                            </div>
+                            <div class="mlb-mobile-stat">
+                                <div class="mlb-mobile-stat-label">SO</div>
+                                <div class="mlb-mobile-stat-value">{{ m.away_pitcher.so }}</div>
+                            </div>
+                            <div class="mlb-mobile-stat">
+                                <div class="mlb-mobile-stat-label">Casa</div>
+                                <div class="mlb-mobile-stat-value">{{ m.away_pitcher.home_era }}</div>
+                            </div>
+                            <div class="mlb-mobile-stat">
+                                <div class="mlb-mobile-stat-label">Ruta</div>
+                                <div class="mlb-mobile-stat-value">{{ m.away_pitcher.away_era }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mlb-analysis">
+                    <span class="mlb-pick-badge">PICK: {{ m.pick }}</span>
+                    <p class="mlb-analysis-text">{{ m.analysis }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <p class="mlb-no-games">Sin juegos de MLB programados para hoy. Ejecuta <code>python main.py build</code> para generar.</p>
         {% endif %}
     </div>
 </div>

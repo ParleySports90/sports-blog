@@ -25,13 +25,29 @@ def generate_site(articles, scores=None, predictions=None):
         else:
             article["date_str"] = "Sin fecha"
 
+    # Obtener datos de tracking
+    tracking_data = {"stats": {}, "recent_picks": [], "has_data": False}
+    try:
+        from tracker import get_tracking_data
+        tracking_data = get_tracking_data()
+    except Exception:
+        pass
+
+    # Extraer guia MLB de predictions si existe
+    mlb_guide = []
+    preds = predictions or {}
+    if "baseball" in preds and "mlb_guide" in preds["baseball"]:
+        mlb_guide = preds["baseball"]["mlb_guide"]
+
     html = template.render(
         blog_title=config.BLOG_TITLE,
         blog_description=config.BLOG_DESCRIPTION,
         articles=articles,
         categories=categories,
         scores=scores or {},
-        predictions=predictions or {},
+        predictions=preds,
+        tracking=tracking_data,
+        mlb_guide=mlb_guide,
         last_updated=datetime.now().strftime("%d/%m/%Y %H:%M"),
         year=datetime.now().year,
     )

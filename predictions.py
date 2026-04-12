@@ -717,6 +717,23 @@ def fetch_all_predictions(min_picks=3, confidence_threshold=55):
             print(f"\n  [{data['name']}] {len(data['picks'])} picks seleccionados")
 
     print(f"\n[OK] Total: {total_picks} pronosticos generados")
+
+    # Guardar picks en historial de tracking
+    try:
+        from tracker import save_picks
+        save_picks(all_predictions)
+    except Exception as e:
+        print(f"  [!] Error guardando picks en tracker: {e}")
+
+    # Agregar Guia MLB detallada
+    try:
+        from mlb_guide import generate_mlb_guide
+        mlb_guide = generate_mlb_guide()
+        if mlb_guide:
+            all_predictions["baseball"]["mlb_guide"] = mlb_guide
+    except Exception as e:
+        print(f"  [!] Error generando Guia MLB: {e}")
+
     return all_predictions
 
 

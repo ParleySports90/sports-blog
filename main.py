@@ -6,6 +6,8 @@ Uso:
     python main.py scores       - Solo actualiza resultados deportivos
     python main.py news         - Solo actualiza noticias
     python main.py predictions  - Solo genera pronosticos deportivos
+    python main.py mlb          - Muestra Guia MLB en consola
+    python main.py tracking     - Muestra estadisticas de aciertos en consola
     python main.py schedule     - Regenera automaticamente en horarios definidos
     python main.py open         - Abre el blog en el navegador
 """
@@ -20,10 +22,15 @@ from scraper import fetch_all_feeds
 from scores import fetch_all_scores
 from predictions import fetch_all_predictions, print_predictions
 from generator import generate_site
+from tracker import check_results, print_tracking_stats
 
 
 def cmd_build():
     """Obtiene noticias, resultados y pronosticos, genera el sitio completo."""
+    # Verificar resultados de picks pendientes antes de generar
+    print("[*] Verificando resultados de picks pendientes...")
+    check_results()
+
     articles = fetch_all_feeds()
     scores = fetch_all_scores()
     predictions = fetch_all_predictions(
@@ -105,6 +112,19 @@ def cmd_scores_silent():
         print(f"[ERROR] Actualizacion fallida: {e}")
 
 
+def cmd_mlb():
+    """Muestra la Guia MLB del dia en consola."""
+    from mlb_guide import generate_mlb_guide, print_mlb_guide
+    matchups = generate_mlb_guide()
+    print_mlb_guide(matchups)
+
+
+def cmd_tracking():
+    """Muestra estadisticas de tracking de aciertos."""
+    check_results()
+    print_tracking_stats()
+
+
 def cmd_open():
     """Abre el blog en el navegador."""
     path = os.path.abspath(os.path.join(config.OUTPUT_DIR, "index.html"))
@@ -130,6 +150,10 @@ def main():
         cmd_news()
     elif command == "predictions":
         cmd_predictions()
+    elif command == "mlb":
+        cmd_mlb()
+    elif command == "tracking":
+        cmd_tracking()
     elif command == "schedule":
         cmd_schedule()
     elif command == "open":
