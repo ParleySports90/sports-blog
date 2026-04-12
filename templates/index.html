@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ blog_title }}</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            border-bottom: 3px solid #e94560;
+            padding: 15px 0;
+            text-align: center;
+        }
+        header h1 { font-size: 1.8rem; color: #fff; text-transform: uppercase; letter-spacing: 3px; }
+        header h1 span { color: #e94560; }
+        header p { color: #8899aa; font-size: 0.85rem; margin-top: 3px; }
+        .update-time { color: #e94560; font-size: 0.75rem; margin-top: 5px; }
+
+        /* Main Nav */
+        .main-nav {
+            background: #111;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid #222;
+        }
+        .nav-tab {
+            background: none; color: #888; border: none;
+            padding: 12px 28px; cursor: pointer; font-size: 0.9rem;
+            font-weight: bold; text-transform: uppercase; letter-spacing: 1px;
+            border-bottom: 3px solid transparent; transition: all 0.3s;
+        }
+        .nav-tab:hover { color: #fff; }
+        .nav-tab.active { color: #e94560; border-bottom-color: #e94560; }
+
+        .section { display: none; }
+        .section.active { display: block; }
+
+        /* ======================== */
+        /* SCORES - Compact Layout  */
+        /* ======================== */
+        .scores-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        /* Sport filter pills */
+        .sport-filters {
+            background: #0d0d0d;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #1a1a1a;
+        }
+        .pill {
+            background: #1a1a2e; color: #aaa; border: 1px solid #2a2a3e;
+            padding: 4px 14px; border-radius: 15px; cursor: pointer;
+            font-size: 0.78rem; transition: all 0.2s;
+        }
+        .pill:hover, .pill.active { background: #e94560; color: #fff; border-color: #e94560; }
+
+        /* League accordion */
+        .league-block {
+            margin-bottom: 4px;
+        }
+
+        .league-toggle {
+            width: 100%;
+            background: #141414;
+            border: 1px solid #1e1e1e;
+            border-radius: 6px;
+            padding: 10px 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .league-toggle:hover { background: #1a1a2e; border-color: #333; }
+
+        .league-toggle-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .league-icon { font-size: 1.1rem; }
+        .league-name { font-size: 0.9rem; color: #fff; font-weight: 600; }
+        .league-country { color: #555; font-size: 0.7rem; margin-left: 6px; }
+
+        .league-toggle-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .match-count {
+            background: #1a1a2e; color: #888;
+            padding: 2px 8px; border-radius: 10px; font-size: 0.7rem;
+        }
+        .match-count.has-live { background: #e94560; color: #fff; }
+        .arrow {
+            color: #555; font-size: 0.7rem;
+            transition: transform 0.2s;
+        }
+        .league-block.open .arrow { transform: rotate(180deg); }
+
+        /* Match list inside accordion */
+        .league-matches {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background: #0e0e0e;
+            border-left: 2px solid #1a1a2e;
+            margin-left: 15px;
+            margin-bottom: 2px;
+        }
+        .league-block.open .league-matches { max-height: 2000px; }
+        .league-block.open .league-toggle { border-color: #e94560; background: #1a1a2e; }
+
+        .no-matches-msg {
+            color: #444; font-size: 0.78rem; padding: 10px 14px; font-style: italic;
+        }
+
+        /* Single match row */
+        .match-row {
+            display: flex;
+            align-items: center;
+            padding: 7px 12px;
+            border-bottom: 1px solid #151515;
+            font-size: 0.82rem;
+            gap: 8px;
+        }
+        .match-row:last-child { border-bottom: none; }
+        .match-row:hover { background: #141420; }
+
+        .match-row.live { border-left: 2px solid #e94560; }
+        .match-row.finished { border-left: 2px solid #4caf50; }
+        .match-row.scheduled { border-left: 2px solid #2196f3; }
+
+        .mr-status {
+            min-width: 58px;
+            text-align: center;
+            font-size: 0.65rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .mr-live { background: #e94560; color: #fff; animation: pulse 1.5s infinite; }
+        .mr-final { background: #1b3d1f; color: #4caf50; }
+        .mr-sched { background: #0d2d50; color: #64b5f6; }
+
+        @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.5} }
+
+        .mr-teams {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            min-width: 0;
+        }
+        .mr-team {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            flex: 1;
+            min-width: 0;
+        }
+        .mr-team-home { justify-content: flex-end; text-align: right; }
+        .mr-team-away { justify-content: flex-start; }
+
+        .mr-logo {
+            width: 18px; height: 18px;
+            object-fit: contain; flex-shrink: 0;
+        }
+        .mr-name {
+            color: #ccc;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .mr-score {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background: #1a1a2e;
+            padding: 3px 8px;
+            border-radius: 4px;
+            min-width: 50px;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .mr-score-num { color: #fff; font-weight: bold; font-size: 0.9rem; min-width: 14px; text-align: center; }
+        .mr-score-sep { color: #e94560; font-size: 0.75rem; }
+
+        .mr-time { color: #555; font-size: 0.68rem; min-width: 45px; text-align: right; }
+
+        /* ======================== */
+        /* NEWS SECTION             */
+        /* ======================== */
+        .categories {
+            background: #0d0d0d; padding: 10px 20px;
+            display: flex; justify-content: center;
+            gap: 8px; flex-wrap: wrap;
+            border-bottom: 1px solid #1a1a1a;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 25px 20px; }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        .article-card {
+            background: #141414; border: 1px solid #222;
+            border-radius: 10px; overflow: hidden;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .article-card:hover { transform: translateY(-3px); border-color: #e94560; }
+        .article-card a { text-decoration: none; color: inherit; }
+        .card-image { width: 100%; height: 200px; object-fit: cover; background: #1a1a2e; }
+        .card-image-placeholder {
+            width: 100%; height: 200px;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            display: flex; align-items: center; justify-content: center; font-size: 3rem;
+        }
+        .card-body { padding: 15px; }
+        .card-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .card-source {
+            background: #e94560; color: #fff;
+            padding: 2px 10px; border-radius: 12px;
+            font-size: 0.75rem; font-weight: bold;
+        }
+        .card-category { color: #e94560; font-size: 0.75rem; font-weight: bold; text-transform: uppercase; }
+        .card-trending {
+            position: absolute; top: 10px; left: 10px;
+            background: linear-gradient(135deg, #ff6b35, #e94560);
+            color: #fff; padding: 3px 10px; border-radius: 4px;
+            font-size: 0.7rem; font-weight: bold; text-transform: uppercase;
+            letter-spacing: 1px; z-index: 2;
+        }
+        .article-card { position: relative; }
+        .card-date { color: #666; font-size: 0.75rem; }
+        .card-title { font-size: 1.05rem; color: #fff; margin-bottom: 8px; line-height: 1.3; }
+        .card-summary { color: #999; font-size: 0.85rem; line-height: 1.5; }
+        .card-footer {
+            padding: 10px 15px; border-top: 1px solid #222;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .read-more { color: #e94560; font-size: 0.8rem; font-weight: bold; text-decoration: none; }
+        .read-more:hover { text-decoration: underline; }
+
+        /* ======================== */
+        /* PREDICTIONS SECTION     */
+        /* ======================== */
+        .predictions-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        .pred-sport-group {
+            margin-bottom: 25px;
+        }
+        .pred-sport-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0;
+            border-bottom: 2px solid #e94560;
+            margin-bottom: 12px;
+        }
+        .pred-sport-icon { font-size: 1.4rem; }
+        .pred-sport-name {
+            font-size: 1.1rem;
+            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .pred-sport-badge {
+            background: #e94560;
+            color: #fff;
+            padding: 2px 10px;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+        .pred-empty {
+            color: #555;
+            font-style: italic;
+            font-size: 0.85rem;
+            padding: 10px 0;
+        }
+
+        .pred-card {
+            background: #141414;
+            border: 1px solid #222;
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 10px;
+            transition: border-color 0.2s;
+        }
+        .pred-card:hover { border-color: #e94560; }
+
+        .pred-card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .pred-teams {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex: 1;
+            min-width: 0;
+        }
+        .pred-team-logo {
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
+        }
+        .pred-team-name {
+            color: #ccc;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        .pred-vs {
+            color: #555;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin: 0 4px;
+        }
+        .pred-time {
+            color: #64b5f6;
+            font-size: 0.72rem;
+            background: #0d2d50;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .pred-pick-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+        .pred-pick-label {
+            background: linear-gradient(135deg, #e94560, #c73050);
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .pred-confidence {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex: 1;
+        }
+        .pred-conf-bar-bg {
+            flex: 1;
+            max-width: 200px;
+            height: 8px;
+            background: #1a1a2e;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .pred-conf-bar {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+        .pred-conf-bar.high { background: linear-gradient(90deg, #4caf50, #66bb6a); }
+        .pred-conf-bar.medium { background: linear-gradient(90deg, #ff9800, #ffb74d); }
+        .pred-conf-bar.low { background: linear-gradient(90deg, #f44336, #ef5350); }
+        .pred-conf-text {
+            color: #fff;
+            font-size: 0.85rem;
+            font-weight: bold;
+            min-width: 35px;
+        }
+
+        .pred-factors {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .pred-factors li {
+            color: #999;
+            font-size: 0.78rem;
+            padding: 2px 0;
+            padding-left: 18px;
+            position: relative;
+        }
+        .pred-factors li::before {
+            position: absolute;
+            left: 0;
+            font-size: 0.72rem;
+        }
+        .pred-factors li.factor-record::before { content: "\2705"; }
+        .pred-factors li.factor-venue::before { content: "\2705"; }
+        .pred-factors li.factor-streak::before { content: "\2705"; }
+        .pred-factors li.factor-injury::before { content: "\26a0\fe0f"; }
+        .pred-factors li.factor-odds::before { content: "\1f4ca"; }
+        .pred-factors li.factor-nodata::before { content: "\2796"; }
+
+        .pred-odds-row {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #1e1e1e;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .pred-odds-item {
+            background: #1a1a2e;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.72rem;
+            color: #aaa;
+        }
+        .pred-odds-item span { color: #fff; font-weight: 600; }
+
+        footer {
+            text-align: center; padding: 25px; color: #444;
+            font-size: 0.75rem; border-top: 1px solid #1a1a1a; margin-top: 30px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.3rem; }
+            .articles-grid { grid-template-columns: 1fr; }
+            .nav-tab { padding: 10px 14px; font-size: 0.78rem; }
+            .mr-name { font-size: 0.75rem; }
+            .mr-time { display: none; }
+            .pred-teams { flex-wrap: wrap; }
+            .pred-pick-row { flex-direction: column; align-items: flex-start; }
+            .pred-conf-bar-bg { max-width: 150px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>&#127942; <span>Parley</span> Sports</h1>
+    <p>{{ blog_description }}</p>
+    <div class="update-time">Ultima actualizacion: {{ last_updated }}</div>
+</header>
+
+<nav class="main-nav">
+    <button class="nav-tab active" onclick="switchSection('scores', this)">&#127919; Resultados</button>
+    <button class="nav-tab" onclick="switchSection('predictions', this)">&#127183; Pronosticos</button>
+    <button class="nav-tab" onclick="switchSection('news', this)">&#128240; Noticias</button>
+</nav>
+
+<!-- =================== -->
+<!-- SCORES SECTION      -->
+<!-- =================== -->
+<div id="section-scores" class="section active">
+
+    <div class="sport-filters">
+        <button class="pill active" onclick="filterSport('all', this)">Todos</button>
+        <button class="pill" onclick="filterSport('futbol', this)">&#9917; Futbol</button>
+        <button class="pill" onclick="filterSport('basketball', this)">&#127936; NBA</button>
+        <button class="pill" onclick="filterSport('baseball', this)">&#9918; MLB</button>
+        <button class="pill" onclick="filterSport('hockey', this)">&#127954; NHL</button>
+        <button class="pill" onclick="filterSport('football', this)">&#127944; NFL</button>
+    </div>
+
+    <div class="scores-wrapper">
+        {% for league_name, league_data in scores.items() %}
+        <div class="league-block {% if league_data.matches %}{% for m in league_data.matches %}{% if m.state == 'live' %}open{% endif %}{% endfor %}{% endif %}" data-sport="{{ league_data.sport }}">
+            <div class="league-toggle" onclick="toggleLeague(this)">
+                <div class="league-toggle-left">
+                    <span class="league-icon">{{ league_data.icon }}</span>
+                    <span class="league-name">{{ league_name }}</span>
+                    <span class="league-country">{{ league_data.country }}</span>
+                </div>
+                <div class="league-toggle-right">
+                    {% set live_count = [] %}
+                    {% for m in league_data.matches %}{% if m.state == 'live' %}{% if live_count.append(1) %}{% endif %}{% endif %}{% endfor %}
+                    {% if live_count|length > 0 %}
+                    <span class="match-count has-live">&#128308; {{ live_count|length }} EN VIVO</span>
+                    {% endif %}
+                    <span class="match-count">{{ league_data.matches|length }} partidos</span>
+                    <span class="arrow">&#9660;</span>
+                </div>
+            </div>
+            <div class="league-matches">
+                {% if league_data.matches %}
+                    {% for match in league_data.matches %}
+                    <div class="match-row {{ match.state }}">
+                        {% if match.state == 'live' %}
+                        <span class="mr-status mr-live">&#128308; VIVO</span>
+                        {% elif match.state == 'finished' %}
+                        <span class="mr-status mr-final">FIN</span>
+                        {% else %}
+                        <span class="mr-status mr-sched">PROG</span>
+                        {% endif %}
+
+                        <div class="mr-teams">
+                            <div class="mr-team mr-team-home">
+                                <span class="mr-name">{{ match.home_team }}</span>
+                                {% if match.home_logo %}
+                                <img class="mr-logo" src="{{ match.home_logo }}" alt="" onerror="this.style.display='none'">
+                                {% endif %}
+                            </div>
+
+                            <div class="mr-score">
+                                <span class="mr-score-num">{{ match.home_score }}</span>
+                                <span class="mr-score-sep">-</span>
+                                <span class="mr-score-num">{{ match.away_score }}</span>
+                            </div>
+
+                            <div class="mr-team mr-team-away">
+                                {% if match.away_logo %}
+                                <img class="mr-logo" src="{{ match.away_logo }}" alt="" onerror="this.style.display='none'">
+                                {% endif %}
+                                <span class="mr-name">{{ match.away_team }}</span>
+                            </div>
+                        </div>
+
+                        <span class="mr-time">{{ match.date }}</span>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="no-matches-msg">Sin partidos programados hoy</div>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- ======================== -->
+<!-- PREDICTIONS SECTION     -->
+<!-- ======================== -->
+<div id="section-predictions" class="section">
+
+    <div class="sport-filters">
+        <button class="pill active" onclick="filterPredSport('all', this)">Todos</button>
+        <button class="pill" onclick="filterPredSport('futbol', this)">&#9917; Futbol</button>
+        <button class="pill" onclick="filterPredSport('basketball', this)">&#127936; NBA</button>
+        <button class="pill" onclick="filterPredSport('baseball', this)">&#9918; MLB</button>
+        <button class="pill" onclick="filterPredSport('hockey', this)">&#127954; NHL</button>
+    </div>
+
+    <div class="predictions-wrapper">
+        {% for sport_key, sport_data in predictions.items() %}
+        <div class="pred-sport-group" data-pred-sport="{{ sport_key }}">
+            <div class="pred-sport-header">
+                <span class="pred-sport-icon">{{ sport_data.icon }}</span>
+                <span class="pred-sport-name">{{ sport_data.name }} — TOP PICKS DEL DIA</span>
+                {% if sport_data.picks %}
+                <span class="pred-sport-badge">{{ sport_data.picks|length }} picks</span>
+                {% endif %}
+            </div>
+
+            {% if sport_data.picks %}
+                {% for pick in sport_data.picks %}
+                <div class="pred-card">
+                    <div class="pred-card-header">
+                        <div class="pred-teams">
+                            {% if pick.home_logo %}
+                            <img class="pred-team-logo" src="{{ pick.home_logo }}" alt="" onerror="this.style.display='none'">
+                            {% endif %}
+                            <span class="pred-team-name">{{ pick.home_team }}</span>
+                            <span class="pred-vs">VS</span>
+                            {% if pick.away_logo %}
+                            <img class="pred-team-logo" src="{{ pick.away_logo }}" alt="" onerror="this.style.display='none'">
+                            {% endif %}
+                            <span class="pred-team-name">{{ pick.away_team }}</span>
+                        </div>
+                        {% if pick.match_time %}
+                        <span class="pred-time">&#128337; {{ pick.match_time }}</span>
+                        {% endif %}
+                    </div>
+
+                    <div class="pred-pick-row">
+                        <span class="pred-pick-label">{{ pick.pick_label }}</span>
+                        <div class="pred-confidence">
+                            <div class="pred-conf-bar-bg">
+                                <div class="pred-conf-bar {% if pick.confidence >= 75 %}high{% elif pick.confidence >= 60 %}medium{% else %}low{% endif %}"
+                                     style="width: {{ pick.confidence }}%"></div>
+                            </div>
+                            <span class="pred-conf-text">{{ pick.confidence }}%</span>
+                        </div>
+                    </div>
+
+                    <ul class="pred-factors">
+                        {% for factor in pick.factors %}
+                        <li class="{% if 'vs' in factor and '(' in factor %}factor-record{% elif 'casa' in factor or 'visita' in factor %}factor-venue{% elif 'racha' in factor %}factor-streak{% elif 'Linea' in factor or 'ML:' in factor %}factor-odds{% elif 'lesion' in factor.lower() or 'Out' in factor or 'DTD' in factor or 'sin lesiones' in factor %}factor-injury{% else %}factor-nodata{% endif %}">{{ factor }}</li>
+                        {% endfor %}
+                    </ul>
+
+                    {% if pick.odds %}
+                    <div class="pred-odds-row">
+                        {% if pick.odds.spread %}
+                        <span class="pred-odds-item">Spread: <span>{{ pick.odds.spread }}</span></span>
+                        {% endif %}
+                        {% if pick.odds.over_under %}
+                        <span class="pred-odds-item">O/U: <span>{{ pick.odds.over_under }}</span></span>
+                        {% endif %}
+                        {% if pick.odds.home_ml %}
+                        <span class="pred-odds-item">ML Local: <span>{{ pick.odds.home_ml }}</span></span>
+                        {% endif %}
+                        {% if pick.odds.away_ml %}
+                        <span class="pred-odds-item">ML Visita: <span>{{ pick.odds.away_ml }}</span></span>
+                        {% endif %}
+                        {% if pick.odds.provider %}
+                        <span class="pred-odds-item">via {{ pick.odds.provider }}</span>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            {% else %}
+                <p class="pred-empty">Sin partidos programados para analizar hoy en esta liga</p>
+            {% endif %}
+        </div>
+        {% endfor %}
+
+        {% if not predictions %}
+        <p class="pred-empty" style="text-align:center; padding: 40px 0;">No hay pronosticos disponibles. Ejecuta <code>python main.py build</code> para generar.</p>
+        {% endif %}
+    </div>
+</div>
+
+<!-- =================== -->
+<!-- NEWS SECTION        -->
+<!-- =================== -->
+<div id="section-news" class="section">
+    <nav class="categories">
+        <button class="pill active" onclick="filterCategory('all', this)">Todos</button>
+        {% for cat in categories %}
+        <button class="pill" onclick="filterCategory('{{ cat }}', this)">{{ cat }}</button>
+        {% endfor %}
+    </nav>
+    <main class="container">
+        <div class="articles-grid" id="articlesGrid">
+            {% for article in articles %}
+            <article class="article-card" data-category="{{ article.category }}">
+                <a href="{{ article.link }}" target="_blank" rel="noopener">
+                    {% if article.priority == 1 %}
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    {% endif %}
+                    {% if article.image %}
+                    <img class="card-image" src="{{ article.image }}" alt="{{ article.title }}" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    {% else %}
+                    <div class="card-image-placeholder">&#9917;</div>
+                    {% endif %}
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">{{ article.source }}</span>
+                            <span class="card-category">{{ article.category }}</span>
+                        </div>
+                        <h2 class="card-title">{{ article.title }}</h2>
+                        <p class="card-summary">{{ article.summary }}</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">{{ article.date_str }}</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            {% endfor %}
+        </div>
+    </main>
+</div>
+
+<footer>
+    <p>&copy; {{ year }} {{ blog_title }} | Resultados via ESPN | Noticias RSS</p>
+</footer>
+
+<script>
+function switchSection(section, btn) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('section-' + section).classList.add('active');
+    btn.classList.add('active');
+}
+
+function toggleLeague(el) {
+    el.closest('.league-block').classList.toggle('open');
+}
+
+function filterSport(sport, btn) {
+    const leagues = document.querySelectorAll('.league-block');
+    btn.parentElement.querySelectorAll('.pill').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    leagues.forEach(league => {
+        league.style.display = (sport === 'all' || league.dataset.sport === sport) ? 'block' : 'none';
+    });
+}
+
+function filterCategory(cat, btn) {
+    const cards = document.querySelectorAll('.article-card');
+    btn.parentElement.querySelectorAll('.pill').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    cards.forEach(card => {
+        card.style.display = (cat === 'all' || card.dataset.category === cat) ? 'block' : 'none';
+    });
+}
+
+function filterPredSport(sport, btn) {
+    const groups = document.querySelectorAll('.pred-sport-group');
+    btn.parentElement.querySelectorAll('.pill').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    groups.forEach(g => {
+        g.style.display = (sport === 'all' || g.dataset.predSport === sport) ? 'block' : 'none';
+    });
+}
+
+// Auto-expandir ligas con partidos en vivo
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.match-row.live').forEach(row => {
+        row.closest('.league-block').classList.add('open');
+    });
+});
+</script>
+
+</body>
+</html>
