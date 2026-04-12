@@ -203,33 +203,34 @@
             color: var(--text-muted); font-size: 0.78rem; padding: 10px 14px; font-style: italic;
         }
 
-        /* Single match row */
+        /* Single match row - grid layout */
         .match-row {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 70px 1fr 75px;
             align-items: center;
-            padding: 8px 12px;
+            padding: 9px 14px;
             border-bottom: 1px solid var(--border);
             font-size: 0.82rem;
-            gap: 8px;
+            gap: 0;
             transition: background 0.2s ease;
         }
         .match-row:last-child { border-bottom: none; }
         .match-row:hover { background: rgba(255, 255, 255, 0.02); }
 
-        .match-row.live { border-left: 2px solid var(--accent); background: rgba(233, 69, 96, 0.03); }
-        .match-row.finished { border-left: 2px solid var(--green); }
-        .match-row.scheduled { border-left: 2px solid var(--blue); }
+        .match-row.live { border-left: 3px solid var(--accent); background: rgba(233, 69, 96, 0.04); }
+        .match-row.finished { border-left: 3px solid var(--green); }
+        .match-row.scheduled { border-left: 3px solid var(--blue); }
 
         .mr-status {
             font-family: var(--font-display);
-            min-width: 58px;
             text-align: center;
-            font-size: 0.68rem;
+            font-size: 0.65rem;
             font-weight: 700;
             text-transform: uppercase;
-            padding: 3px 6px;
+            padding: 3px 4px;
             border-radius: 4px;
             letter-spacing: 0.5px;
+            white-space: nowrap;
         }
         .mr-live { background: var(--accent); color: #fff; animation: pulse 1.5s infinite; box-shadow: 0 0 8px var(--accent-glow); }
         .mr-final { background: rgba(76, 175, 80, 0.12); color: var(--green); }
@@ -237,25 +238,18 @@
 
         @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.5} }
 
-        .mr-teams {
-            flex: 1;
-            display: grid;
-            grid-template-columns: 1fr auto 1fr;
-            align-items: center;
-            gap: 8px;
-            min-width: 0;
-        }
         .mr-team {
             display: flex;
             align-items: center;
             gap: 5px;
             min-width: 0;
+            padding: 0 6px;
         }
         .mr-team-home { justify-content: flex-end; text-align: right; }
         .mr-team-away { justify-content: flex-start; }
 
         .mr-logo {
-            width: 18px; height: 18px;
+            width: 20px; height: 20px;
             object-fit: contain; flex-shrink: 0;
         }
         .mr-name {
@@ -274,31 +268,49 @@
             align-items: center;
             gap: 4px;
             background: var(--bg-surface);
-            padding: 4px 10px;
+            padding: 5px 8px;
             border-radius: 6px;
-            min-width: 56px;
             justify-content: center;
-            flex-shrink: 0;
         }
-        .mr-score-num { font-family: var(--font-display); color: #fff; font-weight: 700; font-size: 0.95rem; min-width: 14px; text-align: center; }
-        .mr-score-sep { color: var(--accent); font-size: 0.75rem; }
+        .mr-score-num { font-family: var(--font-display); color: #fff; font-weight: 700; font-size: 1rem; min-width: 16px; text-align: center; }
+        .mr-score-sep { color: var(--accent); font-size: 0.8rem; }
 
+        .mr-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+            justify-self: center;
+        }
         .mr-detail {
             font-family: var(--font-display);
             background: var(--accent);
             color: #fff;
-            font-size: 0.68rem;
+            font-size: 0.62rem;
             font-weight: 700;
-            padding: 3px 8px;
-            border-radius: 4px;
+            padding: 2px 6px;
+            border-radius: 3px;
             white-space: nowrap;
-            min-width: 65px;
             text-align: center;
             animation: pulse 1.5s infinite;
             box-shadow: 0 0 8px var(--accent-glow);
             letter-spacing: 0.3px;
         }
-        .mr-time { color: var(--text-muted); font-size: 0.68rem; min-width: 45px; text-align: right; }
+        .mr-time {
+            font-family: var(--font-display);
+            color: var(--text-muted);
+            font-size: 0.65rem;
+            text-align: center;
+            white-space: nowrap;
+            font-weight: 600;
+        }
+        .mr-sched-time {
+            font-family: var(--font-display);
+            color: var(--blue);
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-align: center;
+        }
 
         /* ======================== */
         /* NEWS SECTION             */
@@ -893,8 +905,12 @@
             header h1 { font-size: 1.3rem; }
             .articles-grid { grid-template-columns: 1fr; }
             .nav-tab { padding: 10px 14px; font-size: 0.78rem; }
-            .mr-name { font-size: 0.75rem; }
-            .mr-time { display: none; }
+            .match-row { grid-template-columns: 1fr 60px 1fr 60px; padding: 8px 10px; }
+            .mr-name { font-size: 0.72rem; }
+            .mr-logo { width: 16px; height: 16px; }
+            .mr-score-num { font-size: 0.85rem; }
+            .mr-status { font-size: 0.58rem; padding: 2px 3px; }
+            .mr-detail { font-size: 0.55rem; padding: 1px 4px; }
             .pred-teams { flex-wrap: wrap; }
             .pred-pick-row { flex-direction: column; align-items: flex-start; }
             .pred-conf-bar-bg { max-width: 150px; }
@@ -983,7 +999,8 @@
 
     <div class="scores-wrapper">
         {% for league_name, league_data in scores.items() %}
-        <div class="league-block {% if league_data.matches %}{% for m in league_data.matches %}{% if m.state == 'live' %}open{% endif %}{% endfor %}{% endif %}" data-sport="{{ league_data.sport }}">
+        {% set has_live = [] %}{% for m in league_data.matches %}{% if m.state == 'live' %}{% if has_live.append(1) %}{% endif %}{% endif %}{% endfor %}
+        <div class="league-block{% if has_live %} open{% endif %}" data-sport="{{ league_data.sport }}">
             <div class="league-toggle" onclick="toggleLeague(this)">
                 <div class="league-toggle-left">
                     <span class="league-icon">{{ league_data.icon }}</span>
@@ -1004,40 +1021,42 @@
                 {% if league_data.matches %}
                     {% for match in league_data.matches %}
                     <div class="match-row {{ match.state }}">
-                        {% if match.state == 'live' %}
-                        <span class="mr-status mr-live">EN VIVO</span>
-                        {% elif match.state == 'finished' %}
-                        <span class="mr-status mr-final">{{ match.status }}</span>
-                        {% else %}
-                        <span class="mr-status mr-sched">PROG</span>
-                        {% endif %}
-
-                        <div class="mr-teams">
-                            <div class="mr-team mr-team-home">
-                                <span class="mr-name">{{ match.home_team }}</span>
-                                {% if match.home_logo %}
-                                <img class="mr-logo" src="{{ match.home_logo }}" alt="" onerror="this.style.display='none'">
-                                {% endif %}
-                            </div>
-
-                            <div class="mr-score">
-                                <span class="mr-score-num">{{ match.home_score }}</span>
-                                <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">{{ match.away_score }}</span>
-                            </div>
-
-                            <div class="mr-team mr-team-away">
-                                {% if match.away_logo %}
-                                <img class="mr-logo" src="{{ match.away_logo }}" alt="" onerror="this.style.display='none'">
-                                {% endif %}
-                                <span class="mr-name">{{ match.away_team }}</span>
-                            </div>
+                        <div class="mr-team mr-team-home">
+                            <span class="mr-name">{{ match.home_team }}</span>
+                            {% if match.home_logo %}
+                            <img class="mr-logo" src="{{ match.home_logo }}" alt="" onerror="this.style.display='none'">
+                            {% endif %}
                         </div>
 
-                        {% if match.game_detail %}
-                        <span class="mr-detail">{{ match.game_detail }}</span>
-                        {% endif %}
-                        <span class="mr-time">{{ match.date }}</span>
+                        <div class="mr-score">
+                            {% if match.state == 'scheduled' %}
+                            <span class="mr-sched-time">{{ match.date }}</span>
+                            {% else %}
+                            <span class="mr-score-num">{{ match.home_score }}</span>
+                            <span class="mr-score-sep">-</span>
+                            <span class="mr-score-num">{{ match.away_score }}</span>
+                            {% endif %}
+                        </div>
+
+                        <div class="mr-team mr-team-away">
+                            {% if match.away_logo %}
+                            <img class="mr-logo" src="{{ match.away_logo }}" alt="" onerror="this.style.display='none'">
+                            {% endif %}
+                            <span class="mr-name">{{ match.away_team }}</span>
+                        </div>
+
+                        <div class="mr-info">
+                            {% if match.state == 'live' %}
+                            <span class="mr-status mr-live">EN VIVO</span>
+                            {% if match.game_detail %}
+                            <span class="mr-detail">{{ match.game_detail }}</span>
+                            {% endif %}
+                            {% elif match.state == 'finished' %}
+                            <span class="mr-status mr-final">{{ match.status }}</span>
+                            {% else %}
+                            <span class="mr-status mr-sched">PROG</span>
+                            {% endif %}
+                        </div>
                     </div>
                     {% endfor %}
                 {% else %}
