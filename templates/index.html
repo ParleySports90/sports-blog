@@ -439,6 +439,37 @@
         }
         .pred-odds-item span { color: #fff; font-weight: 600; }
 
+        .pred-bookmakers {
+            margin-top: 10px;
+            padding-top: 8px;
+            border-top: 1px solid #1e1e1e;
+        }
+        .pred-bm-title {
+            color: #888;
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+        .pred-bm-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .pred-bm-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .pred-bm-name {
+            color: #e94560;
+            font-size: 0.72rem;
+            font-weight: 700;
+            min-width: 100px;
+        }
+
         footer {
             text-align: center; padding: 25px; color: #444;
             font-size: 0.75rem; border-top: 1px solid #1a1a1a; margin-top: 30px;
@@ -589,8 +620,8 @@
                             {% endif %}
                             <span class="pred-team-name">{{ pick.away_team }}</span>
                         </div>
-                        {% if pick.match_time %}
-                        <span class="pred-time">&#128337; {{ pick.match_time }}</span>
+                        {% if pick.match_date or pick.match_time %}
+                        <span class="pred-time">&#128197; {{ pick.match_date }}{% if pick.match_time %} - {{ pick.match_time }}{% endif %}</span>
                         {% endif %}
                     </div>
 
@@ -629,6 +660,30 @@
                         <span class="pred-odds-item">via {{ pick.odds.provider }}</span>
                         {% endif %}
                     </div>
+                    {% if pick.odds.all_bookmakers %}
+                    <div class="pred-bookmakers">
+                        <div class="pred-bm-title">Cuotas por casa de apuestas:</div>
+                        <div class="pred-bm-grid">
+                            {% for bm in pick.odds.all_bookmakers %}
+                            <div class="pred-bm-row">
+                                <span class="pred-bm-name">{{ bm.name }}</span>
+                                {% if bm.h2h_home %}
+                                <span class="pred-odds-item">Local: <span>{{ bm.h2h_home }}</span></span>
+                                {% endif %}
+                                {% if bm.h2h_away %}
+                                <span class="pred-odds-item">Visita: <span>{{ bm.h2h_away }}</span></span>
+                                {% endif %}
+                                {% if bm.spread %}
+                                <span class="pred-odds-item">Spread: <span>{{ bm.spread }}</span></span>
+                                {% endif %}
+                                {% if bm.total %}
+                                <span class="pred-odds-item">O/U: <span>{{ bm.total }}</span></span>
+                                {% endif %}
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
                     {% endif %}
                 </div>
                 {% endfor %}

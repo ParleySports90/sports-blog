@@ -439,6 +439,37 @@
         }
         .pred-odds-item span { color: #fff; font-weight: 600; }
 
+        .pred-bookmakers {
+            margin-top: 10px;
+            padding-top: 8px;
+            border-top: 1px solid #1e1e1e;
+        }
+        .pred-bm-title {
+            color: #888;
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+        .pred-bm-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .pred-bm-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .pred-bm-name {
+            color: #e94560;
+            font-size: 0.72rem;
+            font-weight: 700;
+            min-width: 100px;
+        }
+
         footer {
             text-align: center; padding: 25px; color: #444;
             font-size: 0.75rem; border-top: 1px solid #1a1a1a; margin-top: 30px;
@@ -462,7 +493,7 @@
 <header>
     <h1>&#127942; <span>Parley</span> Sports</h1>
     <p>Noticias, pronosticos y analisis de apuestas deportivas</p>
-    <div class="update-time">Ultima actualizacion: 11/04/2026 20:29</div>
+    <div class="update-time">Ultima actualizacion: 12/04/2026 02:26</div>
 </header>
 
 <nav class="main-nav">
@@ -1421,7 +1452,7 @@
             </div>
         </div>
         
-        <div class="league-block open" data-sport="futbol">
+        <div class="league-block " data-sport="futbol">
             <div class="league-toggle" onclick="toggleLeague(this)">
                 <div class="league-toggle-left">
                     <span class="league-icon">⚽</span>
@@ -1431,8 +1462,6 @@
                 <div class="league-toggle-right">
                     
                     
-                    
-                    <span class="match-count has-live">&#128308; 1 EN VIVO</span>
                     
                     <span class="match-count">5 partidos</span>
                     <span class="arrow">&#9660;</span>
@@ -1531,9 +1560,9 @@
                         <span class="mr-time">11/04 20:15</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">&#128308; VIVO</span>
+                        <span class="mr-status mr-final">FIN</span>
                         
 
                         <div class="mr-teams">
@@ -1561,9 +1590,9 @@
                         <span class="mr-time">11/04 22:30</span>
                     </div>
                     
-                    <div class="match-row scheduled">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-sched">PROG</span>
+                        <span class="mr-status mr-final">FIN</span>
                         
 
                         <div class="mr-teams">
@@ -1575,9 +1604,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">1</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">2</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -1595,7 +1624,7 @@
             </div>
         </div>
         
-        <div class="league-block openopen" data-sport="futbol">
+        <div class="league-block " data-sport="futbol">
             <div class="league-toggle" onclick="toggleLeague(this)">
                 <div class="league-toggle-left">
                     <span class="league-icon">⚽</span>
@@ -1605,8 +1634,6 @@
                 <div class="league-toggle-right">
                     
                     
-                    
-                    <span class="match-count has-live">&#128308; 2 EN VIVO</span>
                     
                     <span class="match-count">5 partidos</span>
                     <span class="arrow">&#9660;</span>
@@ -1705,9 +1732,9 @@
                         <span class="mr-time">11/04 21:30</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">&#128308; VIVO</span>
+                        <span class="mr-status mr-final">FIN</span>
                         
 
                         <div class="mr-teams">
@@ -1719,7 +1746,7 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">1</span>
                                 <span class="mr-score-sep">-</span>
                                 <span class="mr-score-num">0</span>
                             </div>
@@ -1735,9 +1762,9 @@
                         <span class="mr-time">11/04 23:00</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">&#128308; VIVO</span>
+                        <span class="mr-status mr-final">FIN</span>
                         
 
                         <div class="mr-teams">
@@ -2667,7 +2694,7 @@
             </div>
         </div>
         
-        <div class="league-block openopenopenopenopen" data-sport="baseball">
+        <div class="league-block " data-sport="baseball">
             <div class="league-toggle" onclick="toggleLeague(this)">
                 <div class="league-toggle-left">
                     <span class="league-icon">⚾</span>
@@ -2677,8 +2704,6 @@
                 <div class="league-toggle-right">
                     
                     
-                    
-                    <span class="match-count has-live">&#128308; 5 EN VIVO</span>
                     
                     <span class="match-count">15 partidos</span>
                     <span class="arrow">&#9660;</span>
@@ -2897,9 +2922,9 @@
                         <span class="mr-time">11/04 20:10</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">&#128308; VIVO</span>
+                        <span class="mr-status mr-final">FIN</span>
                         
 
                         <div class="mr-teams">
@@ -2911,9 +2936,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">3</span>
+                                <span class="mr-score-num">5</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">3</span>
+                                <span class="mr-score-num">4</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -2927,9 +2952,9 @@
                         <span class="mr-time">11/04 22:10</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">&#128308; VIVO</span>
+                        <span class="mr-status mr-final">FIN</span>
                         
 
                         <div class="mr-teams">
@@ -2941,9 +2966,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">1</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">2</span>
+                                <span class="mr-score-num">3</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -2957,9 +2982,9 @@
                         <span class="mr-time">11/04 23:10</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">&#128308; VIVO</span>
+                        <span class="mr-status mr-final">FIN</span>
                         
 
                         <div class="mr-teams">
@@ -2973,7 +2998,7 @@
                             <div class="mr-score">
                                 <span class="mr-score-num">0</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">1</span>
+                                <span class="mr-score-num">6</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -2987,9 +3012,9 @@
                         <span class="mr-time">11/04 23:15</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">&#128308; VIVO</span>
+                        <span class="mr-status mr-final">FIN</span>
                         
 
                         <div class="mr-teams">
@@ -3001,7 +3026,7 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">2</span>
+                                <span class="mr-score-num">6</span>
                                 <span class="mr-score-sep">-</span>
                                 <span class="mr-score-num">2</span>
                             </div>
@@ -3017,9 +3042,9 @@
                         <span class="mr-time">11/04 23:15</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">&#128308; VIVO</span>
+                        <span class="mr-status mr-final">FIN</span>
                         
 
                         <div class="mr-teams">
@@ -3031,9 +3056,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">1</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">2</span>
+                                <span class="mr-score-num">7</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -3047,9 +3072,9 @@
                         <span class="mr-time">11/04 23:15</span>
                     </div>
                     
-                    <div class="match-row scheduled">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-sched">PROG</span>
+                        <span class="mr-status mr-final">FIN</span>
                         
 
                         <div class="mr-teams">
@@ -3061,9 +3086,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">9</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">5</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -3077,9 +3102,9 @@
                         <span class="mr-time">12/04 00:40</span>
                     </div>
                     
-                    <div class="match-row scheduled">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-sched">PROG</span>
+                        <span class="mr-status mr-final">FIN</span>
                         
 
                         <div class="mr-teams">
@@ -3091,9 +3116,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">6</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">3</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -3107,9 +3132,9 @@
                         <span class="mr-time">12/04 01:10</span>
                     </div>
                     
-                    <div class="match-row scheduled">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-sched">PROG</span>
+                        <span class="mr-status mr-final">FIN</span>
                         
 
                         <div class="mr-teams">
@@ -3121,9 +3146,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">8</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">7</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -3141,7 +3166,7 @@
             </div>
         </div>
         
-        <div class="league-block openopenopenopenopen" data-sport="hockey">
+        <div class="league-block " data-sport="hockey">
             <div class="league-toggle" onclick="toggleLeague(this)">
                 <div class="league-toggle-left">
                     <span class="league-icon">??</span>
@@ -3151,8 +3176,6 @@
                 <div class="league-toggle-right">
                     
                     
-                    
-                    <span class="match-count has-live">&#128308; 5 EN VIVO</span>
                     
                     <span class="match-count">15 partidos</span>
                     <span class="arrow">&#9660;</span>
@@ -3431,9 +3454,9 @@
                         <span class="mr-time">11/04 21:00</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">&#128308; VIVO</span>
+                        <span class="mr-status mr-final">FIN</span>
                         
 
                         <div class="mr-teams">
@@ -3445,9 +3468,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">2</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">3</span>
+                                <span class="mr-score-num">6</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -3461,9 +3484,9 @@
                         <span class="mr-time">11/04 23:00</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">&#128308; VIVO</span>
+                        <span class="mr-status mr-final">FIN</span>
                         
 
                         <div class="mr-teams">
@@ -3475,9 +3498,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">1</span>
+                                <span class="mr-score-num">2</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">3</span>
+                                <span class="mr-score-num">5</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -3491,9 +3514,9 @@
                         <span class="mr-time">11/04 23:00</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">&#128308; VIVO</span>
+                        <span class="mr-status mr-final">FIN</span>
                         
 
                         <div class="mr-teams">
@@ -3507,7 +3530,7 @@
                             <div class="mr-score">
                                 <span class="mr-score-num">1</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">3</span>
+                                <span class="mr-score-num">7</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -3521,9 +3544,9 @@
                         <span class="mr-time">11/04 23:00</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">&#128308; VIVO</span>
+                        <span class="mr-status mr-final">FIN</span>
                         
 
                         <div class="mr-teams">
@@ -3535,7 +3558,7 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">1</span>
+                                <span class="mr-score-num">4</span>
                                 <span class="mr-score-sep">-</span>
                                 <span class="mr-score-num">1</span>
                             </div>
@@ -3551,9 +3574,9 @@
                         <span class="mr-time">11/04 23:00</span>
                     </div>
                     
-                    <div class="match-row live">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-live">&#128308; VIVO</span>
+                        <span class="mr-status mr-final">FIN</span>
                         
 
                         <div class="mr-teams">
@@ -3565,9 +3588,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">2</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">3</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -3581,9 +3604,9 @@
                         <span class="mr-time">12/04 00:00</span>
                     </div>
                     
-                    <div class="match-row scheduled">
+                    <div class="match-row finished">
                         
-                        <span class="mr-status mr-sched">PROG</span>
+                        <span class="mr-status mr-final">FIN</span>
                         
 
                         <div class="mr-teams">
@@ -3595,9 +3618,9 @@
                             </div>
 
                             <div class="mr-score">
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">3</span>
                                 <span class="mr-score-sep">-</span>
-                                <span class="mr-score-num">0</span>
+                                <span class="mr-score-num">4</span>
                             </div>
 
                             <div class="mr-team mr-team-away">
@@ -3710,12 +3733,12 @@
                             <span class="pred-team-name">Washington Wizards</span>
                         </div>
                         
-                        <span class="pred-time">&#128337; 22:00</span>
+                        <span class="pred-time">&#128197; 12/04/2026 - 22:00</span>
                         
                     </div>
 
                     <div class="pred-pick-row">
-                        <span class="pred-pick-label">CLE -12.5</span>
+                        <span class="pred-pick-label">CLE -10.5</span>
                         <div class="pred-confidence">
                             <div class="pred-conf-bar-bg">
                                 <div class="pred-conf-bar high"
@@ -3735,14 +3758,14 @@
                         
                         <li class="factor-injury">CLE: sin lesiones importantes | WSH: sin lesiones importantes</li>
                         
-                        <li class="factor-odds">Linea: -12.5 | O/U: 235.5 | ML: /</li>
+                        <li class="factor-odds">Linea: -10.5 | O/U: 235.5 | ML: /</li>
                         
                     </ul>
 
                     
                     <div class="pred-odds-row">
                         
-                        <span class="pred-odds-item">Spread: <span>-12.5</span></span>
+                        <span class="pred-odds-item">Spread: <span>-10.5</span></span>
                         
                         
                         <span class="pred-odds-item">O/U: <span>235.5</span></span>
@@ -3753,6 +3776,7 @@
                         <span class="pred-odds-item">via Draft Kings</span>
                         
                     </div>
+                    
                     
                 </div>
                 
@@ -3770,12 +3794,12 @@
                             <span class="pred-team-name">Detroit Pistons</span>
                         </div>
                         
-                        <span class="pred-time">&#128337; 22:00</span>
+                        <span class="pred-time">&#128197; 12/04/2026 - 22:00</span>
                         
                     </div>
 
                     <div class="pred-pick-row">
-                        <span class="pred-pick-label">DET 11.5</span>
+                        <span class="pred-pick-label">DET 13.5</span>
                         <div class="pred-confidence">
                             <div class="pred-conf-bar-bg">
                                 <div class="pred-conf-bar high"
@@ -3795,17 +3819,17 @@
                         
                         <li class="factor-injury">IND: sin lesiones importantes | DET: sin lesiones importantes</li>
                         
-                        <li class="factor-odds">Linea: 11.5 | O/U: 229.5 | ML: /</li>
+                        <li class="factor-odds">Linea: 13.5 | O/U: 228.5 | ML: /</li>
                         
                     </ul>
 
                     
                     <div class="pred-odds-row">
                         
-                        <span class="pred-odds-item">Spread: <span>11.5</span></span>
+                        <span class="pred-odds-item">Spread: <span>13.5</span></span>
                         
                         
-                        <span class="pred-odds-item">O/U: <span>229.5</span></span>
+                        <span class="pred-odds-item">O/U: <span>228.5</span></span>
                         
                         
                         
@@ -3813,6 +3837,7 @@
                         <span class="pred-odds-item">via Draft Kings</span>
                         
                     </div>
+                    
                     
                 </div>
                 
@@ -3830,12 +3855,12 @@
                             <span class="pred-team-name">Memphis Grizzlies</span>
                         </div>
                         
-                        <span class="pred-time">&#128337; 00:30</span>
+                        <span class="pred-time">&#128197; 13/04/2026 - 00:30</span>
                         
                     </div>
 
                     <div class="pred-pick-row">
-                        <span class="pred-pick-label">HOU -13.5</span>
+                        <span class="pred-pick-label">HOU -12.5</span>
                         <div class="pred-confidence">
                             <div class="pred-conf-bar-bg">
                                 <div class="pred-conf-bar high"
@@ -3855,17 +3880,17 @@
                         
                         <li class="factor-injury">HOU: sin lesiones importantes | MEM: sin lesiones importantes</li>
                         
-                        <li class="factor-odds">Linea: -13.5 | O/U: 225.5 | ML: /</li>
+                        <li class="factor-odds">Linea: -12.5 | O/U: 224.5 | ML: /</li>
                         
                     </ul>
 
                     
                     <div class="pred-odds-row">
                         
-                        <span class="pred-odds-item">Spread: <span>-13.5</span></span>
+                        <span class="pred-odds-item">Spread: <span>-12.5</span></span>
                         
                         
-                        <span class="pred-odds-item">O/U: <span>225.5</span></span>
+                        <span class="pred-odds-item">O/U: <span>224.5</span></span>
                         
                         
                         
@@ -3873,6 +3898,7 @@
                         <span class="pred-odds-item">via Draft Kings</span>
                         
                     </div>
+                    
                     
                 </div>
                 
@@ -3884,192 +3910,10 @@
                 <span class="pred-sport-icon">⚾</span>
                 <span class="pred-sport-name">MLB — TOP PICKS DEL DIA</span>
                 
-                <span class="pred-sport-badge">3 picks</span>
-                
             </div>
 
             
-                
-                <div class="pred-card">
-                    <div class="pred-card-header">
-                        <div class="pred-teams">
-                            
-                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/mlb/500/lad.png" alt="" onerror="this.style.display='none'">
-                            
-                            <span class="pred-team-name">Los Angeles Dodgers</span>
-                            <span class="pred-vs">VS</span>
-                            
-                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/mlb/500/tex.png" alt="" onerror="this.style.display='none'">
-                            
-                            <span class="pred-team-name">Texas Rangers</span>
-                        </div>
-                        
-                        <span class="pred-time">&#128337; 01:10</span>
-                        
-                    </div>
-
-                    <div class="pred-pick-row">
-                        <span class="pred-pick-label">LAD -1.5</span>
-                        <div class="pred-confidence">
-                            <div class="pred-conf-bar-bg">
-                                <div class="pred-conf-bar high"
-                                     style="width: 80%"></div>
-                            </div>
-                            <span class="pred-conf-text">80%</span>
-                        </div>
-                    </div>
-
-                    <ul class="pred-factors">
-                        
-                        <li class="factor-record">LAD 10-3 (0.769) vs TEX 7-6 (0.538)</li>
-                        
-                        <li class="factor-venue">LAD 5-2 en casa - TEX 4-3 de visita</li>
-                        
-                        <li class="factor-streak">LAD racha 10-3 - TEX racha 7-6</li>
-                        
-                        <li class="factor-injury">LAD: sin lesiones importantes | TEX: sin lesiones importantes</li>
-                        
-                        <li class="factor-odds">Linea: -1.5 | O/U: 8.0 | ML: /</li>
-                        
-                    </ul>
-
-                    
-                    <div class="pred-odds-row">
-                        
-                        <span class="pred-odds-item">Spread: <span>-1.5</span></span>
-                        
-                        
-                        <span class="pred-odds-item">O/U: <span>8.0</span></span>
-                        
-                        
-                        
-                        
-                        <span class="pred-odds-item">via DraftKings</span>
-                        
-                    </div>
-                    
-                </div>
-                
-                <div class="pred-card">
-                    <div class="pred-card-header">
-                        <div class="pred-teams">
-                            
-                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/mlb/500/sd.png" alt="" onerror="this.style.display='none'">
-                            
-                            <span class="pred-team-name">San Diego Padres</span>
-                            <span class="pred-vs">VS</span>
-                            
-                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/mlb/500/col.png" alt="" onerror="this.style.display='none'">
-                            
-                            <span class="pred-team-name">Colorado Rockies</span>
-                        </div>
-                        
-                        <span class="pred-time">&#128337; 00:40</span>
-                        
-                    </div>
-
-                    <div class="pred-pick-row">
-                        <span class="pred-pick-label">SD -1.5</span>
-                        <div class="pred-confidence">
-                            <div class="pred-conf-bar-bg">
-                                <div class="pred-conf-bar high"
-                                     style="width: 76%"></div>
-                            </div>
-                            <span class="pred-conf-text">76%</span>
-                        </div>
-                    </div>
-
-                    <ul class="pred-factors">
-                        
-                        <li class="factor-record">SD 8-6 (0.571) vs COL 6-8 (0.429)</li>
-                        
-                        <li class="factor-venue">SD 4-4 en casa - COL 2-6 de visita</li>
-                        
-                        <li class="factor-streak">SD racha 8-6 - COL racha 6-8</li>
-                        
-                        <li class="factor-injury">SD: sin lesiones importantes | COL: sin lesiones importantes</li>
-                        
-                        <li class="factor-odds">Linea: -1.5 | O/U: 8.5 | ML: /</li>
-                        
-                    </ul>
-
-                    
-                    <div class="pred-odds-row">
-                        
-                        <span class="pred-odds-item">Spread: <span>-1.5</span></span>
-                        
-                        
-                        <span class="pred-odds-item">O/U: <span>8.5</span></span>
-                        
-                        
-                        
-                        
-                        <span class="pred-odds-item">via DraftKings</span>
-                        
-                    </div>
-                    
-                </div>
-                
-                <div class="pred-card">
-                    <div class="pred-card-header">
-                        <div class="pred-teams">
-                            
-                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/mlb/500/sea.png" alt="" onerror="this.style.display='none'">
-                            
-                            <span class="pred-team-name">Seattle Mariners</span>
-                            <span class="pred-vs">VS</span>
-                            
-                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/mlb/500/hou.png" alt="" onerror="this.style.display='none'">
-                            
-                            <span class="pred-team-name">Houston Astros</span>
-                        </div>
-                        
-                        <span class="pred-time">&#128337; 01:40</span>
-                        
-                    </div>
-
-                    <div class="pred-pick-row">
-                        <span class="pred-pick-label">SEA -1.5</span>
-                        <div class="pred-confidence">
-                            <div class="pred-conf-bar-bg">
-                                <div class="pred-conf-bar high"
-                                     style="width: 75%"></div>
-                            </div>
-                            <span class="pred-conf-text">75%</span>
-                        </div>
-                    </div>
-
-                    <ul class="pred-factors">
-                        
-                        <li class="factor-record">SEA 5-9 (0.357) vs HOU 6-8 (0.429)</li>
-                        
-                        <li class="factor-venue">SEA 4-4 en casa - HOU 1-6 de visita</li>
-                        
-                        <li class="factor-streak">SEA racha 5-9 - HOU racha 6-8</li>
-                        
-                        <li class="factor-injury">SEA: sin lesiones importantes | HOU: sin lesiones importantes</li>
-                        
-                        <li class="factor-odds">Linea: -1.5 | O/U: 7.5 | ML: /</li>
-                        
-                    </ul>
-
-                    
-                    <div class="pred-odds-row">
-                        
-                        <span class="pred-odds-item">Spread: <span>-1.5</span></span>
-                        
-                        
-                        <span class="pred-odds-item">O/U: <span>7.5</span></span>
-                        
-                        
-                        
-                        
-                        <span class="pred-odds-item">via DraftKings</span>
-                        
-                    </div>
-                    
-                </div>
-                
+                <p class="pred-empty">Sin partidos programados para analizar hoy en esta liga</p>
             
         </div>
         
@@ -4078,72 +3922,10 @@
                 <span class="pred-sport-icon">🏒</span>
                 <span class="pred-sport-name">NHL — TOP PICKS DEL DIA</span>
                 
-                <span class="pred-sport-badge">1 picks</span>
-                
             </div>
 
             
-                
-                <div class="pred-card">
-                    <div class="pred-card-header">
-                        <div class="pred-teams">
-                            
-                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/nhl/500/sj.png" alt="" onerror="this.style.display='none'">
-                            
-                            <span class="pred-team-name">San Jose Sharks</span>
-                            <span class="pred-vs">VS</span>
-                            
-                            <img class="pred-team-logo" src="https://a.espncdn.com/i/teamlogos/nhl/500/van.png" alt="" onerror="this.style.display='none'">
-                            
-                            <span class="pred-team-name">Vancouver Canucks</span>
-                        </div>
-                        
-                        <span class="pred-time">&#128337; 02:00</span>
-                        
-                    </div>
-
-                    <div class="pred-pick-row">
-                        <span class="pred-pick-label">SJ -1.5</span>
-                        <div class="pred-confidence">
-                            <div class="pred-conf-bar-bg">
-                                <div class="pred-conf-bar high"
-                                     style="width: 80%"></div>
-                            </div>
-                            <span class="pred-conf-text">80%</span>
-                        </div>
-                    </div>
-
-                    <ul class="pred-factors">
-                        
-                        <li class="factor-record">SJ 37-34 (0.521) vs VAN 22-48 (0.314)</li>
-                        
-                        <li class="factor-venue">SJ 21-14 en casa - VAN 14-21 de visita</li>
-                        
-                        <li class="factor-streak">SJ racha 37-34-7 - VAN racha 22-48-8</li>
-                        
-                        <li class="factor-injury">SJ: sin lesiones importantes | VAN: sin lesiones importantes</li>
-                        
-                        <li class="factor-odds">Linea: -1.5 | O/U: 6.5 | ML: /</li>
-                        
-                    </ul>
-
-                    
-                    <div class="pred-odds-row">
-                        
-                        <span class="pred-odds-item">Spread: <span>-1.5</span></span>
-                        
-                        
-                        <span class="pred-odds-item">O/U: <span>6.5</span></span>
-                        
-                        
-                        
-                        
-                        <span class="pred-odds-item">via Draft Kings</span>
-                        
-                    </div>
-                    
-                </div>
-                
+                <p class="pred-empty">Sin partidos programados para analizar hoy en esta liga</p>
             
         </div>
         
@@ -4180,12 +3962,12 @@
         <div class="articles-grid" id="articlesGrid">
             
             <article class="article-card" data-category="General">
-                <a href="https://as.com/masdeporte/cam-young-decide-que-este-masters-aun-no-ha-terminado-f202604-n/" target="_blank" rel="noopener">
+                <a href="https://as.com/futbol/internacional/polvorin-leao-f202604-n/" target="_blank" rel="noopener">
                     
                     <span class="card-trending">&#128293; Tendencia</span>
                     
                     
-                    <img class="card-image" src="https://img.asmedia.epimg.net/resizer/v2/Q4ABW7VUARILNNHCTSPFVGQJLI.jpg?auth=fd01125102f229ade3ba9c3a84af6e47d27238802537936d53c2a66a8911898a" alt="Cam Young decide que este Masters aún no ha terminado" loading="lazy"
+                    <img class="card-image" src="https://img.asmedia.epimg.net/resizer/v2/SYJQ25LXYZOFLEONWI3U5O2EBQ.jpg?auth=eb540b00d2adcbabd07575f82cd8efc04081f08e8cbea842524288c3f7a956ef" alt="Polvorín Leão" loading="lazy"
                          onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
                     
                     <div class="card-body">
@@ -4193,263 +3975,71 @@
                             <span class="card-source">AS</span>
                             <span class="card-category">General</span>
                         </div>
-                        <h2 class="card-title">Cam Young decide que este Masters aún no ha terminado</h2>
-                        <p class="card-summary">El estadounidense se echa encima de un McIlroy que se deja en Amen Corner buena parte de la renta acumulada en días previos.</p>
+                        <h2 class="card-title">Polvorín Leão</h2>
+                        <p class="card-summary">Golpe duro para el Milan en San Siro. El equipo de Allegri salió del campo derrotado por el Udinese y entre los abucheos de los tifosi, que apuntaron especialmente a Rafa Leão.</p>
                     </div>
                     <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 00:14</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="Futbol">
-                <a href="https://www.ole.com.ar/futbol-ascenso/ascenso_0_KSzVIfmAU0.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/11/BihTWOj5X_1200x630__1.jpg" alt="Berazategui, único puntero de la Primera C" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Ole</span>
-                            <span class="card-category">Futbol</span>
-                        </div>
-                        <h2 class="card-title">Berazategui, único puntero de la Primera C</h2>
-                        <p class="card-summary">Al Naranja le alcanzó el empate ante Centro Español, ya que Sacachispas perdió con Paraguayo. Mirá todos los resultados de este sábado.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 21:13</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="Futbol">
-                <a href="https://www.ole.com.ar/futbol-ascenso/ascenso_0_HGivyaJXGm.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/11/A9PtIF2zP_1200x630__1.jpg" alt="A Villa Dálmine, Italiano y Real Pilar se les escapó la cima de la Primera B" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Ole</span>
-                            <span class="card-category">Futbol</span>
-                        </div>
-                        <h2 class="card-title">A Villa Dálmine, Italiano y Real Pilar se les escapó la cima de la Primera B</h2>
-                        <p class="card-summary">Los tres tenían chances de treparse a la punta, pero dejaron pasar sus oportunidades. Mirá todos los resultados de este sábado.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 21:06</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="Futbol">
-                <a href="https://www.ole.com.ar/estudiantes-rio-cuarto/torneo-apertura-estudiantes-rc-barracas-central_0_yi68pda6Kk.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/07/QzG9PdbQK_1200x630__1.jpg" alt="En Córdoba, Estudiantes RC recibe a Barracas en un duelo de necesitados" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Ole</span>
-                            <span class="card-category">Futbol</span>
-                        </div>
-                        <h2 class="card-title">En Córdoba, Estudiantes RC recibe a Barracas en un duelo de necesitados</h2>
-                        <p class="card-summary">El último de la tabla enfrenta al equipo de Insua que viene de debutar con un empate en Sudamericana y busca meterse en el top8. Seguilo en Olé...</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 21:04</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="Futbol">
-                <a href="https://www.ole.com.ar/futbol-primera/river-plate-racing-coudet-costas_0_RJ2eBTH7SQ.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/11/Wc6TphEpm_1200x630__1.jpg" alt="El re encuentro: el atractivo extra del Racing-River" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Ole</span>
-                            <span class="card-category">Futbol</span>
-                        </div>
-                        <h2 class="card-title">El re encuentro: el atractivo extra del Racing-River</h2>
-                        <p class="card-summary">Con Chacho como máxima expresión, la tarde servirá como reunión de varios ex. Los dos buscarán, además, recuperar el nivel top. Partidazo en Avellaneda.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:58</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="Futbol">
-                <a href="https://www.ole.com.ar/futbol-ascenso/ascenso_0_fIHhQpXp8Y.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/11/fnOFR-X1C_1200x630__1.jpg" alt="Godoy Cruz se quedó sin invicto y sin la posibilidad de ser líder" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Ole</span>
-                            <span class="card-category">Futbol</span>
-                        </div>
-                        <h2 class="card-title">Godoy Cruz se quedó sin invicto y sin la posibilidad de ser líder</h2>
-                        <p class="card-summary">El Tomba la pasó mal en la Isla Maciel y perdió por primera vez desde su descenso a la Primera Nacional: 0-2 vs. San Telmo.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:57</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="Futbol">
-                <a href="https://www.ole.com.ar/boca-juniors/milton-gimenez-desahogo-murmullo-gol-empate_0_hvFHtRS3Me.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/11/iYl6ubsH0_1200x630__1.jpg" alt="Milton Giménez y su desahogo: del murmullo al gol del empate" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Ole</span>
-                            <span class="card-category">Futbol</span>
-                        </div>
-                        <h2 class="card-title">Milton Giménez y su desahogo: del murmullo al gol del empate</h2>
-                        <p class="card-summary">El delantero de Boca no venía teniendo un buen partido pero convirtió de penal el 1-1 ante Independiente.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:54</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="Futbol">
-                <a href="https://www.ole.com.ar/futbol-primera/boca-penal-milton-gimenez-polemica-velasco-quinteros_0_Itw3zNSIwU.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/11/8zE3Kiemp_1200x630__1.jpg" alt="Video: polémico penal a Velasco, protesta de Independiente y roja a Quinteros" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Ole</span>
-                            <span class="card-category">Futbol</span>
-                        </div>
-                        <h2 class="card-title">Video: polémico penal a Velasco, protesta de Independiente y roja a Quinteros</h2>
-                        <p class="card-summary">Boca empató con una jugada polémica en el final del primer tiempo ante el Rojo.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:46</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="Futbol">
-                <a href="https://www.ole.com.ar/futbol-primera/boca-juniors-independiente-marcone-braida-belmonte-rey-domenech-agarron-mitad-cancha-video_0_YefgolO90J.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/11/FTBgdicuc_1200x630__1.jpg" alt="Video: la insólita acción en la que Marcone y tres jugadores de Boca tuvieron un encontronazo con la pelota en juego" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Ole</span>
-                            <span class="card-category">Futbol</span>
-                        </div>
-                        <h2 class="card-title">Video: la insólita acción en la que Marcone y tres jugadores de Boca tuvieron un encontronazo con la pelota en juego</h2>
-                        <p class="card-summary">A mediados del primer tiempo, el futbolista de Independiente chocó con Braida y terminó en una extraña escena en la mitad de la cancha.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:29</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="Futbol">
-                <a href="https://www.ole.com.ar/futbol-primera/independiente-boca-gol-abaldo-mano-reclamo_0_75d6wpN0oC.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/11/4-m0tx2hN_1200x630__1.jpg" alt="Por qué no se cobró mano en el gol de Independiente" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Ole</span>
-                            <span class="card-category">Futbol</span>
-                        </div>
-                        <h2 class="card-title">Por qué no se cobró mano en el gol de Independiente</h2>
-                        <p class="card-summary">Todo Boca reclamó en la acción previa que derivó en el tanto de Abaldo en la Bombonera. ¿Qué pasó?</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:08</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="Futbol">
-                <a href="https://www.ole.com.ar/river-plate/river-plate-racing-eduardo-coudet_0_UOdHVdOtZQ.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/05/hUG0GgAff_1200x630__1.jpg" alt="Con regresos clave, la lista de River para el clásico ante Racing" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Ole</span>
-                            <span class="card-category">Futbol</span>
-                        </div>
-                        <h2 class="card-title">Con regresos clave, la lista de River para el clásico ante Racing</h2>
-                        <p class="card-summary">Acuña y Salas se reintegran en un equipo que buscará la quinta victoria al hilo de la era Chacho.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:05</span>
+                        <span class="card-date">12 Apr 2026 - 06:10</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>
             </article>
             
             <article class="article-card" data-category="General">
-                <a href="https://www.mundodeportivo.com/ufc/20260412/1004168785/ufc-327-directo-hoy-sigue-prochazka-vs-ulberg-resto-combates-velada.html" target="_blank" rel="noopener">
+                <a href="https://as.com/motor/motociclismo/ducati-tiene-prisa-f202604-n/" target="_blank" rel="noopener">
                     
                     <span class="card-trending">&#128293; Tendencia</span>
                     
                     
-                    <img class="card-image" src="https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/04/10/69d90d6b0763c.jpeg" alt="UFC 327, en directo" loading="lazy"
+                    <img class="card-image" src="https://img.asmedia.epimg.net/resizer/v2/OC7MC6NHSZGTTM33LCRZKKJHHI.jpg?auth=0aff55ce04bb8a76097a581b495380947d818813df16c17e7011cb90df7ab2c0" alt="Ducati tiene prisa" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">AS</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Ducati tiene prisa</h2>
+                        <p class="card-summary">Ante el salto de Aprilia, los italianos buscarán mejoras durante el parón para recortar distancia con los de Noale. “Ya no somos la moto dominante”, dice Tardozzi.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 05:51</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://as.com/baloncesto/euroliga/las-dudas-de-los-clubes-de-futbol-con-la-nba-la-renovacion-madrid-euroliga-la-ambicion-del-valencia-f202604-n/" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://img.asmedia.epimg.net/resizer/v2/5GVARTK5EVKAXMYI7SNEL4XWGQ.jpg?auth=440202cd71264af8cd24ad35e0be44b552f5aa98ba09d56e7133a36097eea59b" alt="Las dudas de los clubes de fútbol con la NBA, la renovación Madrid-Euroliga, la ambición del Valencia..." loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">AS</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Las dudas de los clubes de fútbol con la NBA, la renovación Madrid-Euroliga, la ambición del Valencia...</h2>
+                        <p class="card-summary">El martes la Euroliga decidirá el formato del próximo curso y abordará la expansión y el modelo de franquicias. ‘Bloomberg’ revela desacuerdos de los clubes con la NBA.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 05:33</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://www.mundodeportivo.com/balonmano/20260412/1004168501/barca-balonmano.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/03/23/69c1a2efdf077.r_d.830-459-0.jpeg" alt="¡Fichaje 'bomba' para suplir a Dika Mem! Marcos Fis firmará por el Barça hasta 2030" loading="lazy"
                          onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
                     
                     <div class="card-body">
@@ -4457,11 +4047,505 @@
                             <span class="card-source">Mundo Deportivo</span>
                             <span class="card-category">General</span>
                         </div>
-                        <h2 class="card-title">UFC 327, en directo</h2>
-                        <p class="card-summary"></p>
+                        <h2 class="card-title">¡Fichaje 'bomba' para suplir a Dika Mem! Marcos Fis firmará por el Barça hasta 2030</h2>
+                        <p class="card-summary">En cuanto Dika Mem comunicó que no aceptaba la oferta de renovación y que cambiaría de aires para irse al Füchse Berlín en 2027, el Barça se puso manos a la obra en busca de un sustituto de garantías con el objetivo de minimizar al máximo la pérdida del actual capitán azulgrana, líder del equipo y gran figura mundial del balonmano: al francés, en su pico de plenitud, seguramente sólo le mantenía e</p>
                     </div>
                     <div class="card-footer">
-                        <span class="card-date">12 Apr 2026 - 00:56</span>
+                        <span class="card-date">12 Apr 2026 - 07:05</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://as.com/futbol/primera/el-madrid-prepara-el-regreso-de-kroos-f202604-n/" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://img.asmedia.epimg.net/resizer/v2/47YLP654ZFJJDEGG5K6LFVBHMY.jpg?auth=d223d08ccff1af6905e0e3cae4d6949b0786c04fd72ff5592467048a0cce4f1f" alt="El Madrid prepara el regreso de Kroos" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">AS</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">El Madrid prepara el regreso de Kroos</h2>
+                        <p class="card-summary">El club trabaja para lograr el regreso del alemán de cara al curso que viene, dentro de la estructura deportiva.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 04:22</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="Futbol">
+                <a href="https://www.ole.com.ar/futbol-primera/fecha-14-torneo-apertura-resultados-posiciones-sigue_0_8tIAMQL7Ve.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/01/22/HpgmKv43A_1200x630__1.jpg" alt="Torneo Apertura: resultados, posiciones y el primer clasificado a octavos de final" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Ole</span>
+                            <span class="card-category">Futbol</span>
+                        </div>
+                        <h2 class="card-title">Torneo Apertura: resultados, posiciones y el primer clasificado a octavos de final</h2>
+                        <p class="card-summary">Independiente Rivadavia le ganó a Argentinos y ya se aseguró un lugar en los playoffs. Así sigue la fecha 14.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">11 Apr 2026 - 23:37</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="Futbol">
+                <a href="https://www.ole.com.ar/futbol-primera/descensos-fecha14-torneo-apertura-tabla-anual-promedios_0_bXLhLCZmPI.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/01/22/p8NAlB8CC_1200x630__1.jpg" alt="Así están los descensos en la fecha 14 del Apertura" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Ole</span>
+                            <span class="card-category">Futbol</span>
+                        </div>
+                        <h2 class="card-title">Así están los descensos en la fecha 14 del Apertura</h2>
+                        <p class="card-summary">Al final de la temporada perderán la categoría dos equipos: uno por la tabla de promedios y el otro por la anual. Mirá cómo viene la mano en cada caso.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">11 Apr 2026 - 23:37</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="Futbol">
+                <a href="https://www.ole.com.ar/futbol-primera/tabla-anual-posiciones-clasificacion-copas-libertadores-sudamericana-fecha14-torneo-apertura_0_daaa4eVOd9.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/02/15/ST6BbhJuX_1200x630__1.jpg" alt="Tabla anual: Independiente Rivadavia arriba, River tercero y Boca en zona de Sudamericana" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Ole</span>
+                            <span class="card-category">Futbol</span>
+                        </div>
+                        <h2 class="card-title">Tabla anual: Independiente Rivadavia arriba, River tercero y Boca en zona de Sudamericana</h2>
+                        <p class="card-summary">La clasificación acumulada de los dos torneos de la Primera División y la mirada en las competencias internacionales para la temporada que viene.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">11 Apr 2026 - 23:36</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="Futbol">
+                <a href="https://www.ole.com.ar/independiente/kevin-lomonaco-cambio-lesion-independiente-empate-boca_0_MjZTrUiqJZ.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/11/-7Bhfsd1l_1200x630__1.jpg" alt="Alerta en Independiente por Lomónaco: pidió el cambio por una molestia" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Ole</span>
+                            <span class="card-category">Futbol</span>
+                        </div>
+                        <h2 class="card-title">Alerta en Independiente por Lomónaco: pidió el cambio por una molestia</h2>
+                        <p class="card-summary">El zaguero del Rojo fue sustituido a los 29 minutos del segundo tiempo, tras sufrir una dolencia muscular. Lo van a evaluar en las próximas horas.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">11 Apr 2026 - 23:15</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="Futbol">
+                <a href="https://www.ole.com.ar/futbol-internacional/union-berlin-nombro-entrenadora-mujer-primera-historia-bundesliga-marie-louise-eta_0_JKQNzKIzJ3.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/11/AK5dAf6-t_1200x630__1.jpg" alt="Unión Berlín tendrá a la primera DT mujer en la historia de la Bundesliga y dirigirá hasta el final de temporada" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Ole</span>
+                            <span class="card-category">Futbol</span>
+                        </div>
+                        <h2 class="card-title">Unión Berlín tendrá a la primera DT mujer en la historia de la Bundesliga y dirigirá hasta el final de temporada</h2>
+                        <p class="card-summary">El equipo de la capital alemana despidió a su entrenador Steffen Baumgart y anunció que agarrará el puesto Marie-Louise Eta, quien estaba al mando de la Sub 19.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">11 Apr 2026 - 23:02</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="Futbol">
+                <a href="https://www.ole.com.ar/futbol-primera/puntajes-fecha-14-ole-apertura_0_KKhx4WaMKQ.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/01/23/sAFIUAfLk_1200x630__1.jpg" alt="Los puntajes Olé de la fecha 14 del Torneo Apertura" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Ole</span>
+                            <span class="card-category">Futbol</span>
+                        </div>
+                        <h2 class="card-title">Los puntajes Olé de la fecha 14 del Torneo Apertura</h2>
+                        <p class="card-summary">Con una nueva jornada del campeonato en marcha, las formaciones, los goleadores y el rendimiento de todos los jugadores en cada partido.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">11 Apr 2026 - 22:54</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="Futbol">
+                <a href="https://www.ole.com.ar/independiente/independiente-rojo-penal-valdez-velasco-empate-boca-bomboonera_0_qGKIwzTtGm.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/11/8zE3Kiemp_1200x630__1.jpg" alt="La queja de los futbolistas de Independiente y de Desábato por el penal" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Ole</span>
+                            <span class="card-category">Futbol</span>
+                        </div>
+                        <h2 class="card-title">La queja de los futbolistas de Independiente y de Desábato por el penal</h2>
+                        <p class="card-summary">El Rojo explotó por el penal que le cobraron a Valdez, quien mostró su disgusto al igual que Abaldo, Marcone y Desábato. Quinteros protestó y fue expulsado.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">11 Apr 2026 - 22:47</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="Futbol">
+                <a href="https://www.ole.com.ar/boca-juniors/volvio-zeballos-dijo-ubeda-oido-ponerlo_0_wXMChTHIgr.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/11/TzQxUahsi_1200x630__1.jpg" alt="Volvió Zeballos: qué le dijo Ubeda al oído antes de ponerlo tras 70 días" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Ole</span>
+                            <span class="card-category">Futbol</span>
+                        </div>
+                        <h2 class="card-title">Volvió Zeballos: qué le dijo Ubeda al oído antes de ponerlo tras 70 días</h2>
+                        <p class="card-summary">El Chango entró a los 25 minutos del segundo tiempo en el empate 1-1 entre Boca e Independiente.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">11 Apr 2026 - 22:45</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="Futbol">
+                <a href="https://www.ole.com.ar/futbol-internacional/america/buen-partido-neymar-santos-gano-mineiro-eduardo-dominguez_0_wWBe4auEGb.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/11/dBfHNXKti_1200x630__1.jpg" alt="Con un buen partido de Neymar, el Santos le ganó al Mineiro de Eduardo Domínguez en el Brasileirao" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Ole</span>
+                            <span class="card-category">Futbol</span>
+                        </div>
+                        <h2 class="card-title">Con un buen partido de Neymar, el Santos le ganó al Mineiro de Eduardo Domínguez en el Brasileirao</h2>
+                        <p class="card-summary">El #10 tuvo un destacado encuentro y su Peixe venció por 1-0 al Galo del Barba, que acumuló su segunda derrota consecutiva.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">11 Apr 2026 - 22:45</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="Futbol">
+                <a href="https://www.ole.com.ar/boca-juniors/ubeda-firme-postura-fallos-polemicos-claras_0_pjnwdNrJTg.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://www.ole.com.ar/images/2026/04/11/oRYbdJn7-_1200x630__1.jpg" alt="Ubeda y su firme postura sobre los fallos polémicos: "Fueron muy claras..."" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Ole</span>
+                            <span class="card-category">Futbol</span>
+                        </div>
+                        <h2 class="card-title">Ubeda y su firme postura sobre los fallos polémicos: "Fueron muy claras..."</h2>
+                        <p class="card-summary">Sifón analizó las acciones calientes que tuvo el empate 1-1 de Boca ante Independiente. Además, habló sobre la seguidilla que se le viene a su equipo.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">11 Apr 2026 - 22:40</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/futbol/mexico/nota/_/id/16563215/america-vs-cruz-azul-resumen-goles-clasico-joven-liga-mx-estadio-banorte" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">América empata ante Cruz Azul en su regreso al Estadio Banorte</h2>
+                        <p class="card-summary">Pato Salas adelantó a las Águilas y la Máquina empató con gol de Omar Campos.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 01:37</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/beisbol/nota/_/id/16562847/toronto-blue-jays-george-springer-sufre-fractura-dedo-gordo-pie" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Blue Jays: Springer sufre fractura en dedo de pie</h2>
+                        <p class="card-summary">George Springer, bateador designado de Toronto Blue Jays, sufre fractura en dedo pulgar de pie izquierdo y abandona juego ante Minnesota Twins.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 00:59</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/boxeo/nota/_/id/16562000/adams-se-desploma-antes-de-pesaje-cancelada-pelea-vs-agyarko" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Se desploma antes del pesaje y cancelan su pelea</h2>
+                        <p class="card-summary">La pelea del superwelter Brandon Adams contra Caoimhin Agyarko fue cancelada después de que Adams se desplomara en su habitación de hotel antes del pesaje del viernes.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 00:59</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/artes-marciales-mixtas/nota/_/id/16563078/ufc-lewis-vs-hokit-programada-casa-blanca-trump" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">UFC añade Lewis vs. Hokit a la Casa Blanca</h2>
+                        <p class="card-summary">La UFC añadió un combate de peso pesado entre Derrick Lewis y Josh Hokit a su evento en la Casa Blanca a instancia del presidente Donald Trump.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 00:59</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/beisbol/nota/_/id/16562609/new-york-mets-francisco-lindor-apuros-errores-dejan-perplejos" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Pifias de Lindor en apuros dejan perplejos a Mets</h2>
+                        <p class="card-summary">Los errores en el comiezo de temporada de un Francisco Lindor en apuros dejan perplejos a los New York Mets.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 00:59</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/otros-deportes/nota/_/id/16561878/alberto-del-rio-libertad-condicional-violencia-pareja" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">El luchador Alberto 'N' obtiene libertad tras pago</h2>
+                        <p class="card-summary">El luchador mexicano, Alberto 'N', abandonó la prisión preventiva tras reconocer las agresiones contra su pareja; deberá pagar una reparación del daño cercana al millón de pesos y asistir a rehabilitación.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 00:59</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/futbol/nota/_/id/16560720/al-okhdood-vs-al-nassr-cristiano-ronaldo-marco-gol-se-acerca-a-los-1000" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Cristiano anotó  y se acerca a los 1000 goles</h2>
+                        <p class="card-summary">El portugués de 41 años volvió a ser titular y respondió con una nueva anotación.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 00:59</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/futbol-americano/nota/_/id/16560725/cowboys-nfl-markquese-bell-arrestado-cargos-drogas" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Cowboys: Bell, arrestado; enfrenta cargos por drogas</h2>
+                        <p class="card-summary">El safety de los Cowboys, Markquese Bell, fue arrestado y acusado de posesión de una sustancia controlada y marihuana.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 00:59</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/boxeo/nota/_/id/16560104/gallo-estrada-cae-tenshin-nasukawa-por-nocaut-tecnico-peso-gallo" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">‘Gallo’ Estrada cae por nocaut técnico en Japón</h2>
+                        <p class="card-summary">null</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 00:59</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://espndeportes.espn.com/futbol/mls/nota/_/id/16562307/neymar-mls-cincinnari-esperan-reunion-fichaje" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <div class="card-image-placeholder">&#9917;</div>
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">ESPN Deportes</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Papá de Neymar espera reunión con el Cincinnati</h2>
+                        <p class="card-summary">El papá de Neymar aguarda una reunión con ejecutivos del FC Cincinnati que busca fichar a la estrella brasileña tras el Mundial.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">12 Apr 2026 - 00:59</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>
@@ -4486,30 +4570,6 @@
                     </div>
                     <div class="card-footer">
                         <span class="card-date">12 Apr 2026 - 00:01</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://as.com/futbol/primera/simeone-tengo-un-plan-y-no-me-voy-a-mover-de-eso-f202604-n/" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://vdmedia.as.com/mcv/diarioas/multimedia/20260411/1158348_212440_video_1200.mp4" alt="Simeone: “Tengo un plan y no me voy a mover de eso”" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">AS</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Simeone: “Tengo un plan y no me voy a mover de eso”</h2>
-                        <p class="card-summary">El entrenador del Atlético analizó la actuación de su equipo ante el Sevilla, con participación de seis jugadores del Madrileño.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 21:30</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>
@@ -4612,254 +4672,24 @@
             </article>
             
             <article class="article-card" data-category="General">
-                <a href="https://as.com/futbol/el-camp-nou-despide-a-su-equipo-creyendo-en-la-remontada-si-se-puede-f202604-n/" target="_blank" rel="noopener">
+                <a href="https://www.mundodeportivo.com/futbol/fc-barcelona/20260411/1004168943/flick-laliga-hecha-martes-necesitamos-milagro.html" target="_blank" rel="noopener">
                     
                     <span class="card-trending">&#128293; Tendencia</span>
                     
                     
-                    <img class="card-image" src="https://img.asmedia.epimg.net/resizer/v2/EYKOVFXUTBIKZJKREFONYZXASE.jpg?auth=8ebff50d773b7474030b3276ca8386edc26d7d97d2318a389f7fc8524eb8b1af" alt="El Camp Nou despide a su equipo creyendo en la remontada: “¡Sí, se puede!"" loading="lazy"
+                    <img class="card-image" src="https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/04/11/69daa89c55850.jpeg" alt=""El martes no necesitamos un milagro"" loading="lazy"
                          onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
                     
                     <div class="card-body">
                         <div class="card-meta">
-                            <span class="card-source">AS</span>
+                            <span class="card-source">Mundo Deportivo</span>
                             <span class="card-category">General</span>
                         </div>
-                        <h2 class="card-title">El Camp Nou despide a su equipo creyendo en la remontada: “¡Sí, se puede!"</h2>
-                        <p class="card-summary">Los jugadores recibieron el apoyo incondicional de más de 60.000 aficionados de cara al partido del martes contra el Atlético.</p>
+                        <h2 class="card-title">"El martes no necesitamos un milagro"</h2>
+                        <p class="card-summary">El triunfo del FC Barcelona en el derbi contra el Espanyol (4-1) deja el título de LaLiga muy encarrilado para el conjunto azulgrana, que cuenta con nueve puntos de ventaja sobre el Real Madrid a falta de siete jornadas y 21 puntos en juego. Pese a la diferencia en la tabla, el técnico Hansi Flick quiso calmar la euforia y lanzó un mensaje para sus jugadores para el tramo final de competición.</p>
                     </div>
                     <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:35</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/futbol/partido/_/juegoId/401840935/guadalajara-tigres-uanl" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Tigres toma dormido a Chivas y aumenta la ventaja en arranque del complemento</h2>
-                        <p class="card-summary">Ángel Correa remató a puerta con la cabeza un solitario balón de Brunetta  que atravesó el área para encontrarlo.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:17</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/beisbol/mlb/juego/_/juegoId/401814897" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Caballero remolca dos en la octava y Yankees da voltereta</h2>
-                        <p class="card-summary">Tras iniciar la campaña con 7-1, New York ha perdido tres juegos al hilo y cuatro de los últimos cinco, incluyendo el primero de la serie ante Rays el viernes.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:17</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/futbol/partido/_/juegoId/761533/red-bull-new-york-inter-miami-cf" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">EN VIVO: ¡Sufre el Inter Miami! Jorge Ruvalcaba abre el marcador para New York</h2>
-                        <p class="card-summary">Jorge Ruvalcaba marcó su primer gol en 7 partidos de carrera con los New York Red Bulls.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:10</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/futbol/espana/nota/_/id/16561080/barcelona-vs-espanyol-laliga-flick-champions-atletico" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Flick: LaLiga no está sentenciada y cree en remontar al Atlético</h2>
-                        <p class="card-summary">El técnico del Barcelona controló la euforia tras golear el Espanyol y mostró ilusión por remontar en Champions.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:09</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/otros-deportes/nota/_/id/16561878/alberto-del-rio-libertad-condicional-violencia-pareja" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">El luchador Alberto 'N' obtiene libertad tras pago</h2>
-                        <p class="card-summary">El luchador mexicano, Alberto 'N', abandonó la prisión preventiva tras reconocer las agresiones contra su pareja; deberá pagar una reparación del daño cercana al millón de pesos y asistir a rehabilitación.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:09</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/futbol/nota/_/id/16560720/al-okhdood-vs-al-nassr-cristiano-ronaldo-marco-gol-se-acerca-a-los-1000" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Cristiano anotó  y se acerca a los 1000 goles</h2>
-                        <p class="card-summary">El portugués de 41 años volvió a ser titular y respondió con una nueva anotación.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:09</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/boxeo/nota/_/id/16562000/adams-se-desploma-antes-de-pesaje-cancelada-pelea-vs-agyarko" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Se desploma antes del pesaje y cancelan su pelea</h2>
-                        <p class="card-summary">La pelea del superwelter Brandon Adams contra Caoimhin Agyarko fue cancelada después de que Adams se desplomara en su habitación de hotel antes del pesaje del viernes.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:09</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/futbol-americano/nota/_/id/16560725/cowboys-nfl-markquese-bell-arrestado-cargos-drogas" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Cowboys: Bell, arrestado; enfrenta cargos por drogas</h2>
-                        <p class="card-summary">El safety de los Cowboys, Markquese Bell, fue arrestado y acusado de posesión de una sustancia controlada y marihuana.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:09</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/beisbol/nota/_/id/16557596/seattle-mariners-estatua-ichiro-suzuki-rompe-inauguracion" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Estatua de Ichiro se rompe en su inauguración</h2>
-                        <p class="card-summary">Develación de estatua de Ichiro Suzuki en el T-Mobile Park, casa de Seattle Mariners, se ve empañada al romperse el bate al quitar cortina.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:09</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://espndeportes.espn.com/boxeo/nota/_/id/16560104/gallo-estrada-cae-tenshin-nasukawa-por-nocaut-tecnico-peso-gallo" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <div class="card-image-placeholder">&#9917;</div>
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">ESPN Deportes</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">‘Gallo’ Estrada cae por nocaut técnico en Japón</h2>
-                        <p class="card-summary">null</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:09</span>
+                        <span class="card-date">11 Apr 2026 - 21:42</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>
@@ -4962,30 +4792,6 @@
             </article>
             
             <article class="article-card" data-category="General">
-                <a href="https://www.mundodeportivo.com/futbol/fc-barcelona/20260411/1004168849/1x1-barca-espanyol.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/04/11/69da86eedec40.r_d.1150-1031-0.jpeg" alt="El 1x1 del Barça ante el Espanyol" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Mundo Deportivo</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">El 1x1 del Barça ante el Espanyol</h2>
-                        <p class="card-summary"></p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:43</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
                 <a href="https://www.mundodeportivo.com/futbol/rcd-espanyol/20260411/1004168901/pol-lozano-visto-respeto-otros-companeros-profesion.html" target="_blank" rel="noopener">
                     
                     <span class="card-trending">&#128293; Tendencia</span>
@@ -5010,36 +4816,12 @@
             </article>
             
             <article class="article-card" data-category="General">
-                <a href="https://as.com/futbol/internacional/manita-record-y-que-pase-el-madrid-f202604-n/" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://vdmedia.as.com/mcv/diarioas/multimedia/20260411/1158314_183552_video_1200.mp4" alt="Manita, récord y que pase el Madrid" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">AS</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Manita, récord y que pase el Madrid</h2>
-                        <p class="card-summary">El Bayern se luce y establece una nueva plusmarca de goles en la Bundesliga antes de afrontar la vuelta de Champions contra los de Arbeloa.</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 18:41</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
                 <a href="https://www.mundodeportivo.com/futbol/fc-barcelona/20260411/1004168826/barca-apano.html" target="_blank" rel="noopener">
                     
                     <span class="card-trending">&#128293; Tendencia</span>
                     
                     
-                    <img class="card-image" src="https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/04/11/69da80599234e.jpeg" alt="Festival barcelonista y cuenta atrás para el título" loading="lazy"
+                    <img class="card-image" src="https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/04/11/69da80599234e.jpeg" alt="4-1: Festival barcelonista y cuenta atrás para el título" loading="lazy"
                          onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
                     
                     <div class="card-body">
@@ -5047,107 +4829,11 @@
                             <span class="card-source">Mundo Deportivo</span>
                             <span class="card-category">General</span>
                         </div>
-                        <h2 class="card-title">Festival barcelonista y cuenta atrás para el título</h2>
+                        <h2 class="card-title">4-1: Festival barcelonista y cuenta atrás para el título</h2>
                         <p class="card-summary">Puede haber empezado la cuenta atrás hacia el título de Liga después de la goleada del Barcelona al Espanyol en su primera visita al nuevo Spotify Camp Nou. Un primer tiempo con doblete de Ferran y ventaja clara azulgrana dio paso a un segundo en el que los visitantes forzaron al líder a poner toda la carne en el asador para acabar ganando por 4-1, gracias a los goles de Lamine Yamal, en otra exhi</p>
                     </div>
                     <div class="card-footer">
                         <span class="card-date">11 Apr 2026 - 20:31</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://www.marca.com/futbol/primera-division/cronica/2026/04/11/alfombra-roja-titulo.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/04/11/69da808f73247.jpeg" alt="Alfombra roja hacia el título" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Marca</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Alfombra roja hacia el título</h2>
-                        <p class="card-summary">Las dos asistencias y gol de Lamine Yamal, el doblete de Ferran Torres y uno final de Rashford hacen más líder al Barça. El Espanyol, en caída libre. Los culés, en modo remontada&nbsp;</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:30</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://www.marca.com/futbol/segunda-division/cronica/2026/04/11/malaga-pinta-bien.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/04/11/69da915e4b7a9.jpeg" alt="Este Málaga pinta muy bien" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Marca</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Este Málaga pinta muy bien</h2>
-                        <p class="card-summary">Murillo y Joaquín marcaron los goles para derrotar a Las Palmas</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:23</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://www.marca.com/futbol/atletico/2026/04/11/atletico-riesgo-alineacion-indebida.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/04/11/69da9129dd511.jpeg" alt="Sin riesgo de alineación indebida" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Marca</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">Sin riesgo de alineación indebida</h2>
-                        <p class="card-summary">Pese a que el once presenta a cuatro canteranos, el cambio de norma hace que una hipotética expulsión de un futbolista de la primera plantilla no le lleve a perder el partido</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:21</span>
-                        <span class="read-more">Leer mas &#8594;</span>
-                    </div>
-                </a>
-            </article>
-            
-            <article class="article-card" data-category="General">
-                <a href="https://www.marca.com/futbol/premier-league/cronica/2026/04/11/liverpool-recupera-sonrisa-gracias-juvenil-ngumoha.html" target="_blank" rel="noopener">
-                    
-                    <span class="card-trending">&#128293; Tendencia</span>
-                    
-                    
-                    <img class="card-image" src="https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/04/11/69da8c232ac40.jpeg" alt="El Liverpool recupera la sonrisa gracias al juvenil Ngumoha" loading="lazy"
-                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
-                    
-                    <div class="card-body">
-                        <div class="card-meta">
-                            <span class="card-source">Marca</span>
-                            <span class="card-category">General</span>
-                        </div>
-                        <h2 class="card-title">El Liverpool recupera la sonrisa gracias al juvenil Ngumoha</h2>
-                        <p class="card-summary">Rio marcó el primero y participó en el segundo gol ante el Fulham&nbsp;</p>
-                    </div>
-                    <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:20</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>
@@ -5178,12 +4864,12 @@
             </article>
             
             <article class="article-card" data-category="General">
-                <a href="https://www.marca.com/tiramillas/politica/2026/04/11/estados-unidos-e-iran-intercambian-senales-acuerdo-ataques-libano-amenazan-negociaciones.html" target="_blank" rel="noopener">
+                <a href="https://www.marca.com/ciclismo/2026/04/11/paul-seixas-estrella-ciernes-baila-lluvia-poner-broche-oro-itzulia.html" target="_blank" rel="noopener">
                     
                     <span class="card-trending">&#128293; Tendencia</span>
                     
                     
-                    <img class="card-image" src="https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/04/11/69da8e60f403c.jpeg" alt="El Líbano complica la paz entre EE.UU. e Irán tras la primera jornada de negociación" loading="lazy"
+                    <img class="card-image" src="https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/04/11/69da700a6b095.jpeg" alt="Paul Seixas, una estrella en ciernes: baila bajo la lluvia para poner el broche de oro a la Itzulia" loading="lazy"
                          onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
                     
                     <div class="card-body">
@@ -5191,23 +4877,23 @@
                             <span class="card-source">Marca</span>
                             <span class="card-category">General</span>
                         </div>
-                        <h2 class="card-title">El Líbano complica la paz entre EE.UU. e Irán tras la primera jornada de negociación</h2>
-                        <p class="card-summary">Las condiciones impuestas por Teherán añaden una nueva capa de tensión al proceso de paz</p>
+                        <h2 class="card-title">Paul Seixas, una estrella en ciernes: baila bajo la lluvia para poner el broche de oro a la Itzulia</h2>
+                        <p class="card-summary">El francés certifica su primera general a nivel WorldTour; August certifica la victoria en Bergara</p>
                     </div>
                     <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 20:12</span>
+                        <span class="card-date">11 Apr 2026 - 17:51</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>
             </article>
             
             <article class="article-card" data-category="General">
-                <a href="https://www.marca.com/futbol/liga-italiana/cronica/2026/04/11/leccion-udinese-milan-modric-deja-aun-lejos-scudetto.html" target="_blank" rel="noopener">
+                <a href="https://www.marca.com/atletismo/2026/04/11/elenco-elite-pone-punto-100-atletas-populares-1.html" target="_blank" rel="noopener">
                     
                     <span class="card-trending">&#128293; Tendencia</span>
                     
                     
-                    <img class="card-image" src="https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/04/11/69da88df8a930.jpeg" alt="El Milan recibe una lección y se despide del Scudetto" loading="lazy"
+                    <img class="card-image" src="https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/04/11/69da68adbfdce.png" alt="Un elenco de élite pone a punto a 100 atletas populares" loading="lazy"
                          onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
                     
                     <div class="card-body">
@@ -5215,23 +4901,23 @@
                             <span class="card-source">Marca</span>
                             <span class="card-category">General</span>
                         </div>
-                        <h2 class="card-title">El Milan recibe una lección y se despide del Scudetto</h2>
-                        <p class="card-summary">El Milan cayó 0-3 en San Siro y se queda a nueve puntos del líder. Modric, sustituido en el 72</p>
+                        <h2 class="card-title">Un elenco de élite pone a punto a 100 atletas populares</h2>
+                        <p class="card-summary">Un centenar de corredores participaron en un entrenamiento colectivo parapreparar la Media Maratón de Madrid junto a atletas y técnicos profesionales</p>
                     </div>
                     <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 19:56</span>
+                        <span class="card-date">11 Apr 2026 - 17:34</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>
             </article>
             
             <article class="article-card" data-category="General">
-                <a href="https://www.marca.com/futbol/valencia/2026/04/11/corberan-resultado-sido-inmerecido-valencia-merecio-ganar.html" target="_blank" rel="noopener">
+                <a href="https://www.marca.com/motor/formula1/2026/04/11/buena-noticia-honda-alonso-fia-les-permite-mejoras-miami.html" target="_blank" rel="noopener">
                     
                     <span class="card-trending">&#128293; Tendencia</span>
                     
                     
-                    <img class="card-image" src="https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/04/11/69da873c96b80.jpeg" alt="Corberán: &quot;Hemos merecido ganar&quot;" loading="lazy"
+                    <img class="card-image" src="https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/04/11/69da638b75483.jpeg" alt="Una buena noticia para Alonso" loading="lazy"
                          onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
                     
                     <div class="card-body">
@@ -5239,23 +4925,23 @@
                             <span class="card-source">Marca</span>
                             <span class="card-category">General</span>
                         </div>
-                        <h2 class="card-title">Corberán: &quot;Hemos merecido ganar&quot;</h2>
-                        <p class="card-summary">El técnico valencianista lamenta la acción del gol y admite que el equipo necesitará más puntos para asegurar la permanencia</p>
+                        <h2 class="card-title">Una buena noticia para Alonso</h2>
+                        <p class="card-summary">Son relativas a la fiabilidad y no corresponden exactamente al rendimiento, con el programa ADUO, pero podría ganar revoluciones y prestaciones</p>
                     </div>
                     <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 19:40</span>
+                        <span class="card-date">11 Apr 2026 - 17:09</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>
             </article>
             
             <article class="article-card" data-category="General">
-                <a href="https://www.marca.com/motor/formula1/2026/04/11/aviso-verstappen-f1-grande-todos-nosotros.html" target="_blank" rel="noopener">
+                <a href="https://www.marca.com/tenis/masters-1000-montecarlo/2026/04/11/alcaraz-sinner-dominacion-reparten-botin-ultimos-20-torneos.html" target="_blank" rel="noopener">
                     
                     <span class="card-trending">&#128293; Tendencia</span>
                     
                     
-                    <img class="card-image" src="https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/04/11/69da869d69a35.jpeg" alt="El aviso a Verstappen: &quot;La F1 es más grande que todos nosotros&quot;" loading="lazy"
+                    <img class="card-image" src="https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/04/11/69da0ada488e4.jpeg" alt="Alcaraz y Sinner y una dominación para largo: se reparten todo el botín en los últimos 20 torneos" loading="lazy"
                          onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
                     
                     <div class="card-body">
@@ -5263,23 +4949,23 @@
                             <span class="card-source">Marca</span>
                             <span class="card-category">General</span>
                         </div>
-                        <h2 class="card-title">El aviso a Verstappen: &quot;La F1 es más grande que todos nosotros&quot;</h2>
-                        <p class="card-summary">Ralf Schumacher cree que la categoría seguirá adelante, pese a la grandeza de la figura del holandés<span class=""></span></p>
+                        <h2 class="card-title">Alcaraz y Sinner y una dominación para largo: se reparten todo el botín en los últimos 20 torneos</h2>
+                        <p class="card-summary">Español e italiano siempre ganan cuando coinciden en el cuadro desde el Mutua Madrid Open 2024</p>
                     </div>
                     <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 19:36</span>
+                        <span class="card-date">11 Apr 2026 - 17:07</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>
             </article>
             
             <article class="article-card" data-category="General">
-                <a href="https://www.marca.com/futbol/valencia/2026/04/11/valencia-peor-pasada-temporada-vuelve-mirar-descenso.html" target="_blank" rel="noopener">
+                <a href="https://www.marca.com/tenis/masters-1000-montecarlo/2026/04/11/carlos-alcaraz-cuarto-tenista-mejor-pagado-historia-64-959-077-millones-dolares.html" target="_blank" rel="noopener">
                     
                     <span class="card-trending">&#128293; Tendencia</span>
                     
                     
-                    <img class="card-image" src="https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/04/11/69da8535e631b.jpeg" alt="El Valencia está peor que la pasada temporada... y vuelve a mirar al descenso" loading="lazy"
+                    <img class="card-image" src="https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/04/11/69da0740f0f23.jpeg" alt="Carlos Alcaraz ya es el cuarto tenista mejor pagado de la historia con 64,9 millones de dólares" loading="lazy"
                          onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
                     
                     <div class="card-body">
@@ -5287,23 +4973,23 @@
                             <span class="card-source">Marca</span>
                             <span class="card-category">General</span>
                         </div>
-                        <h2 class="card-title">El Valencia está peor que la pasada temporada... y vuelve a mirar al descenso</h2>
-                        <p class="card-summary">El cuadro de Corberán suma un punto menos que el curso pasado en la jornada 31&nbsp;</p>
+                        <h2 class="card-title">Carlos Alcaraz ya es el cuarto tenista mejor pagado de la historia con 64,9 millones de dólares</h2>
+                        <p class="card-summary">La final de Montecarlo le permite superar los&nbsp;64.687.542 dólares que amasó Murray durante su carrera</p>
                     </div>
                     <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 19:31</span>
+                        <span class="card-date">11 Apr 2026 - 17:06</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>
             </article>
             
             <article class="article-card" data-category="General">
-                <a href="https://www.marca.com/radio/2026/04/11/dani-garcia-lara-revela-lotina-le-limpio-espanyol-le-solucione-problema-me-clavo.html" target="_blank" rel="noopener">
+                <a href="https://www.marca.com/tenis/masters-1000-montecarlo/2026/04/11/final-juego-titulo-numero-1-semanas-alto-cantidad-torneos-ganados.html" target="_blank" rel="noopener">
                     
                     <span class="card-trending">&#128293; Tendencia</span>
                     
                     
-                    <img class="card-image" src="https://www.dailymotion.com/crawler/video/xa5983k" alt="Dani García Lara revela cómo Lotina le &quot;limpió&quot; en el Espanyol: &quot;Le solucioné un problema y me la clavó&quot;" loading="lazy"
+                    <img class="card-image" src="https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/04/11/69da58d6cd835.jpeg" alt="Una final con todo en juego: título, número 1, semanas en lo más alto, cantidad de torneos ganados..." loading="lazy"
                          onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
                     
                     <div class="card-body">
@@ -5311,23 +4997,119 @@
                             <span class="card-source">Marca</span>
                             <span class="card-category">General</span>
                         </div>
-                        <h2 class="card-title">Dani García Lara revela cómo Lotina le &quot;limpió&quot; en el Espanyol: &quot;Le solucioné un problema y me la clavó&quot;</h2>
-                        <p class="card-summary">El tertuliano de Radio MARCA y exfutbolista contó esta anécdota durante la retransmisión de Marcador</p>
+                        <h2 class="card-title">Una final con todo en juego: título, número 1, semanas en lo más alto, cantidad de torneos ganados...</h2>
+                        <p class="card-summary">Nunca una final del Masters 1000 de Montecarlo había tenido tanta trascendencia&nbsp;</p>
                     </div>
                     <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 19:27</span>
+                        <span class="card-date">11 Apr 2026 - 17:04</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>
             </article>
             
             <article class="article-card" data-category="General">
-                <a href="https://as.com/futbol/primera/la-sangre-de-mbappe-no-se-vio-en-tv-por-la-ausencia-de-un-plano-claro-f202604-n/" target="_blank" rel="noopener">
+                <a href="https://www.marca.com/tenis/masters-1000-montecarlo/2026/04/11/alcaraz-defendera-sinner-corona-montecarlo-cetro-atp.html" target="_blank" rel="noopener">
                     
                     <span class="card-trending">&#128293; Tendencia</span>
                     
                     
-                    <img class="card-image" src="https://img.asmedia.epimg.net/resizer/v2/73JMLO57PFDPLD3POFL2UY7WW4.jpg?auth=7397067289daf41812da55fbfee203ac2556c07799f25573e5cbfefafb5ce86d" alt="La sangre de Mbappé no se vio en TV por la ausencia de un plano claro" loading="lazy"
+                    <img class="card-image" src="https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/04/11/69da58a82598f.jpeg" alt="Alcaraz defenderá ante Sinner la corona de Montecarlo y el cetro ATP" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Marca</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Alcaraz defenderá ante Sinner la corona de Montecarlo y el cetro ATP</h2>
+                        <p class="card-summary">El murciano derrota a Vacherot en dos sets y se las verá con el italiano por primera vez esta temporada</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">11 Apr 2026 - 17:04</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://www.marca.com/futbol/premier-league/2026/04/11/01-0106-20260411-14-54.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/04/11/17759025186762.jpeg" alt="Liverpool - Fulham en directo" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Marca</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Liverpool - Fulham en directo</h2>
+                        <p class="card-summary"></p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">11 Apr 2026 - 17:00</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://www.marca.com/futbol/bundesliga/2026/04/11/01-0108-20260411-680-156.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/04/11/17759191787958.jpeg" alt="St. Pauli - Bayern Múnich, en directo&amp;nbsp;" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Marca</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">St. Pauli - Bayern Múnich, en directo&amp;nbsp;</h2>
+                        <p class="card-summary">Sigue la última hora y resultado del partido con los comentarios de MARCA.com</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">11 Apr 2026 - 16:53</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://www.marca.com/otros-deportes/2026/04/11/indignacion-muerte-gold-dancer-romperse-espalda-forzarle-continuar-ganar-video.html" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://www.dailymotion.com/crawler/video/xa58gmc" alt="Indignación por la muerte de &#039;Gold Dancer&#039; tras romperse la espalda y forzarle a continuar para ganar" loading="lazy"
+                         onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
+                    
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-source">Marca</span>
+                            <span class="card-category">General</span>
+                        </div>
+                        <h2 class="card-title">Indignación por la muerte de &#039;Gold Dancer&#039; tras romperse la espalda y forzarle a continuar para ganar</h2>
+                        <p class="card-summary"></p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-date">11 Apr 2026 - 16:46</span>
+                        <span class="read-more">Leer mas &#8594;</span>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="article-card" data-category="General">
+                <a href="https://as.com/baloncesto/nba/playoffs-play-in-opciones-para-el-draft-lo-que-queda-por-decidir-en-la-ultima-jornada-f202604-n/" target="_blank" rel="noopener">
+                    
+                    <span class="card-trending">&#128293; Tendencia</span>
+                    
+                    
+                    <img class="card-image" src="https://img.asmedia.epimg.net/resizer/v2/6DDFA2USRVKLXF7EBUQ4DAEN24.jpg?auth=a6507a63d7259d880a81c87bc18843b3887ecfc66734b38a76b25679adabc2cf" alt="Playoffs, play in, opciones para el draft: lo que queda por decidir en la última jornada" loading="lazy"
                          onerror="this.outerHTML='<div class=card-image-placeholder>&#9917;</div>'">
                     
                     <div class="card-body">
@@ -5335,11 +5117,11 @@
                             <span class="card-source">AS</span>
                             <span class="card-category">General</span>
                         </div>
-                        <h2 class="card-title">La sangre de Mbappé no se vio en TV por la ausencia de un plano claro</h2>
-                        <p class="card-summary">LaLiga niega que se ocultase y recuerda que el codazo de Reis se repitió hasta en ocho ocasiones. No hay indicación en el manual de retransmisiones para evitar enseñar las heridas.</p>
+                        <h2 class="card-title">Playoffs, play in, opciones para el draft: lo que queda por decidir en la última jornada</h2>
+                        <p class="card-summary">Hay muchas cosas ya decididas pero también puestos por definir en el cierre de regular season que definirá también el cuadro de la lucha por el título en los playoffs.</p>
                     </div>
                     <div class="card-footer">
-                        <span class="card-date">11 Apr 2026 - 13:08</span>
+                        <span class="card-date">11 Apr 2026 - 08:14</span>
                         <span class="read-more">Leer mas &#8594;</span>
                     </div>
                 </a>

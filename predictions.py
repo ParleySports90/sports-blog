@@ -2,10 +2,19 @@
 Motor de pronosticos deportivos diarios.
 Analiza partidos del dia usando datos de ESPN (records, rachas, lesiones, odds)
 y genera las mejores apuestas por deporte con score de confianza.
+Cuotas de casas de apuestas via The Odds API.
 """
 
 import requests
 from datetime import datetime
+
+try:
+    import config as _cfg
+    ODDS_API_KEY = getattr(_cfg, "ODDS_API_KEY", "")
+    ODDS_BOOKMAKERS = getattr(_cfg, "ODDS_BOOKMAKERS", "")
+except ImportError:
+    ODDS_API_KEY = ""
+    ODDS_BOOKMAKERS = ""
 
 # Ligas que soportan pronosticos
 PREDICTION_LEAGUES = {
@@ -396,6 +405,150 @@ def generate_analysis_text(pick_label, confidence, factors, home_name, away_name
     return lines
 
 
+# ============================================
+# The Odds API - Cuotas de casas de apuestas
+# ============================================
+
+ODDS_API_SPORTS = {
+    "basketball": "basketball_nba",
+    "baseball": "baseball_mlb",
+    "hockey": "icehockey_nhl",
+    "futbol": None,  # futbol usa multiples keys, se maneja aparte
+}
+
+ODDS_API_SOCCER = {
+    "La Liga": "soccer_spain_la_liga",
+    "Premier League": "soccer_epl",
+    "Bundesliga": "soccer_germany_bundesliga",
+    "Serie A": "soccer_italy_serie_a",
+    "Ligue 1": "soccer_france_ligue_one",
+    "Champions League": "soccer_uefa_champs_league",
+}
+
+
+def fetch_odds_api(sport_key):
+    """Obtiene cuotas de The Odds API para un deporte."""
+    if not ODDS_API_KEY or not sport_key:
+        return {}
+
+    url = f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/"
+    params = {
+        "apiKey": ODDS_API_KEY,
+        "regions": "us,eu",
+        "markets": "h2h,spreads,totals",
+        "oddsFormat": "american",
+    }
+    if ODDS_BOOKMAKERS:
+        params["bookmakers"] = ODDS_BOOKMAKERS
+
+    try:
+        resp = requests.get(url, params=params, timeout=15)
+        if resp.status_code == 401:
+            print("    [!] Odds API: API key invalida")
+            return {}
+        if resp.status_code == 422:
+            return {}
+        resp.raise_for_status()
+
+        remaining = resp.headers.get("x-requests-remaining", "?")
+        print(f"    [Odds API] {sport_key} OK (requests restantes: {remaining})")
+
+        events = resp.json()
+        # Indexar por equipos para hacer match con ESPN
+        odds_map = {}
+        for ev in events:
+            home = ev.get("home_team", "")
+            away = ev.get("away_team", "")
+            key = f"{home} vs {away}".lower()
+            odds_map[key] = _parse_odds_event(ev)
+            # Tambien indexar por nombres parciales para matching flexible
+            home_short = home.split()[-1].lower() if home else ""
+            away_short = away.split()[-1].lower() if away else ""
+            if home_short and away_short:
+                odds_map[f"{home_short}_{away_short}"] = odds_map[key]
+        return odds_map
+    except Exception as e:
+        print(f"    [!] Odds API error: {e}")
+        return {}
+
+
+def _parse_odds_event(event):
+    """Parsea un evento de The Odds API a formato de cuotas."""
+    bookmakers = event.get("bookmakers", [])
+    result = {
+        "spread": "",
+        "over_under": "",
+        "home_ml": "",
+        "away_ml": "",
+        "provider": "",
+        "all_bookmakers": [],
+    }
+
+    if not bookmakers:
+        return result
+
+    for bm in bookmakers:
+        bm_name = bm.get("title", bm.get("key", ""))
+        bm_odds = {"name": bm_name, "h2h_home": "", "h2h_away": "", "spread": "", "total": ""}
+
+        for market in bm.get("markets", []):
+            mk = market.get("key", "")
+            outcomes = market.get("outcomes", [])
+
+            if mk == "h2h":
+                for o in outcomes:
+                    if o.get("name") == event.get("home_team"):
+                        bm_odds["h2h_home"] = str(o.get("price", ""))
+                    elif o.get("name") == event.get("away_team"):
+                        bm_odds["h2h_away"] = str(o.get("price", ""))
+            elif mk == "spreads":
+                for o in outcomes:
+                    if o.get("name") == event.get("home_team"):
+                        point = o.get("point", "")
+                        bm_odds["spread"] = f"{'+' if point > 0 else ''}{point}" if point else ""
+            elif mk == "totals":
+                for o in outcomes:
+                    if o.get("name") == "Over":
+                        bm_odds["total"] = str(o.get("point", ""))
+
+        result["all_bookmakers"].append(bm_odds)
+
+    # Usar el primer bookmaker como principal
+    first = result["all_bookmakers"][0] if result["all_bookmakers"] else {}
+    result["provider"] = first.get("name", "")
+    result["home_ml"] = first.get("h2h_home", "")
+    result["away_ml"] = first.get("h2h_away", "")
+    result["spread"] = first.get("spread", "")
+    result["over_under"] = first.get("total", "")
+
+    return result
+
+
+def match_odds_to_game(odds_map, home_name, away_name):
+    """Busca las cuotas que coincidan con un partido."""
+    if not odds_map:
+        return None
+
+    # Intento exacto
+    key = f"{home_name} vs {away_name}".lower()
+    if key in odds_map:
+        return odds_map[key]
+
+    # Intento por apellido del equipo
+    home_short = home_name.split()[-1].lower()
+    away_short = away_name.split()[-1].lower()
+    short_key = f"{home_short}_{away_short}"
+    if short_key in odds_map:
+        return odds_map[short_key]
+
+    # Intento por coincidencia parcial
+    for k, v in odds_map.items():
+        if home_short in k and away_short in k:
+            return v
+
+    return None
+
+
 def fetch_predictions_for_league(league_name, league_info):
     """Obtiene pronosticos para una liga."""
     print(f"  [*] Analizando {league_name}...")
@@ -407,6 +560,17 @@ def fetch_predictions_for_league(league_name, league_info):
 
     events = fetch_scoreboard_events(sport_path)
     predictions = []
+
+    # Obtener cuotas de The Odds API si hay key configurada
+    ext_odds_map = {}
+    if ODDS_API_KEY:
+        sport = league_info["sport"]
+        if is_soccer:
+            odds_sport_key = ODDS_API_SOCCER.get(league_name)
+        else:
+            odds_sport_key = ODDS_API_SPORTS.get(sport)
+        if odds_sport_key:
+            ext_odds_map = fetch_odds_api(odds_sport_key)
 
     # Filtrar solo partidos programados (pre) - no analizar los ya jugados
     scheduled_events = []
@@ -465,9 +629,12 @@ def fetch_predictions_for_league(league_name, league_info):
             home_injuries = fetch_team_injuries(sport_path, home_id)
             away_injuries = fetch_team_injuries(sport_path, away_id)
 
-        # Odds
+        # Odds - primero intentar The Odds API, luego ESPN como fallback
         odds = None
-        if has_odds:
+        ext_odds = match_odds_to_game(ext_odds_map, home_team_name, away_team_name)
+        if ext_odds and (ext_odds.get("home_ml") or ext_odds.get("spread")):
+            odds = ext_odds
+        elif has_odds:
             odds = extract_odds_from_event(event)
 
         # Calcular confianza
@@ -478,12 +645,15 @@ def fetch_predictions_for_league(league_name, league_info):
         # Fecha/hora del partido
         date_str = event.get("date", "")
         match_time = ""
+        match_date = ""
         if date_str:
             try:
                 dt = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
                 match_time = dt.strftime("%H:%M")
+                match_date = dt.strftime("%d/%m/%Y")
             except Exception:
                 match_time = ""
+                match_date = ""
 
         prediction = {
             "home_team": home_data["name"],
@@ -502,6 +672,7 @@ def fetch_predictions_for_league(league_name, league_info):
             "home_injuries": home_injuries[:5],
             "away_injuries": away_injuries[:5],
             "match_time": match_time,
+            "match_date": match_date,
             "league": league_name,
         }
 

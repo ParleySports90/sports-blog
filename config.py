@@ -97,3 +97,8 @@ SCHEDULE_TIMES = ["06:00", "12:00", "18:00", "22:00"]
 # Pronosticos
 MIN_PICKS_PER_SPORT = 3
 CONFIDENCE_THRESHOLD = 55
+
+# The Odds API - cuotas de casas de apuestas (https://the-odds-api.com)
+# Obtener API key gratis en: https://the-odds-api.com/#get-access
+ODDS_API_KEY = ""  # Pega tu API key aqui
+ODDS_BOOKMAKERS = "draftkings,fanduel,betmgm,pinnacle,williamhill_us"
