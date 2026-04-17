@@ -1,10 +1,15 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Ejecutar automaticamente - incluye 10AM Venezuela (14:00 UTC)
+  # Ejecutar automaticamente - horarios optimizados para capturar pronosticos
+  # ANTES de que arranquen los partidos en cada region
   schedule:
-    - cron: '0 14 * * *'  # 10:00 AM Venezuela (diario)
-    - cron: '0 6,10,18,22 * * *'  # Actualizaciones adicionales cada ~4h UTC
+    - cron: '0 10 * * *'  # 06:00 VEN - Build matutino
+    - cron: '0 14 * * *'  # 10:00 VEN - Pre-partidos Europa (16:45-19:00 UTC)
+    - cron: '0 16 * * *'  # 12:00 VEN - Captura partidos Europa tarde
+    - cron: '0 20 * * *'  # 16:00 VEN - Pre-partidos Americas (22:00-02:00 UTC)
+    - cron: '0 23 * * *'  # 19:00 VEN - Captura partidos Americas nocturnos
+    - cron: '0 2 * * *'   # 22:00 VEN - Ultimo build del dia
   # Tambien al hacer push
   push:
     branches: [master]
@@ -39,6 +44,13 @@ jobs:
 
       - name: Build blog (noticias + scores + pronosticos)
         run: python main.py build
+
+      - name: Send predictions to Telegram
+        if: env.TELEGRAM_BOT_TOKEN != ''
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python main.py telegram
 
       - uses: actions/configure-pages@v4
       - uses: actions/upload-pages-artifact@v3

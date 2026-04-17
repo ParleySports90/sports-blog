@@ -25,6 +25,10 @@ LEAGUE_SPORT_PATH = {
     "Serie A": "soccer/ita.1",
     "Ligue 1": "soccer/fra.1",
     "Champions League": "soccer/uefa.champions",
+    "Europa League": "soccer/uefa.europa",
+    "Conference League": "soccer/uefa.europa.conf",
+    "Copa Libertadores": "soccer/conmebol.libertadores",
+    "Copa Sudamericana": "soccer/conmebol.sudamericana",
 }
 
 # Mapeo de sport_key a sport para stats
@@ -38,6 +42,10 @@ LEAGUE_SPORT = {
     "Serie A": "futbol",
     "Ligue 1": "futbol",
     "Champions League": "futbol",
+    "Europa League": "futbol",
+    "Conference League": "futbol",
+    "Copa Libertadores": "futbol",
+    "Copa Sudamericana": "futbol",
 }
 
 

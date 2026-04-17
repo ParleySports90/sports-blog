@@ -2,14 +2,16 @@
 Sports Blog Generator
 =====================
 Uso:
-    python main.py build        - Obtiene noticias + resultados + pronosticos y genera el blog
-    python main.py scores       - Solo actualiza resultados deportivos
-    python main.py news         - Solo actualiza noticias
-    python main.py predictions  - Solo genera pronosticos deportivos
-    python main.py mlb          - Muestra Guia MLB en consola
-    python main.py tracking     - Muestra estadisticas de aciertos en consola
-    python main.py schedule     - Regenera automaticamente en horarios definidos
-    python main.py open         - Abre el blog en el navegador
+    python main.py build          - Obtiene noticias + resultados + pronosticos y genera el blog
+    python main.py scores         - Solo actualiza resultados deportivos
+    python main.py news           - Solo actualiza noticias
+    python main.py predictions    - Solo genera pronosticos deportivos
+    python main.py mlb            - Muestra Guia MLB en consola
+    python main.py tracking       - Muestra estadisticas de aciertos en consola
+    python main.py schedule       - Regenera automaticamente en horarios definidos
+    python main.py open           - Abre el blog en el navegador
+    python main.py telegram       - Genera y envia pronosticos a Telegram
+    python main.py telegram-setup - Guia interactiva para configurar el bot
 """
 
 import os
@@ -135,6 +137,18 @@ def cmd_open():
         print("[!] El blog no existe. Ejecuta 'python main.py build' primero.")
 
 
+def cmd_telegram():
+    """Genera y envia pronosticos a Telegram."""
+    from telegram_bot import generate_and_send
+    generate_and_send()
+
+
+def cmd_telegram_setup():
+    """Guia interactiva para configurar el bot de Telegram."""
+    from telegram_bot import telegram_setup
+    telegram_setup()
+
+
 def main():
     if len(sys.argv) < 2:
         print(__doc__)
@@ -158,6 +172,10 @@ def main():
         cmd_schedule()
     elif command == "open":
         cmd_open()
+    elif command == "telegram":
+        cmd_telegram()
+    elif command == "telegram-setup":
+        cmd_telegram_setup()
     else:
         print(f"[ERROR] Comando desconocido: {command}")
         print(__doc__)

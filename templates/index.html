@@ -553,6 +553,143 @@
         }
         .pred-odds-item span { color: #fff; font-weight: 600; }
 
+        /* Extra Bets - Soccer */
+        .pred-extra-bets {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+        .pred-extra-title {
+            font-family: var(--font-display);
+            color: var(--accent);
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        .pred-extra-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .pred-extra-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 12px;
+        }
+        .pred-extra-card-title {
+            font-family: var(--font-display);
+            color: #fff;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .pred-extra-stat {
+            color: var(--text-secondary);
+            font-size: 0.72rem;
+            line-height: 1.6;
+        }
+        .pred-extra-stat span {
+            color: #fff;
+            font-weight: 600;
+        }
+        .pred-extra-pick {
+            display: inline-block;
+            background: rgba(233, 69, 96, 0.15);
+            color: var(--accent);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            margin-top: 4px;
+        }
+
+        /* Scorers */
+        .pred-scorers {
+            margin-top: 8px;
+        }
+        .pred-scorer-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: var(--bg-surface);
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            margin: 2px 4px 2px 0;
+        }
+        .pred-scorer-item .scorer-goals {
+            color: var(--accent);
+            font-weight: 700;
+        }
+        .pred-scorer-item .scorer-name {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* Lineups */
+        .pred-lineups {
+            margin-top: 12px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border);
+        }
+        .pred-lineup-title {
+            font-family: var(--font-display);
+            color: var(--text-muted);
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+        .pred-lineup-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .pred-lineup-team {
+            background: var(--bg-surface);
+            border-radius: 8px;
+            padding: 10px 12px;
+        }
+        .pred-lineup-team-name {
+            font-family: var(--font-display);
+            color: var(--accent);
+            font-size: 0.78rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
+        }
+        .pred-lineup-player {
+            color: var(--text-secondary);
+            font-size: 0.7rem;
+            line-height: 1.7;
+        }
+        .pred-lineup-player .pos {
+            color: var(--blue);
+            font-weight: 700;
+            font-size: 0.65rem;
+            display: inline-block;
+            min-width: 22px;
+        }
+        .pred-lineup-player .pname {
+            color: var(--text-primary);
+        }
+
+        @media (max-width: 768px) {
+            .pred-extra-grid { grid-template-columns: 1fr; }
+            .pred-lineup-grid { grid-template-columns: 1fr; }
+        }
+
         .pred-bookmakers {
             margin-top: 10px;
             padding-top: 8px;
@@ -1220,6 +1357,113 @@
                         </div>
                     </div>
                     {% endif %}
+                    {% endif %}
+
+                    {# ---- APUESTAS EXTRA FUTBOL (esquinas, tarjetas, remates, goleadores, alineaciones) ---- #}
+                    {% if pick.extra_bets %}
+                    <div class="pred-extra-bets">
+                        <div class="pred-extra-title">&#127921; Apuestas Adicionales</div>
+                        <div class="pred-extra-grid">
+
+                            {# Esquinas #}
+                            {% if pick.extra_bets.corners %}
+                            <div class="pred-extra-card">
+                                <div class="pred-extra-card-title">&#128204; Tiros de Esquina</div>
+                                <div class="pred-extra-stat">
+                                    {{ pick.home_abbr }}: <span>{{ pick.extra_bets.corners.home_avg }}/partido</span><br>
+                                    {{ pick.away_abbr }}: <span>{{ pick.extra_bets.corners.away_avg }}/partido</span><br>
+                                    Total estimado: <span>{{ pick.extra_bets.corners.total_estimate }}</span><br>
+                                    Linea: <span>{{ pick.extra_bets.corners.line }}</span>
+                                </div>
+                                <span class="pred-extra-pick">{{ pick.extra_bets.corners.pick }} {{ pick.extra_bets.corners.line }} esquinas</span>
+                            </div>
+                            {% endif %}
+
+                            {# Tarjetas #}
+                            {% if pick.extra_bets.cards %}
+                            <div class="pred-extra-card">
+                                <div class="pred-extra-card-title">&#129668; Tarjetas</div>
+                                <div class="pred-extra-stat">
+                                    {{ pick.home_abbr }}: <span>{{ pick.extra_bets.cards.home_avg }}/partido</span><br>
+                                    {{ pick.away_abbr }}: <span>{{ pick.extra_bets.cards.away_avg }}/partido</span><br>
+                                    Total estimado: <span>{{ pick.extra_bets.cards.total_estimate }}</span><br>
+                                    Linea: <span>{{ pick.extra_bets.cards.line }}</span>
+                                </div>
+                                <span class="pred-extra-pick">{{ pick.extra_bets.cards.pick }} {{ pick.extra_bets.cards.line }} tarjetas</span>
+                            </div>
+                            {% endif %}
+
+                            {# Remates #}
+                            {% if pick.extra_bets.shots %}
+                            <div class="pred-extra-card">
+                                <div class="pred-extra-card-title">&#9917; Remates</div>
+                                <div class="pred-extra-stat">
+                                    {{ pick.home_abbr }}: <span>{{ pick.extra_bets.shots.home_avg }} total ({{ pick.extra_bets.shots.home_on_target_avg }} al arco)</span><br>
+                                    {{ pick.away_abbr }}: <span>{{ pick.extra_bets.shots.away_avg }} total ({{ pick.extra_bets.shots.away_on_target_avg }} al arco)</span><br>
+                                    Total remates: <span>{{ pick.extra_bets.shots.total_estimate }}</span><br>
+                                    Al arco: <span>{{ pick.extra_bets.shots.total_on_target }}</span>
+                                </div>
+                            </div>
+                            {% endif %}
+
+                            {# Goles #}
+                            {% if pick.extra_bets.goals %}
+                            <div class="pred-extra-card">
+                                <div class="pred-extra-card-title">&#9918; Goles</div>
+                                <div class="pred-extra-stat">
+                                    {{ pick.home_abbr }}: <span>{{ pick.extra_bets.goals.home_avg }} goles/partido</span><br>
+                                    {{ pick.away_abbr }}: <span>{{ pick.extra_bets.goals.away_avg }} goles/partido</span><br>
+                                    Total estimado: <span>{{ pick.extra_bets.goals.total_estimate }}</span>
+                                </div>
+                                <span class="pred-extra-pick">{{ pick.extra_bets.goals.pick }} {{ pick.extra_bets.goals.line }} goles</span>
+                            </div>
+                            {% endif %}
+                        </div>
+
+                        {# Posibles Goleadores #}
+                        {% if pick.extra_bets.scorers and (pick.extra_bets.scorers.home or pick.extra_bets.scorers.away) %}
+                        <div class="pred-scorers">
+                            <div class="pred-extra-card-title">&#127941; Posibles Goleadores</div>
+                            {% if pick.extra_bets.scorers.home %}
+                            <div style="margin-bottom: 4px; color: var(--text-muted); font-size: 0.7rem;">{{ pick.home_abbr }}:</div>
+                            {% for s in pick.extra_bets.scorers.home %}
+                            <span class="pred-scorer-item"><span class="scorer-name">{{ s.name }}</span> <span class="scorer-goals">({{ s.goals }} goles)</span> {{ s.position }}</span>
+                            {% endfor %}
+                            {% endif %}
+                            {% if pick.extra_bets.scorers.away %}
+                            <div style="margin-top: 6px; margin-bottom: 4px; color: var(--text-muted); font-size: 0.7rem;">{{ pick.away_abbr }}:</div>
+                            {% for s in pick.extra_bets.scorers.away %}
+                            <span class="pred-scorer-item"><span class="scorer-name">{{ s.name }}</span> <span class="scorer-goals">({{ s.goals }} goles)</span> {{ s.position }}</span>
+                            {% endfor %}
+                            {% endif %}
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+
+                    {# ---- ALINEACIONES PROBABLES ---- #}
+                    {% if pick.home_lineup or pick.away_lineup %}
+                    <div class="pred-lineups">
+                        <div class="pred-lineup-title">&#128101; Alineaciones Probables</div>
+                        <div class="pred-lineup-grid">
+                            {% if pick.home_lineup %}
+                            <div class="pred-lineup-team">
+                                <div class="pred-lineup-team-name">{{ pick.home_abbr }} (Local)</div>
+                                {% for p in pick.home_lineup %}
+                                <div class="pred-lineup-player"><span class="pos">{{ p.position }}</span> <span class="pname">{{ p.name }}</span></div>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                            {% if pick.away_lineup %}
+                            <div class="pred-lineup-team">
+                                <div class="pred-lineup-team-name">{{ pick.away_abbr }} (Visita)</div>
+                                {% for p in pick.away_lineup %}
+                                <div class="pred-lineup-player"><span class="pos">{{ p.position }}</span> <span class="pname">{{ p.name }}</span></div>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
                     {% endif %}
                 </div>
                 {% endfor %}

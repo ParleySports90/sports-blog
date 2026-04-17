@@ -6,7 +6,7 @@ Cuotas de casas de apuestas via The Odds API.
 """
 
 import requests
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 
 try:
     import config as _cfg
@@ -82,10 +82,221 @@ PREDICTION_LEAGUES = {
         "has_odds": False,
         "has_injuries": False,
     },
+    "Europa League": {
+        "sport_path": "soccer/uefa.europa",
+        "icon": "\u26bd",
+        "sport": "futbol",
+        "has_odds": False,
+        "has_injuries": False,
+    },
+    "Conference League": {
+        "sport_path": "soccer/uefa.europa.conf",
+        "icon": "\u26bd",
+        "sport": "futbol",
+        "has_odds": False,
+        "has_injuries": False,
+    },
+    "Copa Libertadores": {
+        "sport_path": "soccer/conmebol.libertadores",
+        "icon": "\u26bd",
+        "sport": "futbol",
+        "has_odds": False,
+        "has_injuries": False,
+    },
+    "Copa Sudamericana": {
+        "sport_path": "soccer/conmebol.sudamericana",
+        "icon": "\u26bd",
+        "sport": "futbol",
+        "has_odds": False,
+        "has_injuries": False,
+    },
 }
 
 ESPN_BASE = "https://site.api.espn.com/apis/site/v2/sports"
 TIMEOUT = 15
+
+# Torneos internacionales: buscar datos del equipo en su liga local para tener historial completo
+TOURNAMENT_LEAGUES = {
+    "Champions League", "Europa League", "Conference League",
+    "Copa Libertadores", "Copa Sudamericana",
+}
+
+# Mapeo de ligas locales por pais/region para buscar datos reales de equipos en torneos
+DOMESTIC_LEAGUE_PATHS = [
+    "soccer/esp.1",      # La Liga
+    "soccer/eng.1",      # Premier League
+    "soccer/ger.1",      # Bundesliga
+    "soccer/ita.1",      # Serie A
+    "soccer/fra.1",      # Ligue 1
+    "soccer/por.1",      # Primeira Liga
+    "soccer/ned.1",      # Eredivisie
+    "soccer/arg.1",      # Liga Argentina
+    "soccer/bra.1",      # Brasileirao
+    "soccer/col.1",      # Liga Colombiana
+    "soccer/ecu.1",      # Liga Ecuatoriana
+    "soccer/chi.1",      # Liga Chilena
+    "soccer/par.1",      # Liga Paraguaya
+    "soccer/uru.1",      # Liga Uruguaya
+    "soccer/bol.1",      # Liga Boliviana
+    "soccer/per.1",      # Liga Peruana
+    "soccer/ven.1",      # Liga Venezolana
+    "soccer/mex.1",      # Liga MX
+    "soccer/tur.super_lig",  # Super Lig Turca
+    "soccer/gre.1",      # Super Liga Griega
+    "soccer/sco.1",      # Scottish Premiership
+    "soccer/bel.1",      # Jupiler Pro League
+    "soccer/aut.1",      # Bundesliga Austriaca
+    "soccer/sui.1",      # Super League Suiza
+    "soccer/cze.1",      # Liga Checa
+    "soccer/ukr.1",      # Premier League Ucraniana
+]
+
+
+# Cache global de equipos por liga domestica (se llena una vez por ejecucion)
+_domestic_teams_cache = {}
+
+# Prioridad de ligas a buscar segun el torneo
+TOURNAMENT_DOMESTIC_PRIORITY = {
+    "Copa Libertadores": [
+        "soccer/arg.1", "soccer/bra.1", "soccer/col.1", "soccer/chi.1",
+        "soccer/ecu.1", "soccer/par.1", "soccer/uru.1", "soccer/bol.1",
+        "soccer/per.1", "soccer/ven.1", "soccer/mex.1",
+    ],
+    "Copa Sudamericana": [
+        "soccer/arg.1", "soccer/bra.1", "soccer/col.1", "soccer/chi.1",
+        "soccer/ecu.1", "soccer/par.1", "soccer/uru.1", "soccer/bol.1",
+        "soccer/per.1", "soccer/ven.1", "soccer/mex.1",
+    ],
+    "Champions League": [
+        "soccer/esp.1", "soccer/eng.1", "soccer/ger.1", "soccer/ita.1",
+        "soccer/fra.1", "soccer/por.1", "soccer/ned.1", "soccer/tur.super_lig",
+        "soccer/sco.1", "soccer/bel.1", "soccer/aut.1", "soccer/sui.1",
+        "soccer/cze.1", "soccer/ukr.1", "soccer/gre.1",
+    ],
+    "Europa League": [
+        "soccer/esp.1", "soccer/eng.1", "soccer/ger.1", "soccer/ita.1",
+        "soccer/fra.1", "soccer/por.1", "soccer/ned.1", "soccer/tur.super_lig",
+        "soccer/sco.1", "soccer/bel.1", "soccer/aut.1", "soccer/sui.1",
+        "soccer/cze.1", "soccer/ukr.1", "soccer/gre.1",
+    ],
+    "Conference League": [
+        "soccer/esp.1", "soccer/eng.1", "soccer/ger.1", "soccer/ita.1",
+        "soccer/fra.1", "soccer/por.1", "soccer/ned.1", "soccer/tur.super_lig",
+        "soccer/sco.1", "soccer/bel.1", "soccer/aut.1", "soccer/sui.1",
+        "soccer/cze.1", "soccer/ukr.1", "soccer/gre.1",
+    ],
+}
+
+
+def _load_domestic_teams_cache(league_paths=None):
+    """Carga y cachea los equipos de las ligas domesticas especificadas."""
+    paths_to_load = league_paths or DOMESTIC_LEAGUE_PATHS
+    # Solo cargar las que no estan en cache
+    new_paths = [p for p in paths_to_load if not any(k.startswith(f"{p}:") for k in _domestic_teams_cache)]
+
+    if not new_paths:
+        return
+
+    print(f"    [*] Cargando equipos de {len(new_paths)} ligas locales...")
+    loaded = 0
+    for league_path in new_paths:
+        try:
+            url = f"{ESPN_BASE}/{league_path}/teams"
+            resp = requests.get(url, timeout=10)
+            if resp.status_code != 200:
+                continue
+            data = resp.json()
+
+            for group in data.get("sports", [{}]):
+                for league in group.get("leagues", [{}]):
+                    for team in league.get("teams", []):
+                        t = team.get("team", {})
+                        t_id = t.get("id", "")
+                        t_name = t.get("displayName", "").lower()
+                        t_abbr = t.get("abbreviation", "").lower()
+                        t_short = t.get("shortDisplayName", "").lower()
+                        if t_id and t_name:
+                            _domestic_teams_cache[f"{league_path}:{t_id}"] = {
+                                "id": t_id,
+                                "name": t_name,
+                                "abbr": t_abbr,
+                                "short": t_short,
+                                "league_path": league_path,
+                            }
+                            loaded += 1
+        except Exception:
+            continue
+
+    if loaded:
+        print(f"    [OK] {loaded} equipos cargados ({len(_domestic_teams_cache)} total)")
+
+
+def _find_domestic_team_data(team_name, team_abbr, tournament_name=""):
+    """
+    Busca datos de un equipo en su liga local cuando juega torneo internacional.
+    Usa cache y prioriza ligas de la region del torneo.
+    """
+    # Determinar en que ligas buscar segun el torneo
+    priority_paths = TOURNAMENT_DOMESTIC_PRIORITY.get(tournament_name, DOMESTIC_LEAGUE_PATHS)
+    _load_domestic_teams_cache(priority_paths)
+
+    team_name_lower = team_name.lower()
+    # Para nombres compuestos como "Barcelona SC", usar palabras significativas
+    team_words = [w for w in team_name_lower.split() if len(w) > 2 and w not in ("de", "la", "el", "del", "los", "las", "fc", "sc", "cf", "cd")]
+    main_word = team_words[-1] if team_words else ""
+
+    best_match = None
+    best_score = 0
+
+    # Solo buscar en equipos de las ligas de la region del torneo
+    region_teams = {k: v for k, v in _domestic_teams_cache.items()
+                    if v["league_path"] in priority_paths}
+
+    for key, t in region_teams.items():
+        score = 0
+
+        # Match por nombre exacto (maxima prioridad)
+        if team_name_lower == t["name"]:
+            score = 15
+
+        # Match por abreviatura exacta
+        elif team_abbr.lower() == t["abbr"] and len(team_abbr) >= 2:
+            score = 12
+
+        # Match por nombre completo contenido
+        elif team_name_lower in t["name"] or t["name"] in team_name_lower:
+            # Bonus si el match es mas especifico (mas largo)
+            match_len = min(len(team_name_lower), len(t["name"]))
+            score = 8 + min(match_len / 10, 3)
+
+        # Match por short name exacto
+        elif t["short"] and t["short"] == team_name_lower:
+            score = 10
+
+        # Match por short name contenido
+        elif t["short"] and len(t["short"]) > 3 and (t["short"] in team_name_lower or team_name_lower in t["short"]):
+            score = 7
+
+        # Match por primera palabra significativa (para "Boca Juniors" -> "boca")
+        elif team_words and len(team_words[0]) > 3:
+            first_word = team_words[0]
+            if first_word in t["name"].split() or t["name"].startswith(first_word):
+                score = 6
+
+        # Match por palabra principal (ultima)
+        elif main_word and len(main_word) > 4 and main_word in t["name"].split():
+            score = 5
+
+        if score > best_score:
+            best_score = score
+            best_match = t
+
+    if best_match and best_score >= 5:
+        team_data = fetch_team_data(best_match["league_path"], best_match["id"])
+        if team_data and team_data["overall"]["wins"] + team_data["overall"]["losses"] > 3:
+            return team_data, best_match["league_path"]
+
+    return None, None
 
 
 def _get(url):
@@ -228,9 +439,13 @@ def extract_odds_from_event(event):
     return result
 
 
-def fetch_scoreboard_events(sport_path):
-    """Obtiene eventos del dia desde el scoreboard."""
-    url = f"{ESPN_BASE}/{sport_path}/scoreboard"
+def fetch_scoreboard_events(sport_path, date_str=None):
+    """Obtiene eventos del dia desde el scoreboard.
+    date_str: fecha en formato YYYYMMDD (si no se pasa, usa la fecha de hoy).
+    """
+    if date_str is None:
+        date_str = datetime.now(timezone.utc).strftime("%Y%m%d")
+    url = f"{ESPN_BASE}/{sport_path}/scoreboard?dates={date_str}"
     data = _get(url)
     if not data:
         return []
@@ -388,6 +603,194 @@ def calculate_confidence(home_data, away_data, home_injuries, away_injuries, odd
     return confidence, pick_team["name"], pick_label, factors
 
 
+def fetch_soccer_team_stats(sport_path, team_id):
+    """
+    Obtiene estadisticas avanzadas de un equipo de futbol:
+    - Goles anotados/recibidos (para estimar remates)
+    - Tarjetas amarillas/rojas
+    - Tiros de esquina estimados
+    - Goleadores principales
+    """
+    url = f"{ESPN_BASE}/{sport_path}/teams/{team_id}/statistics"
+    data = _get(url)
+    stats = {
+        "goals_for": 0,
+        "goals_against": 0,
+        "yellow_cards": 0,
+        "red_cards": 0,
+        "corners": 0,
+        "shots": 0,
+        "shots_on_target": 0,
+        "games_played": 0,
+    }
+    if not data:
+        return stats
+
+    # Parsear stats del equipo
+    categories = data.get("results", data.get("splits", {}).get("categories", []))
+    if isinstance(categories, dict):
+        categories = categories.get("categories", [])
+
+    for cat in categories:
+        cat_stats = {}
+        for stat in cat.get("stats", []):
+            cat_stats[stat.get("name", "")] = stat.get("value", 0)
+
+        stats["goals_for"] = int(cat_stats.get("totalGoals", cat_stats.get("goalsFor", stats["goals_for"])))
+        stats["goals_against"] = int(cat_stats.get("goalsAgainst", cat_stats.get("goalsConceded", stats["goals_against"])))
+        stats["yellow_cards"] = int(cat_stats.get("yellowCards", cat_stats.get("foulsCommitted", stats["yellow_cards"])))
+        stats["red_cards"] = int(cat_stats.get("redCards", stats["red_cards"]))
+        stats["corners"] = int(cat_stats.get("cornerKicks", cat_stats.get("corners", stats["corners"])))
+        stats["shots"] = int(cat_stats.get("totalShots", cat_stats.get("shotsTotal", stats["shots"])))
+        stats["shots_on_target"] = int(cat_stats.get("shotsOnTarget", cat_stats.get("shotsOnGoal", stats["shots_on_target"])))
+        gp = cat_stats.get("gamesPlayed", cat_stats.get("appearances", 0))
+        if gp:
+            stats["games_played"] = int(gp)
+
+    return stats
+
+
+def fetch_team_top_scorers(sport_path, team_id):
+    """Obtiene los goleadores principales de un equipo."""
+    url = f"{ESPN_BASE}/{sport_path}/teams/{team_id}/roster"
+    data = _get(url)
+    scorers = []
+    if not data:
+        return scorers
+
+    athletes = data.get("athletes", [])
+    for group in athletes:
+        for player in group.get("items", []):
+            name = player.get("displayName", player.get("fullName", ""))
+            position = player.get("position", {}).get("abbreviation", "")
+            # Obtener stats del jugador si estan disponibles
+            player_stats = player.get("statistics", {})
+            goals = 0
+            if player_stats:
+                for stat_group in player_stats if isinstance(player_stats, list) else [player_stats]:
+                    stats_map = {}
+                    for s in stat_group.get("stats", []):
+                        if isinstance(s, dict):
+                            stats_map[s.get("name", "")] = s.get("value", 0)
+                    goals = int(stats_map.get("totalGoals", stats_map.get("goals", 0)))
+            if goals > 0:
+                scorers.append({"name": name, "goals": goals, "position": position})
+
+    scorers.sort(key=lambda x: x["goals"], reverse=True)
+    return scorers[:5]
+
+
+def fetch_probable_lineup(sport_path, team_id):
+    """Obtiene la alineacion probable basada en el roster del equipo."""
+    url = f"{ESPN_BASE}/{sport_path}/teams/{team_id}/roster"
+    data = _get(url)
+    lineup = []
+    if not data:
+        return lineup
+
+    athletes = data.get("athletes", [])
+    position_order = {"GK": 1, "G": 1, "D": 2, "DF": 2, "M": 3, "MF": 3, "F": 4, "FW": 4, "ST": 4}
+
+    for group in athletes:
+        for player in group.get("items", []):
+            status = player.get("status", {})
+            status_type = status.get("type", "active")
+            # Solo jugadores activos
+            if status_type in ("out", "injured", "suspension"):
+                continue
+            name = player.get("displayName", player.get("fullName", ""))
+            pos = player.get("position", {}).get("abbreviation", "")
+            pos_name = player.get("position", {}).get("displayName", pos)
+            if name and pos:
+                lineup.append({
+                    "name": name,
+                    "position": pos,
+                    "position_name": pos_name,
+                    "order": position_order.get(pos, 5),
+                })
+
+    lineup.sort(key=lambda x: x["order"])
+    return lineup[:11]
+
+
+def generate_soccer_extra_bets(home_stats, away_stats, home_scorers, away_scorers):
+    """
+    Genera apuestas adicionales para partidos de futbol:
+    - Total de tiros de esquina
+    - Tarjetas totales
+    - Remates al arco
+    - Posibles goleadores
+    """
+    extra_bets = {}
+
+    home_gp = max(home_stats["games_played"], 1)
+    away_gp = max(away_stats["games_played"], 1)
+
+    # Esquinas estimadas por partido
+    home_corners_avg = home_stats["corners"] / home_gp if home_stats["corners"] > 0 else 4.5
+    away_corners_avg = away_stats["corners"] / away_gp if away_stats["corners"] > 0 else 4.0
+    total_corners_est = round(home_corners_avg + away_corners_avg, 1)
+    if total_corners_est == 0:
+        total_corners_est = 9.5  # promedio tipico
+    extra_bets["corners"] = {
+        "home_avg": round(home_corners_avg, 1),
+        "away_avg": round(away_corners_avg, 1),
+        "total_estimate": total_corners_est,
+        "line": round(total_corners_est - 0.5) + 0.5,
+        "pick": "Over" if total_corners_est > 9.5 else "Under",
+    }
+
+    # Tarjetas estimadas por partido
+    home_cards_avg = home_stats["yellow_cards"] / home_gp if home_stats["yellow_cards"] > 0 else 2.0
+    away_cards_avg = away_stats["yellow_cards"] / away_gp if away_stats["yellow_cards"] > 0 else 2.0
+    total_cards_est = round(home_cards_avg + away_cards_avg, 1)
+    if total_cards_est == 0:
+        total_cards_est = 4.5  # promedio tipico
+    extra_bets["cards"] = {
+        "home_avg": round(home_cards_avg, 1),
+        "away_avg": round(away_cards_avg, 1),
+        "total_estimate": total_cards_est,
+        "line": round(total_cards_est - 0.5) + 0.5,
+        "pick": "Over" if total_cards_est > 4.5 else "Under",
+    }
+
+    # Remates estimados por partido
+    home_shots_avg = home_stats["shots"] / home_gp if home_stats["shots"] > 0 else 12.0
+    away_shots_avg = away_stats["shots"] / away_gp if away_stats["shots"] > 0 else 10.0
+    total_shots_est = round(home_shots_avg + away_shots_avg, 1)
+    home_sot_avg = home_stats["shots_on_target"] / home_gp if home_stats["shots_on_target"] > 0 else 4.5
+    away_sot_avg = away_stats["shots_on_target"] / away_gp if away_stats["shots_on_target"] > 0 else 3.5
+    total_sot_est = round(home_sot_avg + away_sot_avg, 1)
+    extra_bets["shots"] = {
+        "home_avg": round(home_shots_avg, 1),
+        "away_avg": round(away_shots_avg, 1),
+        "total_estimate": total_shots_est,
+        "home_on_target_avg": round(home_sot_avg, 1),
+        "away_on_target_avg": round(away_sot_avg, 1),
+        "total_on_target": total_sot_est,
+    }
+
+    # Goles estimados por partido
+    home_goals_avg = home_stats["goals_for"] / home_gp if home_stats["goals_for"] > 0 else 1.3
+    away_goals_avg = away_stats["goals_for"] / away_gp if away_stats["goals_for"] > 0 else 1.0
+    total_goals_est = round(home_goals_avg + away_goals_avg, 1)
+    extra_bets["goals"] = {
+        "home_avg": round(home_goals_avg, 1),
+        "away_avg": round(away_goals_avg, 1),
+        "total_estimate": total_goals_est,
+        "line": 2.5,
+        "pick": "Over" if total_goals_est > 2.5 else "Under",
+    }
+
+    # Posibles goleadores
+    extra_bets["scorers"] = {
+        "home": [{"name": s["name"], "goals": s["goals"], "position": s["position"]} for s in home_scorers[:3]],
+        "away": [{"name": s["name"], "goals": s["goals"], "position": s["position"]} for s in away_scorers[:3]],
+    }
+
+    return extra_bets
+
+
 def generate_analysis_text(pick_label, confidence, factors, home_name, away_name):
     """Genera texto de analisis legible para un pronostico."""
     lines = []
@@ -423,6 +826,10 @@ ODDS_API_SOCCER = {
     "Serie A": "soccer_italy_serie_a",
     "Ligue 1": "soccer_france_ligue_one",
     "Champions League": "soccer_uefa_champs_league",
+    "Europa League": "soccer_uefa_europa_league",
+    "Conference League": "soccer_uefa_europa_conference_league",
+    "Copa Libertadores": "soccer_conmebol_libertadores",
+    "Copa Sudamericana": "soccer_conmebol_copa_sudamericana",
 }
 
 
@@ -558,7 +965,27 @@ def fetch_predictions_for_league(league_name, league_info):
     has_odds = league_info["has_odds"]
     has_injuries = league_info["has_injuries"]
 
-    events = fetch_scoreboard_events(sport_path)
+    # Usar fecha de hoy (UTC) y tambien manana para cubrir partidos nocturnos
+    # que en UTC caen en el dia siguiente pero son "de hoy" en hora local (Americas)
+    today_utc = datetime.now(timezone.utc)
+    today_str = today_utc.strftime("%Y%m%d")
+    tomorrow_utc = today_utc + timedelta(days=1)
+    tomorrow_str = tomorrow_utc.strftime("%Y%m%d")
+
+    # Ventana de "hoy": desde las 08:00 UTC de hoy hasta las 08:00 UTC de manana
+    # Esto cubre partidos de ~04:00 (Americas) hasta ~04:00 del dia siguiente
+    window_start = today_utc.replace(hour=8, minute=0, second=0, microsecond=0)
+    window_end = window_start + timedelta(hours=24)
+
+    # Obtener eventos de hoy y manana (para capturar partidos nocturnos Americas)
+    events = fetch_scoreboard_events(sport_path, today_str)
+    events_tomorrow = fetch_scoreboard_events(sport_path, tomorrow_str)
+    # Combinar sin duplicados (por id)
+    seen_ids = {e.get("id") for e in events}
+    for e in events_tomorrow:
+        if e.get("id") not in seen_ids:
+            events.append(e)
+
     predictions = []
 
     # Obtener cuotas de The Odds API si hay key configurada
@@ -572,12 +999,22 @@ def fetch_predictions_for_league(league_name, league_info):
         if odds_sport_key:
             ext_odds_map = fetch_odds_api(odds_sport_key)
 
-    # Filtrar solo partidos programados (pre) - no analizar los ya jugados
+    # Filtrar solo partidos programados (pre) dentro de la ventana de hoy
     scheduled_events = []
     for event in events:
         state = event.get("status", {}).get("type", {}).get("state", "")
-        if state == "pre":
-            scheduled_events.append(event)
+        if state != "pre":
+            continue
+        # Verificar que el evento este dentro de la ventana de hoy
+        event_date_str = event.get("date", "")
+        if event_date_str:
+            try:
+                event_dt = datetime.fromisoformat(event_date_str.replace("Z", "+00:00"))
+                if event_dt < window_start or event_dt >= window_end:
+                    continue
+            except Exception:
+                pass
+        scheduled_events.append(event)
 
     if not scheduled_events:
         print(f"    Sin partidos programados para hoy")
@@ -616,6 +1053,37 @@ def fetch_predictions_for_league(league_name, league_info):
         if not home_data or not away_data:
             continue
 
+        # Para torneos internacionales, si los datos del torneo son insuficientes
+        # (pocos partidos jugados), buscar datos en la liga local del equipo
+        if league_name in TOURNAMENT_LEAGUES:
+            home_total_games = home_data["overall"]["wins"] + home_data["overall"]["losses"] + home_data["overall"].get("ties", 0)
+            away_total_games = away_data["overall"]["wins"] + away_data["overall"]["losses"] + away_data["overall"].get("ties", 0)
+
+            if home_total_games < 4:
+                domestic_data, domestic_path = _find_domestic_team_data(home_team_name, home_data.get("abbreviation", ""), league_name)
+                if domestic_data:
+                    # Preservar logo y nombre del torneo, usar stats de liga local
+                    orig_logo = home_data["logo"]
+                    orig_name = home_data["name"]
+                    orig_abbr = home_data["abbreviation"]
+                    home_data = domestic_data
+                    home_data["logo"] = orig_logo or domestic_data["logo"]
+                    home_data["name"] = orig_name
+                    home_data["abbreviation"] = orig_abbr
+                    print(f"    [+] {home_team_name}: usando datos de liga local ({domestic_path})")
+
+            if away_total_games < 4:
+                domestic_data, domestic_path = _find_domestic_team_data(away_team_name, away_data.get("abbreviation", ""), league_name)
+                if domestic_data:
+                    orig_logo = away_data["logo"]
+                    orig_name = away_data["name"]
+                    orig_abbr = away_data["abbreviation"]
+                    away_data = domestic_data
+                    away_data["logo"] = orig_logo or domestic_data["logo"]
+                    away_data["name"] = orig_name
+                    away_data["abbreviation"] = orig_abbr
+                    print(f"    [+] {away_team_name}: usando datos de liga local ({domestic_path})")
+
         # Usar logos del scoreboard si no vienen del team endpoint
         if not home_data["logo"] and home_logo:
             home_data["logo"] = home_logo
@@ -641,6 +1109,22 @@ def fetch_predictions_for_league(league_name, league_info):
         confidence, pick_team_name, pick_label, factors = calculate_confidence(
             home_data, away_data, home_injuries, away_injuries, odds, is_soccer
         )
+
+        # Apuestas adicionales para futbol (esquinas, tarjetas, remates, goleadores, alineaciones)
+        extra_bets = None
+        home_lineup = []
+        away_lineup = []
+        if is_soccer:
+            try:
+                home_stats = fetch_soccer_team_stats(sport_path, home_id)
+                away_stats = fetch_soccer_team_stats(sport_path, away_id)
+                home_scorers = fetch_team_top_scorers(sport_path, home_id)
+                away_scorers = fetch_team_top_scorers(sport_path, away_id)
+                home_lineup = fetch_probable_lineup(sport_path, home_id)
+                away_lineup = fetch_probable_lineup(sport_path, away_id)
+                extra_bets = generate_soccer_extra_bets(home_stats, away_stats, home_scorers, away_scorers)
+            except Exception as e:
+                print(f"    [!] Error obteniendo stats extra: {e}")
 
         # Fecha/hora del partido
         date_str = event.get("date", "")
@@ -674,6 +1158,9 @@ def fetch_predictions_for_league(league_name, league_info):
             "match_time": match_time,
             "match_date": match_date,
             "league": league_name,
+            "extra_bets": extra_bets,
+            "home_lineup": home_lineup,
+            "away_lineup": away_lineup,
         }
 
         predictions.append(prediction)
@@ -708,10 +1195,11 @@ def fetch_all_predictions(min_picks=3, confidence_threshold=55):
     for sport, data in all_predictions.items():
         # Ordenar por confianza descendente
         data["picks"].sort(key=lambda x: x["confidence"], reverse=True)
-        # Filtrar por threshold y limitar
+        # Filtrar por threshold
         data["picks"] = [p for p in data["picks"] if p["confidence"] >= confidence_threshold]
-        # Top N picks
-        data["picks"] = data["picks"][:min_picks]
+        # Futbol tiene mas ligas (10+), permitir mas picks; otros deportes limitar a min_picks
+        max_picks = min_picks * 4 if sport == "futbol" else min_picks
+        data["picks"] = data["picks"][:max_picks]
         total_picks += len(data["picks"])
         if data["picks"]:
             print(f"\n  [{data['name']}] {len(data['picks'])} picks seleccionados")

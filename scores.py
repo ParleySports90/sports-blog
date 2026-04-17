@@ -83,6 +83,18 @@ LEAGUES = {
         "icon": "\u26bd",
         "country": "Sudamerica",
     },
+    "Copa Sudamericana": {
+        "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/conmebol.sudamericana/scoreboard",
+        "sport": "futbol",
+        "icon": "\u26bd",
+        "country": "Sudamerica",
+    },
+    "Conference League": {
+        "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/scoreboard",
+        "sport": "futbol",
+        "icon": "\u26bd",
+        "country": "Europa",
+    },
     # USA Sports
     "NBA": {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard",

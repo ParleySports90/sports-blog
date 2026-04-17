@@ -92,7 +92,7 @@ MAX_ARTICLES_PER_FEED = 10
 MAX_ARTICLES_HOME = 50
 
 # Horarios para regenerar el blog automaticamente (HH:MM)
-SCHEDULE_TIMES = ["06:00", "12:00", "18:00", "22:00"]
+SCHEDULE_TIMES = ["06:00", "10:00", "12:00", "16:00", "19:00", "22:00"]
 
 # Pronosticos
 MIN_PICKS_PER_SPORT = 3
@@ -102,3 +102,8 @@ CONFIDENCE_THRESHOLD = 55
 # Obtener API key gratis en: https://the-odds-api.com/#get-access
 ODDS_API_KEY = ""  # Pega tu API key aqui
 ODDS_BOOKMAKERS = "draftkings,fanduel,betmgm,pinnacle,williamhill_us"
+
+# Telegram Bot
+# Crear bot en @BotFather y pegar token aqui (o usar variables de entorno)
+TELEGRAM_BOT_TOKEN = ""  # Token de @BotFather
+TELEGRAM_CHAT_ID = ""    # Tu chat ID personal
