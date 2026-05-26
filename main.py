@@ -51,7 +51,7 @@ def cmd_build():
 
 
 def cmd_instagram():
-    \"\"\"Genera cards para Instagram con los pronosticos del dia.\"\"\"
+    """Genera cards para Instagram con los pronosticos del dia."""
     from instagram import generate_instagram_images
     print("[*] Generando pronosticos para Instagram...")
     predictions = fetch_all_predictions(
