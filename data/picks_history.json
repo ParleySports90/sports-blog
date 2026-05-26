@@ -812,9 +812,9 @@
       "pick_label": "MIR ML",
       "pick_team": "Mirassol",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-05-26_Copa Libertadores_Quito_vs_Ready",
@@ -828,9 +828,9 @@
       "pick_label": "LDU ML",
       "pick_team": "Liga de Quito",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-05-26_Copa Libertadores_Flamengo_vs_FC",
@@ -940,9 +940,9 @@
       "pick_label": "SAO ML",
       "pick_team": "São Paulo",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-05-26_Copa Sudamericana_Lorenzo_vs_Recoleta",
@@ -975,14 +975,46 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-05-26_MLB_Giants_vs_Diamondbacks",
+      "date": "2026-05-26",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Francisco Giants",
+      "away_team": "Arizona Diamondbacks",
+      "home_abbr": "SF",
+      "away_abbr": "ARI",
+      "pick_label": "SF 1.5",
+      "pick_team": "San Francisco Giants",
+      "confidence": 65,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-05-26_MLB_Padres_vs_Phillies",
+      "date": "2026-05-26",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Diego Padres",
+      "away_team": "Philadelphia Phillies",
+      "home_abbr": "SD",
+      "away_abbr": "PHI",
+      "pick_label": "SD 1.5",
+      "pick_team": "San Diego Padres",
+      "confidence": 58,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 8,
-    "wins": 6,
-    "losses": 2,
-    "pending": 16,
-    "win_pct": 75.0,
+    "total": 11,
+    "wins": 8,
+    "losses": 3,
+    "pending": 15,
+    "win_pct": 72.7,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -998,8 +1030,8 @@
         "l": 0
       },
       "futbol": {
-        "w": 6,
-        "l": 1
+        "w": 8,
+        "l": 2
       }
     }
   }
