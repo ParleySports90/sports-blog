@@ -12,7 +12,7 @@
       "pick_label": "CLE -10.5",
       "pick_team": "Cleveland Cavaliers",
       "confidence": 95,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -28,7 +28,7 @@
       "pick_label": "DET 13.5",
       "pick_team": "Detroit Pistons",
       "confidence": 95,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -44,7 +44,7 @@
       "pick_label": "HOU -12.5",
       "pick_team": "Houston Rockets",
       "confidence": 95,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -76,7 +76,7 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 87,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -92,7 +92,7 @@
       "pick_label": "SD -1.5",
       "pick_team": "San Diego Padres",
       "confidence": 86,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -108,7 +108,7 @@
       "pick_label": "ANA -1.5",
       "pick_team": "Anaheim Ducks",
       "confidence": 85,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -124,7 +124,7 @@
       "pick_label": "MTL -1.5",
       "pick_team": "Montreal Canadiens",
       "confidence": 67,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -140,7 +140,7 @@
       "pick_label": "CGY 1.5",
       "pick_team": "Calgary Flames",
       "confidence": 65,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -204,7 +204,7 @@
       "pick_label": "MIN -4.5",
       "pick_team": "Minnesota Timberwolves",
       "confidence": 95,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -220,7 +220,7 @@
       "pick_label": "LAL -13.5",
       "pick_team": "Los Angeles Lakers",
       "confidence": 95,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -236,7 +236,7 @@
       "pick_label": "OTT -1.5",
       "pick_team": "Ottawa Senators",
       "confidence": 60,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -252,7 +252,7 @@
       "pick_label": "PHX -2.5",
       "pick_team": "Phoenix Suns",
       "confidence": 62,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -268,7 +268,7 @@
       "pick_label": "CHA -5.5",
       "pick_team": "Charlotte Hornets",
       "confidence": 56,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -284,7 +284,7 @@
       "pick_label": "MIN 1.5",
       "pick_team": "Minnesota Twins",
       "confidence": 91,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -300,7 +300,7 @@
       "pick_label": "SD 1.5",
       "pick_team": "San Diego Padres",
       "confidence": 85,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -316,7 +316,7 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 85,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -332,7 +332,7 @@
       "pick_label": "LA 1.5",
       "pick_team": "Los Angeles Kings",
       "confidence": 94,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -348,7 +348,7 @@
       "pick_label": "COL 1.5",
       "pick_team": "Colorado Avalanche",
       "confidence": 82,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -364,7 +364,7 @@
       "pick_label": "MIN 1.5",
       "pick_team": "Minnesota Wild",
       "confidence": 68,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -380,7 +380,7 @@
       "pick_label": "INT ML",
       "pick_team": "Internazionale",
       "confidence": 85,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -396,7 +396,7 @@
       "pick_label": "RCL ML",
       "pick_team": "Lens",
       "confidence": 85,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -460,7 +460,7 @@
       "pick_label": "DEP ML",
       "pick_team": "Deportivo La Guaira",
       "confidence": 85,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -476,7 +476,7 @@
       "pick_label": "LDU ML",
       "pick_team": "Liga de Quito",
       "confidence": 85,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -492,7 +492,7 @@
       "pick_label": "GRE ML",
       "pick_team": "Grêmio",
       "confidence": 85,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -540,7 +540,7 @@
       "pick_label": "COMO ML",
       "pick_team": "Como",
       "confidence": 67,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -556,7 +556,7 @@
       "pick_label": "BAR ML",
       "pick_team": "Barcelona SC",
       "confidence": 66,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -572,7 +572,7 @@
       "pick_label": "SD 1.5",
       "pick_team": "San Diego Padres",
       "confidence": 94,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -588,7 +588,7 @@
       "pick_label": "HOU -1.5",
       "pick_team": "Houston Astros",
       "confidence": 78,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -604,7 +604,7 @@
       "pick_label": "COL -1.5",
       "pick_team": "Colorado Avalanche",
       "confidence": 89,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -620,7 +620,7 @@
       "pick_label": "EDM -1.5",
       "pick_team": "Edmonton Oilers",
       "confidence": 81,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -636,7 +636,7 @@
       "pick_label": "LA 1.5",
       "pick_team": "Los Angeles Kings",
       "confidence": 64,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -652,7 +652,7 @@
       "pick_label": "FLA ML",
       "pick_team": "Flamengo",
       "confidence": 85,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -668,7 +668,7 @@
       "pick_label": "PEN ML",
       "pick_team": "Peñarol",
       "confidence": 85,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -684,7 +684,7 @@
       "pick_label": "BRA ML",
       "pick_team": "Red Bull Bragantino",
       "confidence": 85,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -700,7 +700,7 @@
       "pick_label": "CIE ML",
       "pick_team": "Cienciano del Cusco",
       "confidence": 85,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -716,7 +716,7 @@
       "pick_label": "CLU ML",
       "pick_team": "Deportivo Cuenca",
       "confidence": 59,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     }
@@ -725,7 +725,7 @@
     "total": 8,
     "wins": 6,
     "losses": 2,
-    "pending": 36,
+    "pending": 0,
     "win_pct": 75.0,
     "current_streak": "L1",
     "by_sport": {
