@@ -7,12 +7,13 @@ import json
 import os
 import re
 import requests
-from datetime import datetime
+from datetime import datetime, timedelta
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 PICKS_FILE = os.path.join(DATA_DIR, "picks_history.json")
 ESPN_BASE = "https://site.api.espn.com/apis/site/v2/sports"
 TIMEOUT = 15
+EXPIRE_AFTER_DAYS = 3  # picks aun pendientes despues de N dias -> expirar
 
 # Mapeo de ligas a sport_path de ESPN para consultar scoreboards
 LEAGUE_SPORT_PATH = {
@@ -50,7 +51,6 @@ LEAGUE_SPORT = {
 
 
 def _load_data():
-    """Carga el archivo de historial de picks."""
     if not os.path.exists(PICKS_FILE):
         return _empty_data()
     try:
@@ -61,14 +61,12 @@ def _load_data():
 
 
 def _save_data(data):
-    """Guarda el archivo de historial de picks."""
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(PICKS_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
 def _empty_data():
-    """Retorna estructura de datos vacia."""
     return {
         "picks": [],
         "stats": {
@@ -85,7 +83,6 @@ def _empty_data():
 
 
 def _make_pick_id(date_str, league, home_team, away_team):
-    """Genera un ID unico para un pick."""
     home_short = home_team.split()[-1] if home_team else "UNK"
     away_short = away_team.split()[-1] if away_team else "UNK"
     return f"{date_str}_{league}_{home_short}_vs_{away_short}"
@@ -145,7 +142,8 @@ def save_picks(predictions):
 def check_results():
     """
     Verifica resultados de picks pendientes consultando ESPN.
-    Marca picks como 'won' o 'lost' segun el score final.
+    Agrupa por (fecha, liga) para consultar la fecha correcta en ESPN.
+    Expira picks que siguen pendientes mas de EXPIRE_AFTER_DAYS dias.
     """
     data = _load_data()
     pending = [p for p in data["picks"] if p["status"] == "pending"]
@@ -154,41 +152,66 @@ def check_results():
         print("  [Tracker] No hay picks pendientes por verificar")
         return 0
 
-    # Agrupar pending por liga para minimizar requests
-    by_league = {}
+    today = datetime.now()
+
+    # Agrupar por (fecha, liga) para consultar ESPN con la fecha correcta
+    by_date_league = {}
     for pick in pending:
+        date_str = pick.get("date", today.strftime("%Y-%m-%d"))
         league = pick["league"]
-        if league not in by_league:
-            by_league[league] = []
-        by_league[league].append(pick)
+        key = (date_str, league)
+        if key not in by_date_league:
+            by_date_league[key] = []
+        by_date_league[key].append(pick)
 
     resolved = 0
-    for league, picks in by_league.items():
+    cache = {}  # (sport_path, date_str) -> events, para no repetir requests
+
+    for (date_str, league), picks in by_date_league.items():
         sport_path = LEAGUE_SPORT_PATH.get(league)
         if not sport_path:
             continue
 
-        # Obtener scoreboard de la liga
-        scoreboard = _fetch_scoreboard(sport_path)
+        cache_key = (sport_path, date_str)
+        if cache_key not in cache:
+            cache[cache_key] = _fetch_scoreboard(sport_path, date_str)
+
+        scoreboard = cache[cache_key]
         if not scoreboard:
             continue
 
         for pick in picks:
-            result = _match_and_resolve(pick, scoreboard)
-            if result:
+            if _match_and_resolve(pick, scoreboard):
                 resolved += 1
+
+    # Expirar picks que siguen pendientes despues de EXPIRE_AFTER_DAYS dias
+    expired = 0
+    for pick in data["picks"]:
+        if pick["status"] != "pending":
+            continue
+        try:
+            pick_date = datetime.strptime(pick["date"], "%Y-%m-%d")
+            if (today - pick_date).days > EXPIRE_AFTER_DAYS:
+                pick["status"] = "expired"
+                expired += 1
+        except (ValueError, KeyError):
+            pass
 
     _recalculate_stats(data)
     _save_data(data)
 
     if resolved:
         print(f"  [Tracker] {resolved} picks resueltos")
+    if expired:
+        print(f"  [Tracker] {expired} picks expirados (>{EXPIRE_AFTER_DAYS} dias sin resultado)")
     return resolved
 
 
-def _fetch_scoreboard(sport_path):
-    """Obtiene scoreboard de ESPN para una liga."""
+def _fetch_scoreboard(sport_path, date_str=None):
+    """Obtiene scoreboard de ESPN para una liga y fecha especifica."""
     url = f"{ESPN_BASE}/{sport_path}/scoreboard"
+    if date_str:
+        url += f"?dates={date_str.replace('-', '')}"
     try:
         resp = requests.get(url, timeout=TIMEOUT)
         resp.raise_for_status()
@@ -231,7 +254,6 @@ def _match_and_resolve(pick, events):
         ev_home_abbr = home_comp.get("team", {}).get("abbreviation", "").lower()
         ev_away_abbr = away_comp.get("team", {}).get("abbreviation", "").lower()
 
-        # Matching: por nombre completo o abreviatura
         home_match = (home_team == ev_home or home_abbr == ev_home_abbr
                       or home_team in ev_home or ev_home in home_team)
         away_match = (away_team == ev_away or away_abbr == ev_away_abbr
@@ -240,7 +262,6 @@ def _match_and_resolve(pick, events):
         if not (home_match and away_match):
             continue
 
-        # Partido encontrado y terminado - obtener scores
         try:
             home_score = int(home_comp.get("score", 0))
             away_score = int(away_comp.get("score", 0))
@@ -249,8 +270,6 @@ def _match_and_resolve(pick, events):
 
         pick["home_score"] = home_score
         pick["away_score"] = away_score
-
-        # Determinar W/L
         pick["status"] = _determine_result(pick, home_score, away_score)
         return True
 
@@ -266,29 +285,31 @@ def _determine_result(pick, home_score, away_score):
     pick_label = pick.get("pick_label", "")
     pick_team = pick.get("pick_team", "")
     home_team = pick.get("home_team", "")
+    home_abbr = pick.get("home_abbr", "").lower()
+    away_abbr = pick.get("away_abbr", "").lower()
 
-    # Determinar si el pick es por el home o away
-    pick_is_home = pick_team.lower() == home_team.lower()
+    pick_team_lower = pick_team.lower()
+    pick_is_home = (
+        pick_team_lower == home_team.lower()
+        or pick_team_lower == home_abbr
+        or home_abbr and pick_team_lower.startswith(home_abbr)
+    )
+
     pick_score = home_score if pick_is_home else away_score
     opp_score = away_score if pick_is_home else home_score
-    margin = pick_score - opp_score  # positivo = pick team gano por esa cantidad
+    margin = pick_score - opp_score
 
-    # Extraer spread del label si existe
     spread = _extract_spread(pick_label)
 
     if spread is not None:
-        # Spread pick: margen + spread > 0 significa que cubre
-        # Ej: pick "LAL -5.5", LAL gana por 7 -> margin=7, spread=-5.5 -> 7+(-5.5)=1.5 > 0 -> won
-        # Ej: pick "GSW +3.5", GSW pierde por 2 -> margin=-2, spread=+3.5 -> -2+3.5=1.5 > 0 -> won
         adjusted = margin + spread
         if adjusted > 0:
             return "won"
         elif adjusted < 0:
             return "lost"
         else:
-            return "push"  # empate exacto en spread (raro con .5)
+            return "push"
     else:
-        # ML pick: simplemente gano o no
         if margin > 0:
             return "won"
         elif margin < 0:
@@ -300,9 +321,7 @@ def _determine_result(pick, home_score, away_score):
 def _extract_spread(pick_label):
     """
     Extrae el spread numerico de un pick label.
-    "LAL -5.5" -> -5.5
-    "GSW +3.5" -> +3.5
-    "LAL ML" -> None
+    "LAL -5.5" -> -5.5, "GSW +3.5" -> +3.5, "LAL ML" -> None
     """
     if "ML" in pick_label.upper():
         return None
@@ -317,7 +336,7 @@ def _extract_spread(pick_label):
 
 
 def _recalculate_stats(data):
-    """Recalcula estadisticas a partir de todos los picks."""
+    """Recalcula estadisticas. Excluye picks expirados y push del conteo principal."""
     picks = data["picks"]
     stats = {
         "total": 0, "wins": 0, "losses": 0, "pending": 0,
@@ -346,12 +365,12 @@ def _recalculate_stats(data):
                 stats["by_sport"][sport]["l"] += 1
         elif status == "pending":
             stats["pending"] += 1
+        # expired y push no se cuentan
 
-    # Win %
     decided = stats["wins"] + stats["losses"]
     stats["win_pct"] = round((stats["wins"] / decided * 100), 1) if decided > 0 else 0.0
 
-    # Racha actual - recorrer picks resueltos en orden cronologico inverso
+    # Racha actual - ultimos picks resueltos en orden cronologico inverso
     resolved = [p for p in picks if p["status"] in ("won", "lost")]
     resolved.sort(key=lambda x: x.get("date", ""), reverse=True)
 
@@ -377,13 +396,11 @@ def _recalculate_stats(data):
 
 
 def get_stats():
-    """Retorna estadisticas actuales."""
     data = _load_data()
     return data["stats"]
 
 
 def get_recent_picks(n=10):
-    """Retorna los ultimos N picks resueltos."""
     data = _load_data()
     resolved = [p for p in data["picks"] if p["status"] in ("won", "lost")]
     resolved.sort(key=lambda x: x.get("date", ""), reverse=True)
@@ -391,7 +408,6 @@ def get_recent_picks(n=10):
 
 
 def get_tracking_data():
-    """Retorna stats + ultimos picks para el template."""
     data = _load_data()
     stats = data["stats"]
     resolved = [p for p in data["picks"] if p["status"] in ("won", "lost")]
@@ -405,7 +421,6 @@ def get_tracking_data():
 
 
 def print_tracking_stats():
-    """Imprime stats de tracking en consola."""
     data = _load_data()
     stats = data["stats"]
 
@@ -424,7 +439,6 @@ def print_tracking_stats():
             pct = round(w / (w + l) * 100, 1)
             print(f"    {sport}: {w}W-{l}L ({pct}%)")
 
-    # Ultimos 10 picks resueltos
     recent = get_recent_picks(10)
     if recent:
         print(f"\n  Ultimos {len(recent)} picks:")
