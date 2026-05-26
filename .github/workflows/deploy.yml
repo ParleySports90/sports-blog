@@ -2,14 +2,14 @@ name: Deploy to GitHub Pages
 
 on:
   schedule:
-    - cron: "0 10 * * *"   # 06:00 VEN
-    - cron: "0 14 * * *"   # 10:00 VEN
-    - cron: "0 16 * * *"   # 12:00 VEN
-    - cron: "0 20 * * *"   # 16:00 VEN
-    - cron: "0 23 * * *"   # 19:00 VEN
-    - cron: "0 2 * * *"    # 22:00 VEN
+    - cron: "0 10 * * *"
+    - cron: "0 14 * * *"
+    - cron: "0 16 * * *"
+    - cron: "0 20 * * *"
+    - cron: "0 23 * * *"
+    - cron: "0 2 * * *"
   push:
-    branches: [main]
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -33,7 +33,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: '3.12'
 
       - name: Install dependencies
         run: pip install -r requirements.txt
@@ -42,7 +42,7 @@ jobs:
         run: python main.py
 
       - name: Send predictions to Telegram
-        if: env.TELEGRAM_BOT_TOKEN != ""
+        if: ${{ secrets.TELEGRAM_BOT_TOKEN != '' }}
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
