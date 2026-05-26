@@ -10,6 +10,7 @@ Uso:
     python main.py tracking       - Muestra estadisticas de aciertos en consola
     python main.py schedule       - Regenera automaticamente en horarios definidos
     python main.py open           - Abre el blog en el navegador
+    python main.py instagram      - Genera cards PNG para publicar en Instagram
     python main.py telegram       - Genera y envia pronosticos a Telegram
     python main.py telegram-setup - Guia interactiva para configurar el bot
 """
@@ -24,7 +25,7 @@ from scraper import fetch_all_feeds
 from scores import fetch_all_scores
 from predictions import fetch_all_predictions, print_predictions, fetch_daily_lines
 from generator import generate_site
-from tracker import check_results, print_tracking_stats
+from tracker import check_results, print_tracking_stats, get_tracking_data
 
 
 def cmd_build():
@@ -47,6 +48,24 @@ def cmd_build():
         print(f"     {os.path.abspath(output)}")
     else:
         print("[!] No se obtuvo contenido.")
+
+
+def cmd_instagram():
+    \"\"\"Genera cards para Instagram con los pronosticos del dia.\"\"\"
+    from instagram import generate_instagram_images
+    print("[*] Generando pronosticos para Instagram...")
+    predictions = fetch_all_predictions(
+        min_picks=config.MIN_PICKS_PER_SPORT,
+        confidence_threshold=config.CONFIDENCE_THRESHOLD,
+    )
+    tracking = get_tracking_data()
+    paths = generate_instagram_images(predictions, tracking)
+    if paths:
+        print(f"\n[OK] {len(paths)} cards generados en output/instagram/")
+        for p in paths:
+            print(f"     {os.path.abspath(p)}")
+    else:
+        print("[!] No se generaron imagenes.")
 
 
 def cmd_scores():
@@ -173,6 +192,8 @@ def main():
         cmd_schedule()
     elif command == "open":
         cmd_open()
+    elif command == "instagram":
+        cmd_instagram()
     elif command == "telegram":
         cmd_telegram()
     elif command == "telegram-setup":
