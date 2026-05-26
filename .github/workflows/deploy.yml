@@ -2,12 +2,12 @@ name: Deploy to GitHub Pages
 
 on:
   schedule:
-    - cron: "0 10 * * *"
-    - cron: "0 14 * * *"
-    - cron: "0 16 * * *"
-    - cron: "0 20 * * *"
-    - cron: "0 23 * * *"
-    - cron: "0 2 * * *"
+    - cron: '0 10 * * *'
+    - cron: '0 14 * * *'
+    - cron: '0 16 * * *'
+    - cron: '0 20 * * *'
+    - cron: '0 23 * * *'
+    - cron: '0 2 * * *'
   push:
     branches: [master]
   workflow_dispatch:
@@ -24,9 +24,6 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    env:
-      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -42,10 +39,13 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build blog
-        run: python main.py
+        run: python main.py build
 
       - name: Send predictions to Telegram
         if: env.TELEGRAM_BOT_TOKEN != ""
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python main.py telegram
 
       - uses: actions/configure-pages@v4
