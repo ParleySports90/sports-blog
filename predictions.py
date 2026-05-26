@@ -1241,3 +1241,103 @@ def print_predictions(predictions):
             for factor in pick["factors"]:
                 print(f"   {factor}")
             print()
+
+
+# ============================================
+# LINEAS DEL DIA - ESPN odds (moneyline, spread, O/U)
+# ============================================
+
+LINES_LEAGUES = {
+    "NBA": {"sport_path": "basketball/nba", "icon": "🏀"},
+    "MLB": {"sport_path": "baseball/mlb",   "icon": "⚾"},
+    "NHL": {"sport_path": "hockey/nhl",     "icon": "🏒"},
+}
+
+
+def fetch_daily_lines():
+    """Obtiene lineas del dia (moneyline, spread, O/U) de NBA, MLB y NHL usando ESPN."""
+    today_utc   = datetime.now(timezone.utc)
+    today_str   = today_utc.strftime("%Y%m%d")
+    tomorrow_str = (today_utc + timedelta(days=1)).strftime("%Y%m%d")
+    window_start = today_utc.replace(hour=8, minute=0, second=0, microsecond=0)
+    window_end   = window_start + timedelta(hours=24)
+
+    result = {}
+    for league_name, info in LINES_LEAGUES.items():
+        events = fetch_scoreboard_events(info["sport_path"], today_str)
+        tmrw   = fetch_scoreboard_events(info["sport_path"], tomorrow_str)
+        seen   = {e.get("id") for e in events}
+        for e in tmrw:
+            if e.get("id") not in seen:
+                events.append(e)
+
+        games = []
+        for event in events:
+            # Filtrar dentro de la ventana del dia
+            ev_date = event.get("date", "")
+            if ev_date:
+                try:
+                    ev_dt = datetime.fromisoformat(ev_date.replace("Z", "+00:00"))
+                    if ev_dt < window_start or ev_dt >= window_end:
+                        continue
+                except Exception:
+                    pass
+
+            competition = event.get("competitions", [{}])[0]
+            competitors = competition.get("competitors", [])
+            if len(competitors) < 2:
+                continue
+
+            home_comp = away_comp = None
+            for c in competitors:
+                if c.get("homeAway") == "home":
+                    home_comp = c
+                elif c.get("homeAway") == "away":
+                    away_comp = c
+            if not home_comp or not away_comp:
+                home_comp, away_comp = competitors[0], competitors[1]
+
+            home_team  = home_comp.get("team", {}).get("displayName", "?")
+            away_team  = away_comp.get("team", {}).get("displayName", "?")
+            home_logo  = home_comp.get("team", {}).get("logo", "")
+            away_logo  = away_comp.get("team", {}).get("logo", "")
+            home_abbr  = home_comp.get("team", {}).get("abbreviation", "")
+            away_abbr  = away_comp.get("team", {}).get("abbreviation", "")
+
+            # Hora del partido en hora VEN (UTC-4)
+            game_time = ""
+            if ev_date:
+                try:
+                    ev_dt  = datetime.fromisoformat(ev_date.replace("Z", "+00:00"))
+                    ven_dt = ev_dt - timedelta(hours=4)
+                    game_time = ven_dt.strftime("%I:%M %p")
+                except Exception:
+                    pass
+
+            state       = event.get("status", {}).get("type", {}).get("state", "")
+            status_desc = event.get("status", {}).get("type", {}).get("shortDetail", "")
+
+            odds = extract_odds_from_event(event)
+
+            games.append({
+                "home_team"  : home_team,
+                "away_team"  : away_team,
+                "home_logo"  : home_logo,
+                "away_logo"  : away_logo,
+                "home_abbr"  : home_abbr,
+                "away_abbr"  : away_abbr,
+                "game_time"  : game_time,
+                "state"      : state,
+                "status"     : status_desc,
+                "home_ml"    : odds.get("home_ml",    "") if odds else "",
+                "away_ml"    : odds.get("away_ml",    "") if odds else "",
+                "spread"     : odds.get("spread",     "") if odds else "",
+                "over_under" : odds.get("over_under", "") if odds else "",
+                "provider"   : odds.get("provider",   "") if odds else "",
+                "has_odds"   : odds is not None,
+            })
+
+        if games:
+            result[league_name] = {"icon": info["icon"], "games": games}
+
+    return result
