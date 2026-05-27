@@ -1263,13 +1263,45 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-05-27_MLB_Rangers_vs_Astros",
+      "date": "2026-05-27",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Texas Rangers",
+      "away_team": "Houston Astros",
+      "home_abbr": "TEX",
+      "away_abbr": "HOU",
+      "pick_label": "TEX -1.5",
+      "pick_team": "Texas Rangers",
+      "confidence": 59,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-05-27_Copa Sudamericana_Bragantino_vs_Carabobo",
+      "date": "2026-05-27",
+      "league": "Copa Sudamericana",
+      "sport": "futbol",
+      "home_team": "Red Bull Bragantino",
+      "away_team": "Carabobo",
+      "home_abbr": "BRA",
+      "away_abbr": "CAR",
+      "pick_label": "CAR ML",
+      "pick_team": "Carabobo",
+      "confidence": 78,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 23,
     "wins": 14,
     "losses": 9,
-    "pending": 16,
+    "pending": 18,
     "win_pct": 60.9,
     "current_streak": "W3",
     "by_sport": {
