@@ -1423,13 +1423,29 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-05-28_MLB_Orioles_vs_Jays",
+      "date": "2026-05-28",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Baltimore Orioles",
+      "away_team": "Toronto Blue Jays",
+      "home_abbr": "BAL",
+      "away_abbr": "TOR",
+      "pick_label": "BAL -1.5",
+      "pick_team": "Baltimore Orioles",
+      "confidence": 60,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 40,
     "wins": 26,
     "losses": 14,
-    "pending": 8,
+    "pending": 9,
     "win_pct": 65.0,
     "current_streak": "L1",
     "by_sport": {
