@@ -1324,9 +1324,9 @@
       "pick_label": "DET -1.5",
       "pick_team": "Detroit Tigers",
       "confidence": 61,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 7
     },
     {
       "id": "2026-05-28_MLB_Sox_vs_Twins",
@@ -1340,9 +1340,9 @@
       "pick_label": "CHW -1.5",
       "pick_team": "Chicago White Sox",
       "confidence": 60,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 2
     },
     {
       "id": "2026-05-28_Copa Libertadores_Porteño_vs_Cristal",
@@ -1455,14 +1455,30 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-05-28_MLB_Rangers_vs_Astros",
+      "date": "2026-05-28",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Texas Rangers",
+      "away_team": "Houston Astros",
+      "home_abbr": "TEX",
+      "away_abbr": "HOU",
+      "pick_label": "TEX -1.5",
+      "pick_team": "Texas Rangers",
+      "confidence": 55,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 40,
-    "wins": 26,
-    "losses": 14,
-    "pending": 10,
-    "win_pct": 65.0,
+    "total": 42,
+    "wins": 27,
+    "losses": 15,
+    "pending": 9,
+    "win_pct": 64.3,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -1470,8 +1486,8 @@
         "l": 0
       },
       "baseball": {
-        "w": 5,
-        "l": 5
+        "w": 6,
+        "l": 6
       },
       "hockey": {
         "w": 2,
