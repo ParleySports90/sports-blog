@@ -1439,13 +1439,29 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-05-28_MLB_Pirates_vs_Cubs",
+      "date": "2026-05-28",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Pittsburgh Pirates",
+      "away_team": "Chicago Cubs",
+      "home_abbr": "PIT",
+      "away_abbr": "CHC",
+      "pick_label": "PIT -1.5",
+      "pick_team": "Pittsburgh Pirates",
+      "confidence": 55,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 40,
     "wins": 26,
     "losses": 14,
-    "pending": 9,
+    "pending": 10,
     "win_pct": 65.0,
     "current_streak": "L1",
     "by_sport": {
