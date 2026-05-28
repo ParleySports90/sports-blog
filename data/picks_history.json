@@ -1020,9 +1020,9 @@
       "pick_label": "ATL 1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 8,
+      "away_score": 0
     },
     {
       "id": "2026-05-27_MLB_Dodgers_vs_Rockies",
@@ -1036,9 +1036,9 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 90,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "id": "2026-05-27_MLB_Royals_vs_Yankees",
@@ -1052,9 +1052,9 @@
       "pick_label": "NYY 1.5",
       "pick_team": "New York Yankees",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 7
     },
     {
       "id": "2026-05-27_NHL_Canadiens_vs_Hurricanes",
@@ -1068,9 +1068,9 @@
       "pick_label": "CAR 1.5",
       "pick_team": "Carolina Hurricanes",
       "confidence": 56,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 4
     },
     {
       "id": "2026-05-27_Copa Libertadores_Libertad_vs_Central",
@@ -1084,9 +1084,9 @@
       "pick_label": "UCV ML",
       "pick_team": "Universidad Central",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-05-27_Copa Libertadores_Bolívar_vs_Rivadavia",
@@ -1100,9 +1100,9 @@
       "pick_label": "RIV ML",
       "pick_team": "Independiente Rivadavia",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "id": "2026-05-27_Copa Sudamericana_FC_vs_Botafogo",
@@ -1116,9 +1116,9 @@
       "pick_label": "BOT ML",
       "pick_team": "Botafogo",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "id": "2026-05-27_Copa Sudamericana_Gama_vs_Central",
@@ -1132,9 +1132,9 @@
       "pick_label": "VAS ML",
       "pick_team": "Vasco da Gama",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-05-27_Copa Sudamericana_Plate_vs_Blooming",
@@ -1148,9 +1148,9 @@
       "pick_label": "RIV ML",
       "pick_team": "River Plate",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-05-27_Copa Libertadores_Valle_vs_Central",
@@ -1164,9 +1164,9 @@
       "pick_label": "ROS ML",
       "pick_team": "Rosario Central",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-05-27_Copa Libertadores_Corinthians_vs_Platense",
@@ -1180,9 +1180,9 @@
       "pick_label": "COR ML",
       "pick_team": "Corinthians",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-05-27_Copa Libertadores_Fluminense_vs_Guaira",
@@ -1196,9 +1196,9 @@
       "pick_label": "FLU ML",
       "pick_team": "Fluminense",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-05-27_Copa Libertadores_Peñarol_vs_Fe",
@@ -1212,9 +1212,9 @@
       "pick_label": "SFE ML",
       "pick_team": "Independiente Santa Fe",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-05-27_Copa Sudamericana_Cusco_vs_Juventud",
@@ -1228,9 +1228,9 @@
       "pick_label": "CIE ML",
       "pick_team": "Cienciano del Cusco",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-05-27_Copa Sudamericana_Olimpia_vs_Italiano",
@@ -1244,9 +1244,9 @@
       "pick_label": "OLI ML",
       "pick_team": "Club Olimpia",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-05-27_Copa Sudamericana_Club_vs_Petrolero",
@@ -1260,9 +1260,9 @@
       "pick_label": "RAC ML",
       "pick_team": "Racing Club",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-05-27_MLB_Rangers_vs_Astros",
@@ -1276,9 +1276,9 @@
       "pick_label": "TEX -1.5",
       "pick_team": "Texas Rangers",
       "confidence": 59,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 4
     },
     {
       "id": "2026-05-27_Copa Sudamericana_Bragantino_vs_Carabobo",
@@ -1292,34 +1292,162 @@
       "pick_label": "CAR ML",
       "pick_team": "Carabobo",
       "confidence": 78,
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 0
+    },
+    {
+      "id": "2026-05-28_MLB_Sox_vs_Braves",
+      "date": "2026-05-28",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Boston Red Sox",
+      "away_team": "Atlanta Braves",
+      "home_abbr": "BOS",
+      "away_abbr": "ATL",
+      "pick_label": "ATL 1.5",
+      "pick_team": "Atlanta Braves",
+      "confidence": 91,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-05-28_MLB_Tigers_vs_Angels",
+      "date": "2026-05-28",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Detroit Tigers",
+      "away_team": "Los Angeles Angels",
+      "home_abbr": "DET",
+      "away_abbr": "LAA",
+      "pick_label": "DET -1.5",
+      "pick_team": "Detroit Tigers",
+      "confidence": 61,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-05-28_MLB_Sox_vs_Twins",
+      "date": "2026-05-28",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Chicago White Sox",
+      "away_team": "Minnesota Twins",
+      "home_abbr": "CHW",
+      "away_abbr": "MIN",
+      "pick_label": "CHW -1.5",
+      "pick_team": "Chicago White Sox",
+      "confidence": 60,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-05-28_Copa Libertadores_Porteño_vs_Cristal",
+      "date": "2026-05-28",
+      "league": "Copa Libertadores",
+      "sport": "futbol",
+      "home_team": "Cerro Porteño",
+      "away_team": "Sporting Cristal",
+      "home_abbr": "CPT",
+      "away_abbr": "SCR",
+      "pick_label": "CPT ML",
+      "pick_team": "Cerro Porteño",
+      "confidence": 78,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-05-28_Copa Libertadores_Palmeiras_vs_Junior",
+      "date": "2026-05-28",
+      "league": "Copa Libertadores",
+      "sport": "futbol",
+      "home_team": "Palmeiras",
+      "away_team": "Atlético Junior",
+      "home_abbr": "PAL",
+      "away_abbr": "JUN",
+      "pick_label": "PAL ML",
+      "pick_team": "Palmeiras",
+      "confidence": 78,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-05-28_Copa Libertadores_Juniors_vs_Católica",
+      "date": "2026-05-28",
+      "league": "Copa Libertadores",
+      "sport": "futbol",
+      "home_team": "Boca Juniors",
+      "away_team": "Universidad Católica",
+      "home_abbr": "CABJ",
+      "away_abbr": "CDUC",
+      "pick_label": "CDUC ML",
+      "pick_team": "Universidad Católica",
+      "confidence": 78,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-05-28_Copa Libertadores_Cruzeiro_vs_SC",
+      "date": "2026-05-28",
+      "league": "Copa Libertadores",
+      "sport": "futbol",
+      "home_team": "Cruzeiro",
+      "away_team": "Barcelona SC",
+      "home_abbr": "CRU",
+      "away_abbr": "BAR",
+      "pick_label": "CRU ML",
+      "pick_team": "Cruzeiro",
+      "confidence": 78,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-05-28_Copa Sudamericana_Tigre_vs_Atlético",
+      "date": "2026-05-28",
+      "league": "Copa Sudamericana",
+      "sport": "futbol",
+      "home_team": "Tigre",
+      "away_team": "Alianza Atlético",
+      "home_abbr": "TIG",
+      "away_abbr": "AAT",
+      "pick_label": "TIG ML",
+      "pick_team": "Tigre",
+      "confidence": 78,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 23,
-    "wins": 14,
-    "losses": 9,
-    "pending": 18,
-    "win_pct": 60.9,
-    "current_streak": "W3",
+    "total": 40,
+    "wins": 26,
+    "losses": 14,
+    "pending": 8,
+    "win_pct": 65.0,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 0
       },
       "baseball": {
-        "w": 3,
-        "l": 3
+        "w": 5,
+        "l": 5
       },
       "hockey": {
-        "w": 1,
+        "w": 2,
         "l": 0
       },
       "futbol": {
-        "w": 9,
-        "l": 6
+        "w": 18,
+        "l": 9
       }
     }
   }
