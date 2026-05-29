@@ -1308,9 +1308,9 @@
       "pick_label": "ATL 1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 91,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 10
     },
     {
       "id": "2026-05-28_MLB_Tigers_vs_Angels",
@@ -1356,9 +1356,9 @@
       "pick_label": "CPT ML",
       "pick_team": "Cerro Porteño",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-05-28_Copa Libertadores_Palmeiras_vs_Junior",
@@ -1372,9 +1372,9 @@
       "pick_label": "PAL ML",
       "pick_team": "Palmeiras",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "id": "2026-05-28_Copa Libertadores_Juniors_vs_Católica",
@@ -1471,22 +1471,70 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-05-29_MLB_Rays_vs_Angels",
+      "date": "2026-05-29",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Los Angeles Angels",
+      "home_abbr": "TB",
+      "away_abbr": "LAA",
+      "pick_label": "TB -1.5",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-05-29_MLB_Sox_vs_Tigers",
+      "date": "2026-05-29",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Chicago White Sox",
+      "away_team": "Detroit Tigers",
+      "home_abbr": "CHW",
+      "away_abbr": "DET",
+      "pick_label": "CHW 1.5",
+      "pick_team": "Chicago White Sox",
+      "confidence": 79,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-05-29_MLB_Astros_vs_Brewers",
+      "date": "2026-05-29",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Houston Astros",
+      "away_team": "Milwaukee Brewers",
+      "home_abbr": "HOU",
+      "away_abbr": "MIL",
+      "pick_label": "MIL ML",
+      "pick_team": "Milwaukee Brewers",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 42,
-    "wins": 27,
+    "total": 45,
+    "wins": 30,
     "losses": 15,
     "pending": 9,
-    "win_pct": 64.3,
-    "current_streak": "L1",
+    "win_pct": 66.7,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 0
       },
       "baseball": {
-        "w": 6,
+        "w": 7,
         "l": 6
       },
       "hockey": {
@@ -1494,7 +1542,7 @@
         "l": 0
       },
       "futbol": {
-        "w": 18,
+        "w": 20,
         "l": 9
       }
     }
