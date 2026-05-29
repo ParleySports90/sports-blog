@@ -1388,9 +1388,9 @@
       "pick_label": "CDUC ML",
       "pick_team": "Universidad Católica",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-05-28_Copa Libertadores_Cruzeiro_vs_SC",
@@ -1404,9 +1404,9 @@
       "pick_label": "CRU ML",
       "pick_team": "Cruzeiro",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 0
     },
     {
       "id": "2026-05-28_Copa Sudamericana_Tigre_vs_Atlético",
@@ -1420,9 +1420,9 @@
       "pick_label": "TIG ML",
       "pick_team": "Tigre",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-05-28_MLB_Orioles_vs_Jays",
@@ -1436,9 +1436,9 @@
       "pick_label": "BAL -1.5",
       "pick_team": "Baltimore Orioles",
       "confidence": 60,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-05-28_MLB_Pirates_vs_Cubs",
@@ -1452,9 +1452,9 @@
       "pick_label": "PIT -1.5",
       "pick_team": "Pittsburgh Pirates",
       "confidence": 55,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 7
     },
     {
       "id": "2026-05-28_MLB_Rangers_vs_Astros",
@@ -1468,9 +1468,9 @@
       "pick_label": "TEX -1.5",
       "pick_team": "Texas Rangers",
       "confidence": 55,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 5
     },
     {
       "id": "2026-05-29_MLB_Rays_vs_Angels",
@@ -1522,11 +1522,11 @@
     }
   ],
   "stats": {
-    "total": 45,
-    "wins": 30,
-    "losses": 15,
-    "pending": 9,
-    "win_pct": 66.7,
+    "total": 51,
+    "wins": 33,
+    "losses": 18,
+    "pending": 3,
+    "win_pct": 64.7,
     "current_streak": "W1",
     "by_sport": {
       "basketball": {
@@ -1535,14 +1535,14 @@
       },
       "baseball": {
         "w": 7,
-        "l": 6
+        "l": 9
       },
       "hockey": {
         "w": 2,
         "l": 0
       },
       "futbol": {
-        "w": 20,
+        "w": 23,
         "l": 9
       }
     }
