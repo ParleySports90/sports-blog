@@ -1548,9 +1548,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 14
     },
     {
       "id": "2026-05-30_MLB_Sox_vs_Tigers",
@@ -1580,9 +1580,9 @@
       "pick_label": "MIL 1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 74,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 9,
+      "away_score": 2
     },
     {
       "id": "2026-05-30_MLB_Reds_vs_Braves",
@@ -1631,15 +1631,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-05-30_MLB_Mariners_vs_Diamondbacks",
+      "date": "2026-05-30",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Seattle Mariners",
+      "away_team": "Arizona Diamondbacks",
+      "home_abbr": "SEA",
+      "away_abbr": "ARI",
+      "pick_label": "SEA -1.5",
+      "pick_team": "Seattle Mariners",
+      "confidence": 57,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 55,
+    "total": 57,
     "wins": 37,
-    "losses": 18,
-    "pending": 6,
-    "win_pct": 67.3,
-    "current_streak": "W5",
+    "losses": 20,
+    "pending": 5,
+    "win_pct": 64.9,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -1647,7 +1663,7 @@
       },
       "baseball": {
         "w": 11,
-        "l": 9
+        "l": 11
       },
       "hockey": {
         "w": 2,
