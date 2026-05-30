@@ -1484,9 +1484,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 8,
+      "away_score": 5
     },
     {
       "id": "2026-05-29_MLB_Sox_vs_Tigers",
@@ -1500,9 +1500,9 @@
       "pick_label": "CHW 1.5",
       "pick_team": "Chicago White Sox",
       "confidence": 79,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "id": "2026-05-29_MLB_Astros_vs_Brewers",
@@ -1516,9 +1516,9 @@
       "pick_label": "MIL ML",
       "pick_team": "Milwaukee Brewers",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 5
     },
     {
       "id": "2026-05-30_NBA_Thunder_vs_Spurs",
@@ -1586,19 +1586,19 @@
     }
   ],
   "stats": {
-    "total": 51,
-    "wins": 33,
+    "total": 54,
+    "wins": 36,
     "losses": 18,
-    "pending": 7,
-    "win_pct": 64.7,
-    "current_streak": "W1",
+    "pending": 4,
+    "win_pct": 66.7,
+    "current_streak": "W4",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 0
       },
       "baseball": {
-        "w": 7,
+        "w": 10,
         "l": 9
       },
       "hockey": {
