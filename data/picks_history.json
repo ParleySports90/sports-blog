@@ -1564,9 +1564,9 @@
       "pick_label": "CHW 1.5",
       "pick_team": "Chicago White Sox",
       "confidence": 79,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 7,
+      "away_score": 1
     },
     {
       "id": "2026-05-30_MLB_Astros_vs_Brewers",
@@ -1583,22 +1583,70 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-05-30_MLB_Reds_vs_Braves",
+      "date": "2026-05-30",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Cincinnati Reds",
+      "away_team": "Atlanta Braves",
+      "home_abbr": "CIN",
+      "away_abbr": "ATL",
+      "pick_label": "ATL 1.5",
+      "pick_team": "Atlanta Braves",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-05-30_MLB_Athletics_vs_Yankees",
+      "date": "2026-05-30",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Athletics",
+      "away_team": "New York Yankees",
+      "home_abbr": "ATH",
+      "away_abbr": "NYY",
+      "pick_label": "NYY 1.5",
+      "pick_team": "New York Yankees",
+      "confidence": 73,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-05-30_MLB_Dodgers_vs_Phillies",
+      "date": "2026-05-30",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Los Angeles Dodgers",
+      "away_team": "Philadelphia Phillies",
+      "home_abbr": "LAD",
+      "away_abbr": "PHI",
+      "pick_label": "LAD -1.5",
+      "pick_team": "Los Angeles Dodgers",
+      "confidence": 69,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 54,
-    "wins": 36,
+    "total": 55,
+    "wins": 37,
     "losses": 18,
-    "pending": 4,
-    "win_pct": 66.7,
-    "current_streak": "W4",
+    "pending": 6,
+    "win_pct": 67.3,
+    "current_streak": "W5",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 0
       },
       "baseball": {
-        "w": 10,
+        "w": 11,
         "l": 9
       },
       "hockey": {
