@@ -1532,9 +1532,9 @@
       "pick_label": "OKC -3.5",
       "pick_team": "Oklahoma City Thunder",
       "confidence": 58,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 103,
+      "away_score": 111
     },
     {
       "id": "2026-05-30_MLB_Rays_vs_Angels",
@@ -1596,9 +1596,9 @@
       "pick_label": "ATL 1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 5
     },
     {
       "id": "2026-05-30_MLB_Athletics_vs_Yankees",
@@ -1612,9 +1612,9 @@
       "pick_label": "NYY 1.5",
       "pick_team": "New York Yankees",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 6,
+      "away_score": 4
     },
     {
       "id": "2026-05-30_MLB_Dodgers_vs_Phillies",
@@ -1628,9 +1628,9 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 69,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 4
     },
     {
       "id": "2026-05-30_MLB_Mariners_vs_Diamondbacks",
@@ -1644,26 +1644,74 @@
       "pick_label": "SEA -1.5",
       "pick_team": "Seattle Mariners",
       "confidence": 57,
+      "status": "won",
+      "home_score": 5,
+      "away_score": 1
+    },
+    {
+      "id": "2026-05-31_MLB_Rays_vs_Angels",
+      "date": "2026-05-31",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Los Angeles Angels",
+      "home_abbr": "TB",
+      "away_abbr": "LAA",
+      "pick_label": "TB -1.5",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 94,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-05-31_MLB_Sox_vs_Tigers",
+      "date": "2026-05-31",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Chicago White Sox",
+      "away_team": "Detroit Tigers",
+      "home_abbr": "CHW",
+      "away_abbr": "DET",
+      "pick_label": "CHW -1.5",
+      "pick_team": "Chicago White Sox",
+      "confidence": 84,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-05-31_MLB_Reds_vs_Braves",
+      "date": "2026-05-31",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Cincinnati Reds",
+      "away_team": "Atlanta Braves",
+      "home_abbr": "CIN",
+      "away_abbr": "ATL",
+      "pick_label": "ATL 1.5",
+      "pick_team": "Atlanta Braves",
+      "confidence": 77,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 57,
-    "wins": 37,
-    "losses": 20,
-    "pending": 5,
-    "win_pct": 64.9,
-    "current_streak": "L1",
+    "total": 62,
+    "wins": 39,
+    "losses": 23,
+    "pending": 3,
+    "win_pct": 62.9,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
-        "l": 0
+        "l": 1
       },
       "baseball": {
-        "w": 11,
-        "l": 11
+        "w": 13,
+        "l": 13
       },
       "hockey": {
         "w": 2,
