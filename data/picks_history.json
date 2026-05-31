@@ -1660,9 +1660,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 94,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 2
     },
     {
       "id": "2026-05-31_MLB_Sox_vs_Tigers",
@@ -1676,9 +1676,9 @@
       "pick_label": "CHW -1.5",
       "pick_team": "Chicago White Sox",
       "confidence": 84,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-05-31_MLB_Reds_vs_Braves",
@@ -1692,26 +1692,26 @@
       "pick_label": "ATL 1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 6,
+      "away_score": 4
     }
   ],
   "stats": {
-    "total": 62,
-    "wins": 39,
-    "losses": 23,
-    "pending": 3,
-    "win_pct": 62.9,
-    "current_streak": "L2",
+    "total": 65,
+    "wins": 40,
+    "losses": 25,
+    "pending": 0,
+    "win_pct": 61.5,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 1
       },
       "baseball": {
-        "w": 13,
-        "l": 13
+        "w": 14,
+        "l": 15
       },
       "hockey": {
         "w": 2,
