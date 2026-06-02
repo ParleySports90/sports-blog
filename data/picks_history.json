@@ -1708,9 +1708,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 9,
+      "away_score": 10
     },
     {
       "id": "2026-06-01_MLB_Brewers_vs_Giants",
@@ -1724,9 +1724,9 @@
       "pick_label": "MIL -1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 87,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 16,
+      "away_score": 2
     },
     {
       "id": "2026-06-01_MLB_Reds_vs_Royals",
@@ -1740,9 +1740,9 @@
       "pick_label": "CIN -1.5",
       "pick_team": "Cincinnati Reds",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 9
     },
     {
       "id": "2026-06-02_MLB_Rays_vs_Tigers",
@@ -1810,20 +1810,20 @@
     }
   ],
   "stats": {
-    "total": 65,
-    "wins": 40,
-    "losses": 25,
-    "pending": 7,
-    "win_pct": 61.5,
-    "current_streak": "W1",
+    "total": 68,
+    "wins": 41,
+    "losses": 27,
+    "pending": 4,
+    "win_pct": 60.3,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 1
       },
       "baseball": {
-        "w": 14,
-        "l": 15
+        "w": 15,
+        "l": 17
       },
       "hockey": {
         "w": 2,
