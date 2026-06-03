@@ -1871,13 +1871,29 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-03_MLB_Reds_vs_Royals",
+      "date": "2026-06-03",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Cincinnati Reds",
+      "away_team": "Kansas City Royals",
+      "home_abbr": "CIN",
+      "away_abbr": "KC",
+      "pick_label": "CIN -1.5",
+      "pick_team": "Cincinnati Reds",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 72,
     "wins": 42,
     "losses": 30,
-    "pending": 4,
+    "pending": 5,
     "win_pct": 58.3,
     "current_streak": "L1",
     "by_sport": {
