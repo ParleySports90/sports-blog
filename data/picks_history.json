@@ -1756,9 +1756,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 8
     },
     {
       "id": "2026-06-02_MLB_Brewers_vs_Giants",
@@ -1772,9 +1772,9 @@
       "pick_label": "MIL -1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 87,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 8,
+      "away_score": 3
     },
     {
       "id": "2026-06-02_MLB_Braves_vs_Jays",
@@ -1788,9 +1788,9 @@
       "pick_label": "ATL -1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 79,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "id": "2026-06-02_NHL_Hurricanes_vs_Knights",
@@ -1804,9 +1804,9 @@
       "pick_label": "CAR -1.5",
       "pick_team": "Carolina Hurricanes",
       "confidence": 69,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 5
     },
     {
       "id": "2026-06-03_NBA_Spurs_vs_Knicks",
@@ -1874,11 +1874,11 @@
     }
   ],
   "stats": {
-    "total": 68,
-    "wins": 41,
-    "losses": 27,
-    "pending": 8,
-    "win_pct": 60.3,
+    "total": 72,
+    "wins": 42,
+    "losses": 30,
+    "pending": 4,
+    "win_pct": 58.3,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -1886,12 +1886,12 @@
         "l": 1
       },
       "baseball": {
-        "w": 15,
-        "l": 17
+        "w": 16,
+        "l": 19
       },
       "hockey": {
         "w": 2,
-        "l": 0
+        "l": 1
       },
       "futbol": {
         "w": 23,
