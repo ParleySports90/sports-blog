@@ -1900,9 +1900,9 @@
       "pick_label": "MIL ML",
       "pick_team": "Milwaukee Brewers",
       "confidence": 91,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 9,
+      "away_score": 12
     },
     {
       "id": "2026-06-04_MLB_Braves_vs_Jays",
@@ -1967,15 +1967,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-04_MLB_Astros_vs_Pirates",
+      "date": "2026-06-04",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Houston Astros",
+      "away_team": "Pittsburgh Pirates",
+      "home_abbr": "HOU",
+      "away_abbr": "PIT",
+      "pick_label": "PIT 1.5",
+      "pick_team": "Pittsburgh Pirates",
+      "confidence": 62,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 77,
+    "total": 78,
     "wins": 43,
-    "losses": 34,
+    "losses": 35,
     "pending": 5,
-    "win_pct": 55.8,
-    "current_streak": "L3",
+    "win_pct": 55.1,
+    "current_streak": "L4",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -1983,7 +1999,7 @@
       },
       "baseball": {
         "w": 17,
-        "l": 22
+        "l": 23
       },
       "hockey": {
         "w": 2,
