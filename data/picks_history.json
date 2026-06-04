@@ -1951,13 +1951,29 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-04_MLB_Diamondbacks_vs_Dodgers",
+      "date": "2026-06-04",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Arizona Diamondbacks",
+      "away_team": "Los Angeles Dodgers",
+      "home_abbr": "ARI",
+      "away_abbr": "LAD",
+      "pick_label": "LAD 1.5",
+      "pick_team": "Los Angeles Dodgers",
+      "confidence": 63,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 77,
     "wins": 43,
     "losses": 34,
-    "pending": 4,
+    "pending": 5,
     "win_pct": 55.8,
     "current_streak": "L3",
     "by_sport": {
