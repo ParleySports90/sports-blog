@@ -1820,9 +1820,9 @@
       "pick_label": "SA -4.5",
       "pick_team": "San Antonio Spurs",
       "confidence": 74,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 95,
+      "away_score": 105
     },
     {
       "id": "2026-06-03_MLB_Rays_vs_Tigers",
@@ -1852,9 +1852,9 @@
       "pick_label": "MIL -1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 89,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-06-03_MLB_Braves_vs_Jays",
@@ -1868,9 +1868,9 @@
       "pick_label": "ATL -1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 79,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 7,
+      "away_score": 3
     },
     {
       "id": "2026-06-03_MLB_Reds_vs_Royals",
@@ -1884,9 +1884,9 @@
       "pick_label": "CIN -1.5",
       "pick_team": "Cincinnati Reds",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 5
     },
     {
       "id": "2026-06-04_MLB_Brewers_vs_Giants",
@@ -1954,20 +1954,20 @@
     }
   ],
   "stats": {
-    "total": 73,
-    "wins": 42,
-    "losses": 31,
-    "pending": 8,
-    "win_pct": 57.5,
-    "current_streak": "L2",
+    "total": 77,
+    "wins": 43,
+    "losses": 34,
+    "pending": 4,
+    "win_pct": 55.8,
+    "current_streak": "L3",
     "by_sport": {
       "basketball": {
         "w": 1,
-        "l": 1
+        "l": 2
       },
       "baseball": {
-        "w": 16,
-        "l": 20
+        "w": 17,
+        "l": 22
       },
       "hockey": {
         "w": 2,
