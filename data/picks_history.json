@@ -2044,9 +2044,9 @@
       "pick_label": "CHC -1.5",
       "pick_team": "Chicago Cubs",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 18
     },
     {
       "id": "2026-06-05_MLB_Yankees_vs_Sox",
@@ -2063,15 +2063,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-05_MLB_Twins_vs_Royals",
+      "date": "2026-06-05",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Minnesota Twins",
+      "away_team": "Kansas City Royals",
+      "home_abbr": "MIN",
+      "away_abbr": "KC",
+      "pick_label": "MIN 1.5",
+      "pick_team": "Minnesota Twins",
+      "confidence": 65,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 83,
+    "total": 84,
     "wins": 45,
-    "losses": 38,
+    "losses": 39,
     "pending": 5,
-    "win_pct": 54.2,
-    "current_streak": "L4",
+    "win_pct": 53.6,
+    "current_streak": "L5",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -2079,7 +2095,7 @@
       },
       "baseball": {
         "w": 19,
-        "l": 25
+        "l": 26
       },
       "hockey": {
         "w": 2,
