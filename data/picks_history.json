@@ -2047,13 +2047,29 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-05_MLB_Yankees_vs_Sox",
+      "date": "2026-06-05",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "New York Yankees",
+      "away_team": "Boston Red Sox",
+      "home_abbr": "NYY",
+      "away_abbr": "BOS",
+      "pick_label": "NYY -1.5",
+      "pick_team": "New York Yankees",
+      "confidence": 71,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 83,
     "wins": 45,
     "losses": 38,
-    "pending": 4,
+    "pending": 5,
     "win_pct": 54.2,
     "current_streak": "L4",
     "by_sport": {
