@@ -1996,9 +1996,9 @@
       "pick_label": "SA -6.5",
       "pick_team": "San Antonio Spurs",
       "confidence": 74,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 104,
+      "away_score": 105
     },
     {
       "id": "2026-06-05_MLB_Dodgers_vs_Angels",
@@ -2012,9 +2012,9 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 90,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-06-05_MLB_Rockies_vs_Brewers",
@@ -2028,9 +2028,9 @@
       "pick_label": "MIL 1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 82,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 7,
+      "away_score": 9
     },
     {
       "id": "2026-06-05_MLB_Cubs_vs_Giants",
@@ -2060,9 +2060,9 @@
       "pick_label": "NYY -1.5",
       "pick_team": "New York Yankees",
       "confidence": 71,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 5
     },
     {
       "id": "2026-06-05_MLB_Twins_vs_Royals",
@@ -2076,26 +2076,90 @@
       "pick_label": "MIN 1.5",
       "pick_team": "Minnesota Twins",
       "confidence": 65,
+      "status": "won",
+      "home_score": 5,
+      "away_score": 3
+    },
+    {
+      "id": "2026-06-06_MLB_Dodgers_vs_Angels",
+      "date": "2026-06-06",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Los Angeles Dodgers",
+      "away_team": "Los Angeles Angels",
+      "home_abbr": "LAD",
+      "away_abbr": "LAA",
+      "pick_label": "LAD -1.5",
+      "pick_team": "Los Angeles Dodgers",
+      "confidence": 91,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-06_MLB_Rockies_vs_Brewers",
+      "date": "2026-06-06",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Colorado Rockies",
+      "away_team": "Milwaukee Brewers",
+      "home_abbr": "COL",
+      "away_abbr": "MIL",
+      "pick_label": "MIL 1.5",
+      "pick_team": "Milwaukee Brewers",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-06_MLB_Cubs_vs_Giants",
+      "date": "2026-06-06",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Chicago Cubs",
+      "away_team": "San Francisco Giants",
+      "home_abbr": "CHC",
+      "away_abbr": "SF",
+      "pick_label": "CHC -1.5",
+      "pick_team": "Chicago Cubs",
+      "confidence": 70,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-06_NHL_Knights_vs_Hurricanes",
+      "date": "2026-06-06",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Vegas Golden Knights",
+      "away_team": "Carolina Hurricanes",
+      "home_abbr": "VGK",
+      "away_abbr": "CAR",
+      "pick_label": "CAR 1.5",
+      "pick_team": "Carolina Hurricanes",
+      "confidence": 62,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 84,
-    "wins": 45,
-    "losses": 39,
-    "pending": 5,
-    "win_pct": 53.6,
-    "current_streak": "L5",
+    "total": 89,
+    "wins": 47,
+    "losses": 42,
+    "pending": 4,
+    "win_pct": 52.8,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
-        "l": 2
+        "l": 3
       },
       "baseball": {
-        "w": 19,
-        "l": 26
+        "w": 21,
+        "l": 28
       },
       "hockey": {
         "w": 2,
