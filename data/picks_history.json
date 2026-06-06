@@ -2124,9 +2124,9 @@
       "pick_label": "CHC -1.5",
       "pick_team": "Chicago Cubs",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-06-06_NHL_Knights_vs_Hurricanes",
@@ -2159,15 +2159,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-06_MLB_Padres_vs_Mets",
+      "date": "2026-06-06",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Diego Padres",
+      "away_team": "New York Mets",
+      "home_abbr": "SD",
+      "away_abbr": "NYM",
+      "pick_label": "SD 1.5",
+      "pick_team": "San Diego Padres",
+      "confidence": 61,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 89,
+    "total": 90,
     "wins": 47,
-    "losses": 42,
+    "losses": 43,
     "pending": 5,
-    "win_pct": 52.8,
-    "current_streak": "L2",
+    "win_pct": 52.2,
+    "current_streak": "L3",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -2175,7 +2191,7 @@
       },
       "baseball": {
         "w": 21,
-        "l": 28
+        "l": 29
       },
       "hockey": {
         "w": 2,
