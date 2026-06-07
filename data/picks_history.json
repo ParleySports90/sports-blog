@@ -2188,9 +2188,9 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 92,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 13
     },
     {
       "id": "2026-06-07_MLB_Rockies_vs_Brewers",
@@ -2204,9 +2204,9 @@
       "pick_label": "MIL 1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 87,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 12
     },
     {
       "id": "2026-06-07_MLB_Braves_vs_Pirates",
@@ -2242,11 +2242,11 @@
     }
   ],
   "stats": {
-    "total": 96,
-    "wins": 52,
-    "losses": 44,
-    "pending": 3,
-    "win_pct": 54.2,
+    "total": 98,
+    "wins": 53,
+    "losses": 45,
+    "pending": 1,
+    "win_pct": 54.1,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -2254,8 +2254,8 @@
         "l": 3
       },
       "baseball": {
-        "w": 25,
-        "l": 30
+        "w": 26,
+        "l": 31
       },
       "hockey": {
         "w": 3,
