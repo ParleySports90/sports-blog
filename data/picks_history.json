@@ -2220,18 +2220,34 @@
       "pick_label": "ATL -1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 73,
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 2
+    },
+    {
+      "id": "2026-06-07_MLB_Cubs_vs_Giants",
+      "date": "2026-06-07",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Chicago Cubs",
+      "away_team": "San Francisco Giants",
+      "home_abbr": "CHC",
+      "away_abbr": "SF",
+      "pick_label": "CHC -1.5",
+      "pick_team": "Chicago Cubs",
+      "confidence": 72,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 95,
+    "total": 96,
     "wins": 52,
-    "losses": 43,
+    "losses": 44,
     "pending": 3,
-    "win_pct": 54.7,
-    "current_streak": "W2",
+    "win_pct": 54.2,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -2239,7 +2255,7 @@
       },
       "baseball": {
         "w": 25,
-        "l": 29
+        "l": 30
       },
       "hockey": {
         "w": 3,
