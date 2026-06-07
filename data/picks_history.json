@@ -2092,9 +2092,9 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 91,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 9,
+      "away_score": 2
     },
     {
       "id": "2026-06-06_MLB_Rockies_vs_Brewers",
@@ -2108,9 +2108,9 @@
       "pick_label": "MIL 1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 7
     },
     {
       "id": "2026-06-06_MLB_Cubs_vs_Giants",
@@ -2140,9 +2140,9 @@
       "pick_label": "CAR 1.5",
       "pick_team": "Carolina Hurricanes",
       "confidence": 62,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 4
     },
     {
       "id": "2026-06-06_MLB_Yankees_vs_Sox",
@@ -2156,9 +2156,9 @@
       "pick_label": "NYY 1.5",
       "pick_team": "New York Yankees",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-06-06_MLB_Padres_vs_Mets",
@@ -2172,29 +2172,77 @@
       "pick_label": "SD 1.5",
       "pick_team": "San Diego Padres",
       "confidence": 61,
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2
+    },
+    {
+      "id": "2026-06-07_MLB_Dodgers_vs_Angels",
+      "date": "2026-06-07",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Los Angeles Dodgers",
+      "away_team": "Los Angeles Angels",
+      "home_abbr": "LAD",
+      "away_abbr": "LAA",
+      "pick_label": "LAD -1.5",
+      "pick_team": "Los Angeles Dodgers",
+      "confidence": 92,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-07_MLB_Rockies_vs_Brewers",
+      "date": "2026-06-07",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Colorado Rockies",
+      "away_team": "Milwaukee Brewers",
+      "home_abbr": "COL",
+      "away_abbr": "MIL",
+      "pick_label": "MIL 1.5",
+      "pick_team": "Milwaukee Brewers",
+      "confidence": 87,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-07_MLB_Braves_vs_Pirates",
+      "date": "2026-06-07",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Atlanta Braves",
+      "away_team": "Pittsburgh Pirates",
+      "home_abbr": "ATL",
+      "away_abbr": "PIT",
+      "pick_label": "ATL -1.5",
+      "pick_team": "Atlanta Braves",
+      "confidence": 73,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 90,
-    "wins": 47,
+    "total": 95,
+    "wins": 52,
     "losses": 43,
-    "pending": 5,
-    "win_pct": 52.2,
-    "current_streak": "L3",
+    "pending": 3,
+    "win_pct": 54.7,
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 3
       },
       "baseball": {
-        "w": 21,
+        "w": 25,
         "l": 29
       },
       "hockey": {
-        "w": 2,
+        "w": 3,
         "l": 2
       },
       "futbol": {
