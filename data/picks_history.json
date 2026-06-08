@@ -2236,17 +2236,81 @@
       "pick_label": "CHC -1.5",
       "pick_team": "Chicago Cubs",
       "confidence": 72,
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 2
+    },
+    {
+      "id": "2026-06-08_NBA_Knicks_vs_Spurs",
+      "date": "2026-06-08",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "New York Knicks",
+      "away_team": "San Antonio Spurs",
+      "home_abbr": "NY",
+      "away_abbr": "SA",
+      "pick_label": "NY -2.5",
+      "pick_team": "New York Knicks",
+      "confidence": 63,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-08_MLB_Athletics_vs_Brewers",
+      "date": "2026-06-08",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Athletics",
+      "away_team": "Milwaukee Brewers",
+      "home_abbr": "ATH",
+      "away_abbr": "MIL",
+      "pick_label": "MIL 1.5",
+      "pick_team": "Milwaukee Brewers",
+      "confidence": 78,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-08_MLB_Rays_vs_Sox",
+      "date": "2026-06-08",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Boston Red Sox",
+      "home_abbr": "TB",
+      "away_abbr": "BOS",
+      "pick_label": "TB 1.5",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-08_MLB_Giants_vs_Nationals",
+      "date": "2026-06-08",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Francisco Giants",
+      "away_team": "Washington Nationals",
+      "home_abbr": "SF",
+      "away_abbr": "WSH",
+      "pick_label": "WSH -1.5",
+      "pick_team": "Washington Nationals",
+      "confidence": 68,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 98,
+    "total": 99,
     "wins": 53,
-    "losses": 45,
-    "pending": 1,
-    "win_pct": 54.1,
+    "losses": 46,
+    "pending": 4,
+    "win_pct": 53.5,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -2255,7 +2319,7 @@
       },
       "baseball": {
         "w": 26,
-        "l": 31
+        "l": 32
       },
       "hockey": {
         "w": 3,
