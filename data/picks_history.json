@@ -2303,13 +2303,29 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-08_MLB_Angels_vs_Astros",
+      "date": "2026-06-08",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Los Angeles Angels",
+      "away_team": "Houston Astros",
+      "home_abbr": "LAA",
+      "away_abbr": "HOU",
+      "pick_label": "HOU 1.5",
+      "pick_team": "Houston Astros",
+      "confidence": 57,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 99,
     "wins": 53,
     "losses": 46,
-    "pending": 4,
+    "pending": 5,
     "win_pct": 53.5,
     "current_streak": "L1",
     "by_sport": {
