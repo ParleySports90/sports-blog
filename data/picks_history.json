@@ -2447,13 +2447,29 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-10_MLB_Pirates_vs_Dodgers",
+      "date": "2026-06-10",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Pittsburgh Pirates",
+      "away_team": "Los Angeles Dodgers",
+      "home_abbr": "PIT",
+      "away_abbr": "LAD",
+      "pick_label": "LAD 1.5",
+      "pick_team": "Los Angeles Dodgers",
+      "confidence": 68,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 108,
     "wins": 59,
     "losses": 49,
-    "pending": 4,
+    "pending": 5,
     "win_pct": 54.6,
     "current_streak": "L1",
     "by_sport": {
