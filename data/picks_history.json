@@ -2543,13 +2543,29 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-11_MLB_Rockies_vs_Cubs",
+      "date": "2026-06-11",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Colorado Rockies",
+      "away_team": "Chicago Cubs",
+      "home_abbr": "COL",
+      "away_abbr": "CHC",
+      "pick_label": "CHC 1.5",
+      "pick_team": "Chicago Cubs",
+      "confidence": 61,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 114,
     "wins": 64,
     "losses": 50,
-    "pending": 4,
+    "pending": 5,
     "win_pct": 56.1,
     "current_streak": "L1",
     "by_sport": {
