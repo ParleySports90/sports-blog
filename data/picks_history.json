@@ -2396,9 +2396,9 @@
       "pick_label": "NY -2.5",
       "pick_team": "New York Knicks",
       "confidence": 63,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 107,
+      "away_score": 106
     },
     {
       "id": "2026-06-10_MLB_Athletics_vs_Brewers",
@@ -2412,9 +2412,9 @@
       "pick_label": "MIL 1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 81,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "id": "2026-06-10_MLB_Rays_vs_Sox",
@@ -2460,9 +2460,9 @@
       "pick_label": "LAD 1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 68,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 9,
+      "away_score": 8
     },
     {
       "id": "2026-06-10_MLB_Mets_vs_Cardinals",
@@ -2476,9 +2476,9 @@
       "pick_label": "STL -1.5",
       "pick_team": "St. Louis Cardinals",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 9
     },
     {
       "id": "2026-06-11_MLB_Pirates_vs_Dodgers",
@@ -2546,19 +2546,19 @@
     }
   ],
   "stats": {
-    "total": 110,
-    "wins": 61,
-    "losses": 49,
-    "pending": 8,
-    "win_pct": 55.5,
-    "current_streak": "W2",
+    "total": 114,
+    "wins": 64,
+    "losses": 50,
+    "pending": 4,
+    "win_pct": 56.1,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
-        "l": 4
+        "l": 5
       },
       "baseball": {
-        "w": 33,
+        "w": 36,
         "l": 34
       },
       "hockey": {
