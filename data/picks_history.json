@@ -2508,9 +2508,9 @@
       "pick_label": "STL -1.5",
       "pick_team": "St. Louis Cardinals",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 4
     },
     {
       "id": "2026-06-11_MLB_Sox_vs_Braves",
@@ -2559,15 +2559,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-11_MLB_Orioles_vs_Mariners",
+      "date": "2026-06-11",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Baltimore Orioles",
+      "away_team": "Seattle Mariners",
+      "home_abbr": "BAL",
+      "away_abbr": "SEA",
+      "pick_label": "BAL 1.5",
+      "pick_team": "Baltimore Orioles",
+      "confidence": 57,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 114,
+    "total": 115,
     "wins": 64,
-    "losses": 50,
+    "losses": 51,
     "pending": 5,
-    "win_pct": 56.1,
-    "current_streak": "L1",
+    "win_pct": 55.7,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -2575,7 +2591,7 @@
       },
       "baseball": {
         "w": 36,
-        "l": 34
+        "l": 35
       },
       "hockey": {
         "w": 4,
