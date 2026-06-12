@@ -2556,9 +2556,9 @@
       "pick_label": "CHC 1.5",
       "pick_team": "Chicago Cubs",
       "confidence": 61,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 9
     },
     {
       "id": "2026-06-11_MLB_Orioles_vs_Mariners",
@@ -2575,22 +2575,70 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-12_MLB_Mets_vs_Braves",
+      "date": "2026-06-12",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "New York Mets",
+      "away_team": "Atlanta Braves",
+      "home_abbr": "NYM",
+      "away_abbr": "ATL",
+      "pick_label": "ATL 1.5",
+      "pick_team": "Atlanta Braves",
+      "confidence": 80,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-12_MLB_Angels_vs_Rays",
+      "date": "2026-06-12",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Los Angeles Angels",
+      "away_team": "Tampa Bay Rays",
+      "home_abbr": "LAA",
+      "away_abbr": "TB",
+      "pick_label": "TB 1.5",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-12_MLB_Guardians_vs_Tigers",
+      "date": "2026-06-12",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Cleveland Guardians",
+      "away_team": "Detroit Tigers",
+      "home_abbr": "CLE",
+      "away_abbr": "DET",
+      "pick_label": "CLE 1.5",
+      "pick_team": "Cleveland Guardians",
+      "confidence": 70,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 115,
-    "wins": 64,
+    "total": 116,
+    "wins": 65,
     "losses": 51,
-    "pending": 5,
-    "win_pct": 55.7,
-    "current_streak": "L2",
+    "pending": 7,
+    "win_pct": 56.0,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 5
       },
       "baseball": {
-        "w": 36,
+        "w": 37,
         "l": 35
       },
       "hockey": {
