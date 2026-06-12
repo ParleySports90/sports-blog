@@ -2492,9 +2492,9 @@
       "pick_label": "LAD 1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 68,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 8
     },
     {
       "id": "2026-06-11_MLB_Mets_vs_Cardinals",
@@ -2524,9 +2524,9 @@
       "pick_label": "ATL ML",
       "pick_team": "Atlanta Braves",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-06-11_NHL_Hurricanes_vs_Knights",
@@ -2540,9 +2540,9 @@
       "pick_label": "CAR -1.5",
       "pick_team": "Carolina Hurricanes",
       "confidence": 69,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "id": "2026-06-11_MLB_Rockies_vs_Cubs",
@@ -2572,9 +2572,9 @@
       "pick_label": "BAL 1.5",
       "pick_team": "Baltimore Orioles",
       "confidence": 57,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 7,
+      "away_score": 5
     },
     {
       "id": "2026-06-12_MLB_Mets_vs_Braves",
@@ -2626,23 +2626,23 @@
     }
   ],
   "stats": {
-    "total": 116,
-    "wins": 65,
+    "total": 119,
+    "wins": 68,
     "losses": 51,
-    "pending": 7,
-    "win_pct": 56.0,
-    "current_streak": "L1",
+    "pending": 3,
+    "win_pct": 57.1,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 5
       },
       "baseball": {
-        "w": 37,
+        "w": 39,
         "l": 35
       },
       "hockey": {
-        "w": 4,
+        "w": 5,
         "l": 2
       },
       "futbol": {
