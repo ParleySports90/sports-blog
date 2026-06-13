@@ -2652,9 +2652,9 @@
       "pick_label": "ATL 1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 80,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "id": "2026-06-13_MLB_Angels_vs_Rays",
@@ -2684,9 +2684,9 @@
       "pick_label": "CLE 1.5",
       "pick_team": "Cleveland Guardians",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-06-13_MLB_Athletics_vs_Rockies",
@@ -2719,22 +2719,38 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-13_MLB_Giants_vs_Cubs",
+      "date": "2026-06-13",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Francisco Giants",
+      "away_team": "Chicago Cubs",
+      "home_abbr": "SF",
+      "away_abbr": "CHC",
+      "pick_label": "CHC 1.5",
+      "pick_team": "Chicago Cubs",
+      "confidence": 63,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 122,
-    "wins": 70,
+    "total": 124,
+    "wins": 72,
     "losses": 52,
-    "pending": 6,
-    "win_pct": 57.4,
-    "current_streak": "L1",
+    "pending": 5,
+    "win_pct": 58.1,
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 5
       },
       "baseball": {
-        "w": 41,
+        "w": 43,
         "l": 36
       },
       "hockey": {
