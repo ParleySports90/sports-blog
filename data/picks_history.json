@@ -2588,9 +2588,9 @@
       "pick_label": "ATL 1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 80,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 7,
+      "away_score": 5
     },
     {
       "id": "2026-06-12_MLB_Angels_vs_Rays",
@@ -2604,9 +2604,9 @@
       "pick_label": "TB 1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "id": "2026-06-12_MLB_Guardians_vs_Tigers",
@@ -2620,9 +2620,9 @@
       "pick_label": "CLE 1.5",
       "pick_team": "Cleveland Guardians",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-06-13_NBA_Spurs_vs_Knicks",
@@ -2690,20 +2690,20 @@
     }
   ],
   "stats": {
-    "total": 119,
-    "wins": 68,
-    "losses": 51,
-    "pending": 7,
-    "win_pct": 57.1,
-    "current_streak": "W1",
+    "total": 122,
+    "wins": 70,
+    "losses": 52,
+    "pending": 4,
+    "win_pct": 57.4,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 5
       },
       "baseball": {
-        "w": 39,
-        "l": 35
+        "w": 41,
+        "l": 36
       },
       "hockey": {
         "w": 5,
