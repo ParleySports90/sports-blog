@@ -2687,13 +2687,45 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-13_MLB_Athletics_vs_Rockies",
+      "date": "2026-06-13",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Athletics",
+      "away_team": "Colorado Rockies",
+      "home_abbr": "ATH",
+      "away_abbr": "COL",
+      "pick_label": "ATH -1.5",
+      "pick_team": "Athletics",
+      "confidence": 67,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-13_MLB_Brewers_vs_Phillies",
+      "date": "2026-06-13",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Milwaukee Brewers",
+      "away_team": "Philadelphia Phillies",
+      "home_abbr": "MIL",
+      "away_abbr": "PHI",
+      "pick_label": "MIL -1.5",
+      "pick_team": "Milwaukee Brewers",
+      "confidence": 63,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 122,
     "wins": 70,
     "losses": 52,
-    "pending": 4,
+    "pending": 6,
     "win_pct": 57.4,
     "current_streak": "L1",
     "by_sport": {
