@@ -2748,9 +2748,9 @@
       "pick_label": "ATL 1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 79,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 8,
+      "away_score": 1
     },
     {
       "id": "2026-06-14_MLB_Guardians_vs_Tigers",
@@ -2815,15 +2815,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-14_MLB_Sox_vs_Rangers",
+      "date": "2026-06-14",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Boston Red Sox",
+      "away_team": "Texas Rangers",
+      "home_abbr": "BOS",
+      "away_abbr": "TEX",
+      "pick_label": "TEX 1.5",
+      "pick_team": "Texas Rangers",
+      "confidence": 59,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 130,
+    "total": 131,
     "wins": 75,
-    "losses": 55,
+    "losses": 56,
     "pending": 4,
-    "win_pct": 57.7,
-    "current_streak": "W1",
+    "win_pct": 57.3,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -2831,7 +2847,7 @@
       },
       "baseball": {
         "w": 46,
-        "l": 38
+        "l": 39
       },
       "hockey": {
         "w": 5,
