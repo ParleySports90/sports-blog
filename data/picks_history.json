@@ -2780,9 +2780,9 @@
       "pick_label": "ATH -1.5",
       "pick_team": "Athletics",
       "confidence": 69,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 9,
+      "away_score": 23
     },
     {
       "id": "2026-06-14_NHL_Knights_vs_Hurricanes",
@@ -2812,9 +2812,9 @@
       "pick_label": "LAA 1.5",
       "pick_team": "Los Angeles Angels",
       "confidence": 68,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 8
     },
     {
       "id": "2026-06-14_MLB_Sox_vs_Rangers",
@@ -2831,14 +2831,62 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-15_MLB_Cubs_vs_Rockies",
+      "date": "2026-06-15",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Chicago Cubs",
+      "away_team": "Colorado Rockies",
+      "home_abbr": "CHC",
+      "away_abbr": "COL",
+      "pick_label": "CHC ML",
+      "pick_team": "Chicago Cubs",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-15_MLB_Diamondbacks_vs_Angels",
+      "date": "2026-06-15",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Arizona Diamondbacks",
+      "away_team": "Los Angeles Angels",
+      "home_abbr": "ARI",
+      "away_abbr": "LAA",
+      "pick_label": "ARI -1.5",
+      "pick_team": "Arizona Diamondbacks",
+      "confidence": 73,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-15_MLB_Nationals_vs_Royals",
+      "date": "2026-06-15",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Washington Nationals",
+      "away_team": "Kansas City Royals",
+      "home_abbr": "WSH",
+      "away_abbr": "KC",
+      "pick_label": "WSH -1.5",
+      "pick_team": "Washington Nationals",
+      "confidence": 63,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 131,
+    "total": 133,
     "wins": 75,
-    "losses": 56,
-    "pending": 4,
-    "win_pct": 57.3,
+    "losses": 58,
+    "pending": 5,
+    "win_pct": 56.4,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -2847,7 +2895,7 @@
       },
       "baseball": {
         "w": 46,
-        "l": 39
+        "l": 41
       },
       "hockey": {
         "w": 5,
