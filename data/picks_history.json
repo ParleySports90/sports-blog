@@ -2796,9 +2796,9 @@
       "pick_label": "CAR 1.5",
       "pick_team": "Carolina Hurricanes",
       "confidence": 62,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "id": "2026-06-14_MLB_Angels_vs_Rays",
@@ -2828,9 +2828,9 @@
       "pick_label": "TEX 1.5",
       "pick_team": "Texas Rangers",
       "confidence": 59,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 6
     },
     {
       "id": "2026-06-15_MLB_Cubs_vs_Rockies",
@@ -2882,11 +2882,11 @@
     }
   ],
   "stats": {
-    "total": 133,
-    "wins": 75,
+    "total": 135,
+    "wins": 77,
     "losses": 58,
-    "pending": 5,
-    "win_pct": 56.4,
+    "pending": 3,
+    "win_pct": 57.0,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -2894,11 +2894,11 @@
         "l": 6
       },
       "baseball": {
-        "w": 46,
+        "w": 47,
         "l": 41
       },
       "hockey": {
-        "w": 5,
+        "w": 6,
         "l": 2
       },
       "futbol": {
