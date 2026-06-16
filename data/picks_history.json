@@ -2844,9 +2844,9 @@
       "pick_label": "CHC ML",
       "pick_team": "Chicago Cubs",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 4
     },
     {
       "id": "2026-06-15_MLB_Diamondbacks_vs_Angels",
@@ -2860,9 +2860,9 @@
       "pick_label": "ARI -1.5",
       "pick_team": "Arizona Diamondbacks",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "id": "2026-06-15_MLB_Nationals_vs_Royals",
@@ -2876,9 +2876,9 @@
       "pick_label": "WSH -1.5",
       "pick_team": "Washington Nationals",
       "confidence": 63,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 7,
+      "away_score": 3
     },
     {
       "id": "2026-06-16_MLB_Braves_vs_Giants",
@@ -2930,20 +2930,20 @@
     }
   ],
   "stats": {
-    "total": 135,
-    "wins": 77,
-    "losses": 58,
-    "pending": 6,
-    "win_pct": 57.0,
-    "current_streak": "L1",
+    "total": 138,
+    "wins": 79,
+    "losses": 59,
+    "pending": 3,
+    "win_pct": 57.2,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 47,
-        "l": 41
+        "w": 49,
+        "l": 42
       },
       "hockey": {
         "w": 6,
