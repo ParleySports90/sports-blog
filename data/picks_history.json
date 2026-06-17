@@ -2892,9 +2892,9 @@
       "pick_label": "ATL -1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 88,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-06-16_MLB_Cubs_vs_Rockies",
@@ -2908,9 +2908,9 @@
       "pick_label": "CHC ML",
       "pick_team": "Chicago Cubs",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 5
     },
     {
       "id": "2026-06-16_MLB_Diamondbacks_vs_Angels",
@@ -2924,9 +2924,9 @@
       "pick_label": "ARI 1.5",
       "pick_team": "Arizona Diamondbacks",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 7
     },
     {
       "id": "2026-06-17_MLB_Braves_vs_Giants",
@@ -2940,9 +2940,9 @@
       "pick_label": "ATL -1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 88,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-06-17_MLB_Cubs_vs_Rockies",
@@ -2978,12 +2978,12 @@
     }
   ],
   "stats": {
-    "total": 138,
+    "total": 142,
     "wins": 79,
-    "losses": 59,
-    "pending": 6,
-    "win_pct": 57.2,
-    "current_streak": "W1",
+    "losses": 63,
+    "pending": 2,
+    "win_pct": 55.6,
+    "current_streak": "L4",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -2991,7 +2991,7 @@
       },
       "baseball": {
         "w": 49,
-        "l": 42
+        "l": 46
       },
       "hockey": {
         "w": 6,
