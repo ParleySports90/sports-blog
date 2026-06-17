@@ -2975,13 +2975,29 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-17_MLB_Yankees_vs_Sox",
+      "date": "2026-06-17",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "New York Yankees",
+      "away_team": "Chicago White Sox",
+      "home_abbr": "NYY",
+      "away_abbr": "CHW",
+      "pick_label": "NYY -1.5",
+      "pick_team": "New York Yankees",
+      "confidence": 69,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 142,
     "wins": 79,
     "losses": 63,
-    "pending": 2,
+    "pending": 3,
     "win_pct": 55.6,
     "current_streak": "L4",
     "by_sport": {
