@@ -3004,9 +3004,9 @@
       "pick_label": "ATL -1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 84,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-06-18_MLB_Royals_vs_Cardinals",
@@ -3039,15 +3039,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-18_MLB_Phillies_vs_Mets",
+      "date": "2026-06-18",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Philadelphia Phillies",
+      "away_team": "New York Mets",
+      "home_abbr": "PHI",
+      "away_abbr": "NYM",
+      "pick_label": "PHI 1.5",
+      "pick_team": "Philadelphia Phillies",
+      "confidence": 66,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 145,
+    "total": 146,
     "wins": 82,
-    "losses": 63,
+    "losses": 64,
     "pending": 3,
-    "win_pct": 56.6,
-    "current_streak": "L1",
+    "win_pct": 56.2,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -3055,7 +3071,7 @@
       },
       "baseball": {
         "w": 52,
-        "l": 46
+        "l": 47
       },
       "hockey": {
         "w": 6,
