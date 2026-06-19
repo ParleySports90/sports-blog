@@ -3119,13 +3119,29 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-19_MLB_Rockies_vs_Pirates",
+      "date": "2026-06-19",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Colorado Rockies",
+      "away_team": "Pittsburgh Pirates",
+      "home_abbr": "COL",
+      "away_abbr": "PIT",
+      "pick_label": "PIT 1.5",
+      "pick_team": "Pittsburgh Pirates",
+      "confidence": 67,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 149,
     "wins": 82,
     "losses": 67,
-    "pending": 4,
+    "pending": 5,
     "win_pct": 55.0,
     "current_streak": "L5",
     "by_sport": {
