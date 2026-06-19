@@ -3020,9 +3020,9 @@
       "pick_label": "STL -1.5",
       "pick_team": "St. Louis Cardinals",
       "confidence": 71,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 14,
+      "away_score": 6
     },
     {
       "id": "2026-06-18_MLB_Yankees_vs_Sox",
@@ -3036,9 +3036,9 @@
       "pick_label": "NYY -1.5",
       "pick_team": "New York Yankees",
       "confidence": 69,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 5
     },
     {
       "id": "2026-06-18_MLB_Phillies_vs_Mets",
@@ -3052,9 +3052,9 @@
       "pick_label": "PHI 1.5",
       "pick_team": "Philadelphia Phillies",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 6
     },
     {
       "id": "2026-06-19_MLB_Dodgers_vs_Orioles",
@@ -3103,15 +3103,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-19_MLB_Tigers_vs_Sox",
+      "date": "2026-06-19",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Detroit Tigers",
+      "away_team": "Chicago White Sox",
+      "home_abbr": "DET",
+      "away_abbr": "CHW",
+      "pick_label": "DET -1.5",
+      "pick_team": "Detroit Tigers",
+      "confidence": 69,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 146,
+    "total": 149,
     "wins": 82,
-    "losses": 64,
-    "pending": 6,
-    "win_pct": 56.2,
-    "current_streak": "L2",
+    "losses": 67,
+    "pending": 4,
+    "win_pct": 55.0,
+    "current_streak": "L5",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -3119,7 +3135,7 @@
       },
       "baseball": {
         "w": 52,
-        "l": 47
+        "l": 50
       },
       "hockey": {
         "w": 6,
