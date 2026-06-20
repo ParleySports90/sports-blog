@@ -3183,13 +3183,29 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-20_MLB_Marlins_vs_Giants",
+      "date": "2026-06-20",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Miami Marlins",
+      "away_team": "San Francisco Giants",
+      "home_abbr": "MIA",
+      "away_abbr": "SF",
+      "pick_label": "MIA -1.5",
+      "pick_team": "Miami Marlins",
+      "confidence": 67,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 154,
     "wins": 85,
     "losses": 69,
-    "pending": 3,
+    "pending": 4,
     "win_pct": 55.2,
     "current_streak": "L1",
     "by_sport": {
