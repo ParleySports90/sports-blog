@@ -3164,9 +3164,9 @@
       "pick_label": "NYY -1.5",
       "pick_team": "New York Yankees",
       "confidence": 74,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 10
     },
     {
       "id": "2026-06-20_MLB_Tigers_vs_Sox",
@@ -3180,9 +3180,9 @@
       "pick_label": "DET -1.5",
       "pick_team": "Detroit Tigers",
       "confidence": 68,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "id": "2026-06-20_MLB_Marlins_vs_Giants",
@@ -3199,14 +3199,46 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-20_MLB_Athletics_vs_Angels",
+      "date": "2026-06-20",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Athletics",
+      "away_team": "Los Angeles Angels",
+      "home_abbr": "ATH",
+      "away_abbr": "LAA",
+      "pick_label": "ATH -1.5",
+      "pick_team": "Athletics",
+      "confidence": 67,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-20_MLB_Rockies_vs_Pirates",
+      "date": "2026-06-20",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Colorado Rockies",
+      "away_team": "Pittsburgh Pirates",
+      "home_abbr": "COL",
+      "away_abbr": "PIT",
+      "pick_label": "PIT 1.5",
+      "pick_team": "Pittsburgh Pirates",
+      "confidence": 64,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 154,
-    "wins": 85,
-    "losses": 69,
+    "total": 156,
+    "wins": 86,
+    "losses": 70,
     "pending": 4,
-    "win_pct": 55.2,
+    "win_pct": 55.1,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -3214,8 +3246,8 @@
         "l": 6
       },
       "baseball": {
-        "w": 55,
-        "l": 52
+        "w": 56,
+        "l": 53
       },
       "hockey": {
         "w": 6,
