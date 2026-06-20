@@ -3196,9 +3196,9 @@
       "pick_label": "MIA -1.5",
       "pick_team": "Miami Marlins",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 3
     },
     {
       "id": "2026-06-20_MLB_Athletics_vs_Angels",
@@ -3234,11 +3234,11 @@
     }
   ],
   "stats": {
-    "total": 156,
-    "wins": 86,
+    "total": 157,
+    "wins": 87,
     "losses": 70,
-    "pending": 4,
-    "win_pct": 55.1,
+    "pending": 3,
+    "win_pct": 55.4,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -3246,7 +3246,7 @@
         "l": 6
       },
       "baseball": {
-        "w": 56,
+        "w": 57,
         "l": 53
       },
       "hockey": {
