@@ -3260,9 +3260,9 @@
       "pick_label": "NYY -1.5",
       "pick_team": "New York Yankees",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 4
     },
     {
       "id": "2026-06-21_MLB_Marlins_vs_Giants",
@@ -3276,26 +3276,42 @@
       "pick_label": "MIA 1.5",
       "pick_team": "Miami Marlins",
       "confidence": 70,
+      "status": "won",
+      "home_score": 2,
+      "away_score": 1
+    },
+    {
+      "id": "2026-06-21_MLB_Phillies_vs_Mets",
+      "date": "2026-06-21",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Philadelphia Phillies",
+      "away_team": "New York Mets",
+      "home_abbr": "PHI",
+      "away_abbr": "NYM",
+      "pick_label": "PHI -1.5",
+      "pick_team": "Philadelphia Phillies",
+      "confidence": 66,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 160,
-    "wins": 88,
-    "losses": 72,
-    "pending": 3,
-    "win_pct": 55.0,
-    "current_streak": "L2",
+    "total": 162,
+    "wins": 89,
+    "losses": 73,
+    "pending": 2,
+    "win_pct": 54.9,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 58,
-        "l": 55
+        "w": 59,
+        "l": 56
       },
       "hockey": {
         "w": 6,
