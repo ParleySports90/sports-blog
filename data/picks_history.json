@@ -3148,9 +3148,9 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-06-20_MLB_Yankees_vs_Reds",
@@ -3212,9 +3212,9 @@
       "pick_label": "ATH -1.5",
       "pick_team": "Athletics",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 7
     },
     {
       "id": "2026-06-20_MLB_Rockies_vs_Pirates",
@@ -3228,26 +3228,74 @@
       "pick_label": "PIT 1.5",
       "pick_team": "Pittsburgh Pirates",
       "confidence": 64,
+      "status": "won",
+      "home_score": 2,
+      "away_score": 1
+    },
+    {
+      "id": "2026-06-21_MLB_Dodgers_vs_Orioles",
+      "date": "2026-06-21",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Los Angeles Dodgers",
+      "away_team": "Baltimore Orioles",
+      "home_abbr": "LAD",
+      "away_abbr": "BAL",
+      "pick_label": "LAD -1.5",
+      "pick_team": "Los Angeles Dodgers",
+      "confidence": 81,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-21_MLB_Yankees_vs_Reds",
+      "date": "2026-06-21",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "New York Yankees",
+      "away_team": "Cincinnati Reds",
+      "home_abbr": "NYY",
+      "away_abbr": "CIN",
+      "pick_label": "NYY -1.5",
+      "pick_team": "New York Yankees",
+      "confidence": 70,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-21_MLB_Marlins_vs_Giants",
+      "date": "2026-06-21",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Miami Marlins",
+      "away_team": "San Francisco Giants",
+      "home_abbr": "MIA",
+      "away_abbr": "SF",
+      "pick_label": "MIA 1.5",
+      "pick_team": "Miami Marlins",
+      "confidence": 70,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 157,
-    "wins": 87,
-    "losses": 70,
+    "total": 160,
+    "wins": 88,
+    "losses": 72,
     "pending": 3,
-    "win_pct": 55.4,
-    "current_streak": "L1",
+    "win_pct": 55.0,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 57,
-        "l": 53
+        "w": 58,
+        "l": 55
       },
       "hockey": {
         "w": 6,
