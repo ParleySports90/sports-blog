@@ -3244,9 +3244,9 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 81,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 12
     },
     {
       "id": "2026-06-21_MLB_Yankees_vs_Reds",
@@ -3295,15 +3295,63 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-22_MLB_Rays_vs_Royals",
+      "date": "2026-06-22",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Kansas City Royals",
+      "home_abbr": "TB",
+      "away_abbr": "KC",
+      "pick_label": "TB -1.5",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-22_MLB_Tigers_vs_Yankees",
+      "date": "2026-06-22",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Detroit Tigers",
+      "away_team": "New York Yankees",
+      "home_abbr": "DET",
+      "away_abbr": "NYY",
+      "pick_label": "NYY 1.5",
+      "pick_team": "New York Yankees",
+      "confidence": 70,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-22_MLB_Twins_vs_Dodgers",
+      "date": "2026-06-22",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Minnesota Twins",
+      "away_team": "Los Angeles Dodgers",
+      "home_abbr": "MIN",
+      "away_abbr": "LAD",
+      "pick_label": "LAD 1.5",
+      "pick_team": "Los Angeles Dodgers",
+      "confidence": 69,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 162,
+    "total": 163,
     "wins": 89,
-    "losses": 73,
-    "pending": 2,
-    "win_pct": 54.9,
-    "current_streak": "L1",
+    "losses": 74,
+    "pending": 4,
+    "win_pct": 54.6,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -3311,7 +3359,7 @@
       },
       "baseball": {
         "w": 59,
-        "l": 56
+        "l": 57
       },
       "hockey": {
         "w": 6,
