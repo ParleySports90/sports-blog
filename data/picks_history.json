@@ -3308,9 +3308,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-06-22_MLB_Tigers_vs_Yankees",
@@ -3324,9 +3324,9 @@
       "pick_label": "NYY 1.5",
       "pick_team": "New York Yankees",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 3
     },
     {
       "id": "2026-06-22_MLB_Twins_vs_Dodgers",
@@ -3340,9 +3340,9 @@
       "pick_label": "LAD 1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 69,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-06-23_MLB_Rays_vs_Royals",
@@ -3391,14 +3391,30 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-23_MLB_Reds_vs_Brewers",
+      "date": "2026-06-23",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Cincinnati Reds",
+      "away_team": "Milwaukee Brewers",
+      "home_abbr": "CIN",
+      "away_abbr": "MIL",
+      "pick_label": "MIL 1.5",
+      "pick_team": "Milwaukee Brewers",
+      "confidence": 69,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 164,
-    "wins": 90,
-    "losses": 74,
-    "pending": 6,
-    "win_pct": 54.9,
+    "total": 167,
+    "wins": 91,
+    "losses": 76,
+    "pending": 4,
+    "win_pct": 54.5,
     "current_streak": "L2",
     "by_sport": {
       "basketball": {
@@ -3406,8 +3422,8 @@
         "l": 6
       },
       "baseball": {
-        "w": 60,
-        "l": 57
+        "w": 61,
+        "l": 59
       },
       "hockey": {
         "w": 6,
