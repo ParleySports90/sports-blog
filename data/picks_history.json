@@ -3503,13 +3503,45 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-24_MLB_Padres_vs_Braves",
+      "date": "2026-06-24",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Diego Padres",
+      "away_team": "Atlanta Braves",
+      "home_abbr": "SD",
+      "away_abbr": "ATL",
+      "pick_label": "ATL 1.5",
+      "pick_team": "Atlanta Braves",
+      "confidence": 62,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-24_MLB_Giants_vs_Athletics",
+      "date": "2026-06-24",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Francisco Giants",
+      "away_team": "Athletics",
+      "home_abbr": "SF",
+      "away_abbr": "ATH",
+      "pick_label": "ATH 1.5",
+      "pick_team": "Athletics",
+      "confidence": 61,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 174,
     "wins": 96,
     "losses": 78,
-    "pending": 3,
+    "pending": 5,
     "win_pct": 55.2,
     "current_streak": "L1",
     "by_sport": {
