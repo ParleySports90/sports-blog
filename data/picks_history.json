@@ -3583,13 +3583,29 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-25_MLB_Nationals_vs_Phillies",
+      "date": "2026-06-25",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Washington Nationals",
+      "away_team": "Philadelphia Phillies",
+      "home_abbr": "WSH",
+      "away_abbr": "PHI",
+      "pick_label": "PHI 1.5",
+      "pick_team": "Philadelphia Phillies",
+      "confidence": 61,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 179,
     "wins": 100,
     "losses": 79,
-    "pending": 3,
+    "pending": 4,
     "win_pct": 55.9,
     "current_streak": "W3",
     "by_sport": {
