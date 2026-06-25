@@ -3468,9 +3468,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 79,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 3
     },
     {
       "id": "2026-06-24_MLB_Twins_vs_Dodgers",
@@ -3484,9 +3484,9 @@
       "pick_label": "LAD 1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 4
     },
     {
       "id": "2026-06-24_MLB_Reds_vs_Brewers",
@@ -3500,9 +3500,9 @@
       "pick_label": "MIL 1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 72,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 6
     },
     {
       "id": "2026-06-24_MLB_Padres_vs_Braves",
@@ -3516,9 +3516,9 @@
       "pick_label": "ATL 1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 62,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 2
     },
     {
       "id": "2026-06-24_MLB_Giants_vs_Athletics",
@@ -3532,26 +3532,74 @@
       "pick_label": "ATH 1.5",
       "pick_team": "Athletics",
       "confidence": 61,
+      "status": "won",
+      "home_score": 2,
+      "away_score": 1
+    },
+    {
+      "id": "2026-06-25_MLB_Sox_vs_Yankees",
+      "date": "2026-06-25",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Boston Red Sox",
+      "away_team": "New York Yankees",
+      "home_abbr": "BOS",
+      "away_abbr": "NYY",
+      "pick_label": "NYY 1.5",
+      "pick_team": "New York Yankees",
+      "confidence": 84,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-25_MLB_Rays_vs_Royals",
+      "date": "2026-06-25",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Kansas City Royals",
+      "home_abbr": "TB",
+      "away_abbr": "KC",
+      "pick_label": "TB -1.5",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 81,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-25_MLB_Mets_vs_Cubs",
+      "date": "2026-06-25",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "New York Mets",
+      "away_team": "Chicago Cubs",
+      "home_abbr": "NYM",
+      "away_abbr": "CHC",
+      "pick_label": "CHC 1.5",
+      "pick_team": "Chicago Cubs",
+      "confidence": 63,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 174,
-    "wins": 96,
-    "losses": 78,
-    "pending": 5,
-    "win_pct": 55.2,
-    "current_streak": "L1",
+    "total": 179,
+    "wins": 100,
+    "losses": 79,
+    "pending": 3,
+    "win_pct": 55.9,
+    "current_streak": "W3",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 66,
-        "l": 61
+        "w": 70,
+        "l": 62
       },
       "hockey": {
         "w": 6,
