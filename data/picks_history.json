@@ -3548,9 +3548,9 @@
       "pick_label": "NYY 1.5",
       "pick_team": "New York Yankees",
       "confidence": 84,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 6,
+      "away_score": 3
     },
     {
       "id": "2026-06-25_MLB_Rays_vs_Royals",
@@ -3580,9 +3580,9 @@
       "pick_label": "CHC 1.5",
       "pick_team": "Chicago Cubs",
       "confidence": 63,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 4
     },
     {
       "id": "2026-06-25_MLB_Nationals_vs_Phillies",
@@ -3596,9 +3596,9 @@
       "pick_label": "PHI 1.5",
       "pick_team": "Philadelphia Phillies",
       "confidence": 61,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 10
     },
     {
       "id": "2026-06-26_MLB_Sox_vs_Yankees",
@@ -3650,20 +3650,20 @@
     }
   ],
   "stats": {
-    "total": 180,
-    "wins": 101,
-    "losses": 79,
-    "pending": 6,
-    "win_pct": 56.1,
-    "current_streak": "W4",
+    "total": 183,
+    "wins": 103,
+    "losses": 80,
+    "pending": 3,
+    "win_pct": 56.3,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 71,
-        "l": 62
+        "w": 73,
+        "l": 63
       },
       "hockey": {
         "w": 6,
