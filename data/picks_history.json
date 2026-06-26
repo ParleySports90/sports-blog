@@ -3647,13 +3647,45 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-26_MLB_Padres_vs_Dodgers",
+      "date": "2026-06-26",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Diego Padres",
+      "away_team": "Los Angeles Dodgers",
+      "home_abbr": "SD",
+      "away_abbr": "LAD",
+      "pick_label": "LAD 1.5",
+      "pick_team": "Los Angeles Dodgers",
+      "confidence": 65,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-26_MLB_Twins_vs_Rockies",
+      "date": "2026-06-26",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Minnesota Twins",
+      "away_team": "Colorado Rockies",
+      "home_abbr": "MIN",
+      "away_abbr": "COL",
+      "pick_label": "MIN -1.5",
+      "pick_team": "Minnesota Twins",
+      "confidence": 63,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 183,
     "wins": 103,
     "losses": 80,
-    "pending": 3,
+    "pending": 5,
     "win_pct": 56.3,
     "current_streak": "L1",
     "by_sport": {
