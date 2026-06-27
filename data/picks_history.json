@@ -3724,9 +3724,9 @@
       "pick_label": "CHW -1.5",
       "pick_team": "Chicago White Sox",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-06-27_MLB_Rays_vs_Diamondbacks",
@@ -3759,15 +3759,47 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-27_MLB_Padres_vs_Dodgers",
+      "date": "2026-06-27",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Diego Padres",
+      "away_team": "Los Angeles Dodgers",
+      "home_abbr": "SD",
+      "away_abbr": "LAD",
+      "pick_label": "LAD 1.5",
+      "pick_team": "Los Angeles Dodgers",
+      "confidence": 63,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-27_MLB_Angels_vs_Athletics",
+      "date": "2026-06-27",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Los Angeles Angels",
+      "away_team": "Athletics",
+      "home_abbr": "LAA",
+      "away_abbr": "ATH",
+      "pick_label": "ATH 1.5",
+      "pick_team": "Athletics",
+      "confidence": 61,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 189,
+    "total": 190,
     "wins": 105,
-    "losses": 84,
-    "pending": 4,
-    "win_pct": 55.6,
-    "current_streak": "L2",
+    "losses": 85,
+    "pending": 5,
+    "win_pct": 55.3,
+    "current_streak": "L3",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -3775,7 +3807,7 @@
       },
       "baseball": {
         "w": 75,
-        "l": 67
+        "l": 68
       },
       "hockey": {
         "w": 6,
