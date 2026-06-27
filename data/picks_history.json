@@ -3612,9 +3612,9 @@
       "pick_label": "NYY ML",
       "pick_team": "New York Yankees",
       "confidence": 84,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 6,
+      "away_score": 1
     },
     {
       "id": "2026-06-26_MLB_Giants_vs_Braves",
@@ -3628,9 +3628,9 @@
       "pick_label": "ATL ML",
       "pick_team": "Atlanta Braves",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "id": "2026-06-26_MLB_Sox_vs_Royals",
@@ -3644,9 +3644,9 @@
       "pick_label": "CHW ML",
       "pick_team": "Chicago White Sox",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 22,
+      "away_score": 1
     },
     {
       "id": "2026-06-26_MLB_Padres_vs_Dodgers",
@@ -3660,9 +3660,9 @@
       "pick_label": "LAD 1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 7,
+      "away_score": 1
     },
     {
       "id": "2026-06-26_MLB_Twins_vs_Rockies",
@@ -3676,17 +3676,65 @@
       "pick_label": "MIN -1.5",
       "pick_team": "Minnesota Twins",
       "confidence": 63,
+      "status": "lost",
+      "home_score": 9,
+      "away_score": 8
+    },
+    {
+      "id": "2026-06-27_MLB_Giants_vs_Braves",
+      "date": "2026-06-27",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Francisco Giants",
+      "away_team": "Atlanta Braves",
+      "home_abbr": "SF",
+      "away_abbr": "ATL",
+      "pick_label": "ATL -1.5",
+      "pick_team": "Atlanta Braves",
+      "confidence": 79,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-27_MLB_Sox_vs_Yankees",
+      "date": "2026-06-27",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Boston Red Sox",
+      "away_team": "New York Yankees",
+      "home_abbr": "BOS",
+      "away_abbr": "NYY",
+      "pick_label": "NYY 1.5",
+      "pick_team": "New York Yankees",
+      "confidence": 78,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-27_MLB_Sox_vs_Royals",
+      "date": "2026-06-27",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Chicago White Sox",
+      "away_team": "Kansas City Royals",
+      "home_abbr": "CHW",
+      "away_abbr": "KC",
+      "pick_label": "CHW -1.5",
+      "pick_team": "Chicago White Sox",
+      "confidence": 77,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 183,
-    "wins": 103,
-    "losses": 80,
-    "pending": 5,
-    "win_pct": 56.3,
+    "total": 188,
+    "wins": 105,
+    "losses": 83,
+    "pending": 3,
+    "win_pct": 55.9,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -3694,8 +3742,8 @@
         "l": 6
       },
       "baseball": {
-        "w": 73,
-        "l": 63
+        "w": 75,
+        "l": 66
       },
       "hockey": {
         "w": 6,
