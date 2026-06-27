@@ -3708,9 +3708,9 @@
       "pick_label": "NYY 1.5",
       "pick_team": "New York Yankees",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "id": "2026-06-27_MLB_Sox_vs_Royals",
@@ -3727,15 +3727,47 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-27_MLB_Rays_vs_Diamondbacks",
+      "date": "2026-06-27",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Arizona Diamondbacks",
+      "home_abbr": "TB",
+      "away_abbr": "ARI",
+      "pick_label": "TB -1.5",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 71,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-27_MLB_Brewers_vs_Cubs",
+      "date": "2026-06-27",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Milwaukee Brewers",
+      "away_team": "Chicago Cubs",
+      "home_abbr": "MIL",
+      "away_abbr": "CHC",
+      "pick_label": "MIL -1.5",
+      "pick_team": "Milwaukee Brewers",
+      "confidence": 66,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 188,
+    "total": 189,
     "wins": 105,
-    "losses": 83,
-    "pending": 3,
-    "win_pct": 55.9,
-    "current_streak": "L1",
+    "losses": 84,
+    "pending": 4,
+    "win_pct": 55.6,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -3743,7 +3775,7 @@
       },
       "baseball": {
         "w": 75,
-        "l": 66
+        "l": 67
       },
       "hockey": {
         "w": 6,
