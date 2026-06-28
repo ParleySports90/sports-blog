@@ -3692,9 +3692,9 @@
       "pick_label": "ATL -1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 79,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "id": "2026-06-27_MLB_Sox_vs_Yankees",
@@ -3740,9 +3740,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 71,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "id": "2026-06-27_MLB_Brewers_vs_Cubs",
@@ -3756,9 +3756,9 @@
       "pick_label": "MIL -1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 8
     },
     {
       "id": "2026-06-27_MLB_Padres_vs_Dodgers",
@@ -3772,9 +3772,9 @@
       "pick_label": "LAD 1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 63,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 15
     },
     {
       "id": "2026-06-27_MLB_Angels_vs_Athletics",
@@ -3788,17 +3788,65 @@
       "pick_label": "ATH 1.5",
       "pick_team": "Athletics",
       "confidence": 61,
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 2
+    },
+    {
+      "id": "2026-06-28_MLB_Sox_vs_Royals",
+      "date": "2026-06-28",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Chicago White Sox",
+      "away_team": "Kansas City Royals",
+      "home_abbr": "CHW",
+      "away_abbr": "KC",
+      "pick_label": "CHW -1.5",
+      "pick_team": "Chicago White Sox",
+      "confidence": 79,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-28_MLB_Giants_vs_Braves",
+      "date": "2026-06-28",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Francisco Giants",
+      "away_team": "Atlanta Braves",
+      "home_abbr": "SF",
+      "away_abbr": "ATL",
+      "pick_label": "ATL 1.5",
+      "pick_team": "Atlanta Braves",
+      "confidence": 76,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-28_MLB_Sox_vs_Yankees",
+      "date": "2026-06-28",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Boston Red Sox",
+      "away_team": "New York Yankees",
+      "home_abbr": "BOS",
+      "away_abbr": "NYY",
+      "pick_label": "NYY -1.5",
+      "pick_team": "New York Yankees",
+      "confidence": 75,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 190,
-    "wins": 105,
-    "losses": 85,
-    "pending": 5,
-    "win_pct": 55.3,
+    "total": 195,
+    "wins": 107,
+    "losses": 88,
+    "pending": 3,
+    "win_pct": 54.9,
     "current_streak": "L3",
     "by_sport": {
       "basketball": {
@@ -3806,8 +3854,8 @@
         "l": 6
       },
       "baseball": {
-        "w": 75,
-        "l": 68
+        "w": 77,
+        "l": 71
       },
       "hockey": {
         "w": 6,
