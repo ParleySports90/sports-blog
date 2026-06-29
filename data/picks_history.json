@@ -3836,17 +3836,65 @@
       "pick_label": "NYY -1.5",
       "pick_team": "New York Yankees",
       "confidence": 75,
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 4
+    },
+    {
+      "id": "2026-06-29_MLB_Yankees_vs_Tigers",
+      "date": "2026-06-29",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "New York Yankees",
+      "away_team": "Detroit Tigers",
+      "home_abbr": "NYY",
+      "away_abbr": "DET",
+      "pick_label": "NYY -1.5",
+      "pick_team": "New York Yankees",
+      "confidence": 80,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-29_MLB_Athletics_vs_Dodgers",
+      "date": "2026-06-29",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Athletics",
+      "away_team": "Los Angeles Dodgers",
+      "home_abbr": "ATH",
+      "away_abbr": "LAD",
+      "pick_label": "LAD 1.5",
+      "pick_team": "Los Angeles Dodgers",
+      "confidence": 76,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-29_MLB_Brewers_vs_Reds",
+      "date": "2026-06-29",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Milwaukee Brewers",
+      "away_team": "Cincinnati Reds",
+      "home_abbr": "MIL",
+      "away_abbr": "CIN",
+      "pick_label": "MIL -1.5",
+      "pick_team": "Milwaukee Brewers",
+      "confidence": 70,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 197,
+    "total": 198,
     "wins": 108,
-    "losses": 89,
-    "pending": 1,
-    "win_pct": 54.8,
+    "losses": 90,
+    "pending": 3,
+    "win_pct": 54.5,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -3855,7 +3903,7 @@
       },
       "baseball": {
         "w": 78,
-        "l": 72
+        "l": 73
       },
       "hockey": {
         "w": 6,
