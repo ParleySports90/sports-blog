@@ -3887,13 +3887,45 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-06-29_MLB_Mariners_vs_Angels",
+      "date": "2026-06-29",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Seattle Mariners",
+      "away_team": "Los Angeles Angels",
+      "home_abbr": "SEA",
+      "away_abbr": "LAA",
+      "pick_label": "SEA -1.5",
+      "pick_team": "Seattle Mariners",
+      "confidence": 66,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-29_MLB_Diamondbacks_vs_Giants",
+      "date": "2026-06-29",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Arizona Diamondbacks",
+      "away_team": "San Francisco Giants",
+      "home_abbr": "ARI",
+      "away_abbr": "SF",
+      "pick_label": "ARI -1.5",
+      "pick_team": "Arizona Diamondbacks",
+      "confidence": 66,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 198,
     "wins": 108,
     "losses": 90,
-    "pending": 3,
+    "pending": 5,
     "win_pct": 54.5,
     "current_streak": "L1",
     "by_sport": {
