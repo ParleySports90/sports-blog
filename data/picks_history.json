@@ -3852,9 +3852,9 @@
       "pick_label": "NYY -1.5",
       "pick_team": "New York Yankees",
       "confidence": 80,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 7
     },
     {
       "id": "2026-06-29_MLB_Athletics_vs_Dodgers",
@@ -3868,9 +3868,9 @@
       "pick_label": "LAD 1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 76,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 9
     },
     {
       "id": "2026-06-29_MLB_Brewers_vs_Reds",
@@ -3884,9 +3884,9 @@
       "pick_label": "MIL -1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 3
     },
     {
       "id": "2026-06-29_MLB_Mariners_vs_Angels",
@@ -3900,9 +3900,9 @@
       "pick_label": "SEA -1.5",
       "pick_team": "Seattle Mariners",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 2
     },
     {
       "id": "2026-06-29_MLB_Diamondbacks_vs_Giants",
@@ -3916,17 +3916,65 @@
       "pick_label": "ARI -1.5",
       "pick_team": "Arizona Diamondbacks",
       "confidence": 66,
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 4
+    },
+    {
+      "id": "2026-06-30_MLB_Athletics_vs_Dodgers",
+      "date": "2026-06-30",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Athletics",
+      "away_team": "Los Angeles Dodgers",
+      "home_abbr": "ATH",
+      "away_abbr": "LAD",
+      "pick_label": "LAD 1.5",
+      "pick_team": "Los Angeles Dodgers",
+      "confidence": 78,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-30_MLB_Yankees_vs_Tigers",
+      "date": "2026-06-30",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "New York Yankees",
+      "away_team": "Detroit Tigers",
+      "home_abbr": "NYY",
+      "away_abbr": "DET",
+      "pick_label": "NYY -1.5",
+      "pick_team": "New York Yankees",
+      "confidence": 77,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-06-30_MLB_Brewers_vs_Reds",
+      "date": "2026-06-30",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Milwaukee Brewers",
+      "away_team": "Cincinnati Reds",
+      "home_abbr": "MIL",
+      "away_abbr": "CIN",
+      "pick_label": "MIL -1.5",
+      "pick_team": "Milwaukee Brewers",
+      "confidence": 72,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 198,
-    "wins": 108,
-    "losses": 90,
-    "pending": 5,
-    "win_pct": 54.5,
+    "total": 203,
+    "wins": 111,
+    "losses": 92,
+    "pending": 3,
+    "win_pct": 54.7,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -3934,8 +3982,8 @@
         "l": 6
       },
       "baseball": {
-        "w": 78,
-        "l": 73
+        "w": 81,
+        "l": 75
       },
       "hockey": {
         "w": 6,
