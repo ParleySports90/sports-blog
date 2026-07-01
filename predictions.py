@@ -1409,6 +1409,26 @@ def fetch_daily_lines():
 
             odds = extract_odds_from_event(event)
 
+            home_ml_raw = odds.get("home_ml", "") if odds else ""
+            away_ml_raw = odds.get("away_ml", "") if odds else ""
+
+            # Probabilidad implicita normalizada a partir de las cuotas americanas
+            home_prob = None
+            away_prob = None
+            home_is_fav = None
+            try:
+                if home_ml_raw and away_ml_raw:
+                    h = int(str(home_ml_raw).replace("+", ""))
+                    a = int(str(away_ml_raw).replace("+", ""))
+                    hp = abs(h) / (abs(h) + 100) * 100 if h < 0 else 100 / (h + 100) * 100
+                    ap = abs(a) / (abs(a) + 100) * 100 if a < 0 else 100 / (a + 100) * 100
+                    total = hp + ap
+                    home_prob = round(hp / total * 100)
+                    away_prob = 100 - home_prob
+                    home_is_fav = home_prob >= away_prob
+            except Exception:
+                pass
+
             games.append({
                 "home_team"  : home_team,
                 "away_team"  : away_team,
@@ -1419,12 +1439,15 @@ def fetch_daily_lines():
                 "game_time"  : game_time,
                 "state"      : state,
                 "status"     : status_desc,
-                "home_ml"    : odds.get("home_ml",    "") if odds else "",
-                "away_ml"    : odds.get("away_ml",    "") if odds else "",
+                "home_ml"    : home_ml_raw,
+                "away_ml"    : away_ml_raw,
                 "spread"     : odds.get("spread",     "") if odds else "",
                 "over_under" : odds.get("over_under", "") if odds else "",
                 "provider"   : odds.get("provider",   "") if odds else "",
                 "has_odds"   : odds is not None,
+                "home_prob"  : home_prob,
+                "away_prob"  : away_prob,
+                "home_is_fav": home_is_fav,
             })
 
         if games:

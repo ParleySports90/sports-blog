@@ -1164,6 +1164,56 @@
 
         /* Mundial badge */
         .mundial-badge { display: inline-block; background: linear-gradient(135deg, rgba(233,69,96,.2), rgba(255,193,7,.15)); border: 1px solid rgba(233,69,96,.3); border-radius: 4px; font-size: .65rem; font-weight: 700; color: #ffc107; padding: 1px 6px; margin-left: 6px; letter-spacing: .5px; vertical-align: middle; }
+
+        /* ===== BET CARDS — Casas de Apuestas ===== */
+        .bet-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+        .bet-card-header { display: flex; align-items: center; gap: 8px; padding: 8px 14px; background: var(--bg-elevated); border-bottom: 1px solid var(--border); }
+        .bet-league-icon { font-size: .95rem; }
+        .bet-league-name { font-family: var(--font-display); font-size: .82rem; font-weight: 700; color: var(--text-secondary); letter-spacing: .5px; text-transform: uppercase; flex: 1; }
+        .bet-time { font-size: .72rem; color: var(--text-muted); }
+
+        .bet-matchup { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 10px; padding: 14px; }
+        .bet-team { display: flex; align-items: center; gap: 8px; }
+        .bet-team.bet-dog { flex-direction: row-reverse; }
+        .bet-logo { width: 34px; height: 34px; object-fit: contain; }
+        .bet-team-info { display: flex; flex-direction: column; gap: 2px; }
+        .bet-team-info.right { text-align: right; align-items: flex-end; }
+        .bet-team-name { font-size: .88rem; font-weight: 700; color: var(--text-primary); }
+        .bet-badge-fav { display: inline-block; background: rgba(76,175,80,.2); color: #4caf50; border: 1px solid rgba(76,175,80,.4); font-family: var(--font-display); font-size: .65rem; font-weight: 800; letter-spacing: .5px; padding: 1px 7px; border-radius: 4px; }
+        .bet-badge-dog { display: inline-block; background: rgba(233,69,96,.12); color: var(--accent); border: 1px solid rgba(233,69,96,.25); font-family: var(--font-display); font-size: .65rem; font-weight: 800; letter-spacing: .5px; padding: 1px 7px; border-radius: 4px; }
+        .bet-ml { font-size: .78rem; font-weight: 700; color: var(--text-secondary); }
+
+        .bet-prob-block { display: flex; flex-direction: column; align-items: center; gap: 6px; min-width: 100px; }
+        .bet-prob-bar-wrap { width: 100%; height: 8px; border-radius: 4px; overflow: hidden; display: flex; }
+        .bet-prob-bar-fav { background: #4caf50; height: 100%; }
+        .bet-prob-bar-dog { background: var(--accent); height: 100%; }
+        .bet-prob-labels { display: flex; align-items: center; gap: 6px; }
+        .bet-prob-num { font-family: var(--font-display); font-size: .95rem; font-weight: 800; }
+        .bet-prob-num.fav { color: #4caf50; }
+        .bet-prob-num.dog { color: var(--accent); }
+        .bet-prob-vs { font-size: .7rem; color: var(--text-muted); }
+
+        .bet-card-footer { display: flex; gap: 10px; flex-wrap: wrap; padding: 8px 14px; border-top: 1px solid var(--border); background: var(--bg-elevated); }
+        .bet-detail { font-size: .78rem; color: var(--text-secondary); }
+        .bet-detail strong { color: var(--text-primary); }
+        .bet-provider { color: var(--text-muted); margin-left: auto; font-style: italic; }
+        .bet-matchup-simple { display: flex; align-items: center; gap: 8px; padding: 12px 14px; flex-wrap: wrap; }
+
+        /* ===== POLYMARKET redesign ===== */
+        .poly-duel { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 8px; margin: 8px 0; }
+        .poly-duel-side { display: flex; flex-direction: column; gap: 2px; }
+        .poly-duel-side.right { align-items: flex-end; text-align: right; }
+        .poly-duel-side.poly-leader .poly-duel-name { color: var(--text-primary); font-weight: 700; }
+        .poly-duel-name { font-size: .82rem; color: var(--text-secondary); }
+        .poly-duel-prob { font-family: var(--font-display); font-size: 1.2rem; font-weight: 800; }
+        .poly-duel-bar { height: 6px; border-radius: 3px; background: rgba(233,69,96,.25); overflow: hidden; width: 60px; }
+        .poly-duel-bar-left { height: 100%; background: #4caf50; border-radius: 3px; }
+
+        .poly-outcome-row { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+        .poly-outcome-bar-wrap { flex: 1; height: 6px; background: var(--bg-elevated); border-radius: 3px; overflow: hidden; }
+        .poly-outcome-bar { height: 100%; border-radius: 3px; }
+        .poly-outcome-prob-num { font-family: var(--font-display); font-size: .85rem; font-weight: 700; min-width: 38px; text-align: right; }
+        .poly-meta { display: flex; align-items: center; justify-content: space-between; margin-top: 6px; flex-wrap: wrap; gap: 4px; }
     </style>
 </head>
 <body>
@@ -1811,51 +1861,85 @@
 <div id="section-tendencias" class="section">
     <div class="tendencias-wrapper">
 
-        {# Polymarket #}
-        <div>
-            <div class="tendencias-section-title">&#128201; Polymarket — Lo Mas Apostado en Deportes</div>
-            {% if polymarket %}
-            <div style="display:flex; flex-direction:column; gap:10px;">
-                {% for market in polymarket %}
-                <div class="polymarket-card">
-                    <div class="poly-question">{{ market.question }}</div>
-                    <div class="poly-outcomes">
-                        {% for oc in market.outcomes %}
-                        <div class="poly-outcome">
-                            <span class="poly-outcome-name">{{ oc.outcome }}</span>
-                            <span class="poly-outcome-prob {% if oc.probability >= 60 %}high{% elif oc.probability >= 35 %}mid{% else %}low{% endif %}">{{ oc.probability }}%</span>
-                        </div>
-                        {% endfor %}
-                    </div>
-                    {% if market.volume24hr > 0 %}
-                    <div class="poly-volume">&#128200; Vol. 24h: ${{ "{:,}".format(market.volume24hr) }}</div>
-                    {% endif %}
-                    {% if market.slug %}
-                    <a class="poly-link" href="https://polymarket.com/event/{{ market.slug }}" target="_blank" rel="noopener">Ver en Polymarket &#8594;</a>
-                    {% endif %}
-                </div>
-                {% endfor %}
-            </div>
-            {% else %}
-            <p class="tendencias-empty">Sin datos de Polymarket disponibles en este momento.</p>
-            {% endif %}
-        </div>
-
-        {# Lineas mas destacadas del dia #}
+        {# ===== CASAS DE APUESTAS ===== #}
         {% if lines %}
         <div>
-            <div class="tendencias-section-title">&#127922; Favoritos del Dia — Casas de Apuestas</div>
-            <div style="display:flex; flex-direction:column; gap:8px;">
+            <div class="tendencias-section-title">&#127922; Casas de Apuestas — Favoritos del Dia</div>
+            <div style="display:flex; flex-direction:column; gap:12px;">
                 {% for league_name, league_data in lines.items() %}
                 {% for g in league_data.games %}
-                {% if g.home_ml or g.spread %}
-                <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:8px; padding:10px 14px; display:flex; align-items:center; justify-content:space-between; gap:10px;">
-                    <span style="font-size:1rem;">{{ league_data.icon }}</span>
-                    <span style="font-size:.85rem; color:var(--text-primary); font-weight:600; flex:1;">{{ g.away_abbr }} @ {{ g.home_abbr }}</span>
-                    {% if g.home_ml %}<span class="lines-team-ml {% if g.home_ml|int < 0 %}fav{% else %}dog{% endif %}" style="margin:0;">ML: {{ g.home_ml }} / {{ g.away_ml }}</span>{% endif %}
-                    {% if g.spread %}<span class="lines-spread">{{ g.spread }}</span>{% endif %}
-                    {% if g.over_under %}<span class="lines-ou" style="font-size:.8rem;">O/U {{ g.over_under }}</span>{% endif %}
-                    <span style="font-size:.72rem; color:var(--text-muted);">{{ g.game_time }}</span>
+                {% if g.home_prob or g.home_ml %}
+                <div class="bet-card">
+                    <div class="bet-card-header">
+                        <span class="bet-league-icon">{{ league_data.icon }}</span>
+                        <span class="bet-league-name">{{ league_name }}</span>
+                        <span class="bet-time">{{ g.game_time }}</span>
+                        {% if g.state == 'in' %}<span class="lines-live-badge">EN VIVO</span>{% endif %}
+                    </div>
+
+                    {% if g.home_prob and g.away_prob %}
+                    {# Equipo favorito (mayor % de probabilidad) #}
+                    {% if g.home_is_fav %}
+                    {% set fav_name = g.home_team %} {% set fav_abbr = g.home_abbr %} {% set fav_logo = g.home_logo %} {% set fav_ml = g.home_ml %} {% set fav_prob = g.home_prob %}
+                    {% set dog_name = g.away_team %} {% set dog_abbr = g.away_abbr %} {% set dog_logo = g.away_logo %} {% set dog_ml = g.away_ml %} {% set dog_prob = g.away_prob %}
+                    {% else %}
+                    {% set fav_name = g.away_team %} {% set fav_abbr = g.away_abbr %} {% set fav_logo = g.away_logo %} {% set fav_ml = g.away_ml %} {% set fav_prob = g.away_prob %}
+                    {% set dog_name = g.home_team %} {% set dog_abbr = g.home_abbr %} {% set dog_logo = g.home_logo %} {% set dog_ml = g.home_ml %} {% set dog_prob = g.home_prob %}
+                    {% endif %}
+
+                    <div class="bet-matchup">
+                        {# Favorito #}
+                        <div class="bet-team bet-fav">
+                            {% if fav_logo %}<img class="bet-logo" src="{{ fav_logo }}" alt="" onerror="this.style.display='none'">{% endif %}
+                            <div class="bet-team-info">
+                                <span class="bet-team-name">{{ fav_name }}</span>
+                                <span class="bet-badge-fav">FAV</span>
+                                <span class="bet-ml">{{ fav_ml }}</span>
+                            </div>
+                        </div>
+
+                        {# Barra de probabilidad central #}
+                        <div class="bet-prob-block">
+                            <div class="bet-prob-bar-wrap">
+                                <div class="bet-prob-bar-fav" style="width:{{ fav_prob }}%;"></div>
+                                <div class="bet-prob-bar-dog" style="width:{{ dog_prob }}%;"></div>
+                            </div>
+                            <div class="bet-prob-labels">
+                                <span class="bet-prob-num fav">{{ fav_prob }}%</span>
+                                <span class="bet-prob-vs">VS</span>
+                                <span class="bet-prob-num dog">{{ dog_prob }}%</span>
+                            </div>
+                        </div>
+
+                        {# Perrito #}
+                        <div class="bet-team bet-dog">
+                            <div class="bet-team-info right">
+                                <span class="bet-team-name">{{ dog_name }}</span>
+                                <span class="bet-badge-dog">PERRITO</span>
+                                <span class="bet-ml">{{ dog_ml }}</span>
+                            </div>
+                            {% if dog_logo %}<img class="bet-logo" src="{{ dog_logo }}" alt="" onerror="this.style.display='none'">{% endif %}
+                        </div>
+                    </div>
+
+                    {% else %}
+                    {# Sin probabilidades: mostrar equipos con cuota raw #}
+                    <div class="bet-matchup-simple">
+                        <span class="bet-team-name">{{ g.away_team }}</span>
+                        <span style="color:var(--text-muted); font-size:.8rem;">{{ g.away_ml }}</span>
+                        <span style="color:var(--text-muted); padding:0 8px;">@</span>
+                        <span class="bet-team-name">{{ g.home_team }}</span>
+                        <span style="color:var(--text-muted); font-size:.8rem;">{{ g.home_ml }}</span>
+                    </div>
+                    {% endif %}
+
+                    {% if g.spread or g.over_under %}
+                    <div class="bet-card-footer">
+                        {% if g.spread %}<span class="bet-detail">Spread: <strong>{{ g.spread }}</strong></span>{% endif %}
+                        {% if g.over_under %}<span class="bet-detail">Total (O/U): <strong>{{ g.over_under }}</strong></span>{% endif %}
+                        {% if g.provider %}<span class="bet-detail bet-provider">via {{ g.provider }}</span>{% endif %}
+                    </div>
+                    {% endif %}
                 </div>
                 {% endif %}
                 {% endfor %}
@@ -1863,6 +1947,63 @@
             </div>
         </div>
         {% endif %}
+
+        {# ===== POLYMARKET ===== #}
+        <div>
+            <div class="tendencias-section-title">&#128201; Polymarket — Mercados Deportivos</div>
+            {% if polymarket %}
+            <div style="display:flex; flex-direction:column; gap:10px;">
+                {% for market in polymarket %}
+                <div class="polymarket-card">
+                    <div class="poly-question">{{ market.question }}</div>
+
+                    {% if market.outcomes|length == 2 %}
+                    {# Vista de duelo para mercados binarios (si/no, equipo A vs B) #}
+                    {% set oc1 = market.outcomes[0] %}
+                    {% set oc2 = market.outcomes[1] %}
+                    <div class="poly-duel">
+                        <div class="poly-duel-side {% if oc1.probability >= oc2.probability %}poly-leader{% endif %}">
+                            <span class="poly-duel-name">{{ oc1.outcome }}</span>
+                            <span class="poly-duel-prob {% if oc1.probability >= 60 %}high{% elif oc1.probability >= 35 %}mid{% else %}low{% endif %}">{{ oc1.probability }}%</span>
+                        </div>
+                        <div class="poly-duel-bar">
+                            <div class="poly-duel-bar-left" style="width:{{ oc1.probability }}%;"></div>
+                        </div>
+                        <div class="poly-duel-side right {% if oc2.probability > oc1.probability %}poly-leader{% endif %}">
+                            <span class="poly-duel-name">{{ oc2.outcome }}</span>
+                            <span class="poly-duel-prob {% if oc2.probability >= 60 %}high{% elif oc2.probability >= 35 %}mid{% else %}low{% endif %}">{{ oc2.probability }}%</span>
+                        </div>
+                    </div>
+                    {% else %}
+                    {# Vista de lista para mercados con multiples resultados #}
+                    <div class="poly-outcomes">
+                        {% for oc in market.outcomes %}
+                        <div class="poly-outcome-row">
+                            <span class="poly-outcome-name">{{ oc.outcome }}</span>
+                            <div class="poly-outcome-bar-wrap">
+                                <div class="poly-outcome-bar" style="width:{{ oc.probability }}%; background: {% if oc.probability >= 60 %}#4caf50{% elif oc.probability >= 35 %}#64b5f6{% else %}#e94560{% endif %};"></div>
+                            </div>
+                            <span class="poly-outcome-prob-num {% if oc.probability >= 60 %}high{% elif oc.probability >= 35 %}mid{% else %}low{% endif %}">{{ oc.probability }}%</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    <div class="poly-meta">
+                        {% if market.volume24hr > 0 %}
+                        <span class="poly-volume">&#128200; Vol. 24h: ${{ "{:,}".format(market.volume24hr) }}</span>
+                        {% endif %}
+                        {% if market.slug %}
+                        <a class="poly-link" href="https://polymarket.com/event/{{ market.slug }}" target="_blank" rel="noopener">Ver en Polymarket &#8594;</a>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p class="tendencias-empty">Sin datos de Polymarket disponibles en este momento.</p>
+            {% endif %}
+        </div>
 
     </div>
 </div>
