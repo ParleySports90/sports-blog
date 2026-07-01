@@ -4047,13 +4047,29 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-07-01_MLB_Diamondbacks_vs_Giants",
+      "date": "2026-07-01",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Arizona Diamondbacks",
+      "away_team": "San Francisco Giants",
+      "home_abbr": "ARI",
+      "away_abbr": "SF",
+      "pick_label": "ARI -1.5",
+      "pick_team": "Arizona Diamondbacks",
+      "confidence": 70,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 208,
     "wins": 115,
     "losses": 93,
-    "pending": 3,
+    "pending": 4,
     "win_pct": 55.3,
     "current_streak": "W1",
     "by_sport": {
