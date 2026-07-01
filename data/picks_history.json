@@ -4063,13 +4063,45 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-07-01_MLB_Royals_vs_Rays",
+      "date": "2026-07-01",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Kansas City Royals",
+      "away_team": "Tampa Bay Rays",
+      "home_abbr": "KC",
+      "away_abbr": "TB",
+      "pick_label": "TB 1.5",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 69,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-01_MLB_Rockies_vs_Marlins",
+      "date": "2026-07-01",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Colorado Rockies",
+      "away_team": "Miami Marlins",
+      "home_abbr": "COL",
+      "away_abbr": "MIA",
+      "pick_label": "MIA 1.5",
+      "pick_team": "Miami Marlins",
+      "confidence": 65,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 208,
     "wins": 115,
     "losses": 93,
-    "pending": 4,
+    "pending": 6,
     "win_pct": 55.3,
     "current_streak": "W1",
     "by_sport": {
