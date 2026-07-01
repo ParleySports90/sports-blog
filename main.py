@@ -23,7 +23,7 @@ import schedule as sched
 import config
 from scraper import fetch_all_feeds
 from scores import fetch_all_scores
-from predictions import fetch_all_predictions, print_predictions, fetch_daily_lines
+from predictions import fetch_all_predictions, print_predictions, fetch_daily_lines, fetch_polymarket_sports
 from generator import generate_site
 from tracker import check_results, print_tracking_stats, get_tracking_data
 
@@ -41,9 +41,10 @@ def cmd_build():
         confidence_threshold=config.CONFIDENCE_THRESHOLD,
     )
     lines = fetch_daily_lines()
+    polymarket = fetch_polymarket_sports()
 
     if articles or scores or predictions:
-        output = generate_site(articles, scores, predictions, lines)
+        output = generate_site(articles, scores, predictions, lines, polymarket)
         print(f"\n[OK] Blog listo. Abre el archivo en tu navegador:")
         print(f"     {os.path.abspath(output)}")
     else:

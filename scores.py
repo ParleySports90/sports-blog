@@ -95,6 +95,12 @@ LEAGUES = {
         "icon": "\u26bd",
         "country": "Europa",
     },
+    "Mundial 2026": {
+        "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard",
+        "sport": "mundial",
+        "icon": "\U0001f3c6",
+        "country": "Mundial",
+    },
     # USA Sports
     "NBA": {
         "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard",

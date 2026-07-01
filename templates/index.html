@@ -1131,6 +1131,39 @@
         .lines-no-odds { font-size: .75rem; color: var(--text-muted); font-style: italic; }
         .lines-provider { font-size: .7rem; color: var(--text-muted); padding: 4px 16px 6px; border-top: 1px dashed var(--border); text-align: right; }
         .lines-empty { text-align: center; color: var(--text-muted); padding: 30px 16px; font-size: .9rem; }
+
+        /* Pick categories FIJO / MEDIO / BAJO */
+        .pick-category-badge { display: inline-block; font-family: var(--font-display); font-size: .75rem; font-weight: 800; letter-spacing: 1px; padding: 3px 10px; border-radius: 6px; text-transform: uppercase; margin-left: 8px; }
+        .pick-category-badge.fijo { background: rgba(76,175,80,.2); color: #4caf50; border: 1px solid rgba(76,175,80,.4); }
+        .pick-category-badge.medio { background: rgba(100,181,246,.15); color: var(--blue); border: 1px solid rgba(100,181,246,.35); }
+        .pick-category-badge.bajo { background: rgba(255,193,7,.12); color: #ffc107; border: 1px solid rgba(255,193,7,.3); }
+
+        /* Shooters / Rematadores */
+        .pred-shooters { margin-top: 10px; padding: 10px 12px; background: var(--bg-elevated); border-radius: 8px; border: 1px solid var(--border); }
+        .pred-shooters-title { font-family: var(--font-display); font-size: .8rem; font-weight: 700; color: var(--accent); letter-spacing: .5px; margin-bottom: 6px; }
+        .pred-shooter-item { display: inline-block; background: var(--bg-surface); border: 1px solid var(--border); border-radius: 5px; padding: 2px 8px; margin: 2px; font-size: .75rem; color: var(--text-secondary); }
+        .pred-shooter-item .sh-name { color: var(--text-primary); font-weight: 600; }
+
+        /* Tendencias / Polymarket */
+        .tendencias-wrapper { max-width: 900px; margin: 0 auto; padding: 20px 16px; display: flex; flex-direction: column; gap: 20px; }
+        .tendencias-section-title { font-family: var(--font-display); font-size: 1.3rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: var(--text-primary); border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 12px; }
+        .polymarket-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; transition: border-color .2s; }
+        .polymarket-card:hover { border-color: var(--border-hover); }
+        .poly-question { font-size: .9rem; font-weight: 600; color: var(--text-primary); line-height: 1.4; }
+        .poly-outcomes { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+        .poly-outcome { background: var(--bg-surface); border: 1px solid var(--border); border-radius: 5px; padding: 4px 10px; font-size: .78rem; display: flex; align-items: center; gap: 6px; }
+        .poly-outcome-name { color: var(--text-secondary); }
+        .poly-outcome-prob { font-weight: 700; }
+        .poly-outcome-prob.high { color: #4caf50; }
+        .poly-outcome-prob.mid { color: var(--blue); }
+        .poly-outcome-prob.low { color: var(--accent); }
+        .poly-volume { font-size: .72rem; color: var(--text-muted); margin-top: 2px; }
+        .poly-link { font-size: .72rem; color: var(--accent); text-decoration: none; margin-top: 2px; display: inline-block; }
+        .poly-link:hover { text-decoration: underline; }
+        .tendencias-empty { text-align: center; color: var(--text-muted); padding: 30px; font-size: .9rem; }
+
+        /* Mundial badge */
+        .mundial-badge { display: inline-block; background: linear-gradient(135deg, rgba(233,69,96,.2), rgba(255,193,7,.15)); border: 1px solid rgba(233,69,96,.3); border-radius: 4px; font-size: .65rem; font-weight: 700; color: #ffc107; padding: 1px 6px; margin-left: 6px; letter-spacing: .5px; vertical-align: middle; }
     </style>
 </head>
 <body>
@@ -1150,6 +1183,7 @@
     <button class="nav-tab" onclick="switchSection('predictions', this)">&#127183; Pronosticos</button>
     <button class="nav-tab" onclick="switchSection('mlbguide', this)">&#9918; Guia MLB</button>
     <button class="nav-tab" onclick="switchSection('lines', this)">&#128202; Lineas</button>
+    <button class="nav-tab" onclick="switchSection('tendencias', this)">&#128201; Tendencias</button>
     <button class="nav-tab" onclick="switchSection('news', this)">&#128240; Noticias</button>
 </nav>
 
@@ -1160,6 +1194,7 @@
 
     <div class="sport-filters">
         <button class="pill active" onclick="filterSport('all', this)">Todos</button>
+        <button class="pill" onclick="filterSport('mundial', this)">&#127942; Mundial</button>
         <button class="pill" onclick="filterSport('futbol', this)">&#9917; Futbol</button>
         <button class="pill" onclick="filterSport('basketball', this)">&#127936; NBA</button>
         <button class="pill" onclick="filterSport('baseball', this)">&#9918; MLB</button>
@@ -1245,7 +1280,7 @@
 
     <div class="sport-filters">
         <button class="pill active" onclick="filterPredSport('all', this)">Todos</button>
-        <button class="pill" onclick="filterPredSport('futbol', this)">&#9917; Futbol</button>
+        <button class="pill" onclick="filterPredSport('futbol', this)">&#9917; Futbol / Mundial</button>
         <button class="pill" onclick="filterPredSport('basketball', this)">&#127936; NBA</button>
         <button class="pill" onclick="filterPredSport('baseball', this)">&#9918; MLB</button>
         <button class="pill" onclick="filterPredSport('hockey', this)">&#127954; NHL</button>
@@ -1305,7 +1340,8 @@
         <div class="pred-sport-group" data-pred-sport="{{ sport_key }}">
             <div class="pred-sport-header">
                 <span class="pred-sport-icon">{{ sport_data.icon }}</span>
-                <span class="pred-sport-name">{{ sport_data.name }} — TOP PICKS DEL DIA</span>
+                <span class="pred-sport-name">{{ sport_data.name }} — TOP PICKS DEL DIA
+                {% if sport_key == 'futbol' %}<span class="mundial-badge">incl. MUNDIAL</span>{% endif %}</span>
                 {% if sport_data.picks %}
                 <span class="pred-sport-badge">{{ sport_data.picks|length }} picks</span>
                 {% endif %}
@@ -1333,6 +1369,9 @@
 
                     <div class="pred-pick-row">
                         <span class="pred-pick-label">{{ pick.pick_label }}</span>
+                        {% if pick.pick_category %}
+                        <span class="pick-category-badge {{ pick.pick_category|lower }}">{{ pick.pick_category }}</span>
+                        {% endif %}
                         <div class="pred-confidence">
                             <div class="pred-conf-bar-bg">
                                 <div class="pred-conf-bar {% if pick.confidence >= 75 %}high{% elif pick.confidence >= 60 %}medium{% else %}low{% endif %}"
@@ -1467,6 +1506,25 @@
                             <div style="margin-top: 6px; margin-bottom: 4px; color: var(--text-muted); font-size: 0.7rem;">{{ pick.away_abbr }}:</div>
                             {% for s in pick.extra_bets.scorers.away %}
                             <span class="pred-scorer-item"><span class="scorer-name">{{ s.name }}</span> <span class="scorer-goals">({{ s.goals }} goles)</span> {{ s.position }}</span>
+                            {% endfor %}
+                            {% endif %}
+                        </div>
+                        {% endif %}
+
+                        {# Jugadores mas probables a rematar al arco #}
+                        {% if pick.extra_bets.shooters and (pick.extra_bets.shooters.home or pick.extra_bets.shooters.away) %}
+                        <div class="pred-shooters">
+                            <div class="pred-shooters-title">&#127919; Rematador Probable al Arco</div>
+                            {% if pick.extra_bets.shooters.home %}
+                            <div style="margin-bottom: 3px; color: var(--text-muted); font-size: .7rem;">{{ pick.home_abbr }}:</div>
+                            {% for sh in pick.extra_bets.shooters.home %}
+                            <span class="pred-shooter-item"><span class="sh-name">{{ sh.name }}</span> {{ sh.position }} ({{ sh.goals }}g)</span>
+                            {% endfor %}
+                            {% endif %}
+                            {% if pick.extra_bets.shooters.away %}
+                            <div style="margin-top: 5px; margin-bottom: 3px; color: var(--text-muted); font-size: .7rem;">{{ pick.away_abbr }}:</div>
+                            {% for sh in pick.extra_bets.shooters.away %}
+                            <span class="pred-shooter-item"><span class="sh-name">{{ sh.name }}</span> {{ sh.position }} ({{ sh.goals }}g)</span>
                             {% endfor %}
                             {% endif %}
                         </div>
@@ -1689,6 +1747,123 @@
         {% else %}
             <p class="mlb-no-games">Sin juegos de MLB programados para hoy. Ejecuta <code>python main.py build</code> para generar.</p>
         {% endif %}
+    </div>
+</div>
+
+<!-- =================== -->
+<!-- LINES SECTION       -->
+<!-- =================== -->
+<div id="section-lines" class="section">
+    <div class="scores-wrapper" style="max-width:800px;">
+        {% if lines %}
+        <div class="lines-wrapper">
+            {% for league_name, league_data in lines.items() %}
+            <div class="lines-league">
+                <div class="lines-league-header">
+                    <span style="font-size:1.1rem;">{{ league_data.icon }}</span>
+                    <span class="lines-league-name">{{ league_name }}</span>
+                    <span class="lines-count">{{ league_data.games|length }} juegos</span>
+                </div>
+                {% for g in league_data.games %}
+                <div class="lines-game">
+                    <div class="lines-team">
+                        {% if g.home_logo %}<img src="{{ g.home_logo }}" alt="" onerror="this.style.display='none'">{% endif %}
+                        <div>
+                            <div class="lines-team-name">{{ g.home_team }}</div>
+                            {% if g.home_ml %}
+                            <span class="lines-team-ml {% if g.home_ml and g.home_ml|int < 0 %}fav{% else %}dog{% endif %}">{{ g.home_ml }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="lines-center">
+                        <span class="lines-time">{{ g.game_time }}</span>
+                        {% if g.state == 'in' %}<span class="lines-live-badge">EN VIVO</span>{% endif %}
+                        {% if g.spread %}<span class="lines-spread">{{ g.spread }}</span>{% endif %}
+                        {% if g.over_under %}<span class="lines-ou">O/U {{ g.over_under }}</span>{% endif %}
+                        {% if not g.home_ml and not g.spread %}<span class="lines-no-odds">Sin cuotas</span>{% endif %}
+                    </div>
+                    <div class="lines-team away">
+                        <div>
+                            <div class="lines-team-name">{{ g.away_team }}</div>
+                            {% if g.away_ml %}
+                            <span class="lines-team-ml {% if g.away_ml and g.away_ml|int < 0 %}fav{% else %}dog{% endif %}">{{ g.away_ml }}</span>
+                            {% endif %}
+                        </div>
+                        {% if g.away_logo %}<img src="{{ g.away_logo }}" alt="" onerror="this.style.display='none'">{% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+                {% if league_data.games and league_data.games[0].provider %}
+                <div class="lines-provider">via {{ league_data.games[0].provider }}</div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="lines-empty">Sin lineas disponibles. Ejecuta <code>python main.py build</code> para generar.</p>
+        {% endif %}
+    </div>
+</div>
+
+<!-- ======================== -->
+<!-- TENDENCIAS SECTION      -->
+<!-- ======================== -->
+<div id="section-tendencias" class="section">
+    <div class="tendencias-wrapper">
+
+        {# Polymarket #}
+        <div>
+            <div class="tendencias-section-title">&#128201; Polymarket — Lo Mas Apostado en Deportes</div>
+            {% if polymarket %}
+            <div style="display:flex; flex-direction:column; gap:10px;">
+                {% for market in polymarket %}
+                <div class="polymarket-card">
+                    <div class="poly-question">{{ market.question }}</div>
+                    <div class="poly-outcomes">
+                        {% for oc in market.outcomes %}
+                        <div class="poly-outcome">
+                            <span class="poly-outcome-name">{{ oc.outcome }}</span>
+                            <span class="poly-outcome-prob {% if oc.probability >= 60 %}high{% elif oc.probability >= 35 %}mid{% else %}low{% endif %}">{{ oc.probability }}%</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% if market.volume24hr > 0 %}
+                    <div class="poly-volume">&#128200; Vol. 24h: ${{ "{:,}".format(market.volume24hr) }}</div>
+                    {% endif %}
+                    {% if market.slug %}
+                    <a class="poly-link" href="https://polymarket.com/event/{{ market.slug }}" target="_blank" rel="noopener">Ver en Polymarket &#8594;</a>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p class="tendencias-empty">Sin datos de Polymarket disponibles en este momento.</p>
+            {% endif %}
+        </div>
+
+        {# Lineas mas destacadas del dia #}
+        {% if lines %}
+        <div>
+            <div class="tendencias-section-title">&#127922; Favoritos del Dia — Casas de Apuestas</div>
+            <div style="display:flex; flex-direction:column; gap:8px;">
+                {% for league_name, league_data in lines.items() %}
+                {% for g in league_data.games %}
+                {% if g.home_ml or g.spread %}
+                <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:8px; padding:10px 14px; display:flex; align-items:center; justify-content:space-between; gap:10px;">
+                    <span style="font-size:1rem;">{{ league_data.icon }}</span>
+                    <span style="font-size:.85rem; color:var(--text-primary); font-weight:600; flex:1;">{{ g.away_abbr }} @ {{ g.home_abbr }}</span>
+                    {% if g.home_ml %}<span class="lines-team-ml {% if g.home_ml|int < 0 %}fav{% else %}dog{% endif %}" style="margin:0;">ML: {{ g.home_ml }} / {{ g.away_ml }}</span>{% endif %}
+                    {% if g.spread %}<span class="lines-spread">{{ g.spread }}</span>{% endif %}
+                    {% if g.over_under %}<span class="lines-ou" style="font-size:.8rem;">O/U {{ g.over_under }}</span>{% endif %}
+                    <span style="font-size:.72rem; color:var(--text-muted);">{{ g.game_time }}</span>
+                </div>
+                {% endif %}
+                {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
     </div>
 </div>
 

@@ -110,6 +110,13 @@ PREDICTION_LEAGUES = {
         "has_odds": False,
         "has_injuries": False,
     },
+    "FIFA Mundial 2026": {
+        "sport_path": "soccer/fifa.world",
+        "icon": "\U0001f3c6",
+        "sport": "futbol",
+        "has_odds": False,
+        "has_injuries": False,
+    },
 }
 
 ESPN_BASE = "https://site.api.espn.com/apis/site/v2/sports"
@@ -118,7 +125,7 @@ TIMEOUT = 15
 # Torneos internacionales: buscar datos del equipo en su liga local para tener historial completo
 TOURNAMENT_LEAGUES = {
     "Champions League", "Europa League", "Conference League",
-    "Copa Libertadores", "Copa Sudamericana",
+    "Copa Libertadores", "Copa Sudamericana", "FIFA Mundial 2026",
 }
 
 # Mapeo de ligas locales por pais/region para buscar datos reales de equipos en torneos
@@ -184,6 +191,12 @@ TOURNAMENT_DOMESTIC_PRIORITY = {
         "soccer/fra.1", "soccer/por.1", "soccer/ned.1", "soccer/tur.super_lig",
         "soccer/sco.1", "soccer/bel.1", "soccer/aut.1", "soccer/sui.1",
         "soccer/cze.1", "soccer/ukr.1", "soccer/gre.1",
+    ],
+    "FIFA Mundial 2026": [
+        "soccer/esp.1", "soccer/eng.1", "soccer/ger.1", "soccer/fra.1",
+        "soccer/ita.1", "soccer/por.1", "soccer/ned.1", "soccer/bra.1",
+        "soccer/arg.1", "soccer/col.1", "soccer/uru.1", "soccer/mex.1",
+        "soccer/bel.1", "soccer/tur.super_lig", "soccer/usa.1",
     ],
 }
 
@@ -788,6 +801,12 @@ def generate_soccer_extra_bets(home_stats, away_stats, home_scorers, away_scorer
         "away": [{"name": s["name"], "goals": s["goals"], "position": s["position"]} for s in away_scorers[:3]],
     }
 
+    # Jugadores mas probables a rematar al arco (basado en goleadores activos = mayor amenaza ofensiva)
+    extra_bets["shooters"] = {
+        "home": [{"name": s["name"], "goals": s["goals"], "position": s.get("position", "")} for s in home_scorers[:2]],
+        "away": [{"name": s["name"], "goals": s["goals"], "position": s.get("position", "")} for s in away_scorers[:2]],
+    }
+
     return extra_bets
 
 
@@ -1126,15 +1145,16 @@ def fetch_predictions_for_league(league_name, league_info):
             except Exception as e:
                 print(f"    [!] Error obteniendo stats extra: {e}")
 
-        # Fecha/hora del partido
+        # Fecha/hora del partido (convertida a hora Venezuela UTC-4)
         date_str = event.get("date", "")
         match_time = ""
         match_date = ""
         if date_str:
             try:
                 dt = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
-                match_time = dt.strftime("%H:%M")
-                match_date = dt.strftime("%d/%m/%Y")
+                ven_dt = dt - timedelta(hours=4)
+                match_time = ven_dt.strftime("%H:%M")
+                match_date = ven_dt.strftime("%d/%m/%Y")
             except Exception:
                 match_time = ""
                 match_date = ""
@@ -1193,13 +1213,28 @@ def fetch_all_predictions(min_picks=3, confidence_threshold=55):
     # Ordenar por confianza y seleccionar top picks
     total_picks = 0
     for sport, data in all_predictions.items():
-        # Ordenar por confianza descendente
         data["picks"].sort(key=lambda x: x["confidence"], reverse=True)
-        # Filtrar por threshold
-        data["picks"] = [p for p in data["picks"] if p["confidence"] >= confidence_threshold]
-        # Futbol tiene mas ligas (10+), permitir mas picks; otros deportes limitar a min_picks
-        max_picks = min_picks * 4 if sport == "futbol" else min_picks
-        data["picks"] = data["picks"][:max_picks]
+
+        if sport == "baseball":
+            # 5 picks por dia categorizados: FIJO / MEDIO / BAJO
+            # Umbral mas bajo (50%) para capturar picks de valor en la categoria BAJO
+            data["picks"] = [p for p in data["picks"] if p["confidence"] >= 50]
+            data["picks"] = data["picks"][:5]
+            for pick in data["picks"]:
+                conf = pick["confidence"]
+                if conf >= 75:
+                    pick["pick_category"] = "FIJO"
+                elif conf >= 62:
+                    pick["pick_category"] = "MEDIO"
+                else:
+                    pick["pick_category"] = "BAJO"
+        elif sport == "futbol":
+            data["picks"] = [p for p in data["picks"] if p["confidence"] >= confidence_threshold]
+            data["picks"] = data["picks"][:min_picks * 4]
+        else:
+            data["picks"] = [p for p in data["picks"] if p["confidence"] >= confidence_threshold]
+            data["picks"] = data["picks"][:min_picks]
+
         total_picks += len(data["picks"])
         if data["picks"]:
             print(f"\n  [{data['name']}] {len(data['picks'])} picks seleccionados")
@@ -1241,6 +1276,61 @@ def print_predictions(predictions):
             for factor in pick["factors"]:
                 print(f"   {factor}")
             print()
+
+
+# ============================================
+# POLYMARKET - Mercados de prediccion deportiva
+# ============================================
+
+def fetch_polymarket_sports():
+    """Obtiene los mercados deportivos mas activos en Polymarket."""
+    import json as _json
+    try:
+        resp = requests.get(
+            "https://gamma-api.polymarket.com/markets",
+            params={
+                "tag_slug": "sports",
+                "limit": 20,
+                "active": "true",
+                "closed": "false",
+            },
+            timeout=15,
+        )
+        resp.raise_for_status()
+        raw = resp.json()
+        markets = raw if isinstance(raw, list) else raw.get("data", raw.get("markets", []))
+
+        top = []
+        for m in markets:
+            question = m.get("question", "")
+            if not question:
+                continue
+            outcomes_raw = m.get("outcomes", "[]")
+            prices_raw = m.get("outcomePrices", "[]")
+            try:
+                outcomes = _json.loads(outcomes_raw) if isinstance(outcomes_raw, str) else outcomes_raw
+                prices = _json.loads(prices_raw) if isinstance(prices_raw, str) else prices_raw
+            except Exception:
+                outcomes = []
+                prices = []
+            volume = float(m.get("volume24hr", m.get("volume", 0)) or 0)
+            pairs = []
+            for i, o in enumerate(outcomes[:4]):
+                price = float(prices[i]) if i < len(prices) else 0
+                pairs.append({"outcome": str(o), "probability": round(price * 100, 1)})
+            top.append({
+                "question": question,
+                "outcomes": pairs,
+                "volume24hr": round(volume),
+                "slug": m.get("slug", ""),
+            })
+
+        top.sort(key=lambda x: x["volume24hr"], reverse=True)
+        print(f"  [Polymarket] {len(top)} mercados deportivos obtenidos")
+        return top[:10]
+    except Exception as e:
+        print(f"  [!] Polymarket: {e}")
+        return []
 
 
 # ============================================

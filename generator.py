@@ -8,7 +8,7 @@ from jinja2 import Environment, FileSystemLoader
 import config
 
 
-def generate_site(articles, scores=None, predictions=None, lines=None):
+def generate_site(articles, scores=None, predictions=None, lines=None, polymarket=None):
     """Genera el HTML estatico del blog."""
     print("[*] Generando sitio web...")
 
@@ -47,6 +47,7 @@ def generate_site(articles, scores=None, predictions=None, lines=None):
         scores=scores or {},
         predictions=preds,
         lines=lines or {},
+        polymarket=polymarket or [],
         tracking=tracking_data,
         mlb_guide=mlb_guide,
         last_updated=datetime.now().strftime("%d/%m/%Y %H:%M"),
