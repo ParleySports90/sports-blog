@@ -4028,9 +4028,9 @@
       "pick_label": "NYY -1.5",
       "pick_team": "New York Yankees",
       "confidence": 74,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 6
     },
     {
       "id": "2026-07-01_MLB_Brewers_vs_Reds",
@@ -4098,12 +4098,12 @@
     }
   ],
   "stats": {
-    "total": 208,
+    "total": 209,
     "wins": 115,
-    "losses": 93,
-    "pending": 6,
-    "win_pct": 55.3,
-    "current_streak": "W1",
+    "losses": 94,
+    "pending": 5,
+    "win_pct": 55.0,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -4111,7 +4111,7 @@
       },
       "baseball": {
         "w": 85,
-        "l": 76
+        "l": 77
       },
       "hockey": {
         "w": 6,
