@@ -2021,7 +2021,7 @@
     <nav class="categories">
         <button class="pill active" onclick="filterCategory('all', this)">Todos</button>
         {% for cat in categories %}
-        <button class="pill" onclick="filterCategory('{{ cat }}', this)">{{ cat }}</button>
+        <button class="pill" onclick="filterCategory({{ cat | tojson }}, this)">{{ cat }}</button>
         {% endfor %}
     </nav>
     <main class="container">

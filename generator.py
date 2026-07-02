@@ -13,7 +13,7 @@ def generate_site(articles, scores=None, predictions=None, lines=None, polymarke
     print("[*] Generando sitio web...")
 
     # Configurar Jinja2
-    env = Environment(loader=FileSystemLoader("templates"))
+    env = Environment(loader=FileSystemLoader("templates"), autoescape=True)
     template = env.get_template("index.html")
 
     # Preparar datos para el template
