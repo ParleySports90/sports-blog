@@ -4012,9 +4012,9 @@
       "pick_label": "LAD 1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 80,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 7,
+      "away_score": 1
     },
     {
       "id": "2026-07-01_MLB_Yankees_vs_Tigers",
@@ -4044,9 +4044,9 @@
       "pick_label": "MIL -1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 74,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "id": "2026-07-01_MLB_Diamondbacks_vs_Giants",
@@ -4060,9 +4060,9 @@
       "pick_label": "ARI -1.5",
       "pick_team": "Arizona Diamondbacks",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 6
     },
     {
       "id": "2026-07-01_MLB_Royals_vs_Rays",
@@ -4076,9 +4076,9 @@
       "pick_label": "TB 1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 69,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 4
     },
     {
       "id": "2026-07-01_MLB_Rockies_vs_Marlins",
@@ -4092,9 +4092,9 @@
       "pick_label": "MIA 1.5",
       "pick_team": "Miami Marlins",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 6,
+      "away_score": 3
     },
     {
       "id": "2026-07-02_MLB_Brewers_vs_Reds",
@@ -4191,23 +4191,39 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-07-02_MLB_Rangers_vs_Tigers",
+      "date": "2026-07-02",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Texas Rangers",
+      "away_team": "Detroit Tigers",
+      "home_abbr": "TEX",
+      "away_abbr": "DET",
+      "pick_label": "TEX -1.5",
+      "pick_team": "Texas Rangers",
+      "confidence": 65,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 209,
-    "wins": 115,
-    "losses": 94,
-    "pending": 11,
-    "win_pct": 55.0,
-    "current_streak": "L1",
+    "total": 214,
+    "wins": 117,
+    "losses": 97,
+    "pending": 7,
+    "win_pct": 54.7,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 85,
-        "l": 77
+        "w": 87,
+        "l": 80
       },
       "hockey": {
         "w": 6,
