@@ -4,6 +4,7 @@ Ordena por tendencia (prioridad del feed) y luego por fecha.
 """
 
 import re
+import html as _html
 import feedparser
 import hashlib
 from datetime import datetime, timezone
@@ -47,7 +48,7 @@ def fetch_feed(feed_info):
 
             articles.append({
                 "id": article_id,
-                "title": entry.title,
+                "title": clean_html(entry.title),
                 "link": entry.link,
                 "summary": summary[:400],
                 "image": image,
@@ -91,14 +92,9 @@ def extract_image(entry):
 
 
 def clean_html(text):
-    """Remueve tags HTML basicos de un texto."""
+    """Remueve tags HTML y decodifica entidades para obtener texto plano."""
     clean = re.sub(r"<[^>]+>", "", text)
-    clean = clean.replace("&nbsp;", " ")
-    clean = clean.replace("&amp;", "&")
-    clean = clean.replace("&lt;", "")
-    clean = clean.replace("&gt;", "")
-    clean = clean.replace("&quot;", '"')
-    clean = clean.replace("&#039;", "'")
+    clean = _html.unescape(_html.unescape(clean))
     return clean.strip()
 
 
