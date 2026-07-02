@@ -4172,9 +4172,9 @@
       "pick_label": "MIA ML",
       "pick_team": "Miami Marlins",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 14,
+      "away_score": 4
     },
     {
       "id": "2026-07-02_FIFA Mundial 2026_Portugal_vs_Croatia",
@@ -4226,12 +4226,12 @@
     }
   ],
   "stats": {
-    "total": 215,
+    "total": 216,
     "wins": 117,
-    "losses": 98,
-    "pending": 7,
-    "win_pct": 54.4,
-    "current_streak": "L3",
+    "losses": 99,
+    "pending": 6,
+    "win_pct": 54.2,
+    "current_streak": "L4",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -4239,7 +4239,7 @@
       },
       "baseball": {
         "w": 87,
-        "l": 81
+        "l": 82
       },
       "hockey": {
         "w": 6,
