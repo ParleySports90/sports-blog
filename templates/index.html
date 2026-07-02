@@ -1868,7 +1868,6 @@
             <div style="display:flex; flex-direction:column; gap:12px;">
                 {% for league_name, league_data in lines.items() %}
                 {% for g in league_data.games %}
-                {% if g.home_prob or g.home_ml %}
                 <div class="bet-card">
                     <div class="bet-card-header">
                         <span class="bet-league-icon">{{ league_data.icon }}</span>
@@ -1878,17 +1877,16 @@
                     </div>
 
                     {% if g.home_prob and g.away_prob %}
-                    {# Equipo favorito (mayor % de probabilidad) #}
+                    {# Con cuotas: mostrar FAV vs PERRITO con barras de probabilidad #}
                     {% if g.home_is_fav %}
-                    {% set fav_name = g.home_team %} {% set fav_abbr = g.home_abbr %} {% set fav_logo = g.home_logo %} {% set fav_ml = g.home_ml %} {% set fav_prob = g.home_prob %}
-                    {% set dog_name = g.away_team %} {% set dog_abbr = g.away_abbr %} {% set dog_logo = g.away_logo %} {% set dog_ml = g.away_ml %} {% set dog_prob = g.away_prob %}
+                    {% set fav_name = g.home_team %} {% set fav_logo = g.home_logo %} {% set fav_ml = g.home_ml %} {% set fav_prob = g.home_prob %}
+                    {% set dog_name = g.away_team %} {% set dog_logo = g.away_logo %} {% set dog_ml = g.away_ml %} {% set dog_prob = g.away_prob %}
                     {% else %}
-                    {% set fav_name = g.away_team %} {% set fav_abbr = g.away_abbr %} {% set fav_logo = g.away_logo %} {% set fav_ml = g.away_ml %} {% set fav_prob = g.away_prob %}
-                    {% set dog_name = g.home_team %} {% set dog_abbr = g.home_abbr %} {% set dog_logo = g.home_logo %} {% set dog_ml = g.home_ml %} {% set dog_prob = g.home_prob %}
+                    {% set fav_name = g.away_team %} {% set fav_logo = g.away_logo %} {% set fav_ml = g.away_ml %} {% set fav_prob = g.away_prob %}
+                    {% set dog_name = g.home_team %} {% set dog_logo = g.home_logo %} {% set dog_ml = g.home_ml %} {% set dog_prob = g.home_prob %}
                     {% endif %}
 
                     <div class="bet-matchup">
-                        {# Favorito #}
                         <div class="bet-team bet-fav">
                             {% if fav_logo %}<img class="bet-logo" src="{{ fav_logo }}" alt="" onerror="this.style.display='none'">{% endif %}
                             <div class="bet-team-info">
@@ -1897,8 +1895,6 @@
                                 <span class="bet-ml">{{ fav_ml }}</span>
                             </div>
                         </div>
-
-                        {# Barra de probabilidad central #}
                         <div class="bet-prob-block">
                             <div class="bet-prob-bar-wrap">
                                 <div class="bet-prob-bar-fav" style="width:{{ fav_prob }}%;"></div>
@@ -1910,8 +1906,6 @@
                                 <span class="bet-prob-num dog">{{ dog_prob }}%</span>
                             </div>
                         </div>
-
-                        {# Perrito #}
                         <div class="bet-team bet-dog">
                             <div class="bet-team-info right">
                                 <span class="bet-team-name">{{ dog_name }}</span>
@@ -1923,13 +1917,26 @@
                     </div>
 
                     {% else %}
-                    {# Sin probabilidades: mostrar equipos con cuota raw #}
-                    <div class="bet-matchup-simple">
-                        <span class="bet-team-name">{{ g.away_team }}</span>
-                        <span style="color:var(--text-muted); font-size:.8rem;">{{ g.away_ml }}</span>
-                        <span style="color:var(--text-muted); padding:0 8px;">@</span>
-                        <span class="bet-team-name">{{ g.home_team }}</span>
-                        <span style="color:var(--text-muted); font-size:.8rem;">{{ g.home_ml }}</span>
+                    {# Sin cuotas: mostrar los equipos limpiamente con sus logos #}
+                    <div class="bet-matchup">
+                        <div class="bet-team bet-fav">
+                            {% if g.away_logo %}<img class="bet-logo" src="{{ g.away_logo }}" alt="" onerror="this.style.display='none'">{% endif %}
+                            <div class="bet-team-info">
+                                <span class="bet-team-name">{{ g.away_team }}</span>
+                                <span style="font-size:.7rem; color:var(--text-muted);">Visita</span>
+                            </div>
+                        </div>
+                        <div class="bet-prob-block">
+                            <div style="font-family:var(--font-display); font-size:1.1rem; font-weight:800; color:var(--text-muted);">@</div>
+                            <div style="font-size:.65rem; color:var(--text-muted); text-align:center;">Sin cuotas</div>
+                        </div>
+                        <div class="bet-team bet-dog">
+                            <div class="bet-team-info right">
+                                <span class="bet-team-name">{{ g.home_team }}</span>
+                                <span style="font-size:.7rem; color:var(--text-muted);">Local</span>
+                            </div>
+                            {% if g.home_logo %}<img class="bet-logo" src="{{ g.home_logo }}" alt="" onerror="this.style.display='none'">{% endif %}
+                        </div>
                     </div>
                     {% endif %}
 
@@ -1941,7 +1948,6 @@
                     </div>
                     {% endif %}
                 </div>
-                {% endif %}
                 {% endfor %}
                 {% endfor %}
             </div>

@@ -1345,12 +1345,24 @@ LINES_LEAGUES = {
 
 
 def fetch_daily_lines():
-    """Obtiene lineas del dia (moneyline, spread, O/U) de NBA, MLB y NHL usando ESPN."""
+    """Obtiene lineas del dia (moneyline, spread, O/U) de NBA, MLB y NHL.
+    Usa The Odds API si hay key configurada; de lo contrario usa ESPN (sin cuotas).
+    """
     today_utc   = datetime.now(timezone.utc)
     today_str   = today_utc.strftime("%Y%m%d")
     tomorrow_str = (today_utc + timedelta(days=1)).strftime("%Y%m%d")
     window_start = today_utc.replace(hour=8, minute=0, second=0, microsecond=0)
     window_end   = window_start + timedelta(hours=24)
+
+    # Pre-cargar cuotas de The Odds API si hay key
+    odds_by_league = {}
+    if ODDS_API_KEY:
+        for league_name, info in LINES_LEAGUES.items():
+            sport_key = ODDS_API_SPORTS.get(info.get("sport_key", ""), "")
+            if not sport_key:
+                sport_key = {"NBA": "basketball_nba", "MLB": "baseball_mlb", "NHL": "icehockey_nhl"}.get(league_name, "")
+            if sport_key:
+                odds_by_league[league_name] = fetch_odds_api(sport_key)
 
     result = {}
     for league_name, info in LINES_LEAGUES.items():
@@ -1408,6 +1420,12 @@ def fetch_daily_lines():
             status_desc = event.get("status", {}).get("type", {}).get("shortDetail", "")
 
             odds = extract_odds_from_event(event)
+
+            # Si hay cuotas de The Odds API para esta liga, usarlas (son mas confiables)
+            if odds_by_league.get(league_name):
+                ext = match_odds_to_game(odds_by_league[league_name], home_team, away_team)
+                if ext and (ext.get("home_ml") or ext.get("spread")):
+                    odds = ext
 
             home_ml_raw = odds.get("home_ml", "") if odds else ""
             away_ml_raw = odds.get("away_ml", "") if odds else ""
