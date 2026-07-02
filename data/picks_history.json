@@ -4207,13 +4207,29 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-07-02_MLB_Braves_vs_Cardinals",
+      "date": "2026-07-02",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Atlanta Braves",
+      "away_team": "St. Louis Cardinals",
+      "home_abbr": "ATL",
+      "away_abbr": "STL",
+      "pick_label": "ATL +1.5",
+      "pick_team": "Atlanta Braves",
+      "confidence": 65,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 214,
     "wins": 117,
     "losses": 97,
-    "pending": 7,
+    "pending": 8,
     "win_pct": 54.7,
     "current_streak": "L2",
     "by_sport": {
