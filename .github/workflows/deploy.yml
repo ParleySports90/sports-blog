@@ -42,6 +42,8 @@ jobs:
         run: playwright install --with-deps chromium
 
       - name: Build blog
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python main.py build
 
       - name: Generate Instagram cards

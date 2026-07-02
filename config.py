@@ -99,8 +99,8 @@ MIN_PICKS_PER_SPORT = 3
 CONFIDENCE_THRESHOLD = 55
 
 # The Odds API - cuotas de casas de apuestas (https://the-odds-api.com)
-# Obtener API key gratis en: https://the-odds-api.com/#get-access
-ODDS_API_KEY = ""  # Pega tu API key aqui
+import os as _os
+ODDS_API_KEY = _os.environ.get("ODDS_API_KEY", "")
 ODDS_BOOKMAKERS = "draftkings,fanduel,betmgm,pinnacle,williamhill_us"
 
 # Telegram Bot
