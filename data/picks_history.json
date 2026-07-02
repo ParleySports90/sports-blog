@@ -4108,9 +4108,9 @@
       "pick_label": "MIL -1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 74,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 7
     },
     {
       "id": "2026-07-02_MLB_Dodgers_vs_Padres",
@@ -4226,12 +4226,12 @@
     }
   ],
   "stats": {
-    "total": 214,
+    "total": 215,
     "wins": 117,
-    "losses": 97,
-    "pending": 8,
-    "win_pct": 54.7,
-    "current_streak": "L2",
+    "losses": 98,
+    "pending": 7,
+    "win_pct": 54.4,
+    "current_streak": "L3",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -4239,7 +4239,7 @@
       },
       "baseball": {
         "w": 87,
-        "l": 80
+        "l": 81
       },
       "hockey": {
         "w": 6,
