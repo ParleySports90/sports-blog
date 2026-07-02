@@ -1018,11 +1018,12 @@ def fetch_predictions_for_league(league_name, league_info):
         if odds_sport_key:
             ext_odds_map = fetch_odds_api(odds_sport_key)
 
-    # Filtrar solo partidos programados (pre) dentro de la ventana de hoy
+    # Filtrar partidos de hoy: programados (pre) o en curso (in)
+    # Incluimos "in" para que los picks sigan visibles mientras el partido corre
     scheduled_events = []
     for event in events:
         state = event.get("status", {}).get("type", {}).get("state", "")
-        if state != "pre":
+        if state not in ("pre", "in"):
             continue
         # Verificar que el evento este dentro de la ventana de hoy
         event_date_str = event.get("date", "")
@@ -1073,8 +1074,9 @@ def fetch_predictions_for_league(league_name, league_info):
             continue
 
         # Para torneos internacionales, si los datos del torneo son insuficientes
-        # (pocos partidos jugados), buscar datos en la liga local del equipo
-        if league_name in TOURNAMENT_LEAGUES:
+        # (pocos partidos jugados), buscar datos en la liga local del equipo.
+        # EXCEPCION: FIFA Mundial usa selecciones nacionales que no existen en ligas de clubes.
+        if league_name in TOURNAMENT_LEAGUES and league_name != "FIFA Mundial 2026":
             home_total_games = home_data["overall"]["wins"] + home_data["overall"]["losses"] + home_data["overall"].get("ties", 0)
             away_total_games = away_data["overall"]["wins"] + away_data["overall"]["losses"] + away_data["overall"].get("ties", 0)
 
@@ -1159,6 +1161,18 @@ def fetch_predictions_for_league(league_name, league_info):
                 match_time = ""
                 match_date = ""
 
+        # Obtener estado actual y marcador si el partido ya empezó
+        current_state = event.get("status", {}).get("type", {}).get("state", "pre")
+        status_detail = event.get("status", {}).get("type", {}).get("shortDetail", "")
+        live_score = ""
+        if current_state == "in":
+            comps = event.get("competitions", [{}])[0].get("competitors", [])
+            scores_parts = []
+            for c in comps:
+                scores_parts.append(c.get("score", ""))
+            if len(scores_parts) == 2:
+                live_score = f"{scores_parts[0]}-{scores_parts[1]}"
+
         prediction = {
             "home_team": home_data["name"],
             "away_team": away_data["name"],
@@ -1181,6 +1195,9 @@ def fetch_predictions_for_league(league_name, league_info):
             "extra_bets": extra_bets,
             "home_lineup": home_lineup,
             "away_lineup": away_lineup,
+            "game_state": current_state,
+            "live_score": live_score,
+            "status_detail": status_detail,
         }
 
         predictions.append(prediction)

@@ -1138,6 +1138,69 @@
         .pick-category-badge.medio { background: rgba(100,181,246,.15); color: var(--blue); border: 1px solid rgba(100,181,246,.35); }
         .pick-category-badge.bajo { background: rgba(255,193,7,.12); color: #ffc107; border: 1px solid rgba(255,193,7,.3); }
 
+        /* Pick del Dia - Hero destacado */
+        .pick-del-dia-hero {
+            background: linear-gradient(135deg, rgba(76,175,80,.12) 0%, rgba(233,69,96,.08) 100%);
+            border: 2px solid rgba(76,175,80,.5);
+            border-radius: 14px;
+            padding: 20px 22px 18px;
+            margin-bottom: 24px;
+            position: relative;
+            overflow: hidden;
+        }
+        .pick-del-dia-hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 3px;
+            background: linear-gradient(90deg, #4caf50, var(--accent));
+        }
+        .pick-del-dia-label {
+            font-family: var(--font-display);
+            font-size: .72rem; font-weight: 800; letter-spacing: 2px;
+            text-transform: uppercase; color: #4caf50;
+            margin-bottom: 10px; display: flex; align-items: center; gap: 6px;
+        }
+        .pick-del-dia-label::before { content: '★'; font-size: 1rem; }
+        .pick-del-dia-matchup {
+            font-family: var(--font-display);
+            font-size: 1.15rem; font-weight: 800; color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+        .pick-del-dia-pick {
+            font-size: 1.35rem; font-weight: 800; color: #4caf50;
+            font-family: var(--font-display); letter-spacing: .5px;
+        }
+        .pick-del-dia-meta {
+            display: flex; align-items: center; gap: 12px;
+            margin-top: 10px; flex-wrap: wrap;
+        }
+        .pick-del-dia-conf {
+            font-family: var(--font-display);
+            background: rgba(76,175,80,.2); color: #4caf50;
+            border: 1px solid rgba(76,175,80,.4);
+            padding: 4px 14px; border-radius: 20px;
+            font-size: .85rem; font-weight: 800;
+        }
+        .pick-del-dia-sport {
+            font-size: .78rem; color: var(--text-muted); font-family: var(--font-display);
+            text-transform: uppercase; letter-spacing: 1px;
+        }
+
+        /* EN CURSO badge */
+        .en-curso-badge {
+            display: inline-flex; align-items: center; gap: 4px;
+            background: rgba(233,69,96,.15); color: var(--accent);
+            border: 1px solid rgba(233,69,96,.4);
+            padding: 2px 8px; border-radius: 4px;
+            font-size: .7rem; font-weight: 700; letter-spacing: .5px;
+            font-family: var(--font-display); text-transform: uppercase;
+            animation: pulse 1.5s infinite;
+        }
+        .live-score-inline {
+            font-family: var(--font-display); font-weight: 800;
+            color: var(--accent); font-size: .9rem;
+        }
+
         /* Shooters / Rematadores */
         .pred-shooters { margin-top: 10px; padding: 10px 12px; background: var(--bg-elevated); border-radius: 8px; border: 1px solid var(--border); }
         .pred-shooters-title { font-family: var(--font-display); font-size: .8rem; font-weight: 700; color: var(--accent); letter-spacing: .5px; margin-bottom: 6px; }
@@ -1229,8 +1292,8 @@
 </header>
 
 <nav class="main-nav">
-    <button class="nav-tab active" onclick="switchSection('scores', this)">&#127919; Resultados</button>
-    <button class="nav-tab" onclick="switchSection('predictions', this)">&#127183; Pronosticos</button>
+    <button class="nav-tab active" onclick="switchSection('predictions', this)">&#127183; Pronosticos</button>
+    <button class="nav-tab" onclick="switchSection('scores', this)">&#127919; Resultados</button>
     <button class="nav-tab" onclick="switchSection('mlbguide', this)">&#9918; Guia MLB</button>
     <button class="nav-tab" onclick="switchSection('lines', this)">&#128202; Lineas</button>
     <button class="nav-tab" onclick="switchSection('tendencias', this)">&#128201; Tendencias</button>
@@ -1240,7 +1303,7 @@
 <!-- =================== -->
 <!-- SCORES SECTION      -->
 <!-- =================== -->
-<div id="section-scores" class="section active">
+<div id="section-scores" class="section">
 
     <div class="sport-filters">
         <button class="pill active" onclick="filterSport('all', this)">Todos</button>
@@ -1326,7 +1389,7 @@
 <!-- ======================== -->
 <!-- PREDICTIONS SECTION     -->
 <!-- ======================== -->
-<div id="section-predictions" class="section">
+<div id="section-predictions" class="section active">
 
     <div class="sport-filters">
         <button class="pill active" onclick="filterPredSport('all', this)">Todos</button>
@@ -1386,6 +1449,38 @@
         </div>
         {% endif %}
 
+        {# ---- PICK DEL DIA: destacar el FIJO de mayor confianza ---- #}
+        {% set fijo_picks = [] %}
+        {% for sk, sd in predictions.items() %}
+          {% for p in sd.picks %}
+            {% if p.pick_category == 'FIJO' %}{% if fijo_picks.append(p) %}{% endif %}{% endif %}
+          {% endfor %}
+        {% endfor %}
+        {% if not fijo_picks %}
+          {% set top_all = [] %}
+          {% for sk, sd in predictions.items() %}{% for p in sd.picks %}{% if top_all.append(p) %}{% endif %}{% endfor %}{% endfor %}
+          {% set fijo_picks = top_all | sort(attribute='confidence', reverse=True) %}
+        {% endif %}
+        {% if fijo_picks %}
+        {% set hero = fijo_picks[0] %}
+        <div class="pick-del-dia-hero">
+            <div class="pick-del-dia-label">Pick del Dia</div>
+            <div class="pick-del-dia-matchup">
+                {% if hero.home_logo %}<img src="{{ hero.home_logo }}" alt="" style="height:22px;vertical-align:middle;margin-right:4px;" onerror="this.style.display='none'">{% endif %}
+                {{ hero.home_team }} vs {{ hero.away_team }}
+                {% if hero.away_logo %}<img src="{{ hero.away_logo }}" alt="" style="height:22px;vertical-align:middle;margin-left:4px;" onerror="this.style.display='none'">{% endif %}
+                {% if hero.game_state == 'in' %}&nbsp;<span class="en-curso-badge">&#128308; En Curso {% if hero.live_score %}{{ hero.live_score }}{% endif %}</span>{% endif %}
+            </div>
+            <div class="pick-del-dia-pick">{{ hero.pick_label }}</div>
+            <div class="pick-del-dia-meta">
+                <span class="pick-del-dia-conf">{{ hero.confidence }}% confianza</span>
+                <span class="pick-del-dia-sport">{{ hero.league }}</span>
+                {% if hero.match_time %}<span class="pick-del-dia-sport">&#128336; {{ hero.match_date }} {{ hero.match_time }}</span>{% endif %}
+                {% if hero.pick_category %}<span class="pick-category-badge {{ hero.pick_category|lower }}">{{ hero.pick_category }}</span>{% endif %}
+            </div>
+        </div>
+        {% endif %}
+
         {% for sport_key, sport_data in predictions.items() %}
         <div class="pred-sport-group" data-pred-sport="{{ sport_key }}">
             <div class="pred-sport-header">
@@ -1412,9 +1507,14 @@
                             {% endif %}
                             <span class="pred-team-name">{{ pick.away_team }}</span>
                         </div>
+                        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
                         {% if pick.match_date or pick.match_time %}
                         <span class="pred-time">&#128197; {{ pick.match_date }}{% if pick.match_time %} - {{ pick.match_time }}{% endif %}</span>
                         {% endif %}
+                        {% if pick.game_state == 'in' %}
+                        <span class="en-curso-badge">&#128308; EN CURSO{% if pick.live_score %} &nbsp;<span class="live-score-inline">{{ pick.live_score }}</span>{% endif %}</span>
+                        {% endif %}
+                        </div>
                     </div>
 
                     <div class="pred-pick-row">
