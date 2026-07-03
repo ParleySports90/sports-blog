@@ -4124,9 +4124,9 @@
       "pick_label": "LAD ML",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 72,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 12,
+      "away_score": 7
     },
     {
       "id": "2026-07-02_MLB_Mariners_vs_Angels",
@@ -4140,9 +4140,9 @@
       "pick_label": "SEA -1.5",
       "pick_team": "Seattle Mariners",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-07-02_MLB_Royals_vs_Rays",
@@ -4156,9 +4156,9 @@
       "pick_label": "TB ML",
       "pick_team": "Tampa Bay Rays",
       "confidence": 69,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 5
     },
     {
       "id": "2026-07-02_MLB_Rockies_vs_Marlins",
@@ -4204,9 +4204,9 @@
       "pick_label": "TEX -1.5",
       "pick_team": "Texas Rangers",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 10,
+      "away_score": 4
     },
     {
       "id": "2026-07-02_MLB_Braves_vs_Cardinals",
@@ -4220,26 +4220,122 @@
       "pick_label": "ATL +1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 65,
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 11
+    },
+    {
+      "id": "2026-07-03_MLB_Braves_vs_Mets",
+      "date": "2026-07-03",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Atlanta Braves",
+      "away_team": "New York Mets",
+      "home_abbr": "ATL",
+      "away_abbr": "NYM",
+      "pick_label": "ATL +1.5",
+      "pick_team": "Atlanta Braves",
+      "confidence": 83,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-03_MLB_Dodgers_vs_Padres",
+      "date": "2026-07-03",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Los Angeles Dodgers",
+      "away_team": "San Diego Padres",
+      "home_abbr": "LAD",
+      "away_abbr": "SD",
+      "pick_label": "LAD -1.5",
+      "pick_team": "Los Angeles Dodgers",
+      "confidence": 76,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-03_MLB_Diamondbacks_vs_Brewers",
+      "date": "2026-07-03",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Arizona Diamondbacks",
+      "away_team": "Milwaukee Brewers",
+      "home_abbr": "ARI",
+      "away_abbr": "MIL",
+      "pick_label": "MIL +1.5",
+      "pick_team": "Milwaukee Brewers",
+      "confidence": 66,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-03_MLB_Astros_vs_Rays",
+      "date": "2026-07-03",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Houston Astros",
+      "away_team": "Tampa Bay Rays",
+      "home_abbr": "HOU",
+      "away_abbr": "TB",
+      "pick_label": "TB +1.5",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 65,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-03_MLB_Mariners_vs_Jays",
+      "date": "2026-07-03",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Seattle Mariners",
+      "away_team": "Toronto Blue Jays",
+      "home_abbr": "SEA",
+      "away_abbr": "TOR",
+      "pick_label": "SEA +1.5",
+      "pick_team": "Seattle Mariners",
+      "confidence": 65,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-03_MLB_Yankees_vs_Twins",
+      "date": "2026-07-03",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "New York Yankees",
+      "away_team": "Minnesota Twins",
+      "home_abbr": "NYY",
+      "away_abbr": "MIN",
+      "pick_label": "NYY -1.5",
+      "pick_team": "New York Yankees",
+      "confidence": 62,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 216,
-    "wins": 117,
-    "losses": 99,
-    "pending": 6,
-    "win_pct": 54.2,
-    "current_streak": "L4",
+    "total": 221,
+    "wins": 120,
+    "losses": 101,
+    "pending": 7,
+    "win_pct": 54.3,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 87,
-        "l": 82
+        "w": 90,
+        "l": 84
       },
       "hockey": {
         "w": 6,
