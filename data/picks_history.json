@@ -4380,9 +4380,9 @@
       "pick_label": "TEX +1.5",
       "pick_team": "Texas Rangers",
       "confidence": 72,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "id": "2026-07-04_MLB_Diamondbacks_vs_Brewers",
@@ -4412,18 +4412,34 @@
       "pick_label": "NYY +6.5",
       "pick_team": "New York Yankees",
       "confidence": 69,
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 11
+    },
+    {
+      "id": "2026-07-04_MLB_Astros_vs_Rays",
+      "date": "2026-07-04",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Houston Astros",
+      "away_team": "Tampa Bay Rays",
+      "home_abbr": "HOU",
+      "away_abbr": "TB",
+      "pick_label": "TB +1.5",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 67,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 227,
+    "total": 229,
     "wins": 124,
-    "losses": 103,
-    "pending": 7,
-    "win_pct": 54.6,
-    "current_streak": "W1",
+    "losses": 105,
+    "pending": 6,
+    "win_pct": 54.1,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -4431,7 +4447,7 @@
       },
       "baseball": {
         "w": 94,
-        "l": 86
+        "l": 88
       },
       "hockey": {
         "w": 6,
