@@ -1543,7 +1543,7 @@
                         <span class="pred-odds-item">Spread: <span>{{ pick.odds.spread }}</span></span>
                         {% endif %}
                         {% if pick.odds.over_under %}
-                        <span class="pred-odds-item">O/U: <span>{{ pick.odds.over_under }}</span></span>
+                        <span class="pred-odds-item">{% if sport_key == 'baseball' %}Alta/Baja Carreras{% elif sport_key == 'basketball' %}Alta/Baja Puntos{% elif sport_key in ('hockey', 'futbol') %}Alta/Baja Goles{% else %}O/U{% endif %}: <span>{{ pick.odds.over_under }}</span></span>
                         {% endif %}
                         {% if pick.odds.home_ml %}
                         <span class="pred-odds-item">ML Local: <span>{{ pick.odds.home_ml }}</span></span>
@@ -1572,7 +1572,7 @@
                                 <span class="pred-odds-item">Spread: <span>{{ bm.spread }}</span></span>
                                 {% endif %}
                                 {% if bm.total %}
-                                <span class="pred-odds-item">O/U: <span>{{ bm.total }}</span></span>
+                                <span class="pred-odds-item">{% if sport_key == 'baseball' %}Alta/Baja Carreras{% elif sport_key == 'basketball' %}Alta/Baja Puntos{% elif sport_key in ('hockey', 'futbol') %}Alta/Baja Goles{% else %}O/U{% endif %}: <span>{{ bm.total }}</span></span>
                                 {% endif %}
                             </div>
                             {% endfor %}

@@ -485,7 +485,7 @@ def parse_streak_number(streak_str):
     return 0
 
 
-def calculate_confidence(home_data, away_data, home_injuries, away_injuries, odds, is_soccer=False):
+def calculate_confidence(home_data, away_data, home_injuries, away_injuries, odds, is_soccer=False, sport=""):
     """
     Calcula score de confianza (0-100) para un partido.
     Retorna (score, pick_team, pick_label, factors).
@@ -569,7 +569,8 @@ def calculate_confidence(home_data, away_data, home_injuries, away_injuries, odd
         spread_display = odds.get("spread", "N/A")
         home_ml = odds.get("home_ml", "")
         away_ml = odds.get("away_ml", "")
-        factors.append(f"Linea: {spread_display} | O/U: {ou} | ML: {home_ml}/{away_ml}")
+        ou_label = {"baseball": "Alta/Baja Carreras", "basketball": "Alta/Baja Puntos", "hockey": "Alta/Baja Goles"}.get(sport, "Alta/Baja Goles" if is_soccer else "O/U")
+        factors.append(f"Linea: {spread_display} | {ou_label}: {ou} | ML: {home_ml}/{away_ml}")
     elif not is_soccer:
         factors.append("Lineas no disponibles")
     else:
@@ -1128,7 +1129,8 @@ def fetch_predictions_for_league(league_name, league_info):
 
         # Calcular confianza
         confidence, pick_team_name, pick_label, factors = calculate_confidence(
-            home_data, away_data, home_injuries, away_injuries, odds, is_soccer
+            home_data, away_data, home_injuries, away_injuries, odds, is_soccer,
+            sport=league_info["sport"]
         )
 
         # Apuestas adicionales para futbol (esquinas, tarjetas, remates, goleadores, alineaciones)
