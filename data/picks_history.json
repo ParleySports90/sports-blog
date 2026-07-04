@@ -4399,13 +4399,29 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-07-04_MLB_Yankees_vs_Twins",
+      "date": "2026-07-04",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "New York Yankees",
+      "away_team": "Minnesota Twins",
+      "home_abbr": "NYY",
+      "away_abbr": "MIN",
+      "pick_label": "NYY +6.5",
+      "pick_team": "New York Yankees",
+      "confidence": 69,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 227,
     "wins": 124,
     "losses": 103,
-    "pending": 6,
+    "pending": 7,
     "win_pct": 54.6,
     "current_streak": "W1",
     "by_sport": {
