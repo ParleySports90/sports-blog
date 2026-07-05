@@ -73,10 +73,12 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: Publish Pick del Dia to Instagram
-        if: ${{ secrets.INSTAGRAM_ACCESS_TOKEN != '' }}
+        if: ${{ secrets.MAKE_WEBHOOK_URL != '' }}
         continue-on-error: true
         env:
-          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
-          INSTAGRAM_ACCOUNT_ID: ${{ secrets.INSTAGRAM_ACCOUNT_ID }}
+          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-        run: python main.py ig-publish
+        run: |
+          echo "Esperando que GitHub Pages propague la imagen (60s)..."
+          sleep 60
+          python main.py ig-publish
