@@ -48,6 +48,8 @@ jobs:
 
       - name: Generate Instagram cards
         run: python main.py instagram
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
 
       - name: Save picks history
         run: |
@@ -69,3 +71,12 @@ jobs:
           path: output
       - id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Publish Pick del Dia to Instagram
+        if: ${{ secrets.INSTAGRAM_ACCESS_TOKEN != '' }}
+        continue-on-error: true
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_ACCOUNT_ID: ${{ secrets.INSTAGRAM_ACCOUNT_ID }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python main.py ig-publish

@@ -11,6 +11,7 @@ Uso:
     python main.py schedule       - Regenera automaticamente en horarios definidos
     python main.py open           - Abre el blog en el navegador
     python main.py instagram      - Genera cards PNG para publicar en Instagram
+    python main.py ig-publish     - Publica el Pick del Dia en Instagram automaticamente
     python main.py telegram       - Genera y envia pronosticos a Telegram
     python main.py telegram-setup - Guia interactiva para configurar el bot
 """
@@ -53,7 +54,7 @@ def cmd_build():
 
 def cmd_instagram():
     """Genera cards para Instagram con los pronosticos del dia."""
-    from instagram import generate_instagram_images
+    from instagram import generate_instagram_images, generate_pick_del_dia_card
     print("[*] Generando pronosticos para Instagram...")
     predictions = fetch_all_predictions(
         min_picks=config.MIN_PICKS_PER_SPORT,
@@ -61,12 +62,28 @@ def cmd_instagram():
     )
     tracking = get_tracking_data()
     paths = generate_instagram_images(predictions, tracking)
+    pick_path = generate_pick_del_dia_card(predictions)
+    if pick_path:
+        paths.append(pick_path)
     if paths:
         print(f"\n[OK] {len(paths)} cards generados en output/instagram/")
         for p in paths:
             print(f"     {os.path.abspath(p)}")
     else:
         print("[!] No se generaron imagenes.")
+
+
+def cmd_ig_publish():
+    """Publica el Pick del Dia en Instagram via Meta Graph API."""
+    from ig_publisher import publish_pick_del_dia
+    print("[*] Publicando Pick del Dia en Instagram...")
+    predictions = fetch_all_predictions(
+        min_picks=config.MIN_PICKS_PER_SPORT,
+        confidence_threshold=config.CONFIDENCE_THRESHOLD,
+    )
+    ok = publish_pick_del_dia(predictions)
+    if not ok:
+        sys.exit(1)
 
 
 def cmd_scores():
@@ -195,6 +212,8 @@ def main():
         cmd_open()
     elif command == "instagram":
         cmd_instagram()
+    elif command == "ig-publish":
+        cmd_ig_publish()
     elif command == "telegram":
         cmd_telegram()
     elif command == "telegram-setup":
