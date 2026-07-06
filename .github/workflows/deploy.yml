@@ -73,7 +73,6 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: Publish Pick del Dia to Instagram
-        if: ${{ secrets.MAKE_WEBHOOK_URL != '' }}
         continue-on-error: true
         env:
           MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
