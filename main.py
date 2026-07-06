@@ -99,7 +99,8 @@ def cmd_ig_publish():
 def cmd_ig_reel():
     """Genera y publica Reel educativo semanal en Instagram."""
     from reels import generate_reel
-    from ig_publisher import publish_reel
+    from ig_publisher import publish_reel, build_reel_caption
+    from telegram_bot import send_reel_notification
     print("[*] Generando Reel educativo...")
     topic_id = None
     if len(sys.argv) > 2:
@@ -111,9 +112,11 @@ def cmd_ig_reel():
     # URL publica en GitHub Pages
     filename = os.path.basename(mp4_path)
     video_url = f"https://parleysports90.github.io/sports-blog/instagram/reels/{filename}"
-    ok = publish_reel(video_url, topic)
-    if not ok:
-        sys.exit(1)
+    caption = build_reel_caption(topic)
+    # Notificar por Telegram (descarga manual + caption listo para copiar)
+    send_reel_notification(video_url, topic, caption)
+    # Intentar publicar via Make.com (opcional, puede no estar configurado)
+    publish_reel(video_url, topic)
 
 
 def cmd_ig_poll():

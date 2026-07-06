@@ -104,11 +104,12 @@ jobs:
         continue-on-error: true
         env:
           MAKE_VIDEO_WEBHOOK_URL: ${{ secrets.MAKE_VIDEO_WEBHOOK_URL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: |
           python main.py ig-reel
-          sleep 90
-          echo "Video generado, esperando deploy para publicar..."
+          echo "Reel generado y notificacion de Telegram enviada."
 
       - name: Publish Stats to Instagram
         if: github.event_name == 'schedule' && github.event.schedule == '0 18 1,15 * *'

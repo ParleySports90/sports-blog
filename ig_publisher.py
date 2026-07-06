@@ -266,13 +266,8 @@ Racha: {streak}
     })
 
 
-def publish_reel(video_url, topic):
-    """Publica un Reel educativo via Make.com webhook."""
-    webhook_url = os.environ.get("MAKE_VIDEO_WEBHOOK_URL", "")
-    if not webhook_url:
-        print("  [IG] MAKE_VIDEO_WEBHOOK_URL no configurada.")
-        return False
-
+def build_reel_caption(topic):
+    """Construye el caption de Instagram para un Reel educativo."""
     emoji = topic.get("emoji", "🎯")
     title = topic.get("title", "")
     subtitle = topic.get("subtitle", "")
@@ -282,8 +277,7 @@ def publish_reel(video_url, topic):
         f"▸ {s['headline']} {s['highlight']}"
         for s in slides if s.get("type") not in ("hook", "cta")
     )
-
-    caption = f"""{emoji} {title.upper()}
+    return f"""{emoji} {title.upper()}
 {subtitle} — {today}
 ━━━━━━━━━━━━━━━━━━━━
 {bullet_lines}
@@ -295,6 +289,17 @@ Síguenos para picks diarios gratuitos 🎯
 
 #ApuestasDeportivas #Educacion #Beisbol #MLB #Pronosticos #ParleySports #TipsDeApuestas #PickDelDia #ApuestaResponsable""".strip()
 
+
+def publish_reel(video_url, topic):
+    """Publica un Reel educativo via Make.com webhook."""
+    webhook_url = os.environ.get("MAKE_VIDEO_WEBHOOK_URL", "")
+    if not webhook_url:
+        print("  [IG] MAKE_VIDEO_WEBHOOK_URL no configurada.")
+        return False
+
+    caption = build_reel_caption(topic)
+    emoji = topic.get("emoji", "🎯")
+    title = topic.get("title", "")
     print(f"  [IG] Publicando Reel: {emoji} {title}")
 
     return _send_webhook(webhook_url, {
