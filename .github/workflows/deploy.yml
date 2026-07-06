@@ -73,7 +73,7 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: Publish Pick del Dia to Instagram
-        if: github.event_name == 'schedule'
+        if: github.event_name == 'schedule' && github.event.schedule == '0 14 * * *'
         continue-on-error: true
         env:
           MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}

@@ -86,6 +86,10 @@ def publish_pick_del_dia(predictions):
         print("  [IG] Sin picks disponibles para publicar.")
         return False
 
+    if best["pick"].get("confidence", 0) < 75:
+        print(f"  [IG] Pick del dia ({best['pick'].get('confidence')}%) no alcanza nivel FIJO (75%). No se publica.")
+        return False
+
     pick = best["pick"]
     sport_key = best["sport_key"]
     sport_data = best["sport_data"]
