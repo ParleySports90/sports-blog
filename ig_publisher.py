@@ -266,6 +266,46 @@ Racha: {streak}
     })
 
 
+def publish_reel(video_url, topic):
+    """Publica un Reel educativo via Make.com webhook."""
+    webhook_url = os.environ.get("MAKE_VIDEO_WEBHOOK_URL", "")
+    if not webhook_url:
+        print("  [IG] MAKE_VIDEO_WEBHOOK_URL no configurada.")
+        return False
+
+    emoji = topic.get("emoji", "🎯")
+    title = topic.get("title", "")
+    subtitle = topic.get("subtitle", "")
+    today = datetime.now().strftime("%d/%m/%Y")
+    slides = topic.get("slides", [])
+    bullet_lines = "\n".join(
+        f"▸ {s['headline']} {s['highlight']}"
+        for s in slides if s.get("type") not in ("hook", "cta")
+    )
+
+    caption = f"""{emoji} {title.upper()}
+{subtitle} — {today}
+━━━━━━━━━━━━━━━━━━━━
+{bullet_lines}
+━━━━━━━━━━━━━━━━━━━━
+Guarda este video para referencia 🔖
+Síguenos para picks diarios gratuitos 🎯
+
+🔗 {SITE_URL}
+
+#ApuestasDeportivas #Educacion #Beisbol #MLB #Pronosticos #ParleySports #TipsDeApuestas #PickDelDia #ApuestaResponsable""".strip()
+
+    print(f"  [IG] Publicando Reel: {emoji} {title}")
+
+    return _send_webhook(webhook_url, {
+        "video_url": video_url,
+        "caption": caption,
+        "type": "reel",
+        "topic_id": topic.get("id", ""),
+        "topic_title": title,
+    })
+
+
 def publish_stats(tracking_data):
     """Publica card de estadisticas de aciertos."""
     webhook_url = os.environ.get("MAKE_WEBHOOK_URL", "")

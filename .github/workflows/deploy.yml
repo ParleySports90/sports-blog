@@ -9,6 +9,7 @@ on:
     - cron: '0 23 * * *'
     - cron: '0 2 * * *'
     - cron: '0 18 1,15 * *'
+    - cron: '0 16 * * 3'
   push:
     branches: [master]
   workflow_dispatch:
@@ -97,6 +98,17 @@ jobs:
           echo "Esperando propagacion de GitHub Pages (60s)..."
           sleep 60
           python main.py ig-publish
+
+      - name: Publish Educational Reel to Instagram
+        if: github.event_name == 'schedule' && github.event.schedule == '0 16 * * 3'
+        continue-on-error: true
+        env:
+          MAKE_VIDEO_WEBHOOK_URL: ${{ secrets.MAKE_VIDEO_WEBHOOK_URL }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: |
+          python main.py ig-reel
+          sleep 90
+          echo "Video generado, esperando deploy para publicar..."
 
       - name: Publish Stats to Instagram
         if: github.event_name == 'schedule' && github.event.schedule == '0 18 1,15 * *'

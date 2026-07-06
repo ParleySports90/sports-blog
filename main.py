@@ -13,6 +13,7 @@ Uso:
     python main.py instagram      - Genera cards PNG para publicar en Instagram
     python main.py ig-publish     - Publica el Pick del Dia en Instagram automaticamente
     python main.py ig-poll        - Publica encuesta del partido mas importante del dia
+    python main.py ig-reel        - Genera y publica Reel educativo semanal
     python main.py telegram       - Genera y envia pronosticos a Telegram
     python main.py telegram-setup - Guia interactiva para configurar el bot
 """
@@ -91,6 +92,26 @@ def cmd_ig_publish():
         confidence_threshold=config.CONFIDENCE_THRESHOLD,
     )
     ok = publish_pick_del_dia(predictions)
+    if not ok:
+        sys.exit(1)
+
+
+def cmd_ig_reel():
+    """Genera y publica Reel educativo semanal en Instagram."""
+    from reels import generate_reel
+    from ig_publisher import publish_reel
+    print("[*] Generando Reel educativo...")
+    topic_id = None
+    if len(sys.argv) > 2:
+        topic_id = sys.argv[2]  # python main.py ig-reel run_line
+    mp4_path, topic = generate_reel(topic_id=topic_id)
+    if not mp4_path or not topic:
+        print("[!] No se pudo generar el Reel.")
+        sys.exit(1)
+    # URL publica en GitHub Pages
+    filename = os.path.basename(mp4_path)
+    video_url = f"https://parleysports90.github.io/sports-blog/instagram/reels/{filename}"
+    ok = publish_reel(video_url, topic)
     if not ok:
         sys.exit(1)
 
@@ -267,6 +288,8 @@ def main():
         cmd_instagram()
     elif command == "ig-publish":
         cmd_ig_publish()
+    elif command == "ig-reel":
+        cmd_ig_reel()
     elif command == "ig-poll":
         cmd_ig_poll()
     elif command == "ig-result":
