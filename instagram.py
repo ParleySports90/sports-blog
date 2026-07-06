@@ -516,6 +516,160 @@ def generate_pick_del_dia_card(predictions, output_dir=OUTPUT_DIR):
     return out_path
 
 
+def _build_stats_card_html(stats, site_url="parleysports90.github.io/sports-blog"):
+    today = datetime.now().strftime("%d %b %Y").upper()
+    w = stats.get("wins", 0)
+    l = stats.get("losses", 0)
+    total = stats.get("total", 0)
+    pct = stats.get("win_pct", 0)
+    streak = stats.get("current_streak", "—")
+    pct_bar = min(pct, 100)
+    pct_class = "high" if pct >= 60 else ("medium" if pct >= 50 else "low")
+
+    recent = stats.get("recent_picks", [])
+    recent_html = ""
+    for p in recent[:5]:
+        result = p.get("result", "pending")
+        icon = "✅" if result == "win" else ("❌" if result == "loss" else "⏳")
+        label = p.get("pick_label", "")
+        sport = p.get("sport", "")
+        recent_html += f'<div class="pick-row"><span class="pick-icon">{icon}</span><span class="pick-info">{sport} — {label}</span></div>'
+
+    css = """
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+    width:1080px; min-height:1350px;
+    background:linear-gradient(150deg,#0a0e17 0%,#0d1520 50%,#0a0e17 100%);
+    font-family:'Inter',-apple-system,sans-serif;
+    color:#e6edf3; display:flex; flex-direction:column;
+    padding:60px 72px 56px; position:relative; overflow:hidden;
+}
+body::before {
+    content:""; position:absolute; top:-120px; right:-120px;
+    width:700px; height:700px;
+    background:radial-gradient(circle,rgba(100,181,246,0.08) 0%,transparent 65%);
+    pointer-events:none;
+}
+.banner {
+    background:linear-gradient(90deg,#1565c0,#0d47a1);
+    border-radius:10px; padding:12px 28px;
+    font-family:'Oswald',sans-serif; font-size:1.4rem;
+    font-weight:700; letter-spacing:3px; text-align:center;
+    color:#fff; margin-bottom:32px;
+}
+.header { display:flex; justify-content:space-between; align-items:center; margin-bottom:32px; }
+.title { font-family:'Oswald',sans-serif; font-size:2.2rem; font-weight:700; color:#fff; letter-spacing:2px; }
+.date-badge { font-size:0.85rem; color:#8b949e; background:#161b22; border:1px solid #30363d; border-radius:8px; padding:8px 16px; }
+.divider { height:2px; background:linear-gradient(90deg,#64b5f6 0%,rgba(100,181,246,0.2) 70%,transparent 100%); margin-bottom:36px; border-radius:2px; }
+.stats-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:32px; }
+.stat-box { background:#161b22; border:1px solid #30363d; border-radius:14px; padding:24px; text-align:center; }
+.stat-num { font-family:'Oswald',sans-serif; font-size:3.5rem; font-weight:700; line-height:1; }
+.stat-num.green { color:#4caf50; }
+.stat-num.red { color:#e94560; }
+.stat-num.blue { color:#64b5f6; }
+.stat-lbl { font-size:0.85rem; color:#8b949e; margin-top:6px; text-transform:uppercase; letter-spacing:1px; }
+.pct-box { background:#161b22; border:1px solid #30363d; border-radius:14px; padding:24px; margin-bottom:24px; }
+.pct-title { font-size:0.85rem; color:#8b949e; text-transform:uppercase; letter-spacing:1px; margin-bottom:14px; }
+.pct-row { display:flex; align-items:center; gap:16px; }
+.pct-bar-bg { flex:1; height:14px; background:#21262d; border-radius:7px; overflow:hidden; }
+.pct-bar { height:100%; border-radius:7px; }
+.pct-bar.high { background:linear-gradient(90deg,#388e3c,#4caf50); }
+.pct-bar.medium { background:linear-gradient(90deg,#f57c00,#ffb74d); }
+.pct-bar.low { background:linear-gradient(90deg,#c62828,#e94560); }
+.pct-num { font-family:'Oswald',sans-serif; font-size:2rem; font-weight:700; min-width:72px; text-align:right; }
+.pct-num.high { color:#4caf50; }
+.pct-num.medium { color:#ffb74d; }
+.pct-num.low { color:#e94560; }
+.recent-box { background:#161b22; border:1px solid #30363d; border-radius:14px; padding:20px; flex:1; margin-bottom:24px; }
+.recent-title { font-size:0.8rem; color:#8b949e; text-transform:uppercase; letter-spacing:1px; margin-bottom:12px; }
+.pick-row { display:flex; align-items:center; gap:10px; padding:7px 0; border-bottom:1px solid #21262d; }
+.pick-row:last-child { border-bottom:none; }
+.pick-icon { font-size:1rem; }
+.pick-info { font-size:0.82rem; color:#8b949e; }
+.streak-box { background:#161b22; border:1px solid #30363d; border-radius:14px; padding:18px 24px; margin-bottom:24px; display:flex; align-items:center; justify-content:space-between; }
+.streak-label { font-size:0.85rem; color:#8b949e; text-transform:uppercase; letter-spacing:1px; }
+.streak-val { font-family:'Oswald',sans-serif; font-size:1.8rem; font-weight:700; color:#ffb74d; }
+.footer { margin-top:auto; padding-top:20px; border-top:1px solid #21262d; display:flex; justify-content:space-between; align-items:center; }
+.brand-url { font-size:0.8rem; color:#484f58; }
+.brand-tag { font-family:'Oswald',sans-serif; font-size:1rem; font-weight:700; color:#64b5f6; letter-spacing:1.5px; }
+"""
+
+    return f"""<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>{css}</style>
+</head>
+<body>
+    <div class="banner">📊 ESTADÍSTICAS DE ACIERTOS</div>
+    <div class="header">
+        <span class="title">PARLEYSPORTS90</span>
+        <span class="date-badge">{today}</span>
+    </div>
+    <div class="divider"></div>
+    <div class="stats-grid">
+        <div class="stat-box">
+            <div class="stat-num green">{w}</div>
+            <div class="stat-lbl">Ganados ✅</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-num red">{l}</div>
+            <div class="stat-lbl">Perdidos ❌</div>
+        </div>
+        <div class="stat-box" style="grid-column:1/-1">
+            <div class="stat-num blue">{total}</div>
+            <div class="stat-lbl">Total de picks analizados</div>
+        </div>
+    </div>
+    <div class="pct-box">
+        <div class="pct-title">Porcentaje de acierto</div>
+        <div class="pct-row">
+            <div class="pct-bar-bg"><div class="pct-bar {pct_class}" style="width:{pct_bar}%"></div></div>
+            <span class="pct-num {pct_class}">{pct}%</span>
+        </div>
+    </div>
+    <div class="streak-box">
+        <span class="streak-label">🔥 Racha actual</span>
+        <span class="streak-val">{streak}</span>
+    </div>
+    {"<div class='recent-box'><div class='recent-title'>Últimos picks</div>" + recent_html + "</div>" if recent_html else ""}
+    <div class="footer">
+        <span class="brand-url">{site_url}</span>
+        <span class="brand-tag">@PARLEYSPORTS90</span>
+    </div>
+</body>
+</html>"""
+
+
+def generate_stats_card(tracking_data, output_dir=OUTPUT_DIR):
+    """Genera card PNG de estadisticas de aciertos. Retorna ruta o None."""
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        return None
+
+    stats = (tracking_data or {}).get("stats", {})
+    if not stats or stats.get("total", 0) == 0:
+        print("  [Instagram] Sin estadisticas para generar card.")
+        return None
+
+    os.makedirs(output_dir, exist_ok=True)
+    html = _build_stats_card_html(stats)
+    out_path = os.path.join(output_dir, "stats_card.png")
+
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch()
+        page = browser.new_page(viewport={"width": 1080, "height": 1350})
+        page.set_content(html, wait_until="networkidle")
+        page.screenshot(path=out_path, full_page=True)
+        browser.close()
+
+    print(f"  [Instagram] Stats card: {out_path}")
+    return out_path
+
+
 def generate_instagram_images(predictions, tracking_data=None, output_dir=OUTPUT_DIR):
     """Genera un card PNG por deporte/liga. Retorna lista de rutas generadas."""
     try:

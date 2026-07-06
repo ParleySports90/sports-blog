@@ -1,5 +1,5 @@
 """
-Publica el Pick del Dia en Instagram via Make.com webhook.
+Publica en Instagram via Make.com webhook.
 Requiere: MAKE_WEBHOOK_URL en variables de entorno.
 """
 
@@ -9,10 +9,10 @@ from datetime import datetime
 
 SITE_URL = "https://parleysports90.github.io/sports-blog"
 PICK_IMAGE_URL = f"{SITE_URL}/instagram/pick_del_dia.png"
+STATS_IMAGE_URL = f"{SITE_URL}/instagram/stats_card.png"
 
 
 def _best_pick(predictions):
-    """Retorna el pick con mayor confianza de todos los deportes."""
     best = None
     best_conf = 0
     for sport_key, sport_data in predictions.items():
@@ -20,16 +20,11 @@ def _best_pick(predictions):
             conf = pick.get("confidence", 0)
             if conf > best_conf:
                 best_conf = conf
-                best = {
-                    "pick": pick,
-                    "sport_key": sport_key,
-                    "sport_data": sport_data,
-                }
+                best = {"pick": pick, "sport_key": sport_key, "sport_data": sport_data}
     return best
 
 
-def _build_caption(pick, sport_key, sport_data):
-    """Genera caption optimizado para Instagram."""
+def _build_pick_caption(pick, sport_key, sport_data):
     sport_icon = sport_data.get("icon", "🎯")
     home = pick.get("home_team", "")
     away = pick.get("away_team", "")
@@ -45,7 +40,6 @@ def _build_caption(pick, sport_key, sport_data):
         conf_badge = "📊 ANÁLISIS"
 
     today = datetime.now().strftime("%d/%m/%Y")
-
     factors = pick.get("factors", [])
     factor_line = f"\n💡 {factors[0][:90]}" if factors else ""
 
@@ -57,7 +51,7 @@ def _build_caption(pick, sport_key, sport_data):
     }
     hashtags = hashtags_map.get(sport_key, "#Deportes #Pronosticos")
 
-    caption = f"""{sport_icon} PICK DEL DÍA — {league.upper()}
+    return f"""{sport_icon} PICK DEL DÍA — {league.upper()}
 📅 {today}
 ━━━━━━━━━━━━━━━━━━━━
 ⚔️ {away} vs {home}
@@ -68,17 +62,50 @@ def _build_caption(pick, sport_key, sport_data):
 🔗 Análisis completo en bio
 👉 {SITE_URL}
 
-{hashtags} #ParleySports #Pronosticos #PickDelDia #Apuestas"""
+{hashtags} #ParleySports #Pronosticos #PickDelDia #Apuestas""".strip()
 
-    return caption.strip()
+
+def _build_stats_caption(stats):
+    today = datetime.now().strftime("%d/%m/%Y")
+    w = stats.get("wins", 0)
+    l = stats.get("losses", 0)
+    total = stats.get("total", 0)
+    pct = stats.get("win_pct", 0)
+    streak = stats.get("current_streak", "—")
+
+    return f"""📊 ESTADÍSTICAS DE ACIERTOS
+📅 Actualizado: {today}
+━━━━━━━━━━━━━━━━━━━━
+✅ Ganados: {w}
+❌ Perdidos: {l}
+🎯 Total picks: {total}
+📈 Porcentaje de acierto: {pct}%
+🔥 Racha actual: {streak}
+━━━━━━━━━━━━━━━━━━━━
+🔗 Ver todos los picks en bio
+👉 {SITE_URL}
+
+#ParleySports #Estadisticas #Pronosticos #Aciertos #PickDelDia""".strip()
+
+
+def _send_webhook(webhook_url, payload):
+    try:
+        r = requests.post(webhook_url, json=payload, timeout=30)
+        if r.status_code == 200:
+            print(f"  [IG OK] Make.com recibio el webhook correctamente!")
+            return True
+        print(f"  [IG ERROR] Status {r.status_code}: {r.text[:200]}")
+        return False
+    except Exception as e:
+        print(f"  [IG ERROR] {e}")
+        return False
 
 
 def publish_pick_del_dia(predictions):
-    """Publica el Pick del Dia en Instagram via Make.com webhook."""
+    """Publica el pick con mayor confianza del dia."""
     webhook_url = os.environ.get("MAKE_WEBHOOK_URL", "")
-
     if not webhook_url:
-        print("  [IG] MAKE_WEBHOOK_URL no configurada. Saltando publicacion.")
+        print("  [IG] MAKE_WEBHOOK_URL no configurada.")
         return False
 
     best = _best_pick(predictions)
@@ -86,37 +113,44 @@ def publish_pick_del_dia(predictions):
         print("  [IG] Sin picks disponibles para publicar.")
         return False
 
-    if best["pick"].get("confidence", 0) < 75:
-        print(f"  [IG] Pick del dia ({best['pick'].get('confidence')}%) no alcanza nivel FIJO (75%). No se publica.")
-        return False
-
     pick = best["pick"]
     sport_key = best["sport_key"]
     sport_data = best["sport_data"]
-    caption = _build_caption(pick, sport_key, sport_data)
+    caption = _build_pick_caption(pick, sport_key, sport_data)
 
     print(f"  [IG] Pick del Dia: {pick.get('pick_label')} — {pick.get('confidence')}%")
-    print(f"  [IG] Imagen: {PICK_IMAGE_URL}")
     print(f"  [IG] Enviando a Make.com...")
 
-    payload = {
+    return _send_webhook(webhook_url, {
         "image_url": PICK_IMAGE_URL,
         "caption": caption,
+        "type": "pick",
         "sport": sport_key,
         "confidence": pick.get("confidence", 0),
         "pick_label": pick.get("pick_label", ""),
         "home_team": pick.get("home_team", ""),
         "away_team": pick.get("away_team", ""),
-    }
+    })
 
-    try:
-        r = requests.post(webhook_url, json=payload, timeout=30)
-        if r.status_code == 200:
-            print(f"  [IG OK] Make.com recibio el webhook correctamente!")
-            return True
-        else:
-            print(f"  [IG ERROR] Status {r.status_code}: {r.text[:200]}")
-            return False
-    except Exception as e:
-        print(f"  [IG ERROR] {e}")
+
+def publish_stats(tracking_data):
+    """Publica card de estadisticas de aciertos."""
+    webhook_url = os.environ.get("MAKE_WEBHOOK_URL", "")
+    if not webhook_url:
+        print("  [IG] MAKE_WEBHOOK_URL no configurada.")
         return False
+
+    stats = tracking_data.get("stats", {})
+    if not stats or stats.get("total", 0) == 0:
+        print("  [IG] Sin estadisticas disponibles para publicar.")
+        return False
+
+    caption = _build_stats_caption(stats)
+    print(f"  [IG] Publicando estadisticas: {stats.get('wins')}W-{stats.get('losses')}L ({stats.get('win_pct')}%)")
+    print(f"  [IG] Enviando a Make.com...")
+
+    return _send_webhook(webhook_url, {
+        "image_url": STATS_IMAGE_URL,
+        "caption": caption,
+        "type": "stats",
+    })

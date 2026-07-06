@@ -54,7 +54,7 @@ def cmd_build():
 
 def cmd_instagram():
     """Genera cards para Instagram con los pronosticos del dia."""
-    from instagram import generate_instagram_images, generate_pick_del_dia_card
+    from instagram import generate_instagram_images, generate_pick_del_dia_card, generate_stats_card
     print("[*] Generando pronosticos para Instagram...")
     predictions = fetch_all_predictions(
         min_picks=config.MIN_PICKS_PER_SPORT,
@@ -65,6 +65,9 @@ def cmd_instagram():
     pick_path = generate_pick_del_dia_card(predictions)
     if pick_path:
         paths.append(pick_path)
+    stats_path = generate_stats_card(tracking)
+    if stats_path:
+        paths.append(stats_path)
     if paths:
         print(f"\n[OK] {len(paths)} cards generados en output/instagram/")
         for p in paths:
@@ -74,7 +77,7 @@ def cmd_instagram():
 
 
 def cmd_ig_publish():
-    """Publica el Pick del Dia en Instagram via Meta Graph API."""
+    """Publica el Pick del Dia en Instagram via Make.com webhook."""
     from ig_publisher import publish_pick_del_dia
     print("[*] Publicando Pick del Dia en Instagram...")
     predictions = fetch_all_predictions(
@@ -82,6 +85,16 @@ def cmd_ig_publish():
         confidence_threshold=config.CONFIDENCE_THRESHOLD,
     )
     ok = publish_pick_del_dia(predictions)
+    if not ok:
+        sys.exit(1)
+
+
+def cmd_ig_stats():
+    """Publica estadisticas de aciertos en Instagram via Make.com webhook."""
+    from ig_publisher import publish_stats
+    print("[*] Publicando estadisticas en Instagram...")
+    tracking = get_tracking_data()
+    ok = publish_stats(tracking)
     if not ok:
         sys.exit(1)
 
@@ -214,6 +227,8 @@ def main():
         cmd_instagram()
     elif command == "ig-publish":
         cmd_ig_publish()
+    elif command == "ig-stats":
+        cmd_ig_stats()
     elif command == "telegram":
         cmd_telegram()
     elif command == "telegram-setup":

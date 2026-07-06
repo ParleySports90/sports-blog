@@ -8,6 +8,7 @@ on:
     - cron: '0 20 * * *'
     - cron: '0 23 * * *'
     - cron: '0 2 * * *'
+    - cron: '0 18 1,15 * *'
   push:
     branches: [master]
   workflow_dispatch:
@@ -82,3 +83,13 @@ jobs:
           echo "Esperando que GitHub Pages propague la imagen (60s)..."
           sleep 60
           python main.py ig-publish
+
+      - name: Publish Stats to Instagram
+        if: github.event_name == 'schedule' && github.event.schedule == '0 18 1,15 * *'
+        continue-on-error: true
+        env:
+          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+        run: |
+          echo "Esperando que GitHub Pages propague la imagen (60s)..."
+          sleep 60
+          python main.py ig-stats
