@@ -133,6 +133,61 @@ def publish_pick_del_dia(predictions):
     })
 
 
+def publish_results(results, stats):
+    """Publica card de resultados del dia anterior."""
+    webhook_url = os.environ.get("MAKE_WEBHOOK_URL", "")
+    if not webhook_url:
+        print("  [IG] MAKE_WEBHOOK_URL no configurada.")
+        return False
+    if not results:
+        print("  [IG] Sin resultados nuevos para publicar.")
+        return False
+
+    day_wins = sum(1 for r in results if r["status"] == "won")
+    day_losses = sum(1 for r in results if r["status"] == "lost")
+    total_w = stats.get("wins", 0)
+    total_l = stats.get("losses", 0)
+    pct = stats.get("win_pct", 0)
+    streak = stats.get("current_streak", "—")
+    today = datetime.now().strftime("%d/%m/%Y")
+
+    lines = []
+    for r in results:
+        icon = "✅" if r["status"] == "won" else "❌"
+        label = r.get("pick_label", "")
+        hs = r.get("home_score")
+        as_ = r.get("away_score")
+        ha = r.get("home_abbr") or r.get("home_team", "")[:3].upper()
+        aa = r.get("away_abbr") or r.get("away_team", "")[:3].upper()
+        score = f"{aa} {as_}-{hs} {ha}" if hs is not None else f"{aa} vs {ha}"
+        lines.append(f"{icon} {label} | {score}")
+
+    result_list = "\n".join(lines)
+    caption = f"""📊 RESULTADOS — {today}
+━━━━━━━━━━━━━━━━━━━━
+{result_list}
+━━━━━━━━━━━━━━━━━━━━
+Día: {day_wins}W — {day_losses}L
+Acumulado: {total_w}W-{total_l}L ({pct}%) 🎯
+Racha: {streak}
+━━━━━━━━━━━━━━━━━━━━
+🔗 Picks de hoy ya publicados 👆
+👉 {SITE_URL}
+
+#ParleySports #Resultados #PickDelDia #Pronosticos #Aciertos""".strip()
+
+    image_url = f"{SITE_URL}/instagram/resultados.png"
+    print(f"  [IG] Publicando resultados: {day_wins}W-{day_losses}L")
+
+    return _send_webhook(webhook_url, {
+        "image_url": image_url,
+        "caption": caption,
+        "type": "results",
+        "day_wins": day_wins,
+        "day_losses": day_losses,
+    })
+
+
 def publish_stats(tracking_data):
     """Publica card de estadisticas de aciertos."""
     webhook_url = os.environ.get("MAKE_WEBHOOK_URL", "")

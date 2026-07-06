@@ -395,6 +395,30 @@ def _recalculate_stats(data):
     data["stats"] = stats
 
 
+def get_unposted_results(days_back=2):
+    """Retorna picks resueltos recientemente que no han sido publicados en IG."""
+    data = _load_data()
+    cutoff = (datetime.now() - timedelta(days=days_back)).strftime("%Y-%m-%d")
+    results = []
+    for pick in data["picks"]:
+        if (pick.get("status") in ("won", "lost")
+                and not pick.get("ig_posted", False)
+                and pick.get("date", "") >= cutoff):
+            results.append(pick)
+    results.sort(key=lambda x: x.get("date", ""))
+    return results
+
+
+def mark_ig_result_posted(pick_ids):
+    """Marca una lista de picks como publicados en Instagram."""
+    data = _load_data()
+    id_set = set(pick_ids)
+    for pick in data["picks"]:
+        if pick["id"] in id_set:
+            pick["ig_posted"] = True
+    _save_data(data)
+
+
 def get_stats():
     data = _load_data()
     return data["stats"]

@@ -643,6 +643,167 @@ body::before {
 </html>"""
 
 
+def _build_results_card_html(results, stats, site_url="parleysports90.github.io/sports-blog"):
+    if not results:
+        return None
+    date_str = results[0].get("date", datetime.now().strftime("%Y-%m-%d"))
+    try:
+        display_date = datetime.strptime(date_str, "%Y-%m-%d").strftime("%d %b %Y").upper()
+    except ValueError:
+        display_date = date_str.upper()
+
+    day_wins = sum(1 for r in results if r["status"] == "won")
+    day_losses = sum(1 for r in results if r["status"] == "lost")
+
+    rows_html = ""
+    for r in results:
+        icon = "✅" if r["status"] == "won" else "❌"
+        row_class = "won" if r["status"] == "won" else "lost"
+        label = r.get("pick_label", "")
+        home_abbr = r.get("home_abbr") or r.get("home_team", "")[:3].upper()
+        away_abbr = r.get("away_abbr") or r.get("away_team", "")[:3].upper()
+        hs = r.get("home_score")
+        as_ = r.get("away_score")
+        score_str = f"{away_abbr} {as_} – {hs} {home_abbr}" if hs is not None else f"{away_abbr} vs {home_abbr}"
+        conf = r.get("confidence", 0)
+        rows_html += f"""
+        <div class="result-row {row_class}">
+            <span class="res-icon">{icon}</span>
+            <div class="res-info">
+                <span class="res-label">{label}</span>
+                <span class="res-score">{score_str}</span>
+            </div>
+            <span class="res-conf">{conf}%</span>
+        </div>"""
+
+    total = stats.get("total", 0)
+    w = stats.get("wins", 0)
+    l = stats.get("losses", 0)
+    pct = stats.get("win_pct", 0)
+    streak = stats.get("current_streak", "—")
+    day_class = "high" if day_wins > day_losses else ("low" if day_losses > day_wins else "medium")
+
+    css = """
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+    width:1080px; min-height:1350px;
+    background:linear-gradient(150deg,#0a0e17 0%,#0d1520 50%,#0a0e17 100%);
+    font-family:'Inter',-apple-system,sans-serif;
+    color:#e6edf3; display:flex; flex-direction:column;
+    padding:56px 72px 52px; position:relative; overflow:hidden;
+}
+body::before {
+    content:""; position:absolute; top:-100px; right:-100px;
+    width:600px; height:600px;
+    background:radial-gradient(circle,rgba(233,69,96,0.07) 0%,transparent 65%);
+    pointer-events:none;
+}
+.banner {
+    border-radius:10px; padding:12px 28px;
+    font-family:'Oswald',sans-serif; font-size:1.4rem;
+    font-weight:700; letter-spacing:3px; text-align:center;
+    color:#fff; margin-bottom:28px;
+    background:linear-gradient(90deg,#1b5e20,#388e3c);
+}
+.header { display:flex; justify-content:space-between; align-items:center; margin-bottom:28px; }
+.title { font-family:'Oswald',sans-serif; font-size:1.8rem; font-weight:700; color:#fff; letter-spacing:2px; }
+.date-badge { font-size:0.85rem; color:#8b949e; background:#161b22; border:1px solid #30363d; border-radius:8px; padding:8px 16px; }
+.divider { height:2px; background:linear-gradient(90deg,#4caf50 0%,rgba(76,175,80,0.2) 70%,transparent 100%); margin-bottom:28px; border-radius:2px; }
+.results-list { display:flex; flex-direction:column; gap:12px; flex:1; margin-bottom:28px; }
+.result-row {
+    display:flex; align-items:center; gap:14px;
+    background:#161b22; border:1px solid #30363d;
+    border-radius:12px; padding:16px 20px;
+}
+.result-row.won { border-left:4px solid #4caf50; }
+.result-row.lost { border-left:4px solid #e94560; }
+.res-icon { font-size:1.4rem; flex-shrink:0; }
+.res-info { flex:1; display:flex; flex-direction:column; gap:3px; }
+.res-label { font-family:'Oswald',sans-serif; font-size:1.3rem; font-weight:600; color:#e6edf3; letter-spacing:0.5px; }
+.res-score { font-size:0.78rem; color:#8b949e; }
+.res-conf { font-size:0.85rem; font-weight:700; color:#8b949e; flex-shrink:0; }
+.summary-box {
+    background:#161b22; border:1px solid #30363d;
+    border-radius:14px; padding:20px 24px; margin-bottom:20px;
+}
+.day-record { display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; }
+.day-label { font-size:0.8rem; color:#8b949e; text-transform:uppercase; letter-spacing:1px; }
+.day-val { font-family:'Oswald',sans-serif; font-size:1.6rem; font-weight:700; }
+.day-val.high { color:#4caf50; }
+.day-val.medium { color:#ffb74d; }
+.day-val.low { color:#e94560; }
+.acc-row { display:flex; gap:20px; font-size:0.85rem; color:#8b949e; flex-wrap:wrap; }
+.acc-item { display:flex; gap:6px; align-items:center; }
+.acc-val { font-family:'Oswald',sans-serif; font-size:1rem; font-weight:700; color:#64b5f6; }
+.footer { padding-top:18px; border-top:1px solid #21262d; display:flex; justify-content:space-between; align-items:center; }
+.brand-url { font-size:0.8rem; color:#484f58; }
+.brand-tag { font-family:'Oswald',sans-serif; font-size:1rem; font-weight:700; color:#e94560; letter-spacing:1.5px; }
+"""
+
+    return f"""<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>{css}</style>
+</head>
+<body>
+    <div class="banner">📊 RESULTADOS DEL DÍA</div>
+    <div class="header">
+        <span class="title">PARLEYSPORTS90</span>
+        <span class="date-badge">{display_date}</span>
+    </div>
+    <div class="divider"></div>
+    <div class="results-list">{rows_html}</div>
+    <div class="summary-box">
+        <div class="day-record">
+            <span class="day-label">Resultado del día</span>
+            <span class="day-val {day_class}">{day_wins}W — {day_losses}L</span>
+        </div>
+        <div class="acc-row">
+            <div class="acc-item">Acumulado: <span class="acc-val">{w}W-{l}L</span></div>
+            <div class="acc-item">Acierto: <span class="acc-val">{pct}%</span></div>
+            <div class="acc-item">Racha: <span class="acc-val">{streak}</span></div>
+        </div>
+    </div>
+    <div class="footer">
+        <span class="brand-url">{site_url}</span>
+        <span class="brand-tag">@PARLEYSPORTS90</span>
+    </div>
+</body>
+</html>"""
+
+
+def generate_results_card(results, stats, output_dir=OUTPUT_DIR):
+    """Genera card PNG con resultados del dia anterior. Retorna ruta o None."""
+    if not results:
+        print("  [Instagram] Sin resultados nuevos para generar card.")
+        return None
+
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        return None
+
+    html = _build_results_card_html(results, stats)
+    if not html:
+        return None
+
+    os.makedirs(output_dir, exist_ok=True)
+    out_path = os.path.join(output_dir, "resultados.png")
+
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch()
+        page = browser.new_page(viewport={"width": 1080, "height": 1350})
+        page.set_content(html, wait_until="networkidle")
+        page.screenshot(path=out_path, full_page=True)
+        browser.close()
+
+    print(f"  [Instagram] Resultados card: {out_path}")
+    return out_path
+
+
 def generate_stats_card(tracking_data, output_dir=OUTPUT_DIR):
     """Genera card PNG de estadisticas de aciertos. Retorna ruta o None."""
     try:

@@ -26,7 +26,7 @@ from scraper import fetch_all_feeds
 from scores import fetch_all_scores
 from predictions import fetch_all_predictions, print_predictions, fetch_daily_lines, fetch_polymarket_sports
 from generator import generate_site
-from tracker import check_results, print_tracking_stats, get_tracking_data
+from tracker import check_results, print_tracking_stats, get_tracking_data, get_unposted_results, mark_ig_result_posted
 
 
 def cmd_build():
@@ -54,7 +54,7 @@ def cmd_build():
 
 def cmd_instagram():
     """Genera cards para Instagram con los pronosticos del dia."""
-    from instagram import generate_instagram_images, generate_pick_del_dia_card, generate_stats_card
+    from instagram import generate_instagram_images, generate_pick_del_dia_card, generate_stats_card, generate_results_card
     print("[*] Generando pronosticos para Instagram...")
     predictions = fetch_all_predictions(
         min_picks=config.MIN_PICKS_PER_SPORT,
@@ -68,6 +68,11 @@ def cmd_instagram():
     stats_path = generate_stats_card(tracking)
     if stats_path:
         paths.append(stats_path)
+    results = get_unposted_results(days_back=2)
+    if results:
+        result_path = generate_results_card(results, tracking.get("stats", {}))
+        if result_path:
+            paths.append(result_path)
     if paths:
         print(f"\n[OK] {len(paths)} cards generados en output/instagram/")
         for p in paths:
@@ -86,6 +91,23 @@ def cmd_ig_publish():
     )
     ok = publish_pick_del_dia(predictions)
     if not ok:
+        sys.exit(1)
+
+
+def cmd_ig_result():
+    """Publica resultados del pick anterior en Instagram."""
+    from ig_publisher import publish_results
+    print("[*] Publicando resultados en Instagram...")
+    results = get_unposted_results(days_back=2)
+    if not results:
+        print("[!] Sin resultados nuevos para publicar.")
+        return
+    tracking = get_tracking_data()
+    ok = publish_results(results, tracking.get("stats", {}))
+    if ok:
+        mark_ig_result_posted([r["id"] for r in results])
+        print(f"[OK] {len(results)} resultados marcados como publicados.")
+    else:
         sys.exit(1)
 
 
@@ -227,6 +249,8 @@ def main():
         cmd_instagram()
     elif command == "ig-publish":
         cmd_ig_publish()
+    elif command == "ig-result":
+        cmd_ig_result()
     elif command == "ig-stats":
         cmd_ig_stats()
     elif command == "telegram":
