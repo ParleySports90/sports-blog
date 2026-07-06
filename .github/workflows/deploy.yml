@@ -76,6 +76,17 @@ jobs:
           sleep 60
           python main.py ig-result
 
+      - name: Publish Poll to Instagram
+        if: github.event_name == 'schedule' && github.event.schedule == '0 16 * * *'
+        continue-on-error: true
+        env:
+          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: |
+          echo "Esperando propagacion de GitHub Pages (60s)..."
+          sleep 60
+          python main.py ig-poll
+
       - name: Publish Pick del Dia to Instagram
         if: github.event_name == 'schedule' && github.event.schedule == '0 14 * * *'
         continue-on-error: true

@@ -12,6 +12,7 @@ Uso:
     python main.py open           - Abre el blog en el navegador
     python main.py instagram      - Genera cards PNG para publicar en Instagram
     python main.py ig-publish     - Publica el Pick del Dia en Instagram automaticamente
+    python main.py ig-poll        - Publica encuesta del partido mas importante del dia
     python main.py telegram       - Genera y envia pronosticos a Telegram
     python main.py telegram-setup - Guia interactiva para configurar el bot
 """
@@ -90,6 +91,23 @@ def cmd_ig_publish():
         confidence_threshold=config.CONFIDENCE_THRESHOLD,
     )
     ok = publish_pick_del_dia(predictions)
+    if not ok:
+        sys.exit(1)
+
+
+def cmd_ig_poll():
+    """Publica encuesta del partido mas importante del dia."""
+    from instagram import generate_poll_card
+    from ig_publisher import publish_poll, _best_game_for_poll
+    print("[*] Publicando encuesta en Instagram...")
+    predictions = fetch_all_predictions(
+        min_picks=config.MIN_PICKS_PER_SPORT,
+        confidence_threshold=config.CONFIDENCE_THRESHOLD,
+    )
+    game = _best_game_for_poll(predictions)
+    if game:
+        generate_poll_card(game)
+    ok = publish_poll(predictions)
     if not ok:
         sys.exit(1)
 
@@ -249,6 +267,8 @@ def main():
         cmd_instagram()
     elif command == "ig-publish":
         cmd_ig_publish()
+    elif command == "ig-poll":
+        cmd_ig_poll()
     elif command == "ig-result":
         cmd_ig_result()
     elif command == "ig-stats":

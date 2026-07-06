@@ -775,6 +775,165 @@ body::before {
 </html>"""
 
 
+def _build_poll_card_html(game, site_url="parleysports90.github.io/sports-blog"):
+    sport_icon = game.get("sport_icon", "⚽")
+    sport_name = game.get("sport_name", "Deportes")
+    league = game.get("league", sport_name)
+    home_team = game.get("home_team", "Local")
+    away_team = game.get("away_team", "Visita")
+    home_abbr = game.get("home_abbr") or home_team[:3].upper()
+    away_abbr = game.get("away_abbr") or away_team[:3].upper()
+    home_logo = _logo_tag(game.get("home_logo", ""), "poll-logo")
+    away_logo = _logo_tag(game.get("away_logo", ""), "poll-logo")
+    today = datetime.now().strftime("%d %b %Y").upper()
+
+    css = """
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+    width:1080px; min-height:1350px;
+    background:linear-gradient(150deg,#0a0e17 0%,#0d1520 50%,#0a0e17 100%);
+    font-family:'Inter',-apple-system,sans-serif;
+    color:#e6edf3; display:flex; flex-direction:column;
+    align-items:center; justify-content:center;
+    padding:56px 72px; position:relative; overflow:hidden;
+    text-align:center;
+}
+body::before {
+    content:""; position:absolute; top:-150px; left:50%; transform:translateX(-50%);
+    width:800px; height:800px;
+    background:radial-gradient(circle,rgba(233,69,96,0.08) 0%,transparent 65%);
+    pointer-events:none;
+}
+.question {
+    font-family:'Oswald',sans-serif; font-size:2.4rem;
+    font-weight:700; color:#fff; letter-spacing:3px;
+    text-transform:uppercase; margin-bottom:8px;
+}
+.question-sub { font-size:1rem; color:#8b949e; margin-bottom:40px; letter-spacing:1px; }
+.league-badge {
+    display:inline-block; font-size:0.8rem; font-weight:700;
+    color:#64b5f6; letter-spacing:1px; text-transform:uppercase;
+    background:rgba(100,181,246,0.1); border:1px solid rgba(100,181,246,0.25);
+    border-radius:6px; padding:5px 14px; margin-bottom:48px;
+}
+.matchup {
+    display:grid; grid-template-columns:1fr auto 1fr;
+    align-items:center; gap:24px; width:100%; margin-bottom:48px;
+}
+.team-side { display:flex; flex-direction:column; align-items:center; gap:14px; }
+.poll-logo { width:110px; height:110px; object-fit:contain; }
+.team-name {
+    font-family:'Oswald',sans-serif; font-size:2rem;
+    font-weight:700; color:#fff; letter-spacing:1px;
+}
+.vs-circle {
+    width:72px; height:72px; border-radius:50%;
+    background:#161b22; border:2px solid #30363d;
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Oswald',sans-serif; font-size:1.1rem;
+    color:#484f58; font-weight:700; letter-spacing:1px;
+}
+.divider { width:100%; height:1px; background:#21262d; margin-bottom:40px; }
+.vote-section { width:100%; display:flex; flex-direction:column; gap:16px; margin-bottom:40px; }
+.vote-btn {
+    width:100%; padding:22px 32px; border-radius:14px;
+    display:flex; align-items:center; gap:20px;
+    font-family:'Oswald',sans-serif; font-size:1.8rem;
+    font-weight:700; letter-spacing:1px;
+}
+.vote-a {
+    background:linear-gradient(90deg,rgba(33,106,243,0.25),rgba(33,106,243,0.1));
+    border:2px solid rgba(33,106,243,0.5);
+    color:#64b5f6;
+}
+.vote-b {
+    background:linear-gradient(90deg,rgba(233,69,96,0.25),rgba(233,69,96,0.1));
+    border:2px solid rgba(233,69,96,0.5);
+    color:#e94560;
+}
+.vote-letter {
+    width:52px; height:52px; border-radius:10px;
+    display:flex; align-items:center; justify-content:center;
+    font-size:1.6rem; flex-shrink:0;
+}
+.vote-a .vote-letter { background:rgba(33,106,243,0.3); }
+.vote-b .vote-letter { background:rgba(233,69,96,0.3); }
+.vote-team { flex:1; text-align:left; }
+.cta {
+    font-size:1.1rem; color:#8b949e; letter-spacing:1px;
+    margin-bottom:32px;
+}
+.cta strong { color:#ffb74d; }
+.footer { display:flex; justify-content:space-between; align-items:center; width:100%; }
+.brand-url { font-size:0.8rem; color:#484f58; }
+.brand-tag { font-family:'Oswald',sans-serif; font-size:1rem; font-weight:700; color:#e94560; letter-spacing:1.5px; }
+"""
+
+    return f"""<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>{css}</style>
+</head>
+<body>
+    <div class="question">{sport_icon} ¿Quién gana hoy?</div>
+    <div class="question-sub">{today}</div>
+    <span class="league-badge">{league}</span>
+    <div class="matchup">
+        <div class="team-side">
+            {away_logo}
+            <span class="team-name">{away_abbr}</span>
+        </div>
+        <div class="vs-circle">VS</div>
+        <div class="team-side">
+            {home_logo}
+            <span class="team-name">{home_abbr}</span>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="vote-section">
+        <div class="vote-btn vote-a">
+            <div class="vote-letter">A</div>
+            <span class="vote-team">{away_team}</span>
+        </div>
+        <div class="vote-btn vote-b">
+            <div class="vote-letter">B</div>
+            <span class="vote-team">{home_team}</span>
+        </div>
+    </div>
+    <div class="cta">Comenta <strong>A</strong> o <strong>B</strong> 👇 ¿Con quién vas?</div>
+    <div class="footer">
+        <span class="brand-url">{site_url}</span>
+        <span class="brand-tag">@PARLEYSPORTS90</span>
+    </div>
+</body>
+</html>"""
+
+
+def generate_poll_card(game, output_dir=OUTPUT_DIR):
+    """Genera card de encuesta para el partido mas importante del dia."""
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        return None
+
+    os.makedirs(output_dir, exist_ok=True)
+    html = _build_poll_card_html(game)
+    out_path = os.path.join(output_dir, "poll.png")
+
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch()
+        page = browser.new_page(viewport={"width": 1080, "height": 1350})
+        page.set_content(html, wait_until="networkidle")
+        page.screenshot(path=out_path, full_page=True)
+        browser.close()
+
+    print(f"  [Instagram] Poll card: {out_path}")
+    return out_path
+
+
 def generate_results_card(results, stats, output_dir=OUTPUT_DIR):
     """Genera card PNG con resultados del dia anterior. Retorna ruta o None."""
     if not results:

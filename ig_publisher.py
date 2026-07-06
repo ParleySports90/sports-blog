@@ -133,6 +133,84 @@ def publish_pick_del_dia(predictions):
     })
 
 
+POLL_IMAGE_URL = f"{SITE_URL}/instagram/poll.png"
+
+
+def _best_game_for_poll(predictions):
+    """Elige el partido mas importante del dia para la encuesta."""
+    best = None
+    best_conf = 0
+    for sport_key, sport_data in predictions.items():
+        for pick in sport_data.get("picks", []):
+            conf = pick.get("confidence", 0)
+            if conf > best_conf:
+                best_conf = conf
+                best = {
+                    "sport_icon": sport_data.get("icon", "🎯"),
+                    "sport_name": sport_data.get("name", sport_key),
+                    "league": pick.get("league", sport_data.get("name", "")),
+                    "home_team": pick.get("home_team", ""),
+                    "away_team": pick.get("away_team", ""),
+                    "home_abbr": pick.get("home_abbr", ""),
+                    "away_abbr": pick.get("away_abbr", ""),
+                    "home_logo": pick.get("home_logo", ""),
+                    "away_logo": pick.get("away_logo", ""),
+                    "sport_key": sport_key,
+                }
+    return best
+
+
+def publish_poll(predictions):
+    """Publica encuesta del partido mas importante del dia."""
+    webhook_url = os.environ.get("MAKE_WEBHOOK_URL", "")
+    if not webhook_url:
+        print("  [IG] MAKE_WEBHOOK_URL no configurada.")
+        return False
+
+    game = _best_game_for_poll(predictions)
+    if not game:
+        print("  [IG] Sin partidos para encuesta.")
+        return False
+
+    today = datetime.now().strftime("%d/%m/%Y")
+    away = game["away_team"]
+    home = game["home_team"]
+    league = game["league"]
+    sport_icon = game["sport_icon"]
+
+    hashtags_map = {
+        "baseball": "#MLB #Beisbol #PickMLB",
+        "basketball": "#NBA #Basketball",
+        "futbol": "#Futbol #Soccer #Mundial2026",
+        "hockey": "#NHL #Hockey",
+    }
+    hashtags = hashtags_map.get(game["sport_key"], "#Deportes")
+
+    caption = f"""{sport_icon} ¿QUIÉN GANA HOY? — {league.upper()}
+📅 {today}
+━━━━━━━━━━━━━━━━━━━━
+⚔️ {away} vs {home}
+
+Comenta 👇
+🔵 A — {away}
+🔴 B — {home}
+━━━━━━━━━━━━━━━━━━━━
+Nuestro análisis ya está publicado 👆
+🔗 {SITE_URL}
+
+{hashtags} #ParleySports #Encuesta #Pronosticos #PickDelDia""".strip()
+
+    print(f"  [IG] Encuesta: {away} vs {home} ({league})")
+
+    return _send_webhook(webhook_url, {
+        "image_url": POLL_IMAGE_URL,
+        "caption": caption,
+        "type": "poll",
+        "home_team": home,
+        "away_team": away,
+    })
+
+
 def publish_results(results, stats):
     """Publica card de resultados del dia anterior."""
     webhook_url = os.environ.get("MAKE_WEBHOOK_URL", "")
