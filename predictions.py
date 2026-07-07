@@ -1234,9 +1234,18 @@ def fetch_all_predictions(min_picks=3, confidence_threshold=55):
     for sport, data in all_predictions.items():
         data["picks"].sort(key=lambda x: x["confidence"], reverse=True)
 
+        # Deduplicar por partido (doubleheaders: quedarse con el de mayor confianza)
+        seen_games = set()
+        deduped = []
+        for p in data["picks"]:
+            key = (p.get("home_team", ""), p.get("away_team", ""))
+            if key not in seen_games:
+                seen_games.add(key)
+                deduped.append(p)
+        data["picks"] = deduped
+
         if sport == "baseball":
             # 5 picks por dia categorizados: FIJO / MEDIO / BAJO
-            # Umbral mas bajo (50%) para capturar picks de valor en la categoria BAJO
             data["picks"] = [p for p in data["picks"] if p["confidence"] >= 50]
             data["picks"] = data["picks"][:5]
             for pick in data["picks"]:
@@ -1267,12 +1276,34 @@ def fetch_all_predictions(min_picks=3, confidence_threshold=55):
     except Exception as e:
         print(f"  [!] Error guardando picks en tracker: {e}")
 
-    # Agregar Guia MLB detallada
+    # Agregar Guia MLB detallada y enriquecer picks con analisis de lanzadores
     try:
         from mlb_guide import generate_mlb_guide
         mlb_guide = generate_mlb_guide()
         if mlb_guide:
             all_predictions["baseball"]["mlb_guide"] = mlb_guide
+            # Crear lookup por abreviatura de equipos
+            guide_lookup = {}
+            for m in mlb_guide:
+                key1 = (m["home_abbr"].upper(), m["away_abbr"].upper())
+                key2 = (m["home_team"].lower(), m["away_team"].lower())
+                guide_lookup[key1] = m
+                guide_lookup[key2] = m
+            # Enriquecer cada pick de beisbol con datos de pitchers y bateo
+            for pick in all_predictions["baseball"]["picks"]:
+                ha = pick.get("home_abbr", "").upper()
+                aa = pick.get("away_abbr", "").upper()
+                hn = pick.get("home_team", "").lower()
+                an = pick.get("away_team", "").lower()
+                matchup = guide_lookup.get((ha, aa)) or guide_lookup.get((hn, an))
+                if matchup:
+                    pick["pitcher_analysis"] = {
+                        "home_pitcher": matchup["home_pitcher"],
+                        "away_pitcher": matchup["away_pitcher"],
+                        "home_batting": matchup.get("home_batting"),
+                        "away_batting": matchup.get("away_batting"),
+                        "analysis_text": matchup.get("analysis", ""),
+                    }
     except Exception as e:
         print(f"  [!] Error generando Guia MLB: {e}")
 

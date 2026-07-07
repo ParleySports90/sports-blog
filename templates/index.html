@@ -544,6 +544,76 @@
         .pred-factors li.factor-odds::before { content: "\1f4ca"; }
         .pred-factors li.factor-nodata::before { content: "\2796"; }
 
+        /* ---- Análisis de Lanzadores MLB ---- */
+        .pitcher-analysis-box {
+            margin-top: 10px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            padding: 10px 12px;
+        }
+        .pitcher-analysis-title {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--accent);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .pitcher-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+        .pitcher-card {
+            background: rgba(255,255,255,0.04);
+            border-radius: 6px;
+            padding: 8px 10px;
+        }
+        .pitcher-card.home { border-left: 3px solid #3a7bd5; }
+        .pitcher-card.away { border-left: 3px solid #e53935; }
+        .pitcher-role { font-size: 0.65rem; color: #666; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
+        .pitcher-name { font-size: 0.82rem; font-weight: 700; color: #ddd; margin: 2px 0; }
+        .pitcher-record { font-size: 0.75rem; color: #aaa; margin-bottom: 4px; }
+        .pitcher-stats-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 4px;
+        }
+        .pitcher-stat {
+            font-size: 0.68rem;
+            background: rgba(255,255,255,0.06);
+            border-radius: 4px;
+            padding: 2px 6px;
+            color: #bbb;
+        }
+        .pitcher-stat span { color: #fff; font-weight: 700; }
+        .pitcher-split { font-size: 0.68rem; color: #777; margin-top: 4px; }
+        .batting-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+            margin-top: 6px;
+            padding-top: 6px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+        .batting-card { font-size: 0.7rem; }
+        .batting-label { color: #666; font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 3px; }
+        .batting-stat-row { display: flex; gap: 8px; flex-wrap: wrap; }
+        .batting-stat { color: #aaa; }
+        .batting-stat span { color: #fff; font-weight: 700; }
+        .pitcher-analysis-text {
+            font-size: 0.73rem;
+            color: #888;
+            line-height: 1.5;
+            margin-top: 6px;
+            padding-top: 6px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            font-style: italic;
+        }
+
         .pred-odds-row {
             margin-top: 8px;
             padding-top: 8px;
@@ -1536,6 +1606,77 @@
                         <li class="{% if 'vs' in factor and '(' in factor %}factor-record{% elif 'casa' in factor or 'visita' in factor %}factor-venue{% elif 'racha' in factor %}factor-streak{% elif 'Linea' in factor or 'ML:' in factor %}factor-odds{% elif 'lesion' in factor.lower() or 'Out' in factor or 'DTD' in factor or 'sin lesiones' in factor %}factor-injury{% else %}factor-nodata{% endif %}">{{ factor }}</li>
                         {% endfor %}
                     </ul>
+
+                    {# ---- ANÁLISIS DE LANZADORES (solo béisbol) ---- #}
+                    {% if pick.pitcher_analysis %}
+                    {% set pa = pick.pitcher_analysis %}
+                    <div class="pitcher-analysis-box">
+                        <div class="pitcher-analysis-title">⚾ Análisis de Lanzadores</div>
+                        <div class="pitcher-grid">
+                            {# Lanzador Local #}
+                            {% set hp = pa.home_pitcher %}
+                            <div class="pitcher-card home">
+                                <div class="pitcher-role">&#127968; Local — {{ pick.home_abbr }}</div>
+                                <div class="pitcher-name">{{ hp.name }}</div>
+                                <div class="pitcher-record">{{ hp.record }} | {{ hp.hand }}HP</div>
+                                <div class="pitcher-stats-row">
+                                    <span class="pitcher-stat">ERA <span>{{ hp.era }}</span></span>
+                                    <span class="pitcher-stat">WHIP <span>{{ hp.whip }}</span></span>
+                                    <span class="pitcher-stat">K/9 <span>{{ hp.k9 }}</span></span>
+                                    <span class="pitcher-stat">BB <span>{{ hp.bb }}</span></span>
+                                    <span class="pitcher-stat">K <span>{{ hp.so }}</span></span>
+                                </div>
+                                {% if hp.home_era != '-' %}<div class="pitcher-split">Split casa: <b>{{ hp.home_era }} ERA</b> ({{ hp.home_record }})</div>{% endif %}
+                            </div>
+                            {# Lanzador Visita #}
+                            {% set ap = pa.away_pitcher %}
+                            <div class="pitcher-card away">
+                                <div class="pitcher-role">✈️ Visita — {{ pick.away_abbr }}</div>
+                                <div class="pitcher-name">{{ ap.name }}</div>
+                                <div class="pitcher-record">{{ ap.record }} | {{ ap.hand }}HP</div>
+                                <div class="pitcher-stats-row">
+                                    <span class="pitcher-stat">ERA <span>{{ ap.era }}</span></span>
+                                    <span class="pitcher-stat">WHIP <span>{{ ap.whip }}</span></span>
+                                    <span class="pitcher-stat">K/9 <span>{{ ap.k9 }}</span></span>
+                                    <span class="pitcher-stat">BB <span>{{ ap.bb }}</span></span>
+                                    <span class="pitcher-stat">K <span>{{ ap.so }}</span></span>
+                                </div>
+                                {% if ap.away_era != '-' %}<div class="pitcher-split">Split visita: <b>{{ ap.away_era }} ERA</b> ({{ ap.away_record }})</div>{% endif %}
+                            </div>
+                        </div>
+                        {# Ofensiva #}
+                        {% if pa.home_batting or pa.away_batting %}
+                        <div class="batting-grid">
+                            {% if pa.home_batting %}{% set hb = pa.home_batting %}
+                            <div class="batting-card">
+                                <div class="batting-label">🏏 Ofensiva {{ pick.home_abbr }}</div>
+                                <div class="batting-stat-row">
+                                    <span class="batting-stat">AVG <span>{{ hb.avg }}</span></span>
+                                    <span class="batting-stat">OBP <span>{{ hb.obp }}</span></span>
+                                    <span class="batting-stat">OPS <span>{{ hb.ops }}</span></span>
+                                    <span class="batting-stat">R/G <span>{{ hb.rpg }}</span></span>
+                                    <span class="batting-stat">HR <span>{{ hb.hr }}</span></span>
+                                </div>
+                            </div>{% endif %}
+                            {% if pa.away_batting %}{% set ab = pa.away_batting %}
+                            <div class="batting-card">
+                                <div class="batting-label">🏏 Ofensiva {{ pick.away_abbr }}</div>
+                                <div class="batting-stat-row">
+                                    <span class="batting-stat">AVG <span>{{ ab.avg }}</span></span>
+                                    <span class="batting-stat">OBP <span>{{ ab.obp }}</span></span>
+                                    <span class="batting-stat">OPS <span>{{ ab.ops }}</span></span>
+                                    <span class="batting-stat">R/G <span>{{ ab.rpg }}</span></span>
+                                    <span class="batting-stat">HR <span>{{ ab.hr }}</span></span>
+                                </div>
+                            </div>{% endif %}
+                        </div>
+                        {% endif %}
+                        {# Texto de análisis #}
+                        {% if pa.analysis_text %}
+                        <div class="pitcher-analysis-text">{{ pa.analysis_text }}</div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
 
                     {% if pick.odds %}
                     <div class="pred-odds-row">

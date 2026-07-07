@@ -124,6 +124,37 @@ def fetch_pitcher_stats(pitcher_id):
     return result
 
 
+def fetch_team_batting_stats(team_id):
+    """Obtiene stats de bateo del equipo en la temporada actual."""
+    url = f"{MLB_API}/teams/{team_id}/stats"
+    params = {
+        "stats": "season",
+        "group": "hitting",
+        "season": datetime.now().year,
+        "sportId": 1,
+    }
+    data = _get(url, params)
+    if not data:
+        return None
+    for group in data.get("stats", []):
+        splits = group.get("splits", [])
+        if splits:
+            s = splits[0].get("stat", {})
+            gp = s.get("gamesPlayed", 1) or 1
+            runs = s.get("runs", 0)
+            return {
+                "avg": s.get("avg", "-"),
+                "obp": s.get("obp", "-"),
+                "slg": s.get("slg", "-"),
+                "ops": s.get("ops", "-"),
+                "rpg": round(runs / gp, 2) if gp else "-",
+                "hr": s.get("homeRuns", 0),
+                "bb": s.get("baseOnBalls", 0),
+                "so": s.get("strikeOuts", 0),
+            }
+    return None
+
+
 def _safe_float(val, default=999.0):
     """Convierte string a float de forma segura."""
     try:
@@ -359,6 +390,10 @@ def build_matchup(game):
     home_abbr = home_team_info.get("abbreviation", "???")
     away_abbr = away_team_info.get("abbreviation", "???")
 
+    # Stats de bateo por equipo
+    home_batting = fetch_team_batting_stats(home_id) if home_id else None
+    away_batting = fetch_team_batting_stats(away_id) if away_id else None
+
     # Calcular pick
     score_home, score_away = _calculate_pick(
         home_pitcher, away_pitcher,
@@ -386,6 +421,8 @@ def build_matchup(game):
         "score_home": round(score_home, 1),
         "score_away": round(score_away, 1),
         "analysis": "",
+        "home_batting": home_batting,
+        "away_batting": away_batting,
     }
 
     matchup["analysis"] = _generate_analysis(matchup)
