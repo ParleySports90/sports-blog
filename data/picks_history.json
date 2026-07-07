@@ -4636,9 +4636,9 @@
       "pick_label": "MIL 1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 4
     },
     {
       "id": "2026-07-07_MLB_Sox_vs_Sox",
@@ -4674,19 +4674,19 @@
     }
   ],
   "stats": {
-    "total": 244,
-    "wins": 130,
+    "total": 245,
+    "wins": 131,
     "losses": 114,
-    "pending": 5,
-    "win_pct": 53.3,
-    "current_streak": "L3",
+    "pending": 4,
+    "win_pct": 53.5,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 100,
+        "w": 101,
         "l": 97
       },
       "hockey": {
