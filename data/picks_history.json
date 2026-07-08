@@ -4526,7 +4526,8 @@
       "confidence": 90,
       "status": "lost",
       "home_score": 8,
-      "away_score": 7
+      "away_score": 7,
+      "ig_posted": true
     },
     {
       "id": "2026-07-06_MLB_Braves_vs_Mets",
@@ -4542,7 +4543,8 @@
       "confidence": 79,
       "status": "lost",
       "home_score": 6,
-      "away_score": 7
+      "away_score": 7,
+      "ig_posted": true
     },
     {
       "id": "2026-07-06_MLB_Royals_vs_Phillies",
@@ -4558,7 +4560,8 @@
       "confidence": 72,
       "status": "lost",
       "home_score": 15,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-07-06_MLB_Cardinals_vs_Brewers",
@@ -4574,7 +4577,8 @@
       "confidence": 64,
       "status": "won",
       "home_score": 3,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-07-06_MLB_Rays_vs_Yankees",
@@ -4590,7 +4594,8 @@
       "confidence": 62,
       "status": "lost",
       "home_score": 1,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-07-07_MLB_Dodgers_vs_Rockies",
@@ -4606,7 +4611,8 @@
       "confidence": 91,
       "status": "lost",
       "home_score": 3,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-07-07_MLB_Rangers_vs_Angels",
@@ -4622,7 +4628,8 @@
       "confidence": 68,
       "status": "won",
       "home_score": 8,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-07-07_MLB_Cardinals_vs_Brewers",
@@ -4638,7 +4645,8 @@
       "confidence": 66,
       "status": "won",
       "home_score": 3,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-07-07_MLB_Sox_vs_Sox",
@@ -4654,7 +4662,8 @@
       "confidence": 64,
       "status": "lost",
       "home_score": 1,
-      "away_score": 8
+      "away_score": 8,
+      "ig_posted": true
     },
     {
       "id": "2026-07-07_MLB_Reds_vs_Phillies",
@@ -4670,7 +4679,8 @@
       "confidence": 63,
       "status": "won",
       "home_score": 1,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-07-08_MLB_Dodgers_vs_Rockies",
