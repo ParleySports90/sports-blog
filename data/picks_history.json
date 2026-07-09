@@ -4806,9 +4806,9 @@
       "pick_label": "CHC -1.5",
       "pick_team": "Chicago Cubs",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-07-09_MLB_Marlins_vs_Mariners",
@@ -4838,18 +4838,50 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 63,
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 12
+    },
+    {
+      "id": "2026-07-09_MLB_Reds_vs_Phillies",
+      "date": "2026-07-09",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Cincinnati Reds",
+      "away_team": "Philadelphia Phillies",
+      "home_abbr": "CIN",
+      "away_abbr": "PHI",
+      "pick_label": "PHI 1.5",
+      "pick_team": "Philadelphia Phillies",
+      "confidence": 63,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-09_MLB_Padres_vs_Diamondbacks",
+      "date": "2026-07-09",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Diego Padres",
+      "away_team": "Arizona Diamondbacks",
+      "home_abbr": "SD",
+      "away_abbr": "ARI",
+      "pick_label": "SD -1.5",
+      "pick_team": "San Diego Padres",
+      "confidence": 57,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 254,
+    "total": 256,
     "wins": 134,
-    "losses": 120,
+    "losses": 122,
     "pending": 5,
-    "win_pct": 52.8,
-    "current_streak": "L4",
+    "win_pct": 52.3,
+    "current_streak": "L6",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -4857,7 +4889,7 @@
       },
       "baseball": {
         "w": 104,
-        "l": 103
+        "l": 105
       },
       "hockey": {
         "w": 6,
