@@ -5015,9 +5015,9 @@
       "pick_label": "MIL ML",
       "pick_team": "Milwaukee Brewers",
       "confidence": 71,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 7,
+      "away_score": 6
     },
     {
       "id": "2026-07-11_MLB_Sox_vs_Athletics",
@@ -5031,9 +5031,9 @@
       "pick_label": "CHW 1.5",
       "pick_team": "Chicago White Sox",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-07-11_MLB_Twins_vs_Angels",
@@ -5050,13 +5050,29 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-07-11_MLB_Orioles_vs_Royals",
+      "date": "2026-07-11",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Baltimore Orioles",
+      "away_team": "Kansas City Royals",
+      "home_abbr": "BAL",
+      "away_abbr": "KC",
+      "pick_label": "BAL -1.5",
+      "pick_team": "Baltimore Orioles",
+      "confidence": 64,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 266,
-    "wins": 138,
-    "losses": 128,
-    "pending": 5,
+    "total": 268,
+    "wins": 139,
+    "losses": 129,
+    "pending": 4,
     "win_pct": 51.9,
     "current_streak": "L1",
     "by_sport": {
@@ -5065,8 +5081,8 @@
         "l": 6
       },
       "baseball": {
-        "w": 108,
-        "l": 111
+        "w": 109,
+        "l": 112
       },
       "hockey": {
         "w": 6,
