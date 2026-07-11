@@ -4900,7 +4900,8 @@
       "confidence": 77,
       "status": "lost",
       "home_score": 3,
-      "away_score": 9
+      "away_score": 9,
+      "ig_posted": true
     },
     {
       "id": "2026-07-10_MLB_Rays_vs_Mariners",
@@ -4916,7 +4917,8 @@
       "confidence": 73,
       "status": "won",
       "home_score": 7,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-07-10_MLB_Pirates_vs_Brewers",
@@ -4932,7 +4934,8 @@
       "confidence": 71,
       "status": "lost",
       "home_score": 0,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-07-10_MLB_Twins_vs_Angels",
@@ -4948,7 +4951,8 @@
       "confidence": 67,
       "status": "lost",
       "home_score": 3,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-07-10_MLB_Reds_vs_Cubs",
@@ -4964,7 +4968,8 @@
       "confidence": 64,
       "status": "lost",
       "home_score": 4,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-07-11_MLB_Dodgers_vs_Diamondbacks",
