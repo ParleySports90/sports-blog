@@ -5152,9 +5152,9 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 72,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 5
     },
     {
       "id": "2026-07-12_MLB_Twins_vs_Angels",
@@ -5216,9 +5216,9 @@
       "pick_label": "SF ML",
       "pick_team": "San Francisco Giants",
       "confidence": 57,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-07-12_MLB_Cardinals_vs_Braves",
@@ -5232,9 +5232,9 @@
       "pick_label": "ATL ML",
       "pick_team": "Atlanta Braves",
       "confidence": 56,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 4
     },
     {
       "id": "2026-07-12_MLB_Padres_vs_Jays",
@@ -5248,9 +5248,9 @@
       "pick_label": "SD ML",
       "pick_team": "San Diego Padres",
       "confidence": 55,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 4
     },
     {
       "id": "2026-07-12_MLB_Rangers_vs_Astros",
@@ -5264,26 +5264,26 @@
       "pick_label": "TEX ML",
       "pick_team": "Texas Rangers",
       "confidence": 53,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 5
     }
   ],
   "stats": {
-    "total": 279,
-    "wins": 145,
-    "losses": 134,
-    "pending": 5,
-    "win_pct": 52.0,
-    "current_streak": "L1",
+    "total": 284,
+    "wins": 149,
+    "losses": 135,
+    "pending": 0,
+    "win_pct": 52.5,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 115,
-        "l": 117
+        "w": 119,
+        "l": 118
       },
       "hockey": {
         "w": 6,
