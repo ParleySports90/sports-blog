@@ -5136,9 +5136,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 76,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 8
     },
     {
       "id": "2026-07-12_MLB_Dodgers_vs_Diamondbacks",
@@ -5168,9 +5168,9 @@
       "pick_label": "MIN -1.5",
       "pick_team": "Minnesota Twins",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "id": "2026-07-12_MLB_Sox_vs_Athletics",
@@ -5184,9 +5184,9 @@
       "pick_label": "CHW 1.5",
       "pick_team": "Chicago White Sox",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 9,
+      "away_score": 1
     },
     {
       "id": "2026-07-12_MLB_Pirates_vs_Brewers",
@@ -5200,15 +5200,79 @@
       "pick_label": "MIL -1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 66,
+      "status": "lost",
+      "home_score": 14,
+      "away_score": 5
+    },
+    {
+      "id": "2026-07-12_MLB_Giants_vs_Rockies",
+      "date": "2026-07-12",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Francisco Giants",
+      "away_team": "Colorado Rockies",
+      "home_abbr": "SF",
+      "away_abbr": "COL",
+      "pick_label": "SF ML",
+      "pick_team": "San Francisco Giants",
+      "confidence": 57,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-12_MLB_Cardinals_vs_Braves",
+      "date": "2026-07-12",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "St. Louis Cardinals",
+      "away_team": "Atlanta Braves",
+      "home_abbr": "STL",
+      "away_abbr": "ATL",
+      "pick_label": "ATL ML",
+      "pick_team": "Atlanta Braves",
+      "confidence": 56,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-12_MLB_Padres_vs_Jays",
+      "date": "2026-07-12",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Diego Padres",
+      "away_team": "Toronto Blue Jays",
+      "home_abbr": "SD",
+      "away_abbr": "TOR",
+      "pick_label": "SD ML",
+      "pick_team": "San Diego Padres",
+      "confidence": 55,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-12_MLB_Rangers_vs_Astros",
+      "date": "2026-07-12",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Texas Rangers",
+      "away_team": "Houston Astros",
+      "home_abbr": "TEX",
+      "away_abbr": "HOU",
+      "pick_label": "TEX ML",
+      "pick_team": "Texas Rangers",
+      "confidence": 53,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 275,
-    "wins": 143,
-    "losses": 132,
+    "total": 279,
+    "wins": 145,
+    "losses": 134,
     "pending": 5,
     "win_pct": 52.0,
     "current_streak": "L1",
@@ -5218,8 +5282,8 @@
         "l": 6
       },
       "baseball": {
-        "w": 113,
-        "l": 115
+        "w": 115,
+        "l": 117
       },
       "hockey": {
         "w": 6,
