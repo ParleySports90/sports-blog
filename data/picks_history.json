@@ -4985,7 +4985,8 @@
       "confidence": 75,
       "status": "lost",
       "home_score": 2,
-      "away_score": 9
+      "away_score": 9,
+      "ig_posted": true
     },
     {
       "id": "2026-07-11_MLB_Rays_vs_Mariners",
@@ -5001,7 +5002,8 @@
       "confidence": 74,
       "status": "won",
       "home_score": 6,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-07-11_MLB_Pirates_vs_Brewers",
@@ -5017,7 +5019,8 @@
       "confidence": 71,
       "status": "lost",
       "home_score": 7,
-      "away_score": 6
+      "away_score": 6,
+      "ig_posted": true
     },
     {
       "id": "2026-07-11_MLB_Sox_vs_Athletics",
@@ -5033,7 +5036,8 @@
       "confidence": 66,
       "status": "won",
       "home_score": 1,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-07-11_MLB_Twins_vs_Angels",
@@ -5049,7 +5053,8 @@
       "confidence": 65,
       "status": "won",
       "home_score": 5,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-07-11_MLB_Orioles_vs_Royals",
@@ -5065,7 +5070,8 @@
       "confidence": 64,
       "status": "won",
       "home_score": 6,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-07-11_MLB_Reds_vs_Cubs",
@@ -5081,7 +5087,8 @@
       "confidence": 62,
       "status": "won",
       "home_score": 3,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-07-11_MLB_Tigers_vs_Phillies",
@@ -5097,7 +5104,8 @@
       "confidence": 58,
       "status": "lost",
       "home_score": 2,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-07-11_MLB_Cardinals_vs_Braves",
@@ -5113,7 +5121,8 @@
       "confidence": 58,
       "status": "lost",
       "home_score": 4,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-07-12_MLB_Rays_vs_Mariners",
