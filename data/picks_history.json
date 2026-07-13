@@ -5138,7 +5138,8 @@
       "confidence": 76,
       "status": "lost",
       "home_score": 2,
-      "away_score": 8
+      "away_score": 8,
+      "ig_posted": true
     },
     {
       "id": "2026-07-12_MLB_Dodgers_vs_Diamondbacks",
@@ -5154,7 +5155,8 @@
       "confidence": 72,
       "status": "lost",
       "home_score": 3,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-07-12_MLB_Twins_vs_Angels",
@@ -5170,7 +5172,8 @@
       "confidence": 67,
       "status": "won",
       "home_score": 4,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-07-12_MLB_Sox_vs_Athletics",
@@ -5186,7 +5189,8 @@
       "confidence": 67,
       "status": "won",
       "home_score": 9,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-07-12_MLB_Pirates_vs_Brewers",
@@ -5202,7 +5206,8 @@
       "confidence": 66,
       "status": "lost",
       "home_score": 14,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-07-12_MLB_Giants_vs_Rockies",
@@ -5218,7 +5223,8 @@
       "confidence": 57,
       "status": "won",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-07-12_MLB_Cardinals_vs_Braves",
@@ -5234,7 +5240,8 @@
       "confidence": 56,
       "status": "won",
       "home_score": 3,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-07-12_MLB_Padres_vs_Jays",
@@ -5250,7 +5257,8 @@
       "confidence": 55,
       "status": "won",
       "home_score": 5,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-07-12_MLB_Rangers_vs_Astros",
@@ -5266,7 +5274,8 @@
       "confidence": 53,
       "status": "won",
       "home_score": 6,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     }
   ],
   "stats": {
