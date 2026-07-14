@@ -5276,13 +5276,29 @@
       "home_score": 6,
       "away_score": 5,
       "ig_posted": true
+    },
+    {
+      "id": "2026-07-14_MLB_All-Stars_vs_All-Stars",
+      "date": "2026-07-14",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "National All-Stars",
+      "away_team": "American All-Stars",
+      "home_abbr": "NL",
+      "away_abbr": "AL",
+      "pick_label": "NL -1.5",
+      "pick_team": "National All-Stars",
+      "confidence": 50,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 284,
     "wins": 149,
     "losses": 135,
-    "pending": 0,
+    "pending": 1,
     "win_pct": 52.5,
     "current_streak": "L2",
     "by_sport": {
