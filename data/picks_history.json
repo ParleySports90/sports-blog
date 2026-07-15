@@ -5291,7 +5291,8 @@
       "confidence": 50,
       "status": "lost",
       "home_score": 0,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     }
   ],
   "stats": {
