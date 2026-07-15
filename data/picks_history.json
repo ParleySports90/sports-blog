@@ -5289,18 +5289,18 @@
       "pick_label": "NL -1.5",
       "pick_team": "National All-Stars",
       "confidence": 50,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 4
     }
   ],
   "stats": {
-    "total": 284,
+    "total": 285,
     "wins": 149,
-    "losses": 135,
-    "pending": 1,
-    "win_pct": 52.5,
-    "current_streak": "L2",
+    "losses": 136,
+    "pending": 0,
+    "win_pct": 52.3,
+    "current_streak": "L3",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -5308,7 +5308,7 @@
       },
       "baseball": {
         "w": 119,
-        "l": 118
+        "l": 119
       },
       "hockey": {
         "w": 6,
