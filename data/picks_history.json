@@ -5293,13 +5293,29 @@
       "home_score": 0,
       "away_score": 4,
       "ig_posted": true
+    },
+    {
+      "id": "2026-07-16_MLB_Phillies_vs_Mets",
+      "date": "2026-07-16",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Philadelphia Phillies",
+      "away_team": "New York Mets",
+      "home_abbr": "PHI",
+      "away_abbr": "NYM",
+      "pick_label": "PHI -1.5",
+      "pick_team": "Philadelphia Phillies",
+      "confidence": 71,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 285,
     "wins": 149,
     "losses": 136,
-    "pending": 0,
+    "pending": 1,
     "win_pct": 52.3,
     "current_streak": "L3",
     "by_sport": {
