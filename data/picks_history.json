@@ -5308,7 +5308,8 @@
       "confidence": 71,
       "status": "lost",
       "home_score": 1,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-07-17_MLB_Athletics_vs_Nationals",
