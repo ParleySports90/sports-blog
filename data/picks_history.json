@@ -5323,9 +5323,10 @@
       "pick_label": "WSH 1.5",
       "pick_team": "Washington Nationals",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 23,
+      "ig_posted": true
     },
     {
       "id": "2026-07-17_MLB_Mariners_vs_Giants",
@@ -5339,9 +5340,10 @@
       "pick_label": "SEA -1.5",
       "pick_team": "Seattle Mariners",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 7,
+      "ig_posted": true
     },
     {
       "id": "2026-07-17_MLB_Sox_vs_Rays",
@@ -5357,7 +5359,8 @@
       "confidence": 65,
       "status": "lost",
       "home_score": 10,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-07-17_MLB_Brewers_vs_Marlins",
@@ -5373,7 +5376,8 @@
       "confidence": 65,
       "status": "lost",
       "home_score": 2,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-07-17_MLB_Cubs_vs_Twins",
@@ -5389,7 +5393,8 @@
       "confidence": 62,
       "status": "lost",
       "home_score": 2,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-07-18_MLB_Phillies_vs_Mets",
@@ -5489,20 +5494,20 @@
     }
   ],
   "stats": {
-    "total": 289,
-    "wins": 149,
-    "losses": 140,
-    "pending": 8,
-    "win_pct": 51.6,
-    "current_streak": "L7",
+    "total": 291,
+    "wins": 150,
+    "losses": 141,
+    "pending": 6,
+    "win_pct": 51.5,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 119,
-        "l": 123
+        "w": 120,
+        "l": 124
       },
       "hockey": {
         "w": 6,
