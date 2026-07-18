@@ -5408,9 +5408,9 @@
       "pick_label": "PHI -1.5",
       "pick_team": "Philadelphia Phillies",
       "confidence": 69,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 1
     },
     {
       "id": "2026-07-18_MLB_Brewers_vs_Marlins",
@@ -5424,9 +5424,9 @@
       "pick_label": "MIL -1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 8,
+      "away_score": 6
     },
     {
       "id": "2026-07-18_MLB_Mariners_vs_Giants",
@@ -5472,9 +5472,9 @@
       "pick_label": "ATL 1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 63,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 7
     },
     {
       "id": "2026-07-18_MLB_Yankees_vs_Dodgers",
@@ -5488,25 +5488,73 @@
       "pick_label": "LAD 1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 63,
+      "status": "won",
+      "home_score": 0,
+      "away_score": 0
+    },
+    {
+      "id": "2026-07-18_MLB_Sox_vs_Rays",
+      "date": "2026-07-18",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Boston Red Sox",
+      "away_team": "Tampa Bay Rays",
+      "home_abbr": "BOS",
+      "away_abbr": "TB",
+      "pick_label": "TB ML",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 60,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-18_MLB_Angels_vs_Tigers",
+      "date": "2026-07-18",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Los Angeles Angels",
+      "away_team": "Detroit Tigers",
+      "home_abbr": "LAA",
+      "away_abbr": "DET",
+      "pick_label": "LAA 1.5",
+      "pick_team": "Los Angeles Angels",
+      "confidence": 60,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-18_MLB_Guardians_vs_Pirates",
+      "date": "2026-07-18",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Cleveland Guardians",
+      "away_team": "Pittsburgh Pirates",
+      "home_abbr": "CLE",
+      "away_abbr": "PIT",
+      "pick_label": "CLE ML",
+      "pick_team": "Cleveland Guardians",
+      "confidence": 50,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 291,
-    "wins": 150,
+    "total": 295,
+    "wins": 154,
     "losses": 141,
-    "pending": 6,
-    "win_pct": 51.5,
-    "current_streak": "W1",
+    "pending": 5,
+    "win_pct": 52.2,
+    "current_streak": "W5",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 120,
+        "w": 124,
         "l": 124
       },
       "hockey": {
