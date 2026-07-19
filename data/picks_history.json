@@ -5577,9 +5577,9 @@
       "pick_label": "MIL -1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 69,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-07-19_MLB_Athletics_vs_Nationals",
@@ -5593,9 +5593,9 @@
       "pick_label": "WSH 1.5",
       "pick_team": "Washington Nationals",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 5
     },
     {
       "id": "2026-07-19_MLB_Mariners_vs_Giants",
@@ -5609,9 +5609,9 @@
       "pick_label": "SEA -1.5",
       "pick_team": "Seattle Mariners",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 3
     },
     {
       "id": "2026-07-19_MLB_Yankees_vs_Dodgers",
@@ -5641,17 +5641,17 @@
       "pick_label": "CHC ML",
       "pick_team": "Chicago Cubs",
       "confidence": 61,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 10,
+      "away_score": 1
     }
   ],
   "stats": {
-    "total": 302,
-    "wins": 155,
+    "total": 306,
+    "wins": 159,
     "losses": 147,
-    "pending": 4,
-    "win_pct": 51.3,
+    "pending": 0,
+    "win_pct": 52.0,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -5659,7 +5659,7 @@
         "l": 6
       },
       "baseball": {
-        "w": 125,
+        "w": 129,
         "l": 130
       },
       "hockey": {
