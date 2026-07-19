@@ -5561,9 +5561,9 @@
       "pick_label": "PHI 1.5",
       "pick_team": "Philadelphia Phillies",
       "confidence": 71,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 6
     },
     {
       "id": "2026-07-19_MLB_Brewers_vs_Marlins",
@@ -5625,26 +5625,42 @@
       "pick_label": "LAD 1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 63,
+      "status": "won",
+      "home_score": 2,
+      "away_score": 8
+    },
+    {
+      "id": "2026-07-19_MLB_Cubs_vs_Twins",
+      "date": "2026-07-19",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Chicago Cubs",
+      "away_team": "Minnesota Twins",
+      "home_abbr": "CHC",
+      "away_abbr": "MIN",
+      "pick_label": "CHC ML",
+      "pick_team": "Chicago Cubs",
+      "confidence": 61,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 300,
-    "wins": 154,
-    "losses": 146,
-    "pending": 5,
+    "total": 302,
+    "wins": 155,
+    "losses": 147,
+    "pending": 4,
     "win_pct": 51.3,
-    "current_streak": "W2",
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 124,
-        "l": 129
+        "w": 125,
+        "l": 130
       },
       "hockey": {
         "w": 6,
