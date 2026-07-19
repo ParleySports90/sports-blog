@@ -5410,7 +5410,8 @@
       "confidence": 69,
       "status": "won",
       "home_score": 6,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-07-18_MLB_Brewers_vs_Marlins",
@@ -5426,7 +5427,8 @@
       "confidence": 67,
       "status": "won",
       "home_score": 8,
-      "away_score": 6
+      "away_score": 6,
+      "ig_posted": true
     },
     {
       "id": "2026-07-18_MLB_Mariners_vs_Giants",
@@ -5442,7 +5444,8 @@
       "confidence": 66,
       "status": "lost",
       "home_score": 4,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-07-18_MLB_Athletics_vs_Nationals",
@@ -5458,7 +5461,8 @@
       "confidence": 66,
       "status": "lost",
       "home_score": 15,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-07-18_MLB_Braves_vs_Rangers",
@@ -5474,7 +5478,8 @@
       "confidence": 63,
       "status": "won",
       "home_score": 6,
-      "away_score": 7
+      "away_score": 7,
+      "ig_posted": true
     },
     {
       "id": "2026-07-18_MLB_Yankees_vs_Dodgers",
@@ -5490,7 +5495,8 @@
       "confidence": 63,
       "status": "won",
       "home_score": 0,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-07-18_MLB_Sox_vs_Rays",
@@ -5506,7 +5512,8 @@
       "confidence": 60,
       "status": "lost",
       "home_score": 7,
-      "away_score": 6
+      "away_score": 6,
+      "ig_posted": true
     },
     {
       "id": "2026-07-18_MLB_Angels_vs_Tigers",
@@ -5522,7 +5529,8 @@
       "confidence": 60,
       "status": "lost",
       "home_score": 0,
-      "away_score": 7
+      "away_score": 7,
+      "ig_posted": true
     },
     {
       "id": "2026-07-18_MLB_Guardians_vs_Pirates",
@@ -5538,7 +5546,8 @@
       "confidence": 50,
       "status": "lost",
       "home_score": 1,
-      "away_score": 7
+      "away_score": 7,
+      "ig_posted": true
     },
     {
       "id": "2026-07-19_MLB_Phillies_vs_Mets",
