@@ -5440,9 +5440,9 @@
       "pick_label": "SEA -1.5",
       "pick_team": "Seattle Mariners",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "id": "2026-07-18_MLB_Athletics_vs_Nationals",
@@ -5456,9 +5456,9 @@
       "pick_label": "WSH -1.5",
       "pick_team": "Washington Nationals",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 15,
+      "away_score": 1
     },
     {
       "id": "2026-07-18_MLB_Braves_vs_Rangers",
@@ -5504,9 +5504,9 @@
       "pick_label": "TB ML",
       "pick_team": "Tampa Bay Rays",
       "confidence": 60,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 7,
+      "away_score": 6
     },
     {
       "id": "2026-07-18_MLB_Angels_vs_Tigers",
@@ -5520,9 +5520,9 @@
       "pick_label": "LAA 1.5",
       "pick_team": "Los Angeles Angels",
       "confidence": 60,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 7
     },
     {
       "id": "2026-07-18_MLB_Guardians_vs_Pirates",
@@ -5536,18 +5536,98 @@
       "pick_label": "CLE ML",
       "pick_team": "Cleveland Guardians",
       "confidence": 50,
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 7
+    },
+    {
+      "id": "2026-07-19_MLB_Phillies_vs_Mets",
+      "date": "2026-07-19",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Philadelphia Phillies",
+      "away_team": "New York Mets",
+      "home_abbr": "PHI",
+      "away_abbr": "NYM",
+      "pick_label": "PHI 1.5",
+      "pick_team": "Philadelphia Phillies",
+      "confidence": 71,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-19_MLB_Brewers_vs_Marlins",
+      "date": "2026-07-19",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Milwaukee Brewers",
+      "away_team": "Miami Marlins",
+      "home_abbr": "MIL",
+      "away_abbr": "MIA",
+      "pick_label": "MIL -1.5",
+      "pick_team": "Milwaukee Brewers",
+      "confidence": 69,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-19_MLB_Athletics_vs_Nationals",
+      "date": "2026-07-19",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Athletics",
+      "away_team": "Washington Nationals",
+      "home_abbr": "ATH",
+      "away_abbr": "WSH",
+      "pick_label": "WSH 1.5",
+      "pick_team": "Washington Nationals",
+      "confidence": 66,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-19_MLB_Mariners_vs_Giants",
+      "date": "2026-07-19",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Seattle Mariners",
+      "away_team": "San Francisco Giants",
+      "home_abbr": "SEA",
+      "away_abbr": "SF",
+      "pick_label": "SEA -1.5",
+      "pick_team": "Seattle Mariners",
+      "confidence": 65,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-19_MLB_Yankees_vs_Dodgers",
+      "date": "2026-07-19",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "New York Yankees",
+      "away_team": "Los Angeles Dodgers",
+      "home_abbr": "NYY",
+      "away_abbr": "LAD",
+      "pick_label": "LAD 1.5",
+      "pick_team": "Los Angeles Dodgers",
+      "confidence": 63,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 295,
+    "total": 300,
     "wins": 154,
-    "losses": 141,
+    "losses": 146,
     "pending": 5,
-    "win_pct": 52.2,
-    "current_streak": "W5",
+    "win_pct": 51.3,
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -5555,7 +5635,7 @@
       },
       "baseball": {
         "w": 124,
-        "l": 124
+        "l": 129
       },
       "hockey": {
         "w": 6,
