@@ -5663,9 +5663,9 @@
       "pick_label": "MIL -1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 82,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 8,
+      "away_score": 3
     },
     {
       "id": "2026-07-20_MLB_Cubs_vs_Tigers",
@@ -5679,9 +5679,9 @@
       "pick_label": "CHC 1.5",
       "pick_team": "Chicago Cubs",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 6,
+      "away_score": 8
     },
     {
       "id": "2026-07-20_MLB_Rockies_vs_Nationals",
@@ -5695,9 +5695,9 @@
       "pick_label": "WSH 1.5",
       "pick_team": "Washington Nationals",
       "confidence": 68,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 7
     },
     {
       "id": "2026-07-20_MLB_Angels_vs_Cardinals",
@@ -5711,9 +5711,9 @@
       "pick_label": "STL 1.5",
       "pick_team": "St. Louis Cardinals",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-07-20_MLB_Braves_vs_Padres",
@@ -5727,26 +5727,122 @@
       "pick_label": "ATL -1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 65,
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 2
+    },
+    {
+      "id": "2026-07-21_MLB_Brewers_vs_Mets",
+      "date": "2026-07-21",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Milwaukee Brewers",
+      "away_team": "New York Mets",
+      "home_abbr": "MIL",
+      "away_abbr": "NYM",
+      "pick_label": "MIL -1.5",
+      "pick_team": "Milwaukee Brewers",
+      "confidence": 83,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-21_MLB_Rockies_vs_Nationals",
+      "date": "2026-07-21",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Colorado Rockies",
+      "away_team": "Washington Nationals",
+      "home_abbr": "COL",
+      "away_abbr": "WSH",
+      "pick_label": "WSH 1.5",
+      "pick_team": "Washington Nationals",
+      "confidence": 69,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-21_MLB_Cubs_vs_Tigers",
+      "date": "2026-07-21",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Chicago Cubs",
+      "away_team": "Detroit Tigers",
+      "home_abbr": "CHC",
+      "away_abbr": "DET",
+      "pick_label": "CHC 1.5",
+      "pick_team": "Chicago Cubs",
+      "confidence": 68,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-21_MLB_Braves_vs_Padres",
+      "date": "2026-07-21",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Atlanta Braves",
+      "away_team": "San Diego Padres",
+      "home_abbr": "ATL",
+      "away_abbr": "SD",
+      "pick_label": "ATL -1.5",
+      "pick_team": "Atlanta Braves",
+      "confidence": 67,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-21_MLB_Angels_vs_Cardinals",
+      "date": "2026-07-21",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Los Angeles Angels",
+      "away_team": "St. Louis Cardinals",
+      "home_abbr": "LAA",
+      "away_abbr": "STL",
+      "pick_label": "STL 1.5",
+      "pick_team": "St. Louis Cardinals",
+      "confidence": 65,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-21_Copa Sudamericana_FC_vs_Santos",
+      "date": "2026-07-21",
+      "league": "Copa Sudamericana",
+      "sport": "futbol",
+      "home_team": "UCV FC",
+      "away_team": "Santos",
+      "home_abbr": "UCV",
+      "away_abbr": "SAN",
+      "pick_label": "SAN ML",
+      "pick_team": "Santos",
+      "confidence": 85,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 306,
-    "wins": 159,
-    "losses": 147,
-    "pending": 5,
-    "win_pct": 52.0,
-    "current_streak": "L1",
+    "total": 311,
+    "wins": 162,
+    "losses": 149,
+    "pending": 6,
+    "win_pct": 52.1,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 129,
-        "l": 130
+        "w": 132,
+        "l": 132
       },
       "hockey": {
         "w": 6,
