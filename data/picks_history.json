@@ -5750,7 +5750,8 @@
       "confidence": 83,
       "status": "lost",
       "home_score": 0,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-07-21_MLB_Rockies_vs_Nationals",
@@ -5766,7 +5767,8 @@
       "confidence": 69,
       "status": "won",
       "home_score": 8,
-      "away_score": 7
+      "away_score": 7,
+      "ig_posted": true
     },
     {
       "id": "2026-07-21_MLB_Cubs_vs_Tigers",
@@ -5782,7 +5784,8 @@
       "confidence": 68,
       "status": "won",
       "home_score": 11,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-07-21_MLB_Braves_vs_Padres",
@@ -5798,7 +5801,8 @@
       "confidence": 67,
       "status": "lost",
       "home_score": 3,
-      "away_score": 8
+      "away_score": 8,
+      "ig_posted": true
     },
     {
       "id": "2026-07-21_MLB_Angels_vs_Cardinals",
@@ -5814,7 +5818,8 @@
       "confidence": 65,
       "status": "lost",
       "home_score": 5,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-07-21_Copa Sudamericana_FC_vs_Santos",
@@ -5830,7 +5835,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 1,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-07-22_MLB_Brewers_vs_Mets",
