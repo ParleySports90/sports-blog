@@ -6018,9 +6018,9 @@
       "pick_label": "ATL -1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 6,
+      "away_score": 5
     },
     {
       "id": "2026-07-23_MLB_Tigers_vs_Royals",
@@ -6066,9 +6066,9 @@
       "pick_label": "CLE -1.5",
       "pick_team": "Cleveland Guardians",
       "confidence": 56,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "id": "2026-07-23_MLB_Cardinals_vs_Diamondbacks",
@@ -6120,12 +6120,12 @@
     }
   ],
   "stats": {
-    "total": 325,
+    "total": 327,
     "wins": 169,
-    "losses": 156,
-    "pending": 7,
-    "win_pct": 52.0,
-    "current_streak": "L2",
+    "losses": 158,
+    "pending": 5,
+    "win_pct": 51.7,
+    "current_streak": "L4",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -6133,7 +6133,7 @@
       },
       "baseball": {
         "w": 138,
-        "l": 139
+        "l": 141
       },
       "hockey": {
         "w": 6,
