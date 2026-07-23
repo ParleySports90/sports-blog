@@ -5866,9 +5866,9 @@
       "pick_label": "CHC 1.5",
       "pick_team": "Chicago Cubs",
       "confidence": 69,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 5
     },
     {
       "id": "2026-07-22_MLB_Rockies_vs_Nationals",
@@ -5914,9 +5914,9 @@
       "pick_label": "ATL 1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 7,
+      "away_score": 6
     },
     {
       "id": "2026-07-22_Copa Sudamericana_Medellín_vs_Gama",
@@ -5930,9 +5930,9 @@
       "pick_label": "VAS ML",
       "pick_team": "Vasco da Gama",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "id": "2026-07-22_Copa Sudamericana_Cristal_vs_Bragantino",
@@ -5946,9 +5946,9 @@
       "pick_label": "BRA ML",
       "pick_team": "Red Bull Bragantino",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-07-22_MLB_Phillies_vs_Dodgers",
@@ -5962,9 +5962,9 @@
       "pick_label": "LAD ML",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 63,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 9
     },
     {
       "id": "2026-07-22_MLB_Jays_vs_Rays",
@@ -5978,9 +5978,9 @@
       "pick_label": "TOR ML",
       "pick_team": "Toronto Blue Jays",
       "confidence": 62,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 4
     },
     {
       "id": "2026-07-22_MLB_Guardians_vs_Twins",
@@ -5994,26 +5994,138 @@
       "pick_label": "CLE ML",
       "pick_team": "Cleveland Guardians",
       "confidence": 58,
+      "status": "lost",
+      "home_score": 6,
+      "away_score": 10
+    },
+    {
+      "id": "2026-07-23_MLB_Braves_vs_Padres",
+      "date": "2026-07-23",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Atlanta Braves",
+      "away_team": "San Diego Padres",
+      "home_abbr": "ATL",
+      "away_abbr": "SD",
+      "pick_label": "ATL -1.5",
+      "pick_team": "Atlanta Braves",
+      "confidence": 67,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-23_MLB_Tigers_vs_Royals",
+      "date": "2026-07-23",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Detroit Tigers",
+      "away_team": "Kansas City Royals",
+      "home_abbr": "DET",
+      "away_abbr": "KC",
+      "pick_label": "DET -1.5",
+      "pick_team": "Detroit Tigers",
+      "confidence": 65,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-23_MLB_Jays_vs_Rays",
+      "date": "2026-07-23",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Toronto Blue Jays",
+      "away_team": "Tampa Bay Rays",
+      "home_abbr": "TOR",
+      "away_abbr": "TB",
+      "pick_label": "TB 1.5",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 64,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-23_MLB_Guardians_vs_Twins",
+      "date": "2026-07-23",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Cleveland Guardians",
+      "away_team": "Minnesota Twins",
+      "home_abbr": "CLE",
+      "away_abbr": "MIN",
+      "pick_label": "CLE -1.5",
+      "pick_team": "Cleveland Guardians",
+      "confidence": 56,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-23_MLB_Cardinals_vs_Diamondbacks",
+      "date": "2026-07-23",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "St. Louis Cardinals",
+      "away_team": "Arizona Diamondbacks",
+      "home_abbr": "STL",
+      "away_abbr": "ARI",
+      "pick_label": "STL -1.5",
+      "pick_team": "St. Louis Cardinals",
+      "confidence": 53,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-23_Copa Sudamericana_Juniors_vs_O'Higgins",
+      "date": "2026-07-23",
+      "league": "Copa Sudamericana",
+      "sport": "futbol",
+      "home_team": "Boca Juniors",
+      "away_team": "O'Higgins",
+      "home_abbr": "CABJ",
+      "away_abbr": "OHI",
+      "pick_label": "OHI ML",
+      "pick_team": "O'Higgins",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-23_Copa Sudamericana_Bolívar_vs_Grêmio",
+      "date": "2026-07-23",
+      "league": "Copa Sudamericana",
+      "sport": "futbol",
+      "home_team": "Bolívar",
+      "away_team": "Grêmio",
+      "home_abbr": "BOL",
+      "away_abbr": "GRE",
+      "pick_label": "BOL ML",
+      "pick_team": "Bolívar",
+      "confidence": 83,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 320,
-    "wins": 167,
-    "losses": 153,
+    "total": 325,
+    "wins": 169,
+    "losses": 156,
     "pending": 7,
-    "win_pct": 52.2,
-    "current_streak": "L1",
+    "win_pct": 52.0,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 136,
-        "l": 136
+        "w": 138,
+        "l": 139
       },
       "hockey": {
         "w": 6,
