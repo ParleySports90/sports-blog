@@ -5852,7 +5852,8 @@
       "confidence": 81,
       "status": "lost",
       "home_score": 4,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-07-22_MLB_Cubs_vs_Tigers",
@@ -5868,7 +5869,8 @@
       "confidence": 69,
       "status": "lost",
       "home_score": 1,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-07-22_MLB_Rockies_vs_Nationals",
@@ -5884,7 +5886,8 @@
       "confidence": 67,
       "status": "won",
       "home_score": 0,
-      "away_score": 8
+      "away_score": 8,
+      "ig_posted": true
     },
     {
       "id": "2026-07-22_MLB_Diamondbacks_vs_Athletics",
@@ -5900,7 +5903,8 @@
       "confidence": 65,
       "status": "won",
       "home_score": 15,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-07-22_MLB_Braves_vs_Padres",
@@ -5916,7 +5920,8 @@
       "confidence": 65,
       "status": "won",
       "home_score": 7,
-      "away_score": 6
+      "away_score": 6,
+      "ig_posted": true
     },
     {
       "id": "2026-07-22_Copa Sudamericana_Medellín_vs_Gama",
@@ -5964,7 +5969,8 @@
       "confidence": 63,
       "status": "won",
       "home_score": 5,
-      "away_score": 9
+      "away_score": 9,
+      "ig_posted": true
     },
     {
       "id": "2026-07-22_MLB_Jays_vs_Rays",
@@ -5980,7 +5986,8 @@
       "confidence": 62,
       "status": "lost",
       "home_score": 2,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-07-22_MLB_Guardians_vs_Twins",
@@ -5996,7 +6003,8 @@
       "confidence": 58,
       "status": "lost",
       "home_score": 6,
-      "away_score": 10
+      "away_score": 10,
+      "ig_posted": true
     },
     {
       "id": "2026-07-23_MLB_Braves_vs_Padres",
