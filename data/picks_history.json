@@ -6050,9 +6050,9 @@
       "pick_label": "TB 1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-07-23_MLB_Guardians_vs_Twins",
@@ -6120,12 +6120,12 @@
     }
   ],
   "stats": {
-    "total": 327,
+    "total": 328,
     "wins": 169,
-    "losses": 158,
-    "pending": 5,
-    "win_pct": 51.7,
-    "current_streak": "L4",
+    "losses": 159,
+    "pending": 4,
+    "win_pct": 51.5,
+    "current_streak": "L5",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -6133,7 +6133,7 @@
       },
       "baseball": {
         "w": 138,
-        "l": 141
+        "l": 142
       },
       "hockey": {
         "w": 6,
