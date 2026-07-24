@@ -6137,9 +6137,9 @@
       "pick_label": "MIL -1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 88,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 5
     },
     {
       "id": "2026-07-24_MLB_Mets_vs_Dodgers",
@@ -6204,15 +6204,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-07-24_MLB_Orioles_vs_Braves",
+      "date": "2026-07-24",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Baltimore Orioles",
+      "away_team": "Atlanta Braves",
+      "home_abbr": "BAL",
+      "away_abbr": "ATL",
+      "pick_label": "ATL ML",
+      "pick_team": "Atlanta Braves",
+      "confidence": 61,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 332,
+    "total": 333,
     "wins": 170,
-    "losses": 162,
+    "losses": 163,
     "pending": 5,
-    "win_pct": 51.2,
-    "current_streak": "L6",
+    "win_pct": 51.1,
+    "current_streak": "L7",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -6220,7 +6236,7 @@
       },
       "baseball": {
         "w": 138,
-        "l": 144
+        "l": 145
       },
       "hockey": {
         "w": 6,
