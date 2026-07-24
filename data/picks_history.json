@@ -6020,7 +6020,8 @@
       "confidence": 67,
       "status": "lost",
       "home_score": 6,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-07-23_MLB_Tigers_vs_Royals",
@@ -6036,7 +6037,8 @@
       "confidence": 65,
       "status": "lost",
       "home_score": 4,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-07-23_MLB_Jays_vs_Rays",
@@ -6052,7 +6054,8 @@
       "confidence": 64,
       "status": "lost",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-07-23_MLB_Guardians_vs_Twins",
@@ -6068,7 +6071,8 @@
       "confidence": 56,
       "status": "lost",
       "home_score": 1,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-07-23_MLB_Cardinals_vs_Diamondbacks",
@@ -6084,7 +6088,8 @@
       "confidence": 53,
       "status": "lost",
       "home_score": 6,
-      "away_score": 10
+      "away_score": 10,
+      "ig_posted": true
     },
     {
       "id": "2026-07-23_Copa Sudamericana_Juniors_vs_O'Higgins",
@@ -6100,7 +6105,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 1,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-07-23_Copa Sudamericana_Bolívar_vs_Grêmio",
@@ -6116,7 +6122,8 @@
       "confidence": 83,
       "status": "won",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-07-24_MLB_Brewers_vs_Rockies",
