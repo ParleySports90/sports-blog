@@ -6153,9 +6153,9 @@
       "pick_label": "LAD 1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 82,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 4
     },
     {
       "id": "2026-07-24_MLB_Tigers_vs_Royals",
@@ -6169,9 +6169,9 @@
       "pick_label": "DET -1.5",
       "pick_team": "Detroit Tigers",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-07-24_MLB_Rays_vs_Guardians",
@@ -6185,9 +6185,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 11,
+      "away_score": 3
     },
     {
       "id": "2026-07-24_MLB_Sox_vs_Astros",
@@ -6201,9 +6201,9 @@
       "pick_label": "CHW -1.5",
       "pick_team": "Chicago White Sox",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 9
     },
     {
       "id": "2026-07-24_MLB_Orioles_vs_Braves",
@@ -6217,26 +6217,106 @@
       "pick_label": "ATL ML",
       "pick_team": "Atlanta Braves",
       "confidence": 61,
+      "status": "won",
+      "home_score": 6,
+      "away_score": 7
+    },
+    {
+      "id": "2026-07-25_MLB_Brewers_vs_Rockies",
+      "date": "2026-07-25",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Milwaukee Brewers",
+      "away_team": "Colorado Rockies",
+      "home_abbr": "MIL",
+      "away_abbr": "COL",
+      "pick_label": "MIL -1.5",
+      "pick_team": "Milwaukee Brewers",
+      "confidence": 86,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-25_MLB_Mets_vs_Dodgers",
+      "date": "2026-07-25",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "New York Mets",
+      "away_team": "Los Angeles Dodgers",
+      "home_abbr": "NYM",
+      "away_abbr": "LAD",
+      "pick_label": "LAD 1.5",
+      "pick_team": "Los Angeles Dodgers",
+      "confidence": 83,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-25_MLB_Tigers_vs_Royals",
+      "date": "2026-07-25",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Detroit Tigers",
+      "away_team": "Kansas City Royals",
+      "home_abbr": "DET",
+      "away_abbr": "KC",
+      "pick_label": "DET -1.5",
+      "pick_team": "Detroit Tigers",
+      "confidence": 68,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-25_MLB_Rays_vs_Guardians",
+      "date": "2026-07-25",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Cleveland Guardians",
+      "home_abbr": "TB",
+      "away_abbr": "CLE",
+      "pick_label": "TB -1.5",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 66,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-25_MLB_Orioles_vs_Braves",
+      "date": "2026-07-25",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Baltimore Orioles",
+      "away_team": "Atlanta Braves",
+      "home_abbr": "BAL",
+      "away_abbr": "ATL",
+      "pick_label": "ATL 1.5",
+      "pick_team": "Atlanta Braves",
+      "confidence": 63,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 333,
-    "wins": 170,
-    "losses": 163,
+    "total": 338,
+    "wins": 173,
+    "losses": 165,
     "pending": 5,
-    "win_pct": 51.1,
-    "current_streak": "L7",
+    "win_pct": 51.2,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 138,
-        "l": 145
+        "w": 141,
+        "l": 147
       },
       "hockey": {
         "w": 6,
