@@ -6271,9 +6271,9 @@
       "pick_label": "DET -1.5",
       "pick_team": "Detroit Tigers",
       "confidence": 68,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-07-25_MLB_Rays_vs_Guardians",
@@ -6306,15 +6306,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-07-25_MLB_Sox_vs_Astros",
+      "date": "2026-07-25",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Chicago White Sox",
+      "away_team": "Houston Astros",
+      "home_abbr": "CHW",
+      "away_abbr": "HOU",
+      "pick_label": "CHW -1.5",
+      "pick_team": "Chicago White Sox",
+      "confidence": 61,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 338,
+    "total": 339,
     "wins": 173,
-    "losses": 165,
+    "losses": 166,
     "pending": 5,
-    "win_pct": 51.2,
-    "current_streak": "L1",
+    "win_pct": 51.0,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -6322,7 +6338,7 @@
       },
       "baseball": {
         "w": 141,
-        "l": 147
+        "l": 148
       },
       "hockey": {
         "w": 6,
