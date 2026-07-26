@@ -6405,9 +6405,9 @@
       "pick_label": "ATL 1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 61,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-07-26_MLB_Giants_vs_Angels",
@@ -6421,9 +6421,9 @@
       "pick_label": "SF ML",
       "pick_team": "San Francisco Giants",
       "confidence": 61,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 4
     },
     {
       "id": "2026-07-26_MLB_Twins_vs_Athletics",
@@ -6437,9 +6437,9 @@
       "pick_label": "MIN ML",
       "pick_team": "Minnesota Twins",
       "confidence": 59,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 11,
+      "away_score": 8
     },
     {
       "id": "2026-07-26_MLB_Sox_vs_Astros",
@@ -6453,9 +6453,9 @@
       "pick_label": "CHW ML",
       "pick_team": "Chicago White Sox",
       "confidence": 59,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 12,
+      "away_score": 3
     },
     {
       "id": "2026-07-26_MLB_Rangers_vs_Mariners",
@@ -6469,17 +6469,33 @@
       "pick_label": "TEX ML",
       "pick_team": "Texas Rangers",
       "confidence": 58,
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 6
+    },
+    {
+      "id": "2026-07-26_MLB_Phillies_vs_Yankees",
+      "date": "2026-07-26",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Philadelphia Phillies",
+      "away_team": "New York Yankees",
+      "home_abbr": "PHI",
+      "away_abbr": "NYY",
+      "pick_label": "NYY ML",
+      "pick_team": "New York Yankees",
+      "confidence": 58,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 348,
-    "wins": 178,
-    "losses": 170,
-    "pending": 5,
-    "win_pct": 51.1,
+    "total": 353,
+    "wins": 181,
+    "losses": 172,
+    "pending": 1,
+    "win_pct": 51.3,
     "current_streak": "W1",
     "by_sport": {
       "basketball": {
@@ -6487,8 +6503,8 @@
         "l": 6
       },
       "baseball": {
-        "w": 146,
-        "l": 152
+        "w": 149,
+        "l": 154
       },
       "hockey": {
         "w": 6,
