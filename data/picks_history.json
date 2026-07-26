@@ -6241,7 +6241,8 @@
       "confidence": 86,
       "status": "won",
       "home_score": 8,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-07-25_MLB_Mets_vs_Dodgers",
@@ -6257,7 +6258,8 @@
       "confidence": 83,
       "status": "won",
       "home_score": 3,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-07-25_MLB_Tigers_vs_Royals",
@@ -6273,7 +6275,8 @@
       "confidence": 68,
       "status": "lost",
       "home_score": 2,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-07-25_MLB_Rays_vs_Guardians",
@@ -6289,7 +6292,8 @@
       "confidence": 66,
       "status": "won",
       "home_score": 3,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-07-25_MLB_Orioles_vs_Braves",
@@ -6305,7 +6309,8 @@
       "confidence": 63,
       "status": "won",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-07-25_MLB_Sox_vs_Astros",
@@ -6321,7 +6326,8 @@
       "confidence": 61,
       "status": "lost",
       "home_score": 1,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-07-26_MLB_Brewers_vs_Rockies",
