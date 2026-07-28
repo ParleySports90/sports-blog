@@ -6613,9 +6613,9 @@
       "pick_label": "ATL 1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 72,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-07-28_MLB_Athletics_vs_Sox",
@@ -6664,22 +6664,38 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-07-28_MLB_Rays_vs_Rangers",
+      "date": "2026-07-28",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Texas Rangers",
+      "home_abbr": "TB",
+      "away_abbr": "TEX",
+      "pick_label": "TB -1.5",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 69,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 359,
-    "wins": 184,
+    "total": 360,
+    "wins": 185,
     "losses": 175,
     "pending": 6,
-    "win_pct": 51.3,
-    "current_streak": "L2",
+    "win_pct": 51.4,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 152,
+        "w": 153,
         "l": 157
       },
       "hockey": {
