@@ -591,6 +591,96 @@
         }
         .pitcher-stat span { color: #fff; font-weight: 700; }
         .pitcher-split { font-size: 0.68rem; color: #777; margin-top: 4px; }
+
+        /* ---- Últimos Juegos & Arsenal MLB ---- */
+        .mlb-advanced-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        @media (max-width: 700px) { .mlb-advanced-grid { grid-template-columns: 1fr; } }
+        .mlb-adv-block {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 8px;
+            padding: 10px 12px;
+        }
+        .mlb-adv-block.home-block { border-top: 2px solid #3a7bd5; }
+        .mlb-adv-block.away-block { border-top: 2px solid #e53935; }
+        .mlb-adv-title {
+            font-size: 0.66rem;
+            font-weight: 700;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 7px;
+        }
+        .mlb-lg-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.67rem;
+        }
+        .mlb-lg-table th {
+            color: #666;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 2px 5px;
+            text-align: right;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .mlb-lg-table th:first-child, .mlb-lg-table td:first-child { text-align: left; }
+        .mlb-lg-table td {
+            padding: 3px 5px;
+            text-align: right;
+            color: #ccc;
+            border-bottom: 1px solid rgba(255,255,255,0.03);
+        }
+        .mlb-lg-table td:first-child { color: #888; }
+        .mlb-lg-era-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.06);
+            border-radius: 4px;
+            padding: 2px 8px;
+            font-size: 0.68rem;
+            color: #aaa;
+            margin-top: 6px;
+        }
+        .mlb-lg-era-badge span { color: #fff; font-weight: 700; }
+        .mlb-hand-row {
+            display: flex;
+            gap: 10px;
+            margin-top: 6px;
+            flex-wrap: wrap;
+        }
+        .mlb-hand-chip {
+            background: rgba(255,255,255,0.05);
+            border-radius: 5px;
+            padding: 4px 10px;
+            font-size: 0.67rem;
+            color: #aaa;
+        }
+        .mlb-hand-chip b { color: #fff; }
+        .mlb-hand-label { font-size: 0.62rem; color: #666; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 3px; }
+        .mlb-arsenal-list {
+            list-style: none;
+            padding: 0;
+            margin: 4px 0 0;
+        }
+        .mlb-arsenal-list li {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.67rem;
+            padding: 3px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+            color: #bbb;
+        }
+        .mlb-arsenal-list li:last-child { border-bottom: none; }
+        .mlb-arsenal-pitch { color: #ddd; font-weight: 600; }
+        .mlb-arsenal-stat { color: #888; }
+        .mlb-arsenal-stat span { color: #fff; }
+
         .batting-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1916,11 +2006,14 @@
                             <th>G-P</th>
                             <th>IL</th>
                             <th>ERA</th>
+                            <th title="ERA en últimos 3 juegos">ERA-3</th>
                             <th>HP</th>
                             <th>CL</th>
                             <th>BB</th>
                             <th>SO</th>
                             <th>WHIP</th>
+                            <th title="BAA vs Zurdos">vs-Z</th>
+                            <th title="BAA vs Derechos">vs-D</th>
                             <th>Casa</th>
                             <th>Ruta</th>
                         </tr>
@@ -1935,11 +2028,14 @@
                             <td>{{ m.home_pitcher.record }}</td>
                             <td>{{ m.home_pitcher.ip }}</td>
                             <td {% if m.pick == m.home_abbr %}class="mlb-stat-highlight"{% endif %}>{{ m.home_pitcher.era }}</td>
+                            <td title="ERA últimos 3 jgs">{{ m.home_pitcher.last_games_era if m.home_pitcher.last_games_era else '-' }}</td>
                             <td>{{ m.home_pitcher.hits }}</td>
                             <td>{{ m.home_pitcher.er }}</td>
                             <td>{{ m.home_pitcher.bb }}</td>
                             <td>{{ m.home_pitcher.so }}</td>
                             <td>{{ m.home_pitcher.whip }}</td>
+                            <td title="BAA vs Zurdos">{{ m.home_pitcher.handedness_splits.vs_left.avg }}</td>
+                            <td title="BAA vs Derechos">{{ m.home_pitcher.handedness_splits.vs_right.avg }}</td>
                             <td>{{ m.home_pitcher.home_era }}</td>
                             <td>{{ m.home_pitcher.away_era }}</td>
                         </tr>
@@ -1952,11 +2048,14 @@
                             <td>{{ m.away_pitcher.record }}</td>
                             <td>{{ m.away_pitcher.ip }}</td>
                             <td {% if m.pick == m.away_abbr %}class="mlb-stat-highlight"{% endif %}>{{ m.away_pitcher.era }}</td>
+                            <td title="ERA últimos 3 jgs">{{ m.away_pitcher.last_games_era if m.away_pitcher.last_games_era else '-' }}</td>
                             <td>{{ m.away_pitcher.hits }}</td>
                             <td>{{ m.away_pitcher.er }}</td>
                             <td>{{ m.away_pitcher.bb }}</td>
                             <td>{{ m.away_pitcher.so }}</td>
                             <td>{{ m.away_pitcher.whip }}</td>
+                            <td title="BAA vs Zurdos">{{ m.away_pitcher.handedness_splits.vs_left.avg }}</td>
+                            <td title="BAA vs Derechos">{{ m.away_pitcher.handedness_splits.vs_right.avg }}</td>
                             <td>{{ m.away_pitcher.home_era }}</td>
                             <td>{{ m.away_pitcher.away_era }}</td>
                         </tr>
@@ -1979,12 +2078,24 @@
                                 <div class="mlb-mobile-stat-value">{{ m.home_pitcher.era }}</div>
                             </div>
                             <div class="mlb-mobile-stat">
+                                <div class="mlb-mobile-stat-label">ERA-3</div>
+                                <div class="mlb-mobile-stat-value">{{ m.home_pitcher.last_games_era if m.home_pitcher.last_games_era else '-' }}</div>
+                            </div>
+                            <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">WHIP</div>
                                 <div class="mlb-mobile-stat-value">{{ m.home_pitcher.whip }}</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">SO</div>
                                 <div class="mlb-mobile-stat-value">{{ m.home_pitcher.so }}</div>
+                            </div>
+                            <div class="mlb-mobile-stat">
+                                <div class="mlb-mobile-stat-label">vs-Z</div>
+                                <div class="mlb-mobile-stat-value">{{ m.home_pitcher.handedness_splits.vs_left.avg }}</div>
+                            </div>
+                            <div class="mlb-mobile-stat">
+                                <div class="mlb-mobile-stat-label">vs-D</div>
+                                <div class="mlb-mobile-stat-value">{{ m.home_pitcher.handedness_splits.vs_right.avg }}</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">Casa</div>
@@ -2010,12 +2121,24 @@
                                 <div class="mlb-mobile-stat-value">{{ m.away_pitcher.era }}</div>
                             </div>
                             <div class="mlb-mobile-stat">
+                                <div class="mlb-mobile-stat-label">ERA-3</div>
+                                <div class="mlb-mobile-stat-value">{{ m.away_pitcher.last_games_era if m.away_pitcher.last_games_era else '-' }}</div>
+                            </div>
+                            <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">WHIP</div>
                                 <div class="mlb-mobile-stat-value">{{ m.away_pitcher.whip }}</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">SO</div>
                                 <div class="mlb-mobile-stat-value">{{ m.away_pitcher.so }}</div>
+                            </div>
+                            <div class="mlb-mobile-stat">
+                                <div class="mlb-mobile-stat-label">vs-Z</div>
+                                <div class="mlb-mobile-stat-value">{{ m.away_pitcher.handedness_splits.vs_left.avg }}</div>
+                            </div>
+                            <div class="mlb-mobile-stat">
+                                <div class="mlb-mobile-stat-label">vs-D</div>
+                                <div class="mlb-mobile-stat-value">{{ m.away_pitcher.handedness_splits.vs_right.avg }}</div>
                             </div>
                             <div class="mlb-mobile-stat">
                                 <div class="mlb-mobile-stat-label">Casa</div>
@@ -2026,6 +2149,116 @@
                                 <div class="mlb-mobile-stat-value">{{ m.away_pitcher.away_era }}</div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Sección avanzada: últimos juegos + splits por mano + arsenal -->
+                <div class="mlb-advanced-grid">
+                    {# ── LOCAL ── #}
+                    <div class="mlb-adv-block home-block">
+                        <div class="mlb-adv-title">&#127968; {{ m.home_abbr }} — {{ m.home_pitcher.name }}</div>
+
+                        {# Últimos 3 juegos #}
+                        {% if m.home_pitcher.last_games %}
+                        <div class="mlb-hand-label">Últimos {{ m.home_pitcher.last_games|length }} juegos</div>
+                        <table class="mlb-lg-table">
+                            <thead><tr><th>Fecha</th><th>Rival</th><th>IP</th><th>H</th><th>CL</th><th>BB</th><th>K</th></tr></thead>
+                            <tbody>
+                            {% for g in m.home_pitcher.last_games %}
+                            <tr>
+                                <td>{{ g.date }}</td>
+                                <td>{{ g.opponent }}</td>
+                                <td>{{ g.ip }}</td>
+                                <td>{{ g.h }}</td>
+                                <td>{{ g.er }}</td>
+                                <td>{{ g.bb }}</td>
+                                <td>{{ g.k }}</td>
+                            </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                        {% if m.home_pitcher.last_games_era is not none %}
+                        <div class="mlb-lg-era-badge">ERA reciente: <span>{{ m.home_pitcher.last_games_era }}</span></div>
+                        {% endif %}
+                        {% endif %}
+
+                        {# Splits por mano #}
+                        <div class="mlb-hand-label" style="margin-top:8px">BAA por mano del bateador</div>
+                        <div class="mlb-hand-row">
+                            <div class="mlb-hand-chip">&#9756; Zurdo: <b>{{ m.home_pitcher.handedness_splits.vs_left.avg }}</b>
+                                <span style="color:#666"> OPS {{ m.home_pitcher.handedness_splits.vs_left.ops }}</span></div>
+                            <div class="mlb-hand-chip">&#9758; Derecho: <b>{{ m.home_pitcher.handedness_splits.vs_right.avg }}</b>
+                                <span style="color:#666"> OPS {{ m.home_pitcher.handedness_splits.vs_right.ops }}</span></div>
+                        </div>
+
+                        {# Arsenal de pitcheos #}
+                        {% if m.home_pitcher.arsenal %}
+                        <div class="mlb-hand-label" style="margin-top:8px">Arsenal de pitcheos</div>
+                        <ul class="mlb-arsenal-list">
+                        {% for p in m.home_pitcher.arsenal %}
+                            <li>
+                                <span class="mlb-arsenal-pitch">{{ p.pitch_name }}</span>
+                                <span class="mlb-arsenal-stat">
+                                    <span>{{ p.avg_speed }}</span> mph &nbsp;|&nbsp;
+                                    BAA <span>{{ p.ba }}</span> &nbsp;|&nbsp;
+                                    Whiff <span>{{ p.whiff_pct }}</span>
+                                </span>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+
+                    {# ── VISITA ── #}
+                    <div class="mlb-adv-block away-block">
+                        <div class="mlb-adv-title">&#9992;&#65039; {{ m.away_abbr }} — {{ m.away_pitcher.name }}</div>
+
+                        {% if m.away_pitcher.last_games %}
+                        <div class="mlb-hand-label">Últimos {{ m.away_pitcher.last_games|length }} juegos</div>
+                        <table class="mlb-lg-table">
+                            <thead><tr><th>Fecha</th><th>Rival</th><th>IP</th><th>H</th><th>CL</th><th>BB</th><th>K</th></tr></thead>
+                            <tbody>
+                            {% for g in m.away_pitcher.last_games %}
+                            <tr>
+                                <td>{{ g.date }}</td>
+                                <td>{{ g.opponent }}</td>
+                                <td>{{ g.ip }}</td>
+                                <td>{{ g.h }}</td>
+                                <td>{{ g.er }}</td>
+                                <td>{{ g.bb }}</td>
+                                <td>{{ g.k }}</td>
+                            </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                        {% if m.away_pitcher.last_games_era is not none %}
+                        <div class="mlb-lg-era-badge">ERA reciente: <span>{{ m.away_pitcher.last_games_era }}</span></div>
+                        {% endif %}
+                        {% endif %}
+
+                        <div class="mlb-hand-label" style="margin-top:8px">BAA por mano del bateador</div>
+                        <div class="mlb-hand-row">
+                            <div class="mlb-hand-chip">&#9756; Zurdo: <b>{{ m.away_pitcher.handedness_splits.vs_left.avg }}</b>
+                                <span style="color:#666"> OPS {{ m.away_pitcher.handedness_splits.vs_left.ops }}</span></div>
+                            <div class="mlb-hand-chip">&#9758; Derecho: <b>{{ m.away_pitcher.handedness_splits.vs_right.avg }}</b>
+                                <span style="color:#666"> OPS {{ m.away_pitcher.handedness_splits.vs_right.ops }}</span></div>
+                        </div>
+
+                        {% if m.away_pitcher.arsenal %}
+                        <div class="mlb-hand-label" style="margin-top:8px">Arsenal de pitcheos</div>
+                        <ul class="mlb-arsenal-list">
+                        {% for p in m.away_pitcher.arsenal %}
+                            <li>
+                                <span class="mlb-arsenal-pitch">{{ p.pitch_name }}</span>
+                                <span class="mlb-arsenal-stat">
+                                    <span>{{ p.avg_speed }}</span> mph &nbsp;|&nbsp;
+                                    BAA <span>{{ p.ba }}</span> &nbsp;|&nbsp;
+                                    Whiff <span>{{ p.whiff_pct }}</span>
+                                </span>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                        {% endif %}
                     </div>
                 </div>
 
