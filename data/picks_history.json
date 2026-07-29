@@ -6661,9 +6661,9 @@
       "pick_label": "SAN ML",
       "pick_team": "Santos",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "id": "2026-07-28_MLB_Rays_vs_Rangers",
@@ -6677,18 +6677,130 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 69,
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 4
+    },
+    {
+      "id": "2026-07-29_MLB_Giants_vs_Brewers",
+      "date": "2026-07-29",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Francisco Giants",
+      "away_team": "Milwaukee Brewers",
+      "home_abbr": "SF",
+      "away_abbr": "MIL",
+      "pick_label": "MIL 1.5",
+      "pick_team": "Milwaukee Brewers",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-29_MLB_Dodgers_vs_Mariners",
+      "date": "2026-07-29",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Los Angeles Dodgers",
+      "away_team": "Seattle Mariners",
+      "home_abbr": "LAD",
+      "away_abbr": "SEA",
+      "pick_label": "LAD -1.5",
+      "pick_team": "Los Angeles Dodgers",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-29_MLB_Mets_vs_Braves",
+      "date": "2026-07-29",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "New York Mets",
+      "away_team": "Atlanta Braves",
+      "home_abbr": "NYM",
+      "away_abbr": "ATL",
+      "pick_label": "ATL 1.5",
+      "pick_team": "Atlanta Braves",
+      "confidence": 72,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-29_MLB_Padres_vs_Rockies",
+      "date": "2026-07-29",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Diego Padres",
+      "away_team": "Colorado Rockies",
+      "home_abbr": "SD",
+      "away_abbr": "COL",
+      "pick_label": "SD -1.5",
+      "pick_team": "San Diego Padres",
+      "confidence": 70,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-29_MLB_Athletics_vs_Sox",
+      "date": "2026-07-29",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Athletics",
+      "away_team": "Boston Red Sox",
+      "home_abbr": "ATH",
+      "away_abbr": "BOS",
+      "pick_label": "BOS 1.5",
+      "pick_team": "Boston Red Sox",
+      "confidence": 70,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-29_Copa Sudamericana_Gama_vs_Medellín",
+      "date": "2026-07-29",
+      "league": "Copa Sudamericana",
+      "sport": "futbol",
+      "home_team": "Vasco da Gama",
+      "away_team": "Independiente Medellín",
+      "home_abbr": "VAS",
+      "away_abbr": "DIM",
+      "pick_label": "VAS ML",
+      "pick_team": "Vasco da Gama",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-29_Copa Sudamericana_Bragantino_vs_Cristal",
+      "date": "2026-07-29",
+      "league": "Copa Sudamericana",
+      "sport": "futbol",
+      "home_team": "Red Bull Bragantino",
+      "away_team": "Sporting Cristal",
+      "home_abbr": "BRA",
+      "away_abbr": "SCR",
+      "pick_label": "BRA ML",
+      "pick_team": "Red Bull Bragantino",
+      "confidence": 85,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 360,
-    "wins": 185,
-    "losses": 175,
-    "pending": 6,
+    "total": 362,
+    "wins": 186,
+    "losses": 176,
+    "pending": 11,
     "win_pct": 51.4,
-    "current_streak": "W1",
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -6696,14 +6808,14 @@
       },
       "baseball": {
         "w": 153,
-        "l": 157
+        "l": 158
       },
       "hockey": {
         "w": 6,
         "l": 2
       },
       "futbol": {
-        "w": 25,
+        "w": 26,
         "l": 10
       }
     }
