@@ -6693,9 +6693,9 @@
       "pick_label": "MIL 1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 16,
+      "away_score": 3
     },
     {
       "id": "2026-07-29_MLB_Dodgers_vs_Mariners",
@@ -6741,9 +6741,9 @@
       "pick_label": "SD -1.5",
       "pick_team": "San Diego Padres",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-07-29_MLB_Athletics_vs_Sox",
@@ -6792,23 +6792,55 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-07-29_MLB_Rays_vs_Rangers",
+      "date": "2026-07-29",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Texas Rangers",
+      "home_abbr": "TB",
+      "away_abbr": "TEX",
+      "pick_label": "TB ML",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 67,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-29_MLB_Twins_vs_Royals",
+      "date": "2026-07-29",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Minnesota Twins",
+      "away_team": "Kansas City Royals",
+      "home_abbr": "MIN",
+      "away_abbr": "KC",
+      "pick_label": "MIN ML",
+      "pick_team": "Minnesota Twins",
+      "confidence": 67,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 367,
-    "wins": 189,
-    "losses": 178,
+    "total": 369,
+    "wins": 190,
+    "losses": 179,
     "pending": 6,
     "win_pct": 51.5,
-    "current_streak": "W2",
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 156,
-        "l": 160
+        "w": 157,
+        "l": 161
       },
       "hockey": {
         "w": 6,
