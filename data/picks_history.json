@@ -6581,9 +6581,9 @@
       "pick_label": "MIL 1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 8
     },
     {
       "id": "2026-07-28_MLB_Dodgers_vs_Mariners",
@@ -6597,9 +6597,9 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 6,
+      "away_score": 7
     },
     {
       "id": "2026-07-28_MLB_Mets_vs_Braves",
@@ -6629,9 +6629,9 @@
       "pick_label": "BOS 1.5",
       "pick_team": "Boston Red Sox",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "id": "2026-07-28_MLB_Padres_vs_Rockies",
@@ -6645,9 +6645,9 @@
       "pick_label": "SD -1.5",
       "pick_team": "San Diego Padres",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 8,
+      "away_score": 7
     },
     {
       "id": "2026-07-28_Copa Sudamericana_Santos_vs_FC",
@@ -6795,20 +6795,20 @@
     }
   ],
   "stats": {
-    "total": 362,
-    "wins": 186,
-    "losses": 176,
-    "pending": 11,
+    "total": 366,
+    "wins": 188,
+    "losses": 178,
+    "pending": 7,
     "win_pct": 51.4,
-    "current_streak": "W2",
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 153,
-        "l": 158
+        "w": 155,
+        "l": 160
       },
       "hockey": {
         "w": 6,
