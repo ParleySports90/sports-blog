@@ -6709,9 +6709,9 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "id": "2026-07-29_MLB_Mets_vs_Braves",
@@ -6757,9 +6757,9 @@
       "pick_label": "BOS 1.5",
       "pick_team": "Boston Red Sox",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 4
     },
     {
       "id": "2026-07-29_Copa Sudamericana_Gama_vs_Medellín",
@@ -6773,9 +6773,9 @@
       "pick_label": "VAS ML",
       "pick_team": "Vasco da Gama",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-07-29_Copa Sudamericana_Bragantino_vs_Cristal",
@@ -6789,9 +6789,9 @@
       "pick_label": "BRA ML",
       "pick_team": "Red Bull Bragantino",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-07-29_MLB_Rays_vs_Rangers",
@@ -6805,9 +6805,9 @@
       "pick_label": "TB ML",
       "pick_team": "Tampa Bay Rays",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-07-29_MLB_Twins_vs_Royals",
@@ -6821,17 +6821,129 @@
       "pick_label": "MIN ML",
       "pick_team": "Minnesota Twins",
       "confidence": 67,
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 4
+    },
+    {
+      "id": "2026-07-30_MLB_Dodgers_vs_Mariners",
+      "date": "2026-07-30",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Los Angeles Dodgers",
+      "away_team": "Seattle Mariners",
+      "home_abbr": "LAD",
+      "away_abbr": "SEA",
+      "pick_label": "LAD -1.5",
+      "pick_team": "Los Angeles Dodgers",
+      "confidence": 74,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-30_MLB_Athletics_vs_Sox",
+      "date": "2026-07-30",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Athletics",
+      "away_team": "Boston Red Sox",
+      "home_abbr": "ATH",
+      "away_abbr": "BOS",
+      "pick_label": "BOS 1.5",
+      "pick_team": "Boston Red Sox",
+      "confidence": 70,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-30_MLB_Rays_vs_Rangers",
+      "date": "2026-07-30",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Texas Rangers",
+      "home_abbr": "TB",
+      "away_abbr": "TEX",
+      "pick_label": "TB -1.5",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 68,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-30_MLB_Padres_vs_Giants",
+      "date": "2026-07-30",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Diego Padres",
+      "away_team": "San Francisco Giants",
+      "home_abbr": "SD",
+      "away_abbr": "SF",
+      "pick_label": "SD -1.5",
+      "pick_team": "San Diego Padres",
+      "confidence": 67,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-30_MLB_Twins_vs_Royals",
+      "date": "2026-07-30",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Minnesota Twins",
+      "away_team": "Kansas City Royals",
+      "home_abbr": "MIN",
+      "away_abbr": "KC",
+      "pick_label": "MIN -1.5",
+      "pick_team": "Minnesota Twins",
+      "confidence": 65,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-30_Copa Sudamericana_Grêmio_vs_Bolívar",
+      "date": "2026-07-30",
+      "league": "Copa Sudamericana",
+      "sport": "futbol",
+      "home_team": "Grêmio",
+      "away_team": "Bolívar",
+      "home_abbr": "GRE",
+      "away_abbr": "BOL",
+      "pick_label": "BOL ML",
+      "pick_team": "Bolívar",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-30_Copa Sudamericana_O'Higgins_vs_Juniors",
+      "date": "2026-07-30",
+      "league": "Copa Sudamericana",
+      "sport": "futbol",
+      "home_team": "O'Higgins",
+      "away_team": "Boca Juniors",
+      "home_abbr": "OHI",
+      "away_abbr": "CABJ",
+      "pick_label": "OHI ML",
+      "pick_team": "O'Higgins",
+      "confidence": 85,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 369,
-    "wins": 190,
-    "losses": 179,
-    "pending": 6,
-    "win_pct": 51.5,
+    "total": 375,
+    "wins": 195,
+    "losses": 180,
+    "pending": 7,
+    "win_pct": 52.0,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -6839,15 +6951,15 @@
         "l": 6
       },
       "baseball": {
-        "w": 157,
-        "l": 161
+        "w": 160,
+        "l": 162
       },
       "hockey": {
         "w": 6,
         "l": 2
       },
       "futbol": {
-        "w": 26,
+        "w": 28,
         "l": 10
       }
     }
