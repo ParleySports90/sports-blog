@@ -6949,9 +6949,9 @@
       "pick_label": "CHC ML",
       "pick_team": "Chicago Cubs",
       "confidence": 60,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 4
     },
     {
       "id": "2026-07-30_MLB_Mets_vs_Marlins",
@@ -6968,22 +6968,38 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-07-30_MLB_Braves_vs_Nationals",
+      "date": "2026-07-30",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Atlanta Braves",
+      "away_team": "Washington Nationals",
+      "home_abbr": "ATL",
+      "away_abbr": "WSH",
+      "pick_label": "ATL ML",
+      "pick_team": "Atlanta Braves",
+      "confidence": 57,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 377,
-    "wins": 195,
+    "total": 378,
+    "wins": 196,
     "losses": 182,
     "pending": 7,
-    "win_pct": 51.7,
-    "current_streak": "L3",
+    "win_pct": 51.9,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 160,
+        "w": 161,
         "l": 164
       },
       "hockey": {
