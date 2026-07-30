@@ -6869,9 +6869,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 68,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-07-30_MLB_Padres_vs_Giants",
@@ -6901,9 +6901,9 @@
       "pick_label": "MIN -1.5",
       "pick_team": "Minnesota Twins",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "id": "2026-07-30_Copa Sudamericana_Grêmio_vs_Bolívar",
@@ -6936,15 +6936,47 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-07-30_MLB_Cardinals_vs_Cubs",
+      "date": "2026-07-30",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "St. Louis Cardinals",
+      "away_team": "Chicago Cubs",
+      "home_abbr": "STL",
+      "away_abbr": "CHC",
+      "pick_label": "CHC ML",
+      "pick_team": "Chicago Cubs",
+      "confidence": 60,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-07-30_MLB_Mets_vs_Marlins",
+      "date": "2026-07-30",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "New York Mets",
+      "away_team": "Miami Marlins",
+      "home_abbr": "NYM",
+      "away_abbr": "MIA",
+      "pick_label": "NYM -1.5",
+      "pick_team": "New York Mets",
+      "confidence": 59,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 375,
+    "total": 377,
     "wins": 195,
-    "losses": 180,
+    "losses": 182,
     "pending": 7,
-    "win_pct": 52.0,
-    "current_streak": "L1",
+    "win_pct": 51.7,
+    "current_streak": "L3",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -6952,7 +6984,7 @@
       },
       "baseball": {
         "w": 160,
-        "l": 162
+        "l": 164
       },
       "hockey": {
         "w": 6,
