@@ -7093,9 +7093,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-08-01_MLB_Padres_vs_Giants",
@@ -7125,9 +7125,9 @@
       "pick_label": "NYM -1.5",
       "pick_team": "New York Mets",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 6
     },
     {
       "id": "2026-08-01_MLB_Braves_vs_Nationals",
@@ -7160,15 +7160,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-08-01_MLB_Rockies_vs_Royals",
+      "date": "2026-08-01",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Colorado Rockies",
+      "away_team": "Kansas City Royals",
+      "home_abbr": "COL",
+      "away_abbr": "KC",
+      "pick_label": "COL +1.5",
+      "pick_team": "Colorado Rockies",
+      "confidence": 60,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 390,
+    "total": 392,
     "wins": 204,
-    "losses": 186,
-    "pending": 6,
-    "win_pct": 52.3,
-    "current_streak": "W1",
+    "losses": 188,
+    "pending": 5,
+    "win_pct": 52.0,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -7176,7 +7192,7 @@
       },
       "baseball": {
         "w": 167,
-        "l": 168
+        "l": 170
       },
       "hockey": {
         "w": 6,
