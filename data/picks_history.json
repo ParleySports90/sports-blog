@@ -7189,9 +7189,9 @@
       "pick_label": "MIL +1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 86,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-08-02_MLB_Rays_vs_Sox",
@@ -7221,9 +7221,9 @@
       "pick_label": "SD -1.5",
       "pick_team": "San Diego Padres",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 4
     },
     {
       "id": "2026-08-02_MLB_Braves_vs_Nationals",
@@ -7253,9 +7253,9 @@
       "pick_label": "DET +1.5",
       "pick_team": "Detroit Tigers",
       "confidence": 62,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 11
     },
     {
       "id": "2026-08-02_MLB_Mets_vs_Marlins",
@@ -7285,9 +7285,9 @@
       "pick_label": "COL ML",
       "pick_team": "Colorado Rockies",
       "confidence": 58,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 8,
+      "away_score": 1
     },
     {
       "id": "2026-08-02_MLB_Dodgers_vs_Sox",
@@ -7307,20 +7307,20 @@
     }
   ],
   "stats": {
-    "total": 400,
-    "wins": 208,
-    "losses": 192,
-    "pending": 5,
+    "total": 404,
+    "wins": 210,
+    "losses": 194,
+    "pending": 1,
     "win_pct": 52.0,
-    "current_streak": "L1",
+    "current_streak": "L3",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 171,
-        "l": 174
+        "w": 173,
+        "l": 176
       },
       "hockey": {
         "w": 6,
