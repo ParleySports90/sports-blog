@@ -7464,13 +7464,29 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-08-04_MLB_Rangers_vs_Giants",
+      "date": "2026-08-04",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Texas Rangers",
+      "away_team": "San Francisco Giants",
+      "home_abbr": "TEX",
+      "away_abbr": "SF",
+      "pick_label": "TEX -1.5",
+      "pick_team": "Texas Rangers",
+      "confidence": 63,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 410,
     "wins": 210,
     "losses": 200,
-    "pending": 5,
+    "pending": 6,
     "win_pct": 51.2,
     "current_streak": "L8",
     "by_sport": {
