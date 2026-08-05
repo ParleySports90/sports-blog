@@ -7397,9 +7397,9 @@
       "pick_label": "ATL -1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 69,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "id": "2026-08-04_MLB_Rockies_vs_Rays",
@@ -7413,9 +7413,9 @@
       "pick_label": "COL 1.5",
       "pick_team": "Colorado Rockies",
       "confidence": 69,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 7,
+      "away_score": 9
     },
     {
       "id": "2026-08-04_MLB_Orioles_vs_Angels",
@@ -7429,9 +7429,9 @@
       "pick_label": "BAL -1.5",
       "pick_team": "Baltimore Orioles",
       "confidence": 68,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-08-04_MLB_Brewers_vs_Pirates",
@@ -7445,9 +7445,9 @@
       "pick_label": "MIL -1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 68,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "id": "2026-08-04_MLB_Guardians_vs_Mets",
@@ -7461,9 +7461,9 @@
       "pick_label": "CLE -1.5",
       "pick_team": "Cleveland Guardians",
       "confidence": 63,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 6
     },
     {
       "id": "2026-08-04_MLB_Rangers_vs_Giants",
@@ -7477,26 +7477,106 @@
       "pick_label": "TEX -1.5",
       "pick_team": "Texas Rangers",
       "confidence": 63,
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 4
+    },
+    {
+      "id": "2026-08-05_MLB_Rockies_vs_Rays",
+      "date": "2026-08-05",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Colorado Rockies",
+      "away_team": "Tampa Bay Rays",
+      "home_abbr": "COL",
+      "away_abbr": "TB",
+      "pick_label": "TB 1.5",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 70,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-08-05_MLB_Orioles_vs_Angels",
+      "date": "2026-08-05",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Baltimore Orioles",
+      "away_team": "Los Angeles Angels",
+      "home_abbr": "BAL",
+      "away_abbr": "LAA",
+      "pick_label": "BAL -1.5",
+      "pick_team": "Baltimore Orioles",
+      "confidence": 70,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-08-05_MLB_Braves_vs_Marlins",
+      "date": "2026-08-05",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Atlanta Braves",
+      "away_team": "Miami Marlins",
+      "home_abbr": "ATL",
+      "away_abbr": "MIA",
+      "pick_label": "ATL -1.5",
+      "pick_team": "Atlanta Braves",
+      "confidence": 70,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-08-05_MLB_Brewers_vs_Pirates",
+      "date": "2026-08-05",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Milwaukee Brewers",
+      "away_team": "Pittsburgh Pirates",
+      "home_abbr": "MIL",
+      "away_abbr": "PIT",
+      "pick_label": "MIL -1.5",
+      "pick_team": "Milwaukee Brewers",
+      "confidence": 70,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-08-05_MLB_Rangers_vs_Giants",
+      "date": "2026-08-05",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Texas Rangers",
+      "away_team": "San Francisco Giants",
+      "home_abbr": "TEX",
+      "away_abbr": "SF",
+      "pick_label": "TEX -1.5",
+      "pick_team": "Texas Rangers",
+      "confidence": 65,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 410,
-    "wins": 210,
-    "losses": 200,
-    "pending": 6,
+    "total": 416,
+    "wins": 213,
+    "losses": 203,
+    "pending": 5,
     "win_pct": 51.2,
-    "current_streak": "L8",
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 173,
-        "l": 182
+        "w": 176,
+        "l": 185
       },
       "hockey": {
         "w": 6,
