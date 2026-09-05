@@ -7685,9 +7685,9 @@
       "pick_label": "ATM ML",
       "pick_team": "Atlético Madrid",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-09-05_La Liga_Vallecano_vs_Santander",
@@ -7787,12 +7787,12 @@
     }
   ],
   "stats": {
-    "total": 423,
+    "total": 424,
     "wins": 219,
-    "losses": 204,
-    "pending": 12,
-    "win_pct": 51.8,
-    "current_streak": "W5",
+    "losses": 205,
+    "pending": 11,
+    "win_pct": 51.7,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -7808,7 +7808,7 @@
       },
       "futbol": {
         "w": 30,
-        "l": 10
+        "l": 11
       }
     }
   }
