@@ -7701,9 +7701,9 @@
       "pick_label": "RAC ML",
       "pick_team": "Racing Santander",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-09-05_La Liga_Villarreal_vs_Deportivo",
@@ -7717,9 +7717,9 @@
       "pick_label": "DEP ML",
       "pick_team": "Deportivo",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-09-05_Premier League_City_vs_Villa",
@@ -7733,9 +7733,9 @@
       "pick_label": "HUL ML",
       "pick_team": "Hull City",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-09-05_Bundesliga_04_vs_Munich",
@@ -7749,9 +7749,9 @@
       "pick_label": "MUN ML",
       "pick_team": "Bayern Munich",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-09-05_Serie A_Internazionale_vs_Napoli",
@@ -7787,12 +7787,12 @@
     }
   ],
   "stats": {
-    "total": 426,
-    "wins": 220,
-    "losses": 206,
-    "pending": 9,
+    "total": 428,
+    "wins": 221,
+    "losses": 207,
+    "pending": 5,
     "win_pct": 51.6,
-    "current_streak": "L1",
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -7807,8 +7807,8 @@
         "l": 2
       },
       "futbol": {
-        "w": 31,
-        "l": 12
+        "w": 32,
+        "l": 13
       }
     }
   }
