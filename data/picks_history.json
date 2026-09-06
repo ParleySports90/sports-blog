@@ -7607,7 +7607,8 @@
       "confidence": 73,
       "status": "lost",
       "home_score": 1,
-      "away_score": 6
+      "away_score": 6,
+      "ig_posted": true
     },
     {
       "id": "2026-09-05_MLB_Reds_vs_Brewers",
@@ -7623,7 +7624,8 @@
       "confidence": 72,
       "status": "lost",
       "home_score": 5,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-09-05_MLB_Dodgers_vs_Nationals",
@@ -7639,7 +7641,8 @@
       "confidence": 70,
       "status": "lost",
       "home_score": 6,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-09-05_MLB_Rockies_vs_Cardinals",
@@ -7655,7 +7658,8 @@
       "confidence": 69,
       "status": "lost",
       "home_score": 10,
-      "away_score": 7
+      "away_score": 7,
+      "ig_posted": true
     },
     {
       "id": "2026-09-05_MLB_Sox_vs_Twins",
@@ -7671,7 +7675,8 @@
       "confidence": 66,
       "status": "lost",
       "home_score": 4,
-      "away_score": 6
+      "away_score": 6,
+      "ig_posted": true
     },
     {
       "id": "2026-09-05_La Liga_Club_vs_Madrid",
@@ -7687,7 +7692,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 3,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-09-05_La Liga_Vallecano_vs_Santander",
@@ -7703,7 +7709,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-09-05_La Liga_Villarreal_vs_Deportivo",
@@ -7719,7 +7726,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-09-05_Premier League_City_vs_Villa",
@@ -7767,7 +7775,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-09-05_Ligue 1_Lens_vs_Lorient",
@@ -7783,7 +7792,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 0,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-09-06_MLB_Pirates_vs_Angels",
