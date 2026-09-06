@@ -7605,9 +7605,9 @@
       "pick_label": "PIT -1.5",
       "pick_team": "Pittsburgh Pirates",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 6
     },
     {
       "id": "2026-09-05_MLB_Reds_vs_Brewers",
@@ -7621,9 +7621,9 @@
       "pick_label": "MIL +1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 72,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 3
     },
     {
       "id": "2026-09-05_MLB_Dodgers_vs_Nationals",
@@ -7637,9 +7637,9 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 6,
+      "away_score": 5
     },
     {
       "id": "2026-09-05_MLB_Rockies_vs_Cardinals",
@@ -7653,9 +7653,9 @@
       "pick_label": "STL +1.5",
       "pick_team": "St. Louis Cardinals",
       "confidence": 69,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 10,
+      "away_score": 7
     },
     {
       "id": "2026-09-05_MLB_Sox_vs_Twins",
@@ -7669,9 +7669,9 @@
       "pick_label": "CHW -1.5",
       "pick_team": "Chicago White Sox",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 6
     },
     {
       "id": "2026-09-05_La Liga_Club_vs_Madrid",
@@ -7963,12 +7963,12 @@
     }
   ],
   "stats": {
-    "total": 428,
+    "total": 433,
     "wins": 221,
-    "losses": 207,
-    "pending": 16,
-    "win_pct": 51.6,
-    "current_streak": "L2",
+    "losses": 212,
+    "pending": 11,
+    "win_pct": 51.0,
+    "current_streak": "L7",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -7976,7 +7976,7 @@
       },
       "baseball": {
         "w": 182,
-        "l": 186
+        "l": 191
       },
       "hockey": {
         "w": 6,
