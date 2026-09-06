@@ -7807,9 +7807,9 @@
       "pick_label": "PIT -1.5",
       "pick_team": "Pittsburgh Pirates",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-09-06_MLB_Reds_vs_Brewers",
@@ -7823,9 +7823,9 @@
       "pick_label": "MIL +1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 72,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 12,
+      "away_score": 8
     },
     {
       "id": "2026-09-06_MLB_Dodgers_vs_Nationals",
@@ -7903,9 +7903,9 @@
       "pick_label": "LEV ML",
       "pick_team": "Levante",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-09-06_La Liga_Espanyol_vs_Sevilla",
@@ -7919,9 +7919,9 @@
       "pick_label": "SEV ML",
       "pick_team": "Sevilla",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-09-06_Bundesliga_Frankfurt_vs_Augsburg",
@@ -7970,15 +7970,47 @@
       "status": "push",
       "home_score": 2,
       "away_score": 2
+    },
+    {
+      "id": "2026-09-06_MLB_Mariners_vs_Athletics",
+      "date": "2026-09-06",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Seattle Mariners",
+      "away_team": "Athletics",
+      "home_abbr": "SEA",
+      "away_abbr": "ATH",
+      "pick_label": "SEA ML",
+      "pick_team": "Seattle Mariners",
+      "confidence": 60,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-06_MLB_Padres_vs_Yankees",
+      "date": "2026-09-06",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Diego Padres",
+      "away_team": "New York Yankees",
+      "home_abbr": "SD",
+      "away_abbr": "NYY",
+      "pick_label": "NYY ML",
+      "pick_team": "New York Yankees",
+      "confidence": 55,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 436,
+    "total": 438,
     "wins": 224,
-    "losses": 212,
-    "pending": 7,
-    "win_pct": 51.4,
-    "current_streak": "W3",
+    "losses": 214,
+    "pending": 5,
+    "win_pct": 51.1,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -7986,7 +8018,7 @@
       },
       "baseball": {
         "w": 182,
-        "l": 191
+        "l": 193
       },
       "hockey": {
         "w": 6,
