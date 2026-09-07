@@ -7809,7 +7809,8 @@
       "confidence": 73,
       "status": "lost",
       "home_score": 1,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-09-06_MLB_Reds_vs_Brewers",
@@ -7825,7 +7826,8 @@
       "confidence": 72,
       "status": "lost",
       "home_score": 12,
-      "away_score": 8
+      "away_score": 8,
+      "ig_posted": true
     },
     {
       "id": "2026-09-06_MLB_Dodgers_vs_Nationals",
@@ -7841,7 +7843,8 @@
       "confidence": 70,
       "status": "won",
       "home_score": 7,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-09-06_MLB_Rockies_vs_Cardinals",
@@ -7857,7 +7860,8 @@
       "confidence": 69,
       "status": "won",
       "home_score": 8,
-      "away_score": 10
+      "away_score": 10,
+      "ig_posted": true
     },
     {
       "id": "2026-09-06_MLB_Sox_vs_Twins",
@@ -7873,7 +7877,8 @@
       "confidence": 66,
       "status": "won",
       "home_score": 10,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-09-06_La Liga_Valencia_vs_Barcelona",
@@ -7889,7 +7894,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 0,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-09-06_La Liga_Málaga_vs_Levante",
@@ -7937,7 +7943,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 1,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-09-06_Serie A_Frosinone_vs_Venezia",
@@ -7953,7 +7960,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-09-06_Serie A_Bologna_vs_Sassuolo",
@@ -7985,7 +7993,8 @@
       "confidence": 60,
       "status": "won",
       "home_score": 2,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-09-06_MLB_Padres_vs_Yankees",
@@ -8001,7 +8010,8 @@
       "confidence": 55,
       "status": "lost",
       "home_score": 4,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-09-07_MLB_Sox_vs_Angels",
