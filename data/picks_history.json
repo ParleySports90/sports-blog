@@ -8025,9 +8025,9 @@
       "pick_label": "BOS -1.5",
       "pick_team": "Boston Red Sox",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 2
     },
     {
       "id": "2026-09-07_MLB_Dodgers_vs_Reds",
@@ -8073,9 +8073,9 @@
       "pick_label": "MIA 1.5",
       "pick_team": "Miami Marlins",
       "confidence": 61,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 9
     },
     {
       "id": "2026-09-07_MLB_Padres_vs_Nationals",
@@ -8121,9 +8121,9 @@
       "pick_label": "RSO ML",
       "pick_team": "Real Sociedad",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-09-07_Serie A_Udinese_vs_Lazio",
@@ -8137,33 +8137,49 @@
       "pick_label": "LAZ ML",
       "pick_team": "Lazio",
       "confidence": 85,
+      "status": "won",
+      "home_score": 1,
+      "away_score": 2
+    },
+    {
+      "id": "2026-09-07_MLB_Giants_vs_Cardinals",
+      "date": "2026-09-07",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Francisco Giants",
+      "away_team": "St. Louis Cardinals",
+      "home_abbr": "SF",
+      "away_abbr": "STL",
+      "pick_label": "STL -1.5",
+      "pick_team": "St. Louis Cardinals",
+      "confidence": 61,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 443,
-    "wins": 228,
-    "losses": 215,
-    "pending": 7,
-    "win_pct": 51.5,
-    "current_streak": "L2",
+    "total": 447,
+    "wins": 231,
+    "losses": 216,
+    "pending": 4,
+    "win_pct": 51.7,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 186,
-        "l": 194
+        "w": 187,
+        "l": 195
       },
       "hockey": {
         "w": 6,
         "l": 2
       },
       "futbol": {
-        "w": 35,
+        "w": 37,
         "l": 13
       }
     }
