@@ -7839,9 +7839,9 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 7,
+      "away_score": 5
     },
     {
       "id": "2026-09-06_MLB_Rockies_vs_Cardinals",
@@ -7871,9 +7871,9 @@
       "pick_label": "CHW -1.5",
       "pick_team": "Chicago White Sox",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 10,
+      "away_score": 1
     },
     {
       "id": "2026-09-06_La Liga_Valencia_vs_Barcelona",
@@ -8133,11 +8133,11 @@
     }
   ],
   "stats": {
-    "total": 441,
-    "wins": 226,
+    "total": 443,
+    "wins": 228,
     "losses": 215,
-    "pending": 10,
-    "win_pct": 51.2,
+    "pending": 8,
+    "win_pct": 51.5,
     "current_streak": "L2",
     "by_sport": {
       "basketball": {
@@ -8145,7 +8145,7 @@
         "l": 6
       },
       "baseball": {
-        "w": 184,
+        "w": 186,
         "l": 194
       },
       "hockey": {
