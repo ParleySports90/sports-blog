@@ -8257,9 +8257,9 @@
       "pick_label": "LAS ML",
       "pick_team": "LASK Linz",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-09-08_Champions League_Brugge_vs_Villa",
@@ -8273,9 +8273,9 @@
       "pick_label": "BRU ML",
       "pick_team": "Club Brugge",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-09-08_Champions League_Porto_vs_City",
@@ -8375,12 +8375,12 @@
     }
   ],
   "stats": {
-    "total": 451,
+    "total": 453,
     "wins": 234,
-    "losses": 217,
-    "pending": 13,
-    "win_pct": 51.9,
-    "current_streak": "W3",
+    "losses": 219,
+    "pending": 11,
+    "win_pct": 51.7,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -8396,7 +8396,7 @@
       },
       "futbol": {
         "w": 37,
-        "l": 13
+        "l": 15
       }
     }
   }
