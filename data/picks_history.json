@@ -8027,7 +8027,8 @@
       "confidence": 75,
       "status": "won",
       "home_score": 5,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-09-07_MLB_Dodgers_vs_Reds",
@@ -8043,7 +8044,8 @@
       "confidence": 67,
       "status": "won",
       "home_score": 6,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-09-07_MLB_Athletics_vs_Jays",
@@ -8059,7 +8061,8 @@
       "confidence": 66,
       "status": "won",
       "home_score": 6,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-09-07_MLB_Marlins_vs_Mets",
@@ -8075,7 +8078,8 @@
       "confidence": 61,
       "status": "lost",
       "home_score": 4,
-      "away_score": 9
+      "away_score": 9,
+      "ig_posted": true
     },
     {
       "id": "2026-09-07_MLB_Padres_vs_Nationals",
@@ -8091,7 +8095,8 @@
       "confidence": 61,
       "status": "won",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-09-07_La Liga_Getafe_vs_Vigo",
@@ -8123,7 +8128,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-09-07_Serie A_Udinese_vs_Lazio",
@@ -8139,7 +8145,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 1,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-09-07_MLB_Giants_vs_Cardinals",
@@ -8155,7 +8162,8 @@
       "confidence": 61,
       "status": "lost",
       "home_score": 5,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-09-08_MLB_Yankees_vs_Rockies",
