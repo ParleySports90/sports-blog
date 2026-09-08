@@ -8041,9 +8041,9 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 3
     },
     {
       "id": "2026-09-07_MLB_Athletics_vs_Jays",
@@ -8057,9 +8057,9 @@
       "pick_label": "TOR 1.5",
       "pick_team": "Toronto Blue Jays",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 5
     },
     {
       "id": "2026-09-07_MLB_Marlins_vs_Mets",
@@ -8153,9 +8153,9 @@
       "pick_label": "STL -1.5",
       "pick_team": "St. Louis Cardinals",
       "confidence": 61,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 4
     },
     {
       "id": "2026-09-08_MLB_Yankees_vs_Rockies",
@@ -8367,20 +8367,20 @@
     }
   ],
   "stats": {
-    "total": 448,
-    "wins": 232,
-    "losses": 216,
-    "pending": 16,
-    "win_pct": 51.8,
-    "current_streak": "W1",
+    "total": 451,
+    "wins": 234,
+    "losses": 217,
+    "pending": 13,
+    "win_pct": 51.9,
+    "current_streak": "W3",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 188,
-        "l": 195
+        "w": 190,
+        "l": 196
       },
       "hockey": {
         "w": 6,
