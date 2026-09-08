@@ -8289,9 +8289,9 @@
       "pick_label": "FCP ML",
       "pick_team": "FC Porto",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-09-08_Champions League_Lille_vs_Betis",
@@ -8305,9 +8305,9 @@
       "pick_label": "BET ML",
       "pick_team": "Real Betis",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-09-08_Champions League_Madrid_vs_Internazionale",
@@ -8321,9 +8321,9 @@
       "pick_label": "RMA ML",
       "pick_team": "Real Madrid",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-09-08_Copa Sudamericana_Juniors_vs_Paulo",
@@ -8375,12 +8375,12 @@
     }
   ],
   "stats": {
-    "total": 453,
-    "wins": 234,
-    "losses": 219,
-    "pending": 11,
-    "win_pct": 51.7,
-    "current_streak": "L2",
+    "total": 456,
+    "wins": 236,
+    "losses": 220,
+    "pending": 8,
+    "win_pct": 51.8,
+    "current_streak": "L3",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -8395,8 +8395,8 @@
         "l": 2
       },
       "futbol": {
-        "w": 37,
-        "l": 15
+        "w": 39,
+        "l": 16
       }
     }
   }
