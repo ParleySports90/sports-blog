@@ -8177,9 +8177,9 @@
       "pick_label": "NYY -1.5",
       "pick_team": "New York Yankees",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 3
     },
     {
       "id": "2026-09-08_MLB_Sox_vs_Angels",
@@ -8193,9 +8193,9 @@
       "pick_label": "BOS -1.5",
       "pick_team": "Boston Red Sox",
       "confidence": 76,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 6
     },
     {
       "id": "2026-09-08_MLB_Dodgers_vs_Reds",
@@ -8209,9 +8209,9 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 68,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-09-08_MLB_Athletics_vs_Jays",
@@ -8225,9 +8225,9 @@
       "pick_label": "TOR 1.5",
       "pick_team": "Toronto Blue Jays",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 4
     },
     {
       "id": "2026-09-08_MLB_Padres_vs_Nationals",
@@ -8241,9 +8241,9 @@
       "pick_label": "SD ML",
       "pick_team": "San Diego Padres",
       "confidence": 63,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 4
     },
     {
       "id": "2026-09-08_Champions League_Athens_vs_Linz",
@@ -8337,9 +8337,9 @@
       "pick_label": "SAO ML",
       "pick_team": "São Paulo",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-09-08_Copa Sudamericana_Fe_vs_Gama",
@@ -8535,20 +8535,20 @@
     }
   ],
   "stats": {
-    "total": 457,
-    "wins": 237,
-    "losses": 220,
-    "pending": 16,
-    "win_pct": 51.9,
-    "current_streak": "L3",
+    "total": 463,
+    "wins": 240,
+    "losses": 223,
+    "pending": 10,
+    "win_pct": 51.8,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 190,
-        "l": 196
+        "w": 193,
+        "l": 198
       },
       "hockey": {
         "w": 6,
@@ -8556,7 +8556,7 @@
       },
       "futbol": {
         "w": 40,
-        "l": 16
+        "l": 17
       }
     }
   }
