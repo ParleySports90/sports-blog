@@ -8477,9 +8477,9 @@
       "pick_label": "BAR ML",
       "pick_team": "Barcelona",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 1
     },
     {
       "id": "2026-09-09_Champions League_CP_vs_Galatasaray",
@@ -8547,12 +8547,12 @@
     }
   ],
   "stats": {
-    "total": 463,
-    "wins": 240,
+    "total": 464,
+    "wins": 241,
     "losses": 223,
-    "pending": 10,
-    "win_pct": 51.8,
-    "current_streak": "W1",
+    "pending": 9,
+    "win_pct": 51.9,
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -8567,7 +8567,7 @@
         "l": 2
       },
       "futbol": {
-        "w": 40,
+        "w": 41,
         "l": 17
       }
     }
