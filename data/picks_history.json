@@ -8631,9 +8631,9 @@
       "pick_label": "ATL 1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 56,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-09-10_MLB_Phillies_vs_Astros",
@@ -8663,9 +8663,9 @@
       "pick_label": "PSV ML",
       "pick_team": "PSV Eindhoven",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-09-10_Copa Sudamericana_Cusco_vs_Torque",
@@ -8701,19 +8701,19 @@
     }
   ],
   "stats": {
-    "total": 473,
-    "wins": 247,
+    "total": 474,
+    "wins": 248,
     "losses": 226,
-    "pending": 8,
-    "win_pct": 52.2,
-    "current_streak": "W1",
+    "pending": 6,
+    "win_pct": 52.3,
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 197,
+        "w": 198,
         "l": 200
       },
       "hockey": {
