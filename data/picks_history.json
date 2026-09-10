@@ -8647,9 +8647,9 @@
       "pick_label": "PHI -1.5",
       "pick_team": "Philadelphia Phillies",
       "confidence": 55,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-09-10_Champions League_Eindhoven_vs_Donetsk",
@@ -8701,12 +8701,12 @@
     }
   ],
   "stats": {
-    "total": 474,
+    "total": 475,
     "wins": 248,
-    "losses": 226,
-    "pending": 6,
-    "win_pct": 52.3,
-    "current_streak": "W2",
+    "losses": 227,
+    "pending": 5,
+    "win_pct": 52.2,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -8714,7 +8714,7 @@
       },
       "baseball": {
         "w": 198,
-        "l": 200
+        "l": 201
       },
       "hockey": {
         "w": 6,
