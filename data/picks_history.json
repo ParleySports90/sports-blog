@@ -8461,9 +8461,9 @@
       "pick_label": "SD -1.5",
       "pick_team": "San Diego Padres",
       "confidence": 63,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 9,
+      "away_score": 2
     },
     {
       "id": "2026-09-09_Champions League_Barcelona_vs_Rotterdam",
@@ -8509,9 +8509,9 @@
       "pick_label": "PAL ML",
       "pick_team": "Palmeiras",
       "confidence": 68,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-09-09_Copa Sudamericana_Santos_vs_Atlético-MG",
@@ -8525,9 +8525,9 @@
       "pick_label": "CAM ML",
       "pick_team": "Atlético-MG",
       "confidence": 61,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-09-09_Copa Libertadores_Plata_vs_Corinthians",
@@ -8560,14 +8560,142 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-09-10_MLB_Yankees_vs_Rockies",
+      "date": "2026-09-10",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "New York Yankees",
+      "away_team": "Colorado Rockies",
+      "home_abbr": "NYY",
+      "away_abbr": "COL",
+      "pick_label": "NYY -1.5",
+      "pick_team": "New York Yankees",
+      "confidence": 79,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-10_MLB_Sox_vs_Pirates",
+      "date": "2026-09-10",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Chicago White Sox",
+      "away_team": "Pittsburgh Pirates",
+      "home_abbr": "CHW",
+      "away_abbr": "PIT",
+      "pick_label": "CHW 1.5",
+      "pick_team": "Chicago White Sox",
+      "confidence": 59,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-10_MLB_Mariners_vs_Rangers",
+      "date": "2026-09-10",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Seattle Mariners",
+      "away_team": "Texas Rangers",
+      "home_abbr": "SEA",
+      "away_abbr": "TEX",
+      "pick_label": "SEA -1.5",
+      "pick_team": "Seattle Mariners",
+      "confidence": 57,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-10_MLB_Braves_vs_Rays",
+      "date": "2026-09-10",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Atlanta Braves",
+      "away_team": "Tampa Bay Rays",
+      "home_abbr": "ATL",
+      "away_abbr": "TB",
+      "pick_label": "ATL 1.5",
+      "pick_team": "Atlanta Braves",
+      "confidence": 56,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-10_MLB_Phillies_vs_Astros",
+      "date": "2026-09-10",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Philadelphia Phillies",
+      "away_team": "Houston Astros",
+      "home_abbr": "PHI",
+      "away_abbr": "HOU",
+      "pick_label": "PHI -1.5",
+      "pick_team": "Philadelphia Phillies",
+      "confidence": 55,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-10_Champions League_Eindhoven_vs_Donetsk",
+      "date": "2026-09-10",
+      "league": "Champions League",
+      "sport": "futbol",
+      "home_team": "PSV Eindhoven",
+      "away_team": "Shakhtar Donetsk",
+      "home_abbr": "PSV",
+      "away_abbr": "SHK",
+      "pick_label": "PSV ML",
+      "pick_team": "PSV Eindhoven",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-10_Copa Sudamericana_Cusco_vs_Torque",
+      "date": "2026-09-10",
+      "league": "Copa Sudamericana",
+      "sport": "futbol",
+      "home_team": "Cienciano del Cusco",
+      "away_team": "Montevideo City Torque",
+      "home_abbr": "CIE",
+      "away_abbr": "MCT",
+      "pick_label": "MCT ML",
+      "pick_team": "Montevideo City Torque",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-10_Copa Libertadores_Valle_vs_Flamengo",
+      "date": "2026-09-10",
+      "league": "Copa Libertadores",
+      "sport": "futbol",
+      "home_team": "Independiente del Valle",
+      "away_team": "Flamengo",
+      "home_abbr": "IDV",
+      "away_abbr": "FLA",
+      "pick_label": "IDV ML",
+      "pick_team": "Independiente del Valle",
+      "confidence": 74,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 466,
-    "wins": 242,
-    "losses": 224,
-    "pending": 8,
-    "win_pct": 51.9,
+    "total": 469,
+    "wins": 244,
+    "losses": 225,
+    "pending": 13,
+    "win_pct": 52.0,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -8575,7 +8703,7 @@
         "l": 6
       },
       "baseball": {
-        "w": 193,
+        "w": 194,
         "l": 199
       },
       "hockey": {
@@ -8583,8 +8711,8 @@
         "l": 2
       },
       "futbol": {
-        "w": 42,
-        "l": 17
+        "w": 43,
+        "l": 18
       }
     }
   }
