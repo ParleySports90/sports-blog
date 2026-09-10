@@ -8399,7 +8399,8 @@
       "confidence": 78,
       "status": "won",
       "home_score": 6,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-09-09_MLB_Sox_vs_Angels",
@@ -8415,7 +8416,8 @@
       "confidence": 76,
       "status": "lost",
       "home_score": 4,
-      "away_score": 6
+      "away_score": 6,
+      "ig_posted": true
     },
     {
       "id": "2026-09-09_MLB_Dodgers_vs_Reds",
@@ -8431,7 +8433,8 @@
       "confidence": 69,
       "status": "won",
       "home_score": 14,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-09-09_MLB_Athletics_vs_Jays",
@@ -8447,7 +8450,8 @@
       "confidence": 65,
       "status": "lost",
       "home_score": 2,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-09-09_MLB_Padres_vs_Nationals",
@@ -8463,7 +8467,8 @@
       "confidence": 63,
       "status": "won",
       "home_score": 9,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-09-09_Champions League_Barcelona_vs_Rotterdam",
@@ -8479,7 +8484,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 5,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-09-09_Champions League_CP_vs_Galatasaray",
@@ -8495,7 +8501,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-09-09_Copa Libertadores_Palmeiras_vs_Quito",
@@ -8511,7 +8518,8 @@
       "confidence": 68,
       "status": "won",
       "home_score": 1,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-09-09_Copa Sudamericana_Santos_vs_Atlético-MG",
@@ -8527,7 +8535,8 @@
       "confidence": 61,
       "status": "lost",
       "home_score": 2,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-09-09_Copa Libertadores_Plata_vs_Corinthians",
@@ -8559,7 +8568,8 @@
       "confidence": 62,
       "status": "won",
       "home_score": 8,
-      "away_score": 6
+      "away_score": 6,
+      "ig_posted": true
     },
     {
       "id": "2026-09-10_MLB_Yankees_vs_Rockies",
