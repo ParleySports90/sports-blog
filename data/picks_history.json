@@ -8585,7 +8585,8 @@
       "confidence": 79,
       "status": "won",
       "home_score": 10,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-09-10_MLB_Sox_vs_Pirates",
@@ -8601,7 +8602,8 @@
       "confidence": 59,
       "status": "lost",
       "home_score": 0,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-09-10_MLB_Mariners_vs_Rangers",
@@ -8617,7 +8619,8 @@
       "confidence": 57,
       "status": "lost",
       "home_score": 4,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-09-10_MLB_Braves_vs_Rays",
@@ -8633,7 +8636,8 @@
       "confidence": 56,
       "status": "won",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-09-10_MLB_Phillies_vs_Astros",
@@ -8649,7 +8653,8 @@
       "confidence": 55,
       "status": "lost",
       "home_score": 1,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-09-10_Champions League_Eindhoven_vs_Donetsk",
@@ -8681,7 +8686,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 2,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-09-10_Copa Libertadores_Valle_vs_Flamengo",
@@ -8697,7 +8703,8 @@
       "confidence": 74,
       "status": "lost",
       "home_score": 0,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-09-11_MLB_Brewers_vs_Reds",
