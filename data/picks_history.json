@@ -8798,9 +8798,9 @@
       "pick_label": "SEV ML",
       "pick_team": "Sevilla",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-09-11_Ligue 1_Rennais_vs_Marseille",
@@ -8814,18 +8814,18 @@
       "pick_label": "REN ML",
       "pick_team": "Stade Rennais",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 0
     }
   ],
   "stats": {
-    "total": 480,
-    "wins": 249,
+    "total": 482,
+    "wins": 251,
     "losses": 231,
-    "pending": 7,
-    "win_pct": 51.9,
-    "current_streak": "W1",
+    "pending": 5,
+    "win_pct": 52.1,
+    "current_streak": "W3",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -8840,7 +8840,7 @@
         "l": 2
       },
       "futbol": {
-        "w": 43,
+        "w": 45,
         "l": 20
       }
     }
