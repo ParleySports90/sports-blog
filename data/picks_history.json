@@ -8583,9 +8583,9 @@
       "pick_label": "NYY -1.5",
       "pick_team": "New York Yankees",
       "confidence": 79,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 10,
+      "away_score": 3
     },
     {
       "id": "2026-09-10_MLB_Sox_vs_Pirates",
@@ -8599,9 +8599,9 @@
       "pick_label": "CHW 1.5",
       "pick_team": "Chicago White Sox",
       "confidence": 59,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-09-10_MLB_Mariners_vs_Rangers",
@@ -8679,9 +8679,9 @@
       "pick_label": "MCT ML",
       "pick_team": "Montevideo City Torque",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-09-10_Copa Libertadores_Valle_vs_Flamengo",
@@ -8695,9 +8695,9 @@
       "pick_label": "IDV ML",
       "pick_team": "Independiente del Valle",
       "confidence": 74,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-09-11_MLB_Brewers_vs_Reds",
@@ -8813,20 +8813,20 @@
     }
   ],
   "stats": {
-    "total": 476,
-    "wins": 248,
-    "losses": 228,
-    "pending": 11,
-    "win_pct": 52.1,
-    "current_streak": "L1",
+    "total": 480,
+    "wins": 249,
+    "losses": 231,
+    "pending": 7,
+    "win_pct": 51.9,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 198,
-        "l": 202
+        "w": 199,
+        "l": 203
       },
       "hockey": {
         "w": 6,
@@ -8834,7 +8834,7 @@
       },
       "futbol": {
         "w": 43,
-        "l": 18
+        "l": 20
       }
     }
   }
