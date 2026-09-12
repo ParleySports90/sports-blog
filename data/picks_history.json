@@ -8720,7 +8720,8 @@
       "confidence": 75,
       "status": "won",
       "home_score": 20,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-09-11_MLB_Sox_vs_Royals",
@@ -8736,7 +8737,8 @@
       "confidence": 67,
       "status": "lost",
       "home_score": 2,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-09-11_MLB_Tigers_vs_Rockies",
@@ -8752,7 +8754,8 @@
       "confidence": 66,
       "status": "won",
       "home_score": 6,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-09-11_MLB_Yankees_vs_Mets",
@@ -8768,7 +8771,8 @@
       "confidence": 64,
       "status": "won",
       "home_score": 6,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-09-11_MLB_Rays_vs_Astros",
@@ -8784,7 +8788,8 @@
       "confidence": 64,
       "status": "won",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-09-11_La Liga_Sevilla_vs_Valencia",
@@ -8800,7 +8805,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 1,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-09-11_Ligue 1_Rennais_vs_Marseille",
@@ -8816,7 +8822,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 1,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-09-12_MLB_Brewers_vs_Reds",
