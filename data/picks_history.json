@@ -8718,9 +8718,9 @@
       "pick_label": "MIL -1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 20,
+      "away_score": 0
     },
     {
       "id": "2026-09-11_MLB_Sox_vs_Royals",
@@ -8734,9 +8734,9 @@
       "pick_label": "BOS -1.5",
       "pick_team": "Boston Red Sox",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-09-11_MLB_Tigers_vs_Rockies",
@@ -8750,9 +8750,9 @@
       "pick_label": "DET -1.5",
       "pick_team": "Detroit Tigers",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 2
     },
     {
       "id": "2026-09-11_MLB_Yankees_vs_Mets",
@@ -8766,9 +8766,9 @@
       "pick_label": "NYY -1.5",
       "pick_team": "New York Yankees",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 4
     },
     {
       "id": "2026-09-11_MLB_Rays_vs_Astros",
@@ -8782,9 +8782,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-09-11_La Liga_Sevilla_vs_Valencia",
@@ -9092,20 +9092,20 @@
     }
   ],
   "stats": {
-    "total": 482,
-    "wins": 251,
-    "losses": 231,
-    "pending": 22,
-    "win_pct": 52.1,
-    "current_streak": "W3",
+    "total": 487,
+    "wins": 255,
+    "losses": 232,
+    "pending": 17,
+    "win_pct": 52.4,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 199,
-        "l": 203
+        "w": 203,
+        "l": 204
       },
       "hockey": {
         "w": 6,
