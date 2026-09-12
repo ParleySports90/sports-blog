@@ -9109,9 +9109,9 @@
       "pick_label": "LAZ ML",
       "pick_team": "Lazio",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "id": "2026-09-12_Ligue 1_Strasbourg_vs_Monaco",
@@ -9125,9 +9125,9 @@
       "pick_label": "MON ML",
       "pick_team": "AS Monaco",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-09-12_Ligue 1_AC_vs_Angers",
@@ -9166,7 +9166,7 @@
     "total": 492,
     "wins": 257,
     "losses": 235,
-    "pending": 13,
+    "pending": 11,
     "win_pct": 52.2,
     "current_streak": "L2",
     "by_sport": {
