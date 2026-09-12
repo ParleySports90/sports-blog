@@ -8869,9 +8869,9 @@
       "pick_label": "DET ML",
       "pick_team": "Detroit Tigers",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 11,
+      "away_score": 7
     },
     {
       "id": "2026-09-12_MLB_Yankees_vs_Mets",
@@ -8885,9 +8885,9 @@
       "pick_label": "NYY -1.5",
       "pick_team": "New York Yankees",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 12
     },
     {
       "id": "2026-09-12_MLB_Rays_vs_Astros",
@@ -8949,9 +8949,9 @@
       "pick_label": "ATH ML",
       "pick_team": "Athletic Club",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-09-12_La Liga_Madrid_vs_Vallecano",
@@ -8965,9 +8965,9 @@
       "pick_label": "RMA ML",
       "pick_team": "Real Madrid",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "id": "2026-09-12_Premier League_Bournemouth_vs_Brentford",
@@ -9013,9 +9013,9 @@
       "pick_label": "EVE ML",
       "pick_team": "Everton",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-09-12_Premier League_Sunderland_vs_Arsenal",
@@ -9029,9 +9029,9 @@
       "pick_label": "ARS ML",
       "pick_team": "Arsenal",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-09-12_Bundesliga_Dortmund_vs_07",
@@ -9141,9 +9141,9 @@
       "pick_label": "ANG ML",
       "pick_team": "Angers",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-09-12_Ligue 1_Lorient_vs_Toulouse",
@@ -9157,33 +9157,65 @@
       "pick_label": "LOR ML",
       "pick_team": "Lorient",
       "confidence": 85,
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
+    },
+    {
+      "id": "2026-09-12_MLB_Marlins_vs_Dodgers",
+      "date": "2026-09-12",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Miami Marlins",
+      "away_team": "Los Angeles Dodgers",
+      "home_abbr": "MIA",
+      "away_abbr": "LAD",
+      "pick_label": "LAD ML",
+      "pick_team": "Los Angeles Dodgers",
+      "confidence": 64,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-12_MLB_Giants_vs_Padres",
+      "date": "2026-09-12",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Francisco Giants",
+      "away_team": "San Diego Padres",
+      "home_abbr": "SF",
+      "away_abbr": "SD",
+      "pick_label": "SF ML",
+      "pick_team": "San Francisco Giants",
+      "confidence": 63,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 492,
-    "wins": 257,
-    "losses": 235,
-    "pending": 11,
-    "win_pct": 52.2,
-    "current_streak": "L2",
+    "total": 496,
+    "wins": 260,
+    "losses": 236,
+    "pending": 5,
+    "win_pct": 52.4,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 203,
-        "l": 204
+        "w": 204,
+        "l": 205
       },
       "hockey": {
         "w": 6,
         "l": 2
       },
       "futbol": {
-        "w": 47,
+        "w": 49,
         "l": 23
       }
     }
