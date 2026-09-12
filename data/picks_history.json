@@ -8917,9 +8917,9 @@
       "pick_label": "ALA ML",
       "pick_team": "Alavés",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-09-12_La Liga_Osasuna_vs_Espanyol",
@@ -8933,9 +8933,9 @@
       "pick_label": "OSA ML",
       "pick_team": "Osasuna",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-09-12_La Liga_Club_vs_Elche",
@@ -8981,9 +8981,9 @@
       "pick_label": "BRE ML",
       "pick_team": "Brentford",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "id": "2026-09-12_Premier League_Liverpool_vs_Fulham",
@@ -8997,9 +8997,9 @@
       "pick_label": "LIV ML",
       "pick_team": "Liverpool",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-09-12_Premier League_Hotspur_vs_Everton",
@@ -9045,9 +9045,9 @@
       "pick_label": "DOR ML",
       "pick_team": "Borussia Dortmund",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-09-12_Bundesliga_Augsburg_vs_Leverkusen",
@@ -9061,9 +9061,9 @@
       "pick_label": "FCA ML",
       "pick_team": "FC Augsburg",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "id": "2026-09-12_Bundesliga_Mainz_vs_Frankfurt",
@@ -9077,9 +9077,9 @@
       "pick_label": "M05 ML",
       "pick_team": "Mainz",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "id": "2026-09-12_Bundesliga_Freiburg_vs_Mönchengladbach",
@@ -9093,18 +9093,82 @@
       "pick_label": "SCF ML",
       "pick_team": "SC Freiburg",
       "confidence": 85,
+      "status": "won",
+      "home_score": 5,
+      "away_score": 0
+    },
+    {
+      "id": "2026-09-12_Serie A_Lazio_vs_Milan",
+      "date": "2026-09-12",
+      "league": "Serie A",
+      "sport": "futbol",
+      "home_team": "Lazio",
+      "away_team": "AC Milan",
+      "home_abbr": "LAZ",
+      "away_abbr": "MIL",
+      "pick_label": "LAZ ML",
+      "pick_team": "Lazio",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-12_Ligue 1_Strasbourg_vs_Monaco",
+      "date": "2026-09-12",
+      "league": "Ligue 1",
+      "sport": "futbol",
+      "home_team": "Strasbourg",
+      "away_team": "AS Monaco",
+      "home_abbr": "STR",
+      "away_abbr": "MON",
+      "pick_label": "MON ML",
+      "pick_team": "AS Monaco",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-12_Ligue 1_AC_vs_Angers",
+      "date": "2026-09-12",
+      "league": "Ligue 1",
+      "sport": "futbol",
+      "home_team": "Le Havre AC",
+      "away_team": "Angers",
+      "home_abbr": "HAC",
+      "away_abbr": "ANG",
+      "pick_label": "ANG ML",
+      "pick_team": "Angers",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-12_Ligue 1_Lorient_vs_Toulouse",
+      "date": "2026-09-12",
+      "league": "Ligue 1",
+      "sport": "futbol",
+      "home_team": "Lorient",
+      "away_team": "Toulouse",
+      "home_abbr": "LOR",
+      "away_abbr": "TOU",
+      "pick_label": "LOR ML",
+      "pick_team": "Lorient",
+      "confidence": 85,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 487,
-    "wins": 255,
-    "losses": 232,
-    "pending": 17,
-    "win_pct": 52.4,
-    "current_streak": "W1",
+    "total": 492,
+    "wins": 257,
+    "losses": 235,
+    "pending": 13,
+    "win_pct": 52.2,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -9119,8 +9183,8 @@
         "l": 2
       },
       "futbol": {
-        "w": 45,
-        "l": 20
+        "w": 47,
+        "l": 23
       }
     }
   }
