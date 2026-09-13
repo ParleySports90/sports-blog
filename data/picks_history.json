@@ -9315,9 +9315,9 @@
       "pick_label": "DEP ML",
       "pick_team": "Deportivo",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-09-13_Premier League_City_vs_Albion",
@@ -9347,9 +9347,9 @@
       "pick_label": "MNC ML",
       "pick_team": "Manchester City",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-09-13_Bundesliga_Leipzig_vs_SV",
@@ -9379,9 +9379,9 @@
       "pick_label": "ELV ML",
       "pick_team": "SV Elversberg",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-09-13_Serie A_Lecce_vs_Monza",
@@ -9411,9 +9411,9 @@
       "pick_label": "NAP ML",
       "pick_team": "Napoli",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-09-13_Serie A_Sassuolo_vs_Juventus",
@@ -9497,12 +9497,12 @@
     }
   ],
   "stats": {
-    "total": 506,
-    "wins": 267,
-    "losses": 239,
-    "pending": 12,
-    "win_pct": 52.8,
-    "current_streak": "W8",
+    "total": 509,
+    "wins": 268,
+    "losses": 241,
+    "pending": 8,
+    "win_pct": 52.7,
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -9517,8 +9517,8 @@
         "l": 2
       },
       "futbol": {
-        "w": 54,
-        "l": 23
+        "w": 55,
+        "l": 25
       }
     }
   }
