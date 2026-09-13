@@ -9299,9 +9299,9 @@
       "pick_label": "BAR ML",
       "pick_team": "Barcelona",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 4
     },
     {
       "id": "2026-09-13_La Liga_Getafe_vs_Deportivo",
@@ -9331,9 +9331,9 @@
       "pick_label": "BHA ML",
       "pick_team": "Brighton & Hove Albion",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 5
     },
     {
       "id": "2026-09-13_Premier League_United_vs_City",
@@ -9363,9 +9363,9 @@
       "pick_label": "RBL ML",
       "pick_team": "RB Leipzig",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "id": "2026-09-13_Bundesliga_Elversberg_vs_Munich",
@@ -9395,9 +9395,9 @@
       "pick_label": "LEC ML",
       "pick_team": "Lecce",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-09-13_Serie A_Napoli_vs_Bologna",
@@ -9443,9 +9443,9 @@
       "pick_label": "LILL ML",
       "pick_team": "Lille",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-09-13_Ligue 1_Mans_vs_Lens",
@@ -9459,9 +9459,9 @@
       "pick_label": "RCL ML",
       "pick_team": "Lens",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "id": "2026-09-13_Ligue 1_Brest_vs_Saint-Germain",
@@ -9478,15 +9478,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-09-13_La Liga_Sociedad_vs_Madrid",
+      "date": "2026-09-13",
+      "league": "La Liga",
+      "sport": "futbol",
+      "home_team": "Real Sociedad",
+      "away_team": "Atlético Madrid",
+      "home_abbr": "RSO",
+      "away_abbr": "ATM",
+      "pick_label": "ATM ML",
+      "pick_team": "Atlético Madrid",
+      "confidence": 64,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 501,
-    "wins": 262,
+    "total": 506,
+    "wins": 267,
     "losses": 239,
-    "pending": 17,
-    "win_pct": 52.3,
-    "current_streak": "W3",
+    "pending": 12,
+    "win_pct": 52.8,
+    "current_streak": "W8",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -9501,7 +9517,7 @@
         "l": 2
       },
       "futbol": {
-        "w": 49,
+        "w": 54,
         "l": 23
       }
     }
