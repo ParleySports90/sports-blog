@@ -8837,9 +8837,9 @@
       "pick_label": "MIL ML",
       "pick_team": "Milwaukee Brewers",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 13,
+      "away_score": 9
     },
     {
       "id": "2026-09-12_MLB_Sox_vs_Royals",
@@ -8901,9 +8901,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-09-12_La Liga_Santander_vs_Alavés",
@@ -9467,20 +9467,20 @@
     }
   ],
   "stats": {
-    "total": 499,
-    "wins": 261,
-    "losses": 238,
-    "pending": 19,
+    "total": 501,
+    "wins": 262,
+    "losses": 239,
+    "pending": 17,
     "win_pct": 52.3,
-    "current_streak": "W2",
+    "current_streak": "W3",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 205,
-        "l": 207
+        "w": 206,
+        "l": 208
       },
       "hockey": {
         "w": 6,
