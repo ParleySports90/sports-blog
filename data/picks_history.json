@@ -9507,9 +9507,9 @@
       "pick_label": "SF 1.5",
       "pick_team": "San Francisco Giants",
       "confidence": 63,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 6
     },
     {
       "id": "2026-09-13_MLB_Diamondbacks_vs_Rangers",
@@ -9689,11 +9689,11 @@
     }
   ],
   "stats": {
-    "total": 519,
+    "total": 520,
     "wins": 273,
-    "losses": 246,
-    "pending": 10,
-    "win_pct": 52.6,
+    "losses": 247,
+    "pending": 9,
+    "win_pct": 52.5,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -9702,7 +9702,7 @@
       },
       "baseball": {
         "w": 210,
-        "l": 211
+        "l": 212
       },
       "hockey": {
         "w": 6,
