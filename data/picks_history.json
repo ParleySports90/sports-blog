@@ -9654,9 +9654,9 @@
       "pick_label": "BET ML",
       "pick_team": "Real Betis",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-09-14_Serie A_Como_vs_Parma",
@@ -9702,18 +9702,18 @@
       "pick_label": "INT ML",
       "pick_team": "Internazionale",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 3
     }
   ],
   "stats": {
-    "total": 522,
-    "wins": 275,
+    "total": 524,
+    "wins": 277,
     "losses": 247,
-    "pending": 7,
-    "win_pct": 52.7,
-    "current_streak": "W2",
+    "pending": 5,
+    "win_pct": 52.9,
+    "current_streak": "W4",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -9728,7 +9728,7 @@
         "l": 2
       },
       "futbol": {
-        "w": 58,
+        "w": 60,
         "l": 27
       }
     }
