@@ -9221,7 +9221,8 @@
       "confidence": 76,
       "status": "lost",
       "home_score": 3,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-09-13_MLB_Tigers_vs_Rockies",
@@ -9237,7 +9238,8 @@
       "confidence": 68,
       "status": "won",
       "home_score": 8,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-09-13_MLB_Rays_vs_Astros",
@@ -9253,7 +9255,8 @@
       "confidence": 66,
       "status": "won",
       "home_score": 14,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-09-13_MLB_Sox_vs_Royals",
@@ -9269,7 +9272,8 @@
       "confidence": 66,
       "status": "won",
       "home_score": 4,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-09-13_MLB_Yankees_vs_Mets",
@@ -9285,7 +9289,8 @@
       "confidence": 65,
       "status": "won",
       "home_score": 2,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-09-13_La Liga_Levante_vs_Barcelona",
@@ -9301,7 +9306,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-09-13_La Liga_Getafe_vs_Deportivo",
@@ -9333,7 +9339,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 0,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-09-13_Premier League_United_vs_City",
@@ -9349,7 +9356,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 0,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-09-13_Bundesliga_Leipzig_vs_SV",
@@ -9365,7 +9373,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 5,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-09-13_Bundesliga_Elversberg_vs_Munich",
@@ -9381,7 +9390,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 1,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-09-13_Serie A_Lecce_vs_Monza",
@@ -9397,7 +9407,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-09-13_Serie A_Napoli_vs_Bologna",
@@ -9413,7 +9424,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 1,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-09-13_Serie A_Sassuolo_vs_Juventus",
@@ -9429,7 +9441,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-09-13_Ligue 1_Lille_vs_Troyes",
@@ -9445,7 +9458,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-09-13_Ligue 1_Mans_vs_Lens",
@@ -9477,7 +9491,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 0,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-09-13_La Liga_Sociedad_vs_Madrid",
@@ -9493,7 +9508,8 @@
       "confidence": 64,
       "status": "won",
       "home_score": 0,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-09-13_MLB_Giants_vs_Padres",
@@ -9509,7 +9525,8 @@
       "confidence": 63,
       "status": "lost",
       "home_score": 4,
-      "away_score": 6
+      "away_score": 6,
+      "ig_posted": true
     },
     {
       "id": "2026-09-13_MLB_Diamondbacks_vs_Rangers",
@@ -9525,7 +9542,8 @@
       "confidence": 60,
       "status": "lost",
       "home_score": 6,
-      "away_score": 7
+      "away_score": 7,
+      "ig_posted": true
     },
     {
       "id": "2026-09-13_MLB_Athletics_vs_Mariners",
@@ -9541,7 +9559,8 @@
       "confidence": 58,
       "status": "lost",
       "home_score": 8,
-      "away_score": 7
+      "away_score": 7,
+      "ig_posted": true
     },
     {
       "id": "2026-09-14_MLB_Rockies_vs_Padres",
