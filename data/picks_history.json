@@ -9574,9 +9574,9 @@
       "pick_label": "SD 1.5",
       "pick_team": "San Diego Padres",
       "confidence": 69,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 7,
+      "away_score": 8
     },
     {
       "id": "2026-09-14_MLB_Reds_vs_Dodgers",
@@ -9606,9 +9606,9 @@
       "pick_label": "NYY 1.5",
       "pick_team": "New York Yankees",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 8
     },
     {
       "id": "2026-09-14_MLB_Cardinals_vs_Giants",
@@ -9622,9 +9622,9 @@
       "pick_label": "STL ML",
       "pick_team": "St. Louis Cardinals",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-09-14_MLB_Diamondbacks_vs_Marlins",
@@ -9638,9 +9638,9 @@
       "pick_label": "ARI -1.5",
       "pick_team": "Arizona Diamondbacks",
       "confidence": 61,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 8,
+      "away_score": 7
     },
     {
       "id": "2026-09-14_La Liga_Villarreal_vs_Betis",
@@ -9865,23 +9865,39 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-09-15_MLB_Cardinals_vs_Giants",
+      "date": "2026-09-15",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "St. Louis Cardinals",
+      "away_team": "San Francisco Giants",
+      "home_abbr": "STL",
+      "away_abbr": "SF",
+      "pick_label": "STL -1.5",
+      "pick_team": "St. Louis Cardinals",
+      "confidence": 65,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 525,
-    "wins": 278,
-    "losses": 247,
-    "pending": 14,
-    "win_pct": 53.0,
-    "current_streak": "W5",
+    "total": 529,
+    "wins": 281,
+    "losses": 248,
+    "pending": 11,
+    "win_pct": 53.1,
+    "current_streak": "W4",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 211,
-        "l": 212
+        "w": 214,
+        "l": 213
       },
       "hockey": {
         "w": 6,
