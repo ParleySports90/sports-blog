@@ -5,6 +5,8 @@ y genera las mejores apuestas por deporte con score de confianza.
 Cuotas de casas de apuestas via The Odds API.
 """
 
+import json
+import os
 import requests
 from datetime import datetime, timezone, timedelta
 
@@ -853,34 +855,75 @@ ODDS_API_SOCCER = {
 }
 
 
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+ODDS_CACHE_FILE = os.path.join(DATA_DIR, "odds_cache.json")
+
+
+def _load_odds_cache():
+    """Carga la cache de odds del dia actual (UTC). Se descarta si es de otro dia."""
+    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    try:
+        with open(ODDS_CACHE_FILE, "r", encoding="utf-8") as f:
+            cache = json.load(f)
+        if cache.get("date") == today_str:
+            return cache
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+    return {"date": today_str, "sports": {}}
+
+
+def _save_odds_cache(cache):
+    os.makedirs(DATA_DIR, exist_ok=True)
+    with open(ODDS_CACHE_FILE, "w", encoding="utf-8") as f:
+        json.dump(cache, f)
+
+
 def fetch_odds_api(sport_key):
-    """Obtiene cuotas de The Odds API para un deporte."""
+    """Obtiene cuotas de The Odds API para un deporte.
+
+    Cachea la respuesta cruda por dia (UTC) en disco para no gastar creditos
+    del plan gratuito en cada corrida del workflow (se ejecuta varias veces
+    al dia y las cuotas no cambian lo suficiente como para justificar
+    refrescarlas mas de una vez por dia).
+    """
     if not ODDS_API_KEY or not sport_key:
         return {}
 
-    url = f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/"
-    params = {
-        "apiKey": ODDS_API_KEY,
-        "regions": "us,eu",
-        "markets": "h2h,spreads,totals",
-        "oddsFormat": "american",
-    }
-    if ODDS_BOOKMAKERS:
-        params["bookmakers"] = ODDS_BOOKMAKERS
+    cache = _load_odds_cache()
+    if sport_key in cache["sports"]:
+        events = cache["sports"][sport_key]
+        print(f"    [Odds API] {sport_key} (desde cache de hoy)")
+    else:
+        url = f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/"
+        params = {
+            "apiKey": ODDS_API_KEY,
+            "regions": "us,eu",
+            "markets": "h2h,spreads,totals",
+            "oddsFormat": "american",
+        }
+        if ODDS_BOOKMAKERS:
+            params["bookmakers"] = ODDS_BOOKMAKERS
+
+        try:
+            resp = requests.get(url, params=params, timeout=15)
+            if resp.status_code == 401:
+                print("    [!] Odds API: API key invalida o sin creditos")
+                return {}
+            if resp.status_code == 422:
+                return {}
+            resp.raise_for_status()
+
+            remaining = resp.headers.get("x-requests-remaining", "?")
+            print(f"    [Odds API] {sport_key} OK (requests restantes: {remaining})")
+
+            events = resp.json()
+            cache["sports"][sport_key] = events
+            _save_odds_cache(cache)
+        except requests.RequestException as e:
+            print(f"    [!] Odds API error: {e}")
+            return {}
 
     try:
-        resp = requests.get(url, params=params, timeout=15)
-        if resp.status_code == 401:
-            print("    [!] Odds API: API key invalida")
-            return {}
-        if resp.status_code == 422:
-            return {}
-        resp.raise_for_status()
-
-        remaining = resp.headers.get("x-requests-remaining", "?")
-        print(f"    [Odds API] {sport_key} OK (requests restantes: {remaining})")
-
-        events = resp.json()
         # Indexar por equipos para hacer match con ESPN
         odds_map = {}
         for ev in events:
