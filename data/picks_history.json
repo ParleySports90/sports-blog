@@ -9807,9 +9807,9 @@
       "pick_label": "ALA ML",
       "pick_team": "Alavés",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-09-15_La Liga_Elche_vs_Madrid",
@@ -9893,12 +9893,12 @@
     }
   ],
   "stats": {
-    "total": 530,
+    "total": 531,
     "wins": 281,
-    "losses": 249,
-    "pending": 10,
-    "win_pct": 53.0,
-    "current_streak": "L1",
+    "losses": 250,
+    "pending": 9,
+    "win_pct": 52.9,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -9914,7 +9914,7 @@
       },
       "futbol": {
         "w": 60,
-        "l": 28
+        "l": 29
       }
     }
   }
