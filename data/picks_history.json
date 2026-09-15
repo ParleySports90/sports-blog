@@ -9855,9 +9855,9 @@
       "pick_label": "ESP ML",
       "pick_team": "Espanyol",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-09-15_Copa Sudamericana_Gama_vs_Fe",
@@ -9893,12 +9893,12 @@
     }
   ],
   "stats": {
-    "total": 529,
+    "total": 530,
     "wins": 281,
-    "losses": 248,
-    "pending": 11,
-    "win_pct": 53.1,
-    "current_streak": "W4",
+    "losses": 249,
+    "pending": 10,
+    "win_pct": 53.0,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -9914,7 +9914,7 @@
       },
       "futbol": {
         "w": 60,
-        "l": 27
+        "l": 28
       }
     }
   }
