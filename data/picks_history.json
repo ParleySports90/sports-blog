@@ -9823,9 +9823,9 @@
       "pick_label": "RMA ML",
       "pick_team": "Real Madrid",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-09-15_Copa Libertadores_Platense_vs_Fluminense",
@@ -9893,12 +9893,12 @@
     }
   ],
   "stats": {
-    "total": 531,
-    "wins": 281,
+    "total": 532,
+    "wins": 282,
     "losses": 250,
-    "pending": 9,
-    "win_pct": 52.9,
-    "current_streak": "L2",
+    "pending": 8,
+    "win_pct": 53.0,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -9913,7 +9913,7 @@
         "l": 2
       },
       "futbol": {
-        "w": 60,
+        "w": 61,
         "l": 29
       }
     }
