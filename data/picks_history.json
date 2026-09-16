@@ -9962,9 +9962,9 @@
       "pick_label": "STL ML",
       "pick_team": "St. Louis Cardinals",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 6
     },
     {
       "id": "2026-09-16_MLB_Twins_vs_Yankees",
@@ -9978,9 +9978,9 @@
       "pick_label": "NYY 1.5",
       "pick_team": "New York Yankees",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 4
     },
     {
       "id": "2026-09-16_La Liga_Barcelona_vs_Santander",
@@ -9994,9 +9994,9 @@
       "pick_label": "BAR ML",
       "pick_team": "Barcelona",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 7,
+      "away_score": 2
     },
     {
       "id": "2026-09-16_Europa League_Milan_vs_Benfica",
@@ -10010,9 +10010,9 @@
       "pick_label": "SLB ML",
       "pick_team": "Benfica",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-09-16_Europa League_Anderlecht_vs_Lyon",
@@ -10026,9 +10026,9 @@
       "pick_label": "AND ML",
       "pick_team": "Anderlecht",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-09-16_Europa League_Graz_vs_Rennais",
@@ -10042,9 +10042,9 @@
       "pick_label": "STG ML",
       "pick_team": "SK Sturm Graz",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-09-16_Europa League_Sunderland_vs_Alkmaar",
@@ -10058,9 +10058,9 @@
       "pick_label": "AZ ML",
       "pick_team": "AZ Alkmaar",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-09-16_Copa Libertadores_Quito_vs_Palmeiras",
@@ -10122,9 +10122,9 @@
       "pick_label": "ATH ML",
       "pick_team": "Athletic Club",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-09-16_Europa League_Ararat-Armenia_vs_Prague",
@@ -10189,31 +10189,47 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-09-16_MLB_Astros_vs_Royals",
+      "date": "2026-09-16",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Houston Astros",
+      "away_team": "Kansas City Royals",
+      "home_abbr": "HOU",
+      "away_abbr": "KC",
+      "pick_label": "HOU -1.5",
+      "pick_team": "Houston Astros",
+      "confidence": 63,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 543,
-    "wins": 288,
-    "losses": 255,
-    "pending": 15,
+    "total": 549,
+    "wins": 291,
+    "losses": 258,
+    "pending": 8,
     "win_pct": 53.0,
-    "current_streak": "W3",
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 217,
-        "l": 216
+        "w": 218,
+        "l": 217
       },
       "hockey": {
         "w": 6,
         "l": 2
       },
       "futbol": {
-        "w": 64,
-        "l": 31
+        "w": 66,
+        "l": 33
       }
     }
   }
