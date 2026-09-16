@@ -10090,9 +10090,9 @@
       "pick_label": "ATM ML",
       "pick_team": "Atlético Madrid",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 0
     },
     {
       "id": "2026-09-16_La Liga_Deportivo_vs_Sevilla",
@@ -10106,9 +10106,9 @@
       "pick_label": "SEV ML",
       "pick_team": "Sevilla",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-09-16_La Liga_Levante_vs_Club",
@@ -10138,9 +10138,9 @@
       "pick_label": "SPP ML",
       "pick_team": "Sparta Prague",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 4
     },
     {
       "id": "2026-09-16_Copa Sudamericana_Atlético-MG_vs_Santos",
@@ -10192,12 +10192,12 @@
     }
   ],
   "stats": {
-    "total": 540,
-    "wins": 285,
+    "total": 543,
+    "wins": 288,
     "losses": 255,
-    "pending": 18,
-    "win_pct": 52.8,
-    "current_streak": "L2",
+    "pending": 15,
+    "win_pct": 53.0,
+    "current_streak": "W3",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -10212,7 +10212,7 @@
         "l": 2
       },
       "futbol": {
-        "w": 61,
+        "w": 64,
         "l": 31
       }
     }
