@@ -10235,9 +10235,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 82,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 10,
+      "away_score": 1
     },
     {
       "id": "2026-09-17_MLB_Reds_vs_Dodgers",
@@ -10267,9 +10267,9 @@
       "pick_label": "SD 1.5",
       "pick_team": "San Diego Padres",
       "confidence": 69,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 9
     },
     {
       "id": "2026-09-17_MLB_Pirates_vs_Brewers",
@@ -10363,9 +10363,9 @@
       "pick_label": "OLM ML",
       "pick_team": "Marseille",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "id": "2026-09-17_Europa League_Celtic_vs_Ferencvaros",
@@ -10379,9 +10379,9 @@
       "pick_label": "CEL ML",
       "pick_team": "Celtic",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "id": "2026-09-17_Europa League_Palace_vs_Poznan",
@@ -10395,9 +10395,9 @@
       "pick_label": "CRY ML",
       "pick_team": "Crystal Palace",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 0
     },
     {
       "id": "2026-09-17_Europa League_Juventus_vs_Nijmegen",
@@ -10411,9 +10411,9 @@
       "pick_label": "NEC ML",
       "pick_team": "NEC Nijmegen",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "id": "2026-09-17_Europa League_Lillestrom_vs_Torreense",
@@ -10427,9 +10427,9 @@
       "pick_label": "TOR ML",
       "pick_team": "Torreense",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-09-17_Europa League_Sociedad_vs_Bournemouth",
@@ -10443,9 +10443,9 @@
       "pick_label": "RSO ML",
       "pick_team": "Real Sociedad",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-09-17_Europa League_Plzen_vs_St.-Gilloise",
@@ -10459,9 +10459,9 @@
       "pick_label": "USG ML",
       "pick_team": "Union St.-Gilloise",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "id": "2026-09-17_Copa Libertadores_Flamengo_vs_Valle",
@@ -10526,22 +10526,54 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-09-17_MLB_Angels_vs_Twins",
+      "date": "2026-09-17",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Los Angeles Angels",
+      "away_team": "Minnesota Twins",
+      "home_abbr": "LAA",
+      "away_abbr": "MIN",
+      "pick_label": "MIN 1.5",
+      "pick_team": "Minnesota Twins",
+      "confidence": 58,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-17_MLB_Rangers_vs_Sox",
+      "date": "2026-09-17",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Texas Rangers",
+      "away_team": "Boston Red Sox",
+      "home_abbr": "TEX",
+      "away_abbr": "BOS",
+      "pick_label": "BOS 1.5",
+      "pick_team": "Boston Red Sox",
+      "confidence": 54,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 562,
-    "wins": 299,
-    "losses": 263,
-    "pending": 14,
+    "total": 571,
+    "wins": 304,
+    "losses": 267,
+    "pending": 7,
     "win_pct": 53.2,
-    "current_streak": "W1",
+    "current_streak": "W3",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 221,
+        "w": 223,
         "l": 221
       },
       "hockey": {
@@ -10549,8 +10581,8 @@
         "l": 2
       },
       "futbol": {
-        "w": 71,
-        "l": 34
+        "w": 74,
+        "l": 38
       }
     }
   }
