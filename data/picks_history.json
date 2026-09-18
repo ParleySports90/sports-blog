@@ -10299,9 +10299,9 @@
       "pick_label": "PHI -1.5",
       "pick_team": "Philadelphia Phillies",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "id": "2026-09-17_La Liga_Betis_vs_Getafe",
@@ -10475,9 +10475,9 @@
       "pick_label": "FLA ML",
       "pick_team": "Flamengo",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-09-17_Copa Sudamericana_Torque_vs_Cusco",
@@ -10491,9 +10491,9 @@
       "pick_label": "MCT ML",
       "pick_team": "Montevideo City Torque",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-09-17_MLB_Astros_vs_Royals",
@@ -10507,9 +10507,9 @@
       "pick_label": "HOU -1.5",
       "pick_team": "Houston Astros",
       "confidence": 62,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 2
     },
     {
       "id": "2026-09-17_MLB_Sox_vs_Tigers",
@@ -10523,9 +10523,9 @@
       "pick_label": "CHW 1.5",
       "pick_team": "Chicago White Sox",
       "confidence": 60,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-09-17_MLB_Angels_vs_Twins",
@@ -10539,9 +10539,9 @@
       "pick_label": "MIN 1.5",
       "pick_team": "Minnesota Twins",
       "confidence": 58,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 4
     },
     {
       "id": "2026-09-17_MLB_Rangers_vs_Sox",
@@ -10555,9 +10555,9 @@
       "pick_label": "BOS 1.5",
       "pick_team": "Boston Red Sox",
       "confidence": 54,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 4
     },
     {
       "id": "2026-09-18_MLB_Dodgers_vs_Giants",
@@ -10721,11 +10721,11 @@
     }
   ],
   "stats": {
-    "total": 571,
-    "wins": 304,
+    "total": 577,
+    "wins": 310,
     "losses": 267,
-    "pending": 17,
-    "win_pct": 53.2,
+    "pending": 10,
+    "win_pct": 53.7,
     "current_streak": "W3",
     "by_sport": {
       "basketball": {
@@ -10733,7 +10733,7 @@
         "l": 6
       },
       "baseball": {
-        "w": 223,
+        "w": 228,
         "l": 221
       },
       "hockey": {
@@ -10741,7 +10741,7 @@
         "l": 2
       },
       "futbol": {
-        "w": 74,
+        "w": 75,
         "l": 38
       }
     }
