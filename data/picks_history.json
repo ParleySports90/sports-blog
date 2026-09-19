@@ -10593,7 +10593,8 @@
       "confidence": 82,
       "status": "won",
       "home_score": 8,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-09-18_MLB_Orioles_vs_Brewers",
@@ -10609,7 +10610,8 @@
       "confidence": 67,
       "status": "won",
       "home_score": 5,
-      "away_score": 6
+      "away_score": 6,
+      "ig_posted": true
     },
     {
       "id": "2026-09-18_MLB_Mets_vs_Phillies",
@@ -10625,7 +10627,8 @@
       "confidence": 65,
       "status": "lost",
       "home_score": 6,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-09-18_MLB_Padres_vs_Marlins",
@@ -10641,7 +10644,8 @@
       "confidence": 65,
       "status": "won",
       "home_score": 8,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-09-18_MLB_Guardians_vs_Athletics",
@@ -10657,7 +10661,8 @@
       "confidence": 64,
       "status": "won",
       "home_score": 5,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-09-18_La Liga_Espanyol_vs_Elche",
@@ -10673,7 +10678,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 1,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-09-18_Premier League_Brentford_vs_Chelsea",
@@ -10689,7 +10695,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 3,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-09-18_Bundesliga_Munich_vs_Berlin",
@@ -10705,7 +10712,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 7,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-09-18_Serie A_Monza_vs_Sassuolo",
@@ -10721,7 +10729,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 2,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-09-18_Ligue 1_Monaco_vs_Lens",
@@ -10737,7 +10746,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-09-19_MLB_Dodgers_vs_Giants",
