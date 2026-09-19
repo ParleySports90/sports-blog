@@ -10857,9 +10857,9 @@
       "pick_label": "BAR ML",
       "pick_team": "Barcelona",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "id": "2026-09-19_Premier League_Albion_vs_Arsenal",
@@ -11033,9 +11033,9 @@
       "pick_label": "LAZ ML",
       "pick_team": "Lazio",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-09-19_Ligue 1_Mans_vs_Lorient",
@@ -11049,9 +11049,9 @@
       "pick_label": "LOR ML",
       "pick_team": "Lorient",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-09-19_Ligue 1_Lyon_vs_Rennais",
@@ -11065,18 +11065,18 @@
       "pick_label": "REN ML",
       "pick_team": "Stade Rennais",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 0
     }
   ],
   "stats": {
-    "total": 596,
-    "wins": 318,
-    "losses": 278,
-    "pending": 9,
-    "win_pct": 53.4,
-    "current_streak": "L5",
+    "total": 600,
+    "wins": 320,
+    "losses": 280,
+    "pending": 5,
+    "win_pct": 53.3,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -11091,8 +11091,8 @@
         "l": 2
       },
       "futbol": {
-        "w": 79,
-        "l": 48
+        "w": 81,
+        "l": 50
       }
     }
   }
