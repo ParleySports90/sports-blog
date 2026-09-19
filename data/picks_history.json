@@ -10873,9 +10873,9 @@
       "pick_label": "ARS ML",
       "pick_team": "Arsenal",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-09-19_Premier League_Everton_vs_Town",
@@ -10889,9 +10889,9 @@
       "pick_label": "IPS ML",
       "pick_team": "Ipswich Town",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-09-19_Premier League_United_vs_City",
@@ -10905,9 +10905,9 @@
       "pick_label": "HUL ML",
       "pick_team": "Hull City",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-09-19_Premier League_Forest_vs_City",
@@ -10937,9 +10937,9 @@
       "pick_label": "M05 ML",
       "pick_team": "Mainz",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 4
     },
     {
       "id": "2026-09-19_Bundesliga_Frankfurt_vs_Freiburg",
@@ -10953,9 +10953,9 @@
       "pick_label": "SCF ML",
       "pick_team": "SC Freiburg",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "id": "2026-09-19_Bundesliga_SV_vs_Cologne",
@@ -10969,9 +10969,9 @@
       "pick_label": "KOE ML",
       "pick_team": "FC Cologne",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-09-19_Bundesliga_Bremen_vs_Augsburg",
@@ -10985,9 +10985,9 @@
       "pick_label": "FCA ML",
       "pick_team": "FC Augsburg",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-09-19_Bundesliga_Stuttgart_vs_Dortmund",
@@ -11017,18 +11017,66 @@
       "pick_label": "TOR ML",
       "pick_team": "Torino",
       "confidence": 85,
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
+    },
+    {
+      "id": "2026-09-19_Serie A_Venezia_vs_Lazio",
+      "date": "2026-09-19",
+      "league": "Serie A",
+      "sport": "futbol",
+      "home_team": "Venezia",
+      "away_team": "Lazio",
+      "home_abbr": "VEN",
+      "away_abbr": "LAZ",
+      "pick_label": "LAZ ML",
+      "pick_team": "Lazio",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-19_Ligue 1_Mans_vs_Lorient",
+      "date": "2026-09-19",
+      "league": "Ligue 1",
+      "sport": "futbol",
+      "home_team": "Le Mans",
+      "away_team": "Lorient",
+      "home_abbr": "MNS",
+      "away_abbr": "LOR",
+      "pick_label": "LOR ML",
+      "pick_team": "Lorient",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-19_Ligue 1_Lyon_vs_Rennais",
+      "date": "2026-09-19",
+      "league": "Ligue 1",
+      "sport": "futbol",
+      "home_team": "Lyon",
+      "away_team": "Stade Rennais",
+      "home_abbr": "LYON",
+      "away_abbr": "REN",
+      "pick_label": "REN ML",
+      "pick_team": "Stade Rennais",
+      "confidence": 85,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 587,
-    "wins": 316,
-    "losses": 271,
-    "pending": 17,
-    "win_pct": 53.8,
-    "current_streak": "W2",
+    "total": 593,
+    "wins": 317,
+    "losses": 276,
+    "pending": 12,
+    "win_pct": 53.5,
+    "current_streak": "L3",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -11043,8 +11091,8 @@
         "l": 2
       },
       "futbol": {
-        "w": 77,
-        "l": 41
+        "w": 78,
+        "l": 46
       }
     }
   }
