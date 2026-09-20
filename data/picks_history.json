@@ -11195,9 +11195,9 @@
       "pick_label": "LIV ML",
       "pick_team": "Liverpool",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-09-20_Premier League_United_vs_Palace",
@@ -11211,9 +11211,9 @@
       "pick_label": "LEE ML",
       "pick_team": "Leeds United",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-09-20_Premier League_City_vs_Sunderland",
@@ -11227,9 +11227,9 @@
       "pick_label": "MNC ML",
       "pick_team": "Manchester City",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 3
     },
     {
       "id": "2026-09-20_Premier League_Fulham_vs_United",
@@ -11259,9 +11259,9 @@
       "pick_label": "RBL ML",
       "pick_team": "RB Leipzig",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-09-20_Bundesliga_04_vs_Elversberg",
@@ -11323,9 +11323,9 @@
       "pick_label": "COMO ML",
       "pick_team": "Como",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-09-20_Ligue 1_Nice_vs_Lille",
@@ -11355,9 +11355,9 @@
       "pick_label": "GET ML",
       "pick_team": "Getafe",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-09-20_La Liga_Madrid_vs_Madrid",
@@ -11371,9 +11371,9 @@
       "pick_label": "RMA ML",
       "pick_team": "Real Madrid",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-09-20_NHL_Flames_vs_Kraken",
@@ -11390,13 +11390,29 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-09-20_La Liga_Valencia_vs_Sociedad",
+      "date": "2026-09-20",
+      "league": "La Liga",
+      "sport": "futbol",
+      "home_team": "Valencia",
+      "away_team": "Real Sociedad",
+      "home_abbr": "VAL",
+      "away_abbr": "RSO",
+      "pick_label": "RSO ML",
+      "pick_team": "Real Sociedad",
+      "confidence": 73,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 605,
-    "wins": 323,
-    "losses": 282,
-    "pending": 18,
+    "total": 611,
+    "wins": 326,
+    "losses": 285,
+    "pending": 12,
     "win_pct": 53.4,
     "current_streak": "W2",
     "by_sport": {
@@ -11413,8 +11429,8 @@
         "l": 2
       },
       "futbol": {
-        "w": 81,
-        "l": 50
+        "w": 84,
+        "l": 53
       }
     }
   }
