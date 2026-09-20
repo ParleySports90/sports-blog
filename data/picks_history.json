@@ -11179,9 +11179,9 @@
       "pick_label": "BET ML",
       "pick_team": "Real Betis",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-09-20_Premier League_Bournemouth_vs_Liverpool",
@@ -11243,9 +11243,9 @@
       "pick_label": "MAN ML",
       "pick_team": "Manchester United",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-09-20_Bundesliga_Leverkusen_vs_Leipzig",
@@ -11275,9 +11275,9 @@
       "pick_label": "ELV ML",
       "pick_team": "SV Elversberg",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-09-20_Bundesliga_07_vs_Hoffenheim",
@@ -11339,9 +11339,9 @@
       "pick_label": "LILL ML",
       "pick_team": "Lille",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-09-20_La Liga_Getafe_vs_Málaga",
@@ -11409,11 +11409,11 @@
     }
   ],
   "stats": {
-    "total": 611,
+    "total": 612,
     "wins": 326,
-    "losses": 285,
-    "pending": 12,
-    "win_pct": 53.4,
+    "losses": 286,
+    "pending": 8,
+    "win_pct": 53.3,
     "current_streak": "W2",
     "by_sport": {
       "basketball": {
@@ -11430,7 +11430,7 @@
       },
       "futbol": {
         "w": 84,
-        "l": 53
+        "l": 54
       }
     }
   }
