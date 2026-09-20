@@ -11131,9 +11131,9 @@
       "pick_label": "CLE -1.5",
       "pick_team": "Cleveland Guardians",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-09-20_MLB_Padres_vs_Marlins",
@@ -11163,9 +11163,9 @@
       "pick_label": "PIT ML",
       "pick_team": "Pittsburgh Pirates",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "id": "2026-09-20_La Liga_Deportivo_vs_Betis",
@@ -11291,9 +11291,9 @@
       "pick_label": "TSG ML",
       "pick_team": "TSG Hoffenheim",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-09-20_Serie A_Fiorentina_vs_Napoli",
@@ -11403,34 +11403,66 @@
       "pick_label": "RSO ML",
       "pick_team": "Real Sociedad",
       "confidence": 73,
+      "status": "won",
+      "home_score": 2,
+      "away_score": 3
+    },
+    {
+      "id": "2026-09-20_MLB_Sox_vs_Tigers",
+      "date": "2026-09-20",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Chicago White Sox",
+      "away_team": "Detroit Tigers",
+      "home_abbr": "CHW",
+      "away_abbr": "DET",
+      "pick_label": "CHW ML",
+      "pick_team": "Chicago White Sox",
+      "confidence": 61,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-20_MLB_Angels_vs_Twins",
+      "date": "2026-09-20",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Los Angeles Angels",
+      "away_team": "Minnesota Twins",
+      "home_abbr": "LAA",
+      "away_abbr": "MIN",
+      "pick_label": "LAA ML",
+      "pick_team": "Los Angeles Angels",
+      "confidence": 58,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 612,
-    "wins": 326,
-    "losses": 286,
-    "pending": 8,
-    "win_pct": 53.3,
-    "current_streak": "W2",
+    "total": 616,
+    "wins": 328,
+    "losses": 288,
+    "pending": 6,
+    "win_pct": 53.2,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 235,
-        "l": 224
+        "w": 236,
+        "l": 225
       },
       "hockey": {
         "w": 6,
         "l": 2
       },
       "futbol": {
-        "w": 84,
-        "l": 54
+        "w": 85,
+        "l": 55
       }
     }
   }
