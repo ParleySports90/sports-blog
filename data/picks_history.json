@@ -10761,9 +10761,9 @@
       "pick_label": "LAD ML",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 82,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 10,
+      "away_score": 4
     },
     {
       "id": "2026-09-19_MLB_Orioles_vs_Brewers",
@@ -10809,9 +10809,9 @@
       "pick_label": "SD -1.5",
       "pick_team": "San Diego Padres",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 7,
+      "away_score": 6
     },
     {
       "id": "2026-09-19_MLB_Guardians_vs_Athletics",
@@ -10825,9 +10825,9 @@
       "pick_label": "CLE -1.5",
       "pick_team": "Cleveland Guardians",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 12,
+      "away_score": 6
     },
     {
       "id": "2026-09-19_La Liga_Vigo_vs_Santander",
@@ -11356,23 +11356,39 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-09-20_NHL_Flames_vs_Kraken",
+      "date": "2026-09-20",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Calgary Flames",
+      "away_team": "Seattle Kraken",
+      "home_abbr": "CGY",
+      "away_abbr": "SEA",
+      "pick_label": "SEA ML",
+      "pick_team": "Seattle Kraken",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 602,
-    "wins": 321,
-    "losses": 281,
-    "pending": 21,
-    "win_pct": 53.3,
-    "current_streak": "W1",
+    "total": 605,
+    "wins": 323,
+    "losses": 282,
+    "pending": 19,
+    "win_pct": 53.4,
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 233,
-        "l": 223
+        "w": 235,
+        "l": 224
       },
       "hockey": {
         "w": 6,
