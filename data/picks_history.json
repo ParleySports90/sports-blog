@@ -11099,9 +11099,9 @@
       "pick_label": "LAD ML",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 83,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-09-20_MLB_Orioles_vs_Brewers",
@@ -11147,9 +11147,9 @@
       "pick_label": "SD -1.5",
       "pick_team": "San Diego Padres",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 7,
+      "away_score": 3
     },
     {
       "id": "2026-09-20_MLB_Pirates_vs_Royals",
@@ -11435,26 +11435,122 @@
       "pick_label": "LAA ML",
       "pick_team": "Los Angeles Angels",
       "confidence": 58,
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 8
+    },
+    {
+      "id": "2026-09-21_MLB_Giants_vs_Twins",
+      "date": "2026-09-21",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Francisco Giants",
+      "away_team": "Minnesota Twins",
+      "home_abbr": "SF",
+      "away_abbr": "MIN",
+      "pick_label": "SF 1.5",
+      "pick_team": "San Francisco Giants",
+      "confidence": 58,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-21_MLB_Tigers_vs_Nationals",
+      "date": "2026-09-21",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Detroit Tigers",
+      "away_team": "Washington Nationals",
+      "home_abbr": "DET",
+      "away_abbr": "WSH",
+      "pick_label": "DET -1.5",
+      "pick_team": "Detroit Tigers",
+      "confidence": 53,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-21_MLB_Orioles_vs_Jays",
+      "date": "2026-09-21",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Baltimore Orioles",
+      "away_team": "Toronto Blue Jays",
+      "home_abbr": "BAL",
+      "away_abbr": "TOR",
+      "pick_label": "TOR 1.5",
+      "pick_team": "Toronto Blue Jays",
+      "confidence": 51,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-21_NHL_Devils_vs_Rangers",
+      "date": "2026-09-21",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "New Jersey Devils",
+      "away_team": "New York Rangers",
+      "home_abbr": "NJ",
+      "away_abbr": "NYR",
+      "pick_label": "NJ ML",
+      "pick_team": "New Jersey Devils",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-21_NHL_Canadiens_vs_Senators",
+      "date": "2026-09-21",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Montreal Canadiens",
+      "away_team": "Ottawa Senators",
+      "home_abbr": "MTL",
+      "away_abbr": "OTT",
+      "pick_label": "MTL ML",
+      "pick_team": "Montreal Canadiens",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-09-21_NHL_Blackhawks_vs_Wild",
+      "date": "2026-09-21",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Chicago Blackhawks",
+      "away_team": "Minnesota Wild",
+      "home_abbr": "CHI",
+      "away_abbr": "MIN",
+      "pick_label": "MIN ML",
+      "pick_team": "Minnesota Wild",
+      "confidence": 75,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 616,
-    "wins": 328,
-    "losses": 288,
-    "pending": 6,
-    "win_pct": 53.2,
-    "current_streak": "L1",
+    "total": 619,
+    "wins": 330,
+    "losses": 289,
+    "pending": 9,
+    "win_pct": 53.3,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 236,
-        "l": 225
+        "w": 238,
+        "l": 226
       },
       "hockey": {
         "w": 6,
