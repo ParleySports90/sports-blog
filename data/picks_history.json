@@ -11115,9 +11115,9 @@
       "pick_label": "MIL 1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "id": "2026-09-20_MLB_Guardians_vs_Athletics",
@@ -11387,9 +11387,9 @@
       "pick_label": "SEA ML",
       "pick_team": "Seattle Kraken",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 4
     },
     {
       "id": "2026-09-20_La Liga_Valencia_vs_Sociedad",
@@ -11419,9 +11419,9 @@
       "pick_label": "CHW ML",
       "pick_team": "Chicago White Sox",
       "confidence": 61,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 8,
+      "away_score": 1
     },
     {
       "id": "2026-09-20_MLB_Angels_vs_Twins",
@@ -11534,26 +11534,42 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-09-21_NHL_Jets_vs_Avalanche",
+      "date": "2026-09-21",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Winnipeg Jets",
+      "away_team": "Colorado Avalanche",
+      "home_abbr": "WPG",
+      "away_abbr": "COL",
+      "pick_label": "COL ML",
+      "pick_team": "Colorado Avalanche",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 619,
-    "wins": 330,
+    "total": 622,
+    "wins": 333,
     "losses": 289,
-    "pending": 9,
-    "win_pct": 53.3,
-    "current_streak": "W1",
+    "pending": 7,
+    "win_pct": 53.5,
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 238,
+        "w": 240,
         "l": 226
       },
       "hockey": {
-        "w": 6,
+        "w": 7,
         "l": 2
       },
       "futbol": {
