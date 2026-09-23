@@ -11580,9 +11580,9 @@
       "pick_label": "ATL -1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 72,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 4
     },
     {
       "id": "2026-09-22_MLB_Rockies_vs_Diamondbacks",
@@ -11596,9 +11596,9 @@
       "pick_label": "ARI 1.5",
       "pick_team": "Arizona Diamondbacks",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 7
     },
     {
       "id": "2026-09-22_MLB_Cubs_vs_Marlins",
@@ -11612,9 +11612,9 @@
       "pick_label": "CHC ML",
       "pick_team": "Chicago Cubs",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 8
     },
     {
       "id": "2026-09-22_MLB_Dodgers_vs_Padres",
@@ -11628,9 +11628,9 @@
       "pick_label": "LAD 1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 63,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 7,
+      "away_score": 0
     },
     {
       "id": "2026-09-22_MLB_Royals_vs_Sox",
@@ -11644,9 +11644,9 @@
       "pick_label": "KC 1.5",
       "pick_team": "Kansas City Royals",
       "confidence": 62,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 11,
+      "away_score": 14
     },
     {
       "id": "2026-09-22_NHL_Bruins_vs_Flyers",
@@ -11660,9 +11660,9 @@
       "pick_label": "BOS ML",
       "pick_team": "Boston Bruins",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 1
     },
     {
       "id": "2026-09-22_NHL_Sharks_vs_Knights",
@@ -11676,9 +11676,9 @@
       "pick_label": "VGK ML",
       "pick_team": "Vegas Golden Knights",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-09-22_NHL_Hurricanes_vs_Panthers",
@@ -11692,9 +11692,9 @@
       "pick_label": "FLA ML",
       "pick_team": "Florida Panthers",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-09-22_NHL_Penguins_vs_Wings",
@@ -11708,9 +11708,9 @@
       "pick_label": "PIT ML",
       "pick_team": "Pittsburgh Penguins",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 7
     },
     {
       "id": "2026-09-22_NHL_Jets_vs_Oilers",
@@ -11724,9 +11724,9 @@
       "pick_label": "WPG ML",
       "pick_team": "Winnipeg Jets",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-09-23_MLB_Braves_vs_Reds",
@@ -11858,24 +11858,24 @@
     }
   ],
   "stats": {
-    "total": 629,
-    "wins": 338,
-    "losses": 291,
-    "pending": 18,
-    "win_pct": 53.7,
-    "current_streak": "W5",
+    "total": 639,
+    "wins": 342,
+    "losses": 297,
+    "pending": 8,
+    "win_pct": 53.5,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 243,
-        "l": 226
+        "w": 245,
+        "l": 229
       },
       "hockey": {
-        "w": 9,
-        "l": 4
+        "w": 11,
+        "l": 7
       },
       "futbol": {
         "w": 85,
