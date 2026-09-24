@@ -11740,9 +11740,9 @@
       "pick_label": "ATL -1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 72,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-09-23_MLB_Rockies_vs_Diamondbacks",
@@ -11756,9 +11756,9 @@
       "pick_label": "ARI 1.5",
       "pick_team": "Arizona Diamondbacks",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 5
     },
     {
       "id": "2026-09-23_MLB_Cubs_vs_Marlins",
@@ -11772,9 +11772,9 @@
       "pick_label": "CHC ML",
       "pick_team": "Chicago Cubs",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-09-23_MLB_Dodgers_vs_Padres",
@@ -11788,9 +11788,9 @@
       "pick_label": "LAD ML",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 63,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 5
     },
     {
       "id": "2026-09-23_MLB_Royals_vs_Sox",
@@ -11804,9 +11804,9 @@
       "pick_label": "KC 1.5",
       "pick_team": "Kansas City Royals",
       "confidence": 62,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 4
     },
     {
       "id": "2026-09-23_NHL_Ducks_vs_Kings",
@@ -11820,9 +11820,9 @@
       "pick_label": "ANA ML",
       "pick_team": "Anaheim Ducks",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-09-23_NHL_Leafs_vs_Senators",
@@ -11836,9 +11836,9 @@
       "pick_label": "OTT ML",
       "pick_team": "Ottawa Senators",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 6,
+      "away_score": 1
     },
     {
       "id": "2026-09-23_NHL_Stars_vs_Wild",
@@ -11852,9 +11852,9 @@
       "pick_label": "DAL ML",
       "pick_team": "Dallas Stars",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-09-24_MLB_Rockies_vs_Diamondbacks",
@@ -11986,11 +11986,11 @@
     }
   ],
   "stats": {
-    "total": 639,
-    "wins": 342,
-    "losses": 297,
-    "pending": 16,
-    "win_pct": 53.5,
+    "total": 647,
+    "wins": 345,
+    "losses": 302,
+    "pending": 8,
+    "win_pct": 53.3,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -11998,12 +11998,12 @@
         "l": 6
       },
       "baseball": {
-        "w": 245,
-        "l": 229
+        "w": 247,
+        "l": 232
       },
       "hockey": {
-        "w": 11,
-        "l": 7
+        "w": 12,
+        "l": 9
       },
       "futbol": {
         "w": 85,
