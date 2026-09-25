@@ -11884,9 +11884,9 @@
       "pick_label": "ATL -1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 71,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 6,
+      "away_score": 7
     },
     {
       "id": "2026-09-24_MLB_Mariners_vs_Angels",
@@ -11900,9 +11900,9 @@
       "pick_label": "SEA ML",
       "pick_team": "Seattle Mariners",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 6
     },
     {
       "id": "2026-09-24_MLB_Athletics_vs_Astros",
@@ -11916,9 +11916,9 @@
       "pick_label": "HOU ML",
       "pick_team": "Houston Astros",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 7
     },
     {
       "id": "2026-09-24_MLB_Cubs_vs_Marlins",
@@ -11948,9 +11948,9 @@
       "pick_label": "DET ML",
       "pick_team": "Detroit Red Wings",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-09-24_NHL_Rangers_vs_Devils",
@@ -11964,9 +11964,9 @@
       "pick_label": "NJ ML",
       "pick_team": "New Jersey Devils",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "id": "2026-09-24_NHL_Blues_vs_Blackhawks",
@@ -11980,9 +11980,9 @@
       "pick_label": "CHI ML",
       "pick_team": "Chicago Blackhawks",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-09-24_MLB_Dodgers_vs_Padres",
@@ -11996,9 +11996,9 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 63,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 4
     },
     {
       "id": "2026-09-24_MLB_Phillies_vs_Brewers",
@@ -12146,11 +12146,11 @@
     }
   ],
   "stats": {
-    "total": 650,
-    "wins": 347,
-    "losses": 303,
-    "pending": 15,
-    "win_pct": 53.4,
+    "total": 657,
+    "wins": 349,
+    "losses": 308,
+    "pending": 8,
+    "win_pct": 53.1,
     "current_streak": "W1",
     "by_sport": {
       "basketball": {
@@ -12158,12 +12158,12 @@
         "l": 6
       },
       "baseball": {
-        "w": 249,
-        "l": 233
+        "w": 250,
+        "l": 236
       },
       "hockey": {
-        "w": 12,
-        "l": 9
+        "w": 13,
+        "l": 11
       },
       "futbol": {
         "w": 85,
