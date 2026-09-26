@@ -12236,9 +12236,9 @@
       "pick_label": "NSH ML",
       "pick_team": "Nashville Predators",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 6
     },
     {
       "id": "2026-09-26_NHL_Flyers_vs_Capitals",
@@ -12290,12 +12290,12 @@
     }
   ],
   "stats": {
-    "total": 665,
+    "total": 666,
     "wins": 354,
-    "losses": 311,
-    "pending": 9,
+    "losses": 312,
+    "pending": 8,
     "win_pct": 53.2,
-    "current_streak": "W3",
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -12307,7 +12307,7 @@
       },
       "hockey": {
         "w": 15,
-        "l": 12
+        "l": 13
       },
       "futbol": {
         "w": 85,
