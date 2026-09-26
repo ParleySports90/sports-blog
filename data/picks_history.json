@@ -12028,9 +12028,9 @@
       "pick_label": "CHW -1.5",
       "pick_team": "Chicago White Sox",
       "confidence": 79,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 1
     },
     {
       "id": "2026-09-25_MLB_Giants_vs_Dodgers",
@@ -12044,9 +12044,9 @@
       "pick_label": "LAD 1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 76,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-09-25_MLB_Brewers_vs_Cardinals",
@@ -12060,9 +12060,9 @@
       "pick_label": "MIL -1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 72,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 8,
+      "away_score": 4
     },
     {
       "id": "2026-09-25_MLB_Mariners_vs_Angels",
@@ -12076,9 +12076,9 @@
       "pick_label": "SEA -1.5",
       "pick_team": "Seattle Mariners",
       "confidence": 68,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 7
     },
     {
       "id": "2026-09-25_MLB_Athletics_vs_Astros",
@@ -12092,9 +12092,9 @@
       "pick_label": "HOU ML",
       "pick_team": "Houston Astros",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 6,
+      "away_score": 5
     },
     {
       "id": "2026-09-25_NHL_Islanders_vs_Rangers",
@@ -12108,9 +12108,9 @@
       "pick_label": "NYI ML",
       "pick_team": "New York Islanders",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 6
     },
     {
       "id": "2026-09-25_NHL_Wild_vs_Stars",
@@ -12124,9 +12124,9 @@
       "pick_label": "DAL ML",
       "pick_team": "Dallas Stars",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-09-25_NHL_Capitals_vs_Bruins",
@@ -12140,9 +12140,9 @@
       "pick_label": "WSH ML",
       "pick_team": "Washington Capitals",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-09-26_MLB_Sox_vs_Rockies",
@@ -12290,24 +12290,24 @@
     }
   ],
   "stats": {
-    "total": 657,
-    "wins": 349,
-    "losses": 308,
-    "pending": 17,
-    "win_pct": 53.1,
-    "current_streak": "W1",
+    "total": 665,
+    "wins": 354,
+    "losses": 311,
+    "pending": 9,
+    "win_pct": 53.2,
+    "current_streak": "W3",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 250,
-        "l": 236
+        "w": 253,
+        "l": 238
       },
       "hockey": {
-        "w": 13,
-        "l": 11
+        "w": 15,
+        "l": 12
       },
       "futbol": {
         "w": 85,
