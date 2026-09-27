@@ -12300,9 +12300,9 @@
       "pick_label": "CHW -1.5",
       "pick_team": "Chicago White Sox",
       "confidence": 80,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "id": "2026-09-27_MLB_Giants_vs_Dodgers",
@@ -12316,9 +12316,9 @@
       "pick_label": "LAD ML",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 5
     },
     {
       "id": "2026-09-27_MLB_Brewers_vs_Cardinals",
@@ -12332,9 +12332,9 @@
       "pick_label": "MIL -1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 4
     },
     {
       "id": "2026-09-27_MLB_Mariners_vs_Angels",
@@ -12348,9 +12348,9 @@
       "pick_label": "SEA -1.5",
       "pick_team": "Seattle Mariners",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 7,
+      "away_score": 3
     },
     {
       "id": "2026-09-27_MLB_Athletics_vs_Astros",
@@ -12364,25 +12364,25 @@
       "pick_label": "HOU ML",
       "pick_team": "Houston Astros",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 9
     }
   ],
   "stats": {
-    "total": 674,
-    "wins": 357,
+    "total": 679,
+    "wins": 362,
     "losses": 317,
-    "pending": 5,
-    "win_pct": 53.0,
-    "current_streak": "L1",
+    "pending": 0,
+    "win_pct": 53.3,
+    "current_streak": "W5",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 256,
+        "w": 261,
         "l": 240
       },
       "hockey": {
