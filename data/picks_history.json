@@ -12396,9 +12396,9 @@
       "pick_label": "SD -1.5",
       "pick_team": "San Diego Padres",
       "confidence": 56,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 8,
+      "away_score": 0
     },
     {
       "id": "2026-09-29_MLB_Yankees_vs_Sox",
@@ -12412,9 +12412,9 @@
       "pick_label": "NYY -1.5",
       "pick_team": "New York Yankees",
       "confidence": 54,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 9,
+      "away_score": 0
     },
     {
       "id": "2026-09-29_MLB_Astros_vs_Sox",
@@ -12495,22 +12495,38 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-09-30_NHL_Leafs_vs_Islanders",
+      "date": "2026-09-30",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Toronto Maple Leafs",
+      "away_team": "New York Islanders",
+      "home_abbr": "TOR",
+      "away_abbr": "NYI",
+      "pick_label": "NYI -1.5",
+      "pick_team": "New York Islanders",
+      "confidence": 70,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 681,
-    "wins": 363,
+    "total": 683,
+    "wins": 365,
     "losses": 318,
-    "pending": 6,
-    "win_pct": 53.3,
-    "current_streak": "W1",
+    "pending": 5,
+    "win_pct": 53.4,
+    "current_streak": "W3",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 262,
+        "w": 264,
         "l": 241
       },
       "hockey": {
