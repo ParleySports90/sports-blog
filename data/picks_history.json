@@ -12444,9 +12444,9 @@
       "pick_label": "ATL 1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 58,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 4
     },
     {
       "id": "2026-09-30_MLB_Padres_vs_Cubs",
@@ -12514,19 +12514,19 @@
     }
   ],
   "stats": {
-    "total": 683,
-    "wins": 365,
+    "total": 684,
+    "wins": 366,
     "losses": 318,
-    "pending": 5,
-    "win_pct": 53.4,
-    "current_streak": "W3",
+    "pending": 4,
+    "win_pct": 53.5,
+    "current_streak": "W4",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 264,
+        "w": 265,
         "l": 241
       },
       "hockey": {
