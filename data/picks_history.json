@@ -12460,9 +12460,9 @@
       "pick_label": "SD ML",
       "pick_team": "San Diego Padres",
       "confidence": 56,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "id": "2026-09-30_MLB_Yankees_vs_Sox",
@@ -12476,9 +12476,9 @@
       "pick_label": "NYY ML",
       "pick_team": "New York Yankees",
       "confidence": 54,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 9,
+      "away_score": 2
     },
     {
       "id": "2026-09-30_MLB_Astros_vs_Sox",
@@ -12508,9 +12508,9 @@
       "pick_label": "NYI -1.5",
       "pick_team": "New York Islanders",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-10-01_MLB_Braves_vs_Phillies",
@@ -12610,24 +12610,24 @@
     }
   ],
   "stats": {
-    "total": 685,
-    "wins": 366,
-    "losses": 319,
-    "pending": 9,
-    "win_pct": 53.4,
-    "current_streak": "W1",
+    "total": 688,
+    "wins": 368,
+    "losses": 320,
+    "pending": 6,
+    "win_pct": 53.5,
+    "current_streak": "W3",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 265,
+        "w": 267,
         "l": 242
       },
       "hockey": {
         "w": 15,
-        "l": 16
+        "l": 17
       },
       "futbol": {
         "w": 85,
