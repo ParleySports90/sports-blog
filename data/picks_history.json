@@ -12620,9 +12620,9 @@
       "pick_label": "VGK -1.5",
       "pick_team": "Vegas Golden Knights",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 4
     },
     {
       "id": "2026-10-02_NHL_Jets_vs_Bruins",
@@ -12636,9 +12636,9 @@
       "pick_label": "BOS -1.5",
       "pick_team": "Boston Bruins",
       "confidence": 80,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 4
     },
     {
       "id": "2026-10-02_NHL_Wings_vs_Rangers",
@@ -12767,15 +12767,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-10-03_NHL_Lightning_vs_Capitals",
+      "date": "2026-10-03",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Tampa Bay Lightning",
+      "away_team": "Washington Capitals",
+      "home_abbr": "TB",
+      "away_abbr": "WSH",
+      "pick_label": "WSH -1.5",
+      "pick_team": "Washington Capitals",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 693,
+    "total": 695,
     "wins": 371,
-    "losses": 322,
-    "pending": 11,
-    "win_pct": 53.5,
-    "current_streak": "L1",
+    "losses": 324,
+    "pending": 10,
+    "win_pct": 53.4,
+    "current_streak": "L3",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -12787,7 +12803,7 @@
       },
       "hockey": {
         "w": 17,
-        "l": 19
+        "l": 21
       },
       "futbol": {
         "w": 85,
