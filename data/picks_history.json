@@ -12716,9 +12716,9 @@
       "pick_label": "CLE -1.5",
       "pick_team": "Cleveland Guardians",
       "confidence": 55,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "id": "2026-10-03_NHL_Avalanche_vs_Blues",
@@ -12786,12 +12786,12 @@
     }
   ],
   "stats": {
-    "total": 695,
+    "total": 696,
     "wins": 371,
-    "losses": 324,
-    "pending": 10,
-    "win_pct": 53.4,
-    "current_streak": "L3",
+    "losses": 325,
+    "pending": 9,
+    "win_pct": 53.3,
+    "current_streak": "L4",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -12799,7 +12799,7 @@
       },
       "baseball": {
         "w": 268,
-        "l": 242
+        "l": 243
       },
       "hockey": {
         "w": 17,
