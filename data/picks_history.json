@@ -12684,9 +12684,9 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 61,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 3
     },
     {
       "id": "2026-10-03_MLB_Rays_vs_Yankees",
@@ -12700,9 +12700,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 59,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-10-03_MLB_Guardians_vs_Sox",
@@ -12780,30 +12780,110 @@
       "pick_label": "WSH -1.5",
       "pick_team": "Washington Capitals",
       "confidence": 95,
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 1
+    },
+    {
+      "id": "2026-10-04_MLB_Brewers_vs_Padres",
+      "date": "2026-10-04",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Milwaukee Brewers",
+      "away_team": "San Diego Padres",
+      "home_abbr": "MIL",
+      "away_abbr": "SD",
+      "pick_label": "MIL +1.5",
+      "pick_team": "Milwaukee Brewers",
+      "confidence": 71,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-04_MLB_Dodgers_vs_Braves",
+      "date": "2026-10-04",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Los Angeles Dodgers",
+      "away_team": "Atlanta Braves",
+      "home_abbr": "LAD",
+      "away_abbr": "ATL",
+      "pick_label": "LAD -1.5",
+      "pick_team": "Los Angeles Dodgers",
+      "confidence": 61,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-04_NHL_Rangers_vs_Mammoth",
+      "date": "2026-10-04",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "New York Rangers",
+      "away_team": "Utah Mammoth",
+      "home_abbr": "NYR",
+      "away_abbr": "UTAH",
+      "pick_label": "UTAH -1.5",
+      "pick_team": "Utah Mammoth",
+      "confidence": 80,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-04_NHL_Kraken_vs_Flames",
+      "date": "2026-10-04",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Seattle Kraken",
+      "away_team": "Calgary Flames",
+      "home_abbr": "SEA",
+      "away_abbr": "CGY",
+      "pick_label": "SEA -1.5",
+      "pick_team": "Seattle Kraken",
+      "confidence": 77,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-04_NHL_Wings_vs_Jets",
+      "date": "2026-10-04",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Detroit Red Wings",
+      "away_team": "Winnipeg Jets",
+      "home_abbr": "DET",
+      "away_abbr": "WPG",
+      "pick_label": "WPG -1.5",
+      "pick_team": "Winnipeg Jets",
+      "confidence": 75,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 696,
-    "wins": 371,
-    "losses": 325,
-    "pending": 9,
-    "win_pct": 53.3,
-    "current_streak": "L4",
+    "total": 699,
+    "wins": 372,
+    "losses": 327,
+    "pending": 11,
+    "win_pct": 53.2,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 268,
-        "l": 243
+        "w": 269,
+        "l": 244
       },
       "hockey": {
         "w": 17,
-        "l": 21
+        "l": 22
       },
       "futbol": {
         "w": 85,
