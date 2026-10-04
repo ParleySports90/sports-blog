@@ -12860,18 +12860,34 @@
       "pick_label": "WPG -1.5",
       "pick_team": "Winnipeg Jets",
       "confidence": 75,
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 3
+    },
+    {
+      "id": "2026-10-04_NHL_Ducks_vs_Panthers",
+      "date": "2026-10-04",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Anaheim Ducks",
+      "away_team": "Florida Panthers",
+      "home_abbr": "ANA",
+      "away_abbr": "FLA",
+      "pick_label": "FLA +1.5",
+      "pick_team": "Florida Panthers",
+      "confidence": 75,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 703,
+    "total": 704,
     "wins": 374,
-    "losses": 329,
+    "losses": 330,
     "pending": 7,
-    "win_pct": 53.2,
-    "current_streak": "L1",
+    "win_pct": 53.1,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 1,
@@ -12883,7 +12899,7 @@
       },
       "hockey": {
         "w": 19,
-        "l": 23
+        "l": 24
       },
       "futbol": {
         "w": 85,
