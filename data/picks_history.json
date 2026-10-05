@@ -12540,7 +12540,7 @@
       "pick_label": "SD -1.5",
       "pick_team": "San Diego Padres",
       "confidence": 58,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -12556,7 +12556,7 @@
       "pick_label": "NYY -1.5",
       "pick_team": "New York Yankees",
       "confidence": 56,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -12796,9 +12796,9 @@
       "pick_label": "MIL +1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 71,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "id": "2026-10-04_MLB_Dodgers_vs_Braves",
@@ -12828,9 +12828,9 @@
       "pick_label": "UTAH -1.5",
       "pick_team": "Utah Mammoth",
       "confidence": 80,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "id": "2026-10-04_NHL_Kraken_vs_Flames",
@@ -12879,27 +12879,123 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-10-05_NBA_76ers_vs_Knicks",
+      "date": "2026-10-05",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Philadelphia 76ers",
+      "away_team": "New York Knicks",
+      "home_abbr": "PHI",
+      "away_abbr": "NY",
+      "pick_label": "PHI -2.5",
+      "pick_team": "Philadelphia 76ers",
+      "confidence": 55,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-05_MLB_Rays_vs_Yankees",
+      "date": "2026-10-05",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "New York Yankees",
+      "home_abbr": "TB",
+      "away_abbr": "NYY",
+      "pick_label": "TB +1.5",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 62,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-05_MLB_Guardians_vs_Sox",
+      "date": "2026-10-05",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Cleveland Guardians",
+      "away_team": "Chicago White Sox",
+      "home_abbr": "CLE",
+      "away_abbr": "CHW",
+      "pick_label": "CLE -1.5",
+      "pick_team": "Cleveland Guardians",
+      "confidence": 55,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-05_NHL_Lightning_vs_Flyers",
+      "date": "2026-10-05",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Tampa Bay Lightning",
+      "away_team": "Philadelphia Flyers",
+      "home_abbr": "TB",
+      "away_abbr": "PHI",
+      "pick_label": "TB -1.5",
+      "pick_team": "Tampa Bay Lightning",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-05_NHL_Stars_vs_Sharks",
+      "date": "2026-10-05",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Dallas Stars",
+      "away_team": "San Jose Sharks",
+      "home_abbr": "DAL",
+      "away_abbr": "SJ",
+      "pick_label": "SJ -1.5",
+      "pick_team": "San Jose Sharks",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-05_NHL_Bruins_vs_Senators",
+      "date": "2026-10-05",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Boston Bruins",
+      "away_team": "Ottawa Senators",
+      "home_abbr": "BOS",
+      "away_abbr": "OTT",
+      "pick_label": "OTT +1.5",
+      "pick_team": "Ottawa Senators",
+      "confidence": 77,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 704,
-    "wins": 374,
-    "losses": 330,
-    "pending": 7,
+    "total": 706,
+    "wins": 375,
+    "losses": 331,
+    "pending": 9,
     "win_pct": 53.1,
-    "current_streak": "L2",
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 1,
         "l": 6
       },
       "baseball": {
-        "w": 269,
+        "w": 270,
         "l": 245
       },
       "hockey": {
         "w": 19,
-        "l": 24
+        "l": 25
       },
       "futbol": {
         "w": 85,
