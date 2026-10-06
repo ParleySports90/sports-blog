@@ -12908,7 +12908,8 @@
       "confidence": 55,
       "status": "won",
       "home_score": 120,
-      "away_score": 97
+      "away_score": 97,
+      "ig_posted": true
     },
     {
       "id": "2026-10-05_MLB_Rays_vs_Yankees",
@@ -12924,7 +12925,8 @@
       "confidence": 62,
       "status": "won",
       "home_score": 5,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-05_MLB_Guardians_vs_Sox",
@@ -12940,7 +12942,8 @@
       "confidence": 55,
       "status": "lost",
       "home_score": 3,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-10-05_NHL_Lightning_vs_Flyers",
@@ -12956,7 +12959,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 4,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-05_NHL_Stars_vs_Sharks",
@@ -12972,7 +12976,8 @@
       "confidence": 95,
       "status": "lost",
       "home_score": 5,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-05_NHL_Bruins_vs_Senators",
@@ -12988,7 +12993,8 @@
       "confidence": 77,
       "status": "won",
       "home_score": 1,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-10-06_NBA_Jazz_vs_Nuggets",
