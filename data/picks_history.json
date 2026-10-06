@@ -12922,9 +12922,9 @@
       "pick_label": "TB +1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 62,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 2
     },
     {
       "id": "2026-10-05_MLB_Guardians_vs_Sox",
@@ -13120,19 +13120,19 @@
     }
   ],
   "stats": {
-    "total": 714,
-    "wins": 380,
+    "total": 715,
+    "wins": 381,
     "losses": 334,
-    "pending": 9,
-    "win_pct": 53.2,
-    "current_streak": "W1",
+    "pending": 8,
+    "win_pct": 53.3,
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
         "w": 2,
         "l": 6
       },
       "baseball": {
-        "w": 270,
+        "w": 271,
         "l": 247
       },
       "hockey": {
