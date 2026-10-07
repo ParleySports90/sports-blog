@@ -13024,9 +13024,9 @@
       "pick_label": "CHA +3.5",
       "pick_team": "Charlotte Hornets",
       "confidence": 55,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 90,
+      "away_score": 124
     },
     {
       "id": "2026-10-06_NBA_Warriors_vs_Lakers",
@@ -13072,9 +13072,9 @@
       "pick_label": "ATL +1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 57,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "id": "2026-10-06_NHL_Canadiens_vs_Hurricanes",
@@ -13104,9 +13104,9 @@
       "pick_label": "OTT +1.5",
       "pick_team": "Ottawa Senators",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 3
     },
     {
       "id": "2026-10-06_NHL_Rangers_vs_Islanders",
@@ -13123,27 +13123,187 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-10-07_NBA_Pacers_vs_Timberwolves",
+      "date": "2026-10-07",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Indiana Pacers",
+      "away_team": "Minnesota Timberwolves",
+      "home_abbr": "IND",
+      "away_abbr": "MIN",
+      "pick_label": "MIN 1.5",
+      "pick_team": "Minnesota Timberwolves",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-07_NBA_Grizzlies_vs_Magic",
+      "date": "2026-10-07",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Memphis Grizzlies",
+      "away_team": "Orlando Magic",
+      "home_abbr": "MEM",
+      "away_abbr": "ORL",
+      "pick_label": "MEM 2.5",
+      "pick_team": "Memphis Grizzlies",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-07_NBA_Bulls_vs_Suns",
+      "date": "2026-10-07",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Chicago Bulls",
+      "away_team": "Phoenix Suns",
+      "home_abbr": "CHI",
+      "away_abbr": "PHX",
+      "pick_label": "CHI 2.5",
+      "pick_team": "Chicago Bulls",
+      "confidence": 70,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-07_MLB_Padres_vs_Brewers",
+      "date": "2026-10-07",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "San Diego Padres",
+      "away_team": "Milwaukee Brewers",
+      "home_abbr": "SD",
+      "away_abbr": "MIL",
+      "pick_label": "SD -1.5",
+      "pick_team": "San Diego Padres",
+      "confidence": 64,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-07_MLB_Yankees_vs_Rays",
+      "date": "2026-10-07",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "New York Yankees",
+      "away_team": "Tampa Bay Rays",
+      "home_abbr": "NYY",
+      "away_abbr": "TB",
+      "pick_label": "NYY -1.5",
+      "pick_team": "New York Yankees",
+      "confidence": 59,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-07_MLB_Braves_vs_Dodgers",
+      "date": "2026-10-07",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Atlanta Braves",
+      "away_team": "Los Angeles Dodgers",
+      "home_abbr": "ATL",
+      "away_abbr": "LAD",
+      "pick_label": "ATL +1.5",
+      "pick_team": "Atlanta Braves",
+      "confidence": 57,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-07_MLB_Sox_vs_Guardians",
+      "date": "2026-10-07",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Chicago White Sox",
+      "away_team": "Cleveland Guardians",
+      "home_abbr": "CHW",
+      "away_abbr": "CLE",
+      "pick_label": "CHW +1.5",
+      "pick_team": "Chicago White Sox",
+      "confidence": 55,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-07_NHL_Capitals_vs_Penguins",
+      "date": "2026-10-07",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Washington Capitals",
+      "away_team": "Pittsburgh Penguins",
+      "home_abbr": "WSH",
+      "away_abbr": "PIT",
+      "pick_label": "PIT -1.5",
+      "pick_team": "Pittsburgh Penguins",
+      "confidence": 91,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-07_NHL_Jets_vs_Avalanche",
+      "date": "2026-10-07",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Winnipeg Jets",
+      "away_team": "Colorado Avalanche",
+      "home_abbr": "WPG",
+      "away_abbr": "COL",
+      "pick_label": "WPG +1.5",
+      "pick_team": "Winnipeg Jets",
+      "confidence": 55,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-07_NHL_Ducks_vs_Oilers",
+      "date": "2026-10-07",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Anaheim Ducks",
+      "away_team": "Edmonton Oilers",
+      "home_abbr": "ANA",
+      "away_abbr": "EDM",
+      "pick_label": "ANA +1.5",
+      "pick_team": "Anaheim Ducks",
+      "confidence": 55,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 715,
+    "total": 718,
     "wins": 381,
-    "losses": 334,
-    "pending": 8,
-    "win_pct": 53.3,
-    "current_streak": "W2",
+    "losses": 337,
+    "pending": 15,
+    "win_pct": 53.1,
+    "current_streak": "L3",
     "by_sport": {
       "basketball": {
         "w": 2,
-        "l": 6
+        "l": 7
       },
       "baseball": {
         "w": 271,
-        "l": 247
+        "l": 248
       },
       "hockey": {
         "w": 23,
-        "l": 26
+        "l": 27
       },
       "futbol": {
         "w": 85,
