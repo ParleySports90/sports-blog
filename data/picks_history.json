@@ -13008,9 +13008,9 @@
       "pick_label": "UTAH 1.5",
       "pick_team": "Utah Jazz",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 106,
+      "away_score": 117
     },
     {
       "id": "2026-10-06_NBA_Hornets_vs_Nets",
@@ -13040,9 +13040,9 @@
       "pick_label": "GS -1.5",
       "pick_team": "Golden State Warriors",
       "confidence": 55,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 124,
+      "away_score": 98
     },
     {
       "id": "2026-10-06_MLB_Padres_vs_Brewers",
@@ -13056,9 +13056,9 @@
       "pick_label": "SD -1.5",
       "pick_team": "San Diego Padres",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "id": "2026-10-06_MLB_Braves_vs_Dodgers",
@@ -13088,9 +13088,9 @@
       "pick_label": "MTL +1.5",
       "pick_team": "Montreal Canadiens",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 6
     },
     {
       "id": "2026-10-06_NHL_Wings_vs_Senators",
@@ -13120,9 +13120,9 @@
       "pick_label": "NYR -1.5",
       "pick_team": "New York Rangers",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 2
     },
     {
       "id": "2026-10-07_NBA_Pacers_vs_Timberwolves",
@@ -13283,27 +13283,43 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-10-07_NBA_Blazers_vs_Warriors",
+      "date": "2026-10-07",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Portland Trail Blazers",
+      "away_team": "Golden State Warriors",
+      "home_abbr": "POR",
+      "away_abbr": "GS",
+      "pick_label": "GS -9.5",
+      "pick_team": "Golden State Warriors",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 718,
-    "wins": 381,
-    "losses": 337,
-    "pending": 15,
-    "win_pct": 53.1,
-    "current_streak": "L3",
+    "total": 723,
+    "wins": 383,
+    "losses": 340,
+    "pending": 11,
+    "win_pct": 53.0,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
-        "w": 2,
-        "l": 7
+        "w": 3,
+        "l": 8
       },
       "baseball": {
         "w": 271,
-        "l": 248
+        "l": 249
       },
       "hockey": {
-        "w": 23,
-        "l": 27
+        "w": 24,
+        "l": 28
       },
       "futbol": {
         "w": 85,
