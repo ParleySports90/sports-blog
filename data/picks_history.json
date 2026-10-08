@@ -13146,7 +13146,8 @@
       "confidence": 95,
       "status": "lost",
       "home_score": 123,
-      "away_score": 112
+      "away_score": 112,
+      "ig_posted": true
     },
     {
       "id": "2026-10-07_NBA_Grizzlies_vs_Magic",
@@ -13162,7 +13163,8 @@
       "confidence": 75,
       "status": "lost",
       "home_score": 118,
-      "away_score": 122
+      "away_score": 122,
+      "ig_posted": true
     },
     {
       "id": "2026-10-07_NBA_Bulls_vs_Suns",
@@ -13178,7 +13180,8 @@
       "confidence": 70,
       "status": "won",
       "home_score": 124,
-      "away_score": 117
+      "away_score": 117,
+      "ig_posted": true
     },
     {
       "id": "2026-10-07_MLB_Padres_vs_Brewers",
@@ -13194,7 +13197,8 @@
       "confidence": 64,
       "status": "lost",
       "home_score": 1,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-07_MLB_Yankees_vs_Rays",
@@ -13210,7 +13214,8 @@
       "confidence": 59,
       "status": "lost",
       "home_score": 3,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-10-07_MLB_Braves_vs_Dodgers",
@@ -13226,7 +13231,8 @@
       "confidence": 57,
       "status": "lost",
       "home_score": 1,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-10-07_MLB_Sox_vs_Guardians",
@@ -13242,7 +13248,8 @@
       "confidence": 55,
       "status": "lost",
       "home_score": 3,
-      "away_score": 9
+      "away_score": 9,
+      "ig_posted": true
     },
     {
       "id": "2026-10-07_NHL_Capitals_vs_Penguins",
@@ -13258,7 +13265,8 @@
       "confidence": 91,
       "status": "lost",
       "home_score": 5,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-07_NHL_Jets_vs_Avalanche",
@@ -13274,7 +13282,8 @@
       "confidence": 55,
       "status": "won",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-07_NHL_Ducks_vs_Oilers",
@@ -13290,7 +13299,8 @@
       "confidence": 55,
       "status": "lost",
       "home_score": 2,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-10-07_NBA_Blazers_vs_Warriors",
@@ -13306,7 +13316,8 @@
       "confidence": 75,
       "status": "lost",
       "home_score": 123,
-      "away_score": 118
+      "away_score": 118,
+      "ig_posted": true
     },
     {
       "id": "2026-10-08_NBA_Lakers_vs_Kings",
