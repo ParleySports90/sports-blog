@@ -13144,9 +13144,9 @@
       "pick_label": "MIN 1.5",
       "pick_team": "Minnesota Timberwolves",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 123,
+      "away_score": 112
     },
     {
       "id": "2026-10-07_NBA_Grizzlies_vs_Magic",
@@ -13224,9 +13224,9 @@
       "pick_label": "ATL +1.5",
       "pick_team": "Atlanta Braves",
       "confidence": 57,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 4
     },
     {
       "id": "2026-10-07_MLB_Sox_vs_Guardians",
@@ -13256,9 +13256,9 @@
       "pick_label": "PIT -1.5",
       "pick_team": "Pittsburgh Penguins",
       "confidence": 91,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 3
     },
     {
       "id": "2026-10-07_NHL_Jets_vs_Avalanche",
@@ -13406,24 +13406,24 @@
     }
   ],
   "stats": {
-    "total": 724,
+    "total": 727,
     "wins": 383,
-    "losses": 341,
-    "pending": 16,
-    "win_pct": 52.9,
-    "current_streak": "L3",
+    "losses": 344,
+    "pending": 13,
+    "win_pct": 52.7,
+    "current_streak": "L6",
     "by_sport": {
       "basketball": {
         "w": 3,
-        "l": 8
+        "l": 9
       },
       "baseball": {
         "w": 271,
-        "l": 250
+        "l": 251
       },
       "hockey": {
         "w": 24,
-        "l": 28
+        "l": 29
       },
       "futbol": {
         "w": 85,
