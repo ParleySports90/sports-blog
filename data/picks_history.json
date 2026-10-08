@@ -13160,9 +13160,9 @@
       "pick_label": "MEM 2.5",
       "pick_team": "Memphis Grizzlies",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 118,
+      "away_score": 122
     },
     {
       "id": "2026-10-07_NBA_Bulls_vs_Suns",
@@ -13176,9 +13176,9 @@
       "pick_label": "CHI 2.5",
       "pick_team": "Chicago Bulls",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 124,
+      "away_score": 117
     },
     {
       "id": "2026-10-07_MLB_Padres_vs_Brewers",
@@ -13192,9 +13192,9 @@
       "pick_label": "SD -1.5",
       "pick_team": "San Diego Padres",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "id": "2026-10-07_MLB_Yankees_vs_Rays",
@@ -13208,9 +13208,9 @@
       "pick_label": "NYY -1.5",
       "pick_team": "New York Yankees",
       "confidence": 59,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 4
     },
     {
       "id": "2026-10-07_MLB_Braves_vs_Dodgers",
@@ -13272,9 +13272,9 @@
       "pick_label": "WPG +1.5",
       "pick_team": "Winnipeg Jets",
       "confidence": 55,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-10-07_NHL_Ducks_vs_Oilers",
@@ -13288,9 +13288,9 @@
       "pick_label": "ANA +1.5",
       "pick_team": "Anaheim Ducks",
       "confidence": 55,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 5
     },
     {
       "id": "2026-10-07_NBA_Blazers_vs_Warriors",
@@ -13304,9 +13304,9 @@
       "pick_label": "GS -9.5",
       "pick_team": "Golden State Warriors",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 123,
+      "away_score": 118
     },
     {
       "id": "2026-10-08_NBA_Lakers_vs_Kings",
@@ -13406,24 +13406,24 @@
     }
   ],
   "stats": {
-    "total": 727,
-    "wins": 383,
-    "losses": 344,
-    "pending": 13,
-    "win_pct": 52.7,
-    "current_streak": "L6",
+    "total": 734,
+    "wins": 385,
+    "losses": 349,
+    "pending": 6,
+    "win_pct": 52.5,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
-        "w": 3,
-        "l": 9
+        "w": 4,
+        "l": 11
       },
       "baseball": {
         "w": 271,
-        "l": 251
+        "l": 253
       },
       "hockey": {
-        "w": 24,
-        "l": 29
+        "w": 25,
+        "l": 30
       },
       "futbol": {
         "w": 85,
