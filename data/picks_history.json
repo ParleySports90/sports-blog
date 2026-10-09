@@ -13379,9 +13379,9 @@
       "pick_label": "OTT -1.5",
       "pick_team": "Ottawa Senators",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-10-08_NHL_Sabres_vs_Stars",
@@ -13395,9 +13395,9 @@
       "pick_label": "BUF -1.5",
       "pick_team": "Buffalo Sabres",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 4
     },
     {
       "id": "2026-10-08_NHL_Blues_vs_Sharks",
@@ -13545,12 +13545,12 @@
     }
   ],
   "stats": {
-    "total": 734,
+    "total": 736,
     "wins": 385,
-    "losses": 349,
-    "pending": 14,
-    "win_pct": 52.5,
-    "current_streak": "L2",
+    "losses": 351,
+    "pending": 12,
+    "win_pct": 52.3,
+    "current_streak": "L4",
     "by_sport": {
       "basketball": {
         "w": 4,
@@ -13562,7 +13562,7 @@
       },
       "hockey": {
         "w": 25,
-        "l": 30
+        "l": 32
       },
       "futbol": {
         "w": 85,
