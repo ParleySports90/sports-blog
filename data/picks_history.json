@@ -13529,9 +13529,9 @@
       "pick_label": "DOR ML",
       "pick_team": "Borussia Dortmund",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "id": "2026-10-09_Ligue 1_Lens_vs_Lyon",
@@ -13554,7 +13554,7 @@
     "total": 740,
     "wins": 386,
     "losses": 354,
-    "pending": 8,
+    "pending": 7,
     "win_pct": 52.2,
     "current_streak": "L1",
     "by_sport": {
