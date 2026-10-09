@@ -13513,9 +13513,9 @@
       "pick_label": "ESP ML",
       "pick_team": "Espanyol",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-10-09_Bundesliga_Dortmund_vs_Bremen",
@@ -13545,18 +13545,18 @@
       "pick_label": "LYON ML",
       "pick_team": "Lyon",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     }
   ],
   "stats": {
-    "total": 740,
+    "total": 741,
     "wins": 386,
-    "losses": 354,
-    "pending": 7,
-    "win_pct": 52.2,
-    "current_streak": "L1",
+    "losses": 355,
+    "pending": 5,
+    "win_pct": 52.1,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 5,
@@ -13572,7 +13572,7 @@
       },
       "futbol": {
         "w": 85,
-        "l": 55
+        "l": 56
       }
     }
   }
