@@ -13331,9 +13331,9 @@
       "pick_label": "LAL ML",
       "pick_team": "Los Angeles Lakers",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 114,
+      "away_score": 110
     },
     {
       "id": "2026-10-08_MLB_Yankees_vs_Rays",
@@ -13363,9 +13363,9 @@
       "pick_label": "CHW +1.5",
       "pick_team": "Chicago White Sox",
       "confidence": 55,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 9
     },
     {
       "id": "2026-10-08_NHL_Senators_vs_Flyers",
@@ -13411,9 +13411,9 @@
       "pick_label": "STL -1.5",
       "pick_team": "St. Louis Blues",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-10-09_NBA_Bulls_vs_Grizzlies",
@@ -13545,24 +13545,24 @@
     }
   ],
   "stats": {
-    "total": 736,
-    "wins": 385,
-    "losses": 351,
-    "pending": 12,
-    "win_pct": 52.3,
-    "current_streak": "L4",
+    "total": 739,
+    "wins": 386,
+    "losses": 353,
+    "pending": 9,
+    "win_pct": 52.2,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
-        "w": 4,
+        "w": 5,
         "l": 11
       },
       "baseball": {
         "w": 271,
-        "l": 253
+        "l": 254
       },
       "hockey": {
         "w": 25,
-        "l": 32
+        "l": 33
       },
       "futbol": {
         "w": 85,
