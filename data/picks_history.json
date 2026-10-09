@@ -13333,7 +13333,8 @@
       "confidence": 75,
       "status": "won",
       "home_score": 114,
-      "away_score": 110
+      "away_score": 110,
+      "ig_posted": true
     },
     {
       "id": "2026-10-08_MLB_Yankees_vs_Rays",
@@ -13365,7 +13366,8 @@
       "confidence": 55,
       "status": "lost",
       "home_score": 5,
-      "away_score": 9
+      "away_score": 9,
+      "ig_posted": true
     },
     {
       "id": "2026-10-08_NHL_Senators_vs_Flyers",
@@ -13381,7 +13383,8 @@
       "confidence": 95,
       "status": "lost",
       "home_score": 2,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-08_NHL_Sabres_vs_Stars",
@@ -13397,7 +13400,8 @@
       "confidence": 95,
       "status": "lost",
       "home_score": 0,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-10-08_NHL_Blues_vs_Sharks",
@@ -13413,7 +13417,8 @@
       "confidence": 95,
       "status": "lost",
       "home_score": 2,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-09_NBA_Bulls_vs_Grizzlies",
@@ -13443,9 +13448,10 @@
       "pick_label": "DAL +4.5",
       "pick_team": "Dallas Mavericks",
       "confidence": 55,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 117,
+      "away_score": 135,
+      "ig_posted": true
     },
     {
       "id": "2026-10-09_NHL_Capitals_vs_Rangers",
@@ -13545,16 +13551,16 @@
     }
   ],
   "stats": {
-    "total": 739,
+    "total": 740,
     "wins": 386,
-    "losses": 353,
-    "pending": 9,
+    "losses": 354,
+    "pending": 8,
     "win_pct": 52.2,
-    "current_streak": "W1",
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 5,
-        "l": 11
+        "l": 12
       },
       "baseball": {
         "w": 271,
