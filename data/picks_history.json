@@ -13432,9 +13432,9 @@
       "pick_label": "CHI ML",
       "pick_team": "Chicago Bulls",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 100,
+      "away_score": 104
     },
     {
       "id": "2026-10-09_NBA_Mavericks_vs_Rockets",
@@ -13497,9 +13497,9 @@
       "pick_label": "WPG -1.5",
       "pick_team": "Winnipeg Jets",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 5
     },
     {
       "id": "2026-10-09_La Liga_Málaga_vs_Espanyol",
@@ -13855,16 +13855,16 @@
     }
   ],
   "stats": {
-    "total": 743,
+    "total": 745,
     "wins": 388,
-    "losses": 355,
-    "pending": 22,
-    "win_pct": 52.2,
-    "current_streak": "L1",
+    "losses": 357,
+    "pending": 20,
+    "win_pct": 52.1,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 5,
-        "l": 12
+        "l": 13
       },
       "baseball": {
         "w": 271,
@@ -13872,7 +13872,7 @@
       },
       "hockey": {
         "w": 27,
-        "l": 33
+        "l": 34
       },
       "futbol": {
         "w": 85,
