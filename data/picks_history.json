@@ -13434,7 +13434,8 @@
       "confidence": 75,
       "status": "lost",
       "home_score": 100,
-      "away_score": 104
+      "away_score": 104,
+      "ig_posted": true
     },
     {
       "id": "2026-10-09_NBA_Mavericks_vs_Rockets",
@@ -13467,7 +13468,8 @@
       "confidence": 88,
       "status": "won",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-09_NHL_Wings_vs_Kraken",
@@ -13483,7 +13485,8 @@
       "confidence": 80,
       "status": "won",
       "home_score": 3,
-      "away_score": 6
+      "away_score": 6,
+      "ig_posted": true
     },
     {
       "id": "2026-10-09_NHL_Jets_vs_Ducks",
@@ -13499,7 +13502,8 @@
       "confidence": 77,
       "status": "lost",
       "home_score": 1,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-10-09_La Liga_Málaga_vs_Espanyol",
@@ -13547,7 +13551,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 2,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-10_NBA_Raptors_vs_Clippers",
@@ -13721,9 +13726,10 @@
       "pick_label": "ARS ML",
       "pick_team": "Arsenal",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-10_Premier League_Chelsea_vs_Bournemouth",
@@ -13785,9 +13791,10 @@
       "pick_label": "ELV ML",
       "pick_team": "SV Elversberg",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-10_Bundesliga_Augsburg_vs_Munich",
@@ -13801,9 +13808,9 @@
       "pick_label": "MUN ML",
       "pick_team": "Bayern Munich",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "id": "2026-10-10_Bundesliga_Leipzig_vs_Frankfurt",
@@ -13852,15 +13859,63 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-10-10_Ligue 1_Monaco_vs_Toulouse",
+      "date": "2026-10-10",
+      "league": "Ligue 1",
+      "sport": "futbol",
+      "home_team": "AS Monaco",
+      "away_team": "Toulouse",
+      "home_abbr": "MON",
+      "away_abbr": "TOU",
+      "pick_label": "MON ML",
+      "pick_team": "AS Monaco",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-10_Ligue 1_Lorient_vs_FC",
+      "date": "2026-10-10",
+      "league": "Ligue 1",
+      "sport": "futbol",
+      "home_team": "Lorient",
+      "away_team": "Paris FC",
+      "home_abbr": "LOR",
+      "away_abbr": "PAR",
+      "pick_label": "PAR ML",
+      "pick_team": "Paris FC",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-10_Premier League_Villa_vs_Brentford",
+      "date": "2026-10-10",
+      "league": "Premier League",
+      "sport": "futbol",
+      "home_team": "Aston Villa",
+      "away_team": "Brentford",
+      "home_abbr": "AVL",
+      "away_abbr": "BRE",
+      "pick_label": "BRE ML",
+      "pick_team": "Brentford",
+      "confidence": 78,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 745,
-    "wins": 388,
-    "losses": 357,
+    "total": 747,
+    "wins": 389,
+    "losses": 358,
     "pending": 20,
     "win_pct": 52.1,
-    "current_streak": "L2",
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 5,
@@ -13875,8 +13930,8 @@
         "l": 34
       },
       "futbol": {
-        "w": 85,
-        "l": 56
+        "w": 86,
+        "l": 57
       }
     }
   }
