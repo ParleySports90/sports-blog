@@ -13630,9 +13630,9 @@
       "pick_label": "BOS -1.5",
       "pick_team": "Boston Bruins",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 1
     },
     {
       "id": "2026-10-10_NHL_Avalanche_vs_Leafs",
@@ -13694,9 +13694,9 @@
       "pick_label": "BAR ML",
       "pick_team": "Barcelona",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-10-10_La Liga_Madrid_vs_Villarreal",
@@ -13824,9 +13824,9 @@
       "pick_label": "RBL ML",
       "pick_team": "RB Leipzig",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 0
     },
     {
       "id": "2026-10-10_Serie A_Internazionale_vs_Parma",
@@ -13920,9 +13920,9 @@
       "pick_label": "MAN ML",
       "pick_team": "Manchester United",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-10-10_Serie A_Napoli_vs_Frosinone",
@@ -13971,15 +13971,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-10-10_NHL_Flames_vs_Ducks",
+      "date": "2026-10-10",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Calgary Flames",
+      "away_team": "Anaheim Ducks",
+      "home_abbr": "CGY",
+      "away_abbr": "ANA",
+      "pick_label": "ANA +1.5",
+      "pick_team": "Anaheim Ducks",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 753,
-    "wins": 395,
+    "total": 756,
+    "wins": 398,
     "losses": 358,
-    "pending": 17,
-    "win_pct": 52.5,
-    "current_streak": "W5",
+    "pending": 14,
+    "win_pct": 52.6,
+    "current_streak": "W7",
     "by_sport": {
       "basketball": {
         "w": 5,
@@ -13990,11 +14006,11 @@
         "l": 254
       },
       "hockey": {
-        "w": 27,
+        "w": 28,
         "l": 34
       },
       "futbol": {
-        "w": 92,
+        "w": 94,
         "l": 57
       }
     }
