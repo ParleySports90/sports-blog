@@ -13710,9 +13710,9 @@
       "pick_label": "RMA ML",
       "pick_team": "Real Madrid",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-10-10_Premier League_Arsenal_vs_United",
@@ -13872,9 +13872,9 @@
       "pick_label": "MON ML",
       "pick_team": "AS Monaco",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "id": "2026-10-10_Ligue 1_Lorient_vs_FC",
@@ -13888,9 +13888,9 @@
       "pick_label": "PAR ML",
       "pick_team": "Paris FC",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-10-10_Premier League_Villa_vs_Brentford",
@@ -13936,9 +13936,9 @@
       "pick_label": "FRO ML",
       "pick_team": "Frosinone",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-10-10_Ligue 1_Brest_vs_Angers",
@@ -13952,9 +13952,9 @@
       "pick_label": "ANG ML",
       "pick_team": "Angers",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 1
     },
     {
       "id": "2026-10-10_Ligue 1_Saint-Germain_vs_Mans",
@@ -13968,9 +13968,9 @@
       "pick_label": "PSG ML",
       "pick_team": "Paris Saint-Germain",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-10-10_NHL_Flames_vs_Ducks",
@@ -13990,12 +13990,12 @@
     }
   ],
   "stats": {
-    "total": 756,
-    "wins": 398,
-    "losses": 358,
-    "pending": 14,
+    "total": 761,
+    "wins": 400,
+    "losses": 361,
+    "pending": 8,
     "win_pct": 52.6,
-    "current_streak": "W7",
+    "current_streak": "W8",
     "by_sport": {
       "basketball": {
         "w": 5,
@@ -14010,8 +14010,8 @@
         "l": 34
       },
       "futbol": {
-        "w": 94,
-        "l": 57
+        "w": 96,
+        "l": 60
       }
     }
   }
