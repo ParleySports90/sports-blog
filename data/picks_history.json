@@ -14134,9 +14134,9 @@
       "pick_label": "BET ML",
       "pick_team": "Real Betis",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 2
     },
     {
       "id": "2026-10-11_Premier League_Liverpool_vs_City",
@@ -14352,11 +14352,11 @@
     }
   ],
   "stats": {
-    "total": 777,
-    "wins": 409,
+    "total": 778,
+    "wins": 410,
     "losses": 368,
-    "pending": 11,
-    "win_pct": 52.6,
+    "pending": 10,
+    "win_pct": 52.7,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -14372,7 +14372,7 @@
         "l": 36
       },
       "futbol": {
-        "w": 102,
+        "w": 103,
         "l": 62
       }
     }
