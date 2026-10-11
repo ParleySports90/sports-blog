@@ -14265,9 +14265,9 @@
       "pick_label": "CAG ML",
       "pick_team": "Cagliari",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-10-11_Ligue 1_Nice_vs_Strasbourg",
@@ -14346,16 +14346,16 @@
       "pick_label": "RAC ML",
       "pick_team": "Racing Santander",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
     }
   ],
   "stats": {
     "total": 778,
     "wins": 410,
     "losses": 368,
-    "pending": 10,
+    "pending": 8,
     "win_pct": 52.7,
     "current_streak": "L1",
     "by_sport": {
