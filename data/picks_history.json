@@ -13348,7 +13348,7 @@
       "pick_label": "NYY -1.5",
       "pick_team": "New York Yankees",
       "confidence": 59,
-      "status": "pending",
+      "status": "expired",
       "home_score": null,
       "away_score": null
     },
@@ -14021,9 +14021,9 @@
       "pick_label": "ORL ML",
       "pick_team": "Orlando Magic",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 119,
+      "away_score": 105
     },
     {
       "id": "2026-10-11_NBA_Hornets_vs_Bucks",
@@ -14037,9 +14037,9 @@
       "pick_label": "MIL ML",
       "pick_team": "Milwaukee Bucks",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 105,
+      "away_score": 90
     },
     {
       "id": "2026-10-11_NBA_Rockets_vs_Mavericks",
@@ -14086,9 +14086,9 @@
       "pick_label": "NYR -1.5",
       "pick_team": "New York Rangers",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 2
     },
     {
       "id": "2026-10-11_NHL_Flyers_vs_Hurricanes",
@@ -14102,9 +14102,9 @@
       "pick_label": "CAR +1.5",
       "pick_team": "Carolina Hurricanes",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 4
     },
     {
       "id": "2026-10-11_NHL_Capitals_vs_Kraken",
@@ -14118,9 +14118,9 @@
       "pick_label": "WSH -1.5",
       "pick_team": "Washington Capitals",
       "confidence": 83,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 5
     },
     {
       "id": "2026-10-11_La Liga_Betis_vs_Osasuna",
@@ -14349,27 +14349,203 @@
       "status": "push",
       "home_score": 2,
       "away_score": 2
+    },
+    {
+      "id": "2026-10-12_NBA_Blazers_vs_Lions",
+      "date": "2026-10-12",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Portland Trail Blazers",
+      "away_team": "London Lions",
+      "home_abbr": "POR",
+      "away_abbr": "LON",
+      "pick_label": "POR ML",
+      "pick_team": "Portland Trail Blazers",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-12_NBA_Hawks_vs_Thunder",
+      "date": "2026-10-12",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Atlanta Hawks",
+      "away_team": "Oklahoma City Thunder",
+      "home_abbr": "ATL",
+      "away_abbr": "OKC",
+      "pick_label": "ATL ML",
+      "pick_team": "Atlanta Hawks",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-12_NBA_Knicks_vs_Timberwolves",
+      "date": "2026-10-12",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "New York Knicks",
+      "away_team": "Minnesota Timberwolves",
+      "home_abbr": "NY",
+      "away_abbr": "MIN",
+      "pick_label": "MIN ML",
+      "pick_team": "Minnesota Timberwolves",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-12_MLB_Rays_vs_Guardians",
+      "date": "2026-10-12",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Cleveland Guardians",
+      "home_abbr": "TB",
+      "away_abbr": "CLE",
+      "pick_label": "TB -1.5",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 67,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-12_MLB_Brewers_vs_Dodgers",
+      "date": "2026-10-12",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Milwaukee Brewers",
+      "away_team": "Los Angeles Dodgers",
+      "home_abbr": "MIL",
+      "away_abbr": "LAD",
+      "pick_label": "MIL -1.5",
+      "pick_team": "Milwaukee Brewers",
+      "confidence": 57,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-12_NHL_Sabres_vs_Panthers",
+      "date": "2026-10-12",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Buffalo Sabres",
+      "away_team": "Florida Panthers",
+      "home_abbr": "BUF",
+      "away_abbr": "FLA",
+      "pick_label": "FLA +1.5",
+      "pick_team": "Florida Panthers",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-12_NHL_Devils_vs_Senators",
+      "date": "2026-10-12",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "New Jersey Devils",
+      "away_team": "Ottawa Senators",
+      "home_abbr": "NJ",
+      "away_abbr": "OTT",
+      "pick_label": "OTT -1.5",
+      "pick_team": "Ottawa Senators",
+      "confidence": 80,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-12_NHL_Wild_vs_Knights",
+      "date": "2026-10-12",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Minnesota Wild",
+      "away_team": "Vegas Golden Knights",
+      "home_abbr": "MIN",
+      "away_abbr": "VGK",
+      "pick_label": "VGK -1.5",
+      "pick_team": "Vegas Golden Knights",
+      "confidence": 63,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-12_La Liga_Levante_vs_Sevilla",
+      "date": "2026-10-12",
+      "league": "La Liga",
+      "sport": "futbol",
+      "home_team": "Levante",
+      "away_team": "Sevilla",
+      "home_abbr": "LEV",
+      "away_abbr": "SEV",
+      "pick_label": "SEV ML",
+      "pick_team": "Sevilla",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-12_Serie A_Atalanta_vs_Venezia",
+      "date": "2026-10-12",
+      "league": "Serie A",
+      "sport": "futbol",
+      "home_team": "Atalanta",
+      "away_team": "Venezia",
+      "home_abbr": "ATA",
+      "away_abbr": "VEN",
+      "pick_label": "ATA ML",
+      "pick_team": "Atalanta",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-12_Premier League_City_vs_United",
+      "date": "2026-10-12",
+      "league": "Premier League",
+      "sport": "futbol",
+      "home_team": "Coventry City",
+      "away_team": "Newcastle United",
+      "home_abbr": "COV",
+      "away_abbr": "NEW",
+      "pick_label": "NEW ML",
+      "pick_team": "Newcastle United",
+      "confidence": 78,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 778,
-    "wins": 410,
-    "losses": 368,
-    "pending": 8,
-    "win_pct": 52.7,
-    "current_streak": "L1",
+    "total": 783,
+    "wins": 412,
+    "losses": 371,
+    "pending": 13,
+    "win_pct": 52.6,
+    "current_streak": "L3",
     "by_sport": {
       "basketball": {
         "w": 6,
-        "l": 16
+        "l": 18
       },
       "baseball": {
         "w": 272,
         "l": 254
       },
       "hockey": {
-        "w": 29,
-        "l": 36
+        "w": 31,
+        "l": 37
       },
       "futbol": {
         "w": 103,
