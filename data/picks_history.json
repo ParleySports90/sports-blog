@@ -14023,7 +14023,8 @@
       "confidence": 95,
       "status": "lost",
       "home_score": 119,
-      "away_score": 105
+      "away_score": 105,
+      "ig_posted": true
     },
     {
       "id": "2026-10-11_NBA_Hornets_vs_Bucks",
@@ -14039,7 +14040,8 @@
       "confidence": 95,
       "status": "lost",
       "home_score": 105,
-      "away_score": 90
+      "away_score": 90,
+      "ig_posted": true
     },
     {
       "id": "2026-10-11_NBA_Rockets_vs_Mavericks",
@@ -14072,7 +14074,8 @@
       "confidence": 60,
       "status": "won",
       "home_score": 2,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-11_NHL_Rangers_vs_Canucks",
@@ -14088,7 +14091,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 6,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-11_NHL_Flyers_vs_Hurricanes",
@@ -14104,7 +14108,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 1,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-10-11_NHL_Capitals_vs_Kraken",
@@ -14120,7 +14125,8 @@
       "confidence": 83,
       "status": "lost",
       "home_score": 3,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-10-11_La Liga_Betis_vs_Osasuna",
@@ -14136,7 +14142,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 5,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-11_Premier League_Liverpool_vs_City",
@@ -14152,7 +14159,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 0,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-11_Bundesliga_Cologne_vs_Mönchengladbach",
@@ -14185,7 +14193,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-11_Serie A_Lazio_vs_Monza",
@@ -14300,7 +14309,8 @@
       "confidence": 78,
       "status": "won",
       "home_score": 4,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-11_La Liga_Sociedad_vs_Deportivo",
@@ -14316,7 +14326,8 @@
       "confidence": 70,
       "status": "won",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-11_NBA_Nuggets_vs_Bulls",
@@ -14332,7 +14343,8 @@
       "confidence": 70,
       "status": "lost",
       "home_score": 133,
-      "away_score": 128
+      "away_score": 128,
+      "ig_posted": true
     },
     {
       "id": "2026-10-11_La Liga_Santander_vs_Valencia",
@@ -14506,9 +14518,10 @@
       "pick_label": "ATA ML",
       "pick_team": "Atalanta",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-12_Premier League_City_vs_United",
@@ -14525,15 +14538,47 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-10-12_NBA_Jazz_vs_Spurs",
+      "date": "2026-10-12",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Utah Jazz",
+      "away_team": "San Antonio Spurs",
+      "home_abbr": "UTAH",
+      "away_abbr": "SA",
+      "pick_label": "UTAH -4.5",
+      "pick_team": "Utah Jazz",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-12_NBA_Wizards_vs_Nets",
+      "date": "2026-10-12",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Washington Wizards",
+      "away_team": "Brooklyn Nets",
+      "home_abbr": "WSH",
+      "away_abbr": "BKN",
+      "pick_label": "WSH +1.5",
+      "pick_team": "Washington Wizards",
+      "confidence": 55,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 785,
-    "wins": 413,
+    "total": 786,
+    "wins": 414,
     "losses": 372,
-    "pending": 11,
-    "win_pct": 52.6,
-    "current_streak": "L3",
+    "pending": 12,
+    "win_pct": 52.7,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 6,
@@ -14548,7 +14593,7 @@
         "l": 37
       },
       "futbol": {
-        "w": 103,
+        "w": 104,
         "l": 62
       }
     }
