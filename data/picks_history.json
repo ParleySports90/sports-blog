@@ -14454,9 +14454,9 @@
       "pick_label": "FLA +1.5",
       "pick_team": "Florida Panthers",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 3
     },
     {
       "id": "2026-10-12_NHL_Devils_vs_Senators",
@@ -14502,9 +14502,9 @@
       "pick_label": "SEV ML",
       "pick_team": "Sevilla",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 3,
+      "away_score": 3
     },
     {
       "id": "2026-10-12_Serie A_Atalanta_vs_Venezia",
@@ -14535,9 +14535,9 @@
       "pick_label": "NEW ML",
       "pick_team": "Newcastle United",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "id": "2026-10-12_NBA_Jazz_vs_Spurs",
@@ -14573,12 +14573,12 @@
     }
   ],
   "stats": {
-    "total": 786,
+    "total": 788,
     "wins": 414,
-    "losses": 372,
-    "pending": 12,
-    "win_pct": 52.7,
-    "current_streak": "W1",
+    "losses": 374,
+    "pending": 9,
+    "win_pct": 52.5,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 6,
@@ -14590,11 +14590,11 @@
       },
       "hockey": {
         "w": 31,
-        "l": 37
+        "l": 38
       },
       "futbol": {
         "w": 104,
-        "l": 62
+        "l": 63
       }
     }
   }
