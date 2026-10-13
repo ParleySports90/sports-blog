@@ -14551,9 +14551,9 @@
       "pick_label": "UTAH -4.5",
       "pick_team": "Utah Jazz",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 119,
+      "away_score": 109
     },
     {
       "id": "2026-10-12_NBA_Wizards_vs_Nets",
@@ -14797,15 +14797,15 @@
     }
   ],
   "stats": {
-    "total": 796,
-    "wins": 419,
+    "total": 797,
+    "wins": 420,
     "losses": 377,
-    "pending": 15,
-    "win_pct": 52.6,
+    "pending": 14,
+    "win_pct": 52.7,
     "current_streak": "W3",
     "by_sport": {
       "basketball": {
-        "w": 9,
+        "w": 10,
         "l": 20
       },
       "baseball": {
