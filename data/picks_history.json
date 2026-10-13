@@ -14406,9 +14406,9 @@
       "pick_label": "MIN ML",
       "pick_team": "Minnesota Timberwolves",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 104,
+      "away_score": 122
     },
     {
       "id": "2026-10-12_MLB_Rays_vs_Guardians",
@@ -14422,9 +14422,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 7
     },
     {
       "id": "2026-10-12_MLB_Brewers_vs_Dodgers",
@@ -14486,9 +14486,9 @@
       "pick_label": "VGK -1.5",
       "pick_team": "Vegas Golden Knights",
       "confidence": 63,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "id": "2026-10-12_La Liga_Levante_vs_Sevilla",
@@ -14797,24 +14797,24 @@
     }
   ],
   "stats": {
-    "total": 793,
-    "wins": 418,
-    "losses": 375,
-    "pending": 18,
-    "win_pct": 52.7,
+    "total": 796,
+    "wins": 419,
+    "losses": 377,
+    "pending": 15,
+    "win_pct": 52.6,
     "current_streak": "W3",
     "by_sport": {
       "basketball": {
-        "w": 8,
+        "w": 9,
         "l": 20
       },
       "baseball": {
         "w": 274,
-        "l": 254
+        "l": 255
       },
       "hockey": {
         "w": 32,
-        "l": 38
+        "l": 39
       },
       "futbol": {
         "w": 104,
