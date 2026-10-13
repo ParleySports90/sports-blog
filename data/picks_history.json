@@ -14376,7 +14376,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 119,
-      "away_score": 66
+      "away_score": 66,
+      "ig_posted": true
     },
     {
       "id": "2026-10-12_NBA_Hawks_vs_Thunder",
@@ -14392,7 +14393,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 113,
-      "away_score": 110
+      "away_score": 110,
+      "ig_posted": true
     },
     {
       "id": "2026-10-12_NBA_Knicks_vs_Timberwolves",
@@ -14408,7 +14410,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 104,
-      "away_score": 122
+      "away_score": 122,
+      "ig_posted": true
     },
     {
       "id": "2026-10-12_MLB_Rays_vs_Guardians",
@@ -14424,7 +14427,8 @@
       "confidence": 67,
       "status": "lost",
       "home_score": 3,
-      "away_score": 7
+      "away_score": 7,
+      "ig_posted": true
     },
     {
       "id": "2026-10-12_MLB_Brewers_vs_Dodgers",
@@ -14440,7 +14444,8 @@
       "confidence": 57,
       "status": "won",
       "home_score": 7,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-10-12_NHL_Sabres_vs_Panthers",
@@ -14456,7 +14461,8 @@
       "confidence": 95,
       "status": "lost",
       "home_score": 5,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-12_NHL_Devils_vs_Senators",
@@ -14472,7 +14478,8 @@
       "confidence": 80,
       "status": "won",
       "home_score": 1,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-10-12_NHL_Wild_vs_Knights",
@@ -14488,7 +14495,8 @@
       "confidence": 63,
       "status": "lost",
       "home_score": 4,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-12_La Liga_Levante_vs_Sevilla",
@@ -14537,7 +14545,8 @@
       "confidence": 78,
       "status": "lost",
       "home_score": 4,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-12_NBA_Jazz_vs_Spurs",
@@ -14553,7 +14562,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 119,
-      "away_score": 109
+      "away_score": 109,
+      "ig_posted": true
     },
     {
       "id": "2026-10-12_NBA_Wizards_vs_Nets",
@@ -14569,7 +14579,8 @@
       "confidence": 55,
       "status": "lost",
       "home_score": 122,
-      "away_score": 131
+      "away_score": 131,
+      "ig_posted": true
     },
     {
       "id": "2026-10-13_NBA_Lakers_vs_Warriors",
