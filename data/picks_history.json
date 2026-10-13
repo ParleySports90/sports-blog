@@ -14690,9 +14690,9 @@
       "pick_label": "MAN ML",
       "pick_team": "Manchester United",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-10-13_Champions League_Galatasaray_vs_Barcelona",
@@ -14706,9 +14706,9 @@
       "pick_label": "BAR ML",
       "pick_team": "Barcelona",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 4
     },
     {
       "id": "2026-10-13_Champions League_FK_vs_Munich",
@@ -14722,9 +14722,9 @@
       "pick_label": "MUN ML",
       "pick_team": "Bayern Munich",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 3,
+      "away_score": 3
     },
     {
       "id": "2026-10-13_Champions League_Villarreal_vs_Napoli",
@@ -14738,9 +14738,9 @@
       "pick_label": "NAP ML",
       "pick_team": "Napoli",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-10-13_Copa Sudamericana_Juniors_vs_Gama",
@@ -14770,9 +14770,9 @@
       "pick_label": "ARS ML",
       "pick_team": "Arsenal",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-10-13_Champions League_Leipzig_vs_Eindhoven",
@@ -14786,9 +14786,9 @@
       "pick_label": "PSV ML",
       "pick_team": "PSV Eindhoven",
       "confidence": 71,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-10-13_Champions League_Internazionale_vs_Brugge",
@@ -14802,18 +14802,18 @@
       "pick_label": "BRU ML",
       "pick_team": "Club Brugge",
       "confidence": 55,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 4
     }
   ],
   "stats": {
-    "total": 798,
-    "wins": 421,
-    "losses": 377,
-    "pending": 13,
-    "win_pct": 52.8,
-    "current_streak": "W4",
+    "total": 804,
+    "wins": 424,
+    "losses": 380,
+    "pending": 6,
+    "win_pct": 52.7,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 10,
@@ -14828,8 +14828,8 @@
         "l": 39
       },
       "futbol": {
-        "w": 105,
-        "l": 63
+        "w": 108,
+        "l": 66
       }
     }
   }
