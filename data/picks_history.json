@@ -14674,9 +14674,9 @@
       "pick_label": "SCP ML",
       "pick_team": "Sporting CP",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-10-13_Champions League_Madrid_vs_United",
@@ -14808,12 +14808,12 @@
     }
   ],
   "stats": {
-    "total": 797,
-    "wins": 420,
+    "total": 798,
+    "wins": 421,
     "losses": 377,
-    "pending": 14,
-    "win_pct": 52.7,
-    "current_streak": "W3",
+    "pending": 13,
+    "win_pct": 52.8,
+    "current_streak": "W4",
     "by_sport": {
       "basketball": {
         "w": 10,
@@ -14828,7 +14828,7 @@
         "l": 39
       },
       "futbol": {
-        "w": 104,
+        "w": 105,
         "l": 63
       }
     }
