@@ -14594,9 +14594,9 @@
       "pick_label": "LAL -5.5",
       "pick_team": "Los Angeles Lakers",
       "confidence": 55,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 89,
+      "away_score": 101
     },
     {
       "id": "2026-10-13_MLB_Rays_vs_Guardians",
@@ -14610,9 +14610,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-10-13_NHL_Flyers_vs_Kraken",
@@ -14626,9 +14626,9 @@
       "pick_label": "SEA -1.5",
       "pick_team": "Seattle Kraken",
       "confidence": 80,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-10-13_NHL_Senators_vs_Blues",
@@ -14642,9 +14642,9 @@
       "pick_label": "OTT -1.5",
       "pick_team": "Ottawa Senators",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 7
     },
     {
       "id": "2026-10-13_NHL_Blackhawks_vs_Penguins",
@@ -14658,9 +14658,9 @@
       "pick_label": "PIT +1.5",
       "pick_team": "Pittsburgh Penguins",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 3
     },
     {
       "id": "2026-10-13_Champions League_Lens_vs_CP",
@@ -14754,9 +14754,9 @@
       "pick_label": "CABJ ML",
       "pick_team": "Boca Juniors",
       "confidence": 76,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-10-13_Champions League_Arsenal_vs_Lille",
@@ -15016,28 +15016,28 @@
     }
   ],
   "stats": {
-    "total": 804,
-    "wins": 424,
-    "losses": 380,
-    "pending": 19,
-    "win_pct": 52.7,
-    "current_streak": "W1",
+    "total": 810,
+    "wins": 425,
+    "losses": 385,
+    "pending": 13,
+    "win_pct": 52.5,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 10,
-        "l": 20
+        "l": 21
       },
       "baseball": {
-        "w": 274,
+        "w": 275,
         "l": 255
       },
       "hockey": {
         "w": 32,
-        "l": 39
+        "l": 42
       },
       "futbol": {
         "w": 108,
-        "l": 66
+        "l": 67
       }
     }
   }
