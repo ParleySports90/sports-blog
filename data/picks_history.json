@@ -14866,9 +14866,9 @@
       "pick_label": "FEY ML",
       "pick_team": "Feyenoord Rotterdam",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-10-14_Champions League_Linz_vs_Liverpool",
@@ -14882,9 +14882,9 @@
       "pick_label": "LIV ML",
       "pick_team": "Liverpool",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 6
     },
     {
       "id": "2026-10-14_Champions League_Bodo/Glimt_vs_Dortmund",
@@ -15013,15 +15013,63 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-10-14_NBA_Heat_vs_Nets",
+      "date": "2026-10-14",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Miami Heat",
+      "away_team": "Brooklyn Nets",
+      "home_abbr": "MIA",
+      "away_abbr": "BKN",
+      "pick_label": "BKN -6.5",
+      "pick_team": "Brooklyn Nets",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-14_NBA_Celtics_vs_Hornets",
+      "date": "2026-10-14",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Boston Celtics",
+      "away_team": "Charlotte Hornets",
+      "home_abbr": "BOS",
+      "away_abbr": "CHA",
+      "pick_label": "BOS -8.5",
+      "pick_team": "Boston Celtics",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-14_NBA_Timberwolves_vs_Pistons",
+      "date": "2026-10-14",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Minnesota Timberwolves",
+      "away_team": "Detroit Pistons",
+      "home_abbr": "MIN",
+      "away_abbr": "DET",
+      "pick_label": "MIN -4.5",
+      "pick_team": "Minnesota Timberwolves",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 810,
-    "wins": 425,
+    "total": 812,
+    "wins": 427,
     "losses": 385,
-    "pending": 13,
-    "win_pct": 52.5,
-    "current_streak": "L1",
+    "pending": 14,
+    "win_pct": 52.6,
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
         "w": 10,
@@ -15036,7 +15084,7 @@
         "l": 42
       },
       "futbol": {
-        "w": 108,
+        "w": 110,
         "l": 67
       }
     }
