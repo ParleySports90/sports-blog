@@ -14898,9 +14898,9 @@
       "pick_label": "DOR ML",
       "pick_team": "Borussia Dortmund",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-10-14_Champions League_City_vs_Saint-Germain",
@@ -14914,9 +14914,9 @@
       "pick_label": "MNC ML",
       "pick_team": "Manchester City",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 4
     },
     {
       "id": "2026-10-14_Champions League_Betis_vs_Porto",
@@ -14930,9 +14930,9 @@
       "pick_label": "FCP ML",
       "pick_team": "FC Porto",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-10-14_Champions League_Donetsk_vs_Athens",
@@ -14946,9 +14946,9 @@
       "pick_label": "AEK ML",
       "pick_team": "AEK Athens",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-10-14_Champions League_Bratislava_vs_Stuttgart",
@@ -14962,9 +14962,9 @@
       "pick_label": "SLB ML",
       "pick_team": "Slovan Bratislava",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "id": "2026-10-14_Champions League_Villa_vs_Fenerbahce",
@@ -14978,9 +14978,9 @@
       "pick_label": "AVL ML",
       "pick_team": "Aston Villa",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 0
     },
     {
       "id": "2026-10-14_Copa Libertadores_Fluminense_vs_Palmeiras",
@@ -15010,9 +15010,9 @@
       "pick_label": "RMA ML",
       "pick_team": "Real Madrid",
       "confidence": 61,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 4
     },
     {
       "id": "2026-10-14_NBA_Heat_vs_Nets",
@@ -15064,11 +15064,11 @@
     }
   ],
   "stats": {
-    "total": 812,
-    "wins": 427,
-    "losses": 385,
-    "pending": 14,
-    "win_pct": 52.6,
+    "total": 819,
+    "wins": 429,
+    "losses": 390,
+    "pending": 7,
+    "win_pct": 52.4,
     "current_streak": "W2",
     "by_sport": {
       "basketball": {
@@ -15084,8 +15084,8 @@
         "l": 42
       },
       "futbol": {
-        "w": 110,
-        "l": 67
+        "w": 112,
+        "l": 72
       }
     }
   }
