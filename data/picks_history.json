@@ -14818,9 +14818,9 @@
       "pick_label": "LAD -1.5",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 58,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 6
     },
     {
       "id": "2026-10-14_NHL_Capitals_vs_Canadiens",
@@ -14834,9 +14834,9 @@
       "pick_label": "WSH -1.5",
       "pick_team": "Washington Capitals",
       "confidence": 62,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 4
     },
     {
       "id": "2026-10-14_NHL_Avalanche_vs_Stars",
@@ -14850,9 +14850,9 @@
       "pick_label": "COL -1.5",
       "pick_team": "Colorado Avalanche",
       "confidence": 62,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-10-14_Champions League_Rotterdam_vs_Como",
@@ -14994,9 +14994,9 @@
       "pick_label": "PAL ML",
       "pick_team": "Palmeiras",
       "confidence": 68,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-10-14_Champions League_Roma_vs_Madrid",
@@ -15026,9 +15026,9 @@
       "pick_label": "BKN -6.5",
       "pick_team": "Brooklyn Nets",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 144,
+      "away_score": 128
     },
     {
       "id": "2026-10-14_NBA_Celtics_vs_Hornets",
@@ -15042,9 +15042,9 @@
       "pick_label": "BOS -8.5",
       "pick_team": "Boston Celtics",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 114,
+      "away_score": 93
     },
     {
       "id": "2026-10-14_NBA_Timberwolves_vs_Pistons",
@@ -15058,9 +15058,9 @@
       "pick_label": "MIN -4.5",
       "pick_team": "Minnesota Timberwolves",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 106,
+      "away_score": 128
     },
     {
       "id": "2026-10-15_NBA_Knicks_vs_Raptors",
@@ -15368,27 +15368,27 @@
     }
   ],
   "stats": {
-    "total": 819,
-    "wins": 429,
-    "losses": 390,
-    "pending": 26,
-    "win_pct": 52.4,
-    "current_streak": "W2",
+    "total": 826,
+    "wins": 431,
+    "losses": 395,
+    "pending": 19,
+    "win_pct": 52.2,
+    "current_streak": "L3",
     "by_sport": {
       "basketball": {
-        "w": 10,
-        "l": 21
+        "w": 11,
+        "l": 23
       },
       "baseball": {
         "w": 275,
-        "l": 255
+        "l": 256
       },
       "hockey": {
         "w": 32,
-        "l": 42
+        "l": 44
       },
       "futbol": {
-        "w": 112,
+        "w": 113,
         "l": 72
       }
     }
