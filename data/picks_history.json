@@ -14596,7 +14596,8 @@
       "confidence": 55,
       "status": "lost",
       "home_score": 89,
-      "away_score": 101
+      "away_score": 101,
+      "ig_posted": true
     },
     {
       "id": "2026-10-13_MLB_Rays_vs_Guardians",
@@ -14612,7 +14613,8 @@
       "confidence": 67,
       "status": "won",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-13_NHL_Flyers_vs_Kraken",
@@ -14628,7 +14630,8 @@
       "confidence": 80,
       "status": "lost",
       "home_score": 2,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-13_NHL_Senators_vs_Blues",
@@ -14644,7 +14647,8 @@
       "confidence": 77,
       "status": "lost",
       "home_score": 2,
-      "away_score": 7
+      "away_score": 7,
+      "ig_posted": true
     },
     {
       "id": "2026-10-13_NHL_Blackhawks_vs_Penguins",
@@ -14660,7 +14664,8 @@
       "confidence": 77,
       "status": "lost",
       "home_score": 5,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-13_Champions League_Lens_vs_CP",
@@ -14676,7 +14681,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 0,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-13_Champions League_Madrid_vs_United",
@@ -14692,7 +14698,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 2,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-13_Champions League_Galatasaray_vs_Barcelona",
@@ -14708,7 +14715,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 1,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-10-13_Champions League_FK_vs_Munich",
@@ -14740,7 +14748,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-13_Copa Sudamericana_Juniors_vs_Gama",
@@ -14756,7 +14765,8 @@
       "confidence": 76,
       "status": "lost",
       "home_score": 0,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-13_Champions League_Arsenal_vs_Lille",
@@ -14772,7 +14782,8 @@
       "confidence": 73,
       "status": "won",
       "home_score": 3,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-13_Champions League_Leipzig_vs_Eindhoven",
@@ -14788,7 +14799,8 @@
       "confidence": 71,
       "status": "lost",
       "home_score": 1,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-13_Champions League_Internazionale_vs_Brugge",
@@ -14804,7 +14816,8 @@
       "confidence": 55,
       "status": "won",
       "home_score": 3,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-10-14_MLB_Dodgers_vs_Brewers",
@@ -14820,7 +14833,8 @@
       "confidence": 58,
       "status": "lost",
       "home_score": 2,
-      "away_score": 6
+      "away_score": 6,
+      "ig_posted": true
     },
     {
       "id": "2026-10-14_NHL_Capitals_vs_Canadiens",
@@ -14836,7 +14850,8 @@
       "confidence": 62,
       "status": "lost",
       "home_score": 5,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-10-14_NHL_Avalanche_vs_Stars",
@@ -14852,7 +14867,8 @@
       "confidence": 62,
       "status": "lost",
       "home_score": 2,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-14_Champions League_Rotterdam_vs_Como",
@@ -14868,7 +14884,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-14_Champions League_Linz_vs_Liverpool",
@@ -14884,7 +14901,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 3,
-      "away_score": 6
+      "away_score": 6,
+      "ig_posted": true
     },
     {
       "id": "2026-10-14_Champions League_Bodo/Glimt_vs_Dortmund",
@@ -14900,7 +14918,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 1,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-14_Champions League_City_vs_Saint-Germain",
@@ -14916,7 +14935,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 2,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-10-14_Champions League_Betis_vs_Porto",
@@ -14932,7 +14952,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-14_Champions League_Donetsk_vs_Athens",
@@ -14948,7 +14969,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-14_Champions League_Bratislava_vs_Stuttgart",
@@ -14964,7 +14986,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 0,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-14_Champions League_Villa_vs_Fenerbahce",
@@ -14980,7 +15003,8 @@
       "confidence": 73,
       "status": "won",
       "home_score": 6,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-14_Copa Libertadores_Fluminense_vs_Palmeiras",
@@ -14996,7 +15020,8 @@
       "confidence": 68,
       "status": "won",
       "home_score": 1,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-14_Champions League_Roma_vs_Madrid",
@@ -15012,7 +15037,8 @@
       "confidence": 61,
       "status": "won",
       "home_score": 3,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-10-14_NBA_Heat_vs_Nets",
@@ -15028,7 +15054,8 @@
       "confidence": 95,
       "status": "lost",
       "home_score": 144,
-      "away_score": 128
+      "away_score": 128,
+      "ig_posted": true
     },
     {
       "id": "2026-10-14_NBA_Celtics_vs_Hornets",
@@ -15044,7 +15071,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 114,
-      "away_score": 93
+      "away_score": 93,
+      "ig_posted": true
     },
     {
       "id": "2026-10-14_NBA_Timberwolves_vs_Pistons",
@@ -15060,7 +15088,8 @@
       "confidence": 95,
       "status": "lost",
       "home_score": 106,
-      "away_score": 128
+      "away_score": 128,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_NBA_Knicks_vs_Raptors",
