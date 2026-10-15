@@ -15311,9 +15311,9 @@
       "pick_label": "BOU ML",
       "pick_team": "AFC Bournemouth",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-10-15_Europa League_Vigo_vs_Juventus",
@@ -15327,9 +15327,9 @@
       "pick_label": "JUV ML",
       "pick_team": "Juventus",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-10-15_Europa League_Zagreb_vs_Anderlecht",
@@ -15343,9 +15343,9 @@
       "pick_label": "AND ML",
       "pick_team": "Anderlecht",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-10-15_Europa League_Ferencvaros_vs_Plzen",
@@ -15359,9 +15359,9 @@
       "pick_label": "FER ML",
       "pick_team": "Ferencvaros",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-10-15_Europa League_Marseille_vs_Olympiacos",
@@ -15375,9 +15375,9 @@
       "pick_label": "OLY ML",
       "pick_team": "Olympiacos",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-10-15_Europa League_Hoffenheim_vs_Besiktas",
@@ -15391,9 +15391,9 @@
       "pick_label": "BES ML",
       "pick_team": "Besiktas",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-10-15_Conference League_Atalanta_vs_Pafos",
@@ -15407,9 +15407,9 @@
       "pick_label": "ATA ML",
       "pick_team": "Atalanta",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-10-15_Conference League_Albion_vs_Zalgiris",
@@ -15423,9 +15423,9 @@
       "pick_label": "BHA ML",
       "pick_team": "Brighton & Hove Albion",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 0
     },
     {
       "id": "2026-10-15_Conference League_København_vs_Braga",
@@ -15439,9 +15439,9 @@
       "pick_label": "SCB ML",
       "pick_team": "Braga",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-10-15_Conference League_Midlothian_vs_Nordsjælland",
@@ -15455,9 +15455,9 @@
       "pick_label": "HOM ML",
       "pick_team": "Heart of Midlothian",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-10-15_Conference League_Freiburg_vs_Jablonec",
@@ -15471,9 +15471,9 @@
       "pick_label": "SCF ML",
       "pick_team": "SC Freiburg",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-10-15_Conference League_Sint-Truidense_vs_1999",
@@ -15487,17 +15487,33 @@
       "pick_label": "STVV ML",
       "pick_team": "Sint-Truidense",
       "confidence": 85,
+      "status": "won",
+      "home_score": 2,
+      "away_score": 0
+    },
+    {
+      "id": "2026-10-15_Copa Libertadores_Plata_vs_Flamengo",
+      "date": "2026-10-15",
+      "league": "Copa Libertadores",
+      "sport": "futbol",
+      "home_team": "Estudiantes de La Plata",
+      "away_team": "Flamengo",
+      "home_abbr": "EST",
+      "away_abbr": "FLA",
+      "pick_label": "FLA ML",
+      "pick_team": "Flamengo",
+      "confidence": 59,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 831,
-    "wins": 434,
-    "losses": 397,
-    "pending": 18,
-    "win_pct": 52.2,
+    "total": 842,
+    "wins": 443,
+    "losses": 399,
+    "pending": 7,
+    "win_pct": 52.6,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -15513,8 +15529,8 @@
         "l": 44
       },
       "futbol": {
-        "w": 116,
-        "l": 73
+        "w": 125,
+        "l": 75
       }
     }
   }
