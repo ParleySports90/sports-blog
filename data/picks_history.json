@@ -15637,9 +15637,9 @@
       "pick_label": "KOE ML",
       "pick_team": "FC Cologne",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-10-16_Serie A_Frosinone_vs_Sassuolo",
@@ -15653,9 +15653,9 @@
       "pick_label": "FRO ML",
       "pick_team": "Frosinone",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "id": "2026-10-16_La Liga_Deportivo_vs_Levante",
@@ -15669,9 +15669,9 @@
       "pick_label": "DEP ML",
       "pick_team": "Deportivo",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-10-16_NBA_Pistons_vs_Raptors",
@@ -15691,10 +15691,10 @@
     }
   ],
   "stats": {
-    "total": 848,
-    "wins": 444,
-    "losses": 404,
-    "pending": 10,
+    "total": 850,
+    "wins": 445,
+    "losses": 405,
+    "pending": 7,
     "win_pct": 52.4,
     "current_streak": "L1",
     "by_sport": {
@@ -15711,8 +15711,8 @@
         "l": 47
       },
       "futbol": {
-        "w": 125,
-        "l": 75
+        "w": 126,
+        "l": 76
       }
     }
   }
