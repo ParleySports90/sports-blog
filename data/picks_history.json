@@ -15105,7 +15105,8 @@
       "confidence": 95,
       "status": "lost",
       "home_score": 122,
-      "away_score": 120
+      "away_score": 120,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_NBA_Rockets_vs_Thunder",
@@ -15121,7 +15122,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 116,
-      "away_score": 89
+      "away_score": 89,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_MLB_Guardians_vs_Rays",
@@ -15137,7 +15139,8 @@
       "confidence": 59,
       "status": "lost",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_MLB_Dodgers_vs_Brewers",
@@ -15153,7 +15156,8 @@
       "confidence": 53,
       "status": "lost",
       "home_score": 4,
-      "away_score": 6
+      "away_score": 6,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_NHL_Panthers_vs_Canucks",
@@ -15169,7 +15173,8 @@
       "confidence": 75,
       "status": "lost",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_NHL_Devils_vs_Rangers",
@@ -15185,7 +15190,8 @@
       "confidence": 75,
       "status": "lost",
       "home_score": 7,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_NHL_Wings_vs_Flyers",
@@ -15201,7 +15207,8 @@
       "confidence": 75,
       "status": "lost",
       "home_score": 2,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_Europa League_Alkmaar_vs_Be'er",
@@ -15217,7 +15224,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_Europa League_Poznan_vs_Leverkusen",
@@ -15233,7 +15241,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 0,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_Europa League_Celje_vs_Nicosia",
@@ -15249,7 +15258,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 0,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_Europa League_Salzburg_vs_Milan",
@@ -15265,7 +15275,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 0,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_Europa League_Prague_vs_Lillestrom",
@@ -15313,7 +15324,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 3,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_Europa League_Vigo_vs_Juventus",
@@ -15329,7 +15341,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 1,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_Europa League_Zagreb_vs_Anderlecht",
@@ -15345,7 +15358,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 1,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_Europa League_Ferencvaros_vs_Plzen",
@@ -15361,7 +15375,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_Europa League_Marseille_vs_Olympiacos",
@@ -15377,7 +15392,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 0,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_Europa League_Hoffenheim_vs_Besiktas",
@@ -15393,7 +15409,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_Conference League_Atalanta_vs_Pafos",
@@ -15409,7 +15426,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_Conference League_Albion_vs_Zalgiris",
@@ -15425,7 +15443,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 4,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_Conference League_København_vs_Braga",
@@ -15441,7 +15460,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 3,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_Conference League_Midlothian_vs_Nordsjælland",
@@ -15473,7 +15493,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_Conference League_Sint-Truidense_vs_1999",
@@ -15489,7 +15510,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-15_Copa Libertadores_Plata_vs_Flamengo",
