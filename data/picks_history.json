@@ -15103,9 +15103,9 @@
       "pick_label": "TOR ML",
       "pick_team": "Toronto Raptors",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 122,
+      "away_score": 120
     },
     {
       "id": "2026-10-15_NBA_Rockets_vs_Thunder",
@@ -15119,9 +15119,9 @@
       "pick_label": "HOU ML",
       "pick_team": "Houston Rockets",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 116,
+      "away_score": 89
     },
     {
       "id": "2026-10-15_MLB_Guardians_vs_Rays",
@@ -15151,9 +15151,9 @@
       "pick_label": "LAD ML",
       "pick_team": "Los Angeles Dodgers",
       "confidence": 53,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 6
     },
     {
       "id": "2026-10-15_NHL_Panthers_vs_Canucks",
@@ -15167,9 +15167,9 @@
       "pick_label": "FLA -1.5",
       "pick_team": "Florida Panthers",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-10-15_NHL_Devils_vs_Rangers",
@@ -15183,9 +15183,9 @@
       "pick_label": "NYR -1.5",
       "pick_team": "New York Rangers",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 7,
+      "away_score": 1
     },
     {
       "id": "2026-10-15_NHL_Wings_vs_Flyers",
@@ -15199,9 +15199,9 @@
       "pick_label": "DET -1.5",
       "pick_team": "Detroit Red Wings",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-10-15_Europa League_Alkmaar_vs_Be'er",
@@ -15503,9 +15503,9 @@
       "pick_label": "FLA ML",
       "pick_team": "Flamengo",
       "confidence": 59,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-10-16_NBA_Mavericks_vs_Hawks",
@@ -15650,27 +15650,43 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-10-16_NBA_Pistons_vs_Raptors",
+      "date": "2026-10-16",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Detroit Pistons",
+      "away_team": "Toronto Raptors",
+      "home_abbr": "DET",
+      "away_abbr": "TOR",
+      "pick_label": "DET -9.5",
+      "pick_team": "Detroit Pistons",
+      "confidence": 86,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 842,
-    "wins": 443,
-    "losses": 399,
-    "pending": 16,
-    "win_pct": 52.6,
+    "total": 848,
+    "wins": 444,
+    "losses": 404,
+    "pending": 10,
+    "win_pct": 52.4,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
-        "w": 11,
-        "l": 23
+        "w": 12,
+        "l": 24
       },
       "baseball": {
         "w": 275,
-        "l": 257
+        "l": 258
       },
       "hockey": {
         "w": 32,
-        "l": 44
+        "l": 47
       },
       "futbol": {
         "w": 125,
