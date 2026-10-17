@@ -15773,9 +15773,9 @@
       "pick_label": "ATM ML",
       "pick_team": "Atlético Madrid",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-10-17_La Liga_Betis_vs_Barcelona",
@@ -15805,9 +15805,9 @@
       "pick_label": "HUL ML",
       "pick_team": "Hull City",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-10-17_Premier League_City_vs_Town",
@@ -15821,9 +15821,9 @@
       "pick_label": "MNC ML",
       "pick_team": "Manchester City",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-10-17_Bundesliga_Berlin_vs_Dortmund",
@@ -15837,9 +15837,9 @@
       "pick_label": "DOR ML",
       "pick_team": "Borussia Dortmund",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-10-17_Serie A_Venezia_vs_Napoli",
@@ -15853,9 +15853,9 @@
       "pick_label": "NAP ML",
       "pick_team": "Napoli",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-10-17_Serie A_Bologna_vs_Internazionale",
@@ -15933,9 +15933,9 @@
       "pick_label": "M05 ML",
       "pick_team": "Mainz",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-10-17_Bundesliga_Bremen_vs_07",
@@ -15949,18 +15949,66 @@
       "pick_label": "SVW ML",
       "pick_team": "Werder Bremen",
       "confidence": 78,
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
+    },
+    {
+      "id": "2026-10-17_Premier League_United_vs_Villa",
+      "date": "2026-10-17",
+      "league": "Premier League",
+      "sport": "futbol",
+      "home_team": "Newcastle United",
+      "away_team": "Aston Villa",
+      "home_abbr": "NEW",
+      "away_abbr": "AVL",
+      "pick_label": "NEW ML",
+      "pick_team": "Newcastle United",
+      "confidence": 73,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-17_Ligue 1_Strasbourg_vs_Saint-Germain",
+      "date": "2026-10-17",
+      "league": "Ligue 1",
+      "sport": "futbol",
+      "home_team": "Strasbourg",
+      "away_team": "Paris Saint-Germain",
+      "home_abbr": "STR",
+      "away_abbr": "PSG",
+      "pick_label": "PSG ML",
+      "pick_team": "Paris Saint-Germain",
+      "confidence": 73,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-17_Ligue 1_Troyes_vs_Lens",
+      "date": "2026-10-17",
+      "league": "Ligue 1",
+      "sport": "futbol",
+      "home_team": "Troyes",
+      "away_team": "Lens",
+      "home_abbr": "TRY",
+      "away_abbr": "RCL",
+      "pick_label": "RCL ML",
+      "pick_team": "Lens",
+      "confidence": 73,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 856,
-    "wins": 449,
-    "losses": 407,
-    "pending": 17,
+    "total": 861,
+    "wins": 452,
+    "losses": 409,
+    "pending": 13,
     "win_pct": 52.5,
-    "current_streak": "W2",
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 14,
@@ -15975,8 +16023,8 @@
         "l": 47
       },
       "futbol": {
-        "w": 126,
-        "l": 76
+        "w": 129,
+        "l": 78
       }
     }
   }
