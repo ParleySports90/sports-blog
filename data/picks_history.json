@@ -15789,9 +15789,9 @@
       "pick_label": "BAR ML",
       "pick_team": "Barcelona",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 5
     },
     {
       "id": "2026-10-17_Premier League_Fulham_vs_City",
@@ -15885,9 +15885,9 @@
       "pick_label": "ROMA ML",
       "pick_team": "AS Roma",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-10-17_Ligue 1_Lille_vs_Brest",
@@ -15901,9 +15901,9 @@
       "pick_label": "LILL ML",
       "pick_team": "Lille",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-10-17_La Liga_Valencia_vs_Club",
@@ -15917,9 +15917,9 @@
       "pick_label": "ATH ML",
       "pick_team": "Athletic Club",
       "confidence": 79,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-10-17_Bundesliga_04_vs_Mainz",
@@ -15965,9 +15965,9 @@
       "pick_label": "NEW ML",
       "pick_team": "Newcastle United",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-10-17_Ligue 1_Strasbourg_vs_Saint-Germain",
@@ -15997,18 +15997,18 @@
       "pick_label": "RCL ML",
       "pick_team": "Lens",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 3
     }
   ],
   "stats": {
-    "total": 863,
-    "wins": 454,
-    "losses": 409,
-    "pending": 11,
-    "win_pct": 52.6,
-    "current_streak": "W1",
+    "total": 867,
+    "wins": 457,
+    "losses": 410,
+    "pending": 5,
+    "win_pct": 52.7,
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
         "w": 14,
@@ -16023,8 +16023,8 @@
         "l": 47
       },
       "futbol": {
-        "w": 131,
-        "l": 78
+        "w": 134,
+        "l": 79
       }
     }
   }
