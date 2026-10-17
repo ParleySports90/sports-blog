@@ -15543,7 +15543,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 111,
-      "away_score": 135
+      "away_score": 135,
+      "ig_posted": true
     },
     {
       "id": "2026-10-16_NBA_Spurs_vs_Kings",
@@ -15559,7 +15560,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 126,
-      "away_score": 97
+      "away_score": 97,
+      "ig_posted": true
     },
     {
       "id": "2026-10-16_NBA_Bulls_vs_Timberwolves",
@@ -15575,7 +15577,8 @@
       "confidence": 80,
       "status": "lost",
       "home_score": 133,
-      "away_score": 116
+      "away_score": 116,
+      "ig_posted": true
     },
     {
       "id": "2026-10-16_MLB_Guardians_vs_Rays",
@@ -15591,7 +15594,8 @@
       "confidence": 59,
       "status": "won",
       "home_score": 0,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-16_MLB_Dodgers_vs_Brewers",
@@ -15623,7 +15627,8 @@
       "confidence": 66,
       "status": "won",
       "home_score": 5,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-16_Bundesliga_Frankfurt_vs_Cologne",
@@ -15639,7 +15644,8 @@
       "confidence": 78,
       "status": "lost",
       "home_score": 1,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-16_Serie A_Frosinone_vs_Sassuolo",
@@ -15655,7 +15661,8 @@
       "confidence": 73,
       "status": "won",
       "home_score": 4,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-16_La Liga_Deportivo_vs_Levante",
@@ -15687,7 +15694,8 @@
       "confidence": 86,
       "status": "lost",
       "home_score": 129,
-      "away_score": 125
+      "away_score": 125,
+      "ig_posted": true
     },
     {
       "id": "2026-10-17_MLB_Guardians_vs_Rays",
