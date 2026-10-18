@@ -16076,9 +16076,9 @@
       "pick_label": "ALA ML",
       "pick_team": "Alavés",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-10-18_La Liga_Málaga_vs_Sociedad",
@@ -16124,9 +16124,9 @@
       "pick_label": "BHA ML",
       "pick_team": "Brighton & Hove Albion",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "id": "2026-10-18_Premier League_Forest_vs_Arsenal",
@@ -16156,9 +16156,9 @@
       "pick_label": "COMO ML",
       "pick_team": "Como",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "id": "2026-10-18_Serie A_Juventus_vs_Lazio",
@@ -16220,9 +16220,9 @@
       "pick_label": "SCF ML",
       "pick_team": "SC Freiburg",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-10-18_Bundesliga_Mönchengladbach_vs_Hoffenheim",
@@ -16252,18 +16252,50 @@
       "pick_label": "SUN ML",
       "pick_team": "Sunderland",
       "confidence": 73,
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 0
+    },
+    {
+      "id": "2026-10-18_Ligue 1_FC_vs_Rennais",
+      "date": "2026-10-18",
+      "league": "Ligue 1",
+      "sport": "futbol",
+      "home_team": "Paris FC",
+      "away_team": "Stade Rennais",
+      "home_abbr": "PAR",
+      "away_abbr": "REN",
+      "pick_label": "REN ML",
+      "pick_team": "Stade Rennais",
+      "confidence": 73,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-18_Ligue 1_Lyon_vs_Nice",
+      "date": "2026-10-18",
+      "league": "Ligue 1",
+      "sport": "futbol",
+      "home_team": "Lyon",
+      "away_team": "Nice",
+      "home_abbr": "LYON",
+      "away_abbr": "NICE",
+      "pick_label": "LYON ML",
+      "pick_team": "Lyon",
+      "confidence": 73,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 871,
-    "wins": 459,
-    "losses": 412,
-    "pending": 16,
-    "win_pct": 52.7,
-    "current_streak": "W2",
+    "total": 876,
+    "wins": 461,
+    "losses": 415,
+    "pending": 13,
+    "win_pct": 52.6,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 14,
@@ -16278,8 +16310,8 @@
         "l": 49
       },
       "futbol": {
-        "w": 134,
-        "l": 79
+        "w": 136,
+        "l": 82
       }
     }
   }
