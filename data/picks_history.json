@@ -15709,9 +15709,9 @@
       "pick_label": "TB ML",
       "pick_team": "Tampa Bay Rays",
       "confidence": 59,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 7
     },
     {
       "id": "2026-10-17_NHL_Lightning_vs_Canucks",
@@ -15741,9 +15741,9 @@
       "pick_label": "OTT 1.5",
       "pick_team": "Ottawa Senators",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-10-17_NHL_Jackets_vs_Rangers",
@@ -15757,9 +15757,9 @@
       "pick_label": "NYR -1.5",
       "pick_team": "New York Rangers",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-10-17_La Liga_Espanyol_vs_Madrid",
@@ -16243,24 +16243,24 @@
     }
   ],
   "stats": {
-    "total": 868,
-    "wins": 458,
-    "losses": 410,
-    "pending": 19,
-    "win_pct": 52.8,
-    "current_streak": "W3",
+    "total": 871,
+    "wins": 459,
+    "losses": 412,
+    "pending": 16,
+    "win_pct": 52.7,
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
         "w": 14,
         "l": 26
       },
       "baseball": {
-        "w": 276,
+        "w": 277,
         "l": 258
       },
       "hockey": {
         "w": 34,
-        "l": 47
+        "l": 49
       },
       "futbol": {
         "w": 134,
