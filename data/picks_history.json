@@ -16108,9 +16108,9 @@
       "pick_label": "RMA ML",
       "pick_team": "Real Madrid",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "id": "2026-10-18_Premier League_Albion_vs_Palace",
@@ -16172,9 +16172,9 @@
       "pick_label": "LAZ ML",
       "pick_team": "Lazio",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "id": "2026-10-18_Ligue 1_AC_vs_Auxerre",
@@ -16284,17 +16284,17 @@
       "pick_label": "LYON ML",
       "pick_team": "Lyon",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 1
     }
   ],
   "stats": {
-    "total": 882,
-    "wins": 465,
+    "total": 885,
+    "wins": 468,
     "losses": 417,
-    "pending": 7,
-    "win_pct": 52.7,
+    "pending": 4,
+    "win_pct": 52.9,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -16310,7 +16310,7 @@
         "l": 49
       },
       "futbol": {
-        "w": 140,
+        "w": 143,
         "l": 84
       }
     }
