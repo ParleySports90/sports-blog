@@ -15711,7 +15711,8 @@
       "confidence": 59,
       "status": "won",
       "home_score": 3,
-      "away_score": 7
+      "away_score": 7,
+      "ig_posted": true
     },
     {
       "id": "2026-10-17_NHL_Lightning_vs_Canucks",
@@ -15727,7 +15728,8 @@
       "confidence": 75,
       "status": "won",
       "home_score": 4,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-17_NHL_Flyers_vs_Senators",
@@ -15743,7 +15745,8 @@
       "confidence": 75,
       "status": "lost",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-17_NHL_Jackets_vs_Rangers",
@@ -15759,7 +15762,8 @@
       "confidence": 75,
       "status": "lost",
       "home_score": 1,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-17_La Liga_Espanyol_vs_Madrid",
@@ -15775,7 +15779,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 0,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-17_La Liga_Betis_vs_Barcelona",
@@ -15791,7 +15796,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-10-17_Premier League_Fulham_vs_City",
@@ -15807,7 +15813,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 1,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-17_Premier League_City_vs_Town",
@@ -15823,7 +15830,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-17_Bundesliga_Berlin_vs_Dortmund",
@@ -15855,7 +15863,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 1,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-17_Serie A_Bologna_vs_Internazionale",
@@ -15871,7 +15880,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 1,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-17_Serie A_Roma_vs_Genoa",
@@ -15887,7 +15897,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-17_Ligue 1_Lille_vs_Brest",
@@ -15935,7 +15946,8 @@
       "confidence": 78,
       "status": "won",
       "home_score": 0,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-17_Bundesliga_Bremen_vs_07",
@@ -15967,7 +15979,8 @@
       "confidence": 73,
       "status": "lost",
       "home_score": 0,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-17_Ligue 1_Strasbourg_vs_Saint-Germain",
@@ -15983,7 +15996,8 @@
       "confidence": 73,
       "status": "won",
       "home_score": 1,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-17_Ligue 1_Troyes_vs_Lens",
@@ -15999,7 +16013,8 @@
       "confidence": 73,
       "status": "won",
       "home_score": 1,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-18_MLB_Guardians_vs_Rays",
