@@ -16030,7 +16030,8 @@
       "confidence": 59,
       "status": "won",
       "home_score": 1,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-18_NHL_Wild_vs_Jackets",
@@ -16046,7 +16047,8 @@
       "confidence": 75,
       "status": "lost",
       "home_score": 2,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-18_NHL_Flames_vs_Hurricanes",
@@ -16062,7 +16064,8 @@
       "confidence": 75,
       "status": "won",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-18_La Liga_Vigo_vs_Alavés",
@@ -16078,7 +16081,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 2,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-18_La Liga_Málaga_vs_Sociedad",
@@ -16094,7 +16098,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-10-18_La Liga_Madrid_vs_Sevilla",
@@ -16110,7 +16115,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 4,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-18_Premier League_Albion_vs_Palace",
@@ -16126,7 +16132,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 5,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-18_Premier League_Forest_vs_Arsenal",
@@ -16142,7 +16149,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 0,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-18_Serie A_Fiorentina_vs_Como",
@@ -16158,7 +16166,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 1,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-18_Serie A_Juventus_vs_Lazio",
@@ -16174,7 +16183,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 0,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-18_Ligue 1_AC_vs_Auxerre",
@@ -16190,7 +16200,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 1,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-18_Ligue 1_Lorient_vs_Monaco",
@@ -16206,7 +16217,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 1,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-18_Bundesliga_Leverkusen_vs_Freiburg",
@@ -16222,7 +16234,8 @@
       "confidence": 78,
       "status": "lost",
       "home_score": 2,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-18_Bundesliga_Mönchengladbach_vs_Hoffenheim",
@@ -16238,7 +16251,8 @@
       "confidence": 78,
       "status": "won",
       "home_score": 1,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-18_Premier League_Bournemouth_vs_Sunderland",
@@ -16254,7 +16268,8 @@
       "confidence": 73,
       "status": "lost",
       "home_score": 2,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-18_Ligue 1_FC_vs_Rennais",
@@ -16270,7 +16285,8 @@
       "confidence": 73,
       "status": "lost",
       "home_score": 4,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-18_Ligue 1_Lyon_vs_Nice",
@@ -16286,7 +16302,8 @@
       "confidence": 73,
       "status": "won",
       "home_score": 2,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-19_MLB_Rays_vs_Guardians",
