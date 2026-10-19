@@ -16381,9 +16381,9 @@
       "pick_label": "COV ML",
       "pick_team": "Coventry City",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-10-19_Serie A_Monza_vs_Cagliari",
@@ -16429,18 +16429,18 @@
       "pick_label": "RAY ML",
       "pick_team": "Rayo Vallecano",
       "confidence": 55,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     }
   ],
   "stats": {
-    "total": 890,
+    "total": 891,
     "wins": 471,
-    "losses": 419,
-    "pending": 7,
+    "losses": 420,
+    "pending": 5,
     "win_pct": 52.9,
-    "current_streak": "L1",
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 14,
@@ -16456,7 +16456,7 @@
       },
       "futbol": {
         "w": 144,
-        "l": 85
+        "l": 86
       }
     }
   }
