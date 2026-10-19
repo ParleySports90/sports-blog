@@ -16413,9 +16413,9 @@
       "pick_label": "TOR ML",
       "pick_team": "Torino",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "id": "2026-10-19_La Liga_Getafe_vs_Vallecano",
@@ -16435,10 +16435,10 @@
     }
   ],
   "stats": {
-    "total": 889,
-    "wins": 470,
+    "total": 890,
+    "wins": 471,
     "losses": 419,
-    "pending": 8,
+    "pending": 7,
     "win_pct": 52.9,
     "current_streak": "L1",
     "by_sport": {
@@ -16455,7 +16455,7 @@
         "l": 50
       },
       "futbol": {
-        "w": 143,
+        "w": 144,
         "l": 85
       }
     }
