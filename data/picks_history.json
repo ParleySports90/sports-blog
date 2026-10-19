@@ -16060,9 +16060,9 @@
       "pick_label": "CAR 1.5",
       "pick_team": "Carolina Hurricanes",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-10-18_La Liga_Vigo_vs_Alavés",
@@ -16418,10 +16418,10 @@
     }
   ],
   "stats": {
-    "total": 887,
-    "wins": 469,
+    "total": 888,
+    "wins": 470,
     "losses": 418,
-    "pending": 10,
+    "pending": 9,
     "win_pct": 52.9,
     "current_streak": "W1",
     "by_sport": {
@@ -16434,7 +16434,7 @@
         "l": 258
       },
       "hockey": {
-        "w": 34,
+        "w": 35,
         "l": 50
       },
       "futbol": {
