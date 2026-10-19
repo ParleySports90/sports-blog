@@ -16028,9 +16028,9 @@
       "pick_label": "TB ML",
       "pick_team": "Tampa Bay Rays",
       "confidence": 59,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "id": "2026-10-18_NHL_Wild_vs_Jackets",
@@ -16044,9 +16044,9 @@
       "pick_label": "MIN -1.5",
       "pick_team": "Minnesota Wild",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-10-18_NHL_Flames_vs_Hurricanes",
@@ -16287,27 +16287,155 @@
       "status": "won",
       "home_score": 2,
       "away_score": 1
+    },
+    {
+      "id": "2026-10-19_MLB_Rays_vs_Guardians",
+      "date": "2026-10-19",
+      "league": "MLB",
+      "sport": "baseball",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Cleveland Guardians",
+      "home_abbr": "TB",
+      "away_abbr": "CLE",
+      "pick_label": "TB -1.5",
+      "pick_team": "Tampa Bay Rays",
+      "confidence": 64,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-19_NHL_Flyers_vs_Avalanche",
+      "date": "2026-10-19",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Philadelphia Flyers",
+      "away_team": "Colorado Avalanche",
+      "home_abbr": "PHI",
+      "away_abbr": "COL",
+      "pick_label": "COL 1.5",
+      "pick_team": "Colorado Avalanche",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-19_NHL_Mammoth_vs_Penguins",
+      "date": "2026-10-19",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Utah Mammoth",
+      "away_team": "Pittsburgh Penguins",
+      "home_abbr": "UTAH",
+      "away_abbr": "PIT",
+      "pick_label": "UTAH -1.5",
+      "pick_team": "Utah Mammoth",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-19_NHL_Leafs_vs_Sharks",
+      "date": "2026-10-19",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Toronto Maple Leafs",
+      "away_team": "San Jose Sharks",
+      "home_abbr": "TOR",
+      "away_abbr": "SJ",
+      "pick_label": "SJ -1.5",
+      "pick_team": "San Jose Sharks",
+      "confidence": 64,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-19_Premier League_Hotspur_vs_City",
+      "date": "2026-10-19",
+      "league": "Premier League",
+      "sport": "futbol",
+      "home_team": "Tottenham Hotspur",
+      "away_team": "Coventry City",
+      "home_abbr": "TOT",
+      "away_abbr": "COV",
+      "pick_label": "COV ML",
+      "pick_team": "Coventry City",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-19_Serie A_Monza_vs_Cagliari",
+      "date": "2026-10-19",
+      "league": "Serie A",
+      "sport": "futbol",
+      "home_team": "Monza",
+      "away_team": "Cagliari",
+      "home_abbr": "MON",
+      "away_abbr": "CAG",
+      "pick_label": "CAG ML",
+      "pick_team": "Cagliari",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-19_Serie A_Parma_vs_Torino",
+      "date": "2026-10-19",
+      "league": "Serie A",
+      "sport": "futbol",
+      "home_team": "Parma",
+      "away_team": "Torino",
+      "home_abbr": "PAR",
+      "away_abbr": "TOR",
+      "pick_label": "TOR ML",
+      "pick_team": "Torino",
+      "confidence": 73,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-19_La Liga_Getafe_vs_Vallecano",
+      "date": "2026-10-19",
+      "league": "La Liga",
+      "sport": "futbol",
+      "home_team": "Getafe",
+      "away_team": "Rayo Vallecano",
+      "home_abbr": "GET",
+      "away_abbr": "RAY",
+      "pick_label": "RAY ML",
+      "pick_team": "Rayo Vallecano",
+      "confidence": 55,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 885,
-    "wins": 468,
-    "losses": 417,
-    "pending": 4,
+    "total": 887,
+    "wins": 469,
+    "losses": 418,
+    "pending": 10,
     "win_pct": 52.9,
-    "current_streak": "L1",
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 14,
         "l": 26
       },
       "baseball": {
-        "w": 277,
+        "w": 278,
         "l": 258
       },
       "hockey": {
         "w": 34,
-        "l": 49
+        "l": 50
       },
       "futbol": {
         "w": 143,
