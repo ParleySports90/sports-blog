@@ -16397,9 +16397,9 @@
       "pick_label": "CAG ML",
       "pick_team": "Cagliari",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 0
     },
     {
       "id": "2026-10-19_Serie A_Parma_vs_Torino",
@@ -16435,12 +16435,12 @@
     }
   ],
   "stats": {
-    "total": 888,
+    "total": 889,
     "wins": 470,
-    "losses": 418,
-    "pending": 9,
+    "losses": 419,
+    "pending": 8,
     "win_pct": 52.9,
-    "current_streak": "W1",
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 14,
@@ -16456,7 +16456,7 @@
       },
       "futbol": {
         "w": 143,
-        "l": 84
+        "l": 85
       }
     }
   }
