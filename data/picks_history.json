@@ -16317,9 +16317,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 7,
+      "away_score": 3
     },
     {
       "id": "2026-10-19_NHL_Flyers_vs_Avalanche",
@@ -16333,9 +16333,9 @@
       "pick_label": "COL 1.5",
       "pick_team": "Colorado Avalanche",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-10-19_NHL_Mammoth_vs_Penguins",
@@ -16349,9 +16349,9 @@
       "pick_label": "UTAH -1.5",
       "pick_team": "Utah Mammoth",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 4
     },
     {
       "id": "2026-10-19_NHL_Leafs_vs_Sharks",
@@ -16365,9 +16365,9 @@
       "pick_label": "SJ -1.5",
       "pick_team": "San Jose Sharks",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-10-19_Premier League_Hotspur_vs_City",
@@ -16691,24 +16691,24 @@
     }
   ],
   "stats": {
-    "total": 891,
-    "wins": 471,
-    "losses": 420,
-    "pending": 20,
-    "win_pct": 52.9,
-    "current_streak": "L2",
+    "total": 895,
+    "wins": 473,
+    "losses": 422,
+    "pending": 16,
+    "win_pct": 52.8,
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
         "w": 14,
         "l": 26
       },
       "baseball": {
-        "w": 278,
+        "w": 279,
         "l": 258
       },
       "hockey": {
-        "w": 35,
-        "l": 50
+        "w": 36,
+        "l": 52
       },
       "futbol": {
         "w": 144,
