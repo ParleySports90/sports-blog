@@ -16660,9 +16660,9 @@
       "pick_label": "DOR ML",
       "pick_team": "Borussia Dortmund",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-10-20_Champions League_Napoli_vs_Bodo/Glimt",
@@ -16698,12 +16698,12 @@
     }
   ],
   "stats": {
-    "total": 895,
-    "wins": 473,
+    "total": 896,
+    "wins": 474,
     "losses": 422,
-    "pending": 16,
-    "win_pct": 52.8,
-    "current_streak": "W2",
+    "pending": 15,
+    "win_pct": 52.9,
+    "current_streak": "W3",
     "by_sport": {
       "basketball": {
         "w": 14,
@@ -16718,7 +16718,7 @@
         "l": 52
       },
       "futbol": {
-        "w": 144,
+        "w": 145,
         "l": 86
       }
     }
