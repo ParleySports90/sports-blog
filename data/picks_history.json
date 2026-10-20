@@ -16468,9 +16468,9 @@
       "pick_label": "BOS 1.5",
       "pick_team": "Boston Celtics",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 121,
+      "away_score": 113
     },
     {
       "id": "2026-10-20_NBA_Knicks_vs_76ers",
@@ -16564,9 +16564,9 @@
       "pick_label": "FCP ML",
       "pick_team": "FC Porto",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-10-20_Champions League_City_vs_Athens",
@@ -16580,9 +16580,9 @@
       "pick_label": "MNC ML",
       "pick_team": "Manchester City",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 1
     },
     {
       "id": "2026-10-20_Champions League_Saint-Germain_vs_Barcelona",
@@ -16596,9 +16596,9 @@
       "pick_label": "BAR ML",
       "pick_team": "Barcelona",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "id": "2026-10-20_Champions League_Stuttgart_vs_Madrid",
@@ -16612,9 +16612,9 @@
       "pick_label": "ATM ML",
       "pick_team": "Atlético Madrid",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-10-20_Champions League_Liverpool_vs_Villarreal",
@@ -16628,9 +16628,9 @@
       "pick_label": "LIV ML",
       "pick_team": "Liverpool",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "id": "2026-10-20_Copa Sudamericana_Gama_vs_Juniors",
@@ -16676,9 +16676,9 @@
       "pick_label": "BODO ML",
       "pick_team": "Bodo/Glimt",
       "confidence": 60,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "id": "2026-10-20_Champions League_Roma_vs_Bratislava",
@@ -16692,22 +16692,22 @@
       "pick_label": "SLB ML",
       "pick_team": "Slovan Bratislava",
       "confidence": 55,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 0
     }
   ],
   "stats": {
-    "total": 896,
-    "wins": 474,
-    "losses": 422,
-    "pending": 15,
-    "win_pct": 52.9,
-    "current_streak": "W3",
+    "total": 903,
+    "wins": 476,
+    "losses": 427,
+    "pending": 7,
+    "win_pct": 52.7,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 14,
-        "l": 26
+        "l": 27
       },
       "baseball": {
         "w": 279,
@@ -16718,8 +16718,8 @@
         "l": 52
       },
       "futbol": {
-        "w": 145,
-        "l": 86
+        "w": 147,
+        "l": 90
       }
     }
   }
