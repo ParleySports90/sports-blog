@@ -16319,7 +16319,8 @@
       "confidence": 64,
       "status": "won",
       "home_score": 7,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-19_NHL_Flyers_vs_Avalanche",
@@ -16335,7 +16336,8 @@
       "confidence": 75,
       "status": "won",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-10-19_NHL_Mammoth_vs_Penguins",
@@ -16351,7 +16353,8 @@
       "confidence": 75,
       "status": "lost",
       "home_score": 5,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-10-19_NHL_Leafs_vs_Sharks",
@@ -16367,7 +16370,8 @@
       "confidence": 64,
       "status": "lost",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-19_Premier League_Hotspur_vs_City",
@@ -16383,7 +16387,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-10-19_Serie A_Monza_vs_Cagliari",
@@ -16399,7 +16404,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 4,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-10-19_Serie A_Parma_vs_Torino",
@@ -16415,7 +16421,8 @@
       "confidence": 73,
       "status": "won",
       "home_score": 0,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-10-19_La Liga_Getafe_vs_Vallecano",
