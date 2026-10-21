@@ -16738,9 +16738,9 @@
       "pick_label": "LILL ML",
       "pick_team": "Lille",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 4
     },
     {
       "id": "2026-10-21_Champions League_Villa_vs_FK",
@@ -16882,9 +16882,9 @@
       "pick_label": "COMO ML",
       "pick_team": "Como",
       "confidence": 60,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "id": "2026-10-21_Copa Sudamericana_Torque_vs_Atlético-MG",
@@ -16920,12 +16920,12 @@
     }
   ],
   "stats": {
-    "total": 909,
-    "wins": 478,
-    "losses": 431,
-    "pending": 14,
+    "total": 911,
+    "wins": 479,
+    "losses": 432,
+    "pending": 12,
     "win_pct": 52.6,
-    "current_streak": "L4",
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 14,
@@ -16940,8 +16940,8 @@
         "l": 54
       },
       "futbol": {
-        "w": 148,
-        "l": 90
+        "w": 149,
+        "l": 91
       }
     }
   }
