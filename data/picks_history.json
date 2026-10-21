@@ -16452,9 +16452,9 @@
       "pick_label": "SA -2.5",
       "pick_team": "San Antonio Spurs",
       "confidence": 90,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 104,
+      "away_score": 116
     },
     {
       "id": "2026-10-20_NBA_Pistons_vs_Celtics",
@@ -16484,9 +16484,9 @@
       "pick_label": "NY -4.5",
       "pick_team": "New York Knicks",
       "confidence": 71,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 100,
+      "away_score": 106
     },
     {
       "id": "2026-10-20_MLB_Rays_vs_Guardians",
@@ -16516,9 +16516,9 @@
       "pick_label": "WSH -1.5",
       "pick_team": "Washington Capitals",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 5
     },
     {
       "id": "2026-10-20_NHL_Canucks_vs_Hurricanes",
@@ -16532,9 +16532,9 @@
       "pick_label": "CAR 1.5",
       "pick_team": "Carolina Hurricanes",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 6
     },
     {
       "id": "2026-10-20_NHL_Blues_vs_Jets",
@@ -16548,9 +16548,9 @@
       "pick_label": "WPG -1.5",
       "pick_team": "Winnipeg Jets",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-10-20_Champions League_Porto_vs_Eindhoven",
@@ -16644,9 +16644,9 @@
       "pick_label": "CABJ ML",
       "pick_team": "Boca Juniors",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "id": "2026-10-20_Champions League_FK_vs_Dortmund",
@@ -16906,27 +16906,27 @@
     }
   ],
   "stats": {
-    "total": 903,
-    "wins": 476,
-    "losses": 427,
-    "pending": 20,
-    "win_pct": 52.7,
-    "current_streak": "L2",
+    "total": 909,
+    "wins": 478,
+    "losses": 431,
+    "pending": 14,
+    "win_pct": 52.6,
+    "current_streak": "L4",
     "by_sport": {
       "basketball": {
         "w": 14,
-        "l": 27
+        "l": 29
       },
       "baseball": {
         "w": 279,
         "l": 258
       },
       "hockey": {
-        "w": 36,
-        "l": 52
+        "w": 37,
+        "l": 54
       },
       "futbol": {
-        "w": 147,
+        "w": 148,
         "l": 90
       }
     }
