@@ -16754,9 +16754,9 @@
       "pick_label": "AVL ML",
       "pick_team": "Aston Villa",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-10-21_Champions League_Brugge_vs_Lens",
@@ -16770,9 +16770,9 @@
       "pick_label": "BRU ML",
       "pick_team": "Club Brugge",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-10-21_Champions League_Internazionale_vs_Donetsk",
@@ -16786,9 +16786,9 @@
       "pick_label": "INT ML",
       "pick_team": "Internazionale",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-10-21_Champions League_Madrid_vs_Leipzig",
@@ -16802,9 +16802,9 @@
       "pick_label": "RMA ML",
       "pick_team": "Real Madrid",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "id": "2026-10-21_Champions League_Munich_vs_Arsenal",
@@ -16818,9 +16818,9 @@
       "pick_label": "ARS ML",
       "pick_team": "Arsenal",
       "confidence": 76,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "id": "2026-10-21_La Liga_Levante_vs_Club",
@@ -16834,9 +16834,9 @@
       "pick_label": "ATH ML",
       "pick_team": "Athletic Club",
       "confidence": 72,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-10-21_Copa Libertadores_Palmeiras_vs_Fluminense",
@@ -16866,9 +16866,9 @@
       "pick_label": "FEY ML",
       "pick_team": "Feyenoord Rotterdam",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-10-21_Champions League_Como_vs_United",
@@ -16914,17 +16914,17 @@
       "pick_label": "LAS ML",
       "pick_team": "LASK Linz",
       "confidence": 55,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 3
     }
   ],
   "stats": {
-    "total": 911,
-    "wins": 479,
-    "losses": 432,
-    "pending": 12,
-    "win_pct": 52.6,
+    "total": 918,
+    "wins": 484,
+    "losses": 434,
+    "pending": 4,
+    "win_pct": 52.7,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -16940,8 +16940,8 @@
         "l": 54
       },
       "futbol": {
-        "w": 149,
-        "l": 91
+        "w": 154,
+        "l": 93
       }
     }
   }
