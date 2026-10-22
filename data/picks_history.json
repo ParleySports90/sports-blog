@@ -17010,9 +17010,9 @@
       "pick_label": "AZ ML",
       "pick_team": "AZ Alkmaar",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 4
     },
     {
       "id": "2026-10-22_Europa League_Zagreb_vs_Nijmegen",
@@ -17026,9 +17026,9 @@
       "pick_label": "DZG ML",
       "pick_team": "Dinamo Zagreb",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 4
     },
     {
       "id": "2026-10-22_Europa League_Ferencvaros_vs_Torreense",
@@ -17042,9 +17042,9 @@
       "pick_label": "FER ML",
       "pick_team": "Ferencvaros",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "id": "2026-10-22_Europa League_St.-Gilloise_vs_Be'er",
@@ -17058,9 +17058,9 @@
       "pick_label": "USG ML",
       "pick_team": "Union St.-Gilloise",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 0
     },
     {
       "id": "2026-10-22_Europa League_Bournemouth_vs_Milan",
@@ -17186,9 +17186,9 @@
       "pick_label": "MJA ML",
       "pick_team": "Mjällby AIF",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-10-22_Conference League_D'Escaldes_vs_Craiova",
@@ -17202,15 +17202,111 @@
       "pick_label": "IDE ML",
       "pick_team": "Inter D'Escaldes",
       "confidence": 85,
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 3
+    },
+    {
+      "id": "2026-10-22_Conference League_Braga_vs_Gent",
+      "date": "2026-10-22",
+      "league": "Conference League",
+      "sport": "futbol",
+      "home_team": "Braga",
+      "away_team": "KAA Gent",
+      "home_abbr": "SCB",
+      "away_abbr": "GENT",
+      "pick_label": "GENT ML",
+      "pick_team": "KAA Gent",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-22_Conference League_Midtjylland_vs_Sint-Truidense",
+      "date": "2026-10-22",
+      "league": "Conference League",
+      "sport": "futbol",
+      "home_team": "FC Midtjylland",
+      "away_team": "Sint-Truidense",
+      "home_abbr": "MID",
+      "away_abbr": "STVV",
+      "pick_label": "STVV ML",
+      "pick_team": "Sint-Truidense",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-22_Conference League_Thun_vs_Split",
+      "date": "2026-10-22",
+      "league": "Conference League",
+      "sport": "futbol",
+      "home_team": "FC Thun",
+      "away_team": "Hajduk Split",
+      "home_abbr": "THUN",
+      "away_abbr": "HAJ",
+      "pick_label": "HAJ ML",
+      "pick_team": "Hajduk Split",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-22_Conference League_Imps_vs_Twente",
+      "date": "2026-10-22",
+      "league": "Conference League",
+      "sport": "futbol",
+      "home_team": "Lincoln Red Imps",
+      "away_team": "FC Twente",
+      "home_abbr": "LRI",
+      "away_abbr": "TWE",
+      "pick_label": "TWE ML",
+      "pick_team": "FC Twente",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-22_Europa League_Hoffenheim_vs_Lyon",
+      "date": "2026-10-22",
+      "league": "Europa League",
+      "sport": "futbol",
+      "home_team": "TSG Hoffenheim",
+      "away_team": "Lyon",
+      "home_abbr": "TSG",
+      "away_abbr": "LYON",
+      "pick_label": "LYON ML",
+      "pick_team": "Lyon",
+      "confidence": 83,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-22_Europa League_Plzen_vs_Sofia",
+      "date": "2026-10-22",
+      "league": "Europa League",
+      "sport": "futbol",
+      "home_team": "Viktoria Plzen",
+      "away_team": "Levski Sofia",
+      "home_abbr": "PLZ",
+      "away_abbr": "LEV",
+      "pick_label": "LEV ML",
+      "pick_team": "Levski Sofia",
+      "confidence": 81,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 922,
-    "wins": 485,
-    "losses": 437,
+    "total": 927,
+    "wins": 488,
+    "losses": 439,
     "pending": 18,
     "win_pct": 52.6,
     "current_streak": "W1",
@@ -17228,8 +17324,8 @@
         "l": 55
       },
       "futbol": {
-        "w": 155,
-        "l": 95
+        "w": 158,
+        "l": 97
       }
     }
   }
