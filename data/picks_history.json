@@ -16722,9 +16722,9 @@
       "pick_label": "BUF -1.5",
       "pick_team": "Buffalo Sabres",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "id": "2026-10-21_Champions League_Lille_vs_Galatasaray",
@@ -16850,9 +16850,9 @@
       "pick_label": "PAL ML",
       "pick_team": "Palmeiras",
       "confidence": 72,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-10-21_Champions League_Betis_vs_Rotterdam",
@@ -17192,12 +17192,12 @@
     }
   ],
   "stats": {
-    "total": 919,
+    "total": 921,
     "wins": 484,
-    "losses": 435,
-    "pending": 20,
-    "win_pct": 52.7,
-    "current_streak": "L1",
+    "losses": 437,
+    "pending": 18,
+    "win_pct": 52.6,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 14,
@@ -17209,11 +17209,11 @@
       },
       "hockey": {
         "w": 37,
-        "l": 54
+        "l": 55
       },
       "futbol": {
         "w": 154,
-        "l": 94
+        "l": 95
       }
     }
   }
