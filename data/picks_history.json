@@ -17170,9 +17170,9 @@
       "pick_label": "PAO ML",
       "pick_team": "Panathinaikos",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 5
     },
     {
       "id": "2026-10-22_Conference League_1999_vs_AIF",
@@ -17189,15 +17189,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-10-22_Conference League_D'Escaldes_vs_Craiova",
+      "date": "2026-10-22",
+      "league": "Conference League",
+      "sport": "futbol",
+      "home_team": "Inter D'Escaldes",
+      "away_team": "CSU Craiova",
+      "home_abbr": "IDE",
+      "away_abbr": "UCRA",
+      "pick_label": "IDE ML",
+      "pick_team": "Inter D'Escaldes",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 921,
-    "wins": 484,
+    "total": 922,
+    "wins": 485,
     "losses": 437,
     "pending": 18,
     "win_pct": 52.6,
-    "current_streak": "L2",
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 14,
@@ -17212,7 +17228,7 @@
         "l": 55
       },
       "futbol": {
-        "w": 154,
+        "w": 155,
         "l": 95
       }
     }
