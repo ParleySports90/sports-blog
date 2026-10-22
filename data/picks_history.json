@@ -17074,9 +17074,9 @@
       "pick_label": "MIL ML",
       "pick_team": "AC Milan",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-10-22_Europa League_Besiktas_vs_Palace",
@@ -17090,9 +17090,9 @@
       "pick_label": "BES ML",
       "pick_team": "Besiktas",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "id": "2026-10-22_Europa League_Celtic_vs_Vigo",
@@ -17106,9 +17106,9 @@
       "pick_label": "CEL ML",
       "pick_team": "Celtic",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-10-22_Europa League_Celje_vs_Salzburg",
@@ -17122,9 +17122,9 @@
       "pick_label": "SLZ ML",
       "pick_team": "RB Salzburg",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "id": "2026-10-22_Europa League_Olympiacos_vs_Prague",
@@ -17138,9 +17138,9 @@
       "pick_label": "OLY ML",
       "pick_team": "Olympiacos",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-10-22_Europa League_Nicosia_vs_Benfica",
@@ -17154,9 +17154,9 @@
       "pick_label": "OMON ML",
       "pick_team": "Omonia Nicosia",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 4
     },
     {
       "id": "2026-10-22_Conference League_Almaty_vs_Panathinaikos",
@@ -17218,9 +17218,9 @@
       "pick_label": "GENT ML",
       "pick_team": "KAA Gent",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-10-22_Conference League_Midtjylland_vs_Sint-Truidense",
@@ -17234,9 +17234,9 @@
       "pick_label": "STVV ML",
       "pick_team": "Sint-Truidense",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-10-22_Conference League_Thun_vs_Split",
@@ -17250,9 +17250,9 @@
       "pick_label": "HAJ ML",
       "pick_team": "Hajduk Split",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-10-22_Conference League_Imps_vs_Twente",
@@ -17266,9 +17266,9 @@
       "pick_label": "TWE ML",
       "pick_team": "FC Twente",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 4
     },
     {
       "id": "2026-10-22_Europa League_Hoffenheim_vs_Lyon",
@@ -17282,9 +17282,9 @@
       "pick_label": "LYON ML",
       "pick_team": "Lyon",
       "confidence": 83,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-10-22_Europa League_Plzen_vs_Sofia",
@@ -17298,16 +17298,32 @@
       "pick_label": "LEV ML",
       "pick_team": "Levski Sofia",
       "confidence": 81,
+      "status": "won",
+      "home_score": 1,
+      "away_score": 2
+    },
+    {
+      "id": "2026-10-22_Copa Libertadores_Flamengo_vs_Plata",
+      "date": "2026-10-22",
+      "league": "Copa Libertadores",
+      "sport": "futbol",
+      "home_team": "Flamengo",
+      "away_team": "Estudiantes de La Plata",
+      "home_abbr": "FLA",
+      "away_abbr": "EST",
+      "pick_label": "FLA ML",
+      "pick_team": "Flamengo",
+      "confidence": 61,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 927,
-    "wins": 488,
-    "losses": 439,
-    "pending": 18,
+    "total": 937,
+    "wins": 493,
+    "losses": 444,
+    "pending": 7,
     "win_pct": 52.6,
     "current_streak": "W1",
     "by_sport": {
@@ -17324,8 +17340,8 @@
         "l": 55
       },
       "futbol": {
-        "w": 158,
-        "l": 97
+        "w": 163,
+        "l": 102
       }
     }
   }
