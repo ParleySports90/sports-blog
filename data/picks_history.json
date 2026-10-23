@@ -17426,9 +17426,9 @@
       "pick_label": "ALA ML",
       "pick_team": "Alavés",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-10-23_Premier League_Town_vs_Forest",
@@ -17442,9 +17442,9 @@
       "pick_label": "IPS ML",
       "pick_team": "Ipswich Town",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-10-23_Bundesliga_Stuttgart_vs_Mönchengladbach",
@@ -17458,9 +17458,9 @@
       "pick_label": "VFB ML",
       "pick_team": "VfB Stuttgart",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-10-23_Serie A_Torino_vs_Monza",
@@ -17474,18 +17474,18 @@
       "pick_label": "TOR ML",
       "pick_team": "Torino",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2
     }
   ],
   "stats": {
-    "total": 942,
-    "wins": 496,
-    "losses": 446,
-    "pending": 11,
-    "win_pct": 52.7,
-    "current_streak": "W2",
+    "total": 944,
+    "wins": 497,
+    "losses": 447,
+    "pending": 7,
+    "win_pct": 52.6,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 16,
@@ -17500,8 +17500,8 @@
         "l": 57
       },
       "futbol": {
-        "w": 163,
-        "l": 102
+        "w": 164,
+        "l": 103
       }
     }
   }
