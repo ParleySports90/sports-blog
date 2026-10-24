@@ -17650,9 +17650,9 @@
       "pick_label": "CHE ML",
       "pick_team": "Chelsea",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-10-24_Bundesliga_07_vs_SV",
@@ -17682,9 +17682,9 @@
       "pick_label": "DOR ML",
       "pick_team": "Borussia Dortmund",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-10-24_Serie A_Cagliari_vs_Bologna",
@@ -17730,9 +17730,9 @@
       "pick_label": "ROMA ML",
       "pick_team": "AS Roma",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 3,
+      "away_score": 3
     },
     {
       "id": "2026-10-24_Serie A_Lazio_vs_Parma",
@@ -17842,17 +17842,17 @@
       "pick_label": "VIL ML",
       "pick_team": "Villarreal",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 2
     }
   ],
   "stats": {
-    "total": 956,
-    "wins": 502,
-    "losses": 454,
-    "pending": 15,
-    "win_pct": 52.5,
+    "total": 959,
+    "wins": 504,
+    "losses": 455,
+    "pending": 11,
+    "win_pct": 52.6,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -17868,8 +17868,8 @@
         "l": 58
       },
       "futbol": {
-        "w": 166,
-        "l": 107
+        "w": 168,
+        "l": 108
       }
     }
   }
