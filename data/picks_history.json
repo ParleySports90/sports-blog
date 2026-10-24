@@ -17330,9 +17330,9 @@
       "pick_label": "IND -5.5",
       "pick_team": "Indiana Pacers",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 105,
+      "away_score": 121
     },
     {
       "id": "2026-10-23_NBA_Magic_vs_Timberwolves",
@@ -17346,9 +17346,9 @@
       "pick_label": "MIN 1.5",
       "pick_team": "Minnesota Timberwolves",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 93,
+      "away_score": 115
     },
     {
       "id": "2026-10-23_NBA_Heat_vs_Pistons",
@@ -17362,9 +17362,9 @@
       "pick_label": "DET 1.5",
       "pick_team": "Detroit Pistons",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 111,
+      "away_score": 128
     },
     {
       "id": "2026-10-23_MLB_Brewers_vs_Rays",
@@ -17378,9 +17378,9 @@
       "pick_label": "MIL -1.5",
       "pick_team": "Milwaukee Brewers",
       "confidence": 60,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-10-23_NHL_Blackhawks_vs_Canadiens",
@@ -17394,9 +17394,9 @@
       "pick_label": "MTL 1.5",
       "pick_team": "Montreal Canadiens",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 4
     },
     {
       "id": "2026-10-23_NHL_Avalanche_vs_Lightning",
@@ -17410,9 +17410,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Lightning",
       "confidence": 72,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 6,
+      "away_score": 3
     },
     {
       "id": "2026-10-23_La Liga_Alavés_vs_Málaga",
@@ -17781,27 +17781,43 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-10-24_NBA_Mavericks_vs_Spurs",
+      "date": "2026-10-24",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Dallas Mavericks",
+      "away_team": "San Antonio Spurs",
+      "home_abbr": "DAL",
+      "away_abbr": "SA",
+      "pick_label": "DAL 12.5",
+      "pick_team": "Dallas Mavericks",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 944,
-    "wins": 497,
-    "losses": 447,
-    "pending": 25,
+    "total": 950,
+    "wins": 500,
+    "losses": 450,
+    "pending": 20,
     "win_pct": 52.6,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
-        "w": 16,
-        "l": 29
+        "w": 18,
+        "l": 30
       },
       "baseball": {
         "w": 279,
-        "l": 258
+        "l": 259
       },
       "hockey": {
-        "w": 38,
-        "l": 57
+        "w": 39,
+        "l": 58
       },
       "futbol": {
         "w": 164,
