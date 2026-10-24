@@ -17554,9 +17554,9 @@
       "pick_label": "NJ -1.5",
       "pick_team": "New Jersey Devils",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-10-24_NHL_Jackets_vs_Knights",
@@ -17602,9 +17602,9 @@
       "pick_label": "ATM ML",
       "pick_team": "Atlético Madrid",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-10-24_Premier League_Villa_vs_City",
@@ -17746,9 +17746,9 @@
       "pick_label": "LAZ ML",
       "pick_team": "Lazio",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-10-24_Bundesliga_Augsburg_vs_Berlin",
@@ -17826,9 +17826,9 @@
       "pick_label": "PAR ML",
       "pick_team": "Paris FC",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-10-24_La Liga_Valencia_vs_Villarreal",
@@ -17845,15 +17845,31 @@
       "status": "won",
       "home_score": 1,
       "away_score": 2
+    },
+    {
+      "id": "2026-10-24_NHL_Blues_vs_Hurricanes",
+      "date": "2026-10-24",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "St. Louis Blues",
+      "away_team": "Carolina Hurricanes",
+      "home_abbr": "STL",
+      "away_abbr": "CAR",
+      "pick_label": "CAR 1.5",
+      "pick_team": "Carolina Hurricanes",
+      "confidence": 74,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 959,
-    "wins": 504,
-    "losses": 455,
-    "pending": 11,
+    "total": 963,
+    "wins": 507,
+    "losses": 456,
+    "pending": 8,
     "win_pct": 52.6,
-    "current_streak": "L1",
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
         "w": 18,
@@ -17864,12 +17880,12 @@
         "l": 259
       },
       "hockey": {
-        "w": 39,
+        "w": 40,
         "l": 58
       },
       "futbol": {
-        "w": 168,
-        "l": 108
+        "w": 170,
+        "l": 109
       }
     }
   }
