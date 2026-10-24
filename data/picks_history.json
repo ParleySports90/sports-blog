@@ -17634,9 +17634,9 @@
       "pick_label": "ARS ML",
       "pick_team": "Arsenal",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-10-24_Premier League_Chelsea_vs_Hotspur",
@@ -17666,9 +17666,9 @@
       "pick_label": "HSV ML",
       "pick_team": "Hamburg SV",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-10-24_Bundesliga_Dortmund_vs_Frankfurt",
@@ -17698,9 +17698,9 @@
       "pick_label": "CAG ML",
       "pick_team": "Cagliari",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-10-24_Serie A_Como_vs_Sassuolo",
@@ -17714,9 +17714,9 @@
       "pick_label": "COMO ML",
       "pick_team": "Como",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-10-24_Serie A_Napoli_vs_Roma",
@@ -17762,9 +17762,9 @@
       "pick_label": "FCA ML",
       "pick_team": "FC Augsburg",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-10-24_Bundesliga_Cologne_vs_04",
@@ -17778,9 +17778,9 @@
       "pick_label": "KOE ML",
       "pick_team": "FC Cologne",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-10-24_NBA_Mavericks_vs_Spurs",
@@ -17810,18 +17810,50 @@
       "pick_label": "M05 ML",
       "pick_team": "Mainz",
       "confidence": 73,
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 3
+    },
+    {
+      "id": "2026-10-24_Ligue 1_Lens_vs_FC",
+      "date": "2026-10-24",
+      "league": "Ligue 1",
+      "sport": "futbol",
+      "home_team": "Lens",
+      "away_team": "Paris FC",
+      "home_abbr": "RCL",
+      "away_abbr": "PAR",
+      "pick_label": "PAR ML",
+      "pick_team": "Paris FC",
+      "confidence": 70,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-24_La Liga_Valencia_vs_Villarreal",
+      "date": "2026-10-24",
+      "league": "La Liga",
+      "sport": "futbol",
+      "home_team": "Valencia",
+      "away_team": "Villarreal",
+      "home_abbr": "VAL",
+      "away_abbr": "VIL",
+      "pick_label": "VIL ML",
+      "pick_team": "Villarreal",
+      "confidence": 65,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 951,
-    "wins": 500,
-    "losses": 451,
-    "pending": 20,
-    "win_pct": 52.6,
-    "current_streak": "L2",
+    "total": 956,
+    "wins": 502,
+    "losses": 454,
+    "pending": 15,
+    "win_pct": 52.5,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 18,
@@ -17836,8 +17868,8 @@
         "l": 58
       },
       "futbol": {
-        "w": 164,
-        "l": 104
+        "w": 166,
+        "l": 107
       }
     }
   }
