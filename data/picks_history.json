@@ -17618,9 +17618,9 @@
       "pick_label": "MNC ML",
       "pick_team": "Manchester City",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-10-24_Premier League_Arsenal_vs_Everton",
@@ -17797,15 +17797,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-10-24_Bundesliga_Mainz_vs_Bremen",
+      "date": "2026-10-24",
+      "league": "Bundesliga",
+      "sport": "futbol",
+      "home_team": "Mainz",
+      "away_team": "Werder Bremen",
+      "home_abbr": "M05",
+      "away_abbr": "SVW",
+      "pick_label": "M05 ML",
+      "pick_team": "Mainz",
+      "confidence": 73,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 950,
+    "total": 951,
     "wins": 500,
-    "losses": 450,
+    "losses": 451,
     "pending": 20,
     "win_pct": 52.6,
-    "current_streak": "L1",
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 18,
@@ -17821,7 +17837,7 @@
       },
       "futbol": {
         "w": 164,
-        "l": 103
+        "l": 104
       }
     }
   }
