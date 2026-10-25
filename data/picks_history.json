@@ -17970,9 +17970,9 @@
       "pick_label": "BET ML",
       "pick_team": "Real Betis",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-10-25_La Liga_Sociedad_vs_Levante",
@@ -18002,9 +18002,9 @@
       "pick_label": "BHA ML",
       "pick_team": "Brighton & Hove Albion",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-10-25_Bundesliga_Hoffenheim_vs_Leverkusen",
@@ -18018,9 +18018,9 @@
       "pick_label": "B04 ML",
       "pick_team": "Bayer Leverkusen",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-10-25_Serie A_Internazionale_vs_Fiorentina",
@@ -18098,9 +18098,9 @@
       "pick_label": "FRO ML",
       "pick_team": "Frosinone",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 4,
+      "away_score": 4
     },
     {
       "id": "2026-10-25_Ligue 1_Auxerre_vs_Mans",
@@ -18165,15 +18165,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-10-25_Ligue 1_Toulouse_vs_Troyes",
+      "date": "2026-10-25",
+      "league": "Ligue 1",
+      "sport": "futbol",
+      "home_team": "Toulouse",
+      "away_team": "Troyes",
+      "home_abbr": "TOU",
+      "away_abbr": "TRY",
+      "pick_label": "TOU ML",
+      "pick_team": "Toulouse",
+      "confidence": 70,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 972,
+    "total": 974,
     "wins": 514,
-    "losses": 458,
-    "pending": 18,
-    "win_pct": 52.9,
-    "current_streak": "W7",
+    "losses": 460,
+    "pending": 15,
+    "win_pct": 52.8,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 21,
@@ -18189,7 +18205,7 @@
       },
       "futbol": {
         "w": 171,
-        "l": 109
+        "l": 111
       }
     }
   }
