@@ -18034,9 +18034,9 @@
       "pick_label": "INT ML",
       "pick_team": "Internazionale",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-10-25_Serie A_Udinese_vs_Milan",
@@ -18149,15 +18149,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-10-25_Ligue 1_Angers_vs_Lorient",
+      "date": "2026-10-25",
+      "league": "Ligue 1",
+      "sport": "futbol",
+      "home_team": "Angers",
+      "away_team": "Lorient",
+      "home_abbr": "ANG",
+      "away_abbr": "LOR",
+      "pick_label": "LOR ML",
+      "pick_team": "Lorient",
+      "confidence": 70,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 971,
-    "wins": 513,
+    "total": 972,
+    "wins": 514,
     "losses": 458,
     "pending": 18,
-    "win_pct": 52.8,
-    "current_streak": "W6",
+    "win_pct": 52.9,
+    "current_streak": "W7",
     "by_sport": {
       "basketball": {
         "w": 21,
@@ -18172,7 +18188,7 @@
         "l": 59
       },
       "futbol": {
-        "w": 170,
+        "w": 171,
         "l": 109
       }
     }
