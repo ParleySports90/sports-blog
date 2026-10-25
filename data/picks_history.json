@@ -17490,9 +17490,9 @@
       "pick_label": "PHI ML",
       "pick_team": "Philadelphia 76ers",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 127,
+      "away_score": 116
     },
     {
       "id": "2026-10-24_NBA_Hornets_vs_Heat",
@@ -17506,9 +17506,9 @@
       "pick_label": "CHA ML",
       "pick_team": "Charlotte Hornets",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 115,
+      "away_score": 110
     },
     {
       "id": "2026-10-24_NBA_Bulls_vs_Wizards",
@@ -17522,9 +17522,9 @@
       "pick_label": "WSH ML",
       "pick_team": "Washington Wizards",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 120,
+      "away_score": 124
     },
     {
       "id": "2026-10-24_MLB_Brewers_vs_Rays",
@@ -17538,9 +17538,9 @@
       "pick_label": "MIL ML",
       "pick_team": "Milwaukee Brewers",
       "confidence": 60,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 4
     },
     {
       "id": "2026-10-24_NHL_Devils_vs_Kings",
@@ -17570,9 +17570,9 @@
       "pick_label": "VGK 1.5",
       "pick_team": "Vegas Golden Knights",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-10-24_NHL_Oilers_vs_Leafs",
@@ -17586,9 +17586,9 @@
       "pick_label": "EDM -1.5",
       "pick_team": "Edmonton Oilers",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 7
     },
     {
       "id": "2026-10-24_La Liga_Madrid_vs_Deportivo",
@@ -17794,9 +17794,9 @@
       "pick_label": "DAL 12.5",
       "pick_team": "Dallas Mavericks",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 106,
+      "away_score": 122
     },
     {
       "id": "2026-10-24_Bundesliga_Mainz_vs_Bremen",
@@ -17858,9 +17858,9 @@
       "pick_label": "CAR 1.5",
       "pick_team": "Carolina Hurricanes",
       "confidence": 74,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 4
     },
     {
       "id": "2026-10-25_NBA_Jazz_vs_Lakers",
@@ -18152,24 +18152,24 @@
     }
   ],
   "stats": {
-    "total": 963,
-    "wins": 507,
-    "losses": 456,
-    "pending": 26,
-    "win_pct": 52.6,
-    "current_streak": "W2",
+    "total": 971,
+    "wins": 513,
+    "losses": 458,
+    "pending": 18,
+    "win_pct": 52.8,
+    "current_streak": "W6",
     "by_sport": {
       "basketball": {
-        "w": 18,
-        "l": 30
+        "w": 21,
+        "l": 31
       },
       "baseball": {
-        "w": 279,
+        "w": 280,
         "l": 259
       },
       "hockey": {
-        "w": 40,
-        "l": 58
+        "w": 42,
+        "l": 59
       },
       "futbol": {
         "w": 170,
