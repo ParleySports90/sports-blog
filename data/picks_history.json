@@ -18210,9 +18210,9 @@
       "pick_label": "DAL -7.5",
       "pick_team": "Dallas Mavericks",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 109,
+      "away_score": 113
     },
     {
       "id": "2026-10-26_NBA_Bucks_vs_Pacers",
@@ -18226,9 +18226,9 @@
       "pick_label": "IND ML",
       "pick_team": "Indiana Pacers",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 110,
+      "away_score": 102
     },
     {
       "id": "2026-10-26_NBA_Thunder_vs_Suns",
@@ -18242,9 +18242,9 @@
       "pick_label": "OKC ML",
       "pick_team": "Oklahoma City Thunder",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 125,
+      "away_score": 114
     },
     {
       "id": "2026-10-26_MLB_Rays_vs_Brewers",
@@ -18258,9 +18258,9 @@
       "pick_label": "TB 1.5",
       "pick_team": "Tampa Bay Rays",
       "confidence": 57,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 10
     },
     {
       "id": "2026-10-26_NHL_Rangers_vs_Kings",
@@ -18274,9 +18274,9 @@
       "pick_label": "NYR -1.5",
       "pick_team": "New York Rangers",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 6
     },
     {
       "id": "2026-10-26_NHL_Oilers_vs_Wings",
@@ -18290,9 +18290,9 @@
       "pick_label": "EDM -1.5",
       "pick_team": "Edmonton Oilers",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 4
     },
     {
       "id": "2026-10-26_NHL_Flames_vs_Leafs",
@@ -18306,9 +18306,9 @@
       "pick_label": "TOR 1.5",
       "pick_team": "Toronto Maple Leafs",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 2
     },
     {
       "id": "2026-10-26_La Liga_Sevilla_vs_Osasuna",
@@ -18488,24 +18488,24 @@
     }
   ],
   "stats": {
-    "total": 987,
-    "wins": 524,
-    "losses": 463,
-    "pending": 17,
-    "win_pct": 53.1,
-    "current_streak": "W1",
+    "total": 994,
+    "wins": 525,
+    "losses": 469,
+    "pending": 10,
+    "win_pct": 52.8,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
-        "w": 23,
-        "l": 32
+        "w": 24,
+        "l": 34
       },
       "baseball": {
         "w": 280,
-        "l": 259
+        "l": 260
       },
       "hockey": {
         "w": 45,
-        "l": 60
+        "l": 63
       },
       "futbol": {
         "w": 176,
