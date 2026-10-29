@@ -18754,18 +18754,18 @@
       "pick_label": "FRO ML",
       "pick_team": "Frosinone",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 1
     }
   ],
   "stats": {
-    "total": 1015,
-    "wins": 539,
+    "total": 1016,
+    "wins": 540,
     "losses": 476,
-    "pending": 6,
+    "pending": 5,
     "win_pct": 53.1,
-    "current_streak": "W2",
+    "current_streak": "W3",
     "by_sport": {
       "basketball": {
         "w": 28,
@@ -18780,7 +18780,7 @@
         "l": 65
       },
       "futbol": {
-        "w": 181,
+        "w": 182,
         "l": 114
       }
     }
