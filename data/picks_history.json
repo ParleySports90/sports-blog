@@ -18738,9 +18738,9 @@
       "pick_label": "ATA ML",
       "pick_team": "Atalanta",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "id": "2026-10-29_Serie A_Frosinone_vs_Lecce",
@@ -18763,7 +18763,7 @@
     "total": 1016,
     "wins": 540,
     "losses": 476,
-    "pending": 5,
+    "pending": 4,
     "win_pct": 53.1,
     "current_streak": "W3",
     "by_sport": {
