@@ -18674,9 +18674,9 @@
       "pick_label": "CLE ML",
       "pick_team": "Cleveland Cavaliers",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 114,
+      "away_score": 111
     },
     {
       "id": "2026-10-29_NHL_Lightning_vs_Jets",
@@ -18722,9 +18722,9 @@
       "pick_label": "BOS -1.5",
       "pick_team": "Boston Bruins",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "id": "2026-10-29_Serie A_Fiorentina_vs_Atalanta",
@@ -18904,16 +18904,16 @@
     }
   ],
   "stats": {
-    "total": 1018,
+    "total": 1020,
     "wins": 541,
-    "losses": 477,
-    "pending": 11,
-    "win_pct": 53.1,
-    "current_streak": "W1",
+    "losses": 479,
+    "pending": 9,
+    "win_pct": 53.0,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 28,
-        "l": 36
+        "l": 37
       },
       "baseball": {
         "w": 281,
@@ -18921,7 +18921,7 @@
       },
       "hockey": {
         "w": 50,
-        "l": 66
+        "l": 67
       },
       "futbol": {
         "w": 182,
