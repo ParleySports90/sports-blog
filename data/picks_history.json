@@ -18898,16 +18898,16 @@
       "pick_label": "VIL ML",
       "pick_team": "Villarreal",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 1
     }
   ],
   "stats": {
-    "total": 1022,
+    "total": 1023,
     "wins": 542,
-    "losses": 480,
-    "pending": 7,
+    "losses": 481,
+    "pending": 6,
     "win_pct": 53.0,
     "current_streak": "W1",
     "by_sport": {
@@ -18925,7 +18925,7 @@
       },
       "futbol": {
         "w": 183,
-        "l": 115
+        "l": 116
       }
     }
   }
