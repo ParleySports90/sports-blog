@@ -18866,9 +18866,9 @@
       "pick_label": "PSG ML",
       "pick_team": "Paris Saint-Germain",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 5
     },
     {
       "id": "2026-10-30_Ligue 1_Nice_vs_Rennais",
@@ -18882,9 +18882,9 @@
       "pick_label": "REN ML",
       "pick_team": "Stade Rennais",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 2
     },
     {
       "id": "2026-10-30_La Liga_Villarreal_vs_Espanyol",
@@ -18904,12 +18904,12 @@
     }
   ],
   "stats": {
-    "total": 1020,
-    "wins": 541,
-    "losses": 479,
-    "pending": 9,
+    "total": 1022,
+    "wins": 542,
+    "losses": 480,
+    "pending": 7,
     "win_pct": 53.0,
-    "current_streak": "L1",
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 28,
@@ -18924,8 +18924,8 @@
         "l": 67
       },
       "futbol": {
-        "w": 182,
-        "l": 114
+        "w": 183,
+        "l": 115
       }
     }
   }
