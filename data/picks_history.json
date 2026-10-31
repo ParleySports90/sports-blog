@@ -19074,9 +19074,9 @@
       "pick_label": "MNC ML",
       "pick_team": "Manchester City",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-10-31_Bundesliga_Leverkusen_vs_Stuttgart",
@@ -19090,9 +19090,9 @@
       "pick_label": "B04 ML",
       "pick_team": "Bayer Leverkusen",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 4
     },
     {
       "id": "2026-10-31_Bundesliga_Augsburg_vs_Freiburg",
@@ -19106,9 +19106,9 @@
       "pick_label": "SCF ML",
       "pick_team": "SC Freiburg",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-10-31_Bundesliga_04_vs_Leipzig",
@@ -19122,9 +19122,9 @@
       "pick_label": "RBL ML",
       "pick_team": "RB Leipzig",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-10-31_Serie A_Udinese_vs_Roma",
@@ -19170,9 +19170,9 @@
       "pick_label": "SCP ML",
       "pick_team": "SC Paderborn 07",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-10-31_Premier League_Brentford_vs_Forest",
@@ -19186,9 +19186,9 @@
       "pick_label": "BRE ML",
       "pick_team": "Brentford",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-10-31_Premier League_City_vs_Sunderland",
@@ -19202,9 +19202,9 @@
       "pick_label": "COV ML",
       "pick_team": "Coventry City",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-10-31_Premier League_City_vs_Town",
@@ -19218,16 +19218,32 @@
       "pick_label": "IPS ML",
       "pick_team": "Ipswich Town",
       "confidence": 67,
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
+    },
+    {
+      "id": "2026-10-31_Premier League_Villa_vs_Fulham",
+      "date": "2026-10-31",
+      "league": "Premier League",
+      "sport": "futbol",
+      "home_team": "Aston Villa",
+      "away_team": "Fulham",
+      "home_abbr": "AVL",
+      "away_abbr": "FUL",
+      "pick_label": "AVL ML",
+      "pick_team": "Aston Villa",
+      "confidence": 67,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 1031,
-    "wins": 546,
-    "losses": 485,
-    "pending": 18,
+    "total": 1037,
+    "wins": 550,
+    "losses": 487,
+    "pending": 11,
     "win_pct": 53.0,
     "current_streak": "W2",
     "by_sport": {
@@ -19244,8 +19260,8 @@
         "l": 69
       },
       "futbol": {
-        "w": 185,
-        "l": 116
+        "w": 189,
+        "l": 118
       }
     }
   }
