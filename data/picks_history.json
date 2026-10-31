@@ -18914,9 +18914,9 @@
       "pick_label": "POR 6.5",
       "pick_team": "Portland Trail Blazers",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 90,
+      "away_score": 112
     },
     {
       "id": "2026-10-31_NBA_Grizzlies_vs_Kings",
@@ -18962,9 +18962,9 @@
       "pick_label": "BOS -1.5",
       "pick_team": "Boston Bruins",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 4
     },
     {
       "id": "2026-10-31_NHL_Canadiens_vs_Penguins",
@@ -19042,9 +19042,9 @@
       "pick_label": "BAR ML",
       "pick_team": "Barcelona",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 6,
+      "away_score": 1
     },
     {
       "id": "2026-10-31_Premier League_Chelsea_vs_United",
@@ -19154,9 +19154,9 @@
       "pick_label": "INT ML",
       "pick_team": "Internazionale",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-10-31_Bundesliga_Mönchengladbach_vs_07",
@@ -19234,21 +19234,53 @@
       "pick_label": "AVL ML",
       "pick_team": "Aston Villa",
       "confidence": 67,
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
+    },
+    {
+      "id": "2026-10-31_NBA_Pelicans_vs_Hawks",
+      "date": "2026-10-31",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "New Orleans Pelicans",
+      "away_team": "Atlanta Hawks",
+      "home_abbr": "NO",
+      "away_abbr": "ATL",
+      "pick_label": "ATL 5.5",
+      "pick_team": "Atlanta Hawks",
+      "confidence": 91,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-31_NHL_Stars_vs_Jackets",
+      "date": "2026-10-31",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Dallas Stars",
+      "away_team": "Columbus Blue Jackets",
+      "home_abbr": "DAL",
+      "away_abbr": "CBJ",
+      "pick_label": "DAL -1.5",
+      "pick_team": "Dallas Stars",
+      "confidence": 62,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 1039,
-    "wins": 552,
-    "losses": 487,
-    "pending": 9,
+    "total": 1043,
+    "wins": 554,
+    "losses": 489,
+    "pending": 6,
     "win_pct": 53.1,
-    "current_streak": "W3",
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
-        "w": 29,
+        "w": 30,
         "l": 39
       },
       "baseball": {
@@ -19257,11 +19289,11 @@
       },
       "hockey": {
         "w": 51,
-        "l": 69
+        "l": 70
       },
       "futbol": {
-        "w": 191,
-        "l": 118
+        "w": 192,
+        "l": 119
       }
     }
   }
