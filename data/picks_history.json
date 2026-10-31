@@ -19026,9 +19026,9 @@
       "pick_label": "BET ML",
       "pick_team": "Real Betis",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-10-31_La Liga_Barcelona_vs_Alavés",
@@ -19138,9 +19138,9 @@
       "pick_label": "ROMA ML",
       "pick_team": "AS Roma",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 5
     },
     {
       "id": "2026-10-31_Serie A_Milan_vs_Internazionale",
@@ -19240,12 +19240,12 @@
     }
   ],
   "stats": {
-    "total": 1037,
-    "wins": 550,
+    "total": 1039,
+    "wins": 552,
     "losses": 487,
-    "pending": 11,
-    "win_pct": 53.0,
-    "current_streak": "W2",
+    "pending": 9,
+    "win_pct": 53.1,
+    "current_streak": "W3",
     "by_sport": {
       "basketball": {
         "w": 29,
@@ -19260,7 +19260,7 @@
         "l": 69
       },
       "futbol": {
-        "w": 189,
+        "w": 191,
         "l": 118
       }
     }
