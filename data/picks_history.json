@@ -18770,9 +18770,9 @@
       "pick_label": "BOS -15.5",
       "pick_team": "Boston Celtics",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 125,
+      "away_score": 111
     },
     {
       "id": "2026-10-30_NBA_Nets_vs_Pistons",
@@ -18786,9 +18786,9 @@
       "pick_label": "DET 7.5",
       "pick_team": "Detroit Pistons",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 94,
+      "away_score": 110
     },
     {
       "id": "2026-10-30_NBA_Raptors_vs_Magic",
@@ -18802,9 +18802,9 @@
       "pick_label": "TOR -5.5",
       "pick_team": "Toronto Raptors",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 114,
+      "away_score": 121
     },
     {
       "id": "2026-10-30_NHL_Flames_vs_Kraken",
@@ -18818,9 +18818,9 @@
       "pick_label": "SEA 1.5",
       "pick_team": "Seattle Kraken",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 6,
+      "away_score": 2
     },
     {
       "id": "2026-10-30_NHL_Panthers_vs_Jets",
@@ -19192,16 +19192,16 @@
     }
   ],
   "stats": {
-    "total": 1025,
-    "wins": 543,
-    "losses": 482,
-    "pending": 22,
-    "win_pct": 53.0,
-    "current_streak": "W1",
+    "total": 1029,
+    "wins": 544,
+    "losses": 485,
+    "pending": 18,
+    "win_pct": 52.9,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
-        "w": 28,
-        "l": 37
+        "w": 29,
+        "l": 39
       },
       "baseball": {
         "w": 281,
@@ -19209,7 +19209,7 @@
       },
       "hockey": {
         "w": 51,
-        "l": 68
+        "l": 69
       },
       "futbol": {
         "w": 183,
