@@ -19010,9 +19010,9 @@
       "pick_label": "ATM ML",
       "pick_team": "Atlético Madrid",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-10-31_La Liga_Betis_vs_Málaga",
@@ -19058,9 +19058,9 @@
       "pick_label": "CHE ML",
       "pick_team": "Chelsea",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-10-31_Premier League_City_vs_Albion",
@@ -19189,15 +19189,47 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-10-31_Premier League_City_vs_Sunderland",
+      "date": "2026-10-31",
+      "league": "Premier League",
+      "sport": "futbol",
+      "home_team": "Coventry City",
+      "away_team": "Sunderland",
+      "home_abbr": "COV",
+      "away_abbr": "SUN",
+      "pick_label": "COV ML",
+      "pick_team": "Coventry City",
+      "confidence": 67,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-10-31_Premier League_City_vs_Town",
+      "date": "2026-10-31",
+      "league": "Premier League",
+      "sport": "futbol",
+      "home_team": "Hull City",
+      "away_team": "Ipswich Town",
+      "home_abbr": "HUL",
+      "away_abbr": "IPS",
+      "pick_label": "IPS ML",
+      "pick_team": "Ipswich Town",
+      "confidence": 67,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 1029,
-    "wins": 544,
+    "total": 1031,
+    "wins": 546,
     "losses": 485,
     "pending": 18,
-    "win_pct": 52.9,
-    "current_streak": "L1",
+    "win_pct": 53.0,
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
         "w": 29,
@@ -19212,7 +19244,7 @@
         "l": 69
       },
       "futbol": {
-        "w": 183,
+        "w": 185,
         "l": 116
       }
     }
