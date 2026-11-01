@@ -19346,9 +19346,9 @@
       "pick_label": "CAR -1.5",
       "pick_team": "Carolina Hurricanes",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 7,
+      "away_score": 0
     },
     {
       "id": "2026-11-01_NHL_Flyers_vs_Mammoth",
@@ -19573,15 +19573,31 @@
       "status": "lost",
       "home_score": 0,
       "away_score": 1
+    },
+    {
+      "id": "2026-11-01_NHL_Ducks_vs_Senators",
+      "date": "2026-11-01",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Anaheim Ducks",
+      "away_team": "Ottawa Senators",
+      "home_abbr": "ANA",
+      "away_abbr": "OTT",
+      "pick_label": "OTT +1.5",
+      "pick_team": "Ottawa Senators",
+      "confidence": 74,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 1059,
-    "wins": 564,
+    "total": 1060,
+    "wins": 565,
     "losses": 495,
     "pending": 8,
     "win_pct": 53.3,
-    "current_streak": "L1",
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 32,
@@ -19592,7 +19608,7 @@
         "l": 261
       },
       "hockey": {
-        "w": 53,
+        "w": 54,
         "l": 71
       },
       "futbol": {
