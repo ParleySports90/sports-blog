@@ -19394,9 +19394,9 @@
       "pick_label": "RMA ML",
       "pick_team": "Real Madrid",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "id": "2026-11-01_La Liga_Club_vs_Sociedad",
@@ -19426,9 +19426,9 @@
       "pick_label": "ARS ML",
       "pick_team": "Arsenal",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-11-01_Serie A_Como_vs_Venezia",
@@ -19474,9 +19474,9 @@
       "pick_label": "LYON ML",
       "pick_team": "Lyon",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-11-01_Ligue 1_Marseille_vs_Toulouse",
@@ -19522,9 +19522,9 @@
       "pick_label": "HSV ML",
       "pick_team": "Hamburg SV",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-11-01_Ligue 1_Strasbourg_vs_Auxerre",
@@ -19576,11 +19576,11 @@
     }
   ],
   "stats": {
-    "total": 1054,
-    "wins": 561,
-    "losses": 493,
-    "pending": 13,
-    "win_pct": 53.2,
+    "total": 1058,
+    "wins": 564,
+    "losses": 494,
+    "pending": 9,
+    "win_pct": 53.3,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -19596,8 +19596,8 @@
         "l": 71
       },
       "futbol": {
-        "w": 195,
-        "l": 121
+        "w": 198,
+        "l": 122
       }
     }
   }
