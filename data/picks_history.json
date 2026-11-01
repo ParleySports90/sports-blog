@@ -19378,9 +19378,9 @@
       "pick_label": "SEV ML",
       "pick_team": "Sevilla",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-11-01_La Liga_Santander_vs_Madrid",
@@ -19442,9 +19442,9 @@
       "pick_label": "COMO ML",
       "pick_team": "Como",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-11-01_Serie A_Lazio_vs_Cagliari",
@@ -19458,9 +19458,9 @@
       "pick_label": "LAZ ML",
       "pick_team": "Lazio",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-11-01_Ligue 1_Lyon_vs_Angers",
@@ -19506,9 +19506,9 @@
       "pick_label": "KOE ML",
       "pick_team": "FC Cologne",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-11-01_Bundesliga_Frankfurt_vs_SV",
@@ -19538,9 +19538,9 @@
       "pick_label": "AUX ML",
       "pick_team": "AJ Auxerre",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 1
     },
     {
       "id": "2026-11-01_Serie A_Frosinone_vs_Torino",
@@ -19554,18 +19554,34 @@
       "pick_label": "FRO ML",
       "pick_team": "Frosinone",
       "confidence": 65,
+      "status": "won",
+      "home_score": 2,
+      "away_score": 0
+    },
+    {
+      "id": "2026-11-01_La Liga_Elche_vs_Valencia",
+      "date": "2026-11-01",
+      "league": "La Liga",
+      "sport": "futbol",
+      "home_team": "Elche",
+      "away_team": "Valencia",
+      "home_abbr": "ELC",
+      "away_abbr": "VAL",
+      "pick_label": "ELC ML",
+      "pick_team": "Elche",
+      "confidence": 64,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 1049,
-    "wins": 558,
-    "losses": 491,
-    "pending": 18,
+    "total": 1054,
+    "wins": 561,
+    "losses": 493,
+    "pending": 13,
     "win_pct": 53.2,
-    "current_streak": "W3",
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 32,
@@ -19580,8 +19596,8 @@
         "l": 71
       },
       "futbol": {
-        "w": 192,
-        "l": 119
+        "w": 195,
+        "l": 121
       }
     }
   }
