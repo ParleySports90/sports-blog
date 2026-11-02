@@ -19282,9 +19282,9 @@
       "pick_label": "GS ML",
       "pick_team": "Golden State Warriors",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 124,
+      "away_score": 112
     },
     {
       "id": "2026-11-01_NBA_Magic_vs_Celtics",
@@ -19586,9 +19586,9 @@
       "pick_label": "OTT +1.5",
       "pick_team": "Ottawa Senators",
       "confidence": 74,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 6,
+      "away_score": 3
     },
     {
       "id": "2026-11-01_NBA_Lakers_vs_Raptors",
@@ -19602,9 +19602,9 @@
       "pick_label": "LAL -2.5",
       "pick_team": "Los Angeles Lakers",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 131,
+      "away_score": 125
     },
     {
       "id": "2026-11-02_NBA_76ers_vs_Bulls",
@@ -19784,15 +19784,15 @@
     }
   ],
   "stats": {
-    "total": 1066,
-    "wins": 568,
-    "losses": 498,
-    "pending": 14,
+    "total": 1069,
+    "wins": 570,
+    "losses": 499,
+    "pending": 11,
     "win_pct": 53.3,
-    "current_streak": "W1",
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
-        "w": 33,
+        "w": 35,
         "l": 41
       },
       "baseball": {
@@ -19801,7 +19801,7 @@
       },
       "hockey": {
         "w": 55,
-        "l": 72
+        "l": 73
       },
       "futbol": {
         "w": 199,
