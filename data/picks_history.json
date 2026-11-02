@@ -19762,9 +19762,9 @@
       "pick_label": "SAS ML",
       "pick_team": "Sassuolo",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 4
     },
     {
       "id": "2026-11-02_La Liga_Deportivo_vs_Osasuna",
@@ -19784,12 +19784,12 @@
     }
   ],
   "stats": {
-    "total": 1069,
+    "total": 1070,
     "wins": 570,
-    "losses": 499,
-    "pending": 11,
+    "losses": 500,
+    "pending": 10,
     "win_pct": 53.3,
-    "current_streak": "W2",
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 35,
@@ -19805,7 +19805,7 @@
       },
       "futbol": {
         "w": 199,
-        "l": 124
+        "l": 125
       }
     }
   }
