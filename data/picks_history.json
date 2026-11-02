@@ -19714,9 +19714,9 @@
       "pick_label": "ATA ML",
       "pick_team": "Atalanta",
       "confidence": 81,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "id": "2026-11-02_Premier League_United_vs_Everton",
@@ -19730,9 +19730,9 @@
       "pick_label": "NEW ML",
       "pick_team": "Newcastle United",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-11-02_Ligue 1_Lorient_vs_Brest",
@@ -19746,9 +19746,9 @@
       "pick_label": "LOR ML",
       "pick_team": "Lorient",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-11-02_Serie A_Sassuolo_vs_Fiorentina",
@@ -19778,18 +19778,18 @@
       "pick_label": "OSA ML",
       "pick_team": "Osasuna",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     }
   ],
   "stats": {
-    "total": 1070,
+    "total": 1074,
     "wins": 570,
-    "losses": 500,
-    "pending": 10,
-    "win_pct": 53.3,
-    "current_streak": "L1",
+    "losses": 504,
+    "pending": 6,
+    "win_pct": 53.1,
+    "current_streak": "L5",
     "by_sport": {
       "basketball": {
         "w": 35,
@@ -19805,7 +19805,7 @@
       },
       "futbol": {
         "w": 199,
-        "l": 125
+        "l": 129
       }
     }
   }
