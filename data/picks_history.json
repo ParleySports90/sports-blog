@@ -19842,9 +19842,9 @@
       "pick_label": "SCP ML",
       "pick_team": "Sporting CP",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-11-03_Champions League_Barcelona_vs_Villa",
@@ -19970,9 +19970,9 @@
       "pick_label": "VFB ML",
       "pick_team": "VfB Stuttgart",
       "confidence": 55,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-11-03_NHL_Predators_vs_Hurricanes",
@@ -19992,11 +19992,11 @@
     }
   ],
   "stats": {
-    "total": 1080,
-    "wins": 573,
-    "losses": 507,
-    "pending": 13,
-    "win_pct": 53.1,
+    "total": 1082,
+    "wins": 574,
+    "losses": 508,
+    "pending": 11,
+    "win_pct": 53.0,
     "current_streak": "W1",
     "by_sport": {
       "basketball": {
@@ -20012,8 +20012,8 @@
         "l": 74
       },
       "futbol": {
-        "w": 199,
-        "l": 129
+        "w": 200,
+        "l": 130
       }
     }
   }
