@@ -19666,9 +19666,9 @@
       "pick_label": "COL +1.5",
       "pick_team": "Colorado Avalanche",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 5
     },
     {
       "id": "2026-11-02_NHL_Panthers_vs_Wings",
@@ -19992,11 +19992,11 @@
     }
   ],
   "stats": {
-    "total": 1079,
-    "wins": 572,
+    "total": 1080,
+    "wins": 573,
     "losses": 507,
-    "pending": 14,
-    "win_pct": 53.0,
+    "pending": 13,
+    "win_pct": 53.1,
     "current_streak": "W1",
     "by_sport": {
       "basketball": {
@@ -20008,7 +20008,7 @@
         "l": 261
       },
       "hockey": {
-        "w": 56,
+        "w": 57,
         "l": 74
       },
       "futbol": {
