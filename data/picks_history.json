@@ -19618,9 +19618,9 @@
       "pick_label": "PHI -11.5",
       "pick_team": "Philadelphia 76ers",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 126,
+      "away_score": 107
     },
     {
       "id": "2026-11-02_NBA_Mavericks_vs_Kings",
@@ -19634,9 +19634,9 @@
       "pick_label": "DAL -9.5",
       "pick_team": "Dallas Mavericks",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 100,
+      "away_score": 115
     },
     {
       "id": "2026-11-02_NBA_Grizzlies_vs_Pelicans",
@@ -19650,9 +19650,9 @@
       "pick_label": "MEM -6.5",
       "pick_team": "Memphis Grizzlies",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 134,
+      "away_score": 135
     },
     {
       "id": "2026-11-02_NHL_Blackhawks_vs_Avalanche",
@@ -19682,9 +19682,9 @@
       "pick_label": "FLA -1.5",
       "pick_team": "Florida Panthers",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 5
     },
     {
       "id": "2026-11-02_NHL_Bruins_vs_Knights",
@@ -19698,9 +19698,9 @@
       "pick_label": "BOS +1.5",
       "pick_team": "Boston Bruins",
       "confidence": 62,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-11-02_Serie A_Atalanta_vs_Parma",
@@ -19992,24 +19992,24 @@
     }
   ],
   "stats": {
-    "total": 1074,
-    "wins": 570,
-    "losses": 504,
-    "pending": 19,
-    "win_pct": 53.1,
-    "current_streak": "L5",
+    "total": 1079,
+    "wins": 572,
+    "losses": 507,
+    "pending": 14,
+    "win_pct": 53.0,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
-        "w": 35,
-        "l": 41
+        "w": 36,
+        "l": 43
       },
       "baseball": {
         "w": 281,
         "l": 261
       },
       "hockey": {
-        "w": 55,
-        "l": 73
+        "w": 56,
+        "l": 74
       },
       "futbol": {
         "w": 199,
