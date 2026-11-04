@@ -19794,9 +19794,9 @@
       "pick_label": "MTL -1.5",
       "pick_team": "Montreal Canadiens",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 5
     },
     {
       "id": "2026-11-03_NHL_Flyers_vs_Wild",
@@ -19986,9 +19986,9 @@
       "pick_label": "CAR 1.5",
       "pick_team": "Carolina Hurricanes",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "id": "2026-11-04_NBA_Celtics_vs_Bucks",
@@ -20264,12 +20264,12 @@
     }
   ],
   "stats": {
-    "total": 1090,
+    "total": 1092,
     "wins": 578,
-    "losses": 512,
-    "pending": 19,
-    "win_pct": 53.0,
-    "current_streak": "W1",
+    "losses": 514,
+    "pending": 17,
+    "win_pct": 52.9,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 36,
@@ -20281,7 +20281,7 @@
       },
       "hockey": {
         "w": 58,
-        "l": 75
+        "l": 77
       },
       "futbol": {
         "w": 203,
