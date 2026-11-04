@@ -20098,9 +20098,9 @@
       "pick_label": "LIV ML",
       "pick_team": "Liverpool",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-11-04_Champions League_Porto_vs_Napoli",
@@ -20210,9 +20210,9 @@
       "pick_label": "RMA ML",
       "pick_team": "Real Madrid",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-11-04_Champions League_Leipzig_vs_City",
@@ -20264,10 +20264,10 @@
     }
   ],
   "stats": {
-    "total": 1092,
-    "wins": 578,
-    "losses": 514,
-    "pending": 16,
+    "total": 1094,
+    "wins": 579,
+    "losses": 515,
+    "pending": 14,
     "win_pct": 52.9,
     "current_streak": "L1",
     "by_sport": {
@@ -20284,8 +20284,8 @@
         "l": 77
       },
       "futbol": {
-        "w": 203,
-        "l": 133
+        "w": 204,
+        "l": 134
       }
     }
   }
