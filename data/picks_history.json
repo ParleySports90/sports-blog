@@ -20194,9 +20194,9 @@
       "pick_label": "OLY ML",
       "pick_team": "Olympiacos",
       "confidence": 81,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-11-04_Champions League_Athens_vs_Madrid",
@@ -20267,7 +20267,7 @@
     "total": 1092,
     "wins": 578,
     "losses": 514,
-    "pending": 17,
+    "pending": 16,
     "win_pct": 52.9,
     "current_streak": "L1",
     "by_sport": {
