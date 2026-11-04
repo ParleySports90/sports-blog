@@ -19810,9 +19810,9 @@
       "pick_label": "MIN +1.5",
       "pick_team": "Minnesota Wild",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 4
     },
     {
       "id": "2026-11-03_NHL_Penguins_vs_Knights",
@@ -19826,9 +19826,9 @@
       "pick_label": "VGK -1.5",
       "pick_team": "Vegas Golden Knights",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-11-03_Champions League_Donetsk_vs_CP",
@@ -20264,12 +20264,12 @@
     }
   ],
   "stats": {
-    "total": 1088,
-    "wins": 577,
-    "losses": 511,
-    "pending": 21,
+    "total": 1090,
+    "wins": 578,
+    "losses": 512,
+    "pending": 19,
     "win_pct": 53.0,
-    "current_streak": "W2",
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 36,
@@ -20280,8 +20280,8 @@
         "l": 261
       },
       "hockey": {
-        "w": 57,
-        "l": 74
+        "w": 58,
+        "l": 75
       },
       "futbol": {
         "w": 203,
