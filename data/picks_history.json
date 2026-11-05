@@ -20354,9 +20354,9 @@
       "pick_label": "FER ML",
       "pick_team": "Ferencvaros",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-11-05_Europa League_Lillestrom_vs_Plzen",
@@ -20370,9 +20370,9 @@
       "pick_label": "LSK ML",
       "pick_team": "Lillestrom",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-11-05_Europa League_Nijmegen_vs_Nicosia",
@@ -20386,9 +20386,9 @@
       "pick_label": "OMON ML",
       "pick_team": "Omonia Nicosia",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-11-05_Europa League_Benfica_vs_Poznan",
@@ -20482,9 +20482,9 @@
       "pick_label": "SCB ML",
       "pick_team": "Braga",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-11-05_Conference League_Atalanta_vs_Almaty",
@@ -20498,9 +20498,9 @@
       "pick_label": "ATA ML",
       "pick_team": "Atalanta",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-11-05_Conference League_Midtjylland_vs_Amsterdam",
@@ -20514,9 +20514,9 @@
       "pick_label": "AJA ML",
       "pick_team": "Ajax Amsterdam",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 6
     },
     {
       "id": "2026-11-05_Conference League_Kuopio_vs_Gent",
@@ -20530,18 +20530,130 @@
       "pick_label": "GENT ML",
       "pick_team": "KAA Gent",
       "confidence": 85,
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
+    },
+    {
+      "id": "2026-11-05_Conference League_Monaco_vs_Nordsjælland",
+      "date": "2026-11-05",
+      "league": "Conference League",
+      "sport": "futbol",
+      "home_team": "AS Monaco",
+      "away_team": "FC Nordsjælland",
+      "home_abbr": "MON",
+      "away_abbr": "FCN",
+      "pick_label": "MON ML",
+      "pick_team": "AS Monaco",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-05_Conference League_Craiova_vs_Egnatia",
+      "date": "2026-11-05",
+      "league": "Conference League",
+      "sport": "futbol",
+      "home_team": "CSU Craiova",
+      "away_team": "Egnatia",
+      "home_abbr": "UCRA",
+      "away_abbr": "EGN",
+      "pick_label": "UCRA ML",
+      "pick_team": "CSU Craiova",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-05_Conference League_København_vs_1999",
+      "date": "2026-11-05",
+      "league": "Conference League",
+      "sport": "futbol",
+      "home_team": "F.C. København",
+      "away_team": "Iberia 1999",
+      "home_abbr": "KBH",
+      "away_abbr": "IBE",
+      "pick_label": "KBH ML",
+      "pick_team": "F.C. København",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-05_Conference League_Lugano_vs_Zalgiris",
+      "date": "2026-11-05",
+      "league": "Conference League",
+      "sport": "futbol",
+      "home_team": "FC Lugano",
+      "away_team": "Kauno Zalgiris",
+      "home_abbr": "LUG",
+      "away_abbr": "ZAL",
+      "pick_label": "LUG ML",
+      "pick_team": "FC Lugano",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-05_Conference League_Twente_vs_Pafos",
+      "date": "2026-11-05",
+      "league": "Conference League",
+      "sport": "futbol",
+      "home_team": "FC Twente",
+      "away_team": "Pafos",
+      "home_abbr": "TWE",
+      "away_abbr": "PAF",
+      "pick_label": "TWE ML",
+      "pick_team": "FC Twente",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-05_Conference League_Getafe_vs_Albion",
+      "date": "2026-11-05",
+      "league": "Conference League",
+      "sport": "futbol",
+      "home_team": "Getafe",
+      "away_team": "Brighton & Hove Albion",
+      "home_abbr": "GET",
+      "away_abbr": "BHA",
+      "pick_label": "BHA ML",
+      "pick_team": "Brighton & Hove Albion",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-05_Conference League_Panathinaikos_vs_Sofia",
+      "date": "2026-11-05",
+      "league": "Conference League",
+      "sport": "futbol",
+      "home_team": "Panathinaikos",
+      "away_team": "CSKA Sofia",
+      "home_abbr": "PAO",
+      "away_abbr": "CSKA",
+      "pick_label": "PAO ML",
+      "pick_team": "Panathinaikos",
+      "confidence": 85,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 1108,
-    "wins": 587,
-    "losses": 521,
+    "total": 1112,
+    "wins": 589,
+    "losses": 523,
     "pending": 17,
     "win_pct": 53.0,
-    "current_streak": "L2",
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 38,
@@ -20556,8 +20668,8 @@
         "l": 79
       },
       "futbol": {
-        "w": 209,
-        "l": 135
+        "w": 211,
+        "l": 137
       }
     }
   }
