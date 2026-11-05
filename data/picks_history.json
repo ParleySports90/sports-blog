@@ -20018,9 +20018,9 @@
       "pick_label": "CHA +3.5",
       "pick_team": "Charlotte Hornets",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 114,
+      "away_score": 104
     },
     {
       "id": "2026-11-04_NBA_Knicks_vs_Bulls",
@@ -20034,9 +20034,9 @@
       "pick_label": "NY -12.5",
       "pick_team": "New York Knicks",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 135,
+      "away_score": 105
     },
     {
       "id": "2026-11-04_NHL_Panthers_vs_Blackhawks",
@@ -20050,9 +20050,9 @@
       "pick_label": "FLA -1.5",
       "pick_team": "Florida Panthers",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 3
     },
     {
       "id": "2026-11-04_NHL_Kraken_vs_Flames",
@@ -20066,9 +20066,9 @@
       "pick_label": "SEA -1.5",
       "pick_team": "Seattle Kraken",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-11-04_NHL_Kings_vs_Sharks",
@@ -20082,9 +20082,9 @@
       "pick_label": "SJ -1.5",
       "pick_team": "San Jose Sharks",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 7,
+      "away_score": 2
     },
     {
       "id": "2026-11-04_Champions League_Fenerbahce_vs_Liverpool",
@@ -20242,9 +20242,9 @@
       "pick_label": "NO -5.5",
       "pick_team": "New Orleans Pelicans",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 120,
+      "away_score": 113
     },
     {
       "id": "2026-11-04_NBA_Rockets_vs_Timberwolves",
@@ -20258,9 +20258,9 @@
       "pick_label": "HOU -8.5",
       "pick_team": "Houston Rockets",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 107,
+      "away_score": 117
     },
     {
       "id": "2026-11-05_NBA_Warriors_vs_Heat",
@@ -20536,24 +20536,24 @@
     }
   ],
   "stats": {
-    "total": 1101,
-    "wins": 584,
-    "losses": 517,
-    "pending": 24,
+    "total": 1108,
+    "wins": 587,
+    "losses": 521,
+    "pending": 17,
     "win_pct": 53.0,
     "current_streak": "L2",
     "by_sport": {
       "basketball": {
-        "w": 36,
-        "l": 44
+        "w": 38,
+        "l": 46
       },
       "baseball": {
         "w": 281,
         "l": 261
       },
       "hockey": {
-        "w": 58,
-        "l": 77
+        "w": 59,
+        "l": 79
       },
       "futbol": {
         "w": 209,
