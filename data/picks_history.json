@@ -20002,9 +20002,9 @@
       "pick_label": "BOS -11.5",
       "pick_team": "Boston Celtics",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 109,
+      "away_score": 102
     },
     {
       "id": "2026-11-04_NBA_Nets_vs_Hornets",
@@ -20536,16 +20536,16 @@
     }
   ],
   "stats": {
-    "total": 1100,
+    "total": 1101,
     "wins": 584,
-    "losses": 516,
-    "pending": 25,
-    "win_pct": 53.1,
-    "current_streak": "L1",
+    "losses": 517,
+    "pending": 24,
+    "win_pct": 53.0,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 36,
-        "l": 43
+        "l": 44
       },
       "baseball": {
         "w": 281,
