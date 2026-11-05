@@ -20645,13 +20645,45 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-11-05_Conference League_Sint-Truidense_vs_Brann",
+      "date": "2026-11-05",
+      "league": "Conference League",
+      "sport": "futbol",
+      "home_team": "Sint-Truidense",
+      "away_team": "SK Brann",
+      "home_abbr": "STVV",
+      "away_abbr": "SKBR",
+      "pick_label": "SKBR ML",
+      "pick_team": "SK Brann",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-05_Europa League_Sunderland_vs_Zagreb",
+      "date": "2026-11-05",
+      "league": "Europa League",
+      "sport": "futbol",
+      "home_team": "Sunderland",
+      "away_team": "Dinamo Zagreb",
+      "home_abbr": "SUN",
+      "away_abbr": "DZG",
+      "pick_label": "DZG ML",
+      "pick_team": "Dinamo Zagreb",
+      "confidence": 81,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
     "total": 1112,
     "wins": 589,
     "losses": 523,
-    "pending": 17,
+    "pending": 19,
     "win_pct": 53.0,
     "current_streak": "W1",
     "by_sport": {
