@@ -20786,9 +20786,9 @@
       "pick_label": "HSV ML",
       "pick_team": "Hamburg SV",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-11-06_La Liga_Sevilla_vs_Alavés",
@@ -20802,9 +20802,9 @@
       "pick_label": "SEV ML",
       "pick_team": "Sevilla",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-11-06_Ligue 1_Toulouse_vs_Strasbourg",
@@ -20818,9 +20818,9 @@
       "pick_label": "STR ML",
       "pick_team": "Strasbourg",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-11-06_NBA_Cavaliers_vs_76ers",
@@ -20840,11 +20840,11 @@
     }
   ],
   "stats": {
-    "total": 1130,
-    "wins": 604,
-    "losses": 526,
-    "pending": 10,
-    "win_pct": 53.5,
+    "total": 1132,
+    "wins": 605,
+    "losses": 527,
+    "pending": 7,
+    "win_pct": 53.4,
     "current_streak": "W1",
     "by_sport": {
       "basketball": {
@@ -20860,8 +20860,8 @@
         "l": 80
       },
       "futbol": {
-        "w": 223,
-        "l": 138
+        "w": 224,
+        "l": 139
       }
     }
   }
