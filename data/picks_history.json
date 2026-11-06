@@ -20274,9 +20274,9 @@
       "pick_label": "GS ML",
       "pick_team": "Golden State Warriors",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 120,
+      "away_score": 100
     },
     {
       "id": "2026-11-05_NBA_Suns_vs_Magic",
@@ -20290,9 +20290,9 @@
       "pick_label": "ORL ML",
       "pick_team": "Orlando Magic",
       "confidence": 66,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 117,
+      "away_score": 104
     },
     {
       "id": "2026-11-05_NHL_Lightning_vs_Blackhawks",
@@ -20338,9 +20338,9 @@
       "pick_label": "EDM -1.5",
       "pick_team": "Edmonton Oilers",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 5
     },
     {
       "id": "2026-11-05_Europa League_Milan_vs_Ferencvaros",
@@ -20840,16 +20840,16 @@
     }
   ],
   "stats": {
-    "total": 1127,
-    "wins": 603,
-    "losses": 524,
-    "pending": 13,
+    "total": 1130,
+    "wins": 604,
+    "losses": 526,
+    "pending": 10,
     "win_pct": 53.5,
-    "current_streak": "W3",
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
-        "w": 38,
-        "l": 46
+        "w": 39,
+        "l": 47
       },
       "baseball": {
         "w": 281,
@@ -20857,7 +20857,7 @@
       },
       "hockey": {
         "w": 61,
-        "l": 79
+        "l": 80
       },
       "futbol": {
         "w": 223,
