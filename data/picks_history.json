@@ -20402,9 +20402,9 @@
       "pick_label": "SLB ML",
       "pick_team": "Benfica",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-11-05_Europa League_Vigo_vs_St.-Gilloise",
@@ -20418,9 +20418,9 @@
       "pick_label": "USG ML",
       "pick_team": "Union St.-Gilloise",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-11-05_Europa League_Be'er_vs_Crete",
@@ -20434,9 +20434,9 @@
       "pick_label": "OFI ML",
       "pick_team": "OFI Crete",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-11-05_Europa League_Graz_vs_Celje",
@@ -20450,9 +20450,9 @@
       "pick_label": "STG ML",
       "pick_team": "SK Sturm Graz",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-11-05_Europa League_Torreense_vs_Ararat-Armenia",
@@ -20466,9 +20466,9 @@
       "pick_label": "TOR ML",
       "pick_team": "Torreense",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-11-05_Conference League_AGF_vs_Braga",
@@ -20546,9 +20546,9 @@
       "pick_label": "MON ML",
       "pick_team": "AS Monaco",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-11-05_Conference League_Craiova_vs_Egnatia",
@@ -20562,9 +20562,9 @@
       "pick_label": "UCRA ML",
       "pick_team": "CSU Craiova",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-11-05_Conference League_København_vs_1999",
@@ -20578,9 +20578,9 @@
       "pick_label": "KBH ML",
       "pick_team": "F.C. København",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-11-05_Conference League_Lugano_vs_Zalgiris",
@@ -20594,9 +20594,9 @@
       "pick_label": "LUG ML",
       "pick_team": "FC Lugano",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-11-05_Conference League_Twente_vs_Pafos",
@@ -20610,9 +20610,9 @@
       "pick_label": "TWE ML",
       "pick_team": "FC Twente",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-11-05_Conference League_Getafe_vs_Albion",
@@ -20626,9 +20626,9 @@
       "pick_label": "BHA ML",
       "pick_team": "Brighton & Hove Albion",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-11-05_Conference League_Panathinaikos_vs_Sofia",
@@ -20642,9 +20642,9 @@
       "pick_label": "PAO ML",
       "pick_team": "Panathinaikos",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-11-05_Conference League_Sint-Truidense_vs_Brann",
@@ -20658,9 +20658,9 @@
       "pick_label": "SKBR ML",
       "pick_team": "SK Brann",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-11-05_Europa League_Sunderland_vs_Zagreb",
@@ -20674,17 +20674,177 @@
       "pick_label": "DZG ML",
       "pick_team": "Dinamo Zagreb",
       "confidence": 81,
+      "status": "won",
+      "home_score": 0,
+      "away_score": 2
+    },
+    {
+      "id": "2026-11-06_NBA_Mavericks_vs_Jazz",
+      "date": "2026-11-06",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Dallas Mavericks",
+      "away_team": "Utah Jazz",
+      "home_abbr": "DAL",
+      "away_abbr": "UTAH",
+      "pick_label": "DAL -7.5",
+      "pick_team": "Dallas Mavericks",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-06_NBA_Kings_vs_Spurs",
+      "date": "2026-11-06",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Sacramento Kings",
+      "away_team": "San Antonio Spurs",
+      "home_abbr": "SAC",
+      "away_abbr": "SA",
+      "pick_label": "SA +15.5",
+      "pick_team": "San Antonio Spurs",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-06_NBA_Bucks_vs_Raptors",
+      "date": "2026-11-06",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Milwaukee Bucks",
+      "away_team": "Toronto Raptors",
+      "home_abbr": "MIL",
+      "away_abbr": "TOR",
+      "pick_label": "TOR +7.5",
+      "pick_team": "Toronto Raptors",
+      "confidence": 93,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-06_NHL_Wild_vs_Sharks",
+      "date": "2026-11-06",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Minnesota Wild",
+      "away_team": "San Jose Sharks",
+      "home_abbr": "MIN",
+      "away_abbr": "SJ",
+      "pick_label": "MIN -1.5",
+      "pick_team": "Minnesota Wild",
+      "confidence": 77,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-06_NHL_Sabres_vs_Jackets",
+      "date": "2026-11-06",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Buffalo Sabres",
+      "away_team": "Columbus Blue Jackets",
+      "home_abbr": "BUF",
+      "away_abbr": "CBJ",
+      "pick_label": "BUF -1.5",
+      "pick_team": "Buffalo Sabres",
+      "confidence": 64,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-06_NHL_Flames_vs_Ducks",
+      "date": "2026-11-06",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Calgary Flames",
+      "away_team": "Anaheim Ducks",
+      "home_abbr": "CGY",
+      "away_abbr": "ANA",
+      "pick_label": "ANA -1.5",
+      "pick_team": "Anaheim Ducks",
+      "confidence": 58,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-06_Bundesliga_SV_vs_Mönchengladbach",
+      "date": "2026-11-06",
+      "league": "Bundesliga",
+      "sport": "futbol",
+      "home_team": "Hamburg SV",
+      "away_team": "Borussia Mönchengladbach",
+      "home_abbr": "HSV",
+      "away_abbr": "BMG",
+      "pick_label": "HSV ML",
+      "pick_team": "Hamburg SV",
+      "confidence": 85,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-06_La Liga_Sevilla_vs_Alavés",
+      "date": "2026-11-06",
+      "league": "La Liga",
+      "sport": "futbol",
+      "home_team": "Sevilla",
+      "away_team": "Alavés",
+      "home_abbr": "SEV",
+      "away_abbr": "ALA",
+      "pick_label": "SEV ML",
+      "pick_team": "Sevilla",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-06_Ligue 1_Toulouse_vs_Strasbourg",
+      "date": "2026-11-06",
+      "league": "Ligue 1",
+      "sport": "futbol",
+      "home_team": "Toulouse",
+      "away_team": "Strasbourg",
+      "home_abbr": "TOU",
+      "away_abbr": "STR",
+      "pick_label": "STR ML",
+      "pick_team": "Strasbourg",
+      "confidence": 65,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-06_NBA_Cavaliers_vs_76ers",
+      "date": "2026-11-06",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Cleveland Cavaliers",
+      "away_team": "Philadelphia 76ers",
+      "home_abbr": "CLE",
+      "away_abbr": "PHI",
+      "pick_label": "PHI 1.5",
+      "pick_team": "Philadelphia 76ers",
+      "confidence": 87,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 1112,
-    "wins": 589,
-    "losses": 523,
-    "pending": 19,
-    "win_pct": 53.0,
+    "total": 1125,
+    "wins": 601,
+    "losses": 524,
+    "pending": 15,
+    "win_pct": 53.4,
     "current_streak": "W1",
     "by_sport": {
       "basketball": {
@@ -20700,8 +20860,8 @@
         "l": 79
       },
       "futbol": {
-        "w": 211,
-        "l": 137
+        "w": 223,
+        "l": 138
       }
     }
   }
