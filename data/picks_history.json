@@ -20276,7 +20276,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 120,
-      "away_score": 100
+      "away_score": 100,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_NBA_Suns_vs_Magic",
@@ -20292,7 +20293,8 @@
       "confidence": 66,
       "status": "lost",
       "home_score": 117,
-      "away_score": 104
+      "away_score": 104,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_NHL_Lightning_vs_Blackhawks",
@@ -20308,7 +20310,8 @@
       "confidence": 77,
       "status": "won",
       "home_score": 4,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_NHL_Penguins_vs_Bruins",
@@ -20324,7 +20327,8 @@
       "confidence": 77,
       "status": "won",
       "home_score": 2,
-      "away_score": 6
+      "away_score": 6,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_NHL_Oilers_vs_Ducks",
@@ -20340,7 +20344,8 @@
       "confidence": 77,
       "status": "lost",
       "home_score": 4,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_Europa League_Milan_vs_Ferencvaros",
@@ -20356,7 +20361,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 0,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_Europa League_Lillestrom_vs_Plzen",
@@ -20372,7 +20378,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 0,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_Europa League_Nijmegen_vs_Nicosia",
@@ -20388,7 +20395,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_Europa League_Benfica_vs_Poznan",
@@ -20404,7 +20412,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_Europa League_Vigo_vs_St.-Gilloise",
@@ -20420,7 +20429,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 1,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_Europa League_Be'er_vs_Crete",
@@ -20436,7 +20446,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 0,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_Europa League_Graz_vs_Celje",
@@ -20452,7 +20463,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 2,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_Europa League_Torreense_vs_Ararat-Armenia",
@@ -20468,7 +20480,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_Conference League_AGF_vs_Braga",
@@ -20516,7 +20529,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 1,
-      "away_score": 6
+      "away_score": 6,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_Conference League_Kuopio_vs_Gent",
@@ -20548,7 +20562,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_Conference League_Craiova_vs_Egnatia",
@@ -20564,7 +20579,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_Conference League_København_vs_1999",
@@ -20580,7 +20596,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_Conference League_Lugano_vs_Zalgiris",
@@ -20596,7 +20613,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 3,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_Conference League_Twente_vs_Pafos",
@@ -20612,7 +20630,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_Conference League_Getafe_vs_Albion",
@@ -20628,7 +20647,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 0,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_Conference League_Panathinaikos_vs_Sofia",
@@ -20644,7 +20664,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-05_Conference League_Sint-Truidense_vs_Brann",
@@ -20676,7 +20697,8 @@
       "confidence": 81,
       "status": "won",
       "home_score": 0,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-06_NBA_Mavericks_vs_Jazz",
@@ -20692,7 +20714,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 112,
-      "away_score": 100
+      "away_score": 100,
+      "ig_posted": true
     },
     {
       "id": "2026-11-06_NBA_Kings_vs_Spurs",
@@ -20708,7 +20731,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 109,
-      "away_score": 124
+      "away_score": 124,
+      "ig_posted": true
     },
     {
       "id": "2026-11-06_NBA_Bucks_vs_Raptors",
@@ -20724,7 +20748,8 @@
       "confidence": 93,
       "status": "won",
       "home_score": 107,
-      "away_score": 121
+      "away_score": 121,
+      "ig_posted": true
     },
     {
       "id": "2026-11-06_NHL_Wild_vs_Sharks",
@@ -20740,7 +20765,8 @@
       "confidence": 77,
       "status": "won",
       "home_score": 4,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-06_NHL_Sabres_vs_Jackets",
@@ -20756,7 +20782,8 @@
       "confidence": 64,
       "status": "won",
       "home_score": 5,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-06_NHL_Flames_vs_Ducks",
@@ -20772,7 +20799,8 @@
       "confidence": 58,
       "status": "won",
       "home_score": 3,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-11-06_Bundesliga_SV_vs_Mönchengladbach",
@@ -20788,7 +20816,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-06_La Liga_Sevilla_vs_Alavés",
@@ -20820,7 +20849,8 @@
       "confidence": 65,
       "status": "lost",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-06_NBA_Cavaliers_vs_76ers",
@@ -20836,7 +20866,8 @@
       "confidence": 87,
       "status": "lost",
       "home_score": 119,
-      "away_score": 95
+      "away_score": 95,
+      "ig_posted": true
     },
     {
       "id": "2026-11-07_NBA_Pacers_vs_Nuggets",
@@ -20946,9 +20977,10 @@
       "pick_label": "RAC ML",
       "pick_team": "Racing Santander",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-07_La Liga_Valencia_vs_Madrid",
@@ -21090,9 +21122,10 @@
       "pick_label": "FRO ML",
       "pick_team": "Frosinone",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-11-07_Serie A_Parma_vs_Bologna",
@@ -21125,15 +21158,47 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-11-07_Bundesliga_Dortmund_vs_Elversberg",
+      "date": "2026-11-07",
+      "league": "Bundesliga",
+      "sport": "futbol",
+      "home_team": "Borussia Dortmund",
+      "away_team": "SV Elversberg",
+      "home_abbr": "DOR",
+      "away_abbr": "ELV",
+      "pick_label": "DOR ML",
+      "pick_team": "Borussia Dortmund",
+      "confidence": 67,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-07_Bundesliga_07_vs_Frankfurt",
+      "date": "2026-11-07",
+      "league": "Bundesliga",
+      "sport": "futbol",
+      "home_team": "SC Paderborn 07",
+      "away_team": "Eintracht Frankfurt",
+      "home_abbr": "SCP",
+      "away_abbr": "SGE",
+      "pick_label": "SGE ML",
+      "pick_team": "Eintracht Frankfurt",
+      "confidence": 67,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 1139,
-    "wins": 611,
-    "losses": 528,
+    "total": 1141,
+    "wins": 612,
+    "losses": 529,
     "pending": 18,
     "win_pct": 53.6,
-    "current_streak": "W7",
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 42,
@@ -21148,8 +21213,8 @@
         "l": 80
       },
       "futbol": {
-        "w": 224,
-        "l": 139
+        "w": 225,
+        "l": 140
       }
     }
   }
