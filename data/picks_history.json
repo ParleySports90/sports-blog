@@ -20690,9 +20690,9 @@
       "pick_label": "DAL -7.5",
       "pick_team": "Dallas Mavericks",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 112,
+      "away_score": 100
     },
     {
       "id": "2026-11-06_NBA_Kings_vs_Spurs",
@@ -20706,9 +20706,9 @@
       "pick_label": "SA +15.5",
       "pick_team": "San Antonio Spurs",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 109,
+      "away_score": 124
     },
     {
       "id": "2026-11-06_NBA_Bucks_vs_Raptors",
@@ -20722,9 +20722,9 @@
       "pick_label": "TOR +7.5",
       "pick_team": "Toronto Raptors",
       "confidence": 93,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 107,
+      "away_score": 121
     },
     {
       "id": "2026-11-06_NHL_Wild_vs_Sharks",
@@ -20738,9 +20738,9 @@
       "pick_label": "MIN -1.5",
       "pick_team": "Minnesota Wild",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "id": "2026-11-06_NHL_Sabres_vs_Jackets",
@@ -20754,9 +20754,9 @@
       "pick_label": "BUF -1.5",
       "pick_team": "Buffalo Sabres",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 2
     },
     {
       "id": "2026-11-06_NHL_Flames_vs_Ducks",
@@ -20770,9 +20770,9 @@
       "pick_label": "ANA -1.5",
       "pick_team": "Anaheim Ducks",
       "confidence": 58,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 5
     },
     {
       "id": "2026-11-06_Bundesliga_SV_vs_Mönchengladbach",
@@ -20834,9 +20834,9 @@
       "pick_label": "PHI 1.5",
       "pick_team": "Philadelphia 76ers",
       "confidence": 87,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 119,
+      "away_score": 95
     },
     {
       "id": "2026-11-07_NBA_Pacers_vs_Nuggets",
@@ -21128,23 +21128,23 @@
     }
   ],
   "stats": {
-    "total": 1132,
-    "wins": 605,
-    "losses": 527,
-    "pending": 25,
-    "win_pct": 53.4,
-    "current_streak": "W1",
+    "total": 1139,
+    "wins": 611,
+    "losses": 528,
+    "pending": 18,
+    "win_pct": 53.6,
+    "current_streak": "W7",
     "by_sport": {
       "basketball": {
-        "w": 39,
-        "l": 47
+        "w": 42,
+        "l": 48
       },
       "baseball": {
         "w": 281,
         "l": 261
       },
       "hockey": {
-        "w": 61,
+        "w": 64,
         "l": 80
       },
       "futbol": {
