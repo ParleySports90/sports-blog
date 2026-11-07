@@ -20994,9 +20994,9 @@
       "pick_label": "RMA ML",
       "pick_team": "Real Madrid",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "id": "2026-11-07_Premier League_Arsenal_vs_City",
@@ -21074,9 +21074,9 @@
       "pick_label": "ROMA ML",
       "pick_team": "AS Roma",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "id": "2026-11-07_Ligue 1_Saint-Germain_vs_Troyes",
@@ -21090,9 +21090,9 @@
       "pick_label": "PSG ML",
       "pick_team": "Paris Saint-Germain",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-11-07_Ligue 1_Auxerre_vs_FC",
@@ -21209,12 +21209,12 @@
     }
   ],
   "stats": {
-    "total": 1149,
-    "wins": 618,
+    "total": 1152,
+    "wins": 621,
     "losses": 531,
-    "pending": 9,
-    "win_pct": 53.8,
-    "current_streak": "W2",
+    "pending": 6,
+    "win_pct": 53.9,
+    "current_streak": "W3",
     "by_sport": {
       "basketball": {
         "w": 42,
@@ -21229,7 +21229,7 @@
         "l": 80
       },
       "futbol": {
-        "w": 231,
+        "w": 234,
         "l": 142
       }
     }
