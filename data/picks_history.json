@@ -21010,9 +21010,9 @@
       "pick_label": "ARS ML",
       "pick_team": "Arsenal",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-11-07_Premier League_Forest_vs_City",
@@ -21042,9 +21042,9 @@
       "pick_label": "MUN ML",
       "pick_team": "Bayern Munich",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-11-07_Bundesliga_Leipzig_vs_Augsburg",
@@ -21058,9 +21058,9 @@
       "pick_label": "RBL ML",
       "pick_team": "RB Leipzig",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 2
     },
     {
       "id": "2026-11-07_Serie A_Roma_vs_Sassuolo",
@@ -21171,9 +21171,9 @@
       "pick_label": "DOR ML",
       "pick_team": "Borussia Dortmund",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-11-07_Bundesliga_07_vs_Frankfurt",
@@ -21187,18 +21187,34 @@
       "pick_label": "SGE ML",
       "pick_team": "Eintracht Frankfurt",
       "confidence": 67,
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
+    },
+    {
+      "id": "2026-11-07_Bundesliga_Stuttgart_vs_Bremen",
+      "date": "2026-11-07",
+      "league": "Bundesliga",
+      "sport": "futbol",
+      "home_team": "VfB Stuttgart",
+      "away_team": "Werder Bremen",
+      "home_abbr": "VFB",
+      "away_abbr": "SVW",
+      "pick_label": "SVW ML",
+      "pick_team": "Werder Bremen",
+      "confidence": 67,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 1141,
-    "wins": 612,
+    "total": 1145,
+    "wins": 616,
     "losses": 529,
-    "pending": 18,
-    "win_pct": 53.6,
-    "current_streak": "W1",
+    "pending": 14,
+    "win_pct": 53.8,
+    "current_streak": "W4",
     "by_sport": {
       "basketball": {
         "w": 42,
@@ -21213,7 +21229,7 @@
         "l": 80
       },
       "futbol": {
-        "w": 225,
+        "w": 229,
         "l": 140
       }
     }
