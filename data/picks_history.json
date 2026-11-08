@@ -21236,9 +21236,9 @@
       "pick_label": "PHI +8.5",
       "pick_team": "Philadelphia 76ers",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 121,
+      "away_score": 127
     },
     {
       "id": "2026-11-08_NBA_Timberwolves_vs_Jazz",
@@ -21416,9 +21416,9 @@
       "pick_label": "TSG ML",
       "pick_team": "TSG Hoffenheim",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-11-08_Serie A_Napoli_vs_Lazio",
@@ -21448,9 +21448,9 @@
       "pick_label": "JUV ML",
       "pick_team": "Juventus",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "id": "2026-11-08_Ligue 1_AC_vs_Lorient",
@@ -21545,9 +21545,9 @@
       "pick_label": "BOS -1.5",
       "pick_team": "Boston Bruins",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "id": "2026-11-08_NHL_Leafs_vs_Devils",
@@ -21625,9 +21625,9 @@
       "pick_label": "OLM ML",
       "pick_team": "Marseille",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "id": "2026-11-08_Serie A_Internazionale_vs_Como",
@@ -21657,21 +21657,37 @@
       "pick_label": "BAR ML",
       "pick_team": "Barcelona",
       "confidence": 62,
+      "status": "won",
+      "home_score": 1,
+      "away_score": 2
+    },
+    {
+      "id": "2026-11-08_NBA_Kings_vs_Heat",
+      "date": "2026-11-08",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Sacramento Kings",
+      "away_team": "Miami Heat",
+      "home_abbr": "SAC",
+      "away_abbr": "MIA",
+      "pick_label": "MIA 11.5",
+      "pick_team": "Miami Heat",
+      "confidence": 92,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 1169,
-    "wins": 636,
+    "total": 1174,
+    "wins": 641,
     "losses": 533,
-    "pending": 13,
-    "win_pct": 54.4,
-    "current_streak": "W2",
+    "pending": 8,
+    "win_pct": 54.6,
+    "current_streak": "W3",
     "by_sport": {
       "basketball": {
-        "w": 45,
+        "w": 46,
         "l": 48
       },
       "baseball": {
@@ -21679,11 +21695,11 @@
         "l": 261
       },
       "hockey": {
-        "w": 67,
+        "w": 68,
         "l": 80
       },
       "futbol": {
-        "w": 243,
+        "w": 246,
         "l": 144
       }
     }
