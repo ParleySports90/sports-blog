@@ -21400,9 +21400,9 @@
       "pick_label": "SCF ML",
       "pick_team": "SC Freiburg",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-11-08_Bundesliga_Hoffenheim_vs_04",
@@ -21464,9 +21464,9 @@
       "pick_label": "LOR ML",
       "pick_team": "Lorient",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-11-08_Ligue 1_Mans_vs_Monaco",
@@ -21480,9 +21480,9 @@
       "pick_label": "MON ML",
       "pick_team": "AS Monaco",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-11-08_La Liga_Sociedad_vs_Vallecano",
@@ -21496,9 +21496,9 @@
       "pick_label": "RSO ML",
       "pick_team": "Real Sociedad",
       "confidence": 84,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-11-08_Premier League_Palace_vs_Liverpool",
@@ -21577,9 +21577,9 @@
       "pick_label": "AVL ML",
       "pick_team": "Aston Villa",
       "confidence": 81,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 4,
+      "away_score": 4
     },
     {
       "id": "2026-11-08_Ligue 1_Angers_vs_Nice",
@@ -21593,9 +21593,9 @@
       "pick_label": "NICE ML",
       "pick_team": "Nice",
       "confidence": 81,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-11-08_Ligue 1_Brest_vs_Lyon",
@@ -21609,9 +21609,9 @@
       "pick_label": "LYON ML",
       "pick_team": "Lyon",
       "confidence": 81,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "2026-11-08_Ligue 1_Lens_vs_Marseille",
@@ -21663,11 +21663,11 @@
     }
   ],
   "stats": {
-    "total": 1163,
-    "wins": 631,
-    "losses": 532,
-    "pending": 21,
-    "win_pct": 54.3,
+    "total": 1168,
+    "wins": 635,
+    "losses": 533,
+    "pending": 14,
+    "win_pct": 54.4,
     "current_streak": "W2",
     "by_sport": {
       "basketball": {
@@ -21683,8 +21683,8 @@
         "l": 80
       },
       "futbol": {
-        "w": 238,
-        "l": 143
+        "w": 242,
+        "l": 144
       }
     }
   }
