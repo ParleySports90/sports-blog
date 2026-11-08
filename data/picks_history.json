@@ -20897,9 +20897,9 @@
       "pick_label": "OKC ML",
       "pick_team": "Oklahoma City Thunder",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 114,
+      "away_score": 75
     },
     {
       "id": "2026-11-07_NBA_Warriors_vs_Magic",
@@ -20913,9 +20913,9 @@
       "pick_label": "GS -6.5",
       "pick_team": "Golden State Warriors",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 126,
+      "away_score": 119
     },
     {
       "id": "2026-11-07_NHL_Hurricanes_vs_Blackhawks",
@@ -20929,9 +20929,9 @@
       "pick_label": "CAR -1.5",
       "pick_team": "Carolina Hurricanes",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 9,
+      "away_score": 2
     },
     {
       "id": "2026-11-07_NHL_Oilers_vs_Canucks",
@@ -20945,9 +20945,9 @@
       "pick_label": "EDM -1.5",
       "pick_team": "Edmonton Oilers",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "id": "2026-11-07_NHL_Leafs_vs_Canadiens",
@@ -20961,9 +20961,9 @@
       "pick_label": "MTL +1.5",
       "pick_team": "Montreal Canadiens",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 4
     },
     {
       "id": "2026-11-07_La Liga_Málaga_vs_Santander",
@@ -21526,18 +21526,34 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-11-08_NHL_Leafs_vs_Devils",
+      "date": "2026-11-08",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Toronto Maple Leafs",
+      "away_team": "New Jersey Devils",
+      "home_abbr": "TOR",
+      "away_abbr": "NJ",
+      "pick_label": "NJ +1.5",
+      "pick_team": "New Jersey Devils",
+      "confidence": 72,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 1153,
-    "wins": 622,
+    "total": 1158,
+    "wins": 627,
     "losses": 531,
-    "pending": 25,
-    "win_pct": 53.9,
-    "current_streak": "W4",
+    "pending": 21,
+    "win_pct": 54.1,
+    "current_streak": "W9",
     "by_sport": {
       "basketball": {
-        "w": 43,
+        "w": 45,
         "l": 48
       },
       "baseball": {
@@ -21545,7 +21561,7 @@
         "l": 261
       },
       "hockey": {
-        "w": 64,
+        "w": 67,
         "l": 80
       },
       "futbol": {
