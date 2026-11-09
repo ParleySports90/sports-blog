@@ -21252,9 +21252,9 @@
       "pick_label": "MIN -11.5",
       "pick_team": "Minnesota Timberwolves",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 115,
+      "away_score": 100
     },
     {
       "id": "2026-11-08_NBA_Bucks_vs_Celtics",
@@ -21268,9 +21268,9 @@
       "pick_label": "BOS +12.5",
       "pick_team": "Boston Celtics",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 97,
+      "away_score": 117
     },
     {
       "id": "2026-11-08_NHL_Jets_vs_Lightning",
@@ -21300,9 +21300,9 @@
       "pick_label": "ANA -1.5",
       "pick_team": "Anaheim Ducks",
       "confidence": 72,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 2
     },
     {
       "id": "2026-11-08_NHL_Flames_vs_Flyers",
@@ -21316,9 +21316,9 @@
       "pick_label": "CGY +1.5",
       "pick_team": "Calgary Flames",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "id": "2026-11-08_La Liga_Elche_vs_Betis",
@@ -21529,9 +21529,9 @@
       "pick_label": "DAL ML",
       "pick_team": "Dallas Mavericks",
       "confidence": 92,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 130,
+      "away_score": 93
     },
     {
       "id": "2026-11-08_NHL_Bruins_vs_Panthers",
@@ -21561,9 +21561,9 @@
       "pick_label": "NJ +1.5",
       "pick_team": "New Jersey Devils",
       "confidence": 72,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 4
     },
     {
       "id": "2026-11-08_Premier League_United_vs_Villa",
@@ -21673,9 +21673,9 @@
       "pick_label": "MIA 11.5",
       "pick_team": "Miami Heat",
       "confidence": 92,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 108,
+      "away_score": 114
     },
     {
       "id": "2026-11-09_NBA_Pistons_vs_Wizards",
@@ -21775,15 +21775,15 @@
     }
   ],
   "stats": {
-    "total": 1175,
-    "wins": 642,
+    "total": 1182,
+    "wins": 649,
     "losses": 533,
-    "pending": 13,
-    "win_pct": 54.6,
-    "current_streak": "W4",
+    "pending": 6,
+    "win_pct": 54.9,
+    "current_streak": "W8",
     "by_sport": {
       "basketball": {
-        "w": 46,
+        "w": 50,
         "l": 48
       },
       "baseball": {
@@ -21791,7 +21791,7 @@
         "l": 261
       },
       "hockey": {
-        "w": 69,
+        "w": 72,
         "l": 80
       },
       "futbol": {
