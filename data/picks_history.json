@@ -21238,7 +21238,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 121,
-      "away_score": 127
+      "away_score": 127,
+      "ig_posted": true
     },
     {
       "id": "2026-11-08_NBA_Timberwolves_vs_Jazz",
@@ -21254,7 +21255,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 115,
-      "away_score": 100
+      "away_score": 100,
+      "ig_posted": true
     },
     {
       "id": "2026-11-08_NBA_Bucks_vs_Celtics",
@@ -21270,7 +21272,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 97,
-      "away_score": 117
+      "away_score": 117,
+      "ig_posted": true
     },
     {
       "id": "2026-11-08_NHL_Jets_vs_Lightning",
@@ -21286,7 +21289,8 @@
       "confidence": 77,
       "status": "won",
       "home_score": 4,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-11-08_NHL_Ducks_vs_Penguins",
@@ -21302,7 +21306,8 @@
       "confidence": 72,
       "status": "won",
       "home_score": 5,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-08_NHL_Flames_vs_Flyers",
@@ -21318,7 +21323,8 @@
       "confidence": 70,
       "status": "won",
       "home_score": 4,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-11-08_La Liga_Elche_vs_Betis",
@@ -21402,7 +21408,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-11-08_Bundesliga_Hoffenheim_vs_04",
@@ -21418,7 +21425,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-08_Serie A_Napoli_vs_Lazio",
@@ -21466,7 +21474,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 0,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-08_Ligue 1_Mans_vs_Monaco",
@@ -21498,7 +21507,8 @@
       "confidence": 84,
       "status": "won",
       "home_score": 1,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-11-08_Premier League_Palace_vs_Liverpool",
@@ -21531,7 +21541,8 @@
       "confidence": 92,
       "status": "won",
       "home_score": 130,
-      "away_score": 93
+      "away_score": 93,
+      "ig_posted": true
     },
     {
       "id": "2026-11-08_NHL_Bruins_vs_Panthers",
@@ -21547,7 +21558,8 @@
       "confidence": 65,
       "status": "won",
       "home_score": 4,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-08_NHL_Leafs_vs_Devils",
@@ -21563,7 +21575,8 @@
       "confidence": 72,
       "status": "won",
       "home_score": 0,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-11-08_Premier League_United_vs_Villa",
@@ -21595,7 +21608,8 @@
       "confidence": 81,
       "status": "won",
       "home_score": 0,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-08_Ligue 1_Brest_vs_Lyon",
@@ -21611,7 +21625,8 @@
       "confidence": 81,
       "status": "lost",
       "home_score": 2,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-11-08_Ligue 1_Lens_vs_Marseille",
@@ -21627,7 +21642,8 @@
       "confidence": 65,
       "status": "won",
       "home_score": 1,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-08_Serie A_Internazionale_vs_Como",
@@ -21643,7 +21659,8 @@
       "confidence": 64,
       "status": "won",
       "home_score": 2,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-11-08_La Liga_Madrid_vs_Barcelona",
@@ -21659,7 +21676,8 @@
       "confidence": 62,
       "status": "won",
       "home_score": 1,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-08_NBA_Kings_vs_Heat",
@@ -21675,7 +21693,8 @@
       "confidence": 92,
       "status": "won",
       "home_score": 108,
-      "away_score": 114
+      "away_score": 114,
+      "ig_posted": true
     },
     {
       "id": "2026-11-09_NBA_Pistons_vs_Wizards",
