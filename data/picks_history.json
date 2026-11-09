@@ -21284,9 +21284,9 @@
       "pick_label": "TB +1.5",
       "pick_team": "Tampa Bay Lightning",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "id": "2026-11-08_NHL_Ducks_vs_Penguins",
@@ -21676,15 +21676,111 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-11-09_NBA_Pistons_vs_Wizards",
+      "date": "2026-11-09",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Detroit Pistons",
+      "away_team": "Washington Wizards",
+      "home_abbr": "DET",
+      "away_abbr": "WSH",
+      "pick_label": "DET -10.5",
+      "pick_team": "Detroit Pistons",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-09_NBA_Suns_vs_Spurs",
+      "date": "2026-11-09",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Phoenix Suns",
+      "away_team": "San Antonio Spurs",
+      "home_abbr": "PHX",
+      "away_abbr": "SA",
+      "pick_label": "SA +8.5",
+      "pick_team": "San Antonio Spurs",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-09_NBA_Warriors_vs_Pelicans",
+      "date": "2026-11-09",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Golden State Warriors",
+      "away_team": "New Orleans Pelicans",
+      "home_abbr": "GS",
+      "away_abbr": "NO",
+      "pick_label": "GS ML",
+      "pick_team": "Golden State Warriors",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-09_NHL_Oilers_vs_Rangers",
+      "date": "2026-11-09",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Edmonton Oilers",
+      "away_team": "New York Rangers",
+      "home_abbr": "EDM",
+      "away_abbr": "NYR",
+      "pick_label": "EDM -1.5",
+      "pick_team": "Edmonton Oilers",
+      "confidence": 73,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-09_NHL_Sharks_vs_Islanders",
+      "date": "2026-11-09",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "San Jose Sharks",
+      "away_team": "New York Islanders",
+      "home_abbr": "SJ",
+      "away_abbr": "NYI",
+      "pick_label": "NYI +1.5",
+      "pick_team": "New York Islanders",
+      "confidence": 67,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-09_NHL_Canucks_vs_Flyers",
+      "date": "2026-11-09",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Vancouver Canucks",
+      "away_team": "Philadelphia Flyers",
+      "home_abbr": "VAN",
+      "away_abbr": "PHI",
+      "pick_label": "PHI +1.5",
+      "pick_team": "Philadelphia Flyers",
+      "confidence": 64,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 1174,
-    "wins": 641,
+    "total": 1175,
+    "wins": 642,
     "losses": 533,
-    "pending": 8,
+    "pending": 13,
     "win_pct": 54.6,
-    "current_streak": "W3",
+    "current_streak": "W4",
     "by_sport": {
       "basketball": {
         "w": 46,
@@ -21695,7 +21791,7 @@
         "l": 261
       },
       "hockey": {
-        "w": 68,
+        "w": 69,
         "l": 80
       },
       "futbol": {
