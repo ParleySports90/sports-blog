@@ -21710,7 +21710,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 122,
-      "away_score": 111
+      "away_score": 111,
+      "ig_posted": true
     },
     {
       "id": "2026-11-09_NBA_Suns_vs_Spurs",
@@ -21726,7 +21727,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 96,
-      "away_score": 122
+      "away_score": 122,
+      "ig_posted": true
     },
     {
       "id": "2026-11-09_NBA_Warriors_vs_Pelicans",
@@ -21742,7 +21744,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 138,
-      "away_score": 87
+      "away_score": 87,
+      "ig_posted": true
     },
     {
       "id": "2026-11-09_NHL_Oilers_vs_Rangers",
@@ -21758,7 +21761,8 @@
       "confidence": 73,
       "status": "won",
       "home_score": 3,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-09_NHL_Sharks_vs_Islanders",
@@ -21774,7 +21778,8 @@
       "confidence": 67,
       "status": "won",
       "home_score": 3,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-09_NHL_Canucks_vs_Flyers",
@@ -21790,7 +21795,8 @@
       "confidence": 64,
       "status": "won",
       "home_score": 1,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-11-10_NBA_Pistons_vs_Wizards",
