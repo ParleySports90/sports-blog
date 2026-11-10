@@ -21740,9 +21740,9 @@
       "pick_label": "GS ML",
       "pick_team": "Golden State Warriors",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 138,
+      "away_score": 87
     },
     {
       "id": "2026-11-09_NHL_Oilers_vs_Rangers",
@@ -21772,9 +21772,9 @@
       "pick_label": "NYI +1.5",
       "pick_team": "New York Islanders",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-11-09_NHL_Canucks_vs_Flyers",
@@ -21788,9 +21788,9 @@
       "pick_label": "PHI +1.5",
       "pick_team": "Philadelphia Flyers",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "id": "2026-11-10_NBA_Pistons_vs_Wizards",
@@ -21954,15 +21954,15 @@
     }
   ],
   "stats": {
-    "total": 1185,
-    "wins": 652,
+    "total": 1188,
+    "wins": 655,
     "losses": 533,
-    "pending": 13,
-    "win_pct": 55.0,
-    "current_streak": "W11",
+    "pending": 10,
+    "win_pct": 55.1,
+    "current_streak": "W14",
     "by_sport": {
       "basketball": {
-        "w": 52,
+        "w": 53,
         "l": 48
       },
       "baseball": {
@@ -21970,7 +21970,7 @@
         "l": 261
       },
       "hockey": {
-        "w": 73,
+        "w": 75,
         "l": 80
       },
       "futbol": {
