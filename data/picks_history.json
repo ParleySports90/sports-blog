@@ -21858,9 +21858,9 @@
       "pick_label": "NSH -1.5",
       "pick_team": "Nashville Predators",
       "confidence": 80,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "id": "2026-11-10_NHL_Jets_vs_Devils",
@@ -21874,9 +21874,9 @@
       "pick_label": "NJ +1.5",
       "pick_team": "New Jersey Devils",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "id": "2026-11-10_NHL_Leafs_vs_Avalanche",
@@ -21890,9 +21890,9 @@
       "pick_label": "COL +1.5",
       "pick_team": "Colorado Avalanche",
       "confidence": 67,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 6
     },
     {
       "id": "2026-11-10_NBA_Knicks_vs_Bucks",
@@ -21906,9 +21906,9 @@
       "pick_label": "NY -15.5",
       "pick_team": "New York Knicks",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 117,
+      "away_score": 85
     },
     {
       "id": "2026-11-10_NBA_Jazz_vs_Heat",
@@ -21922,9 +21922,9 @@
       "pick_label": "MIA ML",
       "pick_team": "Miami Heat",
       "confidence": 90,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 109,
+      "away_score": 115
     },
     {
       "id": "2026-11-10_NBA_Suns_vs_Clippers",
@@ -21938,9 +21938,9 @@
       "pick_label": "PHX ML",
       "pick_team": "Phoenix Suns",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 133,
+      "away_score": 110
     },
     {
       "id": "2026-11-10_NBA_Kings_vs_Magic",
@@ -21954,9 +21954,9 @@
       "pick_label": "ORL 5.5",
       "pick_team": "Orlando Magic",
       "confidence": 82,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 100,
+      "away_score": 107
     },
     {
       "id": "2026-11-11_NBA_Bulls_vs_Spurs",
@@ -22053,18 +22053,50 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-11-11_NHL_Ducks_vs_Predators",
+      "date": "2026-11-11",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Anaheim Ducks",
+      "away_team": "Nashville Predators",
+      "home_abbr": "ANA",
+      "away_abbr": "NSH",
+      "pick_label": "NSH -1.5",
+      "pick_team": "Nashville Predators",
+      "confidence": 65,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-11_NBA_Jazz_vs_Magic",
+      "date": "2026-11-11",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Utah Jazz",
+      "away_team": "Orlando Magic",
+      "home_abbr": "UTAH",
+      "away_abbr": "ORL",
+      "pick_label": "ORL 4.5",
+      "pick_team": "Orlando Magic",
+      "confidence": 87,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 1188,
-    "wins": 655,
-    "losses": 533,
-    "pending": 16,
-    "win_pct": 55.1,
-    "current_streak": "W14",
+    "total": 1195,
+    "wins": 661,
+    "losses": 534,
+    "pending": 11,
+    "win_pct": 55.3,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
-        "w": 53,
+        "w": 57,
         "l": 48
       },
       "baseball": {
@@ -22072,8 +22104,8 @@
         "l": 261
       },
       "hockey": {
-        "w": 75,
-        "l": 80
+        "w": 77,
+        "l": 81
       },
       "futbol": {
         "w": 246,
