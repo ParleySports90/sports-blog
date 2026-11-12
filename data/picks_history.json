@@ -21993,9 +21993,9 @@
       "pick_label": "LAL ML",
       "pick_team": "Los Angeles Lakers",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 112,
+      "away_score": 123
     },
     {
       "id": "2026-11-11_NBA_Pelicans_vs_Nets",
@@ -22009,9 +22009,9 @@
       "pick_label": "NO -4.5",
       "pick_team": "New Orleans Pelicans",
       "confidence": 89,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 111,
+      "away_score": 145
     },
     {
       "id": "2026-11-11_NHL_Oilers_vs_Flyers",
@@ -22025,9 +22025,9 @@
       "pick_label": "EDM -1.5",
       "pick_team": "Edmonton Oilers",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-11-11_NHL_Sabres_vs_Lightning",
@@ -22057,9 +22057,9 @@
       "pick_label": "VGK -1.5",
       "pick_team": "Vegas Golden Knights",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 3
     },
     {
       "id": "2026-11-11_NHL_Ducks_vs_Predators",
@@ -22073,9 +22073,9 @@
       "pick_label": "NSH -1.5",
       "pick_team": "Nashville Predators",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 4
     },
     {
       "id": "2026-11-11_NBA_Jazz_vs_Magic",
@@ -22089,9 +22089,9 @@
       "pick_label": "ORL 4.5",
       "pick_team": "Orlando Magic",
       "confidence": 87,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 108,
+      "away_score": 123
     },
     {
       "id": "2026-11-12_NBA_Wizards_vs_Pistons",
@@ -22191,24 +22191,24 @@
     }
   ],
   "stats": {
-    "total": 1197,
-    "wins": 663,
-    "losses": 534,
-    "pending": 15,
+    "total": 1203,
+    "wins": 667,
+    "losses": 536,
+    "pending": 9,
     "win_pct": 55.4,
-    "current_streak": "W3",
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
-        "w": 58,
-        "l": 48
+        "w": 60,
+        "l": 49
       },
       "baseball": {
         "w": 281,
         "l": 261
       },
       "hockey": {
-        "w": 78,
-        "l": 81
+        "w": 80,
+        "l": 82
       },
       "futbol": {
         "w": 246,
