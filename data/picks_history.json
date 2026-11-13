@@ -22113,9 +22113,9 @@
       "pick_label": "DET ML",
       "pick_team": "Detroit Pistons",
       "confidence": 90,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 140,
+      "away_score": 144
     },
     {
       "id": "2026-11-12_NBA_76ers_vs_Raptors",
@@ -22145,9 +22145,9 @@
       "pick_label": "MIN -4.5",
       "pick_team": "Minnesota Timberwolves",
       "confidence": 80,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 133,
+      "away_score": 94
     },
     {
       "id": "2026-11-12_NHL_Leafs_vs_Wild",
@@ -22193,9 +22193,9 @@
       "pick_label": "BUF +1.5",
       "pick_team": "Buffalo Sabres",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-11-13_NBA_Pacers_vs_Knicks",
@@ -22279,15 +22279,15 @@
     }
   ],
   "stats": {
-    "total": 1206,
-    "wins": 670,
+    "total": 1209,
+    "wins": 673,
     "losses": 536,
-    "pending": 11,
-    "win_pct": 55.6,
-    "current_streak": "W5",
+    "pending": 8,
+    "win_pct": 55.7,
+    "current_streak": "W8",
     "by_sport": {
       "basketball": {
-        "w": 61,
+        "w": 63,
         "l": 49
       },
       "baseball": {
@@ -22295,7 +22295,7 @@
         "l": 261
       },
       "hockey": {
-        "w": 82,
+        "w": 83,
         "l": 82
       },
       "futbol": {
