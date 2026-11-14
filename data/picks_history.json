@@ -22225,9 +22225,9 @@
       "pick_label": "ATL +6.5",
       "pick_team": "Atlanta Hawks",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 125,
+      "away_score": 117
     },
     {
       "id": "2026-11-13_NBA_Pelicans_vs_Grizzlies",
@@ -22241,9 +22241,9 @@
       "pick_label": "MEM +3.5",
       "pick_team": "Memphis Grizzlies",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 111,
+      "away_score": 142
     },
     {
       "id": "2026-11-13_NHL_Canucks_vs_Rangers",
@@ -22257,9 +22257,9 @@
       "pick_label": "NYR +1.5",
       "pick_team": "New York Rangers",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 5
     },
     {
       "id": "2026-11-13_NBA_Rockets_vs_Jazz",
@@ -22273,9 +22273,9 @@
       "pick_label": "HOU -17.5",
       "pick_team": "Houston Rockets",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 125,
+      "away_score": 118
     },
     {
       "id": "2026-11-14_NBA_Heat_vs_Pistons",
@@ -22375,23 +22375,23 @@
     }
   ],
   "stats": {
-    "total": 1210,
-    "wins": 674,
-    "losses": 536,
-    "pending": 10,
+    "total": 1214,
+    "wins": 676,
+    "losses": 538,
+    "pending": 6,
     "win_pct": 55.7,
-    "current_streak": "W9",
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
-        "w": 64,
-        "l": 49
+        "w": 65,
+        "l": 51
       },
       "baseball": {
         "w": 281,
         "l": 261
       },
       "hockey": {
-        "w": 83,
+        "w": 84,
         "l": 82
       },
       "futbol": {
