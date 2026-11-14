@@ -22209,9 +22209,9 @@
       "pick_label": "NY +6.5",
       "pick_team": "New York Knicks",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 106,
+      "away_score": 104
     },
     {
       "id": "2026-11-13_NBA_Bulls_vs_Hawks",
@@ -22375,15 +22375,15 @@
     }
   ],
   "stats": {
-    "total": 1209,
-    "wins": 673,
+    "total": 1210,
+    "wins": 674,
     "losses": 536,
-    "pending": 11,
+    "pending": 10,
     "win_pct": 55.7,
-    "current_streak": "W8",
+    "current_streak": "W9",
     "by_sport": {
       "basketball": {
-        "w": 63,
+        "w": 64,
         "l": 49
       },
       "baseball": {
