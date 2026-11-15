@@ -22436,9 +22436,9 @@
       "pick_label": "PHI -7.5",
       "pick_team": "Philadelphia 76ers",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 131,
+      "away_score": 124
     },
     {
       "id": "2026-11-15_NBA_Jazz_vs_Spurs",
@@ -22535,19 +22535,35 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-11-15_NBA_Wizards_vs_Rockets",
+      "date": "2026-11-15",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Washington Wizards",
+      "away_team": "Houston Rockets",
+      "home_abbr": "WSH",
+      "away_abbr": "HOU",
+      "pick_label": "HOU +9.5",
+      "pick_team": "Houston Rockets",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 1222,
+    "total": 1223,
     "wins": 681,
-    "losses": 541,
+    "losses": 542,
     "pending": 7,
     "win_pct": 55.7,
-    "current_streak": "L2",
+    "current_streak": "L3",
     "by_sport": {
       "basketball": {
         "w": 66,
-        "l": 53
+        "l": 54
       },
       "baseball": {
         "w": 281,
