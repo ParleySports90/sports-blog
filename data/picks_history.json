@@ -22302,7 +22302,8 @@
       "confidence": 95,
       "status": "lost",
       "home_score": 137,
-      "away_score": 117
+      "away_score": 117,
+      "ig_posted": true
     },
     {
       "id": "2026-11-14_NBA_Timberwolves_vs_Bulls",
@@ -22318,7 +22319,8 @@
       "confidence": 95,
       "status": "lost",
       "home_score": 106,
-      "away_score": 117
+      "away_score": 117,
+      "ig_posted": true
     },
     {
       "id": "2026-11-14_NBA_Pelicans_vs_Nuggets",
@@ -22334,7 +22336,8 @@
       "confidence": 83,
       "status": "won",
       "home_score": 108,
-      "away_score": 116
+      "away_score": 116,
+      "ig_posted": true
     },
     {
       "id": "2026-11-14_NHL_Hurricanes_vs_Kraken",
@@ -22350,7 +22353,8 @@
       "confidence": 77,
       "status": "won",
       "home_score": 5,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-14_NHL_Blackhawks_vs_Jets",
@@ -22366,7 +22370,8 @@
       "confidence": 77,
       "status": "won",
       "home_score": 4,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-11-14_NHL_Leafs_vs_Oilers",
@@ -22382,7 +22387,8 @@
       "confidence": 77,
       "status": "won",
       "home_score": 0,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-14_NHL_Lightning_vs_Wings",
@@ -22398,7 +22404,8 @@
       "confidence": 77,
       "status": "lost",
       "home_score": 0,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-14_NHL_Penguins_vs_Senators",
@@ -22414,7 +22421,8 @@
       "confidence": 77,
       "status": "won",
       "home_score": 1,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-11-15_NBA_76ers_vs_Pacers",
