@@ -22484,9 +22484,9 @@
       "pick_label": "EDM +1.5",
       "pick_team": "Edmonton Oilers",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 5
     },
     {
       "id": "2026-11-15_NHL_Knights_vs_Canucks",
@@ -22500,9 +22500,9 @@
       "pick_label": "VGK -1.5",
       "pick_team": "Vegas Golden Knights",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 6
     },
     {
       "id": "2026-11-15_NHL_Sharks_vs_Predators",
@@ -22516,9 +22516,9 @@
       "pick_label": "NSH +1.5",
       "pick_team": "Nashville Predators",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "id": "2026-11-15_NBA_Bucks_vs_Hawks",
@@ -22532,9 +22532,9 @@
       "pick_label": "ATL ML",
       "pick_team": "Atlanta Hawks",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 106,
+      "away_score": 113
     },
     {
       "id": "2026-11-15_NBA_Wizards_vs_Rockets",
@@ -22548,9 +22548,9 @@
       "pick_label": "HOU +9.5",
       "pick_team": "Houston Rockets",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 119,
+      "away_score": 147
     },
     {
       "id": "2026-11-16_NBA_Celtics_vs_Magic",
@@ -22634,15 +22634,15 @@
     }
   ],
   "stats": {
-    "total": 1225,
-    "wins": 683,
-    "losses": 542,
-    "pending": 10,
+    "total": 1230,
+    "wins": 686,
+    "losses": 544,
+    "pending": 5,
     "win_pct": 55.8,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
-        "w": 68,
+        "w": 70,
         "l": 54
       },
       "baseball": {
@@ -22650,8 +22650,8 @@
         "l": 261
       },
       "hockey": {
-        "w": 88,
-        "l": 83
+        "w": 89,
+        "l": 85
       },
       "futbol": {
         "w": 246,
