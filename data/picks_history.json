@@ -22452,9 +22452,9 @@
       "pick_label": "SA +16.5",
       "pick_team": "San Antonio Spurs",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 102,
+      "away_score": 110
     },
     {
       "id": "2026-11-15_NBA_Celtics_vs_Mavericks",
@@ -22468,9 +22468,9 @@
       "pick_label": "BOS ML",
       "pick_team": "Boston Celtics",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 131,
+      "away_score": 94
     },
     {
       "id": "2026-11-15_NHL_Flyers_vs_Oilers",
@@ -22551,18 +22551,98 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-11-16_NBA_Celtics_vs_Magic",
+      "date": "2026-11-16",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Boston Celtics",
+      "away_team": "Orlando Magic",
+      "home_abbr": "BOS",
+      "away_abbr": "ORL",
+      "pick_label": "BOS -10.5",
+      "pick_team": "Boston Celtics",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-16_NBA_Cavaliers_vs_Bulls",
+      "date": "2026-11-16",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Cleveland Cavaliers",
+      "away_team": "Chicago Bulls",
+      "home_abbr": "CLE",
+      "away_abbr": "CHI",
+      "pick_label": "CLE ML",
+      "pick_team": "Cleveland Cavaliers",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-16_NBA_Wizards_vs_Grizzlies",
+      "date": "2026-11-16",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Washington Wizards",
+      "away_team": "Memphis Grizzlies",
+      "home_abbr": "WSH",
+      "away_abbr": "MEM",
+      "pick_label": "MEM ML",
+      "pick_team": "Memphis Grizzlies",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-16_NHL_Mammoth_vs_Canucks",
+      "date": "2026-11-16",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Utah Mammoth",
+      "away_team": "Vancouver Canucks",
+      "home_abbr": "UTAH",
+      "away_abbr": "VAN",
+      "pick_label": "UTAH -1.5",
+      "pick_team": "Utah Mammoth",
+      "confidence": 77,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-16_NHL_Rangers_vs_Canadiens",
+      "date": "2026-11-16",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "New York Rangers",
+      "away_team": "Montreal Canadiens",
+      "home_abbr": "NYR",
+      "away_abbr": "MTL",
+      "pick_label": "MTL -1.5",
+      "pick_team": "Montreal Canadiens",
+      "confidence": 70,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 1223,
-    "wins": 681,
+    "total": 1225,
+    "wins": 683,
     "losses": 542,
-    "pending": 7,
-    "win_pct": 55.7,
-    "current_streak": "L3",
+    "pending": 10,
+    "win_pct": 55.8,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
-        "w": 66,
+        "w": 68,
         "l": 54
       },
       "baseball": {
