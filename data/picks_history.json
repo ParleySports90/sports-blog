@@ -22636,9 +22636,9 @@
       "pick_label": "MTL -1.5",
       "pick_team": "Montreal Canadiens",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-11-17_NBA_Clippers_vs_Jazz",
@@ -22738,10 +22738,10 @@
     }
   ],
   "stats": {
-    "total": 1233,
+    "total": 1234,
     "wins": 688,
-    "losses": 545,
-    "pending": 8,
+    "losses": 546,
+    "pending": 7,
     "win_pct": 55.8,
     "current_streak": "L1",
     "by_sport": {
@@ -22755,7 +22755,7 @@
       },
       "hockey": {
         "w": 89,
-        "l": 85
+        "l": 86
       },
       "futbol": {
         "w": 246,
