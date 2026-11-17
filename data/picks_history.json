@@ -22572,9 +22572,9 @@
       "pick_label": "BOS -10.5",
       "pick_team": "Boston Celtics",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 105,
+      "away_score": 115
     },
     {
       "id": "2026-11-16_NBA_Cavaliers_vs_Bulls",
@@ -22588,9 +22588,9 @@
       "pick_label": "CLE ML",
       "pick_team": "Cleveland Cavaliers",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 126,
+      "away_score": 115
     },
     {
       "id": "2026-11-16_NBA_Wizards_vs_Grizzlies",
@@ -22604,9 +22604,9 @@
       "pick_label": "MEM ML",
       "pick_team": "Memphis Grizzlies",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 120,
+      "away_score": 136
     },
     {
       "id": "2026-11-16_NHL_Mammoth_vs_Canucks",
@@ -22738,16 +22738,16 @@
     }
   ],
   "stats": {
-    "total": 1230,
-    "wins": 686,
-    "losses": 544,
-    "pending": 11,
+    "total": 1233,
+    "wins": 688,
+    "losses": 545,
+    "pending": 8,
     "win_pct": 55.8,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
-        "w": 70,
-        "l": 54
+        "w": 72,
+        "l": 55
       },
       "baseball": {
         "w": 281,
