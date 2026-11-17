@@ -22620,9 +22620,9 @@
       "pick_label": "UTAH -1.5",
       "pick_team": "Utah Mammoth",
       "confidence": 77,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-11-16_NHL_Rangers_vs_Canadiens",
@@ -22738,11 +22738,11 @@
     }
   ],
   "stats": {
-    "total": 1234,
+    "total": 1235,
     "wins": 688,
-    "losses": 546,
-    "pending": 7,
-    "win_pct": 55.8,
+    "losses": 547,
+    "pending": 6,
+    "win_pct": 55.7,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
@@ -22755,7 +22755,7 @@
       },
       "hockey": {
         "w": 89,
-        "l": 86
+        "l": 87
       },
       "futbol": {
         "w": 246,
