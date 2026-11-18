@@ -22657,9 +22657,9 @@
       "pick_label": "LAC ML",
       "pick_team": "LA Clippers",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 107,
+      "away_score": 132
     },
     {
       "id": "2026-11-17_NBA_Lakers_vs_Hornets",
@@ -22673,9 +22673,9 @@
       "pick_label": "LAL ML",
       "pick_team": "Los Angeles Lakers",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 118,
+      "away_score": 114
     },
     {
       "id": "2026-11-17_NBA_Raptors_vs_Knicks",
@@ -22823,16 +22823,16 @@
     }
   ],
   "stats": {
-    "total": 1239,
-    "wins": 691,
-    "losses": 548,
-    "pending": 7,
+    "total": 1241,
+    "wins": 692,
+    "losses": 549,
+    "pending": 5,
     "win_pct": 55.8,
-    "current_streak": "W1",
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
-        "w": 73,
-        "l": 55
+        "w": 74,
+        "l": 56
       },
       "baseball": {
         "w": 281,
