@@ -22761,7 +22761,8 @@
       "confidence": 95,
       "status": "lost",
       "home_score": 137,
-      "away_score": 130
+      "away_score": 130,
+      "ig_posted": true
     },
     {
       "id": "2026-11-18_NBA_Magic_vs_76ers",
@@ -22777,7 +22778,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 116,
-      "away_score": 121
+      "away_score": 121,
+      "ig_posted": true
     },
     {
       "id": "2026-11-18_NBA_Lakers_vs_Jazz",
@@ -22793,7 +22795,8 @@
       "confidence": 95,
       "status": "lost",
       "home_score": 97,
-      "away_score": 109
+      "away_score": 109,
+      "ig_posted": true
     },
     {
       "id": "2026-11-18_NHL_Wings_vs_Bruins",
@@ -22809,7 +22812,8 @@
       "confidence": 73,
       "status": "won",
       "home_score": 1,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-11-18_NHL_Mammoth_vs_Avalanche",
@@ -22825,7 +22829,8 @@
       "confidence": 64,
       "status": "lost",
       "home_score": 4,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-19_NBA_Bucks_vs_Blazers",
