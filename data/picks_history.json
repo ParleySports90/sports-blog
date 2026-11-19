@@ -22759,9 +22759,9 @@
       "pick_label": "MIA -12.5",
       "pick_team": "Miami Heat",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 137,
+      "away_score": 130
     },
     {
       "id": "2026-11-18_NBA_Magic_vs_76ers",
@@ -22775,9 +22775,9 @@
       "pick_label": "PHI 1.5",
       "pick_team": "Philadelphia 76ers",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 116,
+      "away_score": 121
     },
     {
       "id": "2026-11-18_NBA_Lakers_vs_Jazz",
@@ -22807,9 +22807,9 @@
       "pick_label": "BOS -1.5",
       "pick_team": "Boston Bruins",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 4
     },
     {
       "id": "2026-11-18_NHL_Mammoth_vs_Avalanche",
@@ -22922,26 +22922,42 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-11-19_NBA_Grizzlies_vs_Warriors",
+      "date": "2026-11-19",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Memphis Grizzlies",
+      "away_team": "Golden State Warriors",
+      "home_abbr": "MEM",
+      "away_abbr": "GS",
+      "pick_label": "MEM ML",
+      "pick_team": "Memphis Grizzlies",
+      "confidence": 78,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 1241,
-    "wins": 692,
-    "losses": 549,
-    "pending": 11,
+    "total": 1244,
+    "wins": 694,
+    "losses": 550,
+    "pending": 9,
     "win_pct": 55.8,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
-        "w": 74,
-        "l": 56
+        "w": 75,
+        "l": 57
       },
       "baseball": {
         "w": 281,
         "l": 261
       },
       "hockey": {
-        "w": 91,
+        "w": 92,
         "l": 88
       },
       "futbol": {
