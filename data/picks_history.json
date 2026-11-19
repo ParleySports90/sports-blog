@@ -22791,9 +22791,9 @@
       "pick_label": "LAL ML",
       "pick_team": "Los Angeles Lakers",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 97,
+      "away_score": 109
     },
     {
       "id": "2026-11-18_NHL_Wings_vs_Bruins",
@@ -22823,9 +22823,9 @@
       "pick_label": "COL -1.5",
       "pick_team": "Colorado Avalanche",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "id": "2026-11-19_NBA_Bucks_vs_Blazers",
@@ -22941,16 +22941,16 @@
     }
   ],
   "stats": {
-    "total": 1244,
+    "total": 1246,
     "wins": 694,
-    "losses": 550,
-    "pending": 9,
-    "win_pct": 55.8,
+    "losses": 552,
+    "pending": 7,
+    "win_pct": 55.7,
     "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 75,
-        "l": 57
+        "l": 58
       },
       "baseball": {
         "w": 281,
@@ -22958,7 +22958,7 @@
       },
       "hockey": {
         "w": 92,
-        "l": 88
+        "l": 89
       },
       "futbol": {
         "w": 246,
