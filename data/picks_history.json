@@ -23011,9 +23011,9 @@
       "pick_label": "MUN ML",
       "pick_team": "Bayern Munich",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-11-20_Ligue 1_Troyes_vs_AC",
@@ -23027,9 +23027,9 @@
       "pick_label": "TRY ML",
       "pick_team": "Troyes",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "id": "2026-11-20_La Liga_Club_vs_Espanyol",
@@ -23043,18 +23043,18 @@
       "pick_label": "ATH ML",
       "pick_team": "Athletic Club",
       "confidence": 65,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 1
     }
   ],
   "stats": {
-    "total": 1253,
-    "wins": 699,
-    "losses": 554,
-    "pending": 6,
+    "total": 1255,
+    "wins": 700,
+    "losses": 555,
+    "pending": 3,
     "win_pct": 55.8,
-    "current_streak": "W2",
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 78,
@@ -23069,8 +23069,8 @@
         "l": 90
       },
       "futbol": {
-        "w": 246,
-        "l": 144
+        "w": 247,
+        "l": 145
       }
     }
   }
