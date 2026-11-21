@@ -23160,9 +23160,9 @@
       "pick_label": "BET ML",
       "pick_team": "Real Betis",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-11-21_La Liga_Madrid_vs_Vigo",
@@ -23208,9 +23208,9 @@
       "pick_label": "ARS ML",
       "pick_team": "Arsenal",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "id": "2026-11-21_Bundesliga_Berlin_vs_Leipzig",
@@ -23275,9 +23275,9 @@
       "pick_label": "VFB ML",
       "pick_team": "VfB Stuttgart",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-11-21_Serie A_Lazio_vs_Lecce",
@@ -23308,9 +23308,9 @@
       "pick_label": "ROMA ML",
       "pick_team": "AS Roma",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 5
     },
     {
       "id": "2026-11-21_Bundesliga_Elversberg_vs_Freiburg",
@@ -23358,9 +23358,9 @@
       "pick_label": "PSG ML",
       "pick_team": "Paris Saint-Germain",
       "confidence": 78,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-11-21_La Liga_Vallecano_vs_Valencia",
@@ -23374,9 +23374,9 @@
       "pick_label": "RAY ML",
       "pick_team": "Rayo Vallecano",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "id": "2026-11-21_Ligue 1_Monaco_vs_Auxerre",
@@ -23460,12 +23460,12 @@
     }
   ],
   "stats": {
-    "total": 1264,
-    "wins": 708,
-    "losses": 556,
-    "pending": 18,
+    "total": 1267,
+    "wins": 710,
+    "losses": 557,
+    "pending": 12,
     "win_pct": 56.0,
-    "current_streak": "W7",
+    "current_streak": "W8",
     "by_sport": {
       "basketball": {
         "w": 80,
@@ -23480,8 +23480,8 @@
         "l": 90
       },
       "futbol": {
-        "w": 253,
-        "l": 145
+        "w": 255,
+        "l": 146
       }
     }
   }
