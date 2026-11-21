@@ -22963,9 +22963,9 @@
       "pick_label": "OKC ML",
       "pick_team": "Oklahoma City Thunder",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 126,
+      "away_score": 120
     },
     {
       "id": "2026-11-20_NBA_Lakers_vs_Kings",
@@ -22995,9 +22995,9 @@
       "pick_label": "ATL -5.5",
       "pick_team": "Atlanta Hawks",
       "confidence": 92,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 111,
+      "away_score": 97
     },
     {
       "id": "2026-11-20_Bundesliga_Munich_vs_Cologne",
@@ -23337,15 +23337,15 @@
     }
   ],
   "stats": {
-    "total": 1255,
-    "wins": 700,
+    "total": 1257,
+    "wins": 702,
     "losses": 555,
-    "pending": 21,
+    "pending": 19,
     "win_pct": 55.8,
-    "current_streak": "W1",
+    "current_streak": "W3",
     "by_sport": {
       "basketball": {
-        "w": 78,
+        "w": 80,
         "l": 59
       },
       "baseball": {
