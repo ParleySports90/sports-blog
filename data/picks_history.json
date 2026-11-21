@@ -22979,9 +22979,9 @@
       "pick_label": "LAL -14.5",
       "pick_team": "Los Angeles Lakers",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 106,
+      "away_score": 104
     },
     {
       "id": "2026-11-20_NBA_Hawks_vs_Hornets",
@@ -23337,16 +23337,16 @@
     }
   ],
   "stats": {
-    "total": 1257,
+    "total": 1258,
     "wins": 702,
-    "losses": 555,
-    "pending": 19,
+    "losses": 556,
+    "pending": 18,
     "win_pct": 55.8,
-    "current_streak": "W3",
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 80,
-        "l": 59
+        "l": 60
       },
       "baseball": {
         "w": 281,
