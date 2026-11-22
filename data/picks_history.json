@@ -23066,7 +23066,8 @@
       "confidence": 95,
       "status": "lost",
       "home_score": 132,
-      "away_score": 129
+      "away_score": 129,
+      "ig_posted": true
     },
     {
       "id": "2026-11-21_NBA_Spurs_vs_Pelicans",
@@ -23082,7 +23083,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 114,
-      "away_score": 91
+      "away_score": 91,
+      "ig_posted": true
     },
     {
       "id": "2026-11-21_NBA_Kings_vs_Celtics",
@@ -23098,7 +23100,8 @@
       "confidence": 95,
       "status": "lost",
       "home_score": 97,
-      "away_score": 96
+      "away_score": 96,
+      "ig_posted": true
     },
     {
       "id": "2026-11-21_NHL_Predators_vs_Penguins",
@@ -23114,7 +23117,8 @@
       "confidence": 75,
       "status": "lost",
       "home_score": 4,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-11-21_NHL_Canadiens_vs_Flyers",
@@ -23130,7 +23134,8 @@
       "confidence": 75,
       "status": "lost",
       "home_score": 3,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-11-21_NHL_Senators_vs_Kings",
@@ -23146,7 +23151,8 @@
       "confidence": 75,
       "status": "won",
       "home_score": 4,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-21_La Liga_Sevilla_vs_Betis",
@@ -23178,7 +23184,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 2,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-21_Premier League_City_vs_Fulham",
@@ -23310,7 +23317,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 1,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-11-21_Bundesliga_Elversberg_vs_Freiburg",
@@ -23360,7 +23368,8 @@
       "confidence": 78,
       "status": "won",
       "home_score": 2,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-11-21_La Liga_Vallecano_vs_Valencia",
@@ -23376,7 +23385,8 @@
       "confidence": 64,
       "status": "lost",
       "home_score": 0,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-21_Ligue 1_Monaco_vs_Auxerre",
@@ -23424,7 +23434,8 @@
       "confidence": 64,
       "status": "lost",
       "home_score": 0,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-21_Ligue 1_Strasbourg_vs_Brest",
@@ -23440,7 +23451,8 @@
       "confidence": 64,
       "status": "won",
       "home_score": 0,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-21_Copa Sudamericana_Atlético-MG_vs_Juniors",
@@ -23456,7 +23468,8 @@
       "confidence": 64,
       "status": "won",
       "home_score": 0,
-      "away_score": 2
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_NBA_Bulls_vs_Nuggets",
@@ -23566,9 +23579,10 @@
       "pick_label": "BAR ML",
       "pick_team": "Barcelona",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 3,
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_La Liga_Santander_vs_Sociedad",
@@ -23582,9 +23596,10 @@
       "pick_label": "RSO ML",
       "pick_team": "Real Sociedad",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_La Liga_Osasuna_vs_Málaga",
@@ -23630,9 +23645,10 @@
       "pick_label": "BHA ML",
       "pick_team": "Brighton & Hove Albion",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_Premier League_Liverpool_vs_United",
@@ -23662,9 +23678,10 @@
       "pick_label": "JUV ML",
       "pick_team": "Juventus",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_Serie A_Bologna_vs_Udinese",
@@ -23678,9 +23695,9 @@
       "pick_label": "BOL ML",
       "pick_team": "Bologna",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-11-22_Serie A_Atalanta_vs_Internazionale",
@@ -23710,9 +23727,10 @@
       "pick_label": "PAR ML",
       "pick_team": "Paris FC",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_Ligue 1_Marseille_vs_Mans",
@@ -23742,9 +23760,10 @@
       "pick_label": "GEN ML",
       "pick_team": "Genoa",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_NBA_Jazz_vs_Mavericks",
@@ -23761,15 +23780,47 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-11-22_Ligue 1_Lorient_vs_Rennais",
+      "date": "2026-11-22",
+      "league": "Ligue 1",
+      "sport": "futbol",
+      "home_team": "Lorient",
+      "away_team": "Stade Rennais",
+      "home_abbr": "LOR",
+      "away_abbr": "REN",
+      "pick_label": "REN ML",
+      "pick_team": "Stade Rennais",
+      "confidence": 64,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-22_Serie A_Milan_vs_Frosinone",
+      "date": "2026-11-22",
+      "league": "Serie A",
+      "sport": "futbol",
+      "home_team": "AC Milan",
+      "away_team": "Frosinone",
+      "home_abbr": "MIL",
+      "away_abbr": "FRO",
+      "pick_label": "MIL ML",
+      "pick_team": "AC Milan",
+      "confidence": 62,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 1277,
-    "wins": 715,
-    "losses": 562,
-    "pending": 19,
+    "total": 1283,
+    "wins": 719,
+    "losses": 564,
+    "pending": 14,
     "win_pct": 56.0,
-    "current_streak": "L1",
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
         "w": 81,
@@ -23784,8 +23835,8 @@
         "l": 92
       },
       "futbol": {
-        "w": 258,
-        "l": 147
+        "w": 262,
+        "l": 149
       }
     }
   }
