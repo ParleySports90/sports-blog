@@ -23112,9 +23112,9 @@
       "pick_label": "NSH -1.5",
       "pick_team": "Nashville Predators",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "id": "2026-11-21_NHL_Canadiens_vs_Flyers",
@@ -23128,9 +23128,9 @@
       "pick_label": "MTL -1.5",
       "pick_team": "Montreal Canadiens",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 4
     },
     {
       "id": "2026-11-21_NHL_Senators_vs_Kings",
@@ -23454,9 +23454,9 @@
       "pick_label": "CABJ ML",
       "pick_team": "Boca Juniors",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "id": "2026-11-22_NBA_Bulls_vs_Nuggets",
@@ -23748,12 +23748,12 @@
     }
   ],
   "stats": {
-    "total": 1271,
-    "wins": 712,
-    "losses": 559,
-    "pending": 24,
+    "total": 1274,
+    "wins": 713,
+    "losses": 561,
+    "pending": 21,
     "win_pct": 56.0,
-    "current_streak": "L1",
+    "current_streak": "L3",
     "by_sport": {
       "basketball": {
         "w": 80,
@@ -23765,10 +23765,10 @@
       },
       "hockey": {
         "w": 94,
-        "l": 90
+        "l": 92
       },
       "futbol": {
-        "w": 257,
+        "w": 258,
         "l": 147
       }
     }
