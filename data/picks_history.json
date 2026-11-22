@@ -23080,9 +23080,9 @@
       "pick_label": "SA ML",
       "pick_team": "San Antonio Spurs",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 114,
+      "away_score": 91
     },
     {
       "id": "2026-11-21_NBA_Kings_vs_Celtics",
@@ -23096,9 +23096,9 @@
       "pick_label": "BOS ML",
       "pick_team": "Boston Celtics",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 97,
+      "away_score": 96
     },
     {
       "id": "2026-11-21_NHL_Predators_vs_Penguins",
@@ -23144,9 +23144,9 @@
       "pick_label": "OTT -1.5",
       "pick_team": "Ottawa Senators",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "id": "2026-11-21_La Liga_Sevilla_vs_Betis",
@@ -23745,26 +23745,42 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-11-22_NBA_Jazz_vs_Mavericks",
+      "date": "2026-11-22",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Utah Jazz",
+      "away_team": "Dallas Mavericks",
+      "home_abbr": "UTAH",
+      "away_abbr": "DAL",
+      "pick_label": "DAL 1.5",
+      "pick_team": "Dallas Mavericks",
+      "confidence": 83,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 1274,
-    "wins": 713,
-    "losses": 561,
-    "pending": 21,
+    "total": 1277,
+    "wins": 715,
+    "losses": 562,
+    "pending": 19,
     "win_pct": 56.0,
-    "current_streak": "L3",
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
-        "w": 80,
-        "l": 61
+        "w": 81,
+        "l": 62
       },
       "baseball": {
         "w": 281,
         "l": 261
       },
       "hockey": {
-        "w": 94,
+        "w": 95,
         "l": 92
       },
       "futbol": {
