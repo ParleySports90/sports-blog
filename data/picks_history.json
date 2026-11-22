@@ -23563,9 +23563,9 @@
       "pick_label": "CAR 1.5",
       "pick_team": "Carolina Hurricanes",
       "confidence": 73,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 5
     },
     {
       "id": "2026-11-22_La Liga_Barcelona_vs_Villarreal",
@@ -23613,9 +23613,9 @@
       "pick_label": "OSA ML",
       "pick_team": "Osasuna",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-11-22_La Liga_Getafe_vs_Madrid",
@@ -23662,9 +23662,9 @@
       "pick_label": "LIV ML",
       "pick_team": "Liverpool",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 4,
+      "away_score": 0
     },
     {
       "id": "2026-11-22_Serie A_Juventus_vs_Venezia",
@@ -23793,9 +23793,9 @@
       "pick_label": "REN ML",
       "pick_team": "Stade Rennais",
       "confidence": 64,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "id": "2026-11-22_Serie A_Milan_vs_Frosinone",
@@ -23809,18 +23809,34 @@
       "pick_label": "MIL ML",
       "pick_team": "AC Milan",
       "confidence": 62,
+      "status": "won",
+      "home_score": 5,
+      "away_score": 1
+    },
+    {
+      "id": "2026-11-22_NHL_Blues_vs_Oilers",
+      "date": "2026-11-22",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "St. Louis Blues",
+      "away_team": "Edmonton Oilers",
+      "home_abbr": "STL",
+      "away_abbr": "EDM",
+      "pick_label": "EDM -1.5",
+      "pick_team": "Edmonton Oilers",
+      "confidence": 70,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 1283,
-    "wins": 719,
+    "total": 1287,
+    "wins": 723,
     "losses": 564,
-    "pending": 14,
-    "win_pct": 56.0,
-    "current_streak": "W1",
+    "pending": 10,
+    "win_pct": 56.2,
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
         "w": 81,
@@ -23831,11 +23847,11 @@
         "l": 261
       },
       "hockey": {
-        "w": 95,
+        "w": 96,
         "l": 92
       },
       "futbol": {
-        "w": 262,
+        "w": 265,
         "l": 149
       }
     }
