@@ -23629,9 +23629,9 @@
       "pick_label": "ATM ML",
       "pick_team": "Atlético Madrid",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "id": "2026-11-22_Premier League_City_vs_Albion",
@@ -23711,9 +23711,9 @@
       "pick_label": "INT ML",
       "pick_team": "Internazionale",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 4,
+      "away_score": 4
     },
     {
       "id": "2026-11-22_Ligue 1_FC_vs_Angers",
@@ -23744,9 +23744,9 @@
       "pick_label": "OLM ML",
       "pick_team": "Marseille",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-11-22_Serie A_Sassuolo_vs_Genoa",
@@ -23828,13 +23828,125 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-11-23_NBA_Hornets_vs_Grizzlies",
+      "date": "2026-11-23",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Charlotte Hornets",
+      "away_team": "Memphis Grizzlies",
+      "home_abbr": "CHA",
+      "away_abbr": "MEM",
+      "pick_label": "MEM ML",
+      "pick_team": "Memphis Grizzlies",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-23_NBA_Timberwolves_vs_Nets",
+      "date": "2026-11-23",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Minnesota Timberwolves",
+      "away_team": "Brooklyn Nets",
+      "home_abbr": "MIN",
+      "away_abbr": "BKN",
+      "pick_label": "MIN ML",
+      "pick_team": "Minnesota Timberwolves",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-23_NBA_Rockets_vs_Clippers",
+      "date": "2026-11-23",
+      "league": "NBA",
+      "sport": "basketball",
+      "home_team": "Houston Rockets",
+      "away_team": "LA Clippers",
+      "home_abbr": "HOU",
+      "away_abbr": "LAC",
+      "pick_label": "HOU -13.5",
+      "pick_team": "Houston Rockets",
+      "confidence": 95,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-23_NHL_Canadiens_vs_Kings",
+      "date": "2026-11-23",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Montreal Canadiens",
+      "away_team": "Los Angeles Kings",
+      "home_abbr": "MTL",
+      "away_abbr": "LA",
+      "pick_label": "MTL -1.5",
+      "pick_team": "Montreal Canadiens",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-23_NHL_Senators_vs_Flames",
+      "date": "2026-11-23",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Ottawa Senators",
+      "away_team": "Calgary Flames",
+      "home_abbr": "OTT",
+      "away_abbr": "CGY",
+      "pick_label": "OTT -1.5",
+      "pick_team": "Ottawa Senators",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-23_NHL_Islanders_vs_Leafs",
+      "date": "2026-11-23",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "New York Islanders",
+      "away_team": "Toronto Maple Leafs",
+      "home_abbr": "NYI",
+      "away_abbr": "TOR",
+      "pick_label": "NYI -1.5",
+      "pick_team": "New York Islanders",
+      "confidence": 75,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-23_Premier League_Brentford_vs_Everton",
+      "date": "2026-11-23",
+      "league": "Premier League",
+      "sport": "futbol",
+      "home_team": "Brentford",
+      "away_team": "Everton",
+      "home_abbr": "BRE",
+      "away_abbr": "EVE",
+      "pick_label": "EVE ML",
+      "pick_team": "Everton",
+      "confidence": 64,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 1287,
-    "wins": 723,
-    "losses": 564,
-    "pending": 10,
+    "total": 1289,
+    "wins": 724,
+    "losses": 565,
+    "pending": 14,
     "win_pct": 56.2,
     "current_streak": "W2",
     "by_sport": {
@@ -23851,8 +23963,8 @@
         "l": 92
       },
       "futbol": {
-        "w": 265,
-        "l": 149
+        "w": 266,
+        "l": 150
       }
     }
   }
