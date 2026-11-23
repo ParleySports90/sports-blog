@@ -23483,9 +23483,9 @@
       "pick_label": "DEN 8.5",
       "pick_team": "Denver Nuggets",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 145,
+      "away_score": 151
     },
     {
       "id": "2026-11-22_NBA_Knicks_vs_Pacers",
@@ -23499,9 +23499,9 @@
       "pick_label": "NY ML",
       "pick_team": "New York Knicks",
       "confidence": 84,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 113,
+      "away_score": 106
     },
     {
       "id": "2026-11-22_NBA_Warriors_vs_Celtics",
@@ -23515,9 +23515,9 @@
       "pick_label": "GS ML",
       "pick_team": "Golden State Warriors",
       "confidence": 84,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 88,
+      "away_score": 87
     },
     {
       "id": "2026-11-22_NHL_Lightning_vs_Sabres",
@@ -23531,9 +23531,9 @@
       "pick_label": "TB -1.5",
       "pick_team": "Tampa Bay Lightning",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 6
     },
     {
       "id": "2026-11-22_NHL_Stars_vs_Penguins",
@@ -23547,9 +23547,9 @@
       "pick_label": "DAL -1.5",
       "pick_team": "Dallas Stars",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "id": "2026-11-22_NHL_Rangers_vs_Hurricanes",
@@ -23777,9 +23777,9 @@
       "pick_label": "DAL 1.5",
       "pick_team": "Dallas Mavericks",
       "confidence": 83,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 114,
+      "away_score": 116
     },
     {
       "id": "2026-11-22_Ligue 1_Lorient_vs_Rennais",
@@ -23825,9 +23825,9 @@
       "pick_label": "EDM -1.5",
       "pick_team": "Edmonton Oilers",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 5,
+      "away_score": 4
     },
     {
       "id": "2026-11-23_NBA_Hornets_vs_Grizzlies",
@@ -23943,15 +23943,15 @@
     }
   ],
   "stats": {
-    "total": 1289,
-    "wins": 724,
-    "losses": 565,
-    "pending": 14,
+    "total": 1296,
+    "wins": 728,
+    "losses": 568,
+    "pending": 7,
     "win_pct": 56.2,
-    "current_streak": "W2",
+    "current_streak": "W3",
     "by_sport": {
       "basketball": {
-        "w": 81,
+        "w": 85,
         "l": 62
       },
       "baseball": {
@@ -23960,7 +23960,7 @@
       },
       "hockey": {
         "w": 96,
-        "l": 92
+        "l": 95
       },
       "futbol": {
         "w": 266,
