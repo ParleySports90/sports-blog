@@ -23841,9 +23841,9 @@
       "pick_label": "MEM ML",
       "pick_team": "Memphis Grizzlies",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 111,
+      "away_score": 117
     },
     {
       "id": "2026-11-23_NBA_Timberwolves_vs_Nets",
@@ -24103,15 +24103,15 @@
     }
   ],
   "stats": {
-    "total": 1297,
-    "wins": 728,
+    "total": 1298,
+    "wins": 729,
     "losses": 569,
-    "pending": 16,
-    "win_pct": 56.1,
-    "current_streak": "L1",
+    "pending": 15,
+    "win_pct": 56.2,
+    "current_streak": "W1",
     "by_sport": {
       "basketball": {
-        "w": 85,
+        "w": 86,
         "l": 62
       },
       "baseball": {
