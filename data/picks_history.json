@@ -23485,7 +23485,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 145,
-      "away_score": 151
+      "away_score": 151,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_NBA_Knicks_vs_Pacers",
@@ -23501,7 +23502,8 @@
       "confidence": 84,
       "status": "won",
       "home_score": 113,
-      "away_score": 106
+      "away_score": 106,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_NBA_Warriors_vs_Celtics",
@@ -23517,7 +23519,8 @@
       "confidence": 84,
       "status": "won",
       "home_score": 88,
-      "away_score": 87
+      "away_score": 87,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_NHL_Lightning_vs_Sabres",
@@ -23533,7 +23536,8 @@
       "confidence": 75,
       "status": "lost",
       "home_score": 2,
-      "away_score": 6
+      "away_score": 6,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_NHL_Stars_vs_Penguins",
@@ -23549,7 +23553,8 @@
       "confidence": 75,
       "status": "lost",
       "home_score": 1,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_NHL_Rangers_vs_Hurricanes",
@@ -23565,7 +23570,8 @@
       "confidence": 73,
       "status": "won",
       "home_score": 2,
-      "away_score": 5
+      "away_score": 5,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_La Liga_Barcelona_vs_Villarreal",
@@ -23615,7 +23621,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 1,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_La Liga_Getafe_vs_Madrid",
@@ -23631,7 +23638,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 0,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_Premier League_City_vs_Albion",
@@ -23664,7 +23672,8 @@
       "confidence": 85,
       "status": "won",
       "home_score": 4,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_Serie A_Juventus_vs_Venezia",
@@ -23746,7 +23755,8 @@
       "confidence": 85,
       "status": "lost",
       "home_score": 2,
-      "away_score": 3
+      "away_score": 3,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_Serie A_Sassuolo_vs_Genoa",
@@ -23779,7 +23789,8 @@
       "confidence": 83,
       "status": "won",
       "home_score": 114,
-      "away_score": 116
+      "away_score": 116,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_Ligue 1_Lorient_vs_Rennais",
@@ -23811,7 +23822,8 @@
       "confidence": 62,
       "status": "won",
       "home_score": 5,
-      "away_score": 1
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-22_NHL_Blues_vs_Oilers",
@@ -23827,7 +23839,8 @@
       "confidence": 70,
       "status": "lost",
       "home_score": 5,
-      "away_score": 4
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-11-23_NBA_Hornets_vs_Grizzlies",
@@ -23843,7 +23856,8 @@
       "confidence": 95,
       "status": "won",
       "home_score": 111,
-      "away_score": 117
+      "away_score": 117,
+      "ig_posted": true
     },
     {
       "id": "2026-11-23_NBA_Timberwolves_vs_Nets",
@@ -23857,9 +23871,10 @@
       "pick_label": "MIN ML",
       "pick_team": "Minnesota Timberwolves",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 142,
+      "away_score": 116,
+      "ig_posted": true
     },
     {
       "id": "2026-11-23_NBA_Rockets_vs_Clippers",
@@ -23873,9 +23888,10 @@
       "pick_label": "HOU -13.5",
       "pick_team": "Houston Rockets",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 116,
+      "away_score": 104,
+      "ig_posted": true
     },
     {
       "id": "2026-11-23_NHL_Canadiens_vs_Kings",
@@ -23889,9 +23905,10 @@
       "pick_label": "MTL -1.5",
       "pick_team": "Montreal Canadiens",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 2,
+      "ig_posted": true
     },
     {
       "id": "2026-11-23_NHL_Senators_vs_Flames",
@@ -23905,9 +23922,10 @@
       "pick_label": "OTT -1.5",
       "pick_team": "Ottawa Senators",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1,
+      "ig_posted": true
     },
     {
       "id": "2026-11-23_NHL_Islanders_vs_Leafs",
@@ -23921,9 +23939,10 @@
       "pick_label": "NYI -1.5",
       "pick_team": "New York Islanders",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 4,
+      "ig_posted": true
     },
     {
       "id": "2026-11-23_Premier League_Brentford_vs_Everton",
@@ -23939,7 +23958,8 @@
       "confidence": 64,
       "status": "lost",
       "home_score": 4,
-      "away_score": 0
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-11-24_NBA_Magic_vs_Pistons",
@@ -24017,9 +24037,10 @@
       "pick_label": "LAS ML",
       "pick_team": "LASK Linz",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-11-24_Champions League_Galatasaray_vs_Villa",
@@ -24033,9 +24054,10 @@
       "pick_label": "AVL ML",
       "pick_team": "Aston Villa",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0,
+      "ig_posted": true
     },
     {
       "id": "2026-11-24_Champions League_Como_vs_Athens",
@@ -24103,16 +24125,16 @@
     }
   ],
   "stats": {
-    "total": 1298,
-    "wins": 729,
-    "losses": 569,
-    "pending": 15,
-    "win_pct": 56.2,
-    "current_streak": "W1",
+    "total": 1305,
+    "wins": 730,
+    "losses": 575,
+    "pending": 8,
+    "win_pct": 55.9,
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
-        "w": 86,
-        "l": 62
+        "w": 87,
+        "l": 63
       },
       "baseball": {
         "w": 281,
@@ -24120,11 +24142,11 @@
       },
       "hockey": {
         "w": 96,
-        "l": 95
+        "l": 98
       },
       "futbol": {
         "w": 266,
-        "l": 151
+        "l": 153
       }
     }
   }
