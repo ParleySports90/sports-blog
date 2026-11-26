@@ -24135,9 +24135,9 @@
       "pick_label": "MEM ML",
       "pick_team": "Memphis Grizzlies",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 115,
+      "away_score": 97
     },
     {
       "id": "2026-11-25_NBA_Warriors_vs_Kings",
@@ -24183,9 +24183,9 @@
       "pick_label": "NJ 1.5",
       "pick_team": "New Jersey Devils",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "id": "2026-11-25_NHL_Wild_vs_Mammoth",
@@ -24199,9 +24199,9 @@
       "pick_label": "MIN -1.5",
       "pick_team": "Minnesota Wild",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 4
     },
     {
       "id": "2026-11-25_NHL_Kraken_vs_Blackhawks",
@@ -24493,15 +24493,15 @@
     }
   ],
   "stats": {
-    "total": 1315,
-    "wins": 737,
-    "losses": 578,
-    "pending": 18,
-    "win_pct": 56.0,
+    "total": 1318,
+    "wins": 739,
+    "losses": 579,
+    "pending": 15,
+    "win_pct": 56.1,
     "current_streak": "W2",
     "by_sport": {
       "basketball": {
-        "w": 89,
+        "w": 90,
         "l": 64
       },
       "baseball": {
@@ -24509,8 +24509,8 @@
         "l": 261
       },
       "hockey": {
-        "w": 96,
-        "l": 99
+        "w": 97,
+        "l": 100
       },
       "futbol": {
         "w": 271,
