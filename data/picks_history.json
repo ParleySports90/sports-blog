@@ -24151,9 +24151,9 @@
       "pick_label": "GS ML",
       "pick_team": "Golden State Warriors",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 129,
+      "away_score": 110
     },
     {
       "id": "2026-11-25_NBA_Blazers_vs_Spurs",
@@ -24167,9 +24167,9 @@
       "pick_label": "SA ML",
       "pick_team": "San Antonio Spurs",
       "confidence": 88,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 116,
+      "away_score": 111
     },
     {
       "id": "2026-11-25_NHL_Jackets_vs_Devils",
@@ -24215,9 +24215,9 @@
       "pick_label": "SEA -1.5",
       "pick_team": "Seattle Kraken",
       "confidence": 68,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "id": "2026-11-25_Champions League_FK_vs_Barcelona",
@@ -24493,16 +24493,16 @@
     }
   ],
   "stats": {
-    "total": 1318,
-    "wins": 739,
-    "losses": 579,
-    "pending": 15,
-    "win_pct": 56.1,
+    "total": 1321,
+    "wins": 740,
+    "losses": 581,
+    "pending": 12,
+    "win_pct": 56.0,
     "current_streak": "W2",
     "by_sport": {
       "basketball": {
-        "w": 90,
-        "l": 64
+        "w": 91,
+        "l": 65
       },
       "baseball": {
         "w": 281,
@@ -24510,7 +24510,7 @@
       },
       "hockey": {
         "w": 97,
-        "l": 100
+        "l": 101
       },
       "futbol": {
         "w": 271,
