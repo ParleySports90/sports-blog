@@ -24263,9 +24263,9 @@
       "pick_label": "MUN ML",
       "pick_team": "Bayern Munich",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "2026-11-25_Champions League_Saint-Germain_vs_Roma",
@@ -24279,9 +24279,9 @@
       "pick_label": "PSG ML",
       "pick_team": "Paris Saint-Germain",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "id": "2026-11-25_Champions League_CP_vs_United",
@@ -24295,18 +24295,18 @@
       "pick_label": "SCP ML",
       "pick_team": "Sporting CP",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 2,
+      "away_score": 2
     }
   ],
   "stats": {
-    "total": 1314,
+    "total": 1315,
     "wins": 737,
-    "losses": 577,
-    "pending": 9,
-    "win_pct": 56.1,
-    "current_streak": "W4",
+    "losses": 578,
+    "pending": 6,
+    "win_pct": 56.0,
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
         "w": 89,
@@ -24322,7 +24322,7 @@
       },
       "futbol": {
         "w": 271,
-        "l": 153
+        "l": 154
       }
     }
   }
