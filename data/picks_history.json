@@ -24551,9 +24551,9 @@
       "pick_label": "BOS -1.5",
       "pick_team": "Boston Bruins",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "id": "2026-11-27_NHL_Sharks_vs_Knights",
@@ -24583,9 +24583,9 @@
       "pick_label": "NJ -1.5",
       "pick_team": "New Jersey Devils",
       "confidence": 72,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 5,
+      "away_score": 3
     },
     {
       "id": "2026-11-27_Premier League_Forest_vs_Chelsea",
@@ -24599,9 +24599,9 @@
       "pick_label": "CHE ML",
       "pick_team": "Chelsea",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "id": "2026-11-27_Bundesliga_Bremen_vs_Mönchengladbach",
@@ -24615,9 +24615,9 @@
       "pick_label": "SVW ML",
       "pick_team": "Werder Bremen",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 3,
+      "away_score": 3
     },
     {
       "id": "2026-11-27_Serie A_Venezia_vs_Bologna",
@@ -24631,9 +24631,9 @@
       "pick_label": "BOL ML",
       "pick_team": "Bologna",
       "confidence": 85,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "push",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "id": "2026-11-27_La Liga_Levante_vs_Santander",
@@ -24647,9 +24647,9 @@
       "pick_label": "RAC ML",
       "pick_team": "Racing Santander",
       "confidence": 82,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "id": "2026-11-27_Ligue 1_Brest_vs_FC",
@@ -24663,18 +24663,50 @@
       "pick_label": "PAR ML",
       "pick_team": "Paris FC",
       "confidence": 75,
+      "status": "lost",
+      "home_score": 1,
+      "away_score": 0
+    },
+    {
+      "id": "2026-11-27_NHL_Oilers_vs_Kraken",
+      "date": "2026-11-27",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Edmonton Oilers",
+      "away_team": "Seattle Kraken",
+      "home_abbr": "EDM",
+      "away_abbr": "SEA",
+      "pick_label": "EDM -1.5",
+      "pick_team": "Edmonton Oilers",
+      "confidence": 71,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "id": "2026-11-27_NHL_Sabres_vs_Penguins",
+      "date": "2026-11-27",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Buffalo Sabres",
+      "away_team": "Pittsburgh Penguins",
+      "home_abbr": "BUF",
+      "away_abbr": "PIT",
+      "pick_label": "BUF -1.5",
+      "pick_team": "Buffalo Sabres",
+      "confidence": 70,
       "status": "pending",
       "home_score": null,
       "away_score": null
     }
   ],
   "stats": {
-    "total": 1330,
-    "wins": 746,
-    "losses": 584,
-    "pending": 11,
-    "win_pct": 56.1,
-    "current_streak": "W3",
+    "total": 1335,
+    "wins": 748,
+    "losses": 587,
+    "pending": 6,
+    "win_pct": 56.0,
+    "current_streak": "L1",
     "by_sport": {
       "basketball": {
         "w": 91,
@@ -24685,12 +24717,12 @@
         "l": 261
       },
       "hockey": {
-        "w": 97,
-        "l": 101
+        "w": 98,
+        "l": 102
       },
       "futbol": {
-        "w": 277,
-        "l": 157
+        "w": 278,
+        "l": 159
       }
     }
   }
