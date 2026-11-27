@@ -24567,9 +24567,9 @@
       "pick_label": "VGK 1.5",
       "pick_team": "Vegas Golden Knights",
       "confidence": 75,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "id": "2026-11-27_NHL_Devils_vs_Flames",
@@ -24698,15 +24698,31 @@
       "status": "pending",
       "home_score": null,
       "away_score": null
+    },
+    {
+      "id": "2026-11-27_NHL_Blackhawks_vs_Rangers",
+      "date": "2026-11-27",
+      "league": "NHL",
+      "sport": "hockey",
+      "home_team": "Chicago Blackhawks",
+      "away_team": "New York Rangers",
+      "home_abbr": "CHI",
+      "away_abbr": "NYR",
+      "pick_label": "NYR ML",
+      "pick_team": "New York Rangers",
+      "confidence": 67,
+      "status": "pending",
+      "home_score": null,
+      "away_score": null
     }
   ],
   "stats": {
-    "total": 1335,
+    "total": 1336,
     "wins": 748,
-    "losses": 587,
+    "losses": 588,
     "pending": 6,
     "win_pct": 56.0,
-    "current_streak": "L1",
+    "current_streak": "L2",
     "by_sport": {
       "basketball": {
         "w": 91,
@@ -24718,7 +24734,7 @@
       },
       "hockey": {
         "w": 98,
-        "l": 102
+        "l": 103
       },
       "futbol": {
         "w": 278,
