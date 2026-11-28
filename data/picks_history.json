@@ -24503,9 +24503,9 @@
       "pick_label": "PHI 1.5",
       "pick_team": "Philadelphia 76ers",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 87,
+      "away_score": 111
     },
     {
       "id": "2026-11-27_NBA_Jazz_vs_Nuggets",
@@ -24535,9 +24535,9 @@
       "pick_label": "DET -9.5",
       "pick_team": "Detroit Pistons",
       "confidence": 94,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 113,
+      "away_score": 98
     },
     {
       "id": "2026-11-27_NHL_Bruins_vs_Leafs",
@@ -24679,9 +24679,9 @@
       "pick_label": "EDM -1.5",
       "pick_team": "Edmonton Oilers",
       "confidence": 71,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 2,
+      "away_score": 4
     },
     {
       "id": "2026-11-27_NHL_Sabres_vs_Penguins",
@@ -24695,9 +24695,9 @@
       "pick_label": "BUF -1.5",
       "pick_team": "Buffalo Sabres",
       "confidence": 70,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "lost",
+      "home_score": 3,
+      "away_score": 6
     },
     {
       "id": "2026-11-27_NHL_Blackhawks_vs_Rangers",
@@ -25005,15 +25005,15 @@
     }
   ],
   "stats": {
-    "total": 1337,
-    "wins": 748,
-    "losses": 589,
-    "pending": 23,
+    "total": 1341,
+    "wins": 750,
+    "losses": 591,
+    "pending": 19,
     "win_pct": 55.9,
-    "current_streak": "L2",
+    "current_streak": "W2",
     "by_sport": {
       "basketball": {
-        "w": 91,
+        "w": 93,
         "l": 65
       },
       "baseball": {
@@ -25022,7 +25022,7 @@
       },
       "hockey": {
         "w": 98,
-        "l": 104
+        "l": 106
       },
       "futbol": {
         "w": 278,
