@@ -24519,9 +24519,9 @@
       "pick_label": "DEN 9.5",
       "pick_team": "Denver Nuggets",
       "confidence": 95,
-      "status": "pending",
-      "home_score": null,
-      "away_score": null
+      "status": "won",
+      "home_score": 107,
+      "away_score": 120
     },
     {
       "id": "2026-11-27_NBA_Pistons_vs_Bucks",
@@ -25005,15 +25005,15 @@
     }
   ],
   "stats": {
-    "total": 1341,
-    "wins": 750,
+    "total": 1342,
+    "wins": 751,
     "losses": 591,
-    "pending": 19,
-    "win_pct": 55.9,
-    "current_streak": "W2",
+    "pending": 18,
+    "win_pct": 56.0,
+    "current_streak": "W3",
     "by_sport": {
       "basketball": {
-        "w": 93,
+        "w": 94,
         "l": 65
       },
       "baseball": {
